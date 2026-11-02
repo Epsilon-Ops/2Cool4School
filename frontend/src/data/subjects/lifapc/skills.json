@@ -1,29 +1,143 @@
-
 {
   "skills": [
+    {
+      "id": "lifapc.memoire",
+      "name": "Gestion de la mémoire",
+      "short": "Mémoire",
+      "prereq": [],
+      "description": "Organisation de la mémoire, pile, tas, durée de vie des variables, trames de pile, allocation et désallocation dynamique avec new, delete, malloc et free."
+    },
+    {
+      "id": "lifapc.pointeurs_references",
+      "name": "Pointeurs et références C++",
+      "short": "Pointeurs",
+      "prereq": [
+        "lifapc.memoire"
+      ],
+      "description": "Adresses mémoire, opérateurs * et &, déréférencement, pointeurs, références, références constantes, passage de paramètres par valeur, adresse et référence."
+    },
+    {
+      "id": "lifapc.classes_cpp",
+      "name": "Classes et structures C++",
+      "short": "Classes C++",
+      "prereq": [
+        "lifapc.pointeurs_references"
+      ],
+      "description": "Classes, structures, attributs, méthodes, encapsulation, public, private, this, fonctions membres et méthodes statiques."
+    },
+    {
+      "id": "lifapc.copie",
+      "name": "Copie et destruction",
+      "short": "Copie",
+      "prereq": [
+        "lifapc.memoire",
+        "lifapc.pointeurs_references"
+      ],
+      "description": "Constructeurs par défaut et par copie, destructeurs, opérateur d'affectation, copie superficielle et profonde, gestion des ressources et règle des trois."
+    },
+    {
+      "id": "lifapc.types_abstraits",
+      "name": "Types abstraits et modularité",
+      "short": "Types abstraits",
+      "prereq": [
+        "lifapc.classes_cpp"
+      ],
+      "description": "Notion de type abstrait, interface et implantation, séparation des fichiers .hpp et .cpp, déclaration et définition, encapsulation et programmation modulaire."
+    },
     {
       "id": "lifapc.complexite",
       "name": "Complexité algorithmique",
       "short": "Complexité",
-      "pos": [110, 190],
-      "prereq": [],
-      "description": "Ordres de grandeur et analyse de complexité."
+      "prereq": [
+        "lifapc.types_abstraits"
+      ],
+      "description": "Analyse du coût en temps et en mémoire, opérations élémentaires, complexité au mieux, au pire et en moyenne, ordres de grandeur O, Omega, Theta et petit o."
+    },
+    {
+      "id": "lifapc.preuves",
+      "name": "Correction et preuve des algorithmes",
+      "short": "Preuves",
+      "prereq": [
+        "lifapc.complexite"
+      ],
+      "description": "Spécification des problèmes, préconditions, postconditions, correction, terminaison, invariants de boucle et démonstrations mathématiques de justesse."
+    },
+    {
+      "id": "lifapc.recurrences",
+      "name": "Récursivité et récurrences",
+      "short": "Récursivité",
+      "prereq": [
+        "lifapc.complexite"
+      ],
+      "description": "Analyse des fonctions récursives, équations de récurrence et calcul du coût des algorithmes récursifs."
+    },
+    {
+      "id": "lifapc.recherche",
+      "name": "Recherche dichotomique",
+      "short": "Dichotomie",
+      "prereq": [
+        "lifapc.complexite",
+        "lifapc.preuves"
+      ],
+      "description": "Recherche dans un tableau trié, division de l'espace de recherche, invariant de boucle, terminaison et complexité logarithmique."
+    },
+    {
+      "id": "lifapc.tris",
+      "name": "Tris classiques",
+      "short": "Tris",
+      "prereq": [
+        "lifapc.complexite",
+        "lifapc.preuves"
+      ],
+      "description": "Tri par insertion, sélection, bulle et fusion, comparaison des complexités, stabilité, terminaison et preuve de correction."
     },
     {
       "id": "lifapc.listes",
-      "name": "Listes génériques",
+      "name": "Listes chaînées C++",
       "short": "Listes",
-      "pos": [300, 100],
-      "prereq": [],
-      "description": "Manipulation des listes chaînées génériques."
+      "prereq": [
+        "lifapc.memoire",
+        "lifapc.pointeurs_references"
+      ],
+      "description": "Cellules, pointeurs, allocation dynamique, parcours, ajout en tête et en queue, suppression et libération de mémoire."
     },
     {
       "id": "lifapc.sentinelles",
       "name": "Cellules sentinelles",
       "short": "Sentinelles",
-      "pos": [450, 190],
-      "prereq": ["lifapc.listes"],
-      "description": "Utilisation des cellules sentinelles."
+      "prereq": [
+        "lifapc.listes"
+      ],
+      "description": "Utilisation de cellules fictives pour simplifier les listes chaînées, insertion, suppression et gestion des cas particuliers."
+    },
+    {
+      "id": "lifapc.generiques",
+      "name": "Génériques et templates",
+      "short": "Templates",
+      "prereq": [
+        "lifapc.listes",
+        "lifapc.classes_cpp"
+      ],
+      "description": "Programmation générique en C++, paramètres de type, templates de classes et de fonctions, listes génériques."
+    },
+    {
+      "id": "lifapc.p_np",
+      "name": "Théorie de la complexité : P et NP",
+      "short": "P et NP",
+      "prereq": [
+        "lifapc.complexite"
+      ],
+      "description": "Problèmes de décision et d'extraction, classes P, NP, NP-complets, vérification polynomiale, réductions polynomiales, SAT et explosion combinatoire."
+    },
+    {
+      "id": "lifapc.algorithmes_approches",
+      "name": "Heuristiques et algorithmes approchés",
+      "short": "Heuristiques",
+      "prereq": [
+        "lifapc.complexite",
+        "lifapc.p_np"
+      ],
+      "description": "Méthodes arborescentes, heuristiques, approximation et stratégies pour résoudre des problèmes difficiles lorsque les solutions exactes sont trop coûteuses."
     }
   ]
 }

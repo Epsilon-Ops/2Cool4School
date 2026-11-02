@@ -1,8 +1,8 @@
-import { defineConfig } from 'vite';
-import react from '@vitejs/plugin-react';
 
-// base './' permet de déployer sur GitHub Pages sans configuration supplémentaire
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+
 export default defineConfig({
   plugins: [react()],
-  base: './',
-});
+  base: '/2Cool4School/',
+})

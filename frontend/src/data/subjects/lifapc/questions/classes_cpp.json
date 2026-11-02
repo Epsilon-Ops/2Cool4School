@@ -1,0 +1,641 @@
+[
+  {
+    "id": "classes_001",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "Dans une classe C++, quel est le niveau d'accès par défaut des données membres et fonctions membres ?",
+    "answer": "private",
+    "distractors": [
+      "public",
+      "protected",
+      "static"
+    ],
+    "explanation": "Dans une class, les données membres et fonctions membres sont private par défaut. Dans une struct, elles sont public par défaut.",
+    "tags": [
+      "class",
+      "encapsulation",
+      "private",
+      "public"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "classes_002",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "Dans une struct C++, quel est le niveau d'accès par défaut des données membres et fonctions membres ?",
+    "answer": "public",
+    "distractors": [
+      "private",
+      "protected",
+      "const"
+    ],
+    "explanation": "Dans une struct, les données membres et fonctions membres sont public par défaut, contrairement à une class où elles sont private par défaut.",
+    "tags": [
+      "struct",
+      "encapsulation",
+      "public"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_003",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "Quel mot-clé permet de rendre accessibles depuis l'extérieur les membres qui suivent dans une classe ?",
+    "answer": "public",
+    "distractors": [
+      "private",
+      "static",
+      "this"
+    ],
+    "explanation": "Le spécificateur public rend accessibles depuis l'extérieur les membres concernés, sous réserve des autres règles du langage.",
+    "tags": [
+      "public",
+      "encapsulation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Le spécificateur {{blank}} permet de déclarer des membres accessibles depuis l'extérieur."
+  },
+  {
+    "id": "classes_004",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "À quoi sert le mot-clé private dans une classe C++ ?",
+    "answer": "À réserver l'accès aux membres concernés à l'intérieur de la classe et aux accès autorisés",
+    "distractors": [
+      "À rendre les membres accessibles partout",
+      "À créer une variable globale",
+      "À allouer un objet dans le tas"
+    ],
+    "explanation": "Les membres private ne sont pas directement accessibles depuis l'extérieur de la classe.",
+    "tags": [
+      "private",
+      "encapsulation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_005",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Que représente this dans une fonction membre non statique ?",
+    "answer": "Un pointeur vers l'objet sur lequel la fonction membre est appelée",
+    "distractors": [
+      "Une référence vers la classe entière",
+      "Un pointeur vers la fonction appelée",
+      "Une variable globale de la classe"
+    ],
+    "explanation": "this désigne l'adresse de l'instance concernée par l'appel de la fonction membre.",
+    "tags": [
+      "this",
+      "fonction membre",
+      "pointeur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "classes_006",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Dans une fonction membre de Complexe, que désigne this->re ?",
+    "answer": "Le membre re de l'objet sur lequel la fonction membre est appelée",
+    "distractors": [
+      "Le membre re d'un objet global",
+      "Une variable locale appelée re",
+      "L'adresse de la classe Complexe"
+    ],
+    "explanation": "this est un pointeur vers l'objet courant ; this->re accède donc à son membre re.",
+    "tags": [
+      "this",
+      "acces membre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_007",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un constructeur en C++ ?",
+    "answer": "Une fonction membre appelée automatiquement lors de la création d'une instance pour l'initialiser",
+    "distractors": [
+      "Une fonction appelée automatiquement à la destruction",
+      "Une fonction qui libère la mémoire du tas",
+      "Une fonction qui affiche les données membres"
+    ],
+    "explanation": "Le constructeur initialise automatiquement une instance au moment de sa création.",
+    "tags": [
+      "constructeur",
+      "initialisation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_008",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "Comment reconnaît-on un constructeur dans une classe C++ ?",
+    "answer": "Il porte le même nom que la classe et ne possède pas de type de retour",
+    "distractors": [
+      "Il commence par le caractère ~",
+      "Il porte toujours le nom init",
+      "Il retourne une référence vers l'objet"
+    ],
+    "explanation": "Un constructeur est une fonction membre portant le nom de la classe. Il n'a pas de type de retour.",
+    "tags": [
+      "constructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Un constructeur porte le même nom que la {{blank}} et ne possède pas de type de retour."
+  },
+  {
+    "id": "classes_009",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'un constructeur par défaut ?",
+    "answer": "Un constructeur qui peut être appelé sans argument",
+    "distractors": [
+      "Un constructeur qui copie un objet existant",
+      "Un constructeur qui détruit l'objet",
+      "Un constructeur qui ne peut être appelé qu'avec new"
+    ],
+    "explanation": "Le cours présente le constructeur par défaut comme un constructeur sans argument.",
+    "tags": [
+      "constructeur par défaut"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_010",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Quand le constructeur d'un objet local est-il appelé ?",
+    "answer": "Lors de la création de l'objet, au sein du bloc où il est défini",
+    "distractors": [
+      "À la sortie du bloc",
+      "À la fin du programme uniquement",
+      "Lors du premier accès à un de ses membres"
+    ],
+    "explanation": "Le constructeur est appelé automatiquement au moment de la création de l'instance, y compris pour une variable locale.",
+    "tags": [
+      "constructeur",
+      "durée de vie",
+      "pile"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_011",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Quand le constructeur d'un objet alloué dynamiquement est-il appelé ?",
+    "answer": "Lors de l'appel à new qui crée l'instance",
+    "distractors": [
+      "Lors de l'appel à delete",
+      "À la sortie du bloc contenant le pointeur",
+      "À la fin du programme uniquement"
+    ],
+    "explanation": "Le cours indique que le constructeur est appelé lors d'un appel à l'opérateur new pour les instances allouées dynamiquement.",
+    "tags": [
+      "constructeur",
+      "new",
+      "tas"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_012",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle d'un destructeur en C++ ?",
+    "answer": "Exécuter automatiquement des instructions juste avant la disparition d'une instance",
+    "distractors": [
+      "Initialiser une instance",
+      "Créer une copie de l'instance",
+      "Réserver une zone mémoire dans le tas"
+    ],
+    "explanation": "Le destructeur est appelé automatiquement avant la disparition d'une instance et permet notamment de libérer les ressources qu'elle possède.",
+    "tags": [
+      "destructeur",
+      "durée de vie"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_013",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 1,
+    "prompt": "Quelle est la syntaxe d'un destructeur pour une classe Complexe ?",
+    "answer": "~Complexe()",
+    "distractors": [
+      "Complexe~()",
+      "void ~Complexe()",
+      "delete Complexe()"
+    ],
+    "explanation": "Le nom du destructeur est celui de la classe précédé de ~. Il ne possède pas d'argument ni de type de retour.",
+    "tags": [
+      "destructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Le destructeur d'une classe Complexe s'écrit {{blank}}."
+  },
+  {
+    "id": "classes_014",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Combien de destructeurs une classe C++ possède-t-elle ?",
+    "answer": "Un seul destructeur, sans argument",
+    "distractors": [
+      "Un destructeur par constructeur",
+      "Autant de destructeurs que de données membres",
+      "Deux destructeurs au maximum"
+    ],
+    "explanation": "Le cours précise qu'un destructeur est unique et sans argument.",
+    "tags": [
+      "destructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_015",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "À quel moment le destructeur d'une instance locale est-il appelé ?",
+    "answer": "À la fin du bloc dans lequel l'instance a été créée",
+    "distractors": [
+      "Au début du bloc",
+      "À chaque appel d'une fonction membre",
+      "Uniquement à la fin du programme"
+    ],
+    "explanation": "Les instances locales sont détruites à la fin de leur bloc.",
+    "tags": [
+      "destructeur",
+      "durée de vie",
+      "pile"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_016",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "À quel moment le destructeur d'une instance allouée dynamiquement est-il appelé ?",
+    "answer": "Lors de l'appel à delete sur le pointeur qui désigne l'instance",
+    "distractors": [
+      "À la sortie du bloc où le pointeur est déclaré",
+      "À chaque affectation de l'objet",
+      "Automatiquement après l'instruction new"
+    ],
+    "explanation": "Pour une instance allouée dynamiquement, l'appel à delete déclenche le destructeur avant la libération de l'espace mémoire.",
+    "tags": [
+      "destructeur",
+      "delete",
+      "tas"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_017",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Que fait le destructeur implicite d'une classe ?",
+    "answer": "Il appelle les destructeurs des données membres qui en possèdent un",
+    "distractors": [
+      "Il appelle delete sur tous les pointeurs bruts",
+      "Il initialise les membres à zéro",
+      "Il copie les données membres"
+    ],
+    "explanation": "En l'absence de destructeur défini par le programmeur, le destructeur implicite appelle les destructeurs des membres qui en possèdent un.",
+    "tags": [
+      "destructeur implicite",
+      "données membres"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_018",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "À quoi sert la surcharge de l'opérateur d'affectation operator= ?",
+    "answer": "À définir le comportement de l'affectation entre deux objets d'une classe",
+    "distractors": [
+      "À définir la création d'un objet",
+      "À appeler le destructeur",
+      "À rendre les membres private"
+    ],
+    "explanation": "La surcharge de operator= permet de spécifier le sens de l'affectation des variables d'une classe.",
+    "tags": [
+      "operator=",
+      "affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_019",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Dans l'expression z2 = z1, quelle fonction membre est appelée si elle est définie dans Complexe ?",
+    "answer": "z2.operator=(z1)",
+    "distractors": [
+      "z1.operator=(z2)",
+      "Complexe::Complexe(z1)",
+      "z2.~Complexe()"
+    ],
+    "explanation": "Le cours donne z2 = z1 comme équivalent à l'appel z2.operator=(z1).",
+    "tags": [
+      "operator=",
+      "fonction membre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_020",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Quelle est la signature classique de l'opérateur d'affectation pour une classe Complexe ?",
+    "answer": "Complexe& operator=(const Complexe& z)",
+    "distractors": [
+      "void operator=(Complexe z)",
+      "Complexe* operator=(const Complexe* z)",
+      "Complexe operator==(const Complexe& z)"
+    ],
+    "explanation": "Le cours présente un opérateur d'affectation membre qui reçoit une référence constante et retourne une référence vers l'objet courant.",
+    "tags": [
+      "operator=",
+      "signature"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La signature classique est Complexe& operator=(const Complexe& {{blank}})."
+  },
+  {
+    "id": "classes_021",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Pourquoi l'opérateur d'affectation retourne-t-il généralement une référence vers l'objet courant ?",
+    "answer": "Pour permettre notamment les enchaînements d'affectation",
+    "distractors": [
+      "Pour déclencher le destructeur",
+      "Pour créer une nouvelle instance dans le tas",
+      "Pour rendre l'objet constant"
+    ],
+    "explanation": "Le cours associe le retour d'une référence à l'objet courant à la possibilité d'enchaîner les affectations.",
+    "tags": [
+      "operator=",
+      "référence",
+      "affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_022",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Que signifie static lorsqu'il est utilisé pour déclarer une variable membre de classe ?",
+    "answer": "La variable est commune à la classe plutôt que propre à chaque instance",
+    "distractors": [
+      "La variable est automatiquement constante",
+      "La variable est allouée dans chaque fonction membre",
+      "La variable ne peut être utilisée que dans main"
+    ],
+    "explanation": "Le cours présente static comme un moyen de définir une variable de classe, c'est-à-dire une variable globale dans la portée de la classe.",
+    "tags": [
+      "static",
+      "variable de classe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_023",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Comment accède-t-on au nom complet d'une variable membre statique compte_complexe de la classe Complexe ?",
+    "answer": "Complexe::compte_complexe",
+    "distractors": [
+      "Complexe->compte_complexe",
+      "this.compte_complexe",
+      "compte_complexe::Complexe"
+    ],
+    "explanation": "Le nom complet d'une variable membre statique est préfixé par le nom de la classe et l'opérateur de portée ::.",
+    "tags": [
+      "static",
+      "portée",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_024",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Une fonction membre statique peut-elle être appelée à partir du nom de la classe ?",
+    "answer": "Oui, par exemple Complexe::get_compteur()",
+    "distractors": [
+      "Non, elle doit toujours être appelée sur une instance",
+      "Oui, mais uniquement depuis le destructeur",
+      "Non, une fonction membre statique est privée par défaut"
+    ],
+    "explanation": "Le cours montre qu'une fonction membre statique publique peut être appelée avec le nom de la classe, comme Complexe::get_compteur().",
+    "tags": [
+      "static",
+      "fonction membre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "classes_025",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 3,
+    "prompt": "Pourquoi l'opérateur + est-il présenté comme une fonction non membre pour la classe Complexe dans le cours ?",
+    "answer": "Parce qu'il possède deux opérandes et qu'il n'y a pas de raison de privilégier l'opérande de gauche",
+    "distractors": [
+      "Parce qu'un opérateur + ne peut jamais être une fonction membre",
+      "Parce que les données de Complexe sont toujours publiques",
+      "Parce que l'opérateur + doit obligatoirement être static"
+    ],
+    "explanation": "Le cours conserve ainsi le caractère symétrique de l'opérateur + : aucun des deux opérandes n'est privilégié.",
+    "tags": [
+      "surcharge opérateur",
+      "fonction non membre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_026",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du fichier d'entête (.h ou .hpp) dans la répartition d'un module C++ ?",
+    "answer": "Présenter l'interface du module avec les déclarations des éléments importés et exportés",
+    "distractors": [
+      "Contenir uniquement la fonction main",
+      "Contenir exclusivement les allocations dynamiques",
+      "Remplacer le fichier source .cpp"
+    ],
+    "explanation": "Le cours décrit le fichier d'entête comme l'interface du module, contenant les déclarations des éléments importés et exportés.",
+    "tags": [
+      "module",
+      "interface",
+      "header"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_027",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du fichier source (.cpp) dans la répartition d'un module C++ ?",
+    "answer": "Contenir l'implantation du module",
+    "distractors": [
+      "Contenir uniquement les déclarations publiques",
+      "Définir les types primitifs du langage",
+      "Remplacer tous les fichiers d'entête"
+    ],
+    "explanation": "Le cours distingue l'interface placée dans le fichier d'entête et l'implantation placée dans le fichier source .cpp.",
+    "tags": [
+      "module",
+      "implantation",
+      "cpp"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "classes_028",
+    "subject": "lifapc",
+    "skill": "lifapc.classes_cpp",
+    "difficulty": 2,
+    "prompt": "Dans une fonction membre non statique, à quoi correspond l'expression *this ?",
+    "answer": "À l'objet courant lui-même",
+    "distractors": [
+      "À l'adresse de la classe",
+      "À une nouvelle instance temporaire",
+      "À la fonction membre en cours"
+    ],
+    "explanation": "this est un pointeur vers l'objet courant ; le déréférencer avec *this désigne donc cet objet.",
+    "tags": [
+      "this",
+      "dereferencement"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

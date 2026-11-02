@@ -1,0 +1,63 @@
+[
+  {
+    "id": "lifapc_11",
+    "subject": "lifapc",
+    "skill": "lifapc.sentinelles",
+    "difficulty": 2,
+    "prompt": "À quoi sert une cellule sentinelle dans une liste chaînée ?",
+    "answer": "À éviter les cas particuliers (liste vide, insertion en tête, suppression) grâce à une cellule fictive toujours présente",
+    "distractors": [
+      "À stocker la taille de la liste",
+      "À trier automatiquement les éléments",
+      "À remplacer les pointeurs par des indices"
+    ],
+    "explanation": "La sentinelle ne porte pas de donnée utile : elle permet d'écrire les opérations sans tester si la liste est vide.",
+    "tags": [
+      "sentinelles"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "lifapc_12",
+    "subject": "lifapc",
+    "skill": "lifapc.sentinelles",
+    "difficulty": 1,
+    "prompt": "Que contient la valeur d'une cellule sentinelle ?",
+    "answer": "Aucune donnée utile",
+    "distractors": [
+      "La plus petite valeur de la liste",
+      "La taille de la liste",
+      "Le premier élément"
+    ],
+    "explanation": "La sentinelle sert de repère fixe : elle n'appartient pas aux éléments stockés.",
+    "tags": [
+      "sentinelles"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "lifapc_13",
+    "subject": "lifapc",
+    "skill": "lifapc.sentinelles",
+    "difficulty": 2,
+    "prompt": "Complète la règle sur les listes avec sentinelle.",
+    "answer": "une",
+    "distractors": [],
+    "explanation": "La sentinelle est toujours présente : la liste n'est donc jamais réellement sans cellule.",
+    "tags": [
+      "sentinelles"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Une liste avec sentinelle contient toujours au moins {{blank}} cellule, même lorsqu'elle est vide."
+  }
+]

@@ -1,0 +1,89 @@
+[
+  {
+    "id": "liflc_13",
+    "subject": "liflc",
+    "skill": "liflc.predicats",
+    "difficulty": 2,
+    "prompt": "Quelle est la négation de « ∀x P(x) » ?",
+    "answer": "∃x ¬P(x)",
+    "distractors": [
+      "∀x ¬P(x)",
+      "∃x P(x)",
+      "¬∀x ¬P(x)"
+    ],
+    "explanation": "Il n'est pas vrai que tous les x vérifient P : il existe un x qui ne vérifie pas P.",
+    "tags": [
+      "predicats"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_14",
+    "subject": "liflc",
+    "skill": "liflc.predicats",
+    "difficulty": 3,
+    "prompt": "Quel est le sens de « ∀x ∃y P(x,y) » ?",
+    "answer": "Pour tout x, il existe un y tel que P(x,y)",
+    "distractors": [
+      "Il existe un y tel que, pour tout x, P(x,y)",
+      "Pour tout x et tout y, P(x,y)",
+      "Il existe x et y tels que P(x,y)"
+    ],
+    "explanation": "Le quantificateur de gauche est lu en premier : le y choisi peut dépendre de x.",
+    "tags": [
+      "predicats"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_15",
+    "subject": "liflc",
+    "skill": "liflc.predicats",
+    "difficulty": 1,
+    "prompt": "Quel symbole désigne « il existe au moins un » ?",
+    "answer": "∃",
+    "distractors": [
+      "∀",
+      "¬",
+      "→"
+    ],
+    "explanation": "∀ signifie « pour tout », ∃ signifie « il existe au moins un ».",
+    "tags": [
+      "predicats"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Le quantificateur « il existe » se note {{blank}}."
+  },
+  {
+    "id": "liflc_16",
+    "subject": "liflc",
+    "skill": "liflc.predicats",
+    "difficulty": 3,
+    "prompt": "Remets dans l'ordre la preuve d'une formule de la forme « ∀x P(x) ».",
+    "answer": "Prendre un x quelconque, démontrer P(x), conclure.",
+    "distractors": [],
+    "explanation": "On ne peut pas vérifier tous les x un par un : on raisonne sur un x arbitraire.",
+    "tags": [
+      "predicats"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Prendre un x quelconque",
+      "Démontrer P(x) à partir des hypothèses",
+      "Conclure ∀x P(x) car x était quelconque"
+    ]
+  }
+]

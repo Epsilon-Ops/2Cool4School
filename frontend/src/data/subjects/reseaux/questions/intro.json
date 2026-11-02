@@ -1,0 +1,91 @@
+[
+  {
+    "id": "reseaux_006",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 2,
+    "prompt": "Comment un VPN protège-t-il les données privées qui circulent sur Internet ?",
+    "answer": "Il crée des tunnels chiffrés entre les sites",
+    "distractors": [
+      "Il utilise des câbles dédiés entre tous les sites",
+      "Il supprime tout le trafic public",
+      "Il remplace l'adresse IP par un numéro de téléphone"
+    ],
+    "explanation": "Un VPN s'appuie sur un réseau public existant : il chiffre les données et filtre ce qui entre et sort dans le tunnel.",
+    "tags": [
+      "VPN",
+      "sécurité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_01",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un VPN ?",
+    "answer": "Un tunnel chiffré qui fait transiter ses données à travers un réseau public",
+    "distractors": [
+      "Un réseau local sans fil",
+      "Un protocole de routage interne",
+      "Un serveur de noms de domaine"
+    ],
+    "explanation": "Le VPN protège le trafic entre l'utilisateur et un point de sortie, comme si les machines étaient reliées directement.",
+    "tags": [
+      "intro"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_02",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 2,
+    "prompt": "Dans une topologie en étoile, que se passe-t-il si le nœud central tombe en panne ?",
+    "answer": "Toute la communication est interrompue",
+    "distractors": [
+      "Seule la machine concernée est isolée",
+      "Le réseau se reconfigure automatiquement",
+      "Les données sont perdues de façon aléatoire"
+    ],
+    "explanation": "Le nœud central est un point de défaillance unique : toutes les communications y passent.",
+    "tags": [
+      "intro"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_03",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Vocabulaire des réseaux.",
+    "answer": "backbone",
+    "distractors": [
+      "réseau d'accès",
+      "VPN",
+      "LAN"
+    ],
+    "explanation": "Le backbone (épine dorsale) relie les grands routeurs du cœur d'Internet.",
+    "tags": [
+      "intro"
+    ],
+    "formats": [
+      "fill_blank",
+      "single_choice",
+      "flashcard"
+    ],
+    "cloze": "Le réseau de transit très haut débit reliant les grands routeurs est le {{blank}}."
+  }
+]

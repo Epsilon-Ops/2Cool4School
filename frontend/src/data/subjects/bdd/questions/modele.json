@@ -1,0 +1,113 @@
+[
+  {
+    "id": "bdd_001",
+    "subject": "bdd",
+    "skill": "bdd.modele",
+    "difficulty": 1,
+    "prompt": "Dans le modèle relationnel, comment s'appelle une ligne d'une table ?",
+    "answer": "Un n-uplet (tuple)",
+    "distractors": [
+      "Un attribut",
+      "Un domaine",
+      "Une clé étrangère"
+    ],
+    "explanation": "Une table est un ensemble de n-uplets ; chaque colonne correspond à un attribut.",
+    "tags": [
+      "modèle relationnel"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_002",
+    "subject": "bdd",
+    "skill": "bdd.modele",
+    "difficulty": 1,
+    "prompt": "Une colonne d'une table représente…",
+    "answer": "un attribut",
+    "distractors": [
+      "un n-uplet",
+      "une clé primaire",
+      "une requête"
+    ],
+    "explanation": "Chaque colonne porte un nom (attribut) et un domaine, qui définit les valeurs autorisées.",
+    "tags": [
+      "modèle relationnel"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Une colonne d'une table représente un {{blank}}."
+  },
+  {
+    "id": "bdd_01",
+    "subject": "bdd",
+    "skill": "bdd.modele",
+    "difficulty": 1,
+    "prompt": "Comment appelle-t-on une ligne d'une table dans le modèle relationnel ?",
+    "answer": "Un n-uplet",
+    "distractors": [
+      "Un attribut",
+      "Un domaine",
+      "Une clé étrangère"
+    ],
+    "explanation": "Une table est une relation : chaque n-uplet représente une occurrence de l'entité.",
+    "tags": [
+      "modele"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Une ligne d'une table relationnelle s'appelle un {{blank}}."
+  },
+  {
+    "id": "bdd_02",
+    "subject": "bdd",
+    "skill": "bdd.modele",
+    "difficulty": 1,
+    "prompt": "Comment appelle-t-on une colonne d'une table ?",
+    "answer": "Un attribut",
+    "distractors": [
+      "Un n-uplet",
+      "Une clé",
+      "Une relation"
+    ],
+    "explanation": "Chaque attribut prend ses valeurs dans un domaine.",
+    "tags": [
+      "modele"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_03",
+    "subject": "bdd",
+    "skill": "bdd.modele",
+    "difficulty": 2,
+    "prompt": "Dans le modèle relationnel, peut-on trouver deux n-uplets identiques dans une même table ?",
+    "answer": "Non : une relation est un ensemble, sans doublons",
+    "distractors": [
+      "Oui, sans limite",
+      "Oui, si les attributs ont des noms différents",
+      "Oui, uniquement dans les tables temporaires"
+    ],
+    "explanation": "Une relation étant un ensemble mathématique, deux lignes identiques ne peuvent pas coexister.",
+    "tags": [
+      "modele"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  }
+]

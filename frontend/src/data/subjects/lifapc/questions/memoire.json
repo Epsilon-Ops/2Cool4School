@@ -1,0 +1,963 @@
+[
+  {
+    "id": "c_005",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 1,
+    "prompt": "À quoi sert un constructeur en C++ ?",
+    "answer": "Initialiser automatiquement une instance lors de sa création",
+    "distractors": [
+      "Détruire automatiquement une instance",
+      "Libérer la mémoire du tas",
+      "Copier automatiquement toutes les variables globales"
+    ],
+    "explanation": "Un constructeur est appelé automatiquement lors de la création d'un objet pour initialiser ses données membres.",
+    "tags": [
+      "constructeur",
+      "initialisation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_006",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 1,
+    "prompt": "Comment reconnaît-on un constructeur en C++ ?",
+    "answer": "Il porte le même nom que la classe et ne possède aucun type de retour",
+    "distractors": [
+      "Il commence toujours par le mot clé init",
+      "Il porte le nom de la classe précédé de ~",
+      "Il retourne obligatoirement un pointeur"
+    ],
+    "explanation": "Un constructeur porte le nom de sa classe et ne déclare aucun type de retour, même pas void.",
+    "tags": [
+      "constructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Un constructeur porte le même nom que sa {{blank}}."
+  },
+  {
+    "id": "c_007",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un constructeur par défaut ?",
+    "answer": "Un constructeur qui peut être appelé sans argument",
+    "distractors": [
+      "Un constructeur qui copie un objet existant",
+      "Un constructeur qui détruit l'objet",
+      "Un constructeur qui alloue obligatoirement de la mémoire dans le tas"
+    ],
+    "explanation": "Le constructeur par défaut permet de créer un objet sans fournir d'argument.",
+    "tags": [
+      "constructeur",
+      "constructeur par défaut"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Un constructeur par défaut peut être appelé sans {{blank}}."
+  },
+  {
+    "id": "c_008",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 1,
+    "prompt": "Quelle est la signature classique d'un constructeur par copie pour une classe Liste ?",
+    "answer": "Liste(const Liste& autre)",
+    "distractors": [
+      "void Liste(Liste autre)",
+      "Liste* Liste(Liste* autre)",
+      "Liste(const Liste autre)"
+    ],
+    "explanation": "Le constructeur par copie reçoit généralement une référence constante vers un objet de même type.",
+    "tags": [
+      "constructeur par copie",
+      "syntaxe",
+      "référence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Un constructeur par copie classique utilise une référence {{blank}} vers l'objet source."
+  },
+  {
+    "id": "c_009",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quand le constructeur par copie est-il appelé lors d'une initialisation ?",
+    "answer": "Lorsqu'un objet est initialisé à partir d'un autre objet du même type",
+    "distractors": [
+      "Lorsqu'un objet est simplement modifié",
+      "Lorsqu'un objet est détruit",
+      "Lorsqu'une variable entière est incrémentée"
+    ],
+    "explanation": "Exemple : Liste b(a) ou Liste b = a. Ces écritures initialisent b à partir de a.",
+    "tags": [
+      "constructeur par copie",
+      "initialisation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_010",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Le constructeur par copie est-il appelé lors du passage d'un objet par valeur à une fonction ?",
+    "answer": "Oui",
+    "distractors": [
+      "Non",
+      "Uniquement si l'objet contient un pointeur",
+      "Uniquement si la fonction retourne un objet"
+    ],
+    "explanation": "Le passage par valeur nécessite la création d'un paramètre local à partir de l'objet transmis. Des optimisations du compilateur peuvent toutefois supprimer certaines copies.",
+    "tags": [
+      "constructeur par copie",
+      "passage par valeur"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_011",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Le constructeur par copie peut-il être appelé lors du retour d'un objet par valeur depuis une fonction ?",
+    "answer": "Oui, selon les circonstances, même si le compilateur peut éviter la copie",
+    "distractors": [
+      "Non, jamais",
+      "Uniquement si la fonction est récursive",
+      "Uniquement si l'objet est alloué avec new"
+    ],
+    "explanation": "Le retour par valeur peut impliquer une construction par copie. En C++ moderne, l'élision de copie peut supprimer cette opération.",
+    "tags": [
+      "constructeur par copie",
+      "retour de fonction"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_012",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Que se passe-t-il si aucun constructeur par copie n'est défini explicitement ?",
+    "answer": "Le compilateur peut fournir un constructeur par copie implicite",
+    "distractors": [
+      "La copie devient impossible",
+      "L'objet est automatiquement détruit",
+      "Le constructeur par défaut est toujours utilisé"
+    ],
+    "explanation": "Le constructeur par copie implicite copie les membres de l'objet en appliquant leurs propres règles de copie.",
+    "tags": [
+      "constructeur par copie",
+      "copie implicite"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_013",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Comment fonctionne généralement la copie implicite d'un pointeur brut ?",
+    "answer": "Elle copie l'adresse contenue dans le pointeur",
+    "distractors": [
+      "Elle duplique automatiquement l'objet pointé",
+      "Elle libère l'objet pointé",
+      "Elle transforme le pointeur en référence"
+    ],
+    "explanation": "La copie membre à membre d'un pointeur brut recopie son adresse, pas la mémoire vers laquelle il pointe.",
+    "tags": [
+      "copie superficielle",
+      "pointeurs",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_014",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une copie superficielle ?",
+    "answer": "Une copie qui recopie les valeurs des membres sans dupliquer les ressources pointées",
+    "distractors": [
+      "Une copie qui duplique toutes les ressources dynamiques",
+      "Une copie qui supprime l'objet original",
+      "Une copie qui ne recopie que les fonctions membres"
+    ],
+    "explanation": "Avec un pointeur brut, les deux objets peuvent partager la même adresse mémoire après une copie superficielle.",
+    "tags": [
+      "copie superficielle",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_015",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une copie profonde ?",
+    "answer": "Une copie qui duplique également les ressources dynamiques pour obtenir des ressources indépendantes",
+    "distractors": [
+      "Une copie qui recopie uniquement les adresses",
+      "Une copie qui détruit l'objet original",
+      "Une copie qui ne concerne que les types primitifs"
+    ],
+    "explanation": "Une copie profonde crée de nouveaux espaces mémoire et recopie leur contenu afin que les objets soient indépendants.",
+    "tags": [
+      "copie profonde",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_016",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Pourquoi une classe qui possède un pointeur vers une mémoire allouée dynamiquement peut-elle avoir besoin d'un constructeur par copie personnalisé ?",
+    "answer": "Pour réaliser une copie profonde et éviter le partage involontaire de la mémoire",
+    "distractors": [
+      "Pour accélérer toutes les opérations arithmétiques",
+      "Pour interdire l'utilisation des destructeurs",
+      "Pour convertir automatiquement le pointeur en référence"
+    ],
+    "explanation": "La copie implicite d'un pointeur recopie seulement son adresse. Un constructeur personnalisé permet de dupliquer la ressource.",
+    "tags": [
+      "copie profonde",
+      "constructeur par copie",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_017",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quel problème peut provoquer la destruction de deux objets qui partagent le même pointeur brut ?",
+    "answer": "Une double libération de la même zone mémoire",
+    "distractors": [
+      "Une augmentation automatique de la mémoire disponible",
+      "Une conversion du pointeur en référence",
+      "Une copie infinie des objets"
+    ],
+    "explanation": "Si les deux destructeurs exécutent delete sur la même adresse, la mémoire est libérée deux fois, ce qui entraîne un comportement indéfini.",
+    "tags": [
+      "double libération",
+      "destructeur",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_018",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du destructeur en C++ ?",
+    "answer": "Exécuter automatiquement les opérations de nettoyage avant la destruction d'un objet",
+    "distractors": [
+      "Initialiser les membres de l'objet",
+      "Copier l'objet dans un autre",
+      "Surcharger l'opérateur +"
+    ],
+    "explanation": "Le destructeur permet notamment de libérer les ressources acquises par l'objet.",
+    "tags": [
+      "destructeur",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_019",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 1,
+    "prompt": "Quelle est la syntaxe d'un destructeur pour une classe Liste ?",
+    "answer": "~Liste()",
+    "distractors": [
+      "Liste~()",
+      "delete Liste()",
+      "void ~Liste()"
+    ],
+    "explanation": "Le destructeur porte le nom de la classe précédé du caractère ~ et ne possède aucun argument ni type de retour.",
+    "tags": [
+      "destructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Le destructeur d'une classe Liste s'écrit {{blank}}."
+  },
+  {
+    "id": "c_020",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Un destructeur peut-il avoir plusieurs versions surchargées avec des paramètres différents ?",
+    "answer": "Non, une classe possède un unique destructeur sans argument",
+    "distractors": [
+      "Oui, autant que nécessaire",
+      "Oui, mais uniquement avec des pointeurs",
+      "Oui, si les constructeurs sont surchargés"
+    ],
+    "explanation": "Une classe possède un seul destructeur, qui ne prend aucun paramètre.",
+    "tags": [
+      "destructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_021",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quand le destructeur d'un objet local est-il appelé ?",
+    "answer": "À la sortie du bloc dans lequel l'objet a été créé",
+    "distractors": [
+      "À chaque modification de l'objet",
+      "Au début du programme",
+      "Uniquement lors d'un appel explicite à delete"
+    ],
+    "explanation": "Les objets locaux automatiques sont détruits lorsque leur portée se termine.",
+    "tags": [
+      "destructeur",
+      "durée de vie",
+      "pile"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_022",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quand le destructeur d'un objet alloué avec new est-il appelé ?",
+    "answer": "Lorsqu'on applique delete sur son pointeur",
+    "distractors": [
+      "Automatiquement à la fin de chaque instruction",
+      "À la fin du bloc qui contient le pointeur",
+      "Lorsqu'on modifie sa valeur"
+    ],
+    "explanation": "L'appel à delete déclenche le destructeur de l'objet puis libère son espace mémoire.",
+    "tags": [
+      "destructeur",
+      "new",
+      "delete",
+      "tas"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_023",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quand le destructeur d'un objet global est-il normalement appelé ?",
+    "answer": "À la fin du programme",
+    "distractors": [
+      "À chaque appel de main",
+      "Avant le début du programme",
+      "Lors de la première modification de l'objet"
+    ],
+    "explanation": "Les objets globaux ont une durée de vie qui s'étend jusqu'à la fin du programme.",
+    "tags": [
+      "destructeur",
+      "durée de vie",
+      "variable globale"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_024",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Que fait le destructeur implicite d'une classe ?",
+    "answer": "Il appelle les destructeurs des membres qui en possèdent un",
+    "distractors": [
+      "Il appelle systématiquement delete sur tous les pointeurs bruts",
+      "Il copie tous les membres",
+      "Il réinitialise toutes les variables à zéro"
+    ],
+    "explanation": "Le destructeur implicite détruit correctement les membres objets, mais ne libère pas automatiquement les ressources possédées par de simples pointeurs bruts.",
+    "tags": [
+      "destructeur implicite",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_025",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Pourquoi une classe qui alloue un tableau avec new[] doit-elle généralement le libérer dans son destructeur ?",
+    "answer": "Pour éviter une fuite mémoire",
+    "distractors": [
+      "Pour accélérer le constructeur par copie",
+      "Pour transformer le tableau en référence",
+      "Pour modifier automatiquement sa taille"
+    ],
+    "explanation": "Une allocation dynamique doit être accompagnée d'une désallocation appropriée avec delete[].",
+    "tags": [
+      "destructeur",
+      "new",
+      "delete",
+      "fuite mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_026",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quelle est la différence entre delete et delete[] ?",
+    "answer": "delete libère un objet unique tandis que delete[] libère un tableau alloué avec new[]",
+    "distractors": [
+      "delete libère un tableau et delete[] un objet unique",
+      "Ils sont parfaitement interchangeables",
+      "delete détruit uniquement les pointeurs"
+    ],
+    "explanation": "Il faut utiliser la forme de désallocation correspondant à la forme d'allocation utilisée.",
+    "tags": [
+      "delete",
+      "delete[]",
+      "allocation dynamique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_027",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "À quoi sert l'opérateur d'affectation operator= ?",
+    "answer": "Définir le comportement de l'affectation entre deux objets existants",
+    "distractors": [
+      "Créer obligatoirement un nouvel objet",
+      "Détruire l'objet de droite",
+      "Appeler automatiquement le constructeur par défaut"
+    ],
+    "explanation": "L'opérateur operator= permet de définir comment les données d'un objet existant sont remplacées par celles d'un autre.",
+    "tags": [
+      "operator=",
+      "affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_028",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence fondamentale entre initialisation et affectation ?",
+    "answer": "L'initialisation crée un objet tandis que l'affectation modifie un objet déjà existant",
+    "distractors": [
+      "L'initialisation détruit un objet tandis que l'affectation le crée",
+      "Les deux opérations sont toujours identiques",
+      "L'affectation appelle obligatoirement le constructeur par défaut"
+    ],
+    "explanation": "Liste b(a) initialise b. En revanche, b = a affecte a à un objet b déjà construit.",
+    "tags": [
+      "initialisation",
+      "affectation",
+      "operator="
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_029",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quelle est la signature classique de l'opérateur d'affectation pour une classe Liste ?",
+    "answer": "Liste& operator=(const Liste& autre)",
+    "distractors": [
+      "void operator=(Liste autre)",
+      "Liste* operator=(Liste* autre)",
+      "const Liste operator=(int autre)"
+    ],
+    "explanation": "L'opérateur retourne généralement une référence vers l'objet courant et reçoit une référence constante vers l'objet source.",
+    "tags": [
+      "operator=",
+      "syntaxe",
+      "référence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La signature classique de operator= retourne une {{blank}} vers l'objet courant."
+  },
+  {
+    "id": "c_030",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Pourquoi operator= retourne-t-il généralement une référence vers l'objet courant ?",
+    "answer": "Pour permettre les affectations en chaîne",
+    "distractors": [
+      "Pour créer une nouvelle allocation dynamique",
+      "Pour empêcher la copie",
+      "Pour déclencher le destructeur"
+    ],
+    "explanation": "Retourner *this par référence permet notamment d'écrire a = b = c.",
+    "tags": [
+      "operator=",
+      "référence",
+      "affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_031",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Pourquoi faut-il tester this != &autre dans un opérateur d'affectation ?",
+    "answer": "Pour détecter une auto-affectation",
+    "distractors": [
+      "Pour vérifier que l'objet est alloué avec new",
+      "Pour vérifier que l'objet est constant",
+      "Pour déclencher le constructeur par copie"
+    ],
+    "explanation": "Lorsqu'un objet s'affecte à lui-même, il faut éviter de détruire ses propres données avant de les recopier.",
+    "tags": [
+      "operator=",
+      "auto-affectation",
+      "this"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_032",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quel est le risque d'un operator= implicite dans une classe qui possède un pointeur brut vers une ressource dynamique ?",
+    "answer": "Il peut provoquer un partage involontaire de la ressource entre les objets",
+    "distractors": [
+      "Il réalise automatiquement une copie profonde",
+      "Il supprime systématiquement le pointeur",
+      "Il interdit toute affectation"
+    ],
+    "explanation": "L'affectation implicite copie les membres. Pour un pointeur brut, elle recopie l'adresse et non la ressource pointée.",
+    "tags": [
+      "operator=",
+      "copie superficielle",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_033",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quelles sont les trois fonctions associées à la règle des trois en C++ ?",
+    "answer": "Le destructeur, le constructeur par copie et l'opérateur d'affectation",
+    "distractors": [
+      "Le constructeur par défaut, operator+ et operator-",
+      "Le constructeur, main et le destructeur",
+      "Le constructeur par copie, operator++ et operator--"
+    ],
+    "explanation": "Lorsqu'une classe gère elle-même une ressource, ces trois fonctions doivent être cohérentes.",
+    "tags": [
+      "règle des trois",
+      "copie",
+      "destructeur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La règle des trois regroupe le destructeur, le constructeur par copie et l'opérateur {{blank}}."
+  },
+  {
+    "id": "c_034",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Dans quel cas applique-t-on principalement la règle des trois ?",
+    "answer": "Lorsqu'une classe gère directement une ressource nécessitant une gestion personnalisée",
+    "distractors": [
+      "Lorsqu'une classe ne possède que des entiers",
+      "Lorsqu'une classe ne possède aucune donnée membre",
+      "Lorsqu'une classe contient uniquement des fonctions statiques"
+    ],
+    "explanation": "Une classe qui gère une ressource, comme une allocation dynamique avec un pointeur brut, doit assurer correctement sa copie, son affectation et sa destruction.",
+    "tags": [
+      "règle des trois",
+      "gestion mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_035",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Que risque-t-on si une classe possède un destructeur personnalisé qui libère un pointeur brut, mais aucun constructeur par copie personnalisé ?",
+    "answer": "Une copie superficielle peut conduire à une double libération",
+    "distractors": [
+      "Une copie profonde automatique",
+      "Une fuite mémoire systématique à la construction",
+      "Une impossibilité de créer des objets"
+    ],
+    "explanation": "Le constructeur par copie implicite recopie l'adresse du pointeur. Les deux objets peuvent donc libérer la même ressource.",
+    "tags": [
+      "règle des trois",
+      "constructeur par copie",
+      "double libération"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_036",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quel est le rôle de this dans une fonction membre non statique ?",
+    "answer": "C'est un pointeur vers l'objet sur lequel la fonction membre est appelée",
+    "distractors": [
+      "C'est une référence vers le prochain objet créé",
+      "C'est un pointeur vers la classe parente",
+      "C'est une variable globale contenant le nombre d'objets"
+    ],
+    "explanation": "this permet notamment d'accéder aux membres de l'objet courant et de retourner *this dans operator=.",
+    "tags": [
+      "this",
+      "fonction membre",
+      "operator="
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Dans une fonction membre non statique, this est un {{blank}} vers l'objet courant."
+  },
+  {
+    "id": "c_037",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Pourquoi utilise-t-on généralement const Liste& dans le paramètre d'un constructeur par copie ?",
+    "answer": "Pour éviter une copie supplémentaire et garantir que l'objet source ne sera pas modifié",
+    "distractors": [
+      "Pour détruire l'objet source après la copie",
+      "Pour rendre l'objet source modifiable",
+      "Pour allouer automatiquement une nouvelle liste dans le tas"
+    ],
+    "explanation": "La référence évite une copie supplémentaire et const garantit que le constructeur ne modifie pas la source.",
+    "tags": [
+      "référence constante",
+      "constructeur par copie"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_038",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Pourquoi utilise-t-on généralement const Liste& dans le paramètre de operator= ?",
+    "answer": "Pour éviter une copie supplémentaire et empêcher la modification de l'objet source",
+    "distractors": [
+      "Pour permettre la destruction de la source",
+      "Pour modifier directement les données de la source",
+      "Pour transformer l'objet source en pointeur"
+    ],
+    "explanation": "La référence constante permet de lire l'objet source sans le copier ni le modifier.",
+    "tags": [
+      "operator=",
+      "référence constante"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_039",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Dans le code Liste a; Liste b(a); quelle opération est appelée ?",
+    "answer": "Le constructeur par copie de Liste",
+    "distractors": [
+      "L'opérateur d'affectation de Liste",
+      "Le destructeur de Liste",
+      "Le constructeur par défaut de b uniquement"
+    ],
+    "explanation": "b est initialisé directement à partir de a : il s'agit d'une construction par copie.",
+    "tags": [
+      "constructeur par copie",
+      "lecture de code"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_040",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Dans le code Liste a; Liste b; b = a; quelle opération est appelée ?",
+    "answer": "L'opérateur d'affectation operator=",
+    "distractors": [
+      "Le constructeur par copie de b",
+      "Le constructeur par défaut de a",
+      "Le destructeur de a"
+    ],
+    "explanation": "b existe déjà. L'instruction remplace son contenu par celui de a en utilisant operator=.",
+    "tags": [
+      "operator=",
+      "lecture de code"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_041",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Associe chaque instruction à la fonction C++ correspondante.",
+    "answer": "Chaque instruction correspond à son mécanisme de création, copie, affectation ou destruction",
+    "distractors": [],
+    "explanation": "Liste a : constructeur par défaut. Liste b(a) : constructeur par copie. b = a : operator=. delete p : destructeur puis libération mémoire.",
+    "tags": [
+      "constructeur",
+      "constructeur par copie",
+      "operator=",
+      "destructeur"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Liste a;",
+        "Constructeur par défaut"
+      ],
+      [
+        "Liste b(a);",
+        "Constructeur par copie"
+      ],
+      [
+        "b = a;",
+        "Opérateur d'affectation"
+      ],
+      [
+        "delete p;",
+        "Destructeur puis libération mémoire"
+      ]
+    ]
+  },
+  {
+    "id": "c_042",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Remets dans l'ordre les étapes générales d'une affectation profonde sécurisée avec un pointeur brut.",
+    "answer": "Vérifier l'auto-affectation, préparer la nouvelle ressource, libérer l'ancienne ressource, mettre à jour les membres",
+    "distractors": [],
+    "explanation": "Une stratégie robuste consiste à préparer la nouvelle ressource avant de remplacer l'ancienne, afin de préserver l'objet en cas d'échec d'allocation.",
+    "tags": [
+      "operator=",
+      "copie profonde",
+      "ordre des opérations"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Vérifier l'auto-affectation",
+      "Préparer la nouvelle ressource",
+      "Libérer l'ancienne ressource",
+      "Mettre à jour les membres"
+    ]
+  },
+  {
+    "id": "c_043",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Que signifie l'expression *this dans une fonction membre ?",
+    "answer": "Elle désigne l'objet courant",
+    "distractors": [
+      "Elle désigne le destructeur courant",
+      "Elle désigne l'adresse de la classe",
+      "Elle désigne le prochain objet à construire"
+    ],
+    "explanation": "this est un pointeur vers l'objet courant. Le déréférencer avec *this permet d'accéder à l'objet lui-même.",
+    "tags": [
+      "this",
+      "pointeurs",
+      "operator="
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_044",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Associe chaque fonction membre à son rôle.",
+    "answer": "Chaque fonction possède un rôle précis dans le cycle de vie d'un objet",
+    "distractors": [],
+    "explanation": "Le constructeur initialise, le constructeur par copie crée un nouvel objet à partir d'un autre, operator= modifie un objet existant et le destructeur nettoie les ressources.",
+    "tags": [
+      "synthèse",
+      "constructeur",
+      "destructeur",
+      "operator="
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Constructeur",
+        "Initialiser un nouvel objet"
+      ],
+      [
+        "Constructeur par copie",
+        "Créer un objet à partir d'un autre"
+      ],
+      [
+        "operator=",
+        "Affecter un objet déjà existant"
+      ],
+      [
+        "Destructeur",
+        "Nettoyer les ressources avant destruction"
+      ]
+    ]
+  }
+]

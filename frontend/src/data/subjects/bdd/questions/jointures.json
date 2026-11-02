@@ -1,0 +1,83 @@
+[
+  {
+    "id": "bdd_14",
+    "subject": "bdd",
+    "skill": "bdd.jointures",
+    "difficulty": 2,
+    "prompt": "Quelle jointure ne conserve que les lignes ayant une correspondance dans les deux tables ?",
+    "answer": "INNER JOIN",
+    "distractors": [
+      "LEFT JOIN",
+      "CROSS JOIN",
+      "UNION"
+    ],
+    "explanation": "C'est la jointure interne, la plus courante. JOIN seul en est l'abréviation.",
+    "tags": [
+      "jointures"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_15",
+    "subject": "bdd",
+    "skill": "bdd.jointures",
+    "difficulty": 2,
+    "prompt": "Que conserve une LEFT JOIN ?",
+    "answer": "Toutes les lignes de la table de gauche, même sans correspondance",
+    "distractors": [
+      "Seulement les lignes correspondantes",
+      "Toutes les lignes des deux tables sans exception",
+      "Uniquement les lignes de la table de droite"
+    ],
+    "explanation": "Les lignes sans correspondance à droite reçoivent NULL dans les colonnes de la table de droite.",
+    "tags": [
+      "jointures"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_16",
+    "subject": "bdd",
+    "skill": "bdd.jointures",
+    "difficulty": 2,
+    "prompt": "Complète la requête de jointure.",
+    "answer": "JOIN",
+    "distractors": [],
+    "explanation": "JOIN seul équivaut à INNER JOIN.",
+    "tags": [
+      "jointures"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "SELECT * FROM commandes c {{blank}} clients cl ON c.client_id = cl.id;"
+  },
+  {
+    "id": "bdd_17",
+    "subject": "bdd",
+    "skill": "bdd.jointures",
+    "difficulty": 3,
+    "prompt": "Combien de lignes renvoie un CROSS JOIN entre une table de 3 lignes et une table de 4 lignes ?",
+    "answer": "12 lignes",
+    "distractors": [
+      "7 lignes",
+      "4 lignes",
+      "3 lignes"
+    ],
+    "explanation": "Chaque ligne de la première table est combinée à chaque ligne de la seconde : 3 × 4 = 12.",
+    "tags": [
+      "jointures"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

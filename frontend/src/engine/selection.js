@@ -37,3 +37,9 @@ export function pickQuestions(bank, { skill, count = 5, strategy = 'weighted', p
   }
   return picked;
 }
+
+/** Questions dont la révision est due (SM-2 : dueAt déjà dépassée). */
+export function dueQuestions(bank, progress, now = Date.now()) {
+  const cards = progress?.cards ?? {};
+  return bank.filter((q) => cards[q.id] && cards[q.id].dueAt <= now);
+}

@@ -1,29 +1,38 @@
-
 {
   "skills": [
     {
       "id": "liflc.propositions",
-      "name": "Propositions",
+      "name": "Propositions & connecteurs",
       "short": "Propositions",
-      "pos": [110, 190],
       "prereq": [],
-      "description": "Propositions et connecteurs logiques."
+      "description": "Conjonction, disjonction, négation, valeurs de vérité."
     },
     {
       "id": "liflc.tables",
       "name": "Tables de vérité",
       "short": "Tables",
-      "pos": [300, 100],
-      "prereq": ["liflc.propositions"],
-      "description": "Évaluation des formules logiques."
+      "prereq": [
+        "liflc.propositions"
+      ],
+      "description": "Évaluer une formule ligne par ligne, satisfiabilité, tautologies."
+    },
+    {
+      "id": "liflc.implication",
+      "name": "Implications & équivalences",
+      "short": "Implication",
+      "prereq": [
+        "liflc.propositions"
+      ],
+      "description": "Implication, contraposée, lois de De Morgan."
     },
     {
       "id": "liflc.predicats",
-      "name": "Prédicats et quantificateurs",
+      "name": "Prédicats & quantificateurs",
       "short": "Prédicats",
-      "pos": [450, 190],
-      "prereq": ["liflc.propositions"],
-      "description": "Logique des prédicats et quantificateurs."
+      "prereq": [
+        "liflc.implication"
+      ],
+      "description": "Quantificateurs ∀ et ∃, négation et sens des formules."
     }
   ]
 }

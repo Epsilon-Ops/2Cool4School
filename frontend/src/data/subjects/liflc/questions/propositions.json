@@ -1,0 +1,136 @@
+[
+  {
+    "id": "logique_001",
+    "subject": "liflc",
+    "skill": "liflc.propositions",
+    "difficulty": 1,
+    "prompt": "Quand l'implication p ⇒ q est-elle fausse ?",
+    "answer": "Quand p est vraie et q est fausse",
+    "distractors": [
+      "Quand p est fausse et q est vraie",
+      "Quand p et q sont toutes deux fausses",
+      "Quand p et q sont toutes deux vraies"
+    ],
+    "explanation": "Dans la table de vérité, seule la ligne V → F donne F.",
+    "tags": [
+      "implication",
+      "table de vérité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "logique_003",
+    "subject": "liflc",
+    "skill": "liflc.propositions",
+    "difficulty": 1,
+    "prompt": "Quelle est la valeur de V ∧ F ?",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai",
+      "Indéterminé",
+      "Dépend du contexte"
+    ],
+    "explanation": "Une conjonction n'est vraie que si les deux membres sont vrais.",
+    "tags": [
+      "conjonction",
+      "table de vérité"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "V ∧ F vaut {{blank}}."
+  },
+  {
+    "id": "liflc_01",
+    "subject": "liflc",
+    "skill": "liflc.propositions",
+    "difficulty": 1,
+    "prompt": "Quelle est la valeur de « p ∧ q » lorsque p est vraie et q est fausse ?",
+    "answer": "Fausse",
+    "distractors": [
+      "Vraie",
+      "Indéterminée",
+      "Vraie si p et q sont identiques"
+    ],
+    "explanation": "Une conjonction n'est vraie que si ses deux membres le sont.",
+    "tags": [
+      "propositions"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_02",
+    "subject": "liflc",
+    "skill": "liflc.propositions",
+    "difficulty": 1,
+    "prompt": "Quel symbole désigne le « ou » inclusif ?",
+    "answer": "∨",
+    "distractors": [
+      "∧",
+      "¬",
+      "→"
+    ],
+    "explanation": "∨ est vraie dès qu'au moins un de ses deux membres est vrai.",
+    "tags": [
+      "propositions"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Le « ou » inclusif se note {{blank}}."
+  },
+  {
+    "id": "liflc_03",
+    "subject": "liflc",
+    "skill": "liflc.propositions",
+    "difficulty": 2,
+    "prompt": "Dans « p ∨ q », la formule est fausse quand :",
+    "answer": "p et q sont toutes deux fausses",
+    "distractors": [
+      "p et q sont toutes deux vraies",
+      "p est vraie et q est fausse",
+      "p est fausse et q est vraie"
+    ],
+    "explanation": "Une disjonction n'est fausse que si aucun de ses membres n'est vrai.",
+    "tags": [
+      "propositions"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_04",
+    "subject": "liflc",
+    "skill": "liflc.propositions",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une tautologie ?",
+    "answer": "Une formule vraie quelle que soit la valeur de ses variables",
+    "distractors": [
+      "Une formule fausse quelle que soit la valeur de ses variables",
+      "Une formule vraie pour exactement une valeur",
+      "Une formule sans connecteur"
+    ],
+    "explanation": "Exemple : p ∨ ¬p est toujours vraie, quelle que soit la valeur de p.",
+    "tags": [
+      "propositions"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  }
+]

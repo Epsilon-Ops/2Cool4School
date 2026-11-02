@@ -1,1 +1,8 @@
-[]
+{
+  "id": "reseaux",
+  "code": "RES",
+  "name": "Réseaux",
+  "emoji": "🌐",
+  "color": "#58cc02",
+  "description": "Télécoms, modèles en couches, adressage IP, TCP et normes."
+}

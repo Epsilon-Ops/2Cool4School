@@ -1,0 +1,834 @@
+[
+  {
+    "id": "c_003",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du constructeur de copie de Liste ?",
+    "answer": "Créer une copie indépendante de la liste, cellule par cellule",
+    "distractors": [
+      "Vider la liste d'origine",
+      "Compter les éléments",
+      "Libérer la mémoire de la liste"
+    ],
+    "explanation": "Il recopie chaque élément dans de nouvelles cellules. Sans lui, deux listes partageraient les mêmes cellules et une destruction affecterait l'autre.",
+    "tags": [
+      "copie",
+      "règle des trois"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_004",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du destructeur ~Liste() ?",
+    "answer": "Appeler vide() pour libérer toutes les cellules",
+    "distractors": [
+      "Réinitialiser taille à 1",
+      "Copier la liste dans un tableau",
+      "Ne rien faire, la mémoire est gérée automatiquement"
+    ],
+    "explanation": "Les cellules sont allouées avec new : sans libération (delete), il y a une fuite mémoire.",
+    "tags": [
+      "destructeur",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Le destructeur de Liste appelle la méthode {{blank}} pour libérer chaque cellule."
+  },
+  {
+    "id": "lifapc_14",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Pourquoi une classe qui gère des pointeurs bruts doit-elle définir un constructeur de copie ?",
+    "answer": "Pour faire une copie profonde et éviter que deux objets partagent les mêmes cellules",
+    "distractors": [
+      "Pour libérer la mémoire plus tôt",
+      "Pour interdire toute copie",
+      "Pour convertir la liste en tableau"
+    ],
+    "explanation": "Par défaut, la copie est superficielle : les deux objets pointent vers les mêmes cellules, ce qui provoque une double libération.",
+    "tags": [
+      "copie",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "lifapc_15",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Comment s'appelle la règle C++ qui impose de définir ensemble destructeur, constructeur de copie et opérateur d'affectation ?",
+    "answer": "La règle des trois",
+    "distractors": [
+      "La règle des deux",
+      "La règle du zéro",
+      "La règle de Liskov"
+    ],
+    "explanation": "Si une classe gère une ressource, ces trois fonctions doivent être cohérentes entre elles.",
+    "tags": [
+      "copie",
+      "règle des trois"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Lorsqu'une classe gère une ressource, on applique la règle des {{blank}}."
+  },
+  {
+    "id": "c_005",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 1,
+    "prompt": "Quelle est la différence entre un constructeur de copie et un opérateur d'affectation ?",
+    "answer": "Le constructeur de copie initialise un nouvel objet, tandis que l'opérateur d'affectation modifie un objet déjà existant",
+    "distractors": [
+      "Le constructeur de copie détruit un objet, tandis que l'affectation le crée",
+      "Les deux sont exactement identiques",
+      "L'opérateur d'affectation ne fonctionne qu'avec les pointeurs"
+    ],
+    "explanation": "Complexe b(a) appelle le constructeur de copie. Si a et b existent déjà, b = a appelle operator=.",
+    "tags": [
+      "constructeur de copie",
+      "affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_006",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quelle est la signature classique d'un constructeur de copie en C++ ?",
+    "answer": "NomClasse(const NomClasse& autre)",
+    "distractors": [
+      "NomClasse(NomClasse autre)",
+      "void NomClasse(const NomClasse& autre)",
+      "NomClasse& operator=(const NomClasse& autre)"
+    ],
+    "explanation": "Le constructeur de copie reçoit une référence constante vers un objet de la même classe. Il ne possède aucun type de retour.",
+    "tags": [
+      "constructeur de copie",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La signature classique du constructeur de copie est NomClasse(const NomClasse& {{blank}})."
+  },
+  {
+    "id": "c_007",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Que réalise le constructeur de copie implicite généré par le compilateur ?",
+    "answer": "Une copie membre par membre en utilisant les règles de copie de chaque attribut",
+    "distractors": [
+      "Une copie profonde automatique de tous les pointeurs",
+      "Une allocation dynamique de chaque attribut",
+      "Une suppression de l'objet original"
+    ],
+    "explanation": "La copie implicite copie chaque champ. Pour un pointeur brut, elle copie son adresse et non l'objet pointé.",
+    "tags": [
+      "constructeur de copie",
+      "copie superficielle"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_008",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Que signifie une copie superficielle (shallow copy) d'un objet contenant un pointeur ?",
+    "answer": "Copier la valeur du pointeur, donc partager la même zone mémoire",
+    "distractors": [
+      "Allouer une nouvelle zone mémoire et copier son contenu",
+      "Mettre automatiquement le pointeur à nullptr",
+      "Copier uniquement les données constantes"
+    ],
+    "explanation": "Les deux objets possèdent alors des pointeurs contenant la même adresse. Ils accèdent donc à la même ressource.",
+    "tags": [
+      "copie superficielle",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Lors d'une copie superficielle, deux pointeurs peuvent contenir la même {{blank}}."
+  },
+  {
+    "id": "c_009",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une copie profonde (deep copy) ?",
+    "answer": "Créer une nouvelle zone mémoire et recopier le contenu de la ressource",
+    "distractors": [
+      "Copier uniquement l'adresse du pointeur",
+      "Partager la mémoire entre deux objets",
+      "Supprimer les données de l'objet original"
+    ],
+    "explanation": "Chaque objet possède sa propre ressource. La modification ou la destruction de l'un n'affecte pas directement l'autre.",
+    "tags": [
+      "copie profonde",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_010",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Une classe contient un attribut int* ad. Son constructeur alloue un entier avec new. Que doit faire son constructeur de copie pour obtenir une copie profonde ?",
+    "answer": "Allouer un nouvel entier et recopier la valeur de l'entier pointé par l'objet source",
+    "distractors": [
+      "Copier uniquement l'adresse contenue dans ad",
+      "Supprimer l'entier de l'objet source",
+      "Mettre systématiquement ad à nullptr"
+    ],
+    "explanation": "Il faut utiliser une nouvelle allocation, puis copier autre.ad dans la nouvelle zone mémoire. Les deux objets auront ainsi des adresses différentes.",
+    "tags": [
+      "copie profonde",
+      "allocation dynamique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_011",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "À quel moment le destructeur d'un objet local est-il appelé ?",
+    "answer": "À la sortie du bloc dans lequel l'objet a été créé",
+    "distractors": [
+      "Uniquement à la fin du programme",
+      "À chaque appel d'une méthode",
+      "Uniquement lorsqu'on appelle delete"
+    ],
+    "explanation": "Un objet local automatique est détruit lorsque son bloc se termine. Son destructeur est appelé avant la disparition de son espace mémoire.",
+    "tags": [
+      "destructeur",
+      "durée de vie"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_012",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quand le destructeur d'un objet alloué dynamiquement est-il appelé ?",
+    "answer": "Lors de l'appel à delete sur le pointeur qui désigne cet objet",
+    "distractors": [
+      "Automatiquement à la fin du bloc où le pointeur est déclaré",
+      "À chaque modification de l'objet",
+      "Lors de l'appel au constructeur de copie"
+    ],
+    "explanation": "L'objet dynamique reste vivant après la sortie du bloc contenant son pointeur. Il faut appeler delete pour déclencher son destructeur et libérer sa mémoire.",
+    "tags": [
+      "destructeur",
+      "delete",
+      "tas"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Pour détruire un objet alloué avec new, on utilise l'instruction {{blank}}."
+  },
+  {
+    "id": "c_013",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Pourquoi une classe qui contient un tableau alloué avec new[] doit-elle généralement utiliser delete[] dans son destructeur ?",
+    "answer": "Pour libérer correctement la mémoire du tableau alloué avec new[]",
+    "distractors": [
+      "Pour recopier le tableau avant sa destruction",
+      "Pour libérer uniquement le premier élément",
+      "Pour convertir le tableau en pointeur"
+    ],
+    "explanation": "new[] et delete[] sont les opérateurs correspondants pour gérer les tableaux dynamiques. Utiliser delete à la place de delete[] entraîne un comportement indéfini.",
+    "tags": [
+      "destructeur",
+      "tableaux dynamiques"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_014",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Une classe possède un attribut int ad. Son constructeur utilise new int[5]. Quelle opération doit être réalisée dans son destructeur ?",
+    "answer": "delete[] ad",
+    "distractors": [
+      "delete ad",
+      "free(ad)",
+      "ad = nullptr uniquement"
+    ],
+    "explanation": "La mémoire ayant été allouée avec new[], elle doit être libérée avec delete[]. Affecter nullptr au pointeur ne libère pas la mémoire.",
+    "tags": [
+      "destructeur",
+      "delete",
+      "tableaux"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_015",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de l'opérateur d'affectation operator= dans une classe ?",
+    "answer": "Définir comment les données d'un objet existant sont remplacées par celles d'un autre objet",
+    "distractors": [
+      "Créer obligatoirement un nouvel objet",
+      "Détruire les deux objets concernés",
+      "Appeler automatiquement le constructeur par défaut"
+    ],
+    "explanation": "L'opérateur d'affectation personnalise le comportement de l'expression objet1 = objet2. Il permet notamment de gérer correctement les ressources dynamiques.",
+    "tags": [
+      "operator=",
+      "affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "En C++, la surcharge de l'opérateur d'affectation utilise la fonction membre {{blank}}."
+  },
+  {
+    "id": "c_016",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Quelle est la signature classique d'un opérateur d'affectation pour une classe Liste ?",
+    "answer": "Liste& operator=(const Liste& autre)",
+    "distractors": [
+      "Liste operator=(Liste autre)",
+      "void operator=(const Liste* autre)",
+      "Liste* operator=(Liste& autre)"
+    ],
+    "explanation": "L'opérateur retourne généralement une référence vers l'objet courant pour permettre les affectations en chaîne. Le paramètre est une référence constante.",
+    "tags": [
+      "operator=",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La signature classique de l'affectation est Liste& operator=(const Liste& {{blank}})."
+  },
+  {
+    "id": "c_017",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Pourquoi faut-il tester this != &autre dans un opérateur d'affectation ?",
+    "answer": "Pour détecter une auto-affectation et éviter de détruire les données que l'on souhaite recopier",
+    "distractors": [
+      "Pour vérifier que l'objet source est constant",
+      "Pour empêcher toute affectation entre deux objets",
+      "Pour vérifier que les deux objets ont la même taille"
+    ],
+    "explanation": "Dans a = a, this et &autre désignent le même objet. Si l'on libère sa mémoire avant de recopier les données, on risque de lire une ressource déjà détruite.",
+    "tags": [
+      "operator=",
+      "auto-affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "c_018",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Une classe possède un pointeur vers une ressource dynamique. Que doit généralement faire operator= avant de recopier cette ressource ?",
+    "answer": "Libérer l'ancienne ressource de l'objet destination, après avoir vérifié qu'il ne s'agit pas d'une auto-affectation",
+    "distractors": [
+      "Libérer la ressource de l'objet source",
+      "Supprimer les deux objets",
+      "Copier directement l'adresse du pointeur source sans autre opération"
+    ],
+    "explanation": "L'ancienne ressource de la destination doit être libérée pour éviter une fuite mémoire. Il faut également éviter de libérer la ressource si la source et la destination sont le même objet.",
+    "tags": [
+      "operator=",
+      "mémoire",
+      "copie profonde"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_019",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Pourquoi l'opérateur d'affectation retourne-t-il généralement une référence vers l'objet courant (this) ?",
+    "answer": "Pour permettre les affectations en chaîne sans créer une copie supplémentaire",
+    "distractors": [
+      "Pour déclencher automatiquement le destructeur",
+      "Pour modifier l'objet source",
+      "Pour allouer un nouvel objet dans le tas"
+    ],
+    "explanation": "Avec un retour par référence, l'expression a = b = c fonctionne : b = c retourne b, qui est ensuite affecté à a.",
+    "tags": [
+      "operator=",
+      "référence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_020",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Une classe possède un pointeur int ad et définit un destructeur qui exécute delete ad, mais ne définit pas de constructeur de copie. Quel problème peut apparaître lors d'une copie ?",
+    "answer": "Les deux objets peuvent partager la même adresse et provoquer une double libération",
+    "distractors": [
+      "Le compilateur interdit automatiquement toute copie",
+      "La mémoire est automatiquement dupliquée en profondeur",
+      "Le destructeur est appelé uniquement sur l'objet copié"
+    ],
+    "explanation": "Le constructeur de copie implicite copie l'adresse du pointeur. Les deux objets tentent ensuite de libérer la même zone mémoire.",
+    "tags": [
+      "copie",
+      "double libération",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_021",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Combien de destructeurs une classe C++ peut-elle définir ?",
+    "answer": "Un seul destructeur",
+    "distractors": [
+      "Autant que de constructeurs",
+      "Deux destructeurs au maximum",
+      "Aucun, car il est toujours généré automatiquement"
+    ],
+    "explanation": "Une classe possède un destructeur unique, sans argument et sans valeur de retour. Il ne peut pas être surchargé.",
+    "tags": [
+      "destructeur",
+      "syntaxe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_022",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 2,
+    "prompt": "Que se passe-t-il si une classe ne définit pas son propre destructeur ?",
+    "answer": "Un destructeur implicite est généré et détruit les attributs membres en suivant leurs propres règles de destruction",
+    "distractors": [
+      "Tous les pointeurs bruts sont automatiquement libérés",
+      "La classe ne peut plus être instanciée",
+      "Le destructeur est appelé uniquement à la compilation"
+    ],
+    "explanation": "Le destructeur implicite appelle notamment les destructeurs des attributs qui en possèdent un. En revanche, un pointeur brut ne libère pas automatiquement la mémoire qu'il désigne.",
+    "tags": [
+      "destructeur",
+      "destruction implicite"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_023",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Dans quels cas le constructeur de copie peut-il être appelé ?",
+    "answer": "Lors de l'initialisation d'un objet à partir d'un autre objet, d'un passage par valeur ou d'un retour par valeur",
+    "distractors": [
+      "Uniquement lors d'une affectation entre deux objets existants",
+      "Uniquement lors de l'appel à delete",
+      "À chaque accès à un attribut de l'objet"
+    ],
+    "explanation": "Le constructeur de copie intervient notamment lors des initialisations par copie et des passages par valeur. Les optimisations et l'élision de copie peuvent éviter certains appels effectifs.",
+    "tags": [
+      "constructeur de copie",
+      "passage par valeur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_024",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Associe chaque opération C++ à la fonction membre principalement concernée.",
+    "answer": "Chaque opération avec sa fonction correspondante",
+    "distractors": [],
+    "explanation": "Complexe z2(z1) initialise un nouvel objet par copie. z2 = z1 affecte un objet existant. delete p détruit un objet dynamique et déclenche son destructeur.",
+    "tags": [
+      "constructeur de copie",
+      "affectation",
+      "destructeur"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Complexe z2(z1)",
+        "Constructeur de copie"
+      ],
+      [
+        "z2 = z1",
+        "Opérateur d'affectation"
+      ],
+      [
+        "~Complexe()",
+        "Destructeur"
+      ],
+      [
+        "Complexe z",
+        "Constructeur par défaut"
+      ]
+    ]
+  },
+  {
+    "id": "c_025",
+    "subject": "lifapc",
+    "skill": "lifapc.copie",
+    "difficulty": 3,
+    "prompt": "Une classe CC possède un attribut int* ad. Son constructeur alloue un tableau avec new int[5]. Quel ensemble de fonctions permet de gérer correctement cette ressource lors de copies et de destructions ?",
+    "answer": "Un constructeur de copie profond, un destructeur utilisant delete[] et un opérateur d'affectation gérant la copie profonde",
+    "distractors": [
+      "Un constructeur par défaut, un destructeur vide et une affectation implicite",
+      "Un constructeur de copie superficiel, un destructeur utilisant free et une affectation par adresse",
+      "Un constructeur de copie uniquement, sans destructeur ni opérateur d'affectation"
+    ],
+    "explanation": "La règle des trois permet de gérer correctement la propriété du tableau dynamique. Chaque objet doit posséder sa propre allocation et la libérer avec delete[].",
+    "tags": [
+      "règle des trois",
+      "copie profonde",
+      "tableaux dynamiques"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liste_tp1_031",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du constructeur de copie Liste(const Liste & l) en C++ ?",
+    "answer": "Créer une nouvelle liste indépendante contenant les mêmes éléments que l.",
+    "distractors": [
+      "Créer une liste vide.",
+      "Partager directement les cellules de l.",
+      "Supprimer la liste l."
+    ],
+    "explanation": "Le constructeur de copie réalise une copie profonde : il crée de nouvelles cellules contenant les mêmes informations que celles de la liste source.",
+    "tags": ["copie profonde", "constructeur de copie", "C++"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_032",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de initialiseListeCopie en C ?",
+    "answer": "Initialiser une liste avec une copie profonde d'une autre liste.",
+    "distractors": [
+      "Initialiser une liste vide uniquement.",
+      "Copier seulement l'adresse de la première cellule.",
+      "Détruire la liste source."
+    ],
+    "explanation": "La fonction construit une nouvelle chaîne de cellules indépendante de celle de la liste source.",
+    "tags": ["C", "copie profonde", "initialisation"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_033",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "À quoi sert l'opérateur = surchargé dans la classe Liste ?",
+    "answer": "Affecter à une liste une copie profonde d'une autre liste déjà initialisée.",
+    "distractors": [
+      "Comparer deux listes.",
+      "Ajouter un élément en tête.",
+      "Détruire automatiquement les deux listes."
+    ],
+    "explanation": "L'opérateur d'affectation permet de remplacer le contenu d'une liste par une copie profonde d'une autre liste.",
+    "tags": ["affectation", "C++", "copie profonde"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_034",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Pourquoi faut-il généralement libérer l'ancien contenu de la liste avant de réaliser une nouvelle affectation ?",
+    "answer": "Pour éviter les fuites mémoire.",
+    "distractors": [
+      "Pour empêcher la copie des éléments.",
+      "Pour rendre la liste obligatoirement vide définitivement.",
+      "Pour augmenter la capacité de la liste."
+    ],
+    "explanation": "Si l'ancienne chaîne de cellules est abandonnée sans être libérée, ses adresses deviennent inaccessibles et la mémoire ne peut plus être correctement récupérée.",
+    "tags": ["affectation", "fuite mémoire", "gestion mémoire"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_035",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Quel problème peut survenir si une classe Liste ne possède pas de constructeur de copie personnalisé alors qu'elle gère des pointeurs ?",
+    "answer": "Une copie superficielle peut provoquer un partage involontaire des cellules et une double libération mémoire.",
+    "distractors": [
+      "Les éléments deviennent automatiquement triés.",
+      "La liste ne peut plus être affichée.",
+      "Tous les pointeurs deviennent automatiquement NULL."
+    ],
+    "explanation": "Le constructeur de copie généré automatiquement copie les membres, notamment l'adresse ad. Deux listes peuvent alors partager la même chaîne de cellules.",
+    "tags": ["copie", "pointeurs", "double libération"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_036",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du destructeur ~Liste() en C++ ?",
+    "answer": "Libérer toutes les cellules dynamiquement allouées par la liste.",
+    "distractors": [
+      "Créer une nouvelle liste.",
+      "Afficher tous les éléments.",
+      "Copier les éléments dans une autre liste."
+    ],
+    "explanation": "Le destructeur parcourt la chaîne de cellules et libère chaque cellule afin de restituer la mémoire utilisée par la liste.",
+    "tags": ["destructeur", "C++", "mémoire"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_037",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est l'équivalent du destructeur en C dans le TP ?",
+    "answer": "La fonction testamentListe.",
+    "distractors": [
+      "La fonction initialiseListeDefaut.",
+      "La fonction malloc.",
+      "La fonction testListeVide."
+    ],
+    "explanation": "Le C ne possède pas de destructeur automatique. Il faut donc appeler explicitement testamentListe pour libérer les ressources utilisées par la liste.",
+    "tags": ["C", "destruction", "mémoire"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_038",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence entre videListe et testamentListe ?",
+    "answer": "videListe retire les éléments tout en conservant une liste utilisable, tandis que testamentListe prépare la liste à être détruite.",
+    "distractors": [
+      "Les deux fonctions réalisent exactement la même opération.",
+      "videListe détruit l'objet Liste tandis que testamentListe ajoute une cellule.",
+      "testamentListe affiche les éléments et videListe les copie."
+    ],
+    "explanation": "Vider une liste laisse son objet initialisé et réutilisable. Le testament libère ses ressources avant la fin de vie de l'objet.",
+    "tags": ["destruction", "liste vide", "cycle de vie"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_039",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Qu'est-ce qu'une fuite mémoire ?",
+    "answer": "Une situation où une mémoire allouée dynamiquement n'est plus accessible et ne peut donc plus être libérée correctement.",
+    "distractors": [
+      "Une situation où malloc retourne NULL.",
+      "Une situation où une variable locale est détruite.",
+      "Une situation où deux listes possèdent des tailles différentes."
+    ],
+    "explanation": "Une fuite mémoire apparaît notamment lorsqu'on perd le dernier pointeur permettant d'accéder à un bloc alloué sans l'avoir libéré.",
+    "tags": ["fuite mémoire", "allocation dynamique"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_040",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Qu'est-ce qu'une double libération mémoire ?",
+    "answer": "Libérer deux fois le même bloc de mémoire.",
+    "distractors": [
+      "Allouer deux cellules différentes.",
+      "Copier deux fois une liste.",
+      "Libérer deux cellules différentes."
+    ],
+    "explanation": "Après une première libération avec delete ou free, le bloc ne doit pas être libéré une seconde fois. Une double libération entraîne un comportement indéfini.",
+    "tags": ["mémoire", "destructeur", "pointeurs"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_041",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Pourquoi faut-il sauvegarder le pointeur vers la cellule suivante avant de libérer une cellule ?",
+    "answer": "Parce qu'après libération, accéder aux champs de la cellule détruite n'est plus valide.",
+    "distractors": [
+      "Parce que free supprime automatiquement toute la liste.",
+      "Parce que le pointeur suivant est toujours NULL.",
+      "Parce que la cellule suivante doit être copiée."
+    ],
+    "explanation": "Il faut récupérer l'adresse suivante avant de libérer la cellule courante. Cela permet de poursuivre le parcours sans accéder à une zone mémoire libérée.",
+    "tags": ["pointeurs", "libération mémoire", "parcours"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_042",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Quelle est la règle des trois en C++ ?",
+    "answer": "Une classe qui gère directement une ressource doit généralement définir un destructeur, un constructeur de copie et un opérateur d'affectation.",
+    "distractors": [
+      "Une classe doit toujours posséder trois constructeurs.",
+      "Une classe doit contenir trois pointeurs.",
+      "Une classe doit obligatoirement avoir trois attributs privés."
+    ],
+    "explanation": "Ces trois opérations permettent de gérer correctement le cycle de vie et la copie des ressources, notamment lorsqu'une classe possède de la mémoire dynamique.",
+    "tags": ["règle des trois", "C++", "gestion mémoire"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_043",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Pourquoi l'auto-affectation d'une liste doit-elle être prise en compte dans operator= ?",
+    "answer": "Parce qu'affecter une liste à elle-même ne doit pas entraîner la perte de ses propres données.",
+    "distractors": [
+      "Parce que l'auto-affectation augmente automatiquement sa taille.",
+      "Parce que l'opérateur = ne peut pas recevoir deux fois le même objet.",
+      "Parce que l'auto-affectation transforme la liste en liste circulaire."
+    ],
+    "explanation": "Si l'ancien contenu est détruit avant la copie, une auto-affectation peut supprimer les données que l'on souhaite recopier. Un test this != &l permet de traiter ce cas.",
+    "tags": ["affectation", "C++", "auto-affectation"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_044",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Que doit-on faire si malloc échoue lors de l'allocation d'une cellule en C ?",
+    "answer": "Vérifier le résultat NULL et traiter l'échec de l'allocation.",
+    "distractors": [
+      "Utiliser immédiatement le pointeur retourné.",
+      "Appeler free sur une adresse arbitraire.",
+      "Continuer comme si l'allocation avait réussi."
+    ],
+    "explanation": "malloc retourne NULL si l'allocation échoue. Il faut vérifier le pointeur avant d'accéder aux champs de la cellule.",
+    "tags": ["C", "malloc", "sécurité mémoire"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_045",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Pourquoi le TP ne souhaite-t-il pas mettre la désallocation dynamique dans le destructeur de Cellule ?",
+    "answer": "Pour conserver les mêmes prototypes d'opérations sur les cellules et les listes lors du changement d'implantation.",
+    "distractors": [
+      "Parce qu'une cellule ne peut jamais être détruite.",
+      "Parce que les cellules sont toujours allouées sur la pile.",
+      "Parce que le destructeur de Liste ne peut pas appeler d'autres destructeurs."
+    ],
+    "explanation": "Le TP veut pouvoir changer l'implantation de la liste, notamment vers une liste circulaire avec sentinelle, sans modifier les interfaces des opérations sur les cellules et les listes.",
+    "tags": ["cellules", "destructeur", "conception modulaire"],
+    "formats": ["single_choice", "flashcard"]
+  }
+]

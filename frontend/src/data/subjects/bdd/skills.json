@@ -1,0 +1,47 @@
+{
+  "skills": [
+    {
+      "id": "bdd.modele",
+      "name": "Modèle relationnel",
+      "short": "Modèle",
+      "prereq": [],
+      "description": "Tables, n-uplets, attributs et domaines."
+    },
+    {
+      "id": "bdd.cles",
+      "name": "Clés & contraintes",
+      "short": "Clés",
+      "prereq": [
+        "bdd.modele"
+      ],
+      "description": "Clé primaire, clé étrangère, intégrité référentielle."
+    },
+    {
+      "id": "bdd.normalisation",
+      "name": "Normalisation",
+      "short": "Normalisation",
+      "prereq": [
+        "bdd.cles"
+      ],
+      "description": "Dépendances fonctionnelles, 1FN, 2FN, 3FN."
+    },
+    {
+      "id": "bdd.sql",
+      "name": "Requêtes SQL",
+      "short": "SQL",
+      "prereq": [
+        "bdd.modele"
+      ],
+      "description": "SELECT, WHERE, regroupements, DISTINCT."
+    },
+    {
+      "id": "bdd.jointures",
+      "name": "Jointures",
+      "short": "Jointures",
+      "prereq": [
+        "bdd.sql"
+      ],
+      "description": "INNER, LEFT et CROSS JOIN, lecture de requêtes."
+    }
+  ]
+}

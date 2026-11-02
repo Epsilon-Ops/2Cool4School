@@ -1,0 +1,95 @@
+[
+  {
+    "id": "algo_004",
+    "subject": "lifapc",
+    "skill": "lifapc.recherche",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité temporelle d'une recherche dichotomique dans un tableau trié ?",
+    "answer": "O(log n)",
+    "distractors": [
+      "O(n)",
+      "O(1)",
+      "O(n²)"
+    ],
+    "explanation": "À chaque étape, on élimine la moitié des éléments restants : il faut environ log₂(n) étapes.",
+    "tags": [
+      "recherche",
+      "complexité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La complexité d'une recherche dichotomique est {{blank}}."
+  },
+  {
+    "id": "algo_005",
+    "subject": "lifapc",
+    "skill": "lifapc.recherche",
+    "difficulty": 2,
+    "prompt": "Remets les étapes d'une recherche dichotomique dans le bon ordre.",
+    "answer": "Milieu, comparaison, réduction de l'intervalle, répétition",
+    "distractors": [],
+    "explanation": "À chaque tour : on prend le milieu, on le compare à la valeur cherchée, on garde la moitié qui peut la contenir, puis on recommence.",
+    "tags": [
+      "recherche",
+      "dichotomie"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Calculer l'indice du milieu de l'intervalle",
+      "Comparer l'élément du milieu à la valeur cherchée",
+      "Réduire l'intervalle à la moitié concernée",
+      "Recommencer tant que l'intervalle n'est pas vide"
+    ]
+  },
+  {
+    "id": "lifapc_04",
+    "subject": "lifapc",
+    "skill": "lifapc.recherche",
+    "difficulty": 1,
+    "prompt": "Combien d'étapes au maximum faut-il pour une recherche dichotomique dans un tableau trié de 1024 éléments ?",
+    "answer": "10",
+    "distractors": [
+      "1024",
+      "512",
+      "100"
+    ],
+    "explanation": "Chaque étape divise la taille par 2 : log₂(1024) = 10.",
+    "tags": [
+      "recherche"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "lifapc_05",
+    "subject": "lifapc",
+    "skill": "lifapc.recherche",
+    "difficulty": 2,
+    "prompt": "Remets les étapes d'une recherche dichotomique dans l'ordre.",
+    "answer": "Milieu, comparaison, élimination, puis recommencer.",
+    "distractors": [],
+    "explanation": "On répète ces trois gestes jusqu'à trouver l'élément ou épuiser l'intervalle.",
+    "tags": [
+      "recherche"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Calculer le milieu de l'intervalle",
+      "Comparer l'élément recherché au milieu",
+      "Éliminer la moitié qui ne peut pas contenir l'élément",
+      "Recommencer sur l'intervalle restant"
+    ]
+  }
+]

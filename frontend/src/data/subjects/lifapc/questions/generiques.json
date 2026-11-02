@@ -1,0 +1,63 @@
+[
+  {
+    "id": "lifapc_16",
+    "subject": "lifapc",
+    "skill": "lifapc.generiques",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'un template en C++ ?",
+    "answer": "Un modèle de code paramétré par des types, instancié à la compilation",
+    "distractors": [
+      "Une fonction exécutée uniquement à l'exécution",
+      "Une structure stockée seulement sur la pile",
+      "Un fichier d'en-tête obligatoire pour toute classe"
+    ],
+    "explanation": "Le compilateur génère une version concrète pour chaque type utilisé, comme une liste d'entiers ou une liste de chaînes.",
+    "tags": [
+      "generiques"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "lifapc_17",
+    "subject": "lifapc",
+    "skill": "lifapc.generiques",
+    "difficulty": 1,
+    "prompt": "Complète la déclaration.",
+    "answer": "template",
+    "distractors": [],
+    "explanation": "Le mot-clé template précède la déclaration de la classe ou de la fonction générique.",
+    "tags": [
+      "generiques"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "En C++, une classe générique se déclare avec le mot-clé {{blank}}."
+  },
+  {
+    "id": "lifapc_18",
+    "subject": "lifapc",
+    "skill": "lifapc.generiques",
+    "difficulty": 3,
+    "prompt": "Pourquoi les templates de classe sont-ils souvent entièrement écrits dans un fichier d'en-tête ?",
+    "answer": "Le compilateur doit voir le code pour générer chaque instanciation",
+    "distractors": [
+      "Les fichiers .cpp ne peuvent pas contenir de classes",
+      "Pour empêcher les doubles inclusions",
+      "Pour accélérer l'édition de liens"
+    ],
+    "explanation": "Contrairement à une fonction ordinaire, un template n'est compilé qu'au moment où il est instancié avec un type précis.",
+    "tags": [
+      "generiques"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

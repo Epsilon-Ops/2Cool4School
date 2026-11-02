@@ -8,11 +8,17 @@ export const DEFAULT_PROGRESS = {
   lastDay: null,
   skills: {}, // { [skillId]: { mastery: 0-100, seen: n } }
   cards: {},  // { [questionId]: données SM-2 }
+  stats: { answered: 0, correct: 0 }, // tentatives totales et réussies
 };
 
 export function loadProgress() {
   try {
-    return { ...DEFAULT_PROGRESS, ...JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}') };
+    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    return {
+      ...structuredClone(DEFAULT_PROGRESS),
+      ...saved,
+      stats: { ...DEFAULT_PROGRESS.stats, ...(saved.stats ?? {}) },
+    };
   } catch {
     return structuredClone(DEFAULT_PROGRESS);
   }
@@ -55,5 +61,7 @@ export function applyAnswer(progress, q, ok, quality) {
   p.skills[q.skill] = s;
 
   if (ok) p.xp += 10 + q.difficulty * 5;
+  p.stats.answered += 1;
+  if (ok) p.stats.correct += 1;
   return p;
 }

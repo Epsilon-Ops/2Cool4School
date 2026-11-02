@@ -1,0 +1,135 @@
+[
+  {
+    "id": "reseaux_001",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Dans un transfert fiable de données, combien de propriétés doivent être garanties ?",
+    "answer": "Quatre : sans erreur, sans perte, dans l'ordre et sans duplication",
+    "distractors": [
+      "Deux : sans erreur et sans perte",
+      "Trois : sans erreur, sans perte et rapide",
+      "Cinq : sans erreur, sans perte, ordonné, rapide et sécurisé"
+    ],
+    "explanation": "La fiabilité implique l'arrivée sans erreur, sans perte, dans l'ordre et sans duplication. La rapidité relève d'une autre contrainte, celle des applications multimédias.",
+    "tags": [
+      "fiabilité",
+      "TCP"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_002",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Quel protocole met en œuvre la fiabilité sur Internet ?",
+    "answer": "TCP",
+    "distractors": [
+      "UDP",
+      "IP",
+      "HTTP"
+    ],
+    "explanation": "TCP gère la détection d'erreurs, les retransmissions, la numérotation et la remise en ordre. UDP n'offre pas cette fiabilité.",
+    "tags": [
+      "TCP",
+      "protocoles"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Sur Internet, la fiabilité est assurée par le protocole {{blank}}."
+  },
+  {
+    "id": "reseaux_15",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel mécanisme permet à TCP de retransmettre les segments perdus ?",
+    "answer": "Les accusés de réception (ACK) et les délais de retransmission",
+    "distractors": [
+      "Le chiffrement TLS",
+      "Le partage de charge",
+      "La traduction d'adresses (NAT)"
+    ],
+    "explanation": "L'émetteur renvoie un segment si aucun ACK n'arrive avant l'expiration d'un délai.",
+    "tags": [
+      "fiabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_16",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "À quoi sert le numéro de séquence dans un segment TCP ?",
+    "answer": "À remettre les données dans l'ordre et à détecter les doublons",
+    "distractors": [
+      "À chiffrer les données",
+      "À indiquer la taille du réseau",
+      "À identifier le routeur suivant"
+    ],
+    "explanation": "Chaque octet est numéroté, ce qui permet au récepteur de reconstituer le flux.",
+    "tags": [
+      "fiabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_17",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Remets dans l'ordre l'établissement d'une connexion TCP (trois temps).",
+    "answer": "SYN → SYN-ACK → ACK",
+    "distractors": [],
+    "explanation": "C'est la poignée de main en trois temps (three-way handshake).",
+    "tags": [
+      "fiabilite"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "SYN du client",
+      "SYN-ACK du serveur",
+      "ACK du client"
+    ]
+  },
+  {
+    "id": "reseaux_18",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel protocole de transport ne garantit ni fiabilité ni ordre des messages ?",
+    "answer": "UDP",
+    "distractors": [
+      "TCP",
+      "SCTP",
+      "QUIC"
+    ],
+    "explanation": "UDP envoie des datagrammes sans connexion ni accusé de réception : il est léger, idéal pour la voix ou le jeu en ligne.",
+    "tags": [
+      "fiabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  }
+]

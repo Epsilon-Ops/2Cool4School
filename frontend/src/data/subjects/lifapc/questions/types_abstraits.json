@@ -1,0 +1,639 @@
+[
+  {
+    "id": "ta_001",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un type, selon le cours ?",
+    "answer": "Un ensemble de valeurs et un ensemble d'opérations que l'on peut effectuer sur ces valeurs et variables",
+    "distractors": [
+      "Uniquement une représentation en mémoire",
+      "Uniquement une liste de fonctions",
+      "Un fichier contenant du code C++"
+    ],
+    "explanation": "Le cours définit un type par les valeurs qu'il représente et les opérations disponibles sur ces valeurs.",
+    "tags": [
+      "type",
+      "définition"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_002",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Faut-il connaître le codage interne des valeurs pour utiliser un type abstrait ?",
+    "answer": "Non",
+    "distractors": [
+      "Oui, toujours",
+      "Seulement pour les types numériques",
+      "Seulement en C++"
+    ],
+    "explanation": "Un type abstrait s'utilise sans connaître la manière dont ses valeurs et ses opérations sont codées.",
+    "tags": [
+      "abstraction",
+      "encapsulation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_003",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Quel exemple de type et d'opérations est donné dans le cours ?",
+    "answer": "Les entiers avec les opérations +, -, * et /",
+    "distractors": [
+      "Les fichiers avec ouvrir et fermer uniquement",
+      "Les pointeurs avec new uniquement",
+      "Les chaînes C avec leur représentation interne"
+    ],
+    "explanation": "Le cours donne l'exemple des entiers et des opérations arithmétiques usuelles.",
+    "tags": [
+      "exemple",
+      "opérations"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_004",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Pourquoi construire de nouveaux types abstraits à partir de types existants ?",
+    "answer": "Pour les manipuler au moyen d'un jeu d'opérations sans connaître leur structuration interne",
+    "distractors": [
+      "Pour supprimer toutes les opérations existantes",
+      "Pour obliger l'utilisateur à gérer directement la mémoire",
+      "Pour éviter toute définition de type"
+    ],
+    "explanation": "Le cours insiste sur la manipulation des valeurs via les opérations offertes, indépendamment de leur représentation.",
+    "tags": [
+      "construction",
+      "abstraction"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_005",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Pourquoi les chaînes de caractères C/C++ sont-elles présentées comme un piètre exemple de type abstrait ?",
+    "answer": "Parce que leur utilisation est étroitement liée à leur implantation",
+    "distractors": [
+      "Parce qu'elles ne contiennent aucune valeur",
+      "Parce qu'elles ne peuvent pas être manipulées",
+      "Parce qu'elles sont toujours allouées dans le tas"
+    ],
+    "explanation": "Le cours souligne que l'utilisation des chaînes C/C++ dépend fortement de leur représentation et de leur implantation.",
+    "tags": [
+      "chaînes de caractères",
+      "implantation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_006",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un module dans le cadre du cours ?",
+    "answer": "Un regroupement cohérent de constantes, variables globales, types, procédures et fonctions",
+    "distractors": [
+      "Uniquement un fichier .cpp",
+      "Une seule fonction principale",
+      "Un espace mémoire réservé aux objets"
+    ],
+    "explanation": "Le module regroupe des éléments qui forment un ensemble cohérent.",
+    "tags": [
+      "module",
+      "définition"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_007",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle de l'interface d'un module ?",
+    "answer": "Présenter clairement les constantes, variables, types, procédures et fonctions offertes par le module",
+    "distractors": [
+      "Décrire uniquement les variables locales",
+      "Contenir uniquement le code d'exécution du programme utilisateur",
+      "Remplacer l'implantation"
+    ],
+    "explanation": "L'interface décrit ce que le module met à disposition de ses utilisateurs.",
+    "tags": [
+      "interface",
+      "module"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_008",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle de l'implantation d'un module ?",
+    "answer": "Mettre en œuvre les types, procédures et fonctions proposés dans l'interface, ainsi que les éléments internes",
+    "distractors": [
+      "Lister uniquement les éléments exportés",
+      "Décrire le besoin de l'utilisateur sans code",
+      "Contenir exclusivement le main"
+    ],
+    "explanation": "L'implantation fournit la réalisation concrète des éléments annoncés dans l'interface et peut contenir des éléments internes.",
+    "tags": [
+      "implantation",
+      "module"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_009",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Quel avantage apporte la séparation entre interface et implantation ?",
+    "answer": "On peut modifier l'implantation sans modifier l'interface, si le service offert reste identique",
+    "distractors": [
+      "On n'a plus besoin de compiler",
+      "On supprime les types du module",
+      "On rend toutes les données publiques"
+    ],
+    "explanation": "La séparation évite les dépendances à l'implantation et permet de faire évoluer celle-ci sans toucher aux utilisateurs du module.",
+    "tags": [
+      "séparation",
+      "interface",
+      "implantation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_010",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Quel autre avantage de la séparation interface/implantation est cité dans le cours ?",
+    "answer": "Elle permet de mettre en place des bibliothèques logicielles",
+    "distractors": [
+      "Elle interdit la compilation séparée",
+      "Elle supprime les fichiers d'en-tête",
+      "Elle rend inutile le programme utilisateur"
+    ],
+    "explanation": "Le cours cite la possibilité de construire des bibliothèques et de compiler l'implantation indépendamment des programmes utilisateurs.",
+    "tags": [
+      "bibliothèques",
+      "compilation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_011",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Dans le pseudo-langage de description des modules, que signifie « importer » ?",
+    "answer": "Déclarer les éléments de modules extérieurs utilisés dans l'interface du module",
+    "distractors": [
+      "Déclarer les éléments que le module offre",
+      "Définir les variables locales du main",
+      "Exécuter l'initialisation du programme"
+    ],
+    "explanation": "Importer concerne les éléments externes dont l'interface du module a besoin.",
+    "tags": [
+      "pseudo-langage",
+      "importer"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_012",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Dans le pseudo-langage des modules, que signifie « exporter » ?",
+    "answer": "Déclarer les éléments offerts par le module",
+    "distractors": [
+      "Déclarer les éléments utilisés en interne uniquement",
+      "Compiler le fichier source",
+      "Détruire les objets du module"
+    ],
+    "explanation": "Les éléments exportés constituent les services et éléments accessibles aux utilisateurs du module.",
+    "tags": [
+      "pseudo-langage",
+      "exporter"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_013",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "À quoi sert la partie « implantation » dans le pseudo-langage du cours ?",
+    "answer": "À déclarer les dépendances nécessaires, les éléments internes et les définitions des éléments offerts",
+    "distractors": [
+      "À ne déclarer que le nom du module",
+      "À écrire uniquement les appels du programme utilisateur",
+      "À lister les bibliothèques sans définir de fonctions"
+    ],
+    "explanation": "L'implantation rassemble les dépendances de réalisation, les éléments internes non exportés et les définitions des éléments offerts.",
+    "tags": [
+      "pseudo-langage",
+      "implantation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_014",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 1,
+    "prompt": "À quoi correspond la partie « initialisation » d'un module ?",
+    "answer": "Aux actions exécutées au début du programme pour garantir une utilisation correcte du module",
+    "distractors": [
+      "Aux actions exécutées après chaque fonction",
+      "À la destruction de toutes les variables globales",
+      "À la compilation du fichier .h"
+    ],
+    "explanation": "C'est le rôle donné à l'initialisation dans le pseudo-langage présenté.",
+    "tags": [
+      "initialisation",
+      "module"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_015",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Dans l'exemple du module nombre_complexe, quel type extérieur est importé ?",
+    "answer": "Le type MonRéel fourni par le module nombre_réel",
+    "distractors": [
+      "Le type Complexe fourni par le module nombre_entier",
+      "Le type chaîne fourni par le module nombre_complexe",
+      "Le type Pile fourni par le module nombre_réel"
+    ],
+    "explanation": "L'exemple importe le module nombre_réel, qui offre le type MonRéel.",
+    "tags": [
+      "nombre_complexe",
+      "importation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_016",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Dans l'interface du module nombre_complexe, quels éléments sont notamment exportés ?",
+    "answer": "La constante PI, la variable cpteComplexe, le type Complexe et des opérations sur Complexe",
+    "distractors": [
+      "Uniquement les champs x et y",
+      "Uniquement le fichier main.cpp",
+      "Seulement les variables locales des constructeurs"
+    ],
+    "explanation": "Le transparent d'interface énumère PI, cpteComplexe, Complexe, des initialisations, le testament, l'affectation, affiche et addition.",
+    "tags": [
+      "nombre_complexe",
+      "exportation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_017",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Comment le type Complexe est-il représenté dans l'implantation en pseudo-langage du cours ?",
+    "answer": "Par une structure contenant deux champs x et y de type MonRéel",
+    "distractors": [
+      "Par un tableau de quatre entiers",
+      "Par une chaîne de caractères",
+      "Par deux pointeurs vers des fonctions"
+    ],
+    "explanation": "L'implantation donnée définit Complexe comme une structure avec x et y.",
+    "tags": [
+      "Complexe",
+      "représentation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_018",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de la variable cpteComplexe dans l'exemple du cours ?",
+    "answer": "Compter le nombre de Complexes manipulés",
+    "distractors": [
+      "Stocker la partie réelle du dernier complexe",
+      "Compter le nombre d'additions uniquement",
+      "Mémoriser l'adresse du module"
+    ],
+    "explanation": "L'interface la décrit comme le nombre de Complexes manipulés; l'implantation l'initialise à zéro et l'ajuste lors des initialisations et destructions.",
+    "tags": [
+      "compteur",
+      "nombre_complexe"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_019",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Pourquoi le cours introduit-il des constructeurs et des destructeurs pour la mise en œuvre C++ du type Complexe ?",
+    "answer": "Pour déclencher automatiquement les opérations d'initialisation et de destruction des instances",
+    "distractors": [
+      "Pour remplacer toutes les opérations arithmétiques",
+      "Pour rendre les champs x et y obligatoirement publics",
+      "Pour éviter de définir une interface"
+    ],
+    "explanation": "Le cours explique que le C++ automatise les procédures d'initialisation et de testament lors de la création et de la disparition des objets.",
+    "tags": [
+      "C++",
+      "constructeur",
+      "destructeur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_020",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Selon le cours, que contient le fichier d'en-tête .h dans la mise en œuvre C++ d'un module ?",
+    "answer": "Les déclarations des éléments importés et exportés, ainsi que les définitions de types nécessaires",
+    "distractors": [
+      "Uniquement les corps de toutes les fonctions",
+      "Uniquement le programme principal",
+      "Uniquement les variables locales"
+    ],
+    "explanation": "Le cours présente le .h comme l'interface du module; il contient aussi les définitions de types, donc les données membres des classes ou structures.",
+    "tags": [
+      "fichier h",
+      "interface",
+      "C++"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_021",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du fichier source .cpp dans la répartition du module ?",
+    "answer": "Contenir l'implantation, c'est-à-dire les définitions et réalisations des éléments du module",
+    "distractors": [
+      "Contenir uniquement les déclarations publiques",
+      "Remplacer le fichier d'en-tête",
+      "Contenir exclusivement les types primitifs"
+    ],
+    "explanation": "Le cours associe le fichier .cpp à l'implantation du module.",
+    "tags": [
+      "fichier cpp",
+      "implantation",
+      "C++"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_022",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 3,
+    "prompt": "Pourquoi l'opérateur + de Complexe est-il présenté comme une fonction non membre dans le cours ?",
+    "answer": "Parce que les deux opérandes jouent des rôles symétriques et qu'il n'y a pas de raison de privilégier celui de gauche",
+    "distractors": [
+      "Parce qu'une fonction membre ne peut jamais retourner un objet",
+      "Parce que l'opérateur + n'a qu'un seul opérande",
+      "Parce que les fonctions non membres sont toujours plus rapides"
+    ],
+    "explanation": "Le cours indique que + a deux opérandes et qu'une fonction non membre conserve le caractère symétrique de l'opérateur.",
+    "tags": [
+      "opérateur +",
+      "fonction non membre",
+      "symétrie"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_023",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 3,
+    "prompt": "Quel est l'intérêt d'une fonction membre statique get_compteur() dans l'exemple Complexe ?",
+    "answer": "Permettre de consulter le compteur de la classe sans rendre directement la variable statique accessible",
+    "distractors": [
+      "Créer une nouvelle instance de Complexe à chaque appel",
+      "Détruire tous les objets Complexe",
+      "Modifier automatiquement les coordonnées x et y"
+    ],
+    "explanation": "Le cours montre que le compteur peut être privé et consulté via une fonction membre statique publique.",
+    "tags": [
+      "static",
+      "encapsulation",
+      "compteur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_024",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 3,
+    "prompt": "Associe chaque fichier à son rôle dans l'organisation du module C++ présentée dans le cours.",
+    "answer": "Chaque fichier correspond à son rôle",
+    "distractors": [],
+    "explanation": "Le fichier .h expose les déclarations et types nécessaires; le fichier .cpp contient l'implantation; le fichier main.cpp contient le programme utilisateur.",
+    "tags": [
+      "fichiers",
+      "modularité"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "NombreComplexe.h",
+        "Interface : déclarations et définition du type"
+      ],
+      [
+        "NombreComplexe.cpp",
+        "Implantation du module"
+      ],
+      [
+        "main.cpp",
+        "Programme utilisateur"
+      ]
+    ]
+  },
+  {
+    "id": "ta_025",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 3,
+    "prompt": "Dans le pseudo-langage, quelles catégories d'éléments un module peut-il regrouper ?",
+    "answer": "Constantes, variables globales au module, types, procédures et fonctions",
+    "distractors": [
+      "Uniquement des types et des classes",
+      "Uniquement des fichiers et des bibliothèques",
+      "Seulement des variables locales"
+    ],
+    "explanation": "La diapositive sur le pseudo-langage précise explicitement les catégories d'éléments possibles.",
+    "tags": [
+      "module",
+      "éléments"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_026",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 2,
+    "prompt": "Quelle dépendance la séparation interface/implantation cherche-t-elle notamment à éviter ?",
+    "answer": "La dépendance des utilisateurs à la structuration interne ou à l'implantation du type",
+    "distractors": [
+      "La dépendance entre le programme et le compilateur",
+      "La dépendance entre deux variables locales",
+      "La dépendance entre les opérateurs + et -"
+    ],
+    "explanation": "L'objectif est d'éviter que l'utilisation du type dépende de sa réalisation interne.",
+    "tags": [
+      "dépendances",
+      "abstraction"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_027",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 3,
+    "prompt": "Dans l'exemple du programme utilisateur, que signifie l'appel initialiser(z2, z1) ?",
+    "answer": "Initialiser z2 à partir de la valeur de z1",
+    "distractors": [
+      "Détruire z1 puis renommer z2",
+      "Additionner z1 et z2",
+      "Afficher uniquement la partie imaginaire de z1"
+    ],
+    "explanation": "L'interface du module prévoit une opération d'initialisation d'un Complexe à partir d'un autre Complexe.",
+    "tags": [
+      "initialisation",
+      "programme utilisateur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "ta_028",
+    "subject": "lifapc",
+    "skill": "lifapc.types_abstraits",
+    "difficulty": 3,
+    "prompt": "Quelle différence essentielle le cours établit-il entre interface et implantation ?",
+    "answer": "L'interface décrit ce que le module offre; l'implantation décrit comment ces services sont réalisés",
+    "distractors": [
+      "L'interface est exécutée et l'implantation est ignorée",
+      "L'interface contient les données locales et l'implantation les paramètres",
+      "Les deux termes désignent exactement le même fichier"
+    ],
+    "explanation": "C'est la distinction centrale de la programmation modulaire et de la conception par types abstraits.",
+    "tags": [
+      "interface",
+      "implantation",
+      "synthèse"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  }
+]

@@ -1,0 +1,110 @@
+[
+  {
+    "id": "bdd_003",
+    "subject": "bdd",
+    "skill": "bdd.cles",
+    "difficulty": 2,
+    "prompt": "Quelle est la propriété d'une clé primaire ?",
+    "answer": "Identifier chaque ligne de façon unique et non nulle",
+    "distractors": [
+      "Pouvoir contenir des doublons",
+      "Être toujours un entier",
+      "Référencer obligatoirement une autre table"
+    ],
+    "explanation": "Une clé primaire est unique et ne peut pas être NULL : elle identifie chaque n-uplet.",
+    "tags": [
+      "clé primaire"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_004",
+    "subject": "bdd",
+    "skill": "bdd.cles",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une clé étrangère ?",
+    "answer": "Un attribut qui référence la clé primaire d'une autre table",
+    "distractors": [
+      "Une clé jamais nulle, sans aucune référence",
+      "Un index créé automatiquement sur chaque colonne",
+      "Une clé calculée à partir de deux autres"
+    ],
+    "explanation": "La clé étrangère assure l'intégrité référentielle : la valeur doit exister dans la table référencée.",
+    "tags": [
+      "clé étrangère"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_04",
+    "subject": "bdd",
+    "skill": "bdd.cles",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une clé primaire ?",
+    "answer": "Un attribut (ou groupe d'attributs) qui identifie chaque n-uplet de façon unique et non nulle",
+    "distractors": [
+      "Un attribut qui peut contenir des valeurs nulles",
+      "Une référence vers une autre table",
+      "Un index créé automatiquement par le SGBD"
+    ],
+    "explanation": "Une clé primaire garantit l'unicité des lignes ; elle ne peut jamais être vide.",
+    "tags": [
+      "cles"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Une clé primaire doit être unique et {{blank}}."
+  },
+  {
+    "id": "bdd_05",
+    "subject": "bdd",
+    "skill": "bdd.cles",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle d'une clé étrangère ?",
+    "answer": "Référencer la clé primaire d'une autre table pour lier les données",
+    "distractors": [
+      "Accélérer les recherches sur une table",
+      "Empêcher la suppression de toute ligne",
+      "Stocker un fichier binaire"
+    ],
+    "explanation": "Exemple : une commande référence le client qui l'a passée.",
+    "tags": [
+      "cles"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_06",
+    "subject": "bdd",
+    "skill": "bdd.cles",
+    "difficulty": 3,
+    "prompt": "Quelle contrainte impose qu'une valeur de clé étrangère existe dans la table référencée ?",
+    "answer": "Intégrité référentielle",
+    "distractors": [
+      "Intégrité de domaine",
+      "Unicité",
+      "Non-nullité"
+    ],
+    "explanation": "Sans cette contrainte, une commande pourrait pointer vers un client inexistant.",
+    "tags": [
+      "cles"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

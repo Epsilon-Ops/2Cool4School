@@ -1,0 +1,161 @@
+[
+  {
+    "id": "bdd_006",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 1,
+    "prompt": "Quelle clause SQL sert à filtrer les lignes avant un regroupement ?",
+    "answer": "WHERE",
+    "distractors": [
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "explanation": "WHERE filtre les lignes avant GROUP BY ; HAVING filtre ensuite les groupes.",
+    "tags": [
+      "SQL"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Pour filtrer les lignes avant un regroupement, on utilise la clause {{blank}}."
+  },
+  {
+    "id": "bdd_007",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 2,
+    "prompt": "Quelle jointure renvoie toutes les lignes de la table de gauche, même sans correspondance à droite ?",
+    "answer": "LEFT JOIN",
+    "distractors": [
+      "INNER JOIN",
+      "CROSS JOIN",
+      "UNION"
+    ],
+    "explanation": "LEFT JOIN conserve les lignes de gauche et remplit par NULL les colonnes de droite sans correspondance.",
+    "tags": [
+      "SQL",
+      "jointures"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Une {{blank}} renvoie toutes les lignes de la table de gauche."
+  },
+  {
+    "id": "bdd_008",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 3,
+    "prompt": "Remets dans l'ordre d'exécution logique une requête SELECT.",
+    "answer": "FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY",
+    "distractors": [],
+    "explanation": "Le SELECT est écrit en premier, mais il est évalué après FROM, WHERE, GROUP BY et HAVING. ORDER BY vient en dernier.",
+    "tags": [
+      "SQL",
+      "ordre d'exécution"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "FROM",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
+      "SELECT",
+      "ORDER BY"
+    ]
+  },
+  {
+    "id": "bdd_10",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 1,
+    "prompt": "Quelle requête sélectionne toutes les colonnes de la table etudiants ?",
+    "answer": "SELECT * FROM etudiants;",
+    "distractors": [
+      "SELECT all FROM etudiants;",
+      "GET * FROM etudiants;",
+      "SELECT etudiants;"
+    ],
+    "explanation": "L'étoile * désigne toutes les colonnes de la table.",
+    "tags": [
+      "sql"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_11",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 1,
+    "prompt": "Quelle clause filtre les lignes selon une condition ?",
+    "answer": "WHERE",
+    "distractors": [
+      "GROUP BY",
+      "ORDER BY",
+      "FROM"
+    ],
+    "explanation": "Le filtre WHERE s'applique avant tout regroupement.",
+    "tags": [
+      "sql"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Pour ne garder que les lignes qui vérifient une condition, on utilise la clause {{blank}}."
+  },
+  {
+    "id": "bdd_12",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 1,
+    "prompt": "Quel mot-clé supprime les doublons d'un résultat ?",
+    "answer": "DISTINCT",
+    "distractors": [
+      "UNIQUE",
+      "GROUP",
+      "ONLY"
+    ],
+    "explanation": "SELECT DISTINCT ville FROM clients; renvoie chaque ville une seule fois.",
+    "tags": [
+      "sql"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_13",
+    "subject": "bdd",
+    "skill": "bdd.sql",
+    "difficulty": 3,
+    "prompt": "Quelle est la différence entre WHERE et HAVING ?",
+    "answer": "WHERE filtre les lignes avant le regroupement, HAVING filtre les groupes après",
+    "distractors": [
+      "Il n'y a aucune différence",
+      "HAVING filtre avant GROUP BY, WHERE après",
+      "WHERE ne fonctionne qu'avec des nombres"
+    ],
+    "explanation": "Pour filtrer sur un agrégat (par exemple COUNT(*) > 5), on utilise HAVING.",
+    "tags": [
+      "sql"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

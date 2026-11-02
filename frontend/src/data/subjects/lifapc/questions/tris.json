@@ -1,0 +1,115 @@
+[
+  {
+    "id": "algo_007",
+    "subject": "lifapc",
+    "skill": "lifapc.tris",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité moyenne du tri fusion ?",
+    "answer": "O(n log n)",
+    "distractors": [
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "explanation": "Le tableau est divisé en deux à chaque niveau (log n niveaux) et chaque niveau fusionne n éléments.",
+    "tags": [
+      "tri",
+      "fusion"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La complexité moyenne du tri fusion est {{blank}}."
+  },
+  {
+    "id": "algo_008",
+    "subject": "lifapc",
+    "skill": "lifapc.tris",
+    "difficulty": 2,
+    "prompt": "Quel tri insère chaque élément à sa place dans la partie déjà triée, et est très rapide sur de petits tableaux presque triés ?",
+    "answer": "Tri par insertion",
+    "distractors": [
+      "Tri fusion",
+      "Tri par tas",
+      "Tri par dénombrement"
+    ],
+    "explanation": "Le tri par insertion est en O(n²) dans le pire cas, mais en O(n) si le tableau est déjà presque trié.",
+    "tags": [
+      "tri",
+      "insertion"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "lifapc_06",
+    "subject": "lifapc",
+    "skill": "lifapc.tris",
+    "difficulty": 2,
+    "prompt": "Quel tri est stable et de complexité O(n log n) dans le pire cas ?",
+    "answer": "Tri fusion",
+    "distractors": [
+      "Tri rapide",
+      "Tri par sélection",
+      "Tri par insertion"
+    ],
+    "explanation": "Le tri fusion coupe le tableau en deux moitiés et fusionne en gardant l'ordre relatif des égaux. Le tri rapide est O(n²) dans le pire cas.",
+    "tags": [
+      "tris"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "lifapc_07",
+    "subject": "lifapc",
+    "skill": "lifapc.tris",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité du tri par insertion dans le pire cas ?",
+    "answer": "O(n²)",
+    "distractors": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "explanation": "Dans le pire cas (tableau trié à l'envers), chaque élément traverse tout le préfixe déjà trié : environ n²/2 comparaisons.",
+    "tags": [
+      "tris"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Le tri par insertion a une complexité de {{blank}} dans le pire cas."
+  },
+  {
+    "id": "lifapc_08",
+    "subject": "lifapc",
+    "skill": "lifapc.tris",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité du tri par sélection, dans tous les cas ?",
+    "answer": "O(n²)",
+    "distractors": [
+      "O(n)",
+      "O(n log n)",
+      "O(log n)"
+    ],
+    "explanation": "À chaque étape, il cherche le minimum des éléments restants : le nombre de comparaisons ne dépend pas de l'ordre initial.",
+    "tags": [
+      "tris"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

@@ -1,0 +1,88 @@
+[
+  {
+    "id": "bdd_005",
+    "subject": "bdd",
+    "skill": "bdd.normalisation",
+    "difficulty": 2,
+    "prompt": "Quel est l'objectif principal de la normalisation ?",
+    "answer": "Éliminer les redondances et les anomalies de mise à jour",
+    "distractors": [
+      "Accélérer toutes les requêtes",
+      "Chiffrer les données",
+      "Supprimer les clés primaires"
+    ],
+    "explanation": "Une base normalisée évite de répéter la même information à plusieurs endroits, donc les incohérences lors des mises à jour.",
+    "tags": [
+      "normalisation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_07",
+    "subject": "bdd",
+    "skill": "bdd.normalisation",
+    "difficulty": 2,
+    "prompt": "Quelle est la condition de la première forme normale (1FN) ?",
+    "answer": "Tous les attributs sont atomiques (valeurs indivisibles)",
+    "distractors": [
+      "Il existe une clé primaire composée",
+      "Aucun attribut ne dépend d'un autre",
+      "Chaque table a au plus trois colonnes"
+    ],
+    "explanation": "Une colonne ne doit pas contenir une liste de valeurs du type « rouge, bleu ».",
+    "tags": [
+      "normalisation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_08",
+    "subject": "bdd",
+    "skill": "bdd.normalisation",
+    "difficulty": 3,
+    "prompt": "Que signifie la dépendance fonctionnelle X → Y ?",
+    "answer": "Deux n-uplets ayant la même valeur pour X ont la même valeur pour Y",
+    "distractors": [
+      "Y est une clé étrangère vers X",
+      "X est la clé primaire de Y",
+      "Y contient toutes les valeurs de X"
+    ],
+    "explanation": "Si X détermine Y, connaître X suffit pour connaître Y.",
+    "tags": [
+      "normalisation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_09",
+    "subject": "bdd",
+    "skill": "bdd.normalisation",
+    "difficulty": 2,
+    "prompt": "Remets dans l'ordre les étapes de normalisation.",
+    "answer": "1FN → 2FN → 3FN",
+    "distractors": [],
+    "explanation": "Chaque forme normale s'appuie sur la précédente.",
+    "tags": [
+      "normalisation"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "1FN : rendre les attributs atomiques",
+      "2FN : supprimer les dépendances partielles",
+      "3FN : supprimer les dépendances transitives"
+    ]
+  }
+]

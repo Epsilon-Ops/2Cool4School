@@ -1,1 +1,45 @@
-[]
+{
+  "skills": [
+    {
+      "id": "reseaux.intro",
+      "name": "Introduction aux réseaux",
+      "short": "Introduction",
+      "prereq": [],
+      "description": "Télécoms, réseau public et privé, VPN, backbone, topologies."
+    },
+    {
+      "id": "reseaux.normes",
+      "name": "Normes & régulation",
+      "short": "Normes",
+      "prereq": [],
+      "description": "Normalisation, RFC, IEEE, Arcep."
+    },
+    {
+      "id": "reseaux.couches",
+      "name": "Modèles OSI & TCP/IP",
+      "short": "Couches",
+      "prereq": [
+        "reseaux.intro"
+      ],
+      "description": "Les couches, leur rôle et les protocoles associés."
+    },
+    {
+      "id": "reseaux.ip",
+      "name": "Adressage IP",
+      "short": "Adressage IP",
+      "prereq": [
+        "reseaux.couches"
+      ],
+      "description": "Adresses IPv4/IPv6, masques de sous-réseau, diffusion."
+    },
+    {
+      "id": "reseaux.fiabilite",
+      "name": "Fiabilité & TCP",
+      "short": "TCP",
+      "prereq": [
+        "reseaux.couches"
+      ],
+      "description": "Erreurs, pertes, ordre et duplication dans un transfert."
+    }
+  ]
+}

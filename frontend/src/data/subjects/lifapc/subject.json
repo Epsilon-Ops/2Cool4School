@@ -1,21 +1,8 @@
-
 {
-    "id": "lifapc",
-    "code": "LIFAPC",
-    "name": "Algorithmique, Programmation et Complexité",
-    "emoji": "⚙️",
-    "color": "#33d1ff",
-    "description": "Algorithmique, structures de données, programmation C++ et complexité.",
-    "data": {
-      "skills": "./skills.json",
-      "categories": {
-        "cours": "./cours/questions.json",
-        "tp": [
-          "./tp/tp1_listes_generiques.json",
-          "./tp/tp2_cellules_sentinelles.json"
-        ],
-        "examens": "./examens/questions.json"
-      }
-    }
-  }
-  
+  "id": "lifapc",
+  "code": "LIFAPC",
+  "name": "Algorithmique & C++",
+  "emoji": "⚙️",
+  "color": "#1cb0f6",
+  "description": "Complexité, tris, recherche, listes chaînées et templates en C++."
+}

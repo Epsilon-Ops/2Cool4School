@@ -1,0 +1,704 @@
+[
+  {
+    "id": "algo_001",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quelle est la complexité temporelle pour accéder à un élément d'un tableau par son indice ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "L'adresse se calcule directement : adresse de base + indice × taille d'un élément. Le temps ne dépend pas de la taille du tableau.",
+    "tags": [
+      "complexité",
+      "tableau"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Accéder à un élément d'un tableau par son indice se fait en {{blank}}."
+  },
+  {
+    "id": "algo_002",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quelle est la complexité d'un parcours complet d'un tableau de n éléments ?",
+    "answer": "O(n)",
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Chaque élément est visité une seule fois : le temps croît linéairement avec n.",
+    "tags": [
+      "complexité",
+      "parcours"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Parcourir un tableau de n éléments se fait en {{blank}}."
+  },
+  {
+    "id": "algo_003",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité d'un tri à bulles sur n éléments, dans le pire cas ?",
+    "answer": "O(n²)",
+    "distractors": [
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "explanation": "Deux boucles imbriquées parcourent chacune environ n éléments dans le pire cas.",
+    "tags": [
+      "complexité",
+      "tri"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "algo_006",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Associe chaque complexité à son exemple classique.",
+    "answer": "Chaque complexité avec son exemple classique",
+    "distractors": [],
+    "explanation": "O(1) : accès par indice. O(log n) : dichotomie. O(n) : parcours. O(n²) : tri à bulles dans le pire cas.",
+    "tags": [
+      "complexité",
+      "synthèse"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "O(1)",
+        "Accès à un élément par son indice"
+      ],
+      [
+        "O(log n)",
+        "Recherche dichotomique"
+      ],
+      [
+        "O(n)",
+        "Parcours linéaire d'un tableau"
+      ],
+      [
+        "O(n²)",
+        "Tri à bulles dans le pire cas"
+      ]
+    ]
+  },
+  {
+    "id": "mat_001",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Combien vaut log₂(1024) ?",
+    "answer": "10",
+    "distractors": [
+      "9",
+      "8",
+      "12"
+    ],
+    "explanation": "2¹⁰ = 1024. Le logarithme en base 2 compte le nombre de divisions par deux possibles.",
+    "tags": [
+      "logarithme",
+      "maths"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "log₂(1024) = {{blank}}"
+  },
+  {
+    "id": "lifapc_01",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité de la recherche d'un élément dans une liste chaînée non triée de n éléments, dans le pire cas ?",
+    "answer": "O(n)",
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Il faut parcourir les maillons un à un : au pire, on visite les n éléments.",
+    "tags": [
+      "complexite"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Chercher un élément dans une liste chaînée non triée coûte {{blank}} dans le pire cas."
+  },
+  {
+    "id": "lifapc_02",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quelle fonction croît le plus vite quand n tend vers l'infini ?",
+    "answer": "n²",
+    "distractors": [
+      "n log n",
+      "n",
+      "log n"
+    ],
+    "explanation": "n² domine n log n, qui domine n, qui domine log n.",
+    "tags": [
+      "complexite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "lifapc_03",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Remets ces complexités dans l'ordre croissant.",
+    "answer": "O(1) < O(log n) < O(n) < O(n log n) < O(n²)",
+    "distractors": [],
+    "explanation": "Plus la fonction croît vite avec n, plus l'algorithme devient coûteux pour les grandes entrées.",
+    "tags": [
+      "complexite"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "O(1)",
+      "O(log n)",
+      "O(n)",
+      "O(n log n)",
+      "O(n²)"
+    ]
+  },
+  {
+    "id": "algo_010",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quelles sont les étapes générales de résolution d'un problème informatique ?",
+    "answer": "Exposé, modélisation, construction de l'algorithme, preuve, analyse de complexité, programmation et exécution.",
+    "distractors": [
+      "Compilation, exécution et affichage uniquement",
+      "Modélisation, compilation et optimisation uniquement",
+      "Exécution, test et suppression du programme"
+    ],
+    "explanation": "La démarche comporte sept étapes : exposer le problème, le formaliser, construire une solution algorithmique, vérifier sa correction, analyser sa complexité, programmer puis exécuter.",
+    "tags": ["conception", "algorithmique", "méthodologie"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_011",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Que contient la spécification d'un problème informatique ?",
+    "answer": "Les entrées, les sorties et la relation attendue entre elles.",
+    "distractors": [
+      "Uniquement le code source",
+      "Uniquement les instructions de compilation",
+      "Le temps d'exécution et la mémoire utilisée"
+    ],
+    "explanation": "La spécification décrit les données d'entrée, les résultats attendus et les propriétés que doivent respecter ces résultats.",
+    "tags": ["spécification", "modélisation"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "algo_012",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Dans un problème de tri, quelle est la sortie attendue pour une séquence de n nombres ?",
+    "answer": "Une permutation de la séquence initiale rangée dans l'ordre croissant.",
+    "distractors": [
+      "Une nouvelle séquence contenant uniquement les nombres pairs",
+      "Une séquence contenant les mêmes nombres mais sans ordre particulier",
+      "Une séquence contenant uniquement les valeurs distinctes"
+    ],
+    "explanation": "Un tri doit conserver les éléments de la séquence initiale et les réorganiser de manière croissante.",
+    "tags": ["spécification", "tri"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Un tri produit une {{blank}} de la séquence initiale dans l'ordre croissant."
+  },
+  {
+    "id": "algo_013",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quelles propriétés doivent respecter les étapes d'un algorithme ?",
+    "answer": "Elles doivent être rigoureusement définies, non ambiguës et effectivement réalisables.",
+    "distractors": [
+      "Elles doivent obligatoirement être récursives",
+      "Elles doivent utiliser le moins de variables possible",
+      "Elles doivent être écrites dans un langage compilé"
+    ],
+    "explanation": "Un algorithme est une composition finie d'étapes précises et exécutables sur une machine.",
+    "tags": ["algorithme", "définition"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_014",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Un algorithme doit-il obligatoirement être écrit dans un langage de programmation ?",
+    "answer": "Non",
+    "distractors": [
+      "Oui, obligatoirement en C++",
+      "Oui, obligatoirement en pseudo-code compilable",
+      "Oui, obligatoirement en langage machine"
+    ],
+    "explanation": "Un algorithme peut être exprimé dans un modèle abstrait. Il sera progressivement précisé lors de son implantation dans un langage.",
+    "tags": ["algorithme", "abstraction"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "algo_015",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Pourquoi deux implantations d'un même algorithme informel peuvent-elles avoir des complexités différentes ?",
+    "answer": "Parce que les raffinements et les opérations élémentaires choisies peuvent conduire à des algorithmes d'efficacité différente.",
+    "distractors": [
+      "Parce que la spécification change automatiquement",
+      "Parce que toutes les implantations ont nécessairement la même complexité",
+      "Parce que le nombre d'éléments change obligatoirement"
+    ],
+    "explanation": "Un algorithme informel peut être raffiné de différentes façons. Le tri à bulles, le tri par sélection et le tri par insertion illustrent différentes implantations d'une idée générale de tri.",
+    "tags": ["raffinement", "tri", "complexité"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_016",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quand considère-t-on qu'un algorithme est correct ?",
+    "answer": "Lorsqu'il termine avec une sortie correcte pour toute entrée respectant les spécifications.",
+    "distractors": [
+      "Lorsqu'il compile sans erreur",
+      "Lorsqu'il fonctionne uniquement sur les exemples fournis",
+      "Lorsqu'il possède une complexité constante"
+    ],
+    "explanation": "La correction exige à la fois la terminaison et le respect du résultat attendu pour toutes les entrées valides.",
+    "tags": ["correction", "preuve"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "algo_017",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Le problème de l'arrêt consiste à déterminer quoi ?",
+    "answer": "Si un programme P termine ou non pour une donnée D.",
+    "distractors": [
+      "Si un programme contient une erreur de syntaxe",
+      "Si un programme utilise trop de mémoire",
+      "Si un programme possède une complexité polynomiale"
+    ],
+    "explanation": "Le problème de l'arrêt demande de déterminer si l'exécution d'un programme sur une donnée donnée se termine.",
+    "tags": ["calculabilité", "problème de l'arrêt"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_018",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Existe-t-il un algorithme général capable de déterminer si n'importe quel programme termine sur n'importe quelle donnée ?",
+    "answer": "Non",
+    "distractors": [
+      "Oui, avec une complexité O(n)",
+      "Oui, avec une complexité O(log n)",
+      "Oui, à condition d'utiliser la récursivité"
+    ],
+    "explanation": "Le problème de l'arrêt est indécidable : aucun algorithme général ne peut répondre correctement à cette question pour tous les programmes et toutes les données.",
+    "tags": ["calculabilité", "indécidabilité"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "algo_019",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 3,
+    "prompt": "Dans la démonstration du problème de l'arrêt, que fait la procédure Maligne si TestTermine affirme qu'elle termine ?",
+    "answer": "Elle s'appelle récursivement et ne termine donc pas.",
+    "distractors": [
+      "Elle s'arrête immédiatement",
+      "Elle renvoie toujours faux",
+      "Elle appelle une procédure de tri"
+    ],
+    "explanation": "Maligne appelle récursivement Maligne lorsque TestTermine affirme qu'elle termine. Si TestTermine répond qu'elle ne termine pas, Maligne ne fait rien et termine. Les deux réponses conduisent donc à une contradiction.",
+    "tags": ["calculabilité", "récursivité", "preuve"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_020",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Quand un couple (i, j) constitue-t-il une inversion dans une séquence a ?",
+    "answer": "Lorsque i < j et a[i] > a[j].",
+    "distractors": [
+      "Lorsque i > j et a[i] > a[j]",
+      "Lorsque i < j et a[i] < a[j]",
+      "Lorsque a[i] = a[j]"
+    ],
+    "explanation": "Une inversion est une paire d'indices dans le mauvais ordre : l'indice i précède j, mais la valeur en i est supérieure à celle en j.",
+    "tags": ["inversions", "tri", "preuve"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Une inversion vérifie i < j et a[i] {{blank}} a[j]."
+  },
+  {
+    "id": "algo_021",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Que représente inv(a) ?",
+    "answer": "Le nombre total d'inversions dans la séquence a.",
+    "distractors": [
+      "Le nombre total d'éléments de a",
+      "Le nombre d'éléments distincts de a",
+      "La somme des éléments de a"
+    ],
+    "explanation": "inv(a) compte tous les couples (i,j) tels que i < j et a[i] > a[j].",
+    "tags": ["inversions", "preuve", "tri"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_022",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Pourquoi le nombre d'inversions est-il utile pour démontrer la terminaison de l'algorithme informel de tri ?",
+    "answer": "Parce qu'il diminue strictement à chaque échange et ne peut pas devenir négatif.",
+    "distractors": [
+      "Parce qu'il augmente à chaque échange",
+      "Parce qu'il reste constant pendant l'exécution",
+      "Parce qu'il mesure directement le temps d'exécution"
+    ],
+    "explanation": "Le nombre d'inversions est un entier naturel. Une diminution stricte à chaque itération implique qu'il ne peut pas diminuer indéfiniment. La boucle termine lorsque le nombre d'inversions atteint zéro.",
+    "tags": ["preuve", "terminaison", "inversions"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "algo_023",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Que signifie inv(a) = 0 pour une séquence ?",
+    "answer": "La séquence est triée dans l'ordre croissant ou non décroissant.",
+    "distractors": [
+      "La séquence est vide",
+      "Tous les éléments sont nécessairement égaux",
+      "La séquence contient uniquement des nombres positifs"
+    ],
+    "explanation": "S'il n'existe aucun couple i < j tel que a[i] > a[j], alors chaque élément est inférieur ou égal aux éléments qui le suivent.",
+    "tags": ["inversions", "tri", "preuve"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_024",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Associe chaque notion à sa définition.",
+    "answer": "Chaque notion avec sa définition correspondante.",
+    "distractors": [],
+    "explanation": "La spécification décrit ce qui est attendu, l'algorithme décrit comment résoudre le problème, la correction prouve que le résultat est juste et la complexité mesure les ressources nécessaires.",
+    "tags": ["conception", "synthèse", "algorithmique"],
+    "formats": ["matching", "flashcard"],
+    "pairs": [
+      ["Spécification", "Décrit les entrées, sorties et propriétés attendues"],
+      ["Algorithme", "Suite finie d'étapes réalisables"],
+      ["Correction", "Garantit la terminaison et le résultat correct"],
+      ["Complexité", "Évalue les ressources nécessaires à l'exécution"]
+    ]
+  },
+  {
+    "id": "algo_025",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Que cherche-t-on à mesurer lorsqu'on analyse la complexité d'un algorithme ?",
+    "answer": "Les ressources nécessaires à son exécution.",
+    "distractors": [
+      "Uniquement le nombre de lignes de code",
+      "Uniquement la vitesse du processeur",
+      "Uniquement le nombre de variables utilisées"
+    ],
+    "explanation": "L'analyse de complexité permet de prévoir les ressources nécessaires : temps d'exécution, mémoire utilisée ou encore bande passante de communication.",
+    "tags": ["complexité", "analyse", "ressources"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "algo_026",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Pourquoi ne peut-on pas comparer deux algorithmes uniquement en mesurant leur temps d'exécution sur une machine ?",
+    "answer": "Parce que le temps dépend aussi de la machine, du langage, du compilateur et des données.",
+    "distractors": [
+      "Parce que les algorithmes ne peuvent pas être chronométrés",
+      "Parce que tous les algorithmes ont le même temps d'exécution",
+      "Parce que le temps dépend uniquement du nombre de lignes de code"
+    ],
+    "explanation": "Une mesure réelle dépend de nombreux facteurs matériels et logiciels. Le comptage des opérations élémentaires permet une comparaison plus indépendante de ces facteurs.",
+    "tags": ["complexité", "comparaison", "mesure"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_027",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 1,
+    "prompt": "Dans le modèle RAM utilisé pour analyser les algorithmes, combien coûte une opération élémentaire ?",
+    "answer": "Un temps constant.",
+    "distractors": [
+      "Un temps logarithmique",
+      "Un temps linéaire",
+      "Un temps exponentiel"
+    ],
+    "explanation": "Le modèle RAM considère que chaque opération élémentaire coûte une constante indépendante de la taille des données.",
+    "tags": ["modèle RAM", "opérations élémentaires"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Dans le modèle RAM, une opération élémentaire coûte {{blank}}."
+  },
+  {
+    "id": "algo_028",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Comment calcule-t-on le temps d'exécution d'une séquence de deux instructions I1 puis I2 ?",
+    "answer": "T(I1) + T(I2)",
+    "distractors": [
+      "T(I1) × T(I2)",
+      "max(T(I1), T(I2))",
+      "T(I1) / T(I2)"
+    ],
+    "explanation": "Les deux instructions sont exécutées successivement. Le temps total est donc la somme de leurs temps d'exécution.",
+    "tags": ["complexité", "séquence", "calcul"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "T(I1 ; I2) = {{blank}}."
+  },
+  {
+    "id": "algo_029",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Quelle formule permet de calculer le temps d'exécution d'une condition si C alors I1 sinon I2 ?",
+    "answer": "T(C) + max(T(I1), T(I2))",
+    "distractors": [
+      "T(C) + T(I1) + T(I2)",
+      "T(C) × T(I1) × T(I2)",
+      "min(T(I1), T(I2))"
+    ],
+    "explanation": "La condition C est évaluée, puis une seule des deux branches est exécutée. Pour une borne supérieure, on retient la branche la plus coûteuse.",
+    "tags": ["complexité", "condition", "calcul"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "T(si C alors I1 sinon I2) <= T(C) + {{blank}}."
+  },
+  {
+    "id": "algo_030",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Comment calcule-t-on le temps d'exécution d'une boucle dont le corps P(i) dépend de l'indice i ?",
+    "answer": "En additionnant les temps d'exécution de chaque itération.",
+    "distractors": [
+      "En multipliant uniquement le temps de la première itération par deux",
+      "En prenant uniquement le temps de la dernière itération",
+      "En exécutant uniquement une fois le corps de la boucle"
+    ],
+    "explanation": "Le coût total d'une boucle est la somme des coûts de toutes ses itérations : somme de T(P(i)) pour les valeurs parcourues par i.",
+    "tags": ["complexité", "boucles", "calcul"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_031",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Une boucle exécute exactement 100 fois une opération élémentaire de coût constant. Quelle est sa complexité ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Le nombre d'itérations est fixé à 100 et ne dépend pas de la taille n des données. Le temps est donc constant.",
+    "tags": ["complexité", "boucles", "constante"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "algo_032",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Une boucle parcourt un tableau de n éléments et effectue une opération élémentaire à chaque itération. Quelle est sa complexité ?",
+    "answer": "O(n)",
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "La boucle effectue n opérations de coût constant. Son temps d'exécution est proportionnel à n.",
+    "tags": ["complexité", "boucles", "linéaire"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_033",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Deux boucles imbriquées parcourent chacune n éléments et exécutent une opération élémentaire à chaque combinaison. Quelle est leur complexité ?",
+    "answer": "O(n²)",
+    "distractors": [
+      "O(n)",
+      "O(2n)",
+      "O(log n)"
+    ],
+    "explanation": "La boucle extérieure réalise n itérations. Pour chacune, la boucle intérieure réalise n itérations. Le nombre total d'opérations est n × n = n².",
+    "tags": ["complexité", "boucles imbriquées", "quadratique"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Deux boucles imbriquées de n itérations chacune donnent une complexité de {{blank}}."
+  },
+  {
+    "id": "algo_034",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "De quoi dépend généralement le temps d'exécution T(algo(d)) ?",
+    "answer": "De l'algorithme et des caractéristiques de la donnée d.",
+    "distractors": [
+      "Uniquement du nom de l'algorithme",
+      "Uniquement du nombre de fonctions utilisées",
+      "Uniquement du langage de programmation"
+    ],
+    "explanation": "Le temps varie selon les données fournies à l'algorithme, notamment leur taille et leur structure.",
+    "tags": ["complexité", "données", "temps d'exécution"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_035",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Dans le cas d'un algorithme manipulant un graphe, comment peut-on mesurer la taille des données ?",
+    "answer": "Par le nombre de sommets et le nombre d'arêtes.",
+    "distractors": [
+      "Uniquement par le nombre de couleurs du graphe",
+      "Uniquement par le nombre de chemins possibles",
+      "Uniquement par le poids du plus grand sommet"
+    ],
+    "explanation": "La taille d'une entrée dépend de sa représentation. Pour un graphe, on utilise notamment le nombre de sommets et d'arêtes.",
+    "tags": ["complexité", "taille des données", "graphes"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_036",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Que représente TMAX(algo,n) ?",
+    "answer": "Le temps maximal d'exécution parmi toutes les données de taille n.",
+    "distractors": [
+      "Le temps minimal d'exécution",
+      "Le temps moyen d'exécution",
+      "Le temps d'exécution sur une donnée de taille n²"
+    ],
+    "explanation": "La complexité au pire correspond au maximum des temps d'exécution possibles pour les entrées de taille n.",
+    "tags": ["complexité", "pire cas"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "TMAX(algo,n) correspond à la complexité au {{blank}}."
+  },
+  {
+    "id": "algo_037",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Que représente TMIN(algo,n) ?",
+    "answer": "Le temps minimal d'exécution parmi toutes les données de taille n.",
+    "distractors": [
+      "Le temps maximal d'exécution",
+      "Le temps moyen d'exécution",
+      "Le temps d'exécution indépendant des données"
+    ],
+    "explanation": "La complexité au mieux correspond au minimum des temps d'exécution possibles pour les entrées de taille n.",
+    "tags": ["complexité", "meilleur cas"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "algo_038",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 2,
+    "prompt": "Comment calcule-t-on la complexité moyenne d'un algorithme ?",
+    "answer": "En faisant la somme des temps d'exécution pondérés par la probabilité de chaque donnée.",
+    "distractors": [
+      "En prenant uniquement le temps maximal",
+      "En prenant uniquement le temps minimal",
+      "En divisant le temps maximal par le nombre d'instructions"
+    ],
+    "explanation": "La complexité moyenne est une espérance mathématique : TMOY(algo,n) = somme de p(d) × T(algo,d), où p(d) est la probabilité d'obtenir la donnée d.",
+    "tags": ["complexité", "moyenne", "probabilités"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "La complexité moyenne utilise les temps d'exécution pondérés par leur {{blank}}."
+  },
+  {
+    "id": "algo_039",
+    "subject": "lifapc",
+    "skill": "lifapc.complexite",
+    "difficulty": 3,
+    "prompt": "Associe chaque type de complexité à sa définition.",
+    "answer": "Chaque type de complexité avec sa définition correspondante.",
+    "distractors": [],
+    "explanation": "Le meilleur cas correspond au minimum, le pire cas au maximum et le cas moyen à une moyenne pondérée par les probabilités des entrées.",
+    "tags": ["complexité", "synthèse", "pire cas", "meilleur cas"],
+    "formats": ["matching", "flashcard"],
+    "pairs": [
+      [
+        "Complexité au mieux",
+        "Minimum des temps d'exécution"
+      ],
+      [
+        "Complexité au pire",
+        "Maximum des temps d'exécution"
+      ],
+      [
+        "Complexité moyenne",
+        "Moyenne pondérée par les probabilités des entrées"
+      ]
+    ]
+  }
+]

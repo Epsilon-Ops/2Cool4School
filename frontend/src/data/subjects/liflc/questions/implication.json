@@ -1,0 +1,126 @@
+[
+  {
+    "id": "logique_002",
+    "subject": "liflc",
+    "skill": "liflc.implication",
+    "difficulty": 2,
+    "prompt": "Quelle est la négation de p ∧ q ?",
+    "answer": "¬p ∨ ¬q",
+    "distractors": [
+      "¬p ∧ ¬q",
+      "p ∨ q",
+      "¬p ⇒ ¬q"
+    ],
+    "explanation": "Loi de De Morgan : la négation d'une conjonction est la disjonction des négations.",
+    "tags": [
+      "De Morgan",
+      "négation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La négation de p ∧ q est {{blank}}."
+  },
+  {
+    "id": "liflc_09",
+    "subject": "liflc",
+    "skill": "liflc.implication",
+    "difficulty": 2,
+    "prompt": "Quelle formule est équivalente à « p → q » ?",
+    "answer": "¬p ∨ q",
+    "distractors": [
+      "p ∨ ¬q",
+      "¬p ∧ q",
+      "p ∧ ¬q"
+    ],
+    "explanation": "p → q n'est fausse que si p est vraie et q fausse : c'est exactement ¬p ∨ q.",
+    "tags": [
+      "implication"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
+  },
+  {
+    "id": "liflc_10",
+    "subject": "liflc",
+    "skill": "liflc.implication",
+    "difficulty": 2,
+    "prompt": "Quelle est la contraposée de « p → q » ?",
+    "answer": "¬q → ¬p",
+    "distractors": [
+      "q → p",
+      "¬p → ¬q",
+      "p ∧ ¬q"
+    ],
+    "explanation": "Une implication et sa contraposée sont équivalentes ; la réciproque, elle, ne l'est pas.",
+    "tags": [
+      "implication"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_11",
+    "subject": "liflc",
+    "skill": "liflc.implication",
+    "difficulty": 2,
+    "prompt": "Quelle est la négation de « p ∧ q » (loi de De Morgan) ?",
+    "answer": "¬p ∨ ¬q",
+    "distractors": [
+      "¬p ∧ ¬q",
+      "p ∨ ¬q",
+      "¬p → q"
+    ],
+    "explanation": "La négation transforme ∧ en ∨ et nie chacun des deux membres.",
+    "tags": [
+      "implication"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_12",
+    "subject": "liflc",
+    "skill": "liflc.implication",
+    "difficulty": 3,
+    "prompt": "Associe chaque formule à son équivalente.",
+    "answer": "Chaque formule a une équivalente : ce sont les bases des transformations de preuve.",
+    "distractors": [],
+    "explanation": "p ↔ q signifie que p et q ont la même valeur de vérité, soit (p → q) ∧ (q → p).",
+    "tags": [
+      "implication"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "p → q",
+        "¬p ∨ q"
+      ],
+      [
+        "¬(p ∧ q)",
+        "¬p ∨ ¬q"
+      ],
+      [
+        "¬(p ∨ q)",
+        "¬p ∧ ¬q"
+      ],
+      [
+        "p ↔ q",
+        "(p → q) ∧ (q → p)"
+      ]
+    ]
+  }
+]

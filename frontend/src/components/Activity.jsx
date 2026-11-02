@@ -1,5 +1,4 @@
 import { useState } from 'react';
-import React from 'react';
 
 /** Normalise une réponse libre : minuscules, sans accents, sans espaces. */
 export function normalize(s) {
@@ -10,6 +9,7 @@ export function normalize(s) {
     .replace(/\s+/g, '');
 }
 
+/** Affiche un exercice selon son format. `onResult(ok, qualité)` est appelé une fois. */
 export default function Activity({ ex, done, onResult }) {
   switch (ex.format) {
     case 'single_choice':
@@ -56,17 +56,23 @@ function Choice({ prompt, statement, items, correct, done, onResult }) {
       <h2 className="prompt">{prompt}</h2>
       {statement !== undefined && (
         <p className="statement">
-          Proposition : <em>{String(statement)}</em>
+          <span>Proposition</span>
+          <strong>{String(statement)}</strong>
         </p>
       )}
-      <div className="options">
+      <div className={`options ${items.length === 2 ? 'two' : ''}`}>
         {items.map((it) => {
           let cls = 'option';
-          if (sel === it.value) cls += ' selected';
+          if (!done && sel === it.value) cls += ' selected';
           if (done && it.value === correct) cls += ' correct';
           if (done && sel === it.value && it.value !== correct) cls += ' wrong';
           return (
-            <button key={String(it.value)} className={cls} disabled={done} onClick={() => setSel(it.value)}>
+            <button
+              key={String(it.value)}
+              className={cls}
+              disabled={done}
+              onClick={() => setSel(it.value)}
+            >
               {it.label}
             </button>
           );
@@ -93,7 +99,7 @@ function Flashcard({ ex, done, onResult }) {
           <div className="flash-answer">{ex.answer}</div>
           {!done && (
             <div className="rate">
-              <button className="hard" onClick={() => onResult(false, 1)}>Difficile</button>
+              <button className="hard" onClick={() => onResult(false, 1)}>Raté</button>
               <button className="mid" onClick={() => onResult(true, 3)}>Moyen</button>
               <button className="easy" onClick={() => onResult(true, 5)}>Facile</button>
             </div>
@@ -120,13 +126,13 @@ function FillBlank({ ex, done, onResult }) {
           className="blank"
           value={val}
           disabled={done}
-          placeholder="..."
+          placeholder="…"
+          autoFocus
           onChange={(e) => setVal(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && submit()}
         />
         {b}
       </p>
-      {done && !ok && <p className="reveal">Réponse attendue : {ex.answer}</p>}
       <button className="check" disabled={done || !val.trim()} onClick={submit}>
         Vérifier
       </button>
@@ -148,12 +154,15 @@ function Ordering({ ex, done, onResult }) {
           return (
             <li key={s}>
               <button className={cls} disabled={done} onClick={() => setChosen(chosen.filter((x) => x !== s))}>
-                {k + 1}. {s}
+                <b>{k + 1}</b> {s}
               </button>
             </li>
           );
         })}
       </ol>
+      {!done && chosen.length < ex.steps.length && (
+        <p className="hint">Touche une étape pour la sélectionner dans l'ordre.</p>
+      )}
       <div className="options">
         {remaining.map((s) => (
           <button key={s} className="option" disabled={done} onClick={() => setChosen([...chosen, s])}>
@@ -164,7 +173,6 @@ function Ordering({ ex, done, onResult }) {
       <button className="check" disabled={done || chosen.length !== ex.steps.length} onClick={() => onResult(ok, ok ? 4 : 1)}>
         Vérifier
       </button>
-      {done && !ok && <p className="reveal">Ordre attendu : {ex.steps.map((s, k) => `${k + 1}. ${s}`).join(' · ')}</p>}
     </>
   );
 }
@@ -192,6 +200,7 @@ function Matching({ ex, done, onResult }) {
   return (
     <>
       <h2 className="prompt">{ex.prompt}</h2>
+      <p className="hint">Choisis un élément à gauche, puis son association à droite.</p>
       <div className="match">
         <div className="col">
           {ex.pairs.map(([l]) => {

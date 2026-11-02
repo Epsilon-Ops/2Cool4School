@@ -1,600 +1,154 @@
-
 import { useState } from 'react';
+import { dueQuestions } from '../engine/selection.js';
+import LessonSheet from './LessonSheet.jsx';
 
-const VIEW_W = 900;
-const VIEW_H = 650;
-const R = 36;
-const ARC_R = R - 7;
-const ARC_C = 2 * Math.PI * ARC_R;
+export const MASTERED = 80; // seuil « acquise »
+export const UNLOCK = 50;   // seuil de déblocage des compétences suivantes
 
-const COUNTS = [3, 5, 10];
+const GAP = 112;                 // distance verticale entre deux nœuds (px)
+const TOP = 84;                  // marge avant le premier nœud (px), laisse place à la bulle
+const ZIGZAG = [50, 24, 50, 76]; // positions horizontales (en %) du chemin
 
-const STRATEGIES = [
-  ['weighted', 'Pondéré'],
-  ['random', 'Aléatoire'],
-  ['unseen', 'Jamais vues'],
-  ['progressive', 'Croissante'],
-];
-
-const LEVELS = [
-  ['Découverte', 0],
-  ['Compréhension', 25],
-  ['Application', 50],
-  ['Maîtrise', 80],
-];
-
-function edgePath(a, b) {
-  const dx = (b.x - a.x) * 0.5;
-
-  return `M ${a.x} ${a.y} C ${a.x + dx} ${a.y}, ${b.x - dx} ${b.y}, ${b.x} ${b.y}`;
-}
-
-export default function SkillTree({
-  subjects,
-  bank,
-  progress,
-  config,
-  setConfig,
-  onStart,
-}) {
+export default function SkillTree({ subjects, bank, progress, config, setConfig, onStart, onReview }) {
   const [selectedId, setSelectedId] = useState(null);
-  const [expandedSubjects, setExpandedSubjects] = useState({});
-  const [navigationMode, setNavigationMode] = useState('both');
 
   const mastery = (id) => progress.skills[id]?.mastery ?? 0;
+  const isAcquired = (id) => mastery(id) >= MASTERED;
+  const unlocked = (s) => (s.prereq ?? []).every((p) => mastery(p) >= UNLOCK);
+  const statusOf = (s) => (!unlocked(s) ? 'locked' : isAcquired(s.id) ? 'acquired' : 'available');
+  const countOf = (id) => bank.filter((q) => q.skill === id).length;
 
-  const isAcquired = (id) => mastery(id) >= 80;
-
-  const isUnlocked = (s) =>
-    (s.prereq ?? []).every((p) => mastery(p) >= 50);
-
-  const statusOf = (s) =>
-    !isUnlocked(s)
-      ? 'locked'
-      : isAcquired(s.id)
-        ? 'acquired'
-        : 'available';
-
-  const countOf = (id) =>
-    bank.filter((q) => q.skill === id).length;
-
-  const allSkills = {};
-
-  subjects.forEach((sub) =>
-    sub.skills.forEach((s) => {
-      allSkills[s.id] = {
-        ...s,
-        color: sub.color,
-        subjectId: sub.id,
-      };
-    })
+  const flat = subjects.flatMap((sub) =>
+    sub.skills.map((s) => ({ ...s, color: sub.color, subjectName: sub.name }))
   );
-
-  const ids = Object.keys(allSkills);
-
-  const acquiredCount = ids.filter(isAcquired).length;
-
-  const selected = selectedId
-    ? allSkills[selectedId]
-    : null;
-
-  const toggleSubject = (id) => {
-    setExpandedSubjects((prev) => ({
-      ...prev,
-      [id]: !prev[id],
-    }));
-  };
+  const byId = Object.fromEntries(flat.map((s) => [s.id, s]));
+  const acquired = flat.filter((s) => isAcquired(s.id)).length;
+  const nextId = flat.find((s) => statusOf(s) === 'available' && countOf(s.id) > 0)?.id;
+  const dueCount = dueQuestions(bank, progress).length;
+  const selected = selectedId ? byId[selectedId] : null;
 
   return (
     <>
-      <section className="hud">
-        <div className="hud-main">
-          <div>
-            <span className="eyebrow">
-              Arbre des compétences
-            </span>
-
-            <h1 className="hud-title">
-              {acquiredCount}
-              <span> / {ids.length} maîtrisées</span>
-            </h1>
-          </div>
-
+      <section className="hero">
+        <div className="hero-main">
+          <span className="eyebrow">Ton parcours</span>
+          <h1>
+            {acquired}
+            <span> / {flat.length} compétences maîtrisées</span>
+          </h1>
           <div className="hud-bar">
-            <div
-              style={{
-                width: `${ids.length ? (acquiredCount / ids.length) * 100 : 0}%`,
-              }}
-            />
+            <div style={{ width: `${flat.length ? (acquired / flat.length) * 100 : 0}%` }} />
           </div>
         </div>
-
-        <div className="hud-config">
-          <div className="cfg-group">
-            <span>Questions</span>
-
-            {COUNTS.map((n) => (
-              <button
-                key={n}
-                className={`pill ${config.count === n ? 'on' : ''}`}
-                onClick={() =>
-                  setConfig({ ...config, count: n })
-                }
-              >
-                {n}
-              </button>
-            ))}
-          </div>
-
-          <div className="cfg-group">
-            <span>Ordre</span>
-
-            {STRATEGIES.map(([id, label]) => (
-              <button
-                key={id}
-                className={`pill ${config.strategy === id ? 'on' : ''}`}
-                onClick={() =>
-                  setConfig({ ...config, strategy: id })
-                }
-              >
-                {label}
-              </button>
-            ))}
-          </div>
-        </div>
+        <button className="btn btn-review" disabled={bank.length === 0} onClick={onReview}>
+          Réviser
+          {dueCount > 0 && <span className="count">{dueCount}</span>}
+        </button>
       </section>
 
-      <div className="tree-navigation">
-        <button
-          className={navigationMode === 'both' ? 'active' : ''}
-          onClick={() => setNavigationMode('both')}
-        >
-          Vue complète
-        </button>
+      <nav className="unit-nav" aria-label="Matières">
+        {subjects.map((sub) => (
+          <a key={sub.id} href={`#unit-${sub.id}`} style={{ '--c': sub.color }}>
+            {sub.emoji} {sub.code}
+          </a>
+        ))}
+      </nav>
 
-        <button
-          className={navigationMode === 'subjects' ? 'active' : ''}
-          onClick={() => setNavigationMode('subjects')}
-        >
-          Matières
-        </button>
+      {subjects.map((sub) => {
+        const doneCount = sub.skills.filter((s) => isAcquired(s.id)).length;
+        return (
+          <section key={sub.id} id={`unit-${sub.id}`} className="unit" style={{ '--c': sub.color }}>
+            <header className="unit-head">
+              <div>
+                <span className="unit-code">{sub.code}</span>
+                <h2>{sub.emoji} {sub.name}</h2>
+                <p>{sub.description}</p>
+              </div>
+              <span className="unit-count">{doneCount}/{sub.skills.length}</span>
+            </header>
 
-        <button
-          className={navigationMode === 'skills' ? 'active' : ''}
-          onClick={() => setNavigationMode('skills')}
-        >
-          Compétences
-        </button>
-      </div>
-
-      <div className="tree-layout">
-        <div className="maps">
-          {subjects.map((sub) => {
-            const expanded = expandedSubjects[sub.id] ?? true;
-
-            if (navigationMode === 'skills' && !expanded) {
-              return null;
-            }
-
-            return (
-              <section
-                key={sub.id}
-                className="subject-container"
-              >
-                <button
-                  className="subject-toggle"
-                  onClick={() => toggleSubject(sub.id)}
-                  style={{ '--c': sub.color }}
-                >
-                  <span>
-                    {sub.emoji} {sub.name}
-                  </span>
-
-                  <span>
-                    {expanded ? '−' : '+'}
-                  </span>
-                </button>
-
-                {expanded && navigationMode !== 'subjects' && (
-                  <Constellation
-                    sub={sub}
-                    statusOf={statusOf}
-                    isAcquired={isAcquired}
-                    mastery={mastery}
-                    selectedId={selectedId}
-                    onSelect={setSelectedId}
-                  />
-                )}
-
-                {navigationMode === 'subjects' && (
-                  <div className="subject-skills-list">
-                    {sub.skills.map((s) => (
-                      <button
-                        key={s.id}
-                        className={`subject-skill ${selectedId === s.id ? 'selected' : ''}`}
-                        onClick={() => setSelectedId(s.id)}
-                      >
-                        <span>{s.name}</span>
-                        <span>{Math.round(mastery(s.id))}%</span>
-                      </button>
-                    ))}
-                  </div>
-                )}
-              </section>
-            );
-          })}
-        </div>
-
-        <aside className="panel" aria-live="polite">
-          {selected ? (
-            <DetailPanel
-              s={selected}
-              status={statusOf(selected)}
-              m={mastery(selected.id)}
-              n={countOf(selected.id)}
-              prereqs={(selected.prereq ?? []).map((p) => ({
-                id: p,
-                name: allSkills[p]?.name ?? p,
-                ok: mastery(p) >= 50,
-              }))}
-              onStart={onStart}
+            <Path
+              sub={sub}
+              mastery={mastery}
+              isAcquired={isAcquired}
+              statusOf={statusOf}
+              nextId={nextId}
+              selectedId={selectedId}
+              onSelect={setSelectedId}
             />
-          ) : (
-            <div className="panel-empty">
-              <span className="sigil">✦</span>
+          </section>
+        );
+      })}
 
-              <p>
-                Choisis une compétence pour voir son détail
-                et commencer à travailler.
-              </p>
-
-              <p className="legend">
-                <span className="dot dark" /> non acquise
-                <span className="dot bright" /> acquise
-              </p>
-            </div>
-          )}
-        </aside>
-      </div>
+      {selected && (
+        <LessonSheet
+          skill={selected}
+          subjectName={selected.subjectName}
+          status={statusOf(selected)}
+          mastery={mastery(selected.id)}
+          count={countOf(selected.id)}
+          prereqs={(selected.prereq ?? []).map((p) => ({
+            id: p,
+            name: byId[p]?.name ?? p,
+            ok: mastery(p) >= UNLOCK,
+          }))}
+          config={config}
+          setConfig={setConfig}
+          onClose={() => setSelectedId(null)}
+          onStart={(s, cfg) => {
+            setSelectedId(null);
+            onStart(s, cfg);
+          }}
+        />
+      )}
     </>
   );
 }
 
-function Constellation({
-  sub,
-  statusOf,
-  isAcquired,
-  mastery,
-  selectedId,
-  onSelect,
-}) {
-  const pos = Object.fromEntries(
-    sub.skills.map((s) => [
-      s.id,
-      {
-        x: s.pos?.[0] ?? 100,
-        y: s.pos?.[1] ?? 100,
-      },
-    ])
-  );
-
-  const gid = `grad-${sub.id}`;
-  const fid = `glow-${sub.id}`;
-
-  const done = sub.skills.filter((s) =>
-    isAcquired(s.id)
-  ).length;
-
-  const edges = sub.skills.flatMap((s) =>
-    (s.prereq ?? [])
-      .filter((p) => pos[p])
-      .map((p) => {
-        const parentOk = isAcquired(p);
-        const bothOk = parentOk && isAcquired(s.id);
-
-        return {
-          key: `${p}>${s.id}`,
-          d: edgePath(pos[p], pos[s.id]),
-          state: bothOk
-            ? 'lit'
-            : parentOk
-              ? 'half'
-              : 'dark',
-        };
-      })
-  );
+/** Chemin en zigzag : les nœuds sont reliés dans l'ordre de la matière. */
+function Path({ sub, mastery, isAcquired, statusOf, nextId, selectedId, onSelect }) {
+  const n = sub.skills.length;
+  const height = TOP * 2 + Math.max(0, n - 1) * GAP;
+  const pts = sub.skills.map((_, i) => ({ x: ZIGZAG[i % ZIGZAG.length], y: TOP + i * GAP }));
 
   return (
-    <section
-      className="constellation"
-      style={{ '--c': sub.color }}
-    >
-      <header className="const-head">
-        <h2>
-          <span className="emoji">{sub.emoji}</span>
-          {sub.name}
-        </h2>
+    <div className="path" style={{ height }}>
+      <svg className="path-svg" viewBox={`0 0 100 ${height}`} preserveAspectRatio="none" aria-hidden="true">
+        {pts.slice(1).map((p, i) => {
+          const a = pts[i];
+          const d = `M ${a.x} ${a.y} C ${a.x} ${a.y + GAP / 2}, ${p.x} ${p.y - GAP / 2}, ${p.x} ${p.y}`;
+          const done = isAcquired(sub.skills[i].id);
+          return <path key={i} d={d} className={done ? 'seg done' : 'seg todo'} />;
+        })}
+      </svg>
 
-        <span className="const-count">
-          {done} / {sub.skills.length}
-        </span>
-      </header>
-
-      <div className="const-svg-wrapper">
-        <svg
-          viewBox={`0 0 ${VIEW_W} ${VIEW_H}`}
-          className="const-svg"
-          role="group"
-          aria-label={sub.name}
-        >
-          <defs>
-            <radialGradient
-              id={gid}
-              cx="35%"
-              cy="30%"
-              r="75%"
-            >
-              <stop offset="0%" stopColor="#ffffff" />
-              <stop offset="30%" stopColor={sub.color} />
-              <stop
-                offset="100%"
-                stopColor={sub.color}
-                stopOpacity="0.5"
-              />
-            </radialGradient>
-
-            <filter
-              id={fid}
-              x="-60%"
-              y="-60%"
-              width="220%"
-              height="220%"
-            >
-              <feGaussianBlur
-                stdDeviation="4"
-                result="blur"
-              />
-
-              <feMerge>
-                <feMergeNode in="blur" />
-                <feMergeNode in="SourceGraphic" />
-              </feMerge>
-            </filter>
-          </defs>
-
-          <g className="edges">
-            {edges.map((e) => (
-              <path
-                key={e.key}
-                d={e.d}
-                className={`edge ${e.state}`}
-                filter={
-                  e.state === 'lit'
-                    ? `url(#${fid})`
-                    : undefined
-                }
-              />
-            ))}
-          </g>
-
-          <g className="nodes">
-            {sub.skills.map((s) => {
-              const st = statusOf(s);
-              const acq = st === 'acquired';
-              const m = mastery(s.id);
-              const { x, y } = pos[s.id];
-              const isSel = selectedId === s.id;
-
-              return (
-                <g
-                  key={s.id}
-                  className={`node ${st}${isSel ? ' selected' : ''}`}
-                  transform={`translate(${x} ${y})`}
-                  tabIndex={0}
-                  role="button"
-                  aria-label={s.name}
-                  onClick={() => onSelect(s.id)}
-                  onKeyDown={(e) => {
-                    if (
-                      e.key === 'Enter' ||
-                      e.key === ' '
-                    ) {
-                      e.preventDefault();
-                      onSelect(s.id);
-                    }
-                  }}
-                >
-                  {acq && (
-                    <circle
-                      r={R + 16}
-                      className="halo"
-                      fill={sub.color}
-                      filter={`url(#${fid})`}
-                    />
-                  )}
-
-                  {acq && (
-                    <circle
-                      r={R + 7}
-                      className="pulse"
-                      stroke={sub.color}
-                    />
-                  )}
-
-                  {isSel && (
-                    <circle
-                      r={R + 11}
-                      className="sel-ring"
-                    />
-                  )}
-
-                  <circle
-                    r={R}
-                    className="core"
-                    fill={
-                      acq
-                        ? `url(#${gid})`
-                        : undefined
-                    }
-                    stroke={
-                      acq ? '#ffffff' : sub.color
-                    }
-                  />
-
-                  {st === 'available' && (
-                    <>
-                      <circle
-                        r={ARC_R}
-                        className="arc-bg"
-                        stroke={sub.color}
-                      />
-
-                      <circle
-                        r={ARC_R}
-                        className="arc"
-                        stroke={sub.color}
-                        strokeDasharray={`${(ARC_C * m) / 100} ${ARC_C}`}
-                        transform="rotate(-90)"
-                      />
-
-                      <text
-                        className="pct"
-                        textAnchor="middle"
-                        dominantBaseline="central"
-                        y="1"
-                      >
-                        {Math.round(m)}%
-                      </text>
-                    </>
-                  )}
-
-                  {st === 'locked' && (
-                    <text
-                      className="glyph"
-                      textAnchor="middle"
-                      dominantBaseline="central"
-                    >
-                      🔒
-                    </text>
-                  )}
-
-                  {acq && (
-                    <text
-                      className="glyph star"
-                      textAnchor="middle"
-                      dominantBaseline="central"
-                    >
-                      ★
-                    </text>
-                  )}
-
-                  <text
-                    className="label"
-                    y={R + 24}
-                    textAnchor="middle"
-                  >
-                    {s.short ?? s.name}
-                  </text>
-                </g>
-              );
-            })}
-          </g>
-        </svg>
-      </div>
-    </section>
-  );
-}
-
-function DetailPanel({
-  s,
-  status,
-  m,
-  n,
-  prereqs,
-  onStart,
-}) {
-  const label =
-    status === 'locked'
-      ? 'Verrouillée'
-      : status === 'acquired'
-        ? 'Acquise'
-        : m > 0
-          ? 'En cours'
-          : 'Disponible';
-
-  const disabled = status === 'locked' || n === 0;
-
-  const buttonText =
-    status === 'locked'
-      ? 'Verrouillée'
-      : n === 0
-        ? 'Contenu à venir'
-        : 'Lancer la session';
-
-  return (
-    <div
-      className={`panel-inner ${status}`}
-      style={{ '--c': s.color }}
-    >
-      <span className={`badge ${status}`}>
-        {label}
-      </span>
-
-      <h3>{s.name}</h3>
-
-      <p className="desc">{s.description}</p>
-
-      <div className="mastery-head">
-        <span>Maîtrise</span>
-        <b>{Math.round(m)} %</b>
-      </div>
-
-      <div className="mastery-bar">
-        <div style={{ width: `${m}%` }} />
-      </div>
-
-      <ol className="levels">
-        {LEVELS.map(([name, t]) => (
-          <li
-            key={name}
-            className={m >= t ? 'reached' : ''}
+      {sub.skills.map((s, i) => {
+        const st = statusOf(s);
+        const m = mastery(s.id);
+        const { x, y } = pts[i];
+        const isNext = s.id === nextId;
+        return (
+          <button
+            key={s.id}
+            className={`node ${st}${isNext ? ' next' : ''}${selectedId === s.id ? ' selected' : ''}`}
+            style={{ left: `${x}%`, top: y, '--c': sub.color }}
+            onClick={() => onSelect(s.id)}
+            aria-label={`${s.name} (${st === 'locked' ? 'verrouillée' : st === 'acquired' ? 'acquise' : `${Math.round(m)} %`})`}
           >
-            {name}
-          </li>
-        ))}
-      </ol>
-
-      {prereqs.length > 0 && (
-        <>
-          <h4>Prérequis</h4>
-
-          <ul className="prereqs">
-            {prereqs.map((p) => (
-              <li
-                key={p.id}
-                className={p.ok ? 'ok' : 'todo'}
-              >
-                <span>{p.ok ? '✓' : '○'}</span>
-                {p.name}
-              </li>
-            ))}
-          </ul>
-        </>
-      )}
-
-      <div className="panel-foot">
-        <span className="qcount">
-          {n} question{n > 1 ? 's' : ''}
-        </span>
-
-        <button
-          className="btn-primary"
-          disabled={disabled}
-          onClick={() => onStart(s)}
-        >
-          {buttonText}
-        </button>
-      </div>
+            {st === 'available' && (
+              <svg className="ring" viewBox="0 0 100 100" aria-hidden="true">
+                <circle cx="50" cy="50" r="46" pathLength="100" className="ring-bg" />
+                <circle cx="50" cy="50" r="46" pathLength="100" className="ring-fg" strokeDasharray={`${m} 100`} />
+              </svg>
+            )}
+            <span className="node-icon">
+              {st === 'locked' ? '🔒' : st === 'acquired' ? '★' : m > 0 ? `${Math.round(m)}%` : '▶'}
+            </span>
+            {isNext && <span className="bubble">{m > 0 ? 'Continuer' : 'Commencer'}</span>}
+            <span className="node-label">{s.short ?? s.name}</span>
+          </button>
+        );
+      })}
     </div>
   );
 }

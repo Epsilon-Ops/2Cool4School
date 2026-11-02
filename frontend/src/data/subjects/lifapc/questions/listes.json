@@ -1,0 +1,1094 @@
+[
+  {
+    "id": "c_001",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quelle est la complexité d'un ajout en tête d'une liste chaînée (avec le pointeur ad) ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "On crée une cellule et on réaffecte deux pointeurs, sans parcourir la liste. C'est la méthode Liste::ajoutEnTete.",
+    "tags": [
+      "liste chaînée",
+      "complexité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Ajouter en tête d'une liste chaînée coûte {{blank}}."
+  },
+  {
+    "id": "c_002",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Pourquoi ajoutEnQueue doit-elle parcourir la liste ?",
+    "answer": "La liste ne garde pas de pointeur vers la dernière cellule",
+    "distractors": [
+      "Les cellules sont stockées dans un tableau contigu",
+      "Le constructeur recopie tous les éléments à chaque ajout",
+      "La taille doit être recalculée à chaque ajout"
+    ],
+    "explanation": "La classe ne mémorise que ad (la première cellule) et taille. Il faut suivre les psuivant jusqu'à nullptr : l'ajout en queue est donc en O(n).",
+    "tags": [
+      "liste chaînée",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "c_005",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Remets dans l'ordre les étapes de Liste::ajoutEnTete.",
+    "answer": "Allocation, copie de l'élément, chaînage, mise à jour de ad, incrément de taille",
+    "distractors": [],
+    "explanation": "On alloue la cellule avec new, on copie l'élément, on chaîne la cellule à l'ancienne tête, on fait pointer ad sur elle, puis on incrémente taille.",
+    "tags": [
+      "liste chaînée",
+      "pointeurs"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Allouer une nouvelle Cellule avec new",
+      "Copier l'élément e dans temp->info",
+      "Faire pointer temp->psuivant vers l'ancienne tête ad",
+      "Mettre à jour ad pour qu'il pointe sur temp",
+      "Incrémenter taille"
+    ]
+  },
+  {
+    "id": "lifapc_09",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité d'un ajout en queue, si la liste possède un pointeur vers sa queue ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Avec un pointeur de queue, on relie directement le dernier maillon au nouveau : aucun parcours n'est nécessaire.",
+    "tags": [
+      "listes"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Ajouter en queue, avec un pointeur de queue, coûte {{blank}}."
+  },
+  {
+    "id": "lifapc_10",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Que contient une cellule de liste chaînée, en plus de sa donnée ?",
+    "answer": "Un pointeur vers la cellule suivante",
+    "distractors": [
+      "Un indice vers le suivant",
+      "La taille de la liste",
+      "Une copie de la liste"
+    ],
+    "explanation": "La fin de la liste est marquée par un pointeur nul (nullptr).",
+    "tags": [
+      "listes"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Chaque cellule contient sa valeur et {{blank}} vers la suivante."
+  },
+  {
+    "id": "liste_tp1_001",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'une liste chaînée ?",
+    "answer": "Une structure composée de cellules reliées entre elles par des pointeurs.",
+    "distractors": [
+      "Un tableau dont la taille est obligatoirement fixe.",
+      "Une structure dans laquelle tous les éléments sont stockés dans des variables indépendantes.",
+      "Une structure qui utilise uniquement des indices entiers."
+    ],
+    "explanation": "Une liste chaînée est composée de cellules. Chaque cellule contient une information et un pointeur vers la cellule suivante.",
+    "tags": ["listes", "cellules", "pointeurs"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Une liste chaînée est composée de {{blank}} reliées entre elles par des pointeurs."
+  },
+  {
+    "id": "liste_tp1_002",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Que contient généralement une cellule d'une liste simplement chaînée ?",
+    "answer": "Une information et un pointeur vers la cellule suivante.",
+    "distractors": [
+      "Un indice et une taille maximale.",
+      "Deux pointeurs obligatoires vers les cellules précédente et suivante.",
+      "Uniquement une information."
+    ],
+    "explanation": "Dans une liste simplement chaînée, une cellule contient une donnée (info) et un pointeur (psuivant) vers la cellule suivante.",
+    "tags": ["cellules", "structure", "pointeurs"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_003",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Dans la structure Cellule du TP, à quoi sert le champ psuivant ?",
+    "answer": "À stocker l'adresse de la cellule suivante.",
+    "distractors": [
+      "À stocker la valeur de l'élément.",
+      "À stocker le nombre total de cellules.",
+      "À stocker l'adresse du début de la liste."
+    ],
+    "explanation": "Le champ psuivant est un pointeur qui permet de relier une cellule à la suivante. Il vaut NULL lorsque la cellule est la dernière dans une liste simplement chaînée non circulaire.",
+    "tags": ["pointeurs", "cellules"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Le champ psuivant contient l'adresse de la cellule {{blank}}."
+  },
+  {
+    "id": "liste_tp1_004",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Que représente le champ ad dans la structure Liste ?",
+    "answer": "L'adresse de la première cellule de la liste.",
+    "distractors": [
+      "L'adresse de la dernière cellule.",
+      "Le nombre d'éléments de la liste.",
+      "La valeur du premier élément."
+    ],
+    "explanation": "Le pointeur ad permet d'accéder à la première cellule et donc de parcourir toute la liste en suivant les pointeurs psuivant.",
+    "tags": ["liste", "pointeurs", "structure"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_005",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Comment représente-t-on une liste simplement chaînée vide dans l'implantation classique du TP ?",
+    "answer": "ad vaut NULL et taille vaut 0.",
+    "distractors": [
+      "ad vaut 0 et taille vaut 1.",
+      "ad pointe vers une cellule contenant la valeur 0.",
+      "ad pointe vers la dernière cellule."
+    ],
+    "explanation": "Dans l'implantation classique, une liste vide ne possède aucune cellule : son pointeur ad vaut NULL et sa taille est égale à zéro.",
+    "tags": ["liste", "liste vide", "initialisation"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_006",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence entre une liste vide et une liste dont le destructeur a été appelé ?",
+    "answer": "Une liste vide reste initialisée et utilisable, tandis qu'une liste détruite n'est plus garantie comme utilisable.",
+    "distractors": [
+      "Il n'existe aucune différence.",
+      "Une liste vide ne possède pas de pointeur, tandis qu'une liste détruite possède toujours ses cellules.",
+      "Une liste détruite contient obligatoirement un élément."
+    ],
+    "explanation": "Une liste vide est un objet valide dont les ressources ont été correctement initialisées. Après destruction, son espace mémoire peut être libéré : on ne doit plus utiliser l'objet comme une liste initialisée.",
+    "tags": ["destructeur", "liste vide", "cycle de vie"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_007",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une copie profonde d'une liste ?",
+    "answer": "Une copie dans laquelle les cellules sont recréées indépendamment de celles de la liste originale.",
+    "distractors": [
+      "Une copie qui partage toutes les cellules avec la liste originale.",
+      "Une copie qui ne conserve que le premier élément.",
+      "Une copie qui duplique uniquement le pointeur ad."
+    ],
+    "explanation": "Une copie profonde crée de nouvelles cellules contenant les mêmes informations. Les deux listes sont indépendantes : modifier ou détruire l'une ne doit pas affecter l'autre.",
+    "tags": ["copie profonde", "mémoire", "listes"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_008",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Pourquoi une simple copie du pointeur ad ne constitue-t-elle pas une copie profonde ?",
+    "answer": "Parce que les deux listes pointeraient vers les mêmes cellules.",
+    "distractors": [
+      "Parce que les pointeurs ne peuvent pas être copiés.",
+      "Parce que le nombre d'éléments serait automatiquement doublé.",
+      "Parce que les cellules seraient immédiatement supprimées."
+    ],
+    "explanation": "Copier uniquement ad réalise une copie superficielle. Les deux objets partagent la même chaîne de cellules, ce qui peut provoquer des modifications involontaires et une double libération mémoire.",
+    "tags": ["copie", "pointeurs", "mémoire"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_009",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quel opérateur permet d'allouer dynamiquement une cellule en C++ ?",
+    "answer": "new",
+    "distractors": [
+      "malloc",
+      "free",
+      "delete"
+    ],
+    "explanation": "L'opérateur new permet d'allouer dynamiquement de la mémoire en C++. Il peut également appeler le constructeur de l'objet créé.",
+    "tags": ["C++", "allocation dynamique", "new"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "En C++, on utilise {{blank}} pour allouer dynamiquement une cellule."
+  },
+  {
+    "id": "liste_tp1_010",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quelles fonctions permettent d'allouer et de libérer dynamiquement de la mémoire en C ?",
+    "answer": "malloc et free",
+    "distractors": [
+      "new et delete",
+      "alloc et dealloc",
+      "create et destroy"
+    ],
+    "explanation": "En C, malloc réserve un bloc de mémoire dans le tas et free libère ce bloc. Ces fonctions sont déclarées dans stdlib.h.",
+    "tags": ["C", "malloc", "free", "mémoire"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "En C, on utilise {{blank}} pour allouer et {{blank}} pour libérer de la mémoire."
+  },
+  {
+    "id": "liste_tp1_011",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence importante entre malloc et new ?",
+    "answer": "new appelle le constructeur en C++, tandis que malloc réserve uniquement un bloc de mémoire sans construire automatiquement l'objet.",
+    "distractors": [
+      "malloc appelle automatiquement le destructeur.",
+      "new est une fonction de la bibliothèque standard du C.",
+      "malloc initialise systématiquement tous les champs à zéro."
+    ],
+    "explanation": "En C++, new combine allocation mémoire et construction de l'objet. malloc ne fait qu'allouer de la mémoire brute et ne déclenche aucun constructeur.",
+    "tags": ["C++", "C", "allocation", "constructeur"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_012",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Comment libère-t-on correctement une cellule allouée avec new en C++ ?",
+    "answer": "Avec delete.",
+    "distractors": [
+      "Avec free.",
+      "Avec malloc.",
+      "Avec NULL."
+    ],
+    "explanation": "Une cellule créée individuellement avec new doit être libérée avec delete. Cela appelle son destructeur avant de libérer la mémoire.",
+    "tags": ["C++", "delete", "destructeur"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Une cellule créée avec new est libérée avec {{blank}}."
+  },
+  {
+    "id": "liste_tp1_013",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "En C, comment transmet-on une variable à une fonction lorsque celle-ci doit pouvoir la modifier ?",
+    "answer": "En transmettant son adresse à l'aide d'un pointeur.",
+    "distractors": [
+      "En transmettant toujours une copie de la variable.",
+      "En utilisant une référence avec le symbole & dans le paramètre.",
+      "En utilisant obligatoirement une variable globale."
+    ],
+    "explanation": "Le C ne possède pas de passage par référence comme le C++. On utilise un pointeur pour permettre à une fonction de modifier la variable d'origine.",
+    "tags": ["C", "pointeurs", "passage de paramètres"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_014",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Si une fonction C possède le prototype void h(int *px), comment l'appelle-t-on pour modifier une variable a ?",
+    "answer": "h(&a)",
+    "distractors": [
+      "h(a)",
+      "h(*a)",
+      "h(int a)"
+    ],
+    "explanation": "Le paramètre px attend une adresse de type int*. L'opérateur & permet de récupérer l'adresse de la variable a.",
+    "tags": ["C", "pointeurs", "adresse"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Pour transmettre l'adresse de a à h, on écrit {{blank}}."
+  },
+  {
+    "id": "liste_tp1_015",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle bibliothèque faut-il inclure en C pour utiliser malloc et free ?",
+    "answer": "<stdlib.h>",
+    "distractors": [
+      "<stdio.h>",
+      "<string.h>",
+      "<math.h>"
+    ],
+    "explanation": "Les fonctions malloc et free sont déclarées dans le fichier d'en-tête standard stdlib.h.",
+    "tags": ["C", "bibliothèque standard", "malloc", "free"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Pour utiliser malloc et free en C, on inclut {{blank}}."
+  },
+  {
+    "id": "liste_tp1_016",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle du constructeur Liste() en C++ ?",
+    "answer": "Initialiser une liste vide.",
+    "distractors": [
+      "Ajouter automatiquement une cellule.",
+      "Détruire toutes les cellules.",
+      "Copier une autre liste."
+    ],
+    "explanation": "Le constructeur par défaut initialise les membres de la liste. Dans l'implantation classique, ad vaut nullptr et taille vaut 0.",
+    "tags": ["constructeur", "initialisation", "C++"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_017",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Dans l'implantation C du TP, quel est le rôle de initialiseListeDefaut ?",
+    "answer": "Initialiser une liste vide à partir de son adresse.",
+    "distractors": [
+      "Supprimer une liste.",
+      "Ajouter une cellule en tête.",
+      "Copier une liste existante."
+    ],
+    "explanation": "La fonction reçoit un pointeur vers une Liste et initialise ses champs, notamment ad à NULL et taille à 0.",
+    "tags": ["C", "initialisation", "liste"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_018",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Lorsqu'on ajoute un élément en tête d'une liste simplement chaînée non circulaire, quelle opération doit être effectuée en premier ?",
+    "answer": "Créer une nouvelle cellule et lui faire pointer psuivant vers l'ancienne première cellule.",
+    "distractors": [
+      "Supprimer l'ancienne première cellule.",
+      "Faire pointer ad directement vers NULL.",
+      "Parcourir toute la liste pour trouver la dernière cellule."
+    ],
+    "explanation": "La nouvelle cellule doit conserver l'accès à l'ancienne liste. On affecte donc son pointeur suivant à l'ancienne adresse de tête avant de mettre à jour ad.",
+    "tags": ["ajout en tête", "pointeurs", "cellules"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_019",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité temporelle de l'ajout d'un élément en tête d'une liste simplement chaînée ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "L'opération nécessite seulement de créer une cellule et de modifier quelques pointeurs. Elle ne dépend pas du nombre de cellules déjà présentes.",
+    "tags": ["complexité", "ajout en tête"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "L'ajout en tête d'une liste simplement chaînée a une complexité de {{blank}}."
+  },
+  {
+    "id": "liste_tp1_020",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Après un ajout en tête, que devient le pointeur ad ?",
+    "answer": "Il pointe vers la nouvelle cellule créée.",
+    "distractors": [
+      "Il pointe toujours vers l'ancienne première cellule.",
+      "Il devient obligatoirement NULL.",
+      "Il pointe vers la dernière cellule."
+    ],
+    "explanation": "La nouvelle cellule devient la première cellule de la liste. Son adresse doit donc être affectée au pointeur ad.",
+    "tags": ["ajout en tête", "pointeurs"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_021",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de la fonction testListeVide en C ?",
+    "answer": "Indiquer si la liste est vide.",
+    "distractors": [
+      "Compter les cellules de la liste.",
+      "Supprimer la première cellule.",
+      "Afficher tous les éléments."
+    ],
+    "explanation": "La fonction renvoie 1 si la liste est vide et 0 sinon, conformément à son interface.",
+    "tags": ["liste vide", "test", "C"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_022",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de premiereCelluleListe ?",
+    "answer": "Renvoyer l'adresse de la première cellule, ou NULL si la liste est vide.",
+    "distractors": [
+      "Renvoyer la valeur du premier élément.",
+      "Renvoyer le nombre de cellules.",
+      "Renvoyer l'adresse de la dernière cellule."
+    ],
+    "explanation": "Cette fonction permet de commencer le parcours d'une liste en récupérant l'adresse de sa première cellule.",
+    "tags": ["parcours", "cellules", "pointeurs"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_023",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de celluleSuivanteListe ?",
+    "answer": "Renvoyer l'adresse de la cellule suivante.",
+    "distractors": [
+      "Renvoyer l'information contenue dans la cellule.",
+      "Supprimer la cellule suivante.",
+      "Renvoyer l'adresse de la première cellule."
+    ],
+    "explanation": "Cette fonction permet de parcourir la liste en suivant le champ psuivant de chaque cellule.",
+    "tags": ["parcours", "pointeurs", "cellules"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_024",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle de elementCelluleListe ?",
+    "answer": "Récupérer l'information contenue dans une cellule.",
+    "distractors": [
+      "Récupérer l'adresse de la cellule suivante.",
+      "Supprimer une cellule.",
+      "Modifier la taille de la liste."
+    ],
+    "explanation": "La fonction accède au champ info de la cellule désignée par le pointeur fourni.",
+    "tags": ["cellules", "information", "accès"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_025",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Comment réalise-t-on un parcours complet d'une liste simplement chaînée ?",
+    "answer": "En partant de la première cellule et en suivant les pointeurs psuivant jusqu'à NULL.",
+    "distractors": [
+      "En utilisant directement les indices comme dans un tableau.",
+      "En partant obligatoirement de la dernière cellule.",
+      "En suivant les pointeurs vers les cellules précédentes."
+    ],
+    "explanation": "On commence à l'adresse ad puis on avance de cellule en cellule grâce à psuivant. Le parcours s'arrête lorsque le pointeur devient NULL.",
+    "tags": ["parcours", "pointeurs", "liste"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_026",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité temporelle de l'affichage de tous les éléments d'une liste de n cellules ?",
+    "answer": "O(n)",
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Chaque cellule est visitée exactement une fois lors du parcours complet.",
+    "tags": ["complexité", "affichage", "parcours"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Afficher tous les éléments d'une liste de n cellules coûte {{blank}}."
+  },
+  {
+    "id": "liste_tp1_027",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Lors d'une suppression en tête, que faut-il faire avant de libérer l'ancienne première cellule ?",
+    "answer": "Conserver l'adresse de la cellule suivante et mettre à jour ad.",
+    "distractors": [
+      "Mettre tous les pointeurs psuivant à NULL.",
+      "Libérer toute la liste.",
+      "Mettre taille à zéro sans modifier ad."
+    ],
+    "explanation": "Il faut sauvegarder l'adresse de la cellule suivante, déplacer ad vers celle-ci, puis libérer l'ancienne première cellule. Sinon, on perdrait l'accès au reste de la liste.",
+    "tags": ["suppression", "mémoire", "pointeurs"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_028",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité temporelle de la suppression en tête d'une liste simplement chaînée ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Il suffit de modifier ad et de libérer l'ancienne première cellule. Aucun parcours de la liste n'est nécessaire.",
+    "tags": ["complexité", "suppression", "liste"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_029",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de videListe ?",
+    "answer": "Supprimer tous les éléments de la liste et la laisser vide.",
+    "distractors": [
+      "Supprimer uniquement la première cellule.",
+      "Supprimer uniquement le dernier élément.",
+      "Copier la liste dans une autre liste."
+    ],
+    "explanation": "La fonction parcourt les cellules, les libère une par une, puis réinitialise les champs de la liste pour qu'elle soit vide.",
+    "tags": ["destruction", "mémoire", "liste vide"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_030",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Quelle est la complexité temporelle de la suppression de tous les éléments d'une liste de n cellules ?",
+    "answer": "O(n)",
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Chaque cellule doit être visitée et libérée une fois. Le nombre d'opérations est donc proportionnel à n.",
+    "tags": ["complexité", "destruction", "mémoire"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Vider une liste de n cellules nécessite une complexité de {{blank}}."
+  },
+  {
+    "id": "liste_tp1_031",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quelle fonctionnalité du C++ n'existe pas en C ?",
+    "answer": "Le passage de paramètres par référence",
+    "distractors": [
+      "Le passage de paramètres par valeur",
+      "Les pointeurs",
+      "Les structures"
+    ],
+    "explanation": "Le C ne possède pas de références. Pour modifier une variable passée en paramètre, on utilise un pointeur et un passage par adresse.",
+    "tags": ["tp1", "c", "cpp", "parametres"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_032",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Comment déclarer une fonction C qui peut modifier une variable entière passée en paramètre ?",
+    "answer": "void f(int *x)",
+    "distractors": [
+      "void f(int x)",
+      "void f(int &x)",
+      "int f(const int x)"
+    ],
+    "explanation": "En C, on utilise un pointeur pour accéder à la variable originale et la modifier indirectement.",
+    "tags": ["tp1", "c", "pointeurs", "parametres"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "En C, un paramètre modifiable de type int se transmet avec un {{blank}}."
+  },
+  {
+    "id": "liste_tp1_033",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Si une fonction C possède le prototype void h(int *px), comment l'appeler pour modifier la variable a ?",
+    "answer": "h(&a)",
+    "distractors": [
+      "h(a)",
+      "h(*a)",
+      "h(int a)"
+    ],
+    "explanation": "L'opérateur & permet d'obtenir l'adresse de la variable a. La fonction reçoit cette adresse dans son pointeur px et peut modifier la valeur avec *px.",
+    "tags": ["tp1", "c", "pointeurs", "adresse"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Pour transmettre l'adresse de a à h, on écrit {{blank}}."
+  },
+  {
+    "id": "liste_tp1_034",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Que représente l'expression *px lorsque px est un pointeur vers un entier ?",
+    "answer": "La valeur entière située à l'adresse contenue dans px",
+    "distractors": [
+      "L'adresse de px",
+      "La taille du pointeur",
+      "Une nouvelle variable entière indépendante"
+    ],
+    "explanation": "L'opérateur * permet de déréférencer un pointeur : il donne accès à la valeur stockée à l'adresse pointée.",
+    "tags": ["tp1", "c", "pointeurs", "dereferencement"],
+    "formats": ["single_choice", "true_false", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_035",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quelles fonctions permettent respectivement d'allouer et de libérer dynamiquement de la mémoire en C ?",
+    "answer": "malloc et free",
+    "distractors": [
+      "new et delete",
+      "alloc et delete",
+      "malloc et delete"
+    ],
+    "explanation": "En C, malloc permet d'allouer une zone mémoire dans le tas et free permet de la libérer. Ces fonctions sont déclarées dans stdlib.h.",
+    "tags": ["tp1", "c", "memoire", "allocation"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_036",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quel fichier d'en-tête faut-il inclure pour utiliser malloc et free en C ?",
+    "answer": "<stdlib.h>",
+    "distractors": [
+      "<stdio.h>",
+      "<string.h>",
+      "<iostream>"
+    ],
+    "explanation": "Les fonctions malloc et free sont déclarées dans le fichier d'en-tête standard stdlib.h.",
+    "tags": ["tp1", "c", "memoire", "bibliotheque"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "Pour utiliser malloc et free en C, on inclut {{blank}}."
+  },
+  {
+    "id": "liste_tp1_037",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quelle est la différence entre malloc et new ?",
+    "answer": "new appelle automatiquement le constructeur en C++, contrairement à malloc en C.",
+    "distractors": [
+      "malloc initialise toujours les variables à zéro",
+      "new existe en C et malloc uniquement en C++",
+      "malloc libère la mémoire tandis que new l'alloue"
+    ],
+    "explanation": "malloc réserve une zone mémoire sans appeler de constructeur. En C++, new réalise l'allocation et appelle automatiquement le constructeur de l'objet.",
+    "tags": ["tp1", "c", "cpp", "allocation"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp1_038",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Comment déclare-t-on une variable de type struct S en C si S est une structure ?",
+    "answer": "struct S variable;",
+    "distractors": [
+      "S variable;",
+      "class S variable;",
+      "typedef S variable;"
+    ],
+    "explanation": "En C, le mot-clé struct doit précéder le nom du type, sauf si un typedef a été défini pour créer un alias.",
+    "tags": ["tp1", "c", "structures"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "cloze": "En C, sans typedef, on déclare une variable de type S avec {{blank}}."
+  },
+  {
+    "id": "liste_tp1_039",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Comment appelle-t-on la possibilité de donner le même nom à plusieurs fonctions ayant des paramètres différents ?",
+    "answer": "La surcharge de fonctions",
+    "distractors": [
+      "La récursivité",
+      "L'héritage",
+      "L'encapsulation"
+    ],
+    "explanation": "La surcharge permet en C++ de définir plusieurs fonctions portant le même nom, à condition que leurs signatures diffèrent. Le C ne propose pas ce mécanisme.",
+    "tags": ["tp1", "c", "cpp", "fonctions"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp1_040",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence entre printf et std::printf ?",
+    "answer": "printf est utilisé en C, tandis que std::printf est utilisé en C++ avec l'espace de noms std.",
+    "distractors": [
+      "printf affiche uniquement des entiers",
+      "std::printf est utilisé uniquement en C",
+      "Il n'existe aucune différence"
+    ],
+    "explanation": "En C, les fonctions standard ne sont pas placées dans l'espace de noms std. On inclut stdio.h et on utilise printf.",
+    "tags": ["tp1", "c", "cpp", "entrees-sorties"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_041",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'une liste chaînée ?",
+    "answer": "Une structure composée de cellules reliées entre elles par des pointeurs.",
+    "distractors": [
+      "Un tableau dont la taille est obligatoirement fixe",
+      "Une structure où tous les éléments sont stockés dans une seule variable",
+      "Un tableau trié automatiquement"
+    ],
+    "explanation": "Une liste chaînée est constituée de cellules. Chaque cellule contient une information et un pointeur vers la cellule suivante.",
+    "tags": ["tp1", "listes", "cellules", "pointeurs"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp_042",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Quels sont les deux composants principaux d'une cellule dans une liste simplement chaînée ?",
+    "answer": "Une information et un pointeur vers la cellule suivante.",
+    "distractors": [
+      "Deux pointeurs et aucun élément",
+      "Un indice et une taille",
+      "Une adresse et un tableau"
+    ],
+    "explanation": "Dans le TP, une cellule contient Elem info et Cellule *psuivant.",
+    "tags": ["tp1", "listes", "cellules"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_043",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Dans la structure Cellule, à quoi sert le champ psuivant ?",
+    "answer": "À mémoriser l'adresse de la cellule suivante.",
+    "distractors": [
+      "À mémoriser le nombre total de cellules",
+      "À stocker la valeur du premier élément",
+      "À mémoriser l'adresse de la liste"
+    ],
+    "explanation": "psuivant est un pointeur qui permet de parcourir la liste de cellule en cellule.",
+    "tags": ["tp1", "listes", "pointeurs"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp_044",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Que vaut généralement le pointeur psuivant de la dernière cellule d'une liste simplement chaînée non circulaire ?",
+    "answer": "NULL",
+    "distractors": [
+      "L'adresse de la première cellule",
+      "L'adresse de la liste",
+      "La valeur zéro stockée dans info"
+    ],
+    "explanation": "Dans une liste simplement chaînée classique, NULL indique qu'il n'existe pas de cellule suivante.",
+    "tags": ["tp1", "listes", "null", "pointeurs"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_045",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Que représente le champ ad dans la structure Liste du TP ?",
+    "answer": "L'adresse de la première cellule de la liste.",
+    "distractors": [
+      "L'adresse de la dernière cellule",
+      "Le nombre d'éléments de la liste",
+      "L'adresse de la zone mémoire contenant tous les éléments"
+    ],
+    "explanation": "Le champ ad est un pointeur vers la première cellule. Il permet de commencer le parcours de la liste.",
+    "tags": ["tp1", "listes", "structure", "pointeurs"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_046",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "À quoi sert le champ taille dans la structure Liste du TP ?",
+    "answer": "À mémoriser le nombre d'éléments de la liste.",
+    "distractors": [
+      "À mémoriser la capacité maximale de la liste",
+      "À stocker l'adresse de la dernière cellule",
+      "À mémoriser la taille mémoire d'une cellule"
+    ],
+    "explanation": "Le champ taille est un entier qui permet de connaître directement le nombre d'éléments présents dans la liste.",
+    "tags": ["tp1", "listes", "taille"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_047",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 1,
+    "prompt": "Comment représente-t-on une liste simplement chaînée vide dans l'implantation classique du TP ?",
+    "answer": "ad vaut NULL et taille vaut 0.",
+    "distractors": [
+      "ad pointe vers une cellule contenant zéro",
+      "ad vaut NULL et taille vaut 1",
+      "ad pointe vers lui-même et taille vaut 0"
+    ],
+    "explanation": "Une liste vide ne possède aucune cellule. Son pointeur de tête vaut NULL et son compteur d'éléments vaut zéro.",
+    "tags": ["tp1", "listes", "liste-vide"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp_048",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la postcondition de initialiseListeDefaut(Liste *pl) ?",
+    "answer": "La liste pointée par pl est initialisée et vide.",
+    "distractors": [
+      "La liste contient une cellule",
+      "La liste est détruite",
+      "La liste contient une copie d'une autre liste"
+    ],
+    "explanation": "La procédure initialise une nouvelle liste vide. Elle doit notamment mettre ad à NULL et taille à 0.",
+    "tags": ["tp1", "listes", "initialisation"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_049",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle opération permet de tester si une liste est vide dans la version C du TP ?",
+    "answer": "testListeVide(Liste l)",
+    "distractors": [
+      "initialiseListeDefaut(Liste l)",
+      "premiereCelluleListe(Liste l)",
+      "videListe(Liste l)"
+    ],
+    "explanation": "testListeVide renvoie 1 si la liste est vide et 0 sinon.",
+    "tags": ["tp1", "listes", "tests"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_050",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Que renvoie premiereCelluleListe(Liste l) lorsque la liste est vide ?",
+    "answer": "NULL",
+    "distractors": [
+      "Une cellule contenant zéro",
+      "L'adresse de la structure Liste",
+      "Une adresse mémoire aléatoire"
+    ],
+    "explanation": "La fonction renvoie l'adresse de la première cellule si elle existe, sinon NULL.",
+    "tags": ["tp1", "listes", "cellules", "null"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_051",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Que fait la procédure ajoutEnTeteListe(Elem e, Liste *pl) ?",
+    "answer": "Elle ajoute un nouvel élément au début de la liste.",
+    "distractors": [
+      "Elle ajoute un élément à la fin",
+      "Elle supprime le premier élément",
+      "Elle remplace tous les éléments"
+    ],
+    "explanation": "La procédure crée une nouvelle cellule contenant e, la relie à l'ancienne première cellule puis actualise le pointeur ad.",
+    "tags": ["tp1", "listes", "ajout", "tete"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_052",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Lors d'un ajout en tête, quelle opération doit être effectuée sur le pointeur de la nouvelle cellule ?",
+    "answer": "Son pointeur psuivant doit pointer vers l'ancienne première cellule.",
+    "distractors": [
+      "Son pointeur doit toujours valoir NULL",
+      "Son pointeur doit pointer vers lui-même",
+      "Son pointeur doit pointer vers la structure Liste"
+    ],
+    "explanation": "La nouvelle cellule devient la première, mais elle doit conserver le lien vers le reste de la liste.",
+    "tags": ["tp1", "listes", "ajout", "pointeurs"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_053",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle valeur doit prendre taille après un ajout en tête réussi ?",
+    "answer": "La taille précédente augmentée de 1.",
+    "distractors": [
+      "La taille précédente diminuée de 1",
+      "La taille précédente multipliée par 2",
+      "La taille précédente reste inchangée"
+    ],
+    "explanation": "Chaque ajout réussi augmente le nombre d'éléments de la liste d'une unité.",
+    "tags": ["tp1", "listes", "taille", "ajout"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_054",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Que fait suppressionEnTeteListe(Liste *pl) ?",
+    "answer": "Elle retire la première cellule de la liste.",
+    "distractors": [
+      "Elle retire la dernière cellule",
+      "Elle supprime toute la liste",
+      "Elle trie les éléments"
+    ],
+    "explanation": "La procédure déplace le pointeur de tête vers la deuxième cellule, libère l'ancienne première cellule et décrémente taille.",
+    "tags": ["tp1", "listes", "suppression", "tete"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_055",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Pourquoi faut-il libérer la mémoire de l'ancienne première cellule lors d'une suppression en tête ?",
+    "answer": "Pour éviter une fuite mémoire.",
+    "distractors": [
+      "Pour accélérer le compilateur",
+      "Pour modifier automatiquement les autres éléments",
+      "Pour empêcher l'utilisation de NULL"
+    ],
+    "explanation": "Une cellule allouée dynamiquement doit être libérée lorsqu'elle n'est plus utilisée. En C, on utilise free.",
+    "tags": ["tp1", "listes", "memoire", "free"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_056",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence entre videListe et testamentListe dans le TP ?",
+    "answer": "videListe retire tous les éléments en conservant une liste initialisée, tandis que testamentListe prépare la liste à sa destruction.",
+    "distractors": [
+      "Les deux fonctions ajoutent un élément",
+      "videListe libère uniquement la structure et testamentListe trie les éléments",
+      "testamentListe ajoute une cellule sentinelle"
+    ],
+    "explanation": "Une liste vide reste un objet valide et peut être réutilisée. Le testament correspond à la libération des ressources associées à la liste.",
+    "tags": ["tp1", "listes", "destructeur", "memoire"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_057",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Qu'est-ce qu'une copie profonde d'une liste chaînée ?",
+    "answer": "Une copie dans laquelle chaque cellule est recréée indépendamment de la liste originale.",
+    "distractors": [
+      "Une copie qui partage toutes les cellules avec l'originale",
+      "Une copie qui ne conserve que le premier élément",
+      "Une copie qui partage uniquement le pointeur de tête"
+    ],
+    "explanation": "Une copie profonde crée de nouvelles cellules contenant les mêmes informations. Les deux listes peuvent ensuite être modifiées ou détruites indépendamment.",
+    "tags": ["tp1", "listes", "copie", "memoire"],
+    "formats": ["single_choice", "flashcard", "true_false"]
+  },
+  {
+    "id": "liste_tp_058",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Pourquoi une simple copie du pointeur ad ne suffit-elle pas pour copier une liste ?",
+    "answer": "Parce que les deux listes partageraient les mêmes cellules et pourraient provoquer des modifications involontaires ou une double libération.",
+    "distractors": [
+      "Parce qu'un pointeur ne peut jamais être copié",
+      "Parce que les cellules ne peuvent pas contenir d'entiers",
+      "Parce que la taille de la liste serait automatiquement multipliée"
+    ],
+    "explanation": "Copier uniquement l'adresse réalise une copie superficielle. Les deux structures référencent alors la même chaîne de cellules.",
+    "tags": ["tp1", "listes", "copie", "pointeurs"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_059",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Quelle est la complexité temporelle d'un ajout en tête dans une liste chaînée classique ?",
+    "answer": "O(1)",
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "L'ajout en tête nécessite un nombre constant d'opérations sur les pointeurs, indépendamment du nombre de cellules.",
+    "tags": ["tp1", "listes", "complexite", "ajout"],
+    "formats": ["single_choice", "flashcard"]
+  },
+  {
+    "id": "liste_tp_060",
+    "subject": "lifapc",
+    "skill": "lifapc.listes",
+    "difficulty": 3,
+    "prompt": "Quelle est la complexité temporelle d'un parcours complet d'une liste chaînée de n éléments ?",
+    "answer": "O(n)",
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
+    "explanation": "Chaque cellule doit être visitée pour parcourir toute la liste. Le nombre d'opérations est proportionnel à n.",
+    "tags": ["tp1", "listes", "complexite", "parcours"],
+    "formats": ["single_choice", "flashcard"]
+  }
+]

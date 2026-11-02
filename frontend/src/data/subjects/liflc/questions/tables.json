@@ -1,0 +1,90 @@
+[
+  {
+    "id": "liflc_05",
+    "subject": "liflc",
+    "skill": "liflc.tables",
+    "difficulty": 1,
+    "prompt": "Combien de lignes possède la table de vérité d'une formule à 3 variables ?",
+    "answer": "8",
+    "distractors": [
+      "3",
+      "6",
+      "9"
+    ],
+    "explanation": "Chaque variable peut valoir vrai ou faux : 2³ = 8 combinaisons.",
+    "tags": [
+      "tables"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Une formule à 3 variables a une table de vérité de {{blank}} lignes."
+  },
+  {
+    "id": "liflc_06",
+    "subject": "liflc",
+    "skill": "liflc.tables",
+    "difficulty": 2,
+    "prompt": "Combien de lignes possède la table de vérité d'une formule à 4 variables ?",
+    "answer": "16",
+    "distractors": [
+      "8",
+      "12",
+      "4"
+    ],
+    "explanation": "2⁴ = 16 combinaisons de valeurs.",
+    "tags": [
+      "tables"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_07",
+    "subject": "liflc",
+    "skill": "liflc.tables",
+    "difficulty": 2,
+    "prompt": "Une formule est dite « satisfiable » si :",
+    "answer": "Elle est vraie pour au moins une valeur de ses variables",
+    "distractors": [
+      "Elle est vraie pour toutes les valeurs de ses variables",
+      "Elle ne contient aucune variable",
+      "Elle est fausse pour toutes les valeurs de ses variables"
+    ],
+    "explanation": "Une formule fausse pour toutes les valeurs est dite insatisfiable (c'est une contradiction).",
+    "tags": [
+      "tables"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "liflc_08",
+    "subject": "liflc",
+    "skill": "liflc.tables",
+    "difficulty": 2,
+    "prompt": "Remets dans l'ordre la méthode d'évaluation d'une formule par table de vérité.",
+    "answer": "Lister, combiner, évaluer, lire.",
+    "distractors": [],
+    "explanation": "C'est une méthode systématique : aucune ligne n'est sautée.",
+    "tags": [
+      "tables"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Lister les variables",
+      "Générer toutes les combinaisons de valeurs",
+      "Évaluer les sous-formules colonne par colonne",
+      "Lire le résultat dans la colonne finale"
+    ]
+  }
+]
