@@ -6,10 +6,22 @@
     "difficulty": 1,
     "prompt": "Quelle est la complexité temporelle pour accéder à un élément d'un tableau par son indice ?",
     "answer": "O(1)",
-    "distractors": ["O(n)", "O(log n)", "O(n²)"],
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
     "explanation": "L'adresse se calcule directement : adresse de base + indice × taille d'un élément. Le temps ne dépend pas de la taille du tableau.",
-    "tags": ["complexité", "tableau"],
-    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "tags": [
+      "complexité",
+      "tableau"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Accéder à un élément d'un tableau par son indice se fait en {{blank}}."
   },
   {
@@ -19,10 +31,22 @@
     "difficulty": 1,
     "prompt": "Quelle est la complexité d'un parcours complet d'un tableau de n éléments ?",
     "answer": "O(n)",
-    "distractors": ["O(1)", "O(log n)", "O(n²)"],
+    "distractors": [
+      "O(1)",
+      "O(log n)",
+      "O(n²)"
+    ],
     "explanation": "Chaque élément est visité une seule fois : le temps croît linéairement avec n.",
-    "tags": ["complexité", "parcours"],
-    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "tags": [
+      "complexité",
+      "parcours"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Parcourir un tableau de n éléments se fait en {{blank}}."
   },
   {
@@ -32,10 +56,21 @@
     "difficulty": 2,
     "prompt": "Quelle est la complexité d'un tri à bulles sur n éléments, dans le pire cas ?",
     "answer": "O(n²)",
-    "distractors": ["O(n log n)", "O(n)", "O(log n)"],
+    "distractors": [
+      "O(n log n)",
+      "O(n)",
+      "O(log n)"
+    ],
     "explanation": "Deux boucles imbriquées parcourent chacune environ n éléments dans le pire cas.",
-    "tags": ["complexité", "tri"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "complexité",
+      "tri"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "algo_006",
@@ -46,13 +81,31 @@
     "answer": "Chaque complexité avec son exemple classique",
     "distractors": [],
     "explanation": "O(1) : accès par indice. O(log n) : dichotomie. O(n) : parcours. O(n²) : tri à bulles dans le pire cas.",
-    "tags": ["complexité", "synthèse"],
-    "formats": ["matching", "flashcard"],
+    "tags": [
+      "complexité",
+      "synthèse"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
     "pairs": [
-      ["O(1)", "Accès à un élément par son indice"],
-      ["O(log n)", "Recherche dichotomique"],
-      ["O(n)", "Parcours linéaire d'un tableau"],
-      ["O(n²)", "Tri à bulles dans le pire cas"]
+      [
+        "O(1)",
+        "Accès à un élément par son indice"
+      ],
+      [
+        "O(log n)",
+        "Recherche dichotomique"
+      ],
+      [
+        "O(n)",
+        "Parcours linéaire d'un tableau"
+      ],
+      [
+        "O(n²)",
+        "Tri à bulles dans le pire cas"
+      ]
     ]
   },
   {
@@ -62,10 +115,21 @@
     "difficulty": 1,
     "prompt": "Combien vaut log₂(1024) ?",
     "answer": "10",
-    "distractors": ["9", "8", "12"],
+    "distractors": [
+      "9",
+      "8",
+      "12"
+    ],
     "explanation": "2¹⁰ = 1024. Le logarithme en base 2 compte le nombre de divisions par deux possibles.",
-    "tags": ["logarithme", "maths"],
-    "formats": ["single_choice", "fill_blank", "flashcard"],
+    "tags": [
+      "logarithme",
+      "maths"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
     "cloze": "log₂(1024) = {{blank}}"
   },
   {
@@ -75,10 +139,22 @@
     "difficulty": 2,
     "prompt": "Quelle est la complexité temporelle d'une recherche dichotomique dans un tableau trié ?",
     "answer": "O(log n)",
-    "distractors": ["O(n)", "O(1)", "O(n²)"],
+    "distractors": [
+      "O(n)",
+      "O(1)",
+      "O(n²)"
+    ],
     "explanation": "À chaque étape, on élimine la moitié des éléments restants : il faut environ log₂(n) étapes.",
-    "tags": ["recherche", "complexité"],
-    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "tags": [
+      "recherche",
+      "complexité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "La complexité d'une recherche dichotomique est {{blank}}."
   },
   {
@@ -90,8 +166,14 @@
     "answer": "Milieu, comparaison, réduction de l'intervalle, répétition",
     "distractors": [],
     "explanation": "À chaque tour : on prend le milieu, on le compare à la valeur cherchée, on garde la moitié qui peut la contenir, puis on recommence.",
-    "tags": ["recherche", "dichotomie"],
-    "formats": ["ordering", "flashcard"],
+    "tags": [
+      "recherche",
+      "dichotomie"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
     "steps": [
       "Calculer l'indice du milieu de l'intervalle",
       "Comparer l'élément du milieu à la valeur cherchée",
@@ -112,8 +194,15 @@
       "Cinq : sans erreur, sans perte, ordonné, rapide et sécurisé"
     ],
     "explanation": "La fiabilité implique l'arrivée sans erreur, sans perte, dans l'ordre et sans duplication. La rapidité relève d'une autre contrainte, celle des applications multimédias.",
-    "tags": ["fiabilité", "TCP"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "fiabilité",
+      "TCP"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_002",
@@ -122,10 +211,21 @@
     "difficulty": 1,
     "prompt": "Quel protocole met en œuvre la fiabilité sur Internet ?",
     "answer": "TCP",
-    "distractors": ["UDP", "IP", "HTTP"],
+    "distractors": [
+      "UDP",
+      "IP",
+      "HTTP"
+    ],
     "explanation": "TCP gère la détection d'erreurs, les retransmissions, la numérotation et la remise en ordre. UDP n'offre pas cette fiabilité.",
-    "tags": ["TCP", "protocoles"],
-    "formats": ["single_choice", "fill_blank", "flashcard"],
+    "tags": [
+      "TCP",
+      "protocoles"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
     "cloze": "Sur Internet, la fiabilité est assurée par le protocole {{blank}}."
   },
   {
@@ -135,10 +235,21 @@
     "difficulty": 2,
     "prompt": "Quel organisme normalise les réseaux locaux, notamment via le groupe 802 ?",
     "answer": "IEEE",
-    "distractors": ["Arcep", "ISO", "IETF"],
+    "distractors": [
+      "Arcep",
+      "ISO",
+      "IETF"
+    ],
     "explanation": "L'IEEE, via le groupe 802, normalise les réseaux locaux ; le sous-groupe 802.11 concerne le WiFi. L'Arcep est le régulateur français.",
-    "tags": ["normalisation", "IEEE"],
-    "formats": ["single_choice", "fill_blank", "flashcard"],
+    "tags": [
+      "normalisation",
+      "IEEE"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
     "cloze": "Les normes des réseaux locaux (groupe 802) sont définies par l'{{blank}}."
   },
   {
@@ -148,10 +259,21 @@
     "difficulty": 2,
     "prompt": "Quelle est l'autorité française de régulation des communications électroniques ?",
     "answer": "L'Arcep",
-    "distractors": ["La CNIL", "L'ANSSI", "Le CSA"],
+    "distractors": [
+      "La CNIL",
+      "L'ANSSI",
+      "Le CSA"
+    ],
     "explanation": "L'Arcep (Autorité de régulation des communications électroniques et des postes) veille à la couverture du territoire et publie des études sur les prix.",
-    "tags": ["régulation", "France"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "régulation",
+      "France"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_005",
@@ -160,10 +282,20 @@
     "difficulty": 1,
     "prompt": "Qu'est-ce qu'une RFC ?",
     "answer": "Un document normatif décrivant un protocole (Request for Comments)",
-    "distractors": ["Un logiciel de routage", "Un type de câble réseau", "Un algorithme de chiffrement"],
+    "distractors": [
+      "Un logiciel de routage",
+      "Un type de câble réseau",
+      "Un algorithme de chiffrement"
+    ],
     "explanation": "Par exemple, la RFC 9112 décrit HTTP/1.1 : comment le client demande une page et comment le serveur répond.",
-    "tags": ["normalisation", "RFC"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "normalisation",
+      "RFC"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_006",
@@ -178,8 +310,15 @@
       "Il remplace l'adresse IP par un numéro de téléphone"
     ],
     "explanation": "Un VPN s'appuie sur un réseau public existant : il chiffre les données et filtre ce qui entre et sort dans le tunnel.",
-    "tags": ["VPN", "sécurité"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "VPN",
+      "sécurité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "c_001",
@@ -188,10 +327,22 @@
     "difficulty": 1,
     "prompt": "Quelle est la complexité d'un ajout en tête d'une liste chaînée (avec le pointeur ad) ?",
     "answer": "O(1)",
-    "distractors": ["O(n)", "O(log n)", "O(n²)"],
+    "distractors": [
+      "O(n)",
+      "O(log n)",
+      "O(n²)"
+    ],
     "explanation": "On crée une cellule et on réaffecte deux pointeurs, sans parcourir la liste. C'est la méthode Liste::ajoutEnTete.",
-    "tags": ["liste chaînée", "complexité"],
-    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "tags": [
+      "liste chaînée",
+      "complexité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Ajouter en tête d'une liste chaînée coûte {{blank}}."
   },
   {
@@ -207,8 +358,14 @@
       "La taille doit être recalculée à chaque ajout"
     ],
     "explanation": "La classe ne mémorise que ad (la première cellule) et taille. Il faut suivre les psuivant jusqu'à nullptr : l'ajout en queue est donc en O(n).",
-    "tags": ["liste chaînée", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "liste chaînée",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "c_005",
@@ -219,8 +376,14 @@
     "answer": "Allocation, copie de l'élément, chaînage, mise à jour de ad, incrément de taille",
     "distractors": [],
     "explanation": "On alloue la cellule avec new, on copie l'élément, on chaîne la cellule à l'ancienne tête, on fait pointer ad sur elle, puis on incrémente taille.",
-    "tags": ["liste chaînée", "pointeurs"],
-    "formats": ["ordering", "flashcard"],
+    "tags": [
+      "liste chaînée",
+      "pointeurs"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
     "steps": [
       "Allouer une nouvelle Cellule avec new",
       "Copier l'élément e dans temp->info",
@@ -236,10 +399,21 @@
     "difficulty": 2,
     "prompt": "Quel est le rôle du constructeur de copie de Liste ?",
     "answer": "Créer une copie indépendante de la liste, cellule par cellule",
-    "distractors": ["Vider la liste d'origine", "Compter les éléments", "Libérer la mémoire de la liste"],
+    "distractors": [
+      "Vider la liste d'origine",
+      "Compter les éléments",
+      "Libérer la mémoire de la liste"
+    ],
     "explanation": "Il recopie chaque élément dans de nouvelles cellules. Sans lui, deux listes partageraient les mêmes cellules et une destruction affecterait l'autre.",
-    "tags": ["copie", "règle des trois"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "copie",
+      "règle des trois"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "c_004",
@@ -248,10 +422,21 @@
     "difficulty": 2,
     "prompt": "Quel est le rôle du destructeur ~Liste() ?",
     "answer": "Appeler vide() pour libérer toutes les cellules",
-    "distractors": ["Réinitialiser taille à 1", "Copier la liste dans un tableau", "Ne rien faire, la mémoire est gérée automatiquement"],
+    "distractors": [
+      "Réinitialiser taille à 1",
+      "Copier la liste dans un tableau",
+      "Ne rien faire, la mémoire est gérée automatiquement"
+    ],
     "explanation": "Les cellules sont allouées avec new : sans libération (delete), il y a une fuite mémoire.",
-    "tags": ["destructeur", "mémoire"],
-    "formats": ["single_choice", "fill_blank", "flashcard"],
+    "tags": [
+      "destructeur",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
     "cloze": "Le destructeur de Liste appelle la méthode {{blank}} pour libérer chaque cellule."
   },
   {
@@ -267,8 +452,15 @@
       "Quand p et q sont toutes deux vraies"
     ],
     "explanation": "Dans la table de vérité, seule la ligne V → F donne F.",
-    "tags": ["implication", "table de vérité"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "implication",
+      "table de vérité"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "logique_003",
@@ -277,10 +469,21 @@
     "difficulty": 1,
     "prompt": "Quelle est la valeur de V ∧ F ?",
     "answer": "Faux",
-    "distractors": ["Vrai", "Indéterminé", "Dépend du contexte"],
+    "distractors": [
+      "Vrai",
+      "Indéterminé",
+      "Dépend du contexte"
+    ],
     "explanation": "Une conjonction n'est vraie que si les deux membres sont vrais.",
-    "tags": ["conjonction", "table de vérité"],
-    "formats": ["single_choice", "fill_blank", "flashcard"],
+    "tags": [
+      "conjonction",
+      "table de vérité"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
     "cloze": "V ∧ F vaut {{blank}}."
   },
   {
@@ -290,10 +493,252 @@
     "difficulty": 2,
     "prompt": "Quelle est la négation de p ∧ q ?",
     "answer": "¬p ∨ ¬q",
-    "distractors": ["¬p ∧ ¬q", "p ∨ q", "¬p ⇒ ¬q"],
+    "distractors": [
+      "¬p ∧ ¬q",
+      "p ∨ q",
+      "¬p ⇒ ¬q"
+    ],
     "explanation": "Loi de De Morgan : la négation d'une conjonction est la disjonction des négations.",
-    "tags": ["De Morgan", "négation"],
-    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "tags": [
+      "De Morgan",
+      "négation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "La négation de p ∧ q est {{blank}}."
+  },
+  {
+    "id": "algo_007",
+    "subject": "algorithmique",
+    "skill": "algo.tri",
+    "difficulty": 2,
+    "prompt": "Quelle est la complexité moyenne du tri fusion ?",
+    "answer": "O(n log n)",
+    "distractors": [
+      "O(n²)",
+      "O(n)",
+      "O(log n)"
+    ],
+    "explanation": "Le tableau est divisé en deux à chaque niveau (log n niveaux) et chaque niveau fusionne n éléments.",
+    "tags": [
+      "tri",
+      "fusion"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "La complexité moyenne du tri fusion est {{blank}}."
+  },
+  {
+    "id": "algo_008",
+    "subject": "algorithmique",
+    "skill": "algo.tri",
+    "difficulty": 2,
+    "prompt": "Quel tri insère chaque élément à sa place dans la partie déjà triée, et est très rapide sur de petits tableaux presque triés ?",
+    "answer": "Tri par insertion",
+    "distractors": [
+      "Tri fusion",
+      "Tri par tas",
+      "Tri par dénombrement"
+    ],
+    "explanation": "Le tri par insertion est en O(n²) dans le pire cas, mais en O(n) si le tableau est déjà presque trié.",
+    "tags": [
+      "tri",
+      "insertion"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_001",
+    "subject": "bases de données",
+    "skill": "bdd.modele",
+    "difficulty": 1,
+    "prompt": "Dans le modèle relationnel, comment s'appelle une ligne d'une table ?",
+    "answer": "Un n-uplet (tuple)",
+    "distractors": [
+      "Un attribut",
+      "Un domaine",
+      "Une clé étrangère"
+    ],
+    "explanation": "Une table est un ensemble de n-uplets ; chaque colonne correspond à un attribut.",
+    "tags": [
+      "modèle relationnel"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_002",
+    "subject": "bases de données",
+    "skill": "bdd.modele",
+    "difficulty": 1,
+    "prompt": "Une colonne d'une table représente…",
+    "answer": "un attribut",
+    "distractors": [
+      "un n-uplet",
+      "une clé primaire",
+      "une requête"
+    ],
+    "explanation": "Chaque colonne porte un nom (attribut) et un domaine, qui définit les valeurs autorisées.",
+    "tags": [
+      "modèle relationnel"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Une colonne d'une table représente un {{blank}}."
+  },
+  {
+    "id": "bdd_003",
+    "subject": "bases de données",
+    "skill": "bdd.cles",
+    "difficulty": 2,
+    "prompt": "Quelle est la propriété d'une clé primaire ?",
+    "answer": "Identifier chaque ligne de façon unique et non nulle",
+    "distractors": [
+      "Pouvoir contenir des doublons",
+      "Être toujours un entier",
+      "Référencer obligatoirement une autre table"
+    ],
+    "explanation": "Une clé primaire est unique et ne peut pas être NULL : elle identifie chaque n-uplet.",
+    "tags": [
+      "clé primaire"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_004",
+    "subject": "bases de données",
+    "skill": "bdd.cles",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'une clé étrangère ?",
+    "answer": "Un attribut qui référence la clé primaire d'une autre table",
+    "distractors": [
+      "Une clé jamais nulle, sans aucune référence",
+      "Un index créé automatiquement sur chaque colonne",
+      "Une clé calculée à partir de deux autres"
+    ],
+    "explanation": "La clé étrangère assure l'intégrité référentielle : la valeur doit exister dans la table référencée.",
+    "tags": [
+      "clé étrangère"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_005",
+    "subject": "bases de données",
+    "skill": "bdd.normalisation",
+    "difficulty": 2,
+    "prompt": "Quel est l'objectif principal de la normalisation ?",
+    "answer": "Éliminer les redondances et les anomalies de mise à jour",
+    "distractors": [
+      "Accélérer toutes les requêtes",
+      "Chiffrer les données",
+      "Supprimer les clés primaires"
+    ],
+    "explanation": "Une base normalisée évite de répéter la même information à plusieurs endroits, donc les incohérences lors des mises à jour.",
+    "tags": [
+      "normalisation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "bdd_006",
+    "subject": "bases de données",
+    "skill": "bdd.sql",
+    "difficulty": 1,
+    "prompt": "Quelle clause SQL sert à filtrer les lignes avant un regroupement ?",
+    "answer": "WHERE",
+    "distractors": [
+      "HAVING",
+      "GROUP BY",
+      "ORDER BY"
+    ],
+    "explanation": "WHERE filtre les lignes avant GROUP BY ; HAVING filtre ensuite les groupes.",
+    "tags": [
+      "SQL"
+    ],
+    "formats": [
+      "single_choice",
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Pour filtrer les lignes avant un regroupement, on utilise la clause {{blank}}."
+  },
+  {
+    "id": "bdd_007",
+    "subject": "bases de données",
+    "skill": "bdd.sql",
+    "difficulty": 2,
+    "prompt": "Quelle jointure renvoie toutes les lignes de la table de gauche, même sans correspondance à droite ?",
+    "answer": "LEFT JOIN",
+    "distractors": [
+      "INNER JOIN",
+      "CROSS JOIN",
+      "UNION"
+    ],
+    "explanation": "LEFT JOIN conserve les lignes de gauche et remplit par NULL les colonnes de droite sans correspondance.",
+    "tags": [
+      "SQL",
+      "jointures"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
+    "cloze": "Une {{blank}} renvoie toutes les lignes de la table de gauche."
+  },
+  {
+    "id": "bdd_008",
+    "subject": "bases de données",
+    "skill": "bdd.sql",
+    "difficulty": 3,
+    "prompt": "Remets dans l'ordre d'exécution logique une requête SELECT.",
+    "answer": "FROM, WHERE, GROUP BY, HAVING, SELECT, ORDER BY",
+    "distractors": [],
+    "explanation": "Le SELECT est écrit en premier, mais il est évalué après FROM, WHERE, GROUP BY et HAVING. ORDER BY vient en dernier.",
+    "tags": [
+      "SQL",
+      "ordre d'exécution"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "FROM",
+      "WHERE",
+      "GROUP BY",
+      "HAVING",
+      "SELECT",
+      "ORDER BY"
+    ]
   }
 ]

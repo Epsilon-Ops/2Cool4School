@@ -1,0 +1,29 @@
+
+{
+  "skills": [
+    {
+      "id": "liflc.propositions",
+      "name": "Propositions",
+      "short": "Propositions",
+      "pos": [110, 190],
+      "prereq": [],
+      "description": "Propositions et connecteurs logiques."
+    },
+    {
+      "id": "liflc.tables",
+      "name": "Tables de vérité",
+      "short": "Tables",
+      "pos": [300, 100],
+      "prereq": ["liflc.propositions"],
+      "description": "Évaluation des formules logiques."
+    },
+    {
+      "id": "liflc.predicats",
+      "name": "Prédicats et quantificateurs",
+      "short": "Prédicats",
+      "pos": [450, 190],
+      "prereq": ["liflc.propositions"],
+      "description": "Logique des prédicats et quantificateurs."
+    }
+  ]
+}

@@ -1,0 +1,29 @@
+
+{
+  "skills": [
+    {
+      "id": "lifapc.complexite",
+      "name": "Complexité algorithmique",
+      "short": "Complexité",
+      "pos": [110, 190],
+      "prereq": [],
+      "description": "Ordres de grandeur et analyse de complexité."
+    },
+    {
+      "id": "lifapc.listes",
+      "name": "Listes génériques",
+      "short": "Listes",
+      "pos": [300, 100],
+      "prereq": [],
+      "description": "Manipulation des listes chaînées génériques."
+    },
+    {
+      "id": "lifapc.sentinelles",
+      "name": "Cellules sentinelles",
+      "short": "Sentinelles",
+      "pos": [450, 190],
+      "prereq": ["lifapc.listes"],
+      "description": "Utilisation des cellules sentinelles."
+    }
+  ]
+}

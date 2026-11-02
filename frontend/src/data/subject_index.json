@@ -1,0 +1,21 @@
+
+{
+  "subjects": [
+    {
+      "id": "lifapc",
+      "code": "LIFAPC",
+      "name": "Algorithmique, Programmation et Complexité",
+      "path": "./subjects/lifapc/subject.json",
+      "skillsPath": "./subjects/lifapc/skills.json",
+      "questionDirectory": "./subjects/lifapc/"
+    },
+    {
+      "id": "liflc",
+      "code": "LIFLC",
+      "name": "Logique Classique",
+      "path": "./subjects/liflc/subject.json",
+      "skillsPath": "./subjects/liflc/skills.json",
+      "questionDirectory": "./subjects/liflc/"
+    }
+  ]
+}

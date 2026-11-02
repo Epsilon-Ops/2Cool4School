@@ -1,0 +1,25 @@
+
+{
+    "id": "liflc",
+    "code": "LIFLC",
+    "name": "Logique Classique",
+    "emoji": "🧠",
+    "color": "#c084fc",
+    "description": "Logique propositionnelle, raisonnement et démonstration.",
+    "data": {
+      "skills": "./skills.json",
+      "categories": {
+        "cours": [
+          "./cours/questions.json"
+        ],
+        "td": [
+          "./td/td1.json",
+          "./td/td2.json"
+        ],
+        "examens": [
+          "./examens/questions.json"
+        ]
+      }
+    }
+  }
+  
