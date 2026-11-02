@@ -1,0 +1,29 @@
+﻿# Dépendances JavaScript
+node_modules/
+
+# Fichiers de compilation
+dist/
+build/
+
+# Python
+__pycache__/
+*.py[cod]
+.venv/
+venv/
+
+# Configuration locale et secrets
+.env
+.env.*
+
+# Bases de données locales
+*.db
+*.sqlite
+*.sqlite3
+
+# Éditeurs
+.vscode/
+.idea/
+
+# Système
+.DS_Store
+Thumbs.db

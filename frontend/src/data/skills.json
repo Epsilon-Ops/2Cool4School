@@ -1,0 +1,45 @@
+{
+  "subjects": [
+    {
+      "id": "algorithmique",
+      "name": "Algorithmique & complexité",
+      "emoji": "⚙️",
+      "color": "#1cb0f6",
+      "skills": [
+        { "id": "algo.complexite", "name": "Complexité", "prereq": [], "description": "Ordres de grandeur, O(1), O(n), O(n²)…" },
+        { "id": "algo.recherche", "name": "Recherche dichotomique", "prereq": ["algo.complexite"], "description": "Recherche dans un tableau trié et son coût." }
+      ]
+    },
+    {
+      "id": "reseaux",
+      "name": "Réseaux",
+      "emoji": "🌐",
+      "color": "#58cc02",
+      "skills": [
+        { "id": "reseaux.intro", "name": "Introduction aux réseaux", "prereq": [], "description": "Télécoms, réseau public/privé, VPN, backbone." },
+        { "id": "reseaux.fiabilite", "name": "Fiabilité & TCP", "prereq": ["reseaux.intro"], "description": "Erreurs, pertes, ordre, duplication." },
+        { "id": "reseaux.normes", "name": "Normes & régulation", "prereq": [], "description": "Normalisation, RFC, IEEE, Arcep." }
+      ]
+    },
+    {
+      "id": "listes",
+      "name": "Listes chaînées (C++)",
+      "emoji": "🔗",
+      "color": "#ff9600",
+      "skills": [
+        { "id": "c.listes", "name": "Opérations de base", "prereq": [], "description": "Ajout en tête, en queue, suppression." },
+        { "id": "c.copie", "name": "Copie & destruction", "prereq": ["c.listes"], "description": "Constructeur de copie, opérateur =, destructeur." }
+      ]
+    },
+    {
+      "id": "logique",
+      "name": "Logique",
+      "emoji": "🧠",
+      "color": "#ce82ff",
+      "skills": [
+        { "id": "logique.propositions", "name": "Propositions & tables de vérité", "prereq": [], "description": "∧, ∨, ¬, valeurs de vérité." },
+        { "id": "logique.implication", "name": "Implications & équivalences", "prereq": ["logique.propositions"], "description": "Implication, De Morgan, négation." }
+      ]
+    }
+  ]
+}
