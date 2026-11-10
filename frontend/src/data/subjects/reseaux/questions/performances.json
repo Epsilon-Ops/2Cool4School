@@ -1,0 +1,274 @@
+[
+  {
+    "id": "reseaux_performances_001",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Quelle est la différence entre débit et latence ?",
+    "answer": "Le débit mesure la quantité de données transférées par seconde, la latence le temps de propagation du premier bit",
+    "distractors": [
+      "Ce sont deux noms pour la même grandeur",
+      "La latence s'exprime en bit/s, le débit en secondes",
+      "Le débit dépend de la distance, la latence non"
+    ],
+    "explanation": "Débit et latence sont deux grandeurs distinctes et indépendantes. La latence dépend surtout de la distance, le débit de la capacité de la carte et du support.",
+    "tags": [
+      "debit",
+      "latence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_002",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Quel type de réseau a la latence la plus élevée parmi ceux cités ?",
+    "answer": "Les réseaux satellites",
+    "distractors": [
+      "Les réseaux PAN (Bluetooth)",
+      "Les réseaux optiques terrestres",
+      "Les réseaux locaux Ethernet"
+    ],
+    "explanation": "Le signal doit monter jusqu'à l'espace puis redescendre : la distance parcourue est très grande, donc la latence aussi.",
+    "tags": [
+      "latence",
+      "satellite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_003",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Vrai ou faux : le débit et la latence d'une liaison sont liés l'un à l'autre.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Ce sont deux grandeurs totalement indépendantes. En revanche, le temps de transmission d'une trame dépend des deux.",
+    "tags": [
+      "debit",
+      "latence"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_004",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Complétez la phrase.",
+    "answer": "débit",
+    "distractors": [],
+    "explanation": "Temps d'émission = N / D, où N est la taille de la trame en bits et D le débit en bit/s.",
+    "tags": [
+      "temps_emission",
+      "formule"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Le temps d'émission d'une trame est égal à sa taille en bits divisée par le {{blank}} de la liaison."
+  },
+  {
+    "id": "reseaux_performances_005",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Quelle formule donne le temps de transmission d'une trame (N bits, débit D, distance d, vitesse de propagation v) ?",
+    "answer": "T = N / D + d / v",
+    "distractors": [
+      "T = N × D + d / v",
+      "T = N / D × d / v",
+      "T = d / N + v / D"
+    ],
+    "explanation": "Le temps total est la somme du temps d'émission (N / D) et du temps de propagation (d / v).",
+    "tags": [
+      "formule",
+      "temps_transmission"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_006",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Que représente le RTT (Round Trip Time) ?",
+    "answer": "Deux fois le temps de propagation, c'est-à-dire l'aller-retour",
+    "distractors": [
+      "Le temps d'émission d'une trame",
+      "La moitié de la latence",
+      "Le temps de traversée d'un commutateur"
+    ],
+    "explanation": "Le RTT est le temps aller-retour d'un bit entre deux équipements. Il permet de savoir si une trame a été reçue, grâce à l'acquittement.",
+    "tags": [
+      "rtt"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_007",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Quel est le débit de bout en bout d'une chaîne de plusieurs liaisons ?",
+    "answer": "Le débit de la liaison la plus lente",
+    "distractors": [
+      "La moyenne des débits de toutes les liaisons",
+      "Le débit de la première liaison",
+      "La somme des débits de toutes les liaisons"
+    ],
+    "explanation": "Le débit de bout en bout est limité par le maillon le plus faible.",
+    "tags": [
+      "debit",
+      "chaine_de_liaisons"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_008",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 3,
+    "prompt": "Sur un trajet de plusieurs liaisons, comment se calcule la latence totale ?",
+    "answer": "La somme des latences de chaque liaison, plus le temps de traversée des équipements intermédiaires",
+    "distractors": [
+      "Le maximum des latences des liaisons",
+      "La latence de la liaison la plus rapide",
+      "Le produit des latences des liaisons"
+    ],
+    "explanation": "Chaque équipement intermédiaire doit recevoir le signal avant de le réémettre : ce temps s'ajoute aux latences des liaisons.",
+    "tags": [
+      "latence",
+      "chaine_de_liaisons"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_009",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Pourquoi peut-on négliger le temps de propagation sur une ligne dans l'exemple du livreur ?",
+    "answer": "Le signal se propage presque à la vitesse de la lumière, donc son temps de propagation est très faible",
+    "distractors": [
+      "Parce que le câble n'a pas de longueur physique",
+      "Parce que le débit du câble est infini",
+      "Parce que les signaux électriques ne se propagent pas"
+    ],
+    "explanation": "Dans le corrigé, le temps de propagation est négligé sur la ligne, alors que pour le livreur c'est le temps de trajet qui compte et son débit est considéré comme infini.",
+    "tags": [
+      "latence",
+      "exercice"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_010",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 3,
+    "prompt": "Un livreur roule à 46 km/h et transporte 3 cartouches de 7 Go. La ligne a un débit de 150 Mbit/s. Pour quelles distances le livreur est-il plus rapide ?",
+    "answer": "Pour des distances inférieures à environ 14,3 km",
+    "distractors": [
+      "Pour des distances inférieures à environ 1,4 km",
+      "Pour des distances supérieures à environ 143 km",
+      "Pour des distances inférieures à environ 46 km"
+    ],
+    "explanation": "La ligne met 3 × 7 × 8 × 10^9 / (150 × 10^6) = 1120 s. Le livreur met d × 3600 / 46 s : il est plus rapide si d < 1120 × 46 / 3600 ≈ 14,3 km.",
+    "tags": [
+      "exercice",
+      "livreur",
+      "debit"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_011",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Quelle est la portée d'une fibre optique sans répéteur, selon le cours ?",
+    "answer": "Jusqu'à 30 km",
+    "distractors": [
+      "Environ 100 m",
+      "Environ 1 km",
+      "Plus de 1000 km"
+    ],
+    "explanation": "Le cours indique qu'une fibre optique peut couvrir jusqu'à 30 km sans répéteur, contre quelques centaines de mètres pour une paire torsadée.",
+    "tags": [
+      "supports",
+      "fibre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_performances_012",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 2,
+    "prompt": "Associez chaque support de transmission à sa caractéristique principale.",
+    "answer": "Paire torsadée (RJ45) : Courtes distances, réseaux Ethernet (quelques centaines de mètres) ; Câble coaxial : Meilleurs débits et distances que la paire, mais plus coûteux ; Fibre optique : Impulsions lumineuses, jusqu'à 30 km sans répéteur ; Satellite : Débit élevé mais latence très importante",
+    "distractors": [],
+    "explanation": "Le choix du support dépend de la distance, du débit recherché et du coût. Le satellite est un moyen d'accès précieux dans les zones isolées, mais sa latence est élevée.",
+    "tags": [
+      "supports"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Paire torsadée (RJ45)",
+        "Courtes distances, réseaux Ethernet (quelques centaines de mètres)"
+      ],
+      [
+        "Câble coaxial",
+        "Meilleurs débits et distances que la paire, mais plus coûteux"
+      ],
+      [
+        "Fibre optique",
+        "Impulsions lumineuses, jusqu'à 30 km sans répéteur"
+      ],
+      [
+        "Satellite",
+        "Débit élevé mais latence très importante"
+      ]
+    ]
+  }
+]

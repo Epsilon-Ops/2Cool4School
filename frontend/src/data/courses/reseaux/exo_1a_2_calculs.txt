@@ -1,0 +1,88 @@
+EXERCICE 1A.2 - CARACTÉRISTIQUES D'UN RÉSEAU
+(calculs détaillés, avec corrigé)
+
+================================================================
+1. ÉVALUATION DU NOMBRE DE LIAISONS
+================================================================
+
+Énoncé
+------
+Déterminez le nombre de liaisons nécessaires à la réalisation d'une
+interconnexion totale entre 100 équipements. Appliquez ce résultat au
+réseau téléphonique mondial (300 × 10^6 abonnés).
+
+Corrigé
+-------
+Soit N le nombre de machines.
+
+- La première machine doit installer N − 1 liaisons pour être reliée à
+  toutes les autres.
+- La deuxième machine doit ajouter N − 2 liaisons, puisqu'elle est déjà
+  connectée à la première.
+- De même, la i-ème machine doit ajouter N − i liaisons.
+
+Au total, on aura établi :
+    (N − 1) + (N − 2) + ... + 2 + 1 liaisons
+
+Or on sait que :
+    Σ(i=1 à N−1) i = N × (N − 1) / 2
+
+Application :
+- Pour N = 100 :        (100 × 99) / 2 = 4 950, soit environ 5 000 liaisons.
+- Pour N = 300 × 10^6 : (3 × 10^8)² / 2 ≈ 4,5 × 10^16 liaisons.
+
+Conclusion
+----------
+La topologie totalement maillée est très performante, car chaque station
+est reliée à toutes les autres sans passer par un intermédiaire, mais
+son coût est très important à cause du nombre de liaisons nécessaires.
+
+(Remarque : le corrigé original indique « environ 45.10^15 », ce qui
+correspond au même ordre de grandeur, 4,5 × 10^16.)
+
+================================================================
+2. PERFORMANCE DES RÉSEAUX
+================================================================
+
+Énoncé
+------
+Vous devez transférer d'urgence le contenu de 3 cartouches de 7 Go à un
+ami. Un livreur vous garantit une vitesse moyenne de 46 km/h. Pour quelles
+distances le livreur possède-t-il un débit plus élevé que votre ligne de
+transmission à 150 Mbit/s ?
+
+Corrigé
+-------
+Soit d la distance (en km) à parcourir par le livreur.
+
+Temps de transfert du livreur (dépend de la distance et de la vitesse) :
+    T_livreur = d / v = d × 3600 / 46 secondes
+
+Temps de transfert sur la ligne (dépend du volume et du débit) :
+    T_ligne = 3 × 7 Go / 150 Mbit/s
+            = 3 × 7 × 8 × 10^9 / (150 × 10^6)
+            = 1120 secondes
+
+Le livreur est plus rapide si T_livreur < T_ligne, soit :
+    d < 1120 × 46 / 3600 ≈ 14,31 km
+
+Conclusion : le livreur est plus rapide pour des distances inférieures à
+environ 14,3 km.
+
+Interprétation
+--------------
+L'objectif est de comprendre la différence entre la latence (temps de
+propagation Tp) et le débit D, deux grandeurs distinctes et indépendantes,
+qui interviennent toutes deux dans le temps de transmission total de N octets :
+
+    T_total = T_émission + T_p = N / D + d / v
+
+où d est la distance parcourue par le signal et v sa vitesse de propagation.
+
+- Pour le livreur, on néglige le temps d'émission : il peut transporter
+  une très grande quantité de données sans que son temps de trajet change.
+  En revanche, son temps de propagation (trajet) est très grand.
+- Pour la ligne, on néglige le temps de propagation : le signal se propage
+  presque à la vitesse de la lumière, et c'est le volume qui compte.
+
+Le livreur est donc plus rapide que la ligne pour de petites distances.

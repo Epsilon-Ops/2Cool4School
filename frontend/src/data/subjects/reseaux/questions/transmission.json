@@ -1,3 +1,4 @@
+
 [
   {
     "id": "reseaux_transmission_001",
@@ -12,16 +13,8 @@
       "Le câble téléphonique en cuivre"
     ],
     "explanation": "La fibre optique transporte les données grâce à des impulsions lumineuses.",
-    "tags": [
-      "transmission",
-      "supports",
-      "fibre_optique"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "true_false"
-    ]
+    "tags": ["transmission", "supports", "fibre_optique"],
+    "formats": ["single_choice", "flashcard", "true_false"]
   },
   {
     "id": "reseaux_transmission_002",
@@ -36,15 +29,8 @@
       "Elle est toujours moins chère à installer"
     ],
     "explanation": "La fibre optique permet généralement de transporter beaucoup de données sur de longues distances avec peu d'atténuation.",
-    "tags": [
-      "transmission",
-      "comparaison",
-      "fibre_optique"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "comparaison", "fibre_optique"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_003",
@@ -59,16 +45,8 @@
       "La taille physique du câble"
     ],
     "explanation": "Le débit mesure une quantité de données transférées pendant une durée, souvent en bits par seconde.",
-    "tags": [
-      "transmission",
-      "debit",
-      "definition"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "true_false"
-    ]
+    "tags": ["transmission", "debit", "definition"],
+    "formats": ["single_choice", "flashcard", "true_false"]
   },
   {
     "id": "reseaux_transmission_004",
@@ -83,16 +61,8 @@
       "Le hertz uniquement"
     ],
     "explanation": "Le débit réseau s'exprime en bits par seconde, avec des multiples comme kbit/s, Mbit/s ou Gbit/s.",
-    "tags": [
-      "transmission",
-      "debit",
-      "unites"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["transmission", "debit", "unites"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "L'unité courante du débit réseau est le {{blank}}."
   },
   {
@@ -108,42 +78,9 @@
       "16 bits"
     ],
     "explanation": "Un octet est composé de 8 bits. Cette conversion est indispensable pour calculer des temps de transfert.",
-    "tags": [
-      "transmission",
-      "conversion",
-      "bits_octets"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["transmission", "conversion", "bits_octets"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Un octet contient {{blank}} bits."
-  },
-  {
-    "id": "reseaux_transmission_006",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 2,
-    "prompt": "Un fichier de 5 Mo représente combien de mégabits, en utilisant 1 octet = 8 bits ?",
-    "answer": "40 Mb",
-    "distractors": [
-      "5 Mb",
-      "13 Mb",
-      "80 Mb"
-    ],
-    "explanation": "5 Mo × 8 = 40 Mb. On multiplie le nombre d'octets par 8 pour obtenir le nombre de bits.",
-    "tags": [
-      "transmission",
-      "conversion",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
-    "cloze": "Un fichier de 5 Mo représente {{blank}} (1 octet = 8 bits)."
   },
   {
     "id": "reseaux_transmission_007",
@@ -158,15 +95,8 @@
       "1,25 Mo"
     ],
     "explanation": "100 Mbit/s ÷ 8 = 12,5 Mo/s, en utilisant 8 bits par octet et en négligeant les pertes et surcharges.",
-    "tags": [
-      "transmission",
-      "debit",
-      "conversion"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "debit", "conversion"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_008",
@@ -181,16 +111,8 @@
       "80 secondes"
     ],
     "explanation": "100 Mo = 800 Mb. Temps = quantité de données / débit = 800 Mb / 100 Mbit/s = 8 s.",
-    "tags": [
-      "transmission",
-      "temps_transfert",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["transmission", "temps_transfert", "calcul"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Transmettre 100 Mo sur une liaison de 100 Mbit/s prend théoriquement {{blank}}."
   },
   {
@@ -206,16 +128,8 @@
       "Environ 1,39 Go/s"
     ],
     "explanation": "4 heures = 14 400 s. 2 × 10^12 octets / 14 400 s ≈ 138 888 889 octets/s, soit environ 139 Mo/s.",
-    "tags": [
-      "transmission",
-      "transport_physique",
-      "debit_equivalent",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "transport_physique", "debit_equivalent", "calcul"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_010",
@@ -230,40 +144,8 @@
       "Parce que les octets deviennent des kilomètres"
     ],
     "explanation": "On compare les moyens en calculant une quantité de données transportée par unité de temps.",
-    "tags": [
-      "transmission",
-      "transport_physique",
-      "debit_equivalent"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_011",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 2,
-    "prompt": "Un livreur transporte 4 disques de 1 To chacun en 2 heures. Quel est le débit équivalent moyen en To/h ?",
-    "answer": "2 To/h",
-    "distractors": [
-      "0,5 To/h",
-      "4 To/h",
-      "8 To/h"
-    ],
-    "explanation": "Quantité transportée / durée = 4 To / 2 h = 2 To/h.",
-    "tags": [
-      "transmission",
-      "transport_physique",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
-    "cloze": "Le débit équivalent moyen de ce transport est de {{blank}}."
+    "tags": ["transmission", "transport_physique", "debit_equivalent"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_012",
@@ -278,15 +160,8 @@
       "Lorsque la distance n'a aucune importance"
     ],
     "explanation": "Le transport physique peut avoir un débit équivalent élevé pour de très grandes quantités de données, mais il faut tenir compte du temps de trajet et de préparation.",
-    "tags": [
-      "transmission",
-      "comparaison",
-      "livreur"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "comparaison", "livreur"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_013",
@@ -301,133 +176,9 @@
       "Temps = distance / taille du fichier"
     ],
     "explanation": "Les unités doivent être cohérentes : bits divisés par bits par seconde donnent des secondes.",
-    "tags": [
-      "transmission",
-      "temps_transfert",
-      "formule"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["transmission", "temps_transfert", "formule"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Le temps de transfert se calcule par : taille en bits / {{blank}}."
-  },
-  {
-    "id": "reseaux_transmission_014",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 2,
-    "prompt": "Combien de temps faut-il pour transférer 1 Go sur une liaison de 1 Gbit/s, en utilisant 1 Go = 8 Gbit ?",
-    "answer": "8 secondes",
-    "distractors": [
-      "1 seconde",
-      "4 secondes",
-      "64 secondes"
-    ],
-    "explanation": "1 Go = 8 Gbit. Temps = 8 Gbit / 1 Gbit/s = 8 secondes, hors surcharges.",
-    "tags": [
-      "transmission",
-      "temps_transfert",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_015",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 2,
-    "prompt": "Un fichier de 20 Go est transféré sur une liaison de 100 Mbit/s. Quel est le temps théorique, avec 1 Go = 8 Gbit ?",
-    "answer": "1 600 secondes, soit 26 min 40 s",
-    "distractors": [
-      "160 secondes",
-      "800 secondes",
-      "16 000 secondes"
-    ],
-    "explanation": "20 Go = 160 Gbit = 160 000 Mbit. 160 000 / 100 = 1 600 secondes, soit 26 min 40 s.",
-    "tags": [
-      "transmission",
-      "fichiers_volumineux",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_016",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 2,
-    "prompt": "Deux moyens transportent le même fichier. Le réseau a un débit de 200 Mbit/s. Quel débit en Mo/s cela représente-t-il ?",
-    "answer": "25 Mo/s",
-    "distractors": [
-      "200 Mo/s",
-      "16 Mo/s",
-      "1,6 Mo/s"
-    ],
-    "explanation": "200 Mbit/s ÷ 8 = 25 Mo/s.",
-    "tags": [
-      "transmission",
-      "conversion",
-      "debit"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_017",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 3,
-    "prompt": "Un fichier de 500 Go doit être envoyé sur une liaison de 1 Gbit/s. Quel est le temps théorique de transfert, avec 1 Go = 8 Gbit ?",
-    "answer": "4 000 secondes, soit 1 h 6 min 40 s",
-    "distractors": [
-      "400 secondes",
-      "2 000 secondes",
-      "8 000 secondes"
-    ],
-    "explanation": "500 Go = 4 000 Gbit. À 1 Gbit/s, il faut 4 000 secondes, soit environ 1 h 6 min 40 s.",
-    "tags": [
-      "transmission",
-      "fichiers_volumineux",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_018",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 3,
-    "prompt": "Un livreur met 3 heures pour transporter 6 To de données. Quel est son débit équivalent en Mo/s, avec 1 To = 1 000 000 Mo ?",
-    "answer": "Environ 556 Mo/s",
-    "distractors": [
-      "Environ 56 Mo/s",
-      "Environ 1 667 Mo/s",
-      "Environ 5,6 Mo/s"
-    ],
-    "explanation": "3 h = 10 800 s. 6 000 000 Mo / 10 800 s ≈ 555,6 Mo/s.",
-    "tags": [
-      "transmission",
-      "transport_physique",
-      "debit_equivalent",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
   },
   {
     "id": "reseaux_transmission_019",
@@ -442,40 +193,8 @@
       "Impossible à comparer même après conversion"
     ],
     "explanation": "100 Mbit/s = 12,5 Mo/s. Le livreur : 1 000 000 Mo / 18 000 s ≈ 55,6 Mo/s. Le livreur a donc le débit moyen le plus élevé.",
-    "tags": [
-      "transmission",
-      "comparaison",
-      "transport_physique",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_020",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 3,
-    "prompt": "On compare un transfert réseau à 100 Mbit/s et un livreur roulant à 60 km/h. En négligeant les temps de préparation, quelle distance le livreur parcourt-il en 2 heures ?",
-    "answer": "120 km",
-    "distractors": [
-      "30 km",
-      "60 km",
-      "240 km"
-    ],
-    "explanation": "Distance = vitesse × durée = 60 km/h × 2 h = 120 km.",
-    "tags": [
-      "transmission",
-      "livreur",
-      "distance",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "comparaison", "transport_physique", "calcul"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_021",
@@ -490,15 +209,8 @@
       "1 000 km"
     ],
     "explanation": "100 Go = 800 Gbit = 800 000 Mbit. Temps réseau = 800 000 / 100 = 8 000 s, soit environ 2,22 h. Distance seuil = 50 km/h × 2,22 h ≈ 111 km.",
-    "tags": [
-      "transmission",
-      "distance_seuil",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "distance_seuil", "calcul"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_022",
@@ -513,36 +225,8 @@
       "Distance seuil = vitesse / temps de transfert"
     ],
     "explanation": "On calcule d'abord le temps de transfert réseau, puis on multiplie ce temps par la vitesse du transporteur, avec des unités cohérentes.",
-    "tags": [
-      "transmission",
-      "distance_seuil",
-      "formule"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_023",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 2,
-    "prompt": "Vrai ou faux : un débit de 1 Gbit/s correspond à 1 Go/s.",
-    "answer": "Faux",
-    "distractors": [
-      "Vrai"
-    ],
-    "explanation": "1 octet = 8 bits. 1 Gbit/s correspond à 0,125 Go/s, soit 125 Mo/s en unités décimales.",
-    "tags": [
-      "transmission",
-      "conversion",
-      "bits_octets"
-    ],
-    "formats": [
-      "true_false",
-      "flashcard"
-    ]
+    "tags": ["transmission", "distance_seuil", "formule"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_transmission_024",
@@ -557,37 +241,7 @@
       "Le nom du fichier uniquement"
     ],
     "explanation": "Le débit utile peut être inférieur au débit annoncé à cause des en-têtes, des retransmissions, de la congestion ou des limites des équipements.",
-    "tags": [
-      "transmission",
-      "temps_transfert",
-      "debit_reel"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_transmission_025",
-    "subject": "reseaux",
-    "skill": "reseaux.transmission",
-    "difficulty": 3,
-    "prompt": "Un fichier de 2 To est transféré sur une liaison de 500 Mbit/s. Quel est le temps théorique, avec 1 To = 8 000 Gbit ?",
-    "answer": "32 000 secondes, soit environ 8 h 53 min 20 s",
-    "distractors": [
-      "3 200 secondes",
-      "16 000 secondes",
-      "64 000 secondes"
-    ],
-    "explanation": "2 To = 16 000 Gbit = 16 000 000 Mbit. Temps = 16 000 000 / 500 = 32 000 secondes, soit environ 8 h 53 min 20 s.",
-    "tags": [
-      "transmission",
-      "fichiers_volumineux",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["transmission", "temps_transfert", "debit_reel"],
+    "formats": ["single_choice", "flashcard"]
   }
 ]

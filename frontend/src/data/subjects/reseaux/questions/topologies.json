@@ -1,0 +1,253 @@
+[
+  {
+    "id": "reseaux_topologies_001",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 1,
+    "prompt": "Dans une topologie en étoile, quel est le principal point faible ?",
+    "answer": "Si l'équipement central tombe en panne, tous les équipements sont coupés du réseau",
+    "distractors": [
+      "Chaque équipement n'a qu'un seul voisin",
+      "Il n'existe qu'un seul chemin possible entre deux équipements",
+      "Il faut relier chaque équipement à tous les autres"
+    ],
+    "explanation": "Dans une étoile, tout passe par l'équipement central. Sa panne isole toutes les machines.",
+    "tags": [
+      "topologie",
+      "etoile"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_002",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 1,
+    "prompt": "Quelle topologie offre plusieurs chemins possibles entre deux équipements, ce qui apporte redondance et tolérance aux pannes ?",
+    "answer": "La topologie maillée",
+    "distractors": [
+      "La topologie en bus",
+      "La topologie en anneau",
+      "La topologie en étoile"
+    ],
+    "explanation": "La redondance permet de choisir le meilleur chemin et de changer de chemin en cas de panne. Les cœurs de réseau utilisent généralement cette topologie.",
+    "tags": [
+      "topologie",
+      "maillee",
+      "redondance"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_003",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 1,
+    "prompt": "Associez chaque topologie à sa description.",
+    "answer": "Bus : Un support unique partagé par tous les équipements ; Étoile : Un équipement central relié à toutes les cartes réseau ; Anneau : Chaque équipement relié à son précédent et à son suivant ; Maillé : Plusieurs liaisons entre équipements, plusieurs chemins possibles",
+    "distractors": [],
+    "explanation": "Le bus et l'étoile posent le problème du partage de la parole, l'anneau permet de parcourir de longues distances par répétition, et le maillage apporte la redondance.",
+    "tags": [
+      "topologie"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Bus",
+        "Un support unique partagé par tous les équipements"
+      ],
+      [
+        "Étoile",
+        "Un équipement central relié à toutes les cartes réseau"
+      ],
+      [
+        "Anneau",
+        "Chaque équipement relié à son précédent et à son suivant"
+      ],
+      [
+        "Maillé",
+        "Plusieurs liaisons entre équipements, plusieurs chemins possibles"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_topologies_004",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Une étoile dont le centre est un simple répéteur est-elle logiquement une étoile ?",
+    "answer": "Non : logiquement elle se comporte comme un bus, car le partage de la parole reste à gérer",
+    "distractors": [
+      "Oui, elle est identique à une étoile avec commutateur",
+      "Oui, elle ne partage plus le support de transmission",
+      "Non, elle n'a pas d'équipement central"
+    ],
+    "explanation": "Un répéteur renvoie le signal vers tous les équipements : il faut toujours gérer qui parle à un moment donné. Un commutateur, lui, gère ce partage.",
+    "tags": [
+      "topologie",
+      "etoile",
+      "repeteur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_005",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Dans une liaison multipoints, quels sont les deux problèmes à résoudre ?",
+    "answer": "L'adressage des cartes réseau et le partage du support de transmission",
+    "distractors": [
+      "Le chiffrement et l'authentification",
+      "Le débit et la latence",
+      "La détection d'erreurs et la compression"
+    ],
+    "explanation": "Il faut identifier l'émetteur et les destinataires (adresses uniques) et éviter que plusieurs cartes émettent en même temps sur le même support.",
+    "tags": [
+      "multipoint",
+      "adressage"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_006",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Quel mode de partage de la parole consiste à faire circuler une « pièce de monnaie » virtuelle ?",
+    "answer": "Le mode jeton",
+    "distractors": [
+      "Le mode maître-esclave",
+      "Le mode politesse",
+      "Le mode full-duplex"
+    ],
+    "explanation": "Seul l'équipement qui possède le jeton peut émettre, pendant un temps limité, puis il le passe au suivant.",
+    "tags": [
+      "partage_parole",
+      "jeton"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_007",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 1,
+    "prompt": "Vrai ou faux : en full-duplex, deux cartes réseau peuvent émettre et recevoir simultanément.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Le full-duplex permet la transmission simultanée dans les deux sens, contrairement au half-duplex (alternance) et au simplex (un seul sens).",
+    "tags": [
+      "modes_de_liaison"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_008",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Quel mode de liaison n'autorise l'envoi de signaux que dans un seul sens ?",
+    "answer": "Simplex",
+    "distractors": [
+      "Half-duplex",
+      "Full-duplex",
+      "Multipoint"
+    ],
+    "explanation": "Les antennes de radio et de télévision sont des exemples de liaisons simplex.",
+    "tags": [
+      "modes_de_liaison"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_009",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Combien de liaisons faut-il pour une topologie maillée totale de n équipements ?",
+    "answer": "n × (n − 1) / 2",
+    "distractors": [
+      "n²",
+      "n × (n + 1) / 2",
+      "n − 1"
+    ],
+    "explanation": "Chaque équipement doit être relié aux n − 1 autres. Chaque liaison étant comptée deux fois, on divise par 2. Le nombre de liaisons croît donc en n².",
+    "tags": [
+      "maillee_totale",
+      "formule"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_010",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 1,
+    "prompt": "Vrai ou faux : les cœurs de réseau d'Internet utilisent généralement une topologie maillée.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Le maillage apporte la redondance et la tolérance aux pannes, ce qui est indispensable au cœur du réseau.",
+    "tags": [
+      "maillee",
+      "internet"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_topologies_011",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Quel équipement régénère le signal pour couvrir de plus grandes distances sur un câble en cuivre ?",
+    "answer": "Le répéteur",
+    "distractors": [
+      "Le commutateur",
+      "La paire torsadée",
+      "Le routeur"
+    ],
+    "explanation": "Les signaux électriques sur cuivre ne couvrent que quelques centaines de mètres sans répéteur, qui régénère le signal.",
+    "tags": [
+      "repeteur",
+      "cuivre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

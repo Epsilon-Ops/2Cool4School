@@ -1,10 +1,28 @@
 {
   "skills": [
     {
+      "id": "reseaux.architecture",
+      "name": "Architecture en couches",
+      "short": "Architecture",
+      "prereq": [],
+      "description": "Modèle OSI, architecture TCP/IP, encapsulation, protocoles de bout en bout et point à point."
+    },
+    {
+      "id": "reseaux.fiabilite",
+      "name": "Fiabilité des protocoles",
+      "short": "Fiabilité",
+      "prereq": [
+        "reseaux.architecture"
+      ],
+      "description": "Délimitation des trames, transparence, détection d'erreurs, send and wait, fenêtres et HDLC."
+    },
+    {
       "id": "reseaux.interconnexion",
       "name": "Interconnexion des réseaux",
       "short": "Interconnexion",
-      "prereq": [],
+      "prereq": [
+        "reseaux.architecture"
+      ],
       "description": "Topologies, nombre de liaisons et interconnexion des équipements."
     },
     {
@@ -12,9 +30,18 @@
       "name": "Moyens de transmission",
       "short": "Transmission",
       "prereq": [
-        "reseaux.interconnexion"
+        "reseaux.architecture"
       ],
       "description": "Débits, conversions, temps de transfert et comparaison des moyens de transmission."
+    },
+    {
+      "id": "reseaux.outils",
+      "name": "Outils",
+      "short": "Outils",
+      "prereq": [
+        "reseaux.fiabilite"
+      ],
+      "description": "Terminal Linux, Wireshark et Filius pour manipuler des fichiers, observer et simuler un réseau."
     }
   ]
 }

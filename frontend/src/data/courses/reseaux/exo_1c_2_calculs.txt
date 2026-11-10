@@ -1,0 +1,74 @@
+EXERCICE 1C.2 - NOTIONS DE PROTOCOLES
+(énoncés des calculs)
+
+Remarque : le fichier corrigé d'origine (exo_1c_2_corr.pdf) ne contient
+que les énoncés, sans solutions. Les questions ci-dessous sont donc à
+résoudre ; les solutions ne sont pas fournies ici.
+
+================================================================
+1. TRANSPARENCE
+================================================================
+
+Énoncé
+------
+Dans la transmission suivante de caractères, dire quelles sont les données
+délivrées au système selon que la transmission s'effectue de la droite vers
+la gauche ou de la gauche vers la droite.
+
+    F F F F ESC ESC F ESC ESC ESC ESC F
+
+(F = fanion, ESC = caractère d'échappement)
+
+================================================================
+2. DÉBIT EFFECTIF ET TAILLE DE TRAMES
+================================================================
+
+Énoncé
+------
+Une ligne de transmission a un taux d'erreur bit de 10^-4 en moyenne.
+Un protocole de niveau 2 utilise des trames de 250 octets sur cette liaison.
+
+1. Quel est le pourcentage de trames erronées ?
+2. Quel est le débit effectif si 100 trames sont envoyées en 2 s ?
+   (On considérera que l'efficacité du protocole sans erreur est 1.)
+3. Quel est le débit effectif si les trames ont une taille de 53 octets ?
+
+================================================================
+3. DÉBIT RÉEL D'UNE LIAISON
+================================================================
+
+Énoncé
+------
+On transmet sur une ligne de transmission à 4800 bit/s des blocs de
+128 octets de données utiles. Chaque bloc nécessite 6 octets de gestion,
+et l'accusé de réception comporte 6 octets. On considère que le RTT est de
+50 ms et que la liaison a un taux d'erreur de 10^-4.
+
+1. Quel est le débit réel de la liaison ?
+2. Même question si la taille des trames est divisée par 2.
+
+================================================================
+4. REJET SIMPLE ET REJET SÉLECTIF
+================================================================
+
+Énoncé
+------
+On se place dans le cas du rejet simple. Considérons deux systèmes de
+transmission : un réseau local avec un RTT de 50 ms, et un réseau
+satellitaire avec un RTT de 500 ms. Une trame est transmise sur chacune
+de ces liaisons. Hypothèses :
+
+- taille moyenne des unités de données = 128 octets
+- débit des liaisons = 64 Kbit/s
+- temps d'émission des ACK négligeable
+- la première transmission de la trame est erronée
+- la deuxième transmission de la trame est correcte
+- le temporisateur est réglé à Tb × W et est armé dès l'émission du premier
+  bit de la trame
+
+1. Déterminez Tb, le temps d'émission de la trame, et Ta, le temps
+   d'émission plus le temps de retour de l'acquittement.
+2. En déduire la taille optimale de la fenêtre (W).
+3. Déterminez Tr, le temps au bout duquel la trame est acquittée.
+   Faites un schéma explicatif.
+4. Conseilleriez-vous le rejet sélectif ou le rejet simple ?

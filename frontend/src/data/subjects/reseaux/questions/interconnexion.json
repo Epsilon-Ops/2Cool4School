@@ -13,16 +13,8 @@
       "Un réseau dans lequel les équipements communiquent uniquement sans fil"
     ],
     "explanation": "Dans un réseau totalement interconnecté, chaque équipement possède une liaison directe avec chacun des autres équipements.",
-    "tags": [
-      "interconnexion",
-      "liaisons",
-      "topologie"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "true_false"
-    ]
+    "tags": ["interconnexion", "liaisons", "topologie"],
+    "formats": ["single_choice", "flashcard", "true_false"]
   },
   {
     "id": "reseaux_002",
@@ -31,21 +23,10 @@
     "difficulty": 1,
     "prompt": "Dans un réseau totalement interconnecté de 2 équipements, combien faut-il de liaisons ?",
     "answer": "1",
-    "distractors": [
-      "2",
-      "3",
-      "4"
-    ],
+    "distractors": ["2", "3", "4"],
     "explanation": "Deux équipements doivent être reliés par une seule liaison directe.",
-    "tags": [
-      "interconnexion",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["interconnexion", "calcul"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Pour interconnecter totalement 2 équipements, il faut {{blank}} liaison."
   },
   {
@@ -61,16 +42,8 @@
       "N²"
     ],
     "explanation": "Chaque équipement doit être relié aux N - 1 autres. On obtient N × (N - 1), mais chaque liaison est comptée deux fois. Il faut donc diviser par 2.",
-    "tags": [
-      "interconnexion",
-      "formule",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["interconnexion", "formule", "calcul"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Le nombre de liaisons dans un réseau totalement interconnecté est {{blank}}."
   },
   {
@@ -80,21 +53,10 @@
     "difficulty": 2,
     "prompt": "Combien de liaisons faut-il pour interconnecter totalement 5 équipements ?",
     "answer": "10",
-    "distractors": [
-      "5",
-      "15",
-      "20"
-    ],
+    "distractors": ["5", "15", "20"],
     "explanation": "On applique N × (N - 1) / 2 : 5 × 4 / 2 = 10 liaisons.",
-    "tags": [
-      "interconnexion",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["interconnexion", "calcul"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Un réseau totalement interconnecté de 5 équipements nécessite {{blank}} liaisons."
   },
   {
@@ -104,22 +66,10 @@
     "difficulty": 2,
     "prompt": "Combien de liaisons sont nécessaires pour interconnecter totalement 100 équipements ?",
     "answer": "4950",
-    "distractors": [
-      "100",
-      "495",
-      "9900"
-    ],
+    "distractors": ["100", "495", "9900"],
     "explanation": "On applique la formule N × (N - 1) / 2 : 100 × 99 / 2 = 4950 liaisons.",
-    "tags": [
-      "interconnexion",
-      "calcul",
-      "application"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["interconnexion", "calcul", "application"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Pour interconnecter totalement 100 équipements, il faut {{blank}} liaisons."
   },
   {
@@ -134,17 +84,9 @@
       "4,5 × 10^14 liaisons",
       "9 × 10^16 liaisons"
     ],
-    "explanation": "Avec N = 300 000 000, on obtient N × (N - 1) / 2 = 300 000 000 × 299 999 999 / 2 = 44 999 999 850 000 000 liaisons. Cela montre les limites d'une interconnexion directe à très grande échelle.",
-    "tags": [
-      "interconnexion",
-      "calcul",
-      "reseau_telephonique",
-      "notation_scientifique"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "explanation": "Avec N = 300 000 000, on obtient N × (N - 1) / 2 = 44 999 999 850 000 000 liaisons. Cela montre les limites d'une interconnexion directe à très grande échelle.",
+    "tags": ["interconnexion", "calcul", "reseau_telephonique", "notation_scientifique"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_007",
@@ -159,16 +101,8 @@
       "Il reste identique"
     ],
     "explanation": "Le nombre de liaisons est N × (N - 1) / 2. Pour un grand N, il est approximativement proportionnel à N². Doubler N multiplie donc le nombre de liaisons par environ 4.",
-    "tags": [
-      "interconnexion",
-      "evolution",
-      "complexite"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "true_false"
-    ]
+    "tags": ["interconnexion", "evolution", "complexite"],
+    "formats": ["single_choice", "flashcard", "true_false"]
   },
   {
     "id": "reseaux_008",
@@ -177,149 +111,10 @@
     "difficulty": 2,
     "prompt": "Dans un réseau totalement interconnecté, chaque liaison est-elle comptabilisée deux fois lorsqu'on additionne le nombre de connexions de chaque équipement ?",
     "answer": "Vrai",
-    "distractors": [
-      "Faux"
-    ],
+    "distractors": ["Faux"],
     "explanation": "Chaque liaison relie deux équipements. Elle apparaît donc dans le décompte des connexions de chacun de ses deux équipements. C'est pourquoi on divise par 2 dans la formule.",
-    "tags": [
-      "interconnexion",
-      "formule",
-      "comprehension"
-    ],
-    "formats": [
-      "true_false",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_009",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 1,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 3 équipements ?",
-    "answer": "3",
-    "distractors": ["2", "4", "6"],
-    "explanation": "3 × 2 / 2 = 3 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 3 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_010",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 1,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 7 équipements ?",
-    "answer": "21",
-    "distractors": ["14", "28", "42"],
-    "explanation": "7 × 6 / 2 = 21 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 7 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_011",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 12 équipements ?",
-    "answer": "66",
-    "distractors": ["60", "72", "132"],
-    "explanation": "12 × 11 / 2 = 66 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 12 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_012",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 15 équipements ?",
-    "answer": "105",
-    "distractors": ["90", "120", "225"],
-    "explanation": "15 × 14 / 2 = 105 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 15 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_013",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 25 équipements ?",
-    "answer": "300",
-    "distractors": ["250", "325", "600"],
-    "explanation": "25 × 24 / 2 = 300 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 25 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_014",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 40 équipements ?",
-    "answer": "780",
-    "distractors": ["760", "800", "1560"],
-    "explanation": "40 × 39 / 2 = 780 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 40 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_015",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 64 équipements ?",
-    "answer": "2016",
-    "distractors": ["1984", "2048", "4096"],
-    "explanation": "64 × 63 / 2 = 2016 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 64 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_016",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 75 équipements ?",
-    "answer": "2775",
-    "distractors": ["2700", "2850", "5625"],
-    "explanation": "75 × 74 / 2 = 2775 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 75 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_017",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 120 équipements ?",
-    "answer": "7140",
-    "distractors": ["7200", "7080", "14400"],
-    "explanation": "120 × 119 / 2 = 7140 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 120 équipements, il faut {{blank}} liaisons."
-  },
-  {
-    "id": "reseaux_018",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 3,
-    "prompt": "Combien de liaisons faut-il pour interconnecter totalement 250 équipements ?",
-    "answer": "31125",
-    "distractors": ["31250", "31000", "62250"],
-    "explanation": "250 × 249 / 2 = 31125 liaisons.",
-    "tags": ["interconnexion", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
-    "cloze": "Pour 250 équipements, il faut {{blank}} liaisons."
+    "tags": ["interconnexion", "formule", "comprehension"],
+    "formats": ["true_false", "flashcard"]
   },
   {
     "id": "reseaux_019",
@@ -334,87 +129,16 @@
     "formats": ["single_choice", "flashcard"]
   },
   {
-    "id": "reseaux_020",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 3,
-    "prompt": "Un réseau totalement interconnecté possède 190 liaisons. Combien d'équipements contient-il ?",
-    "answer": "20",
-    "distractors": ["18", "19", "21"],
-    "explanation": "On cherche N tel que N × (N - 1) / 2 = 190. Avec 20 équipements : 20 × 19 / 2 = 190.",
-    "tags": ["interconnexion", "calcul_inverse"],
-    "formats": ["single_choice", "flashcard"]
-  },
-  {
-    "id": "reseaux_021",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 1,
-    "prompt": "Si on double le nombre d'équipements dans un grand réseau totalement interconnecté, par combien est approximativement multiplié le nombre de liaisons ?",
-    "answer": "4",
-    "distractors": [
-      "2",
-      "3",
-      "8"
-    ],
-    "explanation": "Le nombre de liaisons est approximativement proportionnel au carré du nombre d'équipements. Si N double, N² est multiplié par 4.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "proportionnalite"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
-    "cloze": "Lorsque le nombre d'équipements double, le nombre de liaisons est approximativement multiplié par {{blank}}."
-  },
-  {
     "id": "reseaux_022",
     "subject": "reseaux",
     "skill": "reseaux.interconnexion",
     "difficulty": 2,
     "prompt": "Un réseau totalement interconnecté passe de 100 à 200 équipements. Combien de liaisons supplémentaires faut-il créer ?",
-    "answer": "14 850",
-    "distractors": [
-      "9 900",
-      "19 800",
-      "10 000"
-    ],
+    "answer": "14 950",
+    "distractors": ["9 900", "19 800", "10 000"],
     "explanation": "Avec 100 équipements : 100 × 99 / 2 = 4 950 liaisons. Avec 200 équipements : 200 × 199 / 2 = 19 900 liaisons. L'augmentation est de 19 900 - 4 950 = 14 950 liaisons.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "reseaux_023",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 2,
-    "prompt": "Un réseau totalement interconnecté passe de 10 à 20 équipements. Par combien le nombre de liaisons est-il multiplié ?",
-    "answer": "Environ 2,1",
-    "distractors": [
-      "2",
-      "3",
-      "4"
-    ],
-    "explanation": "Avec 10 équipements : 45 liaisons. Avec 20 équipements : 190 liaisons. Le rapport est 190 / 45 ≈ 4,22. La bonne réponse est donc environ 4,2.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "comparaison"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["interconnexion", "croissance", "calcul"],
+    "formats": ["single_choice", "flashcard"]
   },
   {
     "id": "reseaux_024",
@@ -423,47 +147,11 @@
     "difficulty": 2,
     "prompt": "Dans un réseau totalement interconnecté de 50 équipements, combien de nouvelles liaisons faut-il ajouter pour connecter un 51e équipement ?",
     "answer": "50",
-    "distractors": [
-      "1",
-      "49",
-      "51"
-    ],
+    "distractors": ["1", "49", "51"],
     "explanation": "Le nouvel équipement doit être directement relié aux 50 équipements déjà présents. Il faut donc ajouter exactement 50 liaisons.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "ajout_equipement"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
+    "tags": ["interconnexion", "croissance", "ajout_equipement"],
+    "formats": ["single_choice", "flashcard", "fill_blank"],
     "cloze": "Ajouter un équipement à un réseau totalement interconnecté de 50 équipements nécessite {{blank}} nouvelles liaisons."
-  },
-  {
-    "id": "reseaux_025",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 3,
-    "prompt": "Un réseau totalement interconnecté passe de 1 000 à 2 000 équipements. Combien de liaisons supplémentaires sont nécessaires ?",
-    "answer": "1 499 500",
-    "distractors": [
-      "999 000",
-      "1 000 000",
-      "2 000 000"
-    ],
-    "explanation": "Pour 1 000 équipements : 1 000 × 999 / 2 = 499 500 liaisons. Pour 2 000 équipements : 2 000 × 1 999 / 2 = 1 999 000 liaisons. Différence : 1 499 500 liaisons.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "grands_reseaux",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
   },
   {
     "id": "reseaux_026",
@@ -478,40 +166,7 @@
       "Parce que les équipements ne peuvent pas être reliés par des liaisons filaires"
     ],
     "explanation": "La formule N × (N - 1) / 2 montre que le nombre de liaisons augmente approximativement comme N². Une multiplication par 10 du nombre d'équipements entraîne environ 100 fois plus de liaisons.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "complexite",
-      "comprehension"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "true_false"
-    ]
-  },
-  {
-    "id": "reseaux_027",
-    "subject": "reseaux",
-    "skill": "reseaux.interconnexion",
-    "difficulty": 3,
-    "prompt": "Un réseau totalement interconnecté passe de 300 à 600 équipements. Par combien le nombre de liaisons est-il approximativement multiplié ?",
-    "answer": "4",
-    "distractors": [
-      "2",
-      "3",
-      "6"
-    ],
-    "explanation": "Pour 300 équipements : 300 × 299 / 2 = 44 850 liaisons. Pour 600 équipements : 600 × 599 / 2 = 179 700 liaisons. Le rapport est exactement 4.",
-    "tags": [
-      "interconnexion",
-      "croissance",
-      "comparaison",
-      "calcul"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
+    "tags": ["interconnexion", "croissance", "complexite", "comprehension"],
+    "formats": ["single_choice", "flashcard", "true_false"]
   }
 ]

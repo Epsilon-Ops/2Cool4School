@@ -1,0 +1,723 @@
+[
+  {
+    "id": "reseaux_fiabilite_001",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Quelles garanties attend-on d'un transfert fiable ?",
+    "answer": "Aucune erreur, aucune perte, aucune duplication et respect de l'ordre",
+    "distractors": [
+      "Un débit élevé et une latence faible",
+      "Le chiffrement et l'authentification des messages",
+      "La diffusion vers tous les équipements du réseau"
+    ],
+    "explanation": "Un transfert fiable garantit que ce qui arrive à destination est exactement ce qui a été émis : sans erreur, sans perte, sans doublon et dans le bon ordre.",
+    "tags": [
+      "fiabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_002",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle du fanion ?",
+    "answer": "Marquer le début et la fin d'une trame",
+    "distractors": [
+      "Vérifier qu'aucun bit n'a été altéré",
+      "Numéroter les trames envoyées",
+      "Indiquer le débit de la liaison"
+    ],
+    "explanation": "Le fanion est une séquence binaire prédéfinie par le protocole de liaison, qui signifie « début ou fin de trame ».",
+    "tags": [
+      "fanion",
+      "delimitation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_003",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Complétez la phrase.",
+    "answer": "01111110",
+    "distractors": [],
+    "explanation": "Le fanion vaut 01111110 : six bits à 1 consécutifs entourés de zéros.",
+    "tags": [
+      "fanion",
+      "hdlc"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Dans HDLC, le fanion correspond à la séquence binaire {{blank}}."
+  },
+  {
+    "id": "reseaux_fiabilite_004",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Pourquoi la technique de l'échappement est-elle nécessaire ?",
+    "answer": "Parce que le fanion peut apparaître dans les données et être confondu avec une délimitation de trame",
+    "distractors": [
+      "Pour chiffrer les données avant envoi",
+      "Pour réduire la taille des trames",
+      "Pour augmenter le débit de la liaison"
+    ],
+    "explanation": "Les données transmises peuvent contenir une séquence identique au fanion. Sans échappement, le récepteur croirait à un début ou une fin de trame.",
+    "tags": [
+      "echappement",
+      "transparence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_005",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Que fait le récepteur lorsqu'il détecte un caractère d'échappement ?",
+    "answer": "Il le supprime et traite le caractère suivant comme une simple donnée",
+    "distractors": [
+      "Il rejette toute la trame",
+      "Il renvoie un message Not-OK à l'émetteur",
+      "Il considère le caractère suivant comme un fanion"
+    ],
+    "explanation": "Le caractère d'échappement a été ajouté artificiellement par l'émetteur : le récepteur le retire pour retrouver les données d'origine.",
+    "tags": [
+      "echappement",
+      "transparence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_006",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Dans la technique du bit de bourrage, que fait l'émetteur pour éviter que le fanion apparaisse dans les données ?",
+    "answer": "Il insère un zéro après chaque suite de cinq bits à 1",
+    "distractors": [
+      "Il insère un caractère d'échappement devant le fanion",
+      "Il supprime tous les zéros de la trame",
+      "Il ajoute un fanion après chaque octet"
+    ],
+    "explanation": "Le fanion contient six bits à 1 consécutifs. En insérant un zéro après cinq 1, l'émetteur empêche cette suite ; le récepteur retire ce zéro.",
+    "tags": [
+      "bit_de_bourrage",
+      "transparence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_007",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : la technique du bit de bourrage empêche d'avoir six bits à 1 consécutifs dans les données transmises.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Le fanion 01111110 contient six bits à 1 consécutifs. Empêcher cette suite garantit qu'il ne peut pas apparaître dans les données.",
+    "tags": [
+      "bit_de_bourrage"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_008",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Remettez dans l'ordre les étapes d'un échange send and wait sans erreur.",
+    "answer": "L'émetteur envoie la trame avec son numéro NS et son checksum → L'émetteur conserve la trame et lance un temporisateur → Le récepteur vérifie le checksum et le numéro NS → Le récepteur renvoie un acquittement avec le numéro NR attendu → L'émetteur reçoit l'acquittement, libère la trame et envoie la suivante",
+    "distractors": [],
+    "explanation": "En send and wait, l'émetteur ne passe à la trame suivante qu'après avoir reçu l'acquittement. Sans acquittement avant la fin du temporisateur, il retransmet.",
+    "tags": [
+      "send_and_wait"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "L'émetteur envoie la trame avec son numéro NS et son checksum",
+      "L'émetteur conserve la trame et lance un temporisateur",
+      "Le récepteur vérifie le checksum et le numéro NS",
+      "Le récepteur renvoie un acquittement avec le numéro NR attendu",
+      "L'émetteur reçoit l'acquittement, libère la trame et envoie la suivante"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_009",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "En send and wait, combien de trames peuvent être en attente d'acquittement à la fois ?",
+    "answer": "Une seule",
+    "distractors": [
+      "Deux",
+      "Autant que la taille de la fenêtre",
+      "Aucune, l'acquittement est implicite"
+    ],
+    "explanation": "Le principe du send and wait est d'envoyer une trame puis d'attendre son acquittement avant d'envoyer la suivante.",
+    "tags": [
+      "send_and_wait"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_010",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Vrai ou faux : en send and wait, l'émetteur conserve chaque trame envoyée jusqu'à réception de son acquittement.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Tant que l'acquittement n'est pas reçu, la trame doit rester en mémoire pour pouvoir être retransmise en cas de perte ou d'erreur.",
+    "tags": [
+      "send_and_wait",
+      "retransmission"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_011",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du temporisateur de retransmission ?",
+    "answer": "Déclencher la retransmission d'une trame non acquittée au bout d'un délai",
+    "distractors": [
+      "Mesurer le débit réel de la liaison",
+      "Compter les trames reçues dans le désordre",
+      "Chiffrer les acquittements"
+    ],
+    "explanation": "Si l'acquittement n'arrive pas avant l'expiration du temporisateur, la trame est renvoyée. Ce délai doit être ni trop court (retransmissions inutiles) ni trop long (perte de temps).",
+    "tags": [
+      "temporisateur",
+      "retransmission"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_012",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Pourquoi numérote-t-on les messages (NS) et les acquittements (NR) ?",
+    "answer": "Pour détecter les doublons et remettre dans l'ordre les messages arrivés en désordre",
+    "distractors": [
+      "Pour calculer la somme de contrôle",
+      "Pour augmenter le débit utile",
+      "Pour indiquer la taille de la fenêtre"
+    ],
+    "explanation": "La numérotation permet au récepteur de vérifier qu'il attend bien le message reçu, et à l'émetteur de savoir quels messages ont réellement été reçus.",
+    "tags": [
+      "numerotation",
+      "ns_nr"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_013",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Un récepteur attend la trame NR = 3 et reçoit une trame avec NS = 2. Que se passe-t-il ?",
+    "answer": "C'est un doublon : la trame est éliminée et l'acquittement est renvoyé",
+    "distractors": [
+      "C'est une trame perdue : le récepteur attend la retransmission",
+      "C'est une erreur de checksum : la trame est jetée sans réponse",
+      "La trame est acceptée et NR passe à 2"
+    ],
+    "explanation": "Quand NS < NR, la trame a déjà été reçue (doublon, souvent dû à un acquittement perdu ou en retard). Le récepteur l'élimine mais renvoie l'acquittement.",
+    "tags": [
+      "numerotation",
+      "doublon"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_014",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Un récepteur attend la trame NR = 3 et reçoit la trame NS = 4. Que fait-il ?",
+    "answer": "Il renvoie NR = 3 pour signaler la trame attendue et déclencher la retransmission",
+    "distractors": [
+      "Il accepte la trame 4 et passe à NR = 5",
+      "Il élimine la trame car c'est un doublon",
+      "Il ne répond pas et attend le temporisateur"
+    ],
+    "explanation": "Quand NS > NR, une trame a été perdue ou n'est pas encore arrivée : le récepteur renvoie NR = 3 pour demander la retransmission de la trame manquante.",
+    "tags": [
+      "numerotation",
+      "desordre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_015",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Que signifie le piggybacking ?",
+    "answer": "Inclure l'acquittement NR dans les trames de données envoyées dans l'autre sens",
+    "distractors": [
+      "Compresser les données avant l'envoi",
+      "Découper les grands fichiers en morceaux",
+      "Ajouter un checksum à chaque message"
+    ],
+    "explanation": "Chaque trame de données transporte NR : elle sert aussi d'acquittement pour les trames reçues, ce qui évite d'envoyer des acquittements explicites.",
+    "tags": [
+      "piggybacking",
+      "efficacite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_016",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Que calcule un bit de parité ?",
+    "answer": "La somme modulo 2 des bits à 1 des données, sur un seul bit",
+    "distractors": [
+      "Un checksum sur deux octets",
+      "Le nombre total de bits de la trame",
+      "Un CRC sur quatre octets"
+    ],
+    "explanation": "Le bit de parité vaut 0 si le nombre de bits à 1 est pair, et 1 sinon. C'est simple et rapide, mais peu efficace pour détecter les erreurs.",
+    "tags": [
+      "parite",
+      "checksum"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_017",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : un bit de parité détecte toutes les erreurs, même si deux bits sont modifiés.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Si un nombre pair de bits change de valeur, la parité reste identique : l'erreur n'est pas détectée.",
+    "tags": [
+      "parite",
+      "limites"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_018",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Pourquoi la détection par répétition est-elle peu efficace ?",
+    "answer": "Elle divise par deux le débit utile, puisque le message est envoyé en double",
+    "distractors": [
+      "Elle ne fonctionne pas sur la fibre optique",
+      "Elle nécessite un chiffrement des données",
+      "Elle ne détecte jamais les erreurs"
+    ],
+    "explanation": "Envoyer le message en double consomme la moitié de la bande passante uniquement pour détecter les erreurs. C'est pourquoi on utilise des checksums.",
+    "tags": [
+      "detection_erreur",
+      "repetition"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_019",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Quel est l'ordre de grandeur du taux d'erreur binaire (BER) d'une liaison Ethernet ?",
+    "answer": "10^-9",
+    "distractors": [
+      "10^-4",
+      "10^-12",
+      "10^-1"
+    ],
+    "explanation": "Selon le cours, le BER varie d'environ 10^-4 pour les liaisons les moins performantes, à 10^-9 pour Ethernet et 10^-12 pour la fibre optique.",
+    "tags": [
+      "ber",
+      "erreur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_020",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Si le BER vaut p, quelle est la probabilité qu'une trame de n bits soit erronée ?",
+    "answer": "1 - (1 - p)^n",
+    "distractors": [
+      "p^n",
+      "n × p",
+      "(1 - p)^n"
+    ],
+    "explanation": "Une trame est correcte seulement si tous ses bits le sont : la probabilité qu'elle soit correcte est (1 - p)^n, donc erronée est son complément.",
+    "tags": [
+      "ber",
+      "trame",
+      "probabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_021",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Pourquoi les grandes trames sont-elles plus exposées aux erreurs ?",
+    "answer": "Parce qu'elles contiennent plus de bits, donc plus de chances qu'au moins un bit soit altéré",
+    "distractors": [
+      "Parce que leur checksum est plus court",
+      "Parce qu'elles circulent toujours sur des liaisons sans fil",
+      "Parce que le débit diminue avec la taille"
+    ],
+    "explanation": "La probabilité qu'une trame soit erronée augmente avec son nombre de bits, car une seule erreur suffit à la rendre fausse.",
+    "tags": [
+      "trame",
+      "taille",
+      "erreur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_022",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Complétez la phrase.",
+    "answer": "RNR (Receive Not Ready)",
+    "distractors": [],
+    "explanation": "RNR sert d'acquittement et demande aussi à l'émetteur de s'arrêter. Quand le récepteur est de nouveau prêt, il envoie RR.",
+    "tags": [
+      "hdlc",
+      "controle_de_flux"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "En HDLC, la trame {{blank}} signale à l'émetteur que le récepteur n'est plus prêt à recevoir."
+  },
+  {
+    "id": "reseaux_fiabilite_023",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Associez chaque trame de supervision HDLC à sa signification.",
+    "answer": "RR : Acquittement standard, le récepteur est prêt ; RNR : Acquittement et demande d'arrêt (contrôle de flux) ; REJ : Rejet simple : retransmettre à partir de la trame manquante ; SREJ : Rejet sélectif : retransmettre seulement la trame manquante",
+    "distractors": [],
+    "explanation": "Les trames S (supervision) contiennent toutes NR. RR et RNR gèrent l'acquittement et le contrôle de flux, REJ et SREJ signalent une trame reçue dans le désordre.",
+    "tags": [
+      "hdlc",
+      "trames_s"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "RR",
+        "Acquittement standard, le récepteur est prêt"
+      ],
+      [
+        "RNR",
+        "Acquittement et demande d'arrêt (contrôle de flux)"
+      ],
+      [
+        "REJ",
+        "Rejet simple : retransmettre à partir de la trame manquante"
+      ],
+      [
+        "SREJ",
+        "Rejet sélectif : retransmettre seulement la trame manquante"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_024",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel type de trame HDLC porte des numéros NS ?",
+    "answer": "Les trames I (information), car elles transportent des données",
+    "distractors": [
+      "Les trames S (supervision)",
+      "Les trames U (non numérotées)",
+      "Les trames RR uniquement"
+    ],
+    "explanation": "Seules les trames I contiennent des données à mémoriser pour une éventuelle retransmission : elles portent donc NS et NR.",
+    "tags": [
+      "hdlc",
+      "trames_i"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_025",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Sur combien de bits sont codés les compteurs NS et NR dans HDLC ?",
+    "answer": "3 bits, soit des valeurs de 0 à 7",
+    "distractors": [
+      "2 bits, soit des valeurs de 0 à 3",
+      "8 bits, soit des valeurs de 0 à 255",
+      "1 bit, soit des valeurs 0 ou 1"
+    ],
+    "explanation": "Avec 3 bits, les compteurs vont de 0 à 7. Cela détermine la taille maximale de la fenêtre.",
+    "tags": [
+      "hdlc",
+      "numerotation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_026",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 3,
+    "prompt": "Pourquoi la taille maximale de la fenêtre HDLC est-elle de 7 et non de 8 ?",
+    "answer": "Avec des numéros sur 3 bits, une fenêtre de 8 rendrait ambigu le message « j'attends la trame 0 »",
+    "distractors": [
+      "Parce que HDLC n'utilise que les numéros pairs",
+      "Parce que la fenêtre doit être égale au RTT en secondes",
+      "Parce qu'il faut un acquittement de plus que de trames"
+    ],
+    "explanation": "Si la fenêtre contenait les trames 0 à 7 et que toutes étaient perdues, le récepteur attendrait toujours la trame 0 : l'émetteur ne pourrait pas distinguer les deux situations.",
+    "tags": [
+      "hdlc",
+      "fenetre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_027",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 3,
+    "prompt": "Quelle taille de fenêtre d'émission permet de ne jamais bloquer l'émetteur ?",
+    "answer": "Au moins le nombre de trames émissibles pendant un RTT, soit environ débit × RTT / taille de trame",
+    "distractors": [
+      "Toujours 1, quel que soit le RTT",
+      "Toujours égale au nombre de bits de la trame",
+      "Toujours égale au RTT exprimé en secondes"
+    ],
+    "explanation": "Pour ne jamais attendre, l'émetteur doit pouvoir envoyer des trames pendant toute la durée d'un RTT : la fenêtre optimale dépend donc du RTT et du débit.",
+    "tags": [
+      "fenetre",
+      "rtt"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_028",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 3,
+    "prompt": "Dans le rejet simple, que fait le récepteur lorsqu'une trame arrive dans le désordre ?",
+    "answer": "Il rejette les trames reçues après la trame manquante et demande leur retransmission à partir de la manquante",
+    "distractors": [
+      "Il stocke toutes les trames et attend la trame manquante",
+      "Il renvoie uniquement la trame manquante",
+      "Il ferme la liaison"
+    ],
+    "explanation": "Le rejet simple est simple à mettre en œuvre mais génère beaucoup de retransmissions. Le rejet sélectif ne redemande que les trames manquantes.",
+    "tags": [
+      "rejet_simple",
+      "rejet_selectif"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_029",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 3,
+    "prompt": "Quel est l'avantage du rejet sélectif ?",
+    "answer": "Il ne retransmet que les trames manquantes, ce qui est utile quand le RTT est grand (satellite)",
+    "distractors": [
+      "Il ne nécessite aucune mémoire",
+      "Il supprime le besoin de checksum",
+      "Il est surtout utilisé sur les réseaux Ethernet locaux"
+    ],
+    "explanation": "Le rejet sélectif évite des retransmissions coûteuses sur les longues distances, mais il exige de la mémoire pour stocker les trames reçues dans le désordre.",
+    "tags": [
+      "rejet_selectif"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_030",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du temporisateur T2 dans HDLC ?",
+    "answer": "Envoyer une trame S si aucun acquittement n'a été transmis depuis trop longtemps",
+    "distractors": [
+      "Déclencher la retransmission d'une trame I",
+      "Limiter la taille de la fenêtre d'émission",
+      "Mesurer le taux d'erreur de la liaison"
+    ],
+    "explanation": "HDLC acquitte de façon sautante et n'acquitte pas systématiquement : T2 garantit qu'un acquittement part au moins toutes les T2 secondes.",
+    "tags": [
+      "hdlc",
+      "temporisateur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_031",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce que la gestion sautante de la fenêtre ?",
+    "answer": "Acquitter plusieurs trames à la fois au lieu d'acquitter chaque trame, ce qui économise des acquittements",
+    "distractors": [],
+    "explanation": "Le récepteur ne confirme que tous les X messages (par exemple TCP toutes les trois). Cela économise des acquittements, mais la fenêtre doit être assez grande pour ne pas bloquer l'émetteur.",
+    "tags": [
+      "fenetre",
+      "acquittement"
+    ],
+    "formats": [
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_032",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 3,
+    "prompt": "Quelle formule donne l'efficacité d'un protocole sans erreur, avec U bits utiles, G bits de gestion, K bits de confirmation et un débit D ?",
+    "answer": "U / (U + G + K + D × RTT)",
+    "distractors": [
+      "U / (U + G)",
+      "(U + G + K) / U",
+      "U / (G + K)"
+    ],
+    "explanation": "L'efficacité est le rapport entre les bits utiles et le total, en incluant le temps d'attente converti en bits (D × RTT).",
+    "tags": [
+      "efficacite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_033",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Une efficacité de 0,8 signifie que :",
+    "answer": "80 % des bits transmis sont utiles, soit une chute de débit de 20 %",
+    "distractors": [
+      "80 % des trames sont perdues",
+      "Le débit est multiplié par 8",
+      "20 % des bits transmis sont utiles"
+    ],
+    "explanation": "Une efficacité varie toujours entre 0 et 1 : la partie non utile (en-têtes, attentes) fait chuter le débit utile.",
+    "tags": [
+      "efficacite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

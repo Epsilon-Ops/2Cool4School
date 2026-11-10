@@ -1,0 +1,115 @@
+EXERCICE 1C.3 - PROTOCOLES DE LIAISON DE DONNÉES (HDLC)
+(énoncés des calculs)
+
+Remarque : le fichier corrigé d'origine (exo_1c_3_corr.pdf) ne contient
+que les énoncés et le tableau à compléter, sans solutions. Les questions
+ci-dessous sont donc à résoudre ; les solutions ne sont pas fournies ici.
+
+================================================================
+1. TAILLE MAXIMALE DE LA FENÊTRE
+================================================================
+
+Énoncé
+------
+On considère un protocole qui réalise la fiabilité avec anticipation en
+numérotant les messages envoyés et reçus avec Ns et Nr, sur le même
+principe que HDLC. Si les compteurs Ns et Nr sont codés sur 2 bits, quelle
+est la taille maximale de la fenêtre d'anticipation pour ce protocole ?
+
+================================================================
+2. ANALYSE DE TRAMES HDLC
+================================================================
+
+Énoncé
+------
+Les cinq trames HDLC suivantes ont été capturées par un analyseur.
+Expliquez, pour chacune d'entre elles, leur signification. Les valeurs sont
+en hexadécimal. Ces trames sont indépendantes. On suppose que la négociation
+de la connexion a abouti à un champ commande sur 1 octet.
+
+    Trame 1 : 7E 01 83 21 C0 7E
+    Trame 2 : 7E 03 63 36 08 7E
+    Trame 3 : 7E 03 C9 42 03 7E
+    Trame 4 : 7E 01 51 12 22 7E
+    Trame 5 : 7E 01 2C 0F 0F 23 34 25 7E
+
+================================================================
+3. PERTE DE TRAME D'INFORMATION
+================================================================
+
+Énoncé
+------
+Complétez l'échange HDLC ci-dessus. La deuxième trame I envoyée par A est
+perdue. Il est conseillé de dessiner le contenu de la fenêtre d'émission à
+chaque étape.
+
+HDLC fait du rejet simple. Les compteurs Vs et Vr sont codés sur 3 bits.
+La taille de la fenêtre d'émission est W = 3.
+Les deux cartes réseau n'ont pas d'autre trame I à émettre que celles déjà
+présentes sur la figure.
+
+================================================================
+4. PERTE D'ACQUITTEMENT
+================================================================
+
+Énoncé
+------
+Complétez l'échange HDLC ci-dessus. La trame RR n'est pas arrivée. Il est
+conseillé de dessiner le contenu de la fenêtre d'émission à chaque étape.
+
+HDLC fait du rejet simple. Les compteurs Vs et Vr sont codés sur 3 bits.
+La taille de la fenêtre d'émission est W = 1.
+A doit transmettre deux trames I, dont celle déjà présente sur la figure.
+B n'a pas de trame I à émettre.
+
+================================================================
+5. REPRISE SUR TEMPORISATEUR
+================================================================
+
+Énoncé
+------
+Complétez l'échange HDLC ci-dessus. Les deux trames I émises par A sont
+perdues. Il est conseillé de dessiner le contenu de la fenêtre d'émission à
+chaque étape.
+
+HDLC fait du rejet simple. Les compteurs Vs et Vr sont codés sur 3 bits.
+La taille de la fenêtre d'émission est W = 2.
+Les deux cartes réseau n'ont pas d'autre trame I à émettre que celles déjà
+présentes sur la figure.
+
+================================================================
+6. ÉCHANGE HDLC (TABLEAU À COMPLÉTER)
+================================================================
+
+Énoncé
+------
+Remplissez le tableau suivant correspondant à l'échange HDLC entre A et B.
+On suppose que HDLC fait du rejet simple. La taille de la fenêtre
+d'émission est W = 4. Les compteurs Vs et Vr sont codés sur 3 bits. La
+colonne Crédit indique la place disponible dans la fenêtre d'émission.
+
+Indiquez quelle est la trame envoyée à la ligne 6 et à la ligne 14. Dans ce
+tableau, une ligne a été supprimée : ajoutez cette ligne là où elle devrait
+figurer.
+
+Colonnes : A (Vs, Vr, Crédit) | Échange | B (Vs, Vr, Crédit)
+Valeurs des compteurs après échange (après émission ou après réception)
+
+ 1) Ouverture en mode asynchrone symétrique : SABM P=1
+    (A : Vs=0, Vr=0, Crédit=4 ; B : Vs=0, Vr=0, Crédit=4)
+ 2) Acceptation par B
+ 3) Trame I de A vers B
+ 4) Trame I de A vers B, erronée
+ 5) Trame I de A vers B
+ 6) ?
+ 7) Trame I de A vers B
+ 8) Trame I de A vers B
+ 9) Trame I de B vers A
+10) Trame I de A vers B
+11) Trame I de A vers B
+12) Trame I de A vers B
+13) Trame I de A vers B
+14) ?
+15) Trame I de A vers B
+16) Demande de fermeture
+17) Acquittement par B

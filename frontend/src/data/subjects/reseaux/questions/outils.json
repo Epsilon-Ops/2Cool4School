@@ -1,0 +1,508 @@
+[
+  {
+    "id": "reseaux_outils_001",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Quelle commande permet de lister le contenu d'un répertoire ?",
+    "answer": "ls",
+    "distractors": [
+      "cd",
+      "mkdir",
+      "cat"
+    ],
+    "explanation": "ls (LiSt) affiche le contenu du répertoire courant ; l'option -a affiche aussi les fichiers cachés.",
+    "tags": [
+      "terminal",
+      "commandes"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_002",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Quelle commande crée un répertoire ?",
+    "answer": "mkdir",
+    "distractors": [
+      "rmdir",
+      "touch",
+      "cp"
+    ],
+    "explanation": "mkdir (MaKe DIRectory) crée un répertoire ; rmdir le supprime, mais uniquement s'il est vide.",
+    "tags": [
+      "terminal",
+      "commandes"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_003",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Associez chaque commande à son action.",
+    "answer": "ls : Afficher le contenu du répertoire ; cd : Changer de répertoire courant ; cp : Copier un fichier ; mv : Déplacer un fichier ; rm : Supprimer un fichier",
+    "distractors": [],
+    "explanation": "Ces commandes forment la base de la manipulation de fichiers sous Unix : listage, navigation, copie, déplacement et suppression.",
+    "tags": [
+      "terminal",
+      "commandes"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "ls",
+        "Afficher le contenu du répertoire"
+      ],
+      [
+        "cd",
+        "Changer de répertoire courant"
+      ],
+      [
+        "cp",
+        "Copier un fichier"
+      ],
+      [
+        "mv",
+        "Déplacer un fichier"
+      ],
+      [
+        "rm",
+        "Supprimer un fichier"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_outils_004",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Complétez la phrase.",
+    "answer": "rmdir",
+    "distractors": [],
+    "explanation": "rmdir (ReMove DIRectory) ne supprime que les répertoires vides.",
+    "tags": [
+      "terminal",
+      "rmdir"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "La commande {{blank}} supprime un répertoire, à condition qu'il soit vide."
+  },
+  {
+    "id": "reseaux_outils_005",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Quelle commande affiche le manuel de la commande mkdir ?",
+    "answer": "man mkdir",
+    "distractors": [
+      "cat mkdir",
+      "ls -aide mkdir",
+      "touch mkdir"
+    ],
+    "explanation": "man (MANunal) affiche l'aide d'une commande. Dans le manuel, « / » permet de chercher un texte, « n » de passer à l'occurrence suivante et « q » de quitter.",
+    "tags": [
+      "terminal",
+      "aide"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_006",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence entre un chemin absolu et un chemin relatif ?",
+    "answer": "Le chemin absolu part de la racine /, le chemin relatif part du répertoire courant",
+    "distractors": [
+      "Le chemin relatif part toujours de /home",
+      "Le chemin absolu ne fonctionne que sous Windows",
+      "Il n'existe aucune différence"
+    ],
+    "explanation": "/net/cremi/B/quux est un chemin absolu, alors que ../B/quux est relatif au répertoire courant.",
+    "tags": [
+      "terminal",
+      "chemins"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_007",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Que désigne ../ dans un chemin ?",
+    "answer": "Le répertoire père du répertoire courant",
+    "distractors": [
+      "La racine du système de fichiers",
+      "Le répertoire courant",
+      "Le répertoire utilisateur"
+    ],
+    "explanation": ". désigne le répertoire courant, .. son répertoire père, / la racine et ~ le répertoire utilisateur.",
+    "tags": [
+      "terminal",
+      "chemins"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_008",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Que fait la commande ls -a ?",
+    "answer": "Affiche aussi les fichiers cachés, dont le nom commence par un point",
+    "distractors": [
+      "Affiche les fichiers avec leurs droits d'accès",
+      "Affiche uniquement les répertoires",
+      "Archive le répertoire courant"
+    ],
+    "explanation": "Un nom commençant par un point désigne un fichier caché. ls -a fait apparaître aussi . et .. .",
+    "tags": [
+      "terminal",
+      "ls"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_009",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Dans les droits d'un fichier, que signifient r, w et x ?",
+    "answer": "Lecture, écriture et exécution (ou droit d'entrée pour un répertoire)",
+    "distractors": [
+      "Répertoire, web et exécution",
+      "Lecture, écriture et suppression",
+      "Racine, espace de travail et export"
+    ],
+    "explanation": "Ces droits sont définis pour trois catégories : u (propriétaire), g (groupe) et o (autres utilisateurs).",
+    "tags": [
+      "droits",
+      "unix"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_010",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Dans la sortie de ls -l, que désigne la lettre g des droits ?",
+    "answer": "Les membres du groupe auquel appartient le propriétaire",
+    "distractors": [
+      "Le propriétaire du fichier",
+      "Les autres utilisateurs de la machine",
+      "La taille du fichier en octets"
+    ],
+    "explanation": "u désigne le propriétaire (user), g le groupe (group) et o les autres (others).",
+    "tags": [
+      "droits",
+      "unix"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_011",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : sous Unix, les fichiers toto et Toto désignent le même fichier.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Le système de fichiers Unix distingue les majuscules des minuscules, contrairement à Windows.",
+    "tags": [
+      "unix",
+      "noms_de_fichiers"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_012",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : la commande rmdir peut supprimer un répertoire qui contient des fichiers.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "rmdir ne supprime que les répertoires vides : il faut d'abord vider le répertoire.",
+    "tags": [
+      "rmdir",
+      "terminal"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_013",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle principal de Wireshark ?",
+    "answer": "Capturer et analyser les trames qui traversent une carte réseau",
+    "distractors": [
+      "Simuler une topologie réseau pédagogique",
+      "Configurer les adresses IP des machines",
+      "Chiffrer le trafic réseau"
+    ],
+    "explanation": "Wireshark capture les trames en temps réel et en interprète les en-têtes, a posteriori ou en direct.",
+    "tags": [
+      "wireshark"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_014",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Quel filtre Wireshark ne garde que les trames DNS ?",
+    "answer": "dns",
+    "distractors": [
+      "ip.src == dns",
+      "filter dns",
+      "http.dns"
+    ],
+    "explanation": "Taper le nom d'un protocole dans la barre de filtre ne garde que les trames de ce protocole.",
+    "tags": [
+      "wireshark",
+      "filtrage"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_015",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Quel filtre Wireshark garde les trames dont l'adresse IP source est 208.97.177.124 ?",
+    "answer": "ip.src == 208.97.177.124",
+    "distractors": [
+      "ip.dst == 208.97.177.124",
+      "ip.src contient dns",
+      "tcp.src == 208.97.177.124"
+    ],
+    "explanation": "Chaque champ d'en-tête est accessible dans le filtre : ip.src désigne l'adresse source, ip.dst l'adresse de destination.",
+    "tags": [
+      "wireshark",
+      "filtrage",
+      "ip"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_016",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Quel opérateur Wireshark correspond au « et » logique ?",
+    "answer": "&&",
+    "distractors": [
+      "||",
+      "!=",
+      "^^"
+    ],
+    "explanation": "|| correspond au « ou » logique et && au « et ». Les conditions peuvent être combinées avec des parenthèses.",
+    "tags": [
+      "wireshark",
+      "filtrage"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_017",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Que permet la fonction « Suivre un flux TCP » de Wireshark ?",
+    "answer": "Filtrer les trames d'une même connexion TCP et afficher le dialogue",
+    "distractors": [
+      "Modifier les trames avant leur envoi",
+      "Mesurer le débit moyen de la carte réseau",
+      "Bloquer les connexions TCP suspectes"
+    ],
+    "explanation": "Le dialogue s'affiche avec les messages sortants en rouge et les messages entrants en bleu.",
+    "tags": [
+      "wireshark",
+      "tcp"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_018",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce que Filius ?",
+    "answer": "Un outil pédagogique de simulation de réseaux",
+    "distractors": [
+      "Un éditeur de fichiers pour le terminal",
+      "Un analyseur de trames en temps réel",
+      "Un système d'exploitation pour routeurs"
+    ],
+    "explanation": "Filius permet de générer et configurer une topologie de réseau simulée, sans matériel réel.",
+    "tags": [
+      "filius"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_019",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 1,
+    "prompt": "Associez chaque outil à son usage dans ce module.",
+    "answer": "Terminal : Exécuter des commandes et naviguer dans l'arborescence ; Wireshark : Capturer et analyser les trames ; Filius : Simuler un réseau pédagogique",
+    "distractors": [],
+    "explanation": "Ces trois outils servent respectivement à manipuler les fichiers, observer le trafic réel et simuler des réseaux.",
+    "tags": [
+      "outils"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Terminal",
+        "Exécuter des commandes et naviguer dans l'arborescence"
+      ],
+      [
+        "Wireshark",
+        "Capturer et analyser les trames"
+      ],
+      [
+        "Filius",
+        "Simuler un réseau pédagogique"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_outils_020",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 3,
+    "prompt": "Sous Windows, quel terminal est plus puissant et se rapproche le plus du terminal Linux ?",
+    "answer": "PowerShell",
+    "distractors": [
+      "cmd.exe",
+      "L'invite de commande historique",
+      "Le shell Bourne"
+    ],
+    "explanation": "cmd.exe est le terminal historique de Windows. PowerShell est plus récent et plus puissant, même si sa syntaxe diffère de celle de Linux.",
+    "tags": [
+      "terminal",
+      "windows"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_021",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 3,
+    "prompt": "Dans le terminal, que fait la commande cd sans paramètre ?",
+    "answer": "Elle ramène dans le répertoire d'accueil (répertoire utilisateur)",
+    "distractors": [
+      "Elle affiche le répertoire courant",
+      "Elle remonte à la racine du système",
+      "Elle crée un répertoire vide"
+    ],
+    "explanation": "cd sans argument ramène toujours au répertoire utilisateur, équivalent à cd ~.",
+    "tags": [
+      "terminal",
+      "cd"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_outils_022",
+    "subject": "reseaux",
+    "skill": "reseaux.outils",
+    "difficulty": 2,
+    "prompt": "Remettez dans l'ordre les étapes de la boucle d'un terminal.",
+    "answer": "Affichage de l'invite de commande (prompt) → Saisie de la commande avec aide à l'édition → Analyse et vérification syntaxique de la commande → Appel au système d'exploitation pour exécuter la commande → Attente de la fin de la commande",
+    "distractors": [],
+    "explanation": "Le terminal exécute ces étapes en boucle. Une erreur de syntaxe est signalée avant tout appel au système d'exploitation.",
+    "tags": [
+      "terminal",
+      "fonctionnement"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Affichage de l'invite de commande (prompt)",
+      "Saisie de la commande avec aide à l'édition",
+      "Analyse et vérification syntaxique de la commande",
+      "Appel au système d'exploitation pour exécuter la commande",
+      "Attente de la fin de la commande"
+    ]
+  }
+]
