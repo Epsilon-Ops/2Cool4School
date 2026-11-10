@@ -291,9 +291,10 @@ button { font: inherit; color: inherit; }
 
 /* ---------- Unités et chemin ---------- */
 
-.unit { margin: 26px 0 34px; }
+.unit { margin: 26px 0 34px; scroll-margin-top: 84px; }
 
 .unit-head {
+  cursor: pointer;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -944,3 +945,43 @@ button { font: inherit; color: inherit; }
     transition-duration: .001ms !important;
   }
 }
+
+/* ---------- Matières dépliables ---------- */
+
+[hidden] { display: none !important; }
+
+.unit-toggle {
+  all: unset;
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  cursor: pointer;
+  font: inherit;
+  color: inherit;
+  border-radius: 8px;
+}
+.unit-toggle:focus-visible { outline: 3px solid #fff; outline-offset: 4px; }
+.unit-toggle .chev {
+  display: inline-block;
+  font-size: .9em;
+  transition: transform .25s ease;
+}
+.unit.collapsed .unit-toggle .chev { transform: rotate(-90deg); }
+.unit.collapsed .unit-head { margin-bottom: 0; }
+.unit.collapsed .unit-head p { display: none; }
+
+/* ---------- Chapitres à venir (sans question) ---------- */
+
+.node.soon {
+  background: var(--paper-2);
+  color: #bdbdbd;
+  box-shadow: 0 8px 0 var(--line);
+  border: 3px dashed var(--line-d);
+  cursor: pointer;
+}
+.node.soon .node-icon { font-size: 1.4rem; letter-spacing: .1em; }
+.node.soon .node-label { color: #b5b5b5; }
+.badge.soon { background: var(--line); color: #8a8a8a; }
+.prereqs li.soon { color: var(--ink-2); }
+.prereqs li.soon span { background: var(--paper-2); color: #aaa; border: 2px dashed var(--line-d); }
+.prereqs li em { font-style: normal; font-weight: 700; opacity: .8; }

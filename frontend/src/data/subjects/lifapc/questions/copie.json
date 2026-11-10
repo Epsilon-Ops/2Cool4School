@@ -604,8 +604,16 @@
       "Supprimer la liste l."
     ],
     "explanation": "Le constructeur de copie réalise une copie profonde : il crée de nouvelles cellules contenant les mêmes informations que celles de la liste source.",
-    "tags": ["copie profonde", "constructeur de copie", "C++"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "copie profonde",
+      "constructeur de copie",
+      "C++"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_032",
@@ -620,8 +628,15 @@
       "Détruire la liste source."
     ],
     "explanation": "La fonction construit une nouvelle chaîne de cellules indépendante de celle de la liste source.",
-    "tags": ["C", "copie profonde", "initialisation"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "C",
+      "copie profonde",
+      "initialisation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_033",
@@ -636,8 +651,15 @@
       "Détruire automatiquement les deux listes."
     ],
     "explanation": "L'opérateur d'affectation permet de remplacer le contenu d'une liste par une copie profonde d'une autre liste.",
-    "tags": ["affectation", "C++", "copie profonde"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "affectation",
+      "C++",
+      "copie profonde"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_034",
@@ -652,8 +674,16 @@
       "Pour augmenter la capacité de la liste."
     ],
     "explanation": "Si l'ancienne chaîne de cellules est abandonnée sans être libérée, ses adresses deviennent inaccessibles et la mémoire ne peut plus être correctement récupérée.",
-    "tags": ["affectation", "fuite mémoire", "gestion mémoire"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "affectation",
+      "fuite mémoire",
+      "gestion mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_035",
@@ -668,8 +698,15 @@
       "Tous les pointeurs deviennent automatiquement NULL."
     ],
     "explanation": "Le constructeur de copie généré automatiquement copie les membres, notamment l'adresse ad. Deux listes peuvent alors partager la même chaîne de cellules.",
-    "tags": ["copie", "pointeurs", "double libération"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "copie",
+      "pointeurs",
+      "double libération"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_036",
@@ -684,8 +721,16 @@
       "Copier les éléments dans une autre liste."
     ],
     "explanation": "Le destructeur parcourt la chaîne de cellules et libère chaque cellule afin de restituer la mémoire utilisée par la liste.",
-    "tags": ["destructeur", "C++", "mémoire"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "destructeur",
+      "C++",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_037",
@@ -700,8 +745,15 @@
       "La fonction testListeVide."
     ],
     "explanation": "Le C ne possède pas de destructeur automatique. Il faut donc appeler explicitement testamentListe pour libérer les ressources utilisées par la liste.",
-    "tags": ["C", "destruction", "mémoire"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "C",
+      "destruction",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_038",
@@ -716,8 +768,16 @@
       "testamentListe affiche les éléments et videListe les copie."
     ],
     "explanation": "Vider une liste laisse son objet initialisé et réutilisable. Le testament libère ses ressources avant la fin de vie de l'objet.",
-    "tags": ["destruction", "liste vide", "cycle de vie"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "destruction",
+      "liste vide",
+      "cycle de vie"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_039",
@@ -732,8 +792,14 @@
       "Une situation où deux listes possèdent des tailles différentes."
     ],
     "explanation": "Une fuite mémoire apparaît notamment lorsqu'on perd le dernier pointeur permettant d'accéder à un bloc alloué sans l'avoir libéré.",
-    "tags": ["fuite mémoire", "allocation dynamique"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "fuite mémoire",
+      "allocation dynamique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_040",
@@ -748,8 +814,16 @@
       "Libérer deux cellules différentes."
     ],
     "explanation": "Après une première libération avec delete ou free, le bloc ne doit pas être libéré une seconde fois. Une double libération entraîne un comportement indéfini.",
-    "tags": ["mémoire", "destructeur", "pointeurs"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "mémoire",
+      "destructeur",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_041",
@@ -764,8 +838,15 @@
       "Parce que la cellule suivante doit être copiée."
     ],
     "explanation": "Il faut récupérer l'adresse suivante avant de libérer la cellule courante. Cela permet de poursuivre le parcours sans accéder à une zone mémoire libérée.",
-    "tags": ["pointeurs", "libération mémoire", "parcours"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "pointeurs",
+      "libération mémoire",
+      "parcours"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_042",
@@ -780,8 +861,16 @@
       "Une classe doit obligatoirement avoir trois attributs privés."
     ],
     "explanation": "Ces trois opérations permettent de gérer correctement le cycle de vie et la copie des ressources, notamment lorsqu'une classe possède de la mémoire dynamique.",
-    "tags": ["règle des trois", "C++", "gestion mémoire"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "règle des trois",
+      "C++",
+      "gestion mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_043",
@@ -796,8 +885,15 @@
       "Parce que l'auto-affectation transforme la liste en liste circulaire."
     ],
     "explanation": "Si l'ancien contenu est détruit avant la copie, une auto-affectation peut supprimer les données que l'on souhaite recopier. Un test this != &l permet de traiter ce cas.",
-    "tags": ["affectation", "C++", "auto-affectation"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "affectation",
+      "C++",
+      "auto-affectation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_044",
@@ -812,8 +908,16 @@
       "Continuer comme si l'allocation avait réussi."
     ],
     "explanation": "malloc retourne NULL si l'allocation échoue. Il faut vérifier le pointeur avant d'accéder aux champs de la cellule.",
-    "tags": ["C", "malloc", "sécurité mémoire"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "C",
+      "malloc",
+      "sécurité mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_045",
@@ -828,7 +932,14 @@
       "Parce que le destructeur de Liste ne peut pas appeler d'autres destructeurs."
     ],
     "explanation": "Le TP veut pouvoir changer l'implantation de la liste, notamment vers une liste circulaire avec sentinelle, sans modifier les interfaces des opérations sur les cellules et les listes.",
-    "tags": ["cellules", "destructeur", "conception modulaire"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "cellules",
+      "destructeur",
+      "conception modulaire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   }
 ]

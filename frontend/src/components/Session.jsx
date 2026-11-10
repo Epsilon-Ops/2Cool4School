@@ -31,9 +31,8 @@ function revealOf(ex, q) {
  */
 export default function Session({ skill, bank, config, progress, onAnswer, onExit }) {
   const [queue, setQueue] = useState(() => {
-    const pool = skill.review
-      ? (dueQuestions(bank, progress).length ? dueQuestions(bank, progress) : bank)
-      : bank;
+    const due = skill.review ? dueQuestions(bank, progress) : [];
+    const pool = skill.review && due.length ? due : bank;
     return pickQuestions(pool, {
       skill: skill.review ? undefined : skill.id,
       count: config.count,

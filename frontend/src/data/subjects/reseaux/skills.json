@@ -2,10 +2,19 @@
   "skills": [
     {
       "id": "reseaux.interconnexion",
-      "name": "Interconnexion aux systèmes",
+      "name": "Interconnexion des réseaux",
       "short": "Interconnexion",
       "prereq": [],
-      "description": "Télécoms, réseau public et privé, VPN, backbone, topologies."
+      "description": "Topologies, nombre de liaisons et interconnexion des équipements."
+    },
+    {
+      "id": "reseaux.transmission",
+      "name": "Moyens de transmission",
+      "short": "Transmission",
+      "prereq": [
+        "reseaux.interconnexion"
+      ],
+      "description": "Débits, conversions, temps de transfert et comparaison des moyens de transmission."
     }
   ]
 }

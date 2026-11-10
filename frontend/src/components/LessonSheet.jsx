@@ -13,7 +13,7 @@ const LEVELS = [
   ['Application', 50],
   ['Maîtrise', 80],
 ];
-const STATUS_LABEL = { locked: 'Verrouillée', acquired: 'Acquise', available: 'Disponible' };
+const STATUS_LABEL = { locked: 'Verrouillée', acquired: 'Acquise', available: 'Disponible', soon: 'Bientôt' };
 
 /** Fiche d'une compétence : détail, prérequis, réglages et bouton de départ. */
 export default function LessonSheet({
@@ -64,9 +64,9 @@ export default function LessonSheet({
             <h4>Prérequis</h4>
             <ul className="prereqs">
               {prereqs.map((p) => (
-                <li key={p.id} className={p.ok ? 'ok' : 'todo'}>
-                  <span>{p.ok ? '✓' : '○'}</span>
-                  {p.name}
+                <li key={p.id} className={p.soon ? 'soon' : p.ok ? 'ok' : 'todo'}>
+                  <span>{p.soon ? '…' : p.ok ? '✓' : '○'}</span>
+                  {p.name}{p.soon && <em> (bientôt)</em>}
                 </li>
               ))}
             </ul>

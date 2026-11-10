@@ -1,6 +1,6 @@
 [
   {
-    "id": "c_005",
+    "id": "memoire_c_005",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 1,
@@ -23,7 +23,7 @@
     ]
   },
   {
-    "id": "c_006",
+    "id": "memoire_c_006",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 1,
@@ -47,31 +47,7 @@
     "cloze": "Un constructeur porte le même nom que sa {{blank}}."
   },
   {
-    "id": "c_007",
-    "subject": "lifapc",
-    "skill": "lifapc.copie",
-    "difficulty": 1,
-    "prompt": "Qu'est-ce qu'un constructeur par défaut ?",
-    "answer": "Un constructeur qui peut être appelé sans argument",
-    "distractors": [
-      "Un constructeur qui copie un objet existant",
-      "Un constructeur qui détruit l'objet",
-      "Un constructeur qui alloue obligatoirement de la mémoire dans le tas"
-    ],
-    "explanation": "Le constructeur par défaut permet de créer un objet sans fournir d'argument.",
-    "tags": [
-      "constructeur",
-      "constructeur par défaut"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard",
-      "fill_blank"
-    ],
-    "cloze": "Un constructeur par défaut peut être appelé sans {{blank}}."
-  },
-  {
-    "id": "c_008",
+    "id": "memoire_c_008",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 1,
@@ -96,7 +72,7 @@
     "cloze": "Un constructeur par copie classique utilise une référence {{blank}} vers l'objet source."
   },
   {
-    "id": "c_009",
+    "id": "memoire_c_009",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -119,7 +95,7 @@
     ]
   },
   {
-    "id": "c_010",
+    "id": "memoire_c_010",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -142,7 +118,7 @@
     ]
   },
   {
-    "id": "c_011",
+    "id": "memoire_c_011",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -164,7 +140,7 @@
     ]
   },
   {
-    "id": "c_012",
+    "id": "memoire_c_012",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -187,7 +163,7 @@
     ]
   },
   {
-    "id": "c_013",
+    "id": "memoire_c_013",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -210,7 +186,7 @@
     ]
   },
   {
-    "id": "c_014",
+    "id": "memoire_c_014",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -233,7 +209,7 @@
     ]
   },
   {
-    "id": "c_015",
+    "id": "memoire_c_015",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -256,7 +232,7 @@
     ]
   },
   {
-    "id": "c_016",
+    "id": "memoire_c_016",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 3,
@@ -279,7 +255,7 @@
     ]
   },
   {
-    "id": "c_017",
+    "id": "memoire_c_017",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 3,
@@ -302,7 +278,7 @@
     ]
   },
   {
-    "id": "c_018",
+    "id": "memoire_c_018",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -324,7 +300,7 @@
     ]
   },
   {
-    "id": "c_019",
+    "id": "memoire_c_019",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 1,
@@ -348,7 +324,7 @@
     "cloze": "Le destructeur d'une classe Liste s'écrit {{blank}}."
   },
   {
-    "id": "c_020",
+    "id": "memoire_c_020",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -371,7 +347,7 @@
     ]
   },
   {
-    "id": "c_021",
+    "id": "memoire_c_021",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -395,7 +371,7 @@
     ]
   },
   {
-    "id": "c_022",
+    "id": "memoire_c_022",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -419,7 +395,7 @@
     ]
   },
   {
-    "id": "c_023",
+    "id": "memoire_c_023",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -442,29 +418,7 @@
     ]
   },
   {
-    "id": "c_024",
-    "subject": "lifapc",
-    "skill": "lifapc.copie",
-    "difficulty": 2,
-    "prompt": "Que fait le destructeur implicite d'une classe ?",
-    "answer": "Il appelle les destructeurs des membres qui en possèdent un",
-    "distractors": [
-      "Il appelle systématiquement delete sur tous les pointeurs bruts",
-      "Il copie tous les membres",
-      "Il réinitialise toutes les variables à zéro"
-    ],
-    "explanation": "Le destructeur implicite détruit correctement les membres objets, mais ne libère pas automatiquement les ressources possédées par de simples pointeurs bruts.",
-    "tags": [
-      "destructeur implicite",
-      "mémoire"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "c_025",
+    "id": "memoire_c_025",
     "subject": "lifapc",
     "skill": "lifapc.copie",
     "difficulty": 2,
@@ -599,29 +553,6 @@
       "operator=",
       "référence",
       "affectation"
-    ],
-    "formats": [
-      "single_choice",
-      "flashcard"
-    ]
-  },
-  {
-    "id": "c_031",
-    "subject": "lifapc",
-    "skill": "lifapc.copie",
-    "difficulty": 3,
-    "prompt": "Pourquoi faut-il tester this != &autre dans un opérateur d'affectation ?",
-    "answer": "Pour détecter une auto-affectation",
-    "distractors": [
-      "Pour vérifier que l'objet est alloué avec new",
-      "Pour vérifier que l'objet est constant",
-      "Pour déclencher le constructeur par copie"
-    ],
-    "explanation": "Lorsqu'un objet s'affecte à lui-même, il faut éviter de détruire ses propres données avant de les recopier.",
-    "tags": [
-      "operator=",
-      "auto-affectation",
-      "this"
     ],
     "formats": [
       "single_choice",

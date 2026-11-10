@@ -47,7 +47,7 @@
     ]
   },
   {
-    "id": "c_005",
+    "id": "listes_c_005",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 3,
@@ -130,8 +130,17 @@
       "Une structure qui utilise uniquement des indices entiers."
     ],
     "explanation": "Une liste chaînée est composée de cellules. Chaque cellule contient une information et un pointeur vers la cellule suivante.",
-    "tags": ["listes", "cellules", "pointeurs"],
-    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "tags": [
+      "listes",
+      "cellules",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Une liste chaînée est composée de {{blank}} reliées entre elles par des pointeurs."
   },
   {
@@ -147,8 +156,16 @@
       "Uniquement une information."
     ],
     "explanation": "Dans une liste simplement chaînée, une cellule contient une donnée (info) et un pointeur (psuivant) vers la cellule suivante.",
-    "tags": ["cellules", "structure", "pointeurs"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "cellules",
+      "structure",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_003",
@@ -163,8 +180,15 @@
       "À stocker l'adresse du début de la liste."
     ],
     "explanation": "Le champ psuivant est un pointeur qui permet de relier une cellule à la suivante. Il vaut NULL lorsque la cellule est la dernière dans une liste simplement chaînée non circulaire.",
-    "tags": ["pointeurs", "cellules"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "pointeurs",
+      "cellules"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Le champ psuivant contient l'adresse de la cellule {{blank}}."
   },
   {
@@ -180,8 +204,16 @@
       "La valeur du premier élément."
     ],
     "explanation": "Le pointeur ad permet d'accéder à la première cellule et donc de parcourir toute la liste en suivant les pointeurs psuivant.",
-    "tags": ["liste", "pointeurs", "structure"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "liste",
+      "pointeurs",
+      "structure"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_005",
@@ -196,8 +228,16 @@
       "ad pointe vers la dernière cellule."
     ],
     "explanation": "Dans l'implantation classique, une liste vide ne possède aucune cellule : son pointeur ad vaut NULL et sa taille est égale à zéro.",
-    "tags": ["liste", "liste vide", "initialisation"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "liste",
+      "liste vide",
+      "initialisation"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_006",
@@ -212,8 +252,16 @@
       "Une liste détruite contient obligatoirement un élément."
     ],
     "explanation": "Une liste vide est un objet valide dont les ressources ont été correctement initialisées. Après destruction, son espace mémoire peut être libéré : on ne doit plus utiliser l'objet comme une liste initialisée.",
-    "tags": ["destructeur", "liste vide", "cycle de vie"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "destructeur",
+      "liste vide",
+      "cycle de vie"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_007",
@@ -228,8 +276,16 @@
       "Une copie qui duplique uniquement le pointeur ad."
     ],
     "explanation": "Une copie profonde crée de nouvelles cellules contenant les mêmes informations. Les deux listes sont indépendantes : modifier ou détruire l'une ne doit pas affecter l'autre.",
-    "tags": ["copie profonde", "mémoire", "listes"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "copie profonde",
+      "mémoire",
+      "listes"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_008",
@@ -244,8 +300,16 @@
       "Parce que les cellules seraient immédiatement supprimées."
     ],
     "explanation": "Copier uniquement ad réalise une copie superficielle. Les deux objets partagent la même chaîne de cellules, ce qui peut provoquer des modifications involontaires et une double libération mémoire.",
-    "tags": ["copie", "pointeurs", "mémoire"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "copie",
+      "pointeurs",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_009",
@@ -260,8 +324,16 @@
       "delete"
     ],
     "explanation": "L'opérateur new permet d'allouer dynamiquement de la mémoire en C++. Il peut également appeler le constructeur de l'objet créé.",
-    "tags": ["C++", "allocation dynamique", "new"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "C++",
+      "allocation dynamique",
+      "new"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "En C++, on utilise {{blank}} pour allouer dynamiquement une cellule."
   },
   {
@@ -277,8 +349,17 @@
       "create et destroy"
     ],
     "explanation": "En C, malloc réserve un bloc de mémoire dans le tas et free libère ce bloc. Ces fonctions sont déclarées dans stdlib.h.",
-    "tags": ["C", "malloc", "free", "mémoire"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "C",
+      "malloc",
+      "free",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "En C, on utilise {{blank}} pour allouer et {{blank}} pour libérer de la mémoire."
   },
   {
@@ -294,8 +375,17 @@
       "malloc initialise systématiquement tous les champs à zéro."
     ],
     "explanation": "En C++, new combine allocation mémoire et construction de l'objet. malloc ne fait qu'allouer de la mémoire brute et ne déclenche aucun constructeur.",
-    "tags": ["C++", "C", "allocation", "constructeur"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "C++",
+      "C",
+      "allocation",
+      "constructeur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_012",
@@ -310,8 +400,16 @@
       "Avec NULL."
     ],
     "explanation": "Une cellule créée individuellement avec new doit être libérée avec delete. Cela appelle son destructeur avant de libérer la mémoire.",
-    "tags": ["C++", "delete", "destructeur"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "C++",
+      "delete",
+      "destructeur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Une cellule créée avec new est libérée avec {{blank}}."
   },
   {
@@ -327,8 +425,16 @@
       "En utilisant obligatoirement une variable globale."
     ],
     "explanation": "Le C ne possède pas de passage par référence comme le C++. On utilise un pointeur pour permettre à une fonction de modifier la variable d'origine.",
-    "tags": ["C", "pointeurs", "passage de paramètres"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "C",
+      "pointeurs",
+      "passage de paramètres"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_014",
@@ -343,8 +449,16 @@
       "h(int a)"
     ],
     "explanation": "Le paramètre px attend une adresse de type int*. L'opérateur & permet de récupérer l'adresse de la variable a.",
-    "tags": ["C", "pointeurs", "adresse"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "C",
+      "pointeurs",
+      "adresse"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Pour transmettre l'adresse de a à h, on écrit {{blank}}."
   },
   {
@@ -360,8 +474,17 @@
       "<math.h>"
     ],
     "explanation": "Les fonctions malloc et free sont déclarées dans le fichier d'en-tête standard stdlib.h.",
-    "tags": ["C", "bibliothèque standard", "malloc", "free"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "C",
+      "bibliothèque standard",
+      "malloc",
+      "free"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Pour utiliser malloc et free en C, on inclut {{blank}}."
   },
   {
@@ -377,8 +500,16 @@
       "Copier une autre liste."
     ],
     "explanation": "Le constructeur par défaut initialise les membres de la liste. Dans l'implantation classique, ad vaut nullptr et taille vaut 0.",
-    "tags": ["constructeur", "initialisation", "C++"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "constructeur",
+      "initialisation",
+      "C++"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_017",
@@ -393,8 +524,15 @@
       "Copier une liste existante."
     ],
     "explanation": "La fonction reçoit un pointeur vers une Liste et initialise ses champs, notamment ad à NULL et taille à 0.",
-    "tags": ["C", "initialisation", "liste"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "C",
+      "initialisation",
+      "liste"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_018",
@@ -409,8 +547,15 @@
       "Parcourir toute la liste pour trouver la dernière cellule."
     ],
     "explanation": "La nouvelle cellule doit conserver l'accès à l'ancienne liste. On affecte donc son pointeur suivant à l'ancienne adresse de tête avant de mettre à jour ad.",
-    "tags": ["ajout en tête", "pointeurs", "cellules"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "ajout en tête",
+      "pointeurs",
+      "cellules"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_019",
@@ -425,8 +570,15 @@
       "O(n²)"
     ],
     "explanation": "L'opération nécessite seulement de créer une cellule et de modifier quelques pointeurs. Elle ne dépend pas du nombre de cellules déjà présentes.",
-    "tags": ["complexité", "ajout en tête"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "complexité",
+      "ajout en tête"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "L'ajout en tête d'une liste simplement chaînée a une complexité de {{blank}}."
   },
   {
@@ -442,8 +594,15 @@
       "Il pointe vers la dernière cellule."
     ],
     "explanation": "La nouvelle cellule devient la première cellule de la liste. Son adresse doit donc être affectée au pointeur ad.",
-    "tags": ["ajout en tête", "pointeurs"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "ajout en tête",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_021",
@@ -458,8 +617,15 @@
       "Afficher tous les éléments."
     ],
     "explanation": "La fonction renvoie 1 si la liste est vide et 0 sinon, conformément à son interface.",
-    "tags": ["liste vide", "test", "C"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "liste vide",
+      "test",
+      "C"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_022",
@@ -474,8 +640,15 @@
       "Renvoyer l'adresse de la dernière cellule."
     ],
     "explanation": "Cette fonction permet de commencer le parcours d'une liste en récupérant l'adresse de sa première cellule.",
-    "tags": ["parcours", "cellules", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "parcours",
+      "cellules",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_023",
@@ -490,8 +663,15 @@
       "Renvoyer l'adresse de la première cellule."
     ],
     "explanation": "Cette fonction permet de parcourir la liste en suivant le champ psuivant de chaque cellule.",
-    "tags": ["parcours", "pointeurs", "cellules"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "parcours",
+      "pointeurs",
+      "cellules"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_024",
@@ -506,8 +686,15 @@
       "Modifier la taille de la liste."
     ],
     "explanation": "La fonction accède au champ info de la cellule désignée par le pointeur fourni.",
-    "tags": ["cellules", "information", "accès"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "cellules",
+      "information",
+      "accès"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_025",
@@ -522,8 +709,16 @@
       "En suivant les pointeurs vers les cellules précédentes."
     ],
     "explanation": "On commence à l'adresse ad puis on avance de cellule en cellule grâce à psuivant. Le parcours s'arrête lorsque le pointeur devient NULL.",
-    "tags": ["parcours", "pointeurs", "liste"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "parcours",
+      "pointeurs",
+      "liste"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_026",
@@ -538,8 +733,16 @@
       "O(n²)"
     ],
     "explanation": "Chaque cellule est visitée exactement une fois lors du parcours complet.",
-    "tags": ["complexité", "affichage", "parcours"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "complexité",
+      "affichage",
+      "parcours"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Afficher tous les éléments d'une liste de n cellules coûte {{blank}}."
   },
   {
@@ -555,8 +758,15 @@
       "Mettre taille à zéro sans modifier ad."
     ],
     "explanation": "Il faut sauvegarder l'adresse de la cellule suivante, déplacer ad vers celle-ci, puis libérer l'ancienne première cellule. Sinon, on perdrait l'accès au reste de la liste.",
-    "tags": ["suppression", "mémoire", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "suppression",
+      "mémoire",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_028",
@@ -571,8 +781,15 @@
       "O(n²)"
     ],
     "explanation": "Il suffit de modifier ad et de libérer l'ancienne première cellule. Aucun parcours de la liste n'est nécessaire.",
-    "tags": ["complexité", "suppression", "liste"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "complexité",
+      "suppression",
+      "liste"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp1_029",
@@ -587,8 +804,16 @@
       "Copier la liste dans une autre liste."
     ],
     "explanation": "La fonction parcourt les cellules, les libère une par une, puis réinitialise les champs de la liste pour qu'elle soit vide.",
-    "tags": ["destruction", "mémoire", "liste vide"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "destruction",
+      "mémoire",
+      "liste vide"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp1_030",
@@ -603,12 +828,20 @@
       "O(n²)"
     ],
     "explanation": "Chaque cellule doit être visitée et libérée une fois. Le nombre d'opérations est donc proportionnel à n.",
-    "tags": ["complexité", "destruction", "mémoire"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "complexité",
+      "destruction",
+      "mémoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Vider une liste de n cellules nécessite une complexité de {{blank}}."
   },
   {
-    "id": "liste_tp1_031",
+    "id": "listes_liste_tp1_031",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -620,11 +853,20 @@
       "Les structures"
     ],
     "explanation": "Le C ne possède pas de références. Pour modifier une variable passée en paramètre, on utilise un pointeur et un passage par adresse.",
-    "tags": ["tp1", "c", "cpp", "parametres"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "tp1",
+      "c",
+      "cpp",
+      "parametres"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
-    "id": "liste_tp1_032",
+    "id": "listes_liste_tp1_032",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -636,12 +878,21 @@
       "int f(const int x)"
     ],
     "explanation": "En C, on utilise un pointeur pour accéder à la variable originale et la modifier indirectement.",
-    "tags": ["tp1", "c", "pointeurs", "parametres"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "tp1",
+      "c",
+      "pointeurs",
+      "parametres"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "En C, un paramètre modifiable de type int se transmet avec un {{blank}}."
   },
   {
-    "id": "liste_tp1_033",
+    "id": "listes_liste_tp1_033",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -653,12 +904,21 @@
       "h(int a)"
     ],
     "explanation": "L'opérateur & permet d'obtenir l'adresse de la variable a. La fonction reçoit cette adresse dans son pointeur px et peut modifier la valeur avec *px.",
-    "tags": ["tp1", "c", "pointeurs", "adresse"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "tp1",
+      "c",
+      "pointeurs",
+      "adresse"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Pour transmettre l'adresse de a à h, on écrit {{blank}}."
   },
   {
-    "id": "liste_tp1_034",
+    "id": "listes_liste_tp1_034",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -670,11 +930,20 @@
       "Une nouvelle variable entière indépendante"
     ],
     "explanation": "L'opérateur * permet de déréférencer un pointeur : il donne accès à la valeur stockée à l'adresse pointée.",
-    "tags": ["tp1", "c", "pointeurs", "dereferencement"],
-    "formats": ["single_choice", "true_false", "flashcard"]
+    "tags": [
+      "tp1",
+      "c",
+      "pointeurs",
+      "dereferencement"
+    ],
+    "formats": [
+      "single_choice",
+      "true_false",
+      "flashcard"
+    ]
   },
   {
-    "id": "liste_tp1_035",
+    "id": "listes_liste_tp1_035",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -686,11 +955,20 @@
       "malloc et delete"
     ],
     "explanation": "En C, malloc permet d'allouer une zone mémoire dans le tas et free permet de la libérer. Ces fonctions sont déclarées dans stdlib.h.",
-    "tags": ["tp1", "c", "memoire", "allocation"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "tp1",
+      "c",
+      "memoire",
+      "allocation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
-    "id": "liste_tp1_036",
+    "id": "listes_liste_tp1_036",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 2,
@@ -702,12 +980,21 @@
       "<iostream>"
     ],
     "explanation": "Les fonctions malloc et free sont déclarées dans le fichier d'en-tête standard stdlib.h.",
-    "tags": ["tp1", "c", "memoire", "bibliotheque"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "tp1",
+      "c",
+      "memoire",
+      "bibliotheque"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Pour utiliser malloc et free en C, on inclut {{blank}}."
   },
   {
-    "id": "liste_tp1_037",
+    "id": "listes_liste_tp1_037",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -719,11 +1006,19 @@
       "malloc libère la mémoire tandis que new l'alloue"
     ],
     "explanation": "malloc réserve une zone mémoire sans appeler de constructeur. En C++, new réalise l'allocation et appelle automatiquement le constructeur de l'objet.",
-    "tags": ["tp1", "c", "cpp", "allocation"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "c",
+      "cpp",
+      "allocation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
-    "id": "liste_tp1_038",
+    "id": "listes_liste_tp1_038",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 1,
@@ -735,12 +1030,20 @@
       "typedef S variable;"
     ],
     "explanation": "En C, le mot-clé struct doit précéder le nom du type, sauf si un typedef a été défini pour créer un alias.",
-    "tags": ["tp1", "c", "structures"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "tp1",
+      "c",
+      "structures"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "En C, sans typedef, on déclare une variable de type S avec {{blank}}."
   },
   {
-    "id": "liste_tp1_039",
+    "id": "listes_liste_tp1_039",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 2,
@@ -752,11 +1055,20 @@
       "L'encapsulation"
     ],
     "explanation": "La surcharge permet en C++ de définir plusieurs fonctions portant le même nom, à condition que leurs signatures diffèrent. Le C ne propose pas ce mécanisme.",
-    "tags": ["tp1", "c", "cpp", "fonctions"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "tp1",
+      "c",
+      "cpp",
+      "fonctions"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
-    "id": "liste_tp1_040",
+    "id": "listes_liste_tp1_040",
     "subject": "lifapc",
     "skill": "lifapc.listes",
     "difficulty": 2,
@@ -768,24 +1080,16 @@
       "Il n'existe aucune différence"
     ],
     "explanation": "En C, les fonctions standard ne sont pas placées dans l'espace de noms std. On inclut stdio.h et on utilise printf.",
-    "tags": ["tp1", "c", "cpp", "entrees-sorties"],
-    "formats": ["single_choice", "flashcard"]
-  },
-  {
-    "id": "liste_tp_041",
-    "subject": "lifapc",
-    "skill": "lifapc.listes",
-    "difficulty": 1,
-    "prompt": "Qu'est-ce qu'une liste chaînée ?",
-    "answer": "Une structure composée de cellules reliées entre elles par des pointeurs.",
-    "distractors": [
-      "Un tableau dont la taille est obligatoirement fixe",
-      "Une structure où tous les éléments sont stockés dans une seule variable",
-      "Un tableau trié automatiquement"
+    "tags": [
+      "tp1",
+      "c",
+      "cpp",
+      "entrees-sorties"
     ],
-    "explanation": "Une liste chaînée est constituée de cellules. Chaque cellule contient une information et un pointeur vers la cellule suivante.",
-    "tags": ["tp1", "listes", "cellules", "pointeurs"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_042",
@@ -800,8 +1104,15 @@
       "Une adresse et un tableau"
     ],
     "explanation": "Dans le TP, une cellule contient Elem info et Cellule *psuivant.",
-    "tags": ["tp1", "listes", "cellules"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "cellules"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_043",
@@ -816,8 +1127,16 @@
       "À mémoriser l'adresse de la liste"
     ],
     "explanation": "psuivant est un pointeur qui permet de parcourir la liste de cellule en cellule.",
-    "tags": ["tp1", "listes", "pointeurs"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "tp1",
+      "listes",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp_044",
@@ -832,8 +1151,16 @@
       "La valeur zéro stockée dans info"
     ],
     "explanation": "Dans une liste simplement chaînée classique, NULL indique qu'il n'existe pas de cellule suivante.",
-    "tags": ["tp1", "listes", "null", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "null",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_045",
@@ -848,8 +1175,16 @@
       "L'adresse de la zone mémoire contenant tous les éléments"
     ],
     "explanation": "Le champ ad est un pointeur vers la première cellule. Il permet de commencer le parcours de la liste.",
-    "tags": ["tp1", "listes", "structure", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "structure",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_046",
@@ -864,24 +1199,15 @@
       "À mémoriser la taille mémoire d'une cellule"
     ],
     "explanation": "Le champ taille est un entier qui permet de connaître directement le nombre d'éléments présents dans la liste.",
-    "tags": ["tp1", "listes", "taille"],
-    "formats": ["single_choice", "flashcard"]
-  },
-  {
-    "id": "liste_tp_047",
-    "subject": "lifapc",
-    "skill": "lifapc.listes",
-    "difficulty": 1,
-    "prompt": "Comment représente-t-on une liste simplement chaînée vide dans l'implantation classique du TP ?",
-    "answer": "ad vaut NULL et taille vaut 0.",
-    "distractors": [
-      "ad pointe vers une cellule contenant zéro",
-      "ad vaut NULL et taille vaut 1",
-      "ad pointe vers lui-même et taille vaut 0"
+    "tags": [
+      "tp1",
+      "listes",
+      "taille"
     ],
-    "explanation": "Une liste vide ne possède aucune cellule. Son pointeur de tête vaut NULL et son compteur d'éléments vaut zéro.",
-    "tags": ["tp1", "listes", "liste-vide"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_048",
@@ -896,8 +1222,15 @@
       "La liste contient une copie d'une autre liste"
     ],
     "explanation": "La procédure initialise une nouvelle liste vide. Elle doit notamment mettre ad à NULL et taille à 0.",
-    "tags": ["tp1", "listes", "initialisation"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "initialisation"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_049",
@@ -912,8 +1245,15 @@
       "videListe(Liste l)"
     ],
     "explanation": "testListeVide renvoie 1 si la liste est vide et 0 sinon.",
-    "tags": ["tp1", "listes", "tests"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "tests"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_050",
@@ -928,8 +1268,16 @@
       "Une adresse mémoire aléatoire"
     ],
     "explanation": "La fonction renvoie l'adresse de la première cellule si elle existe, sinon NULL.",
-    "tags": ["tp1", "listes", "cellules", "null"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "cellules",
+      "null"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_051",
@@ -944,8 +1292,16 @@
       "Elle remplace tous les éléments"
     ],
     "explanation": "La procédure crée une nouvelle cellule contenant e, la relie à l'ancienne première cellule puis actualise le pointeur ad.",
-    "tags": ["tp1", "listes", "ajout", "tete"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "ajout",
+      "tete"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_052",
@@ -960,8 +1316,16 @@
       "Son pointeur doit pointer vers la structure Liste"
     ],
     "explanation": "La nouvelle cellule devient la première, mais elle doit conserver le lien vers le reste de la liste.",
-    "tags": ["tp1", "listes", "ajout", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "ajout",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_053",
@@ -976,8 +1340,16 @@
       "La taille précédente reste inchangée"
     ],
     "explanation": "Chaque ajout réussi augmente le nombre d'éléments de la liste d'une unité.",
-    "tags": ["tp1", "listes", "taille", "ajout"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "taille",
+      "ajout"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_054",
@@ -992,8 +1364,16 @@
       "Elle trie les éléments"
     ],
     "explanation": "La procédure déplace le pointeur de tête vers la deuxième cellule, libère l'ancienne première cellule et décrémente taille.",
-    "tags": ["tp1", "listes", "suppression", "tete"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "suppression",
+      "tete"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_055",
@@ -1008,8 +1388,16 @@
       "Pour empêcher l'utilisation de NULL"
     ],
     "explanation": "Une cellule allouée dynamiquement doit être libérée lorsqu'elle n'est plus utilisée. En C, on utilise free.",
-    "tags": ["tp1", "listes", "memoire", "free"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "memoire",
+      "free"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_056",
@@ -1024,8 +1412,16 @@
       "testamentListe ajoute une cellule sentinelle"
     ],
     "explanation": "Une liste vide reste un objet valide et peut être réutilisée. Le testament correspond à la libération des ressources associées à la liste.",
-    "tags": ["tp1", "listes", "destructeur", "memoire"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "destructeur",
+      "memoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_057",
@@ -1040,8 +1436,17 @@
       "Une copie qui partage uniquement le pointeur de tête"
     ],
     "explanation": "Une copie profonde crée de nouvelles cellules contenant les mêmes informations. Les deux listes peuvent ensuite être modifiées ou détruites indépendamment.",
-    "tags": ["tp1", "listes", "copie", "memoire"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "tp1",
+      "listes",
+      "copie",
+      "memoire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "liste_tp_058",
@@ -1056,8 +1461,16 @@
       "Parce que la taille de la liste serait automatiquement multipliée"
     ],
     "explanation": "Copier uniquement l'adresse réalise une copie superficielle. Les deux structures référencent alors la même chaîne de cellules.",
-    "tags": ["tp1", "listes", "copie", "pointeurs"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "copie",
+      "pointeurs"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_059",
@@ -1072,8 +1485,16 @@
       "O(n²)"
     ],
     "explanation": "L'ajout en tête nécessite un nombre constant d'opérations sur les pointeurs, indépendamment du nombre de cellules.",
-    "tags": ["tp1", "listes", "complexite", "ajout"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "complexite",
+      "ajout"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "liste_tp_060",
@@ -1088,7 +1509,15 @@
       "O(n²)"
     ],
     "explanation": "Chaque cellule doit être visitée pour parcourir toute la liste. Le nombre d'opérations est proportionnel à n.",
-    "tags": ["tp1", "listes", "complexite", "parcours"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "tp1",
+      "listes",
+      "complexite",
+      "parcours"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   }
 ]

@@ -1,22 +1,6 @@
 {
   "skills": [
     {
-      "id": "lifapc.memoire",
-      "name": "Gestion de la mémoire",
-      "short": "Mémoire",
-      "prereq": [],
-      "description": "Organisation de la mémoire, pile, tas, durée de vie des variables, trames de pile, allocation et désallocation dynamique avec new, delete, malloc et free."
-    },
-    {
-      "id": "lifapc.pointeurs_references",
-      "name": "Pointeurs et références C++",
-      "short": "Pointeurs",
-      "prereq": [
-        "lifapc.memoire"
-      ],
-      "description": "Adresses mémoire, opérateurs * et &, déréférencement, pointeurs, références, références constantes, passage de paramètres par valeur, adresse et référence."
-    },
-    {
       "id": "lifapc.classes_cpp",
       "name": "Classes et structures C++",
       "short": "Classes C++",
@@ -24,16 +8,6 @@
         "lifapc.pointeurs_references"
       ],
       "description": "Classes, structures, attributs, méthodes, encapsulation, public, private, this, fonctions membres et méthodes statiques."
-    },
-    {
-      "id": "lifapc.copie",
-      "name": "Copie et destruction",
-      "short": "Copie",
-      "prereq": [
-        "lifapc.memoire",
-        "lifapc.pointeurs_references"
-      ],
-      "description": "Constructeurs par défaut et par copie, destructeurs, opérateur d'affectation, copie superficielle et profonde, gestion des ressources et règle des trois."
     },
     {
       "id": "lifapc.types_abstraits",
@@ -54,42 +28,14 @@
       "description": "Analyse du coût en temps et en mémoire, opérations élémentaires, complexité au mieux, au pire et en moyenne, ordres de grandeur O, Omega, Theta et petit o."
     },
     {
-      "id": "lifapc.preuves",
-      "name": "Correction et preuve des algorithmes",
-      "short": "Preuves",
+      "id": "lifapc.copie",
+      "name": "Copie et destruction",
+      "short": "Copie",
       "prereq": [
-        "lifapc.complexite"
+        "lifapc.memoire",
+        "lifapc.pointeurs_references"
       ],
-      "description": "Spécification des problèmes, préconditions, postconditions, correction, terminaison, invariants de boucle et démonstrations mathématiques de justesse."
-    },
-    {
-      "id": "lifapc.recurrences",
-      "name": "Récursivité et récurrences",
-      "short": "Récursivité",
-      "prereq": [
-        "lifapc.complexite"
-      ],
-      "description": "Analyse des fonctions récursives, équations de récurrence et calcul du coût des algorithmes récursifs."
-    },
-    {
-      "id": "lifapc.recherche",
-      "name": "Recherche dichotomique",
-      "short": "Dichotomie",
-      "prereq": [
-        "lifapc.complexite",
-        "lifapc.preuves"
-      ],
-      "description": "Recherche dans un tableau trié, division de l'espace de recherche, invariant de boucle, terminaison et complexité logarithmique."
-    },
-    {
-      "id": "lifapc.tris",
-      "name": "Tris classiques",
-      "short": "Tris",
-      "prereq": [
-        "lifapc.complexite",
-        "lifapc.preuves"
-      ],
-      "description": "Tri par insertion, sélection, bulle et fusion, comparaison des complexités, stabilité, terminaison et preuve de correction."
+      "description": "Constructeurs par défaut et par copie, destructeurs, opérateur d'affectation, copie superficielle et profonde, gestion des ressources et règle des trois."
     },
     {
       "id": "lifapc.listes",
@@ -119,6 +65,60 @@
         "lifapc.classes_cpp"
       ],
       "description": "Programmation générique en C++, paramètres de type, templates de classes et de fonctions, listes génériques."
+    },
+    {
+      "id": "lifapc.tris",
+      "name": "Tris classiques",
+      "short": "Tris",
+      "prereq": [
+        "lifapc.complexite",
+        "lifapc.preuves"
+      ],
+      "description": "Tri par insertion, sélection, bulle et fusion, comparaison des complexités, stabilité, terminaison et preuve de correction."
+    },
+    {
+      "id": "lifapc.recherche",
+      "name": "Recherche dichotomique",
+      "short": "Dichotomie",
+      "prereq": [
+        "lifapc.complexite",
+        "lifapc.preuves"
+      ],
+      "description": "Recherche dans un tableau trié, division de l'espace de recherche, invariant de boucle, terminaison et complexité logarithmique."
+    },
+    {
+      "id": "lifapc.memoire",
+      "name": "Gestion de la mémoire",
+      "short": "Mémoire",
+      "prereq": [],
+      "description": "Organisation de la mémoire, pile, tas, durée de vie des variables, trames de pile, allocation et désallocation dynamique avec new, delete, malloc et free."
+    },
+    {
+      "id": "lifapc.pointeurs_references",
+      "name": "Pointeurs et références C++",
+      "short": "Pointeurs",
+      "prereq": [
+        "lifapc.memoire"
+      ],
+      "description": "Adresses mémoire, opérateurs * et &, déréférencement, pointeurs, références, références constantes, passage de paramètres par valeur, adresse et référence."
+    },
+    {
+      "id": "lifapc.preuves",
+      "name": "Correction et preuve des algorithmes",
+      "short": "Preuves",
+      "prereq": [
+        "lifapc.complexite"
+      ],
+      "description": "Spécification des problèmes, préconditions, postconditions, correction, terminaison, invariants de boucle et démonstrations mathématiques de justesse."
+    },
+    {
+      "id": "lifapc.recurrences",
+      "name": "Récursivité et récurrences",
+      "short": "Récursivité",
+      "prereq": [
+        "lifapc.complexite"
+      ],
+      "description": "Analyse des fonctions récursives, équations de récurrence et calcul du coût des algorithmes récursifs."
     },
     {
       "id": "lifapc.p_np",

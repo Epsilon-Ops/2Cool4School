@@ -13,7 +13,7 @@ permissions:
   id-token: write
 
 concurrency:
-  group: github-pages
+  group: pages
   cancel-in-progress: true
 
 jobs:
@@ -29,31 +29,23 @@ jobs:
         with:
           node-version: 22
           cache: npm
-          cache-dependency-path: package-lock.json
+          cache-dependency-path: frontend/package-lock.json
 
       - name: Install dependencies
+        working-directory: frontend
         run: npm ci
 
-      - name: Build Vite
+      - name: Build 2Cool4School
+        working-directory: frontend
         run: npm run build
 
       - name: Configure GitHub Pages
         uses: actions/configure-pages@v5
 
-      - name: Upload frontend
-        uses: actions/upload-pages-artifact@v4
+      - name: Upload website
+        uses: actions/upload-pages-artifact@v3
         with:
           path: frontend/dist
 
-  deploy:
-    needs: build
-    runs-on: ubuntu-latest
-
-    environment:
-      name: github-pages
-      url: ${{ steps.deployment.outputs.page_url }}
-
-    steps:
-      - name: Deploy to GitHub Pages
-        id: deployment
+      - name: Deploy website
         uses: actions/deploy-pages@v4

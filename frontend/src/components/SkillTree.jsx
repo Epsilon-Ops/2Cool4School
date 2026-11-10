@@ -14,18 +14,44 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
 
   const mastery = (id) => progress.skills[id]?.mastery ?? 0;
   const isAcquired = (id) => mastery(id) >= MASTERED;
-  const unlocked = (s) => (s.prereq ?? []).every((p) => mastery(p) >= UNLOCK);
-  const statusOf = (s) => (!unlocked(s) ? 'locked' : isAcquired(s.id) ? 'acquired' : 'available');
-  const countOf = (id) => bank.filter((q) => q.skill === id).length;
+
+  // Nombre de questions par compétence, calculé une seule fois.
+  const countById = {};
+  for (const q of bank) countById[q.skill] = (countById[q.skill] ?? 0) + 1;
+  const countOf = (id) => countById[id] ?? 0;
+  // Une compétence sans question ne peut pas être travaillée : elle ne bloque jamais la suite.
+  const isPlayable = (id) => countOf(id) > 0;
+
+  const unlocked = (s) => (s.prereq ?? []).every((p) => !isPlayable(p) || mastery(p) >= UNLOCK);
+  const statusOf = (s) => {
+    if (!isPlayable(s.id)) return 'soon';
+    if (!unlocked(s)) return 'locked';
+    return isAcquired(s.id) ? 'acquired' : 'available';
+  };
 
   const flat = subjects.flatMap((sub) =>
     sub.skills.map((s) => ({ ...s, color: sub.color, subjectName: sub.name }))
   );
   const byId = Object.fromEntries(flat.map((s) => [s.id, s]));
-  const acquired = flat.filter((s) => isAcquired(s.id)).length;
-  const nextId = flat.find((s) => statusOf(s) === 'available' && countOf(s.id) > 0)?.id;
+  const playable = flat.filter((s) => isPlayable(s.id));
+  const acquired = playable.filter((s) => isAcquired(s.id)).length;
+  const nextId = flat.find((s) => statusOf(s) === 'available')?.id;
   const dueCount = dueQuestions(bank, progress).length;
   const selected = selectedId ? byId[selectedId] : null;
+
+  // Matières dépliées : par défaut, seulement celle qui contient la prochaine compétence.
+  const [openIds, setOpenIds] = useState(() => {
+    const first = subjects.find((sub) => sub.skills.some((s) => s.id === nextId)) ?? subjects[0];
+    return new Set(first ? [first.id] : []);
+  });
+  const toggleUnit = (id) =>
+    setOpenIds((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  const openUnit = (id) => setOpenIds((prev) => (prev.has(id) ? prev : new Set(prev).add(id)));
 
   return (
     <>
@@ -34,10 +60,10 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
           <span className="eyebrow">Ton parcours</span>
           <h1>
             {acquired}
-            <span> / {flat.length} compétences maîtrisées</span>
+            <span> / {playable.length} compétences maîtrisées</span>
           </h1>
           <div className="hud-bar">
-            <div style={{ width: `${flat.length ? (acquired / flat.length) * 100 : 0}%` }} />
+            <div style={{ width: `${playable.length ? (acquired / playable.length) * 100 : 0}%` }} />
           </div>
         </div>
         <button className="btn btn-review" disabled={bank.length === 0} onClick={onReview}>
@@ -48,34 +74,54 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
 
       <nav className="unit-nav" aria-label="Matières">
         {subjects.map((sub) => (
-          <a key={sub.id} href={`#unit-${sub.id}`} style={{ '--c': sub.color }}>
+          <a key={sub.id} href={`#unit-${sub.id}`} style={{ '--c': sub.color }} onClick={() => openUnit(sub.id)}>
             {sub.emoji} {sub.code}
           </a>
         ))}
       </nav>
 
       {subjects.map((sub) => {
-        const doneCount = sub.skills.filter((s) => isAcquired(s.id)).length;
+        const isOpen = openIds.has(sub.id);
+        const subPlayable = sub.skills.filter((s) => isPlayable(s.id));
+        const doneCount = subPlayable.filter((s) => isAcquired(s.id)).length;
+        const bodyId = `unit-body-${sub.id}`;
         return (
-          <section key={sub.id} id={`unit-${sub.id}`} className="unit" style={{ '--c': sub.color }}>
-            <header className="unit-head">
+          <section
+            key={sub.id}
+            id={`unit-${sub.id}`}
+            className={`unit${isOpen ? '' : ' collapsed'}`}
+            style={{ '--c': sub.color }}
+          >
+            <header className="unit-head" onClick={() => toggleUnit(sub.id)}>
               <div>
                 <span className="unit-code">{sub.code}</span>
-                <h2>{sub.emoji} {sub.name}</h2>
+                <h2>
+                  <button
+                    type="button"
+                    className="unit-toggle"
+                    aria-expanded={isOpen}
+                    aria-controls={bodyId}
+                  >
+                    <span>{sub.emoji} {sub.name}</span>
+                    <span className="chev" aria-hidden="true">▾</span>
+                  </button>
+                </h2>
                 <p>{sub.description}</p>
               </div>
-              <span className="unit-count">{doneCount}/{sub.skills.length}</span>
+              <span className="unit-count">{doneCount}/{subPlayable.length}</span>
             </header>
 
-            <Path
-              sub={sub}
-              mastery={mastery}
-              isAcquired={isAcquired}
-              statusOf={statusOf}
-              nextId={nextId}
-              selectedId={selectedId}
-              onSelect={setSelectedId}
-            />
+            <div id={bodyId} hidden={!isOpen}>
+              <Path
+                sub={sub}
+                mastery={mastery}
+                isAcquired={isAcquired}
+                statusOf={statusOf}
+                nextId={nextId}
+                selectedId={selectedId}
+                onSelect={setSelectedId}
+              />
+            </div>
           </section>
         );
       })}
@@ -91,6 +137,7 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
             id: p,
             name: byId[p]?.name ?? p,
             ok: mastery(p) >= UNLOCK,
+            soon: !isPlayable(p),
           }))}
           config={config}
           setConfig={setConfig}
@@ -127,13 +174,18 @@ function Path({ sub, mastery, isAcquired, statusOf, nextId, selectedId, onSelect
         const m = mastery(s.id);
         const { x, y } = pts[i];
         const isNext = s.id === nextId;
+        const aria =
+          st === 'locked' ? 'verrouillée'
+          : st === 'acquired' ? 'acquise'
+          : st === 'soon' ? 'bientôt disponible'
+          : `${Math.round(m)} %`;
         return (
           <button
             key={s.id}
             className={`node ${st}${isNext ? ' next' : ''}${selectedId === s.id ? ' selected' : ''}`}
             style={{ left: `${x}%`, top: y, '--c': sub.color }}
             onClick={() => onSelect(s.id)}
-            aria-label={`${s.name} (${st === 'locked' ? 'verrouillée' : st === 'acquired' ? 'acquise' : `${Math.round(m)} %`})`}
+            aria-label={`${s.name} (${aria})`}
           >
             {st === 'available' && (
               <svg className="ring" viewBox="0 0 100 100" aria-hidden="true">
@@ -142,7 +194,10 @@ function Path({ sub, mastery, isAcquired, statusOf, nextId, selectedId, onSelect
               </svg>
             )}
             <span className="node-icon">
-              {st === 'locked' ? '🔒' : st === 'acquired' ? '★' : m > 0 ? `${Math.round(m)}%` : '▶'}
+              {st === 'locked' ? '🔒'
+                : st === 'acquired' ? '★'
+                : st === 'soon' ? '…'
+                : m > 0 ? `${Math.round(m)}%` : '▶'}
             </span>
             {isNext && <span className="bubble">{m > 0 ? 'Continuer' : 'Commencer'}</span>}
             <span className="node-label">{s.short ?? s.name}</span>
