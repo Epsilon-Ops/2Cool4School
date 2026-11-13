@@ -4,5 +4,6 @@
   "name": "Algorithmique & C++",
   "emoji": "⚙️",
   "color": "#1cb0f6",
-  "description": "Complexité, tris, recherche, listes chaînées et templates en C++."
+  "description": "Complexité, tris, recherche, listes chaînées et templates en C++.",
+  "category": "scolaire"
 }

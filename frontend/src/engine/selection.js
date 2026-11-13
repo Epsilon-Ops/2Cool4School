@@ -1,16 +1,32 @@
 import { shuffle, weightedSample } from './random.js';
+import { lastWasFailed } from './mastery.js';
 
 /**
- * Stratégies d'ordre des questions :
+ * Stratégies d'ordre :
  * - random       : aléatoire complet
  * - weighted     : les lacunes et les questions dues reviennent davantage
  * - unseen       : d'abord les questions jamais vues
- * - progressive  : tirage aléatoire puis tri par difficulté croissante
+ * - progressive  : tirage pondéré puis tri par difficulté croissante
+ *
+ * Modes de sélection :
+ * - skill        : questions de la compétence (ou de toute la banque si pas de compétence)
+ * - mix          : mélange de tous les chapitres, sans tenir compte de la compétence
+ * - reprise      : questions dont la dernière réponse était fausse
+ * - assimilation : questions des compétences identifiées comme lacunes (gapIds)
  */
-export function pickQuestions(bank, { skill, count = 5, strategy = 'weighted', progress }) {
-  const pool = bank.filter((q) => !skill || q.skill === skill);
+export function pickQuestions(
+  bank,
+  { skill, count = 5, strategy = 'weighted', progress, mode = 'skill', gapIds } = {}
+) {
   const cards = progress?.cards ?? {};
   const now = Date.now();
+
+  const scoped = mode === 'mix' || !skill ? bank : bank.filter((q) => q.skill === skill);
+  const pool =
+    mode === 'assimilation' ? scoped.filter((q) => gapIds?.has(q.skill))
+    : mode === 'reprise' ? scoped.filter((q) => lastWasFailed(progress?.qlog, q.id))
+    : scoped;
+  if (pool.length === 0) return [];
 
   if (strategy === 'random') {
     return shuffle(pool).slice(0, count);

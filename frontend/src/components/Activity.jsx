@@ -36,6 +36,8 @@ export default function Activity({ ex, done, onResult }) {
           onResult={onResult}
         />
       );
+    case 'multi_choice':
+      return <MultiChoice ex={ex} done={done} onResult={onResult} />;
     case 'flashcard':
       return <Flashcard ex={ex} done={done} onResult={onResult} />;
     case 'fill_blank':
@@ -229,6 +231,35 @@ function Matching({ ex, done, onResult }) {
         </div>
       </div>
       <button className="check" disabled={done || !allLinked} onClick={() => onResult(ok, ok ? 4 : 1)}>
+        Vérifier
+      </button>
+    </>
+  );
+}
+
+function MultiChoice({ ex, done, onResult }) {
+  const [sel, setSel] = useState([]);
+  const good = new Set(ex.answers);
+  const ok = sel.length === good.size && sel.every((v) => good.has(v));
+  const toggle = (v) => setSel((s) => (s.includes(v) ? s.filter((x) => x !== v) : [...s, v]));
+  return (
+    <>
+      <h2 className="prompt">{ex.prompt}</h2>
+      <p className="hint">Plusieurs réponses peuvent être correctes.</p>
+      <div className="options">
+        {ex.options.map((o) => {
+          let cls = 'option';
+          if (!done && sel.includes(o)) cls += ' selected';
+          if (done && good.has(o)) cls += ' correct';
+          if (done && sel.includes(o) && !good.has(o)) cls += ' wrong';
+          return (
+            <button key={o} className={cls} disabled={done} aria-pressed={sel.includes(o)} onClick={() => toggle(o)}>
+              {o}
+            </button>
+          );
+        })}
+      </div>
+      <button className="check" disabled={done || sel.length === 0} onClick={() => onResult(ok, ok ? 4 : 1)}>
         Vérifier
       </button>
     </>

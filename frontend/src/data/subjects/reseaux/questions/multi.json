@@ -1,0 +1,100 @@
+[
+  {
+    "id": "reseaux_multi_001",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Quels équipements fonctionnent au niveau 2 (liaison de données) du modèle OSI ?",
+    "answer": "Le commutateur (switch) et le pont (bridge)",
+    "answers": [
+      "Le commutateur (switch)",
+      "Le pont (bridge)"
+    ],
+    "distractors": [
+      "Le routeur",
+      "Le répéteur",
+      "La passerelle applicative"
+    ],
+    "explanation": "Le commutateur et le pont transmettent les trames à partir des adresses MAC, donc au niveau 2. Le répéteur agit au niveau 1 et le routeur au niveau 3.",
+    "tags": [
+      "osi",
+      "couche2"
+    ],
+    "formats": [
+      "multi_choice"
+    ]
+  },
+  {
+    "id": "reseaux_multi_002",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quels protocoles relèvent de la couche transport ?",
+    "answer": "TCP et UDP",
+    "answers": [
+      "TCP",
+      "UDP"
+    ],
+    "distractors": [
+      "IP",
+      "HTTP",
+      "Ethernet"
+    ],
+    "explanation": "TCP et UDP sont les deux protocoles de transport de la suite TCP/IP. IP est au niveau réseau, HTTP au niveau application et Ethernet au niveau liaison.",
+    "tags": [
+      "osi",
+      "transport"
+    ],
+    "formats": [
+      "multi_choice"
+    ]
+  },
+  {
+    "id": "reseaux_multi_003",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quelles affirmations sur le contrôle de redondance cyclique (CRC) sont vraies ?",
+    "answer": "Il détecte toute rafale d'erreurs plus courte que le degré du polynôme ; il ajoute un champ de contrôle à la trame",
+    "answers": [
+      "Il détecte toute rafale d'erreurs plus courte que le degré du polynôme",
+      "Il ajoute un champ de contrôle à la trame"
+    ],
+    "distractors": [
+      "Il corrige automatiquement les erreurs détectées",
+      "Il détecte à coup sûr toutes les erreurs, quel que soit leur nombre"
+    ],
+    "explanation": "Le CRC détecte les erreurs sans les corriger : la trame doit être réémise. Il ne détecte pas tout, par exemple les erreurs qui forment un multiple du polynôme.",
+    "tags": [
+      "crc",
+      "detection"
+    ],
+    "formats": [
+      "multi_choice"
+    ]
+  },
+  {
+    "id": "reseaux_multi_004",
+    "subject": "reseaux",
+    "skill": "reseaux.interconnexion",
+    "difficulty": 2,
+    "prompt": "Quelles affirmations sur la topologie en étoile sont vraies ?",
+    "answer": "Une panne du câble d'un poste n'isole que ce poste ; ajouter un poste ne perturbe pas les autres",
+    "answers": [
+      "Une panne du câble d'un poste n'isole que ce poste",
+      "Ajouter un poste ne perturbe pas les autres"
+    ],
+    "distractors": [
+      "Tous les postes partagent un même câble",
+      "Chaque poste doit être relié à tous les autres"
+    ],
+    "explanation": "Chaque poste possède sa propre liaison avec l'équipement central, donc un câble défectueux ne touche que son poste. C'est la panne du centre qui isole tout le monde.",
+    "tags": [
+      "topologie",
+      "etoile"
+    ],
+    "formats": [
+      "multi_choice"
+    ]
+  }
+]

@@ -1,47 +1,50 @@
-import { useState } from 'react';
+import { Fragment, useState } from 'react';
 import { dueQuestions } from '../engine/selection.js';
+import { UNLOCK } from '../engine/mastery.js';
 import LessonSheet from './LessonSheet.jsx';
 
-export const MASTERED = 80; // seuil « acquise »
-export const UNLOCK = 50;   // seuil de déblocage des compétences suivantes
-
 const GAP = 112;                 // distance verticale entre deux nœuds (px)
-const TOP = 84;                  // marge avant le premier nœud (px), laisse place à la bulle
+const TOP = 84;                  // marge avant le premier nœud (px)
 const ZIGZAG = [50, 24, 50, 76]; // positions horizontales (en %) du chemin
 
-export default function SkillTree({ subjects, bank, progress, config, setConfig, onStart, onReview }) {
-  const [selectedId, setSelectedId] = useState(null);
+const EMPTY = { mastery: 0, qCount: 0, certified: null, gap: false, events: 0 };
 
-  const mastery = (id) => progress.skills[id]?.mastery ?? 0;
-  const isAcquired = (id) => mastery(id) >= MASTERED;
+export default function SkillTree({
+  subjects, bank, stats, progress, config, setConfig, onStart, onReview, onMix,
+  guided, onToggleGuided, focusId, onSkillAction,
+}) {
+  const [selectedId, setSelectedId] = useState(focusId ?? null);
 
-  // Nombre de questions par compétence, calculé une seule fois.
-  const countById = {};
-  for (const q of bank) countById[q.skill] = (countById[q.skill] ?? 0) + 1;
-  const countOf = (id) => countById[id] ?? 0;
+  const st = (id) => stats.byId[id] ?? EMPTY;
   // Une compétence sans question ne peut pas être travaillée : elle ne bloque jamais la suite.
-  const isPlayable = (id) => countOf(id) > 0;
+  const isPlayable = (id) => st(id).qCount > 0;
 
-  const unlocked = (s) => (s.prereq ?? []).every((p) => !isPlayable(p) || mastery(p) >= UNLOCK);
+  const unlocked = (s) =>
+    !guided ||
+    ((s.prereq ?? []).every((p) => !isPlayable(p) || st(p).mastery >= UNLOCK) &&
+      (s.prereqAny ?? []).every((group) => group.some((p) => !isPlayable(p) || st(p).mastery >= UNLOCK)));
+
   const statusOf = (s) => {
     if (!isPlayable(s.id)) return 'soon';
+    if (st(s.id).certified) return 'acquired';
+    if (st(s.id).paused) return 'paused';
     if (!unlocked(s)) return 'locked';
-    return isAcquired(s.id) ? 'acquired' : 'available';
+    return 'available';
   };
 
-  const flat = subjects.flatMap((sub) =>
-    sub.skills.map((s) => ({ ...s, color: sub.color, subjectName: sub.name }))
-  );
-  const byId = Object.fromEntries(flat.map((s) => [s.id, s]));
+  const flat = subjects.flatMap((sub) => sub.skills.map((s) => ({ ...s, color: sub.color, subjectName: sub.name })));
+  const byIdFlat = Object.fromEntries(flat.map((s) => [s.id, s]));
   const playable = flat.filter((s) => isPlayable(s.id));
-  const acquired = playable.filter((s) => isAcquired(s.id)).length;
+  const certifiedCount = playable.filter((s) => st(s.id).certified).length;
   const nextId = flat.find((s) => statusOf(s) === 'available')?.id;
   const dueCount = dueQuestions(bank, progress).length;
-  const selected = selectedId ? byId[selectedId] : null;
+  const selected = selectedId ? byIdFlat[selectedId] : null;
+  const gapCount = stats.gaps.length;
 
-  // Matières dépliées : par défaut, seulement celle qui contient la prochaine compétence.
+  // Matières dépliées : par défaut celle qui contient la compétence ciblée ou la prochaine.
   const [openIds, setOpenIds] = useState(() => {
-    const first = subjects.find((sub) => sub.skills.some((s) => s.id === nextId)) ?? subjects[0];
+    const target = focusId ?? nextId;
+    const first = subjects.find((sub) => sub.skills.some((s) => s.id === target)) ?? subjects[0];
     return new Set(first ? [first.id] : []);
   });
   const toggleUnit = (id) =>
@@ -59,18 +62,33 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
         <div className="hero-main">
           <span className="eyebrow">Ton parcours</span>
           <h1>
-            {acquired}
-            <span> / {playable.length} compétences maîtrisées</span>
+            {certifiedCount}
+            <span> / {playable.length} compétences certifiées</span>
           </h1>
           <div className="hud-bar">
-            <div style={{ width: `${playable.length ? (acquired / playable.length) * 100 : 0}%` }} />
+            <div style={{ width: `${playable.length ? (certifiedCount / playable.length) * 100 : 0}%` }} />
           </div>
         </div>
-        <button className="btn btn-review" disabled={bank.length === 0} onClick={onReview}>
-          Réviser
-          {dueCount > 0 && <span className="count">{dueCount}</span>}
-        </button>
+        <div className="hero-actions">
+          <button className="btn btn-review" disabled={bank.length === 0} onClick={onReview}>
+            Réviser
+            {dueCount > 0 && <span className="count">{dueCount}</span>}
+          </button>
+          <button className="pill toggle" aria-pressed={guided} onClick={onToggleGuided}>
+            {guided ? 'Parcours guidé' : 'Apprentissage libre'}
+          </button>
+        </div>
       </section>
+
+      <div className="mix-row" role="group" aria-label="Exercices mélangés">
+        <span>Mélange</span>
+        <button className="pill" onClick={() => onMix('mix')}>Aléatoire</button>
+        <button className="pill" onClick={() => onMix('reprise')}>Mes erreurs</button>
+        <button className="pill" onClick={() => onMix('spontaneous')}>Spontané</button>
+        <button className="pill" disabled={gapCount === 0} onClick={() => onMix('assimilation')}>
+          Lacunes{gapCount > 0 ? ` (${gapCount})` : ''}
+        </button>
+      </div>
 
       <nav className="unit-nav" aria-label="Matières">
         {subjects.map((sub) => (
@@ -80,12 +98,18 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
         ))}
       </nav>
 
-      {subjects.map((sub) => {
+      {subjects.map((sub, i) => {
         const isOpen = openIds.has(sub.id);
         const subPlayable = sub.skills.filter((s) => isPlayable(s.id));
-        const doneCount = subPlayable.filter((s) => isAcquired(s.id)).length;
+        const doneCount = subPlayable.filter((s) => st(s.id).certified).length;
         const bodyId = `unit-body-${sub.id}`;
+        const catOf = (s) => s.category ?? 'scolaire';
+        const newCat = i === 0 || catOf(sub) !== catOf(subjects[i - 1]);
         return (
+          <Fragment key={sub.id}>
+          {newCat && (
+            <h2 className="cat-title">{catOf(sub) === 'scolaire' ? 'Matières scolaires' : 'Matières optionnelles'}</h2>
+          )}
           <section
             key={sub.id}
             id={`unit-${sub.id}`}
@@ -96,12 +120,7 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
               <div>
                 <span className="unit-code">{sub.code}</span>
                 <h2>
-                  <button
-                    type="button"
-                    className="unit-toggle"
-                    aria-expanded={isOpen}
-                    aria-controls={bodyId}
-                  >
+                  <button type="button" className="unit-toggle" aria-expanded={isOpen} aria-controls={bodyId}>
                     <span>{sub.emoji} {sub.name}</span>
                     <span className="chev" aria-hidden="true">▾</span>
                   </button>
@@ -114,8 +133,7 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
             <div id={bodyId} hidden={!isOpen}>
               <Path
                 sub={sub}
-                mastery={mastery}
-                isAcquired={isAcquired}
+                st={st}
                 statusOf={statusOf}
                 nextId={nextId}
                 selectedId={selectedId}
@@ -123,6 +141,7 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
               />
             </div>
           </section>
+          </Fragment>
         );
       })}
 
@@ -131,16 +150,17 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
           skill={selected}
           subjectName={selected.subjectName}
           status={statusOf(selected)}
-          mastery={mastery(selected.id)}
-          count={countOf(selected.id)}
+          stats={st(selected.id)}
+          guided={guided}
           prereqs={(selected.prereq ?? []).map((p) => ({
             id: p,
-            name: byId[p]?.name ?? p,
-            ok: mastery(p) >= UNLOCK,
+            name: byIdFlat[p]?.name ?? p,
+            ok: st(p).mastery >= UNLOCK,
             soon: !isPlayable(p),
           }))}
           config={config}
           setConfig={setConfig}
+          onAction={(kind) => onSkillAction(kind, selected.id)}
           onClose={() => setSelectedId(null)}
           onStart={(s, cfg) => {
             setSelectedId(null);
@@ -153,7 +173,7 @@ export default function SkillTree({ subjects, bank, progress, config, setConfig,
 }
 
 /** Chemin en zigzag : les nœuds sont reliés dans l'ordre de la matière. */
-function Path({ sub, mastery, isAcquired, statusOf, nextId, selectedId, onSelect }) {
+function Path({ sub, st, statusOf, nextId, selectedId, onSelect }) {
   const n = sub.skills.length;
   const height = TOP * 2 + Math.max(0, n - 1) * GAP;
   const pts = sub.skills.map((_, i) => ({ x: ZIGZAG[i % ZIGZAG.length], y: TOP + i * GAP }));
@@ -164,40 +184,42 @@ function Path({ sub, mastery, isAcquired, statusOf, nextId, selectedId, onSelect
         {pts.slice(1).map((p, i) => {
           const a = pts[i];
           const d = `M ${a.x} ${a.y} C ${a.x} ${a.y + GAP / 2}, ${p.x} ${p.y - GAP / 2}, ${p.x} ${p.y}`;
-          const done = isAcquired(sub.skills[i].id);
+          const done = Boolean(st(sub.skills[i].id).certified);
           return <path key={i} d={d} className={done ? 'seg done' : 'seg todo'} />;
         })}
       </svg>
 
       {sub.skills.map((s, i) => {
-        const st = statusOf(s);
-        const m = mastery(s.id);
+        const status = statusOf(s);
+        const info = st(s.id);
+        const m = info.mastery;
         const { x, y } = pts[i];
         const isNext = s.id === nextId;
+        const gap = info.gap;
         const aria =
-          st === 'locked' ? 'verrouillée'
-          : st === 'acquired' ? 'acquise'
-          : st === 'soon' ? 'bientôt disponible'
-          : `${Math.round(m)} %`;
+          status === 'locked' ? 'verrouillée'
+          : status === 'acquired' ? 'certifiée'
+          : status === 'soon' ? 'bientôt disponible'
+          : `${m} %${gap ? ', lacune' : ''}`;
         return (
           <button
             key={s.id}
-            className={`node ${st}${isNext ? ' next' : ''}${selectedId === s.id ? ' selected' : ''}`}
+            className={`node ${status}${isNext ? ' next' : ''}${selectedId === s.id ? ' selected' : ''}${gap ? ' gap' : ''}`}
             style={{ left: `${x}%`, top: y, '--c': sub.color }}
             onClick={() => onSelect(s.id)}
             aria-label={`${s.name} (${aria})`}
           >
-            {st === 'available' && (
+            {status === 'available' && (
               <svg className="ring" viewBox="0 0 100 100" aria-hidden="true">
                 <circle cx="50" cy="50" r="46" pathLength="100" className="ring-bg" />
                 <circle cx="50" cy="50" r="46" pathLength="100" className="ring-fg" strokeDasharray={`${m} 100`} />
               </svg>
             )}
             <span className="node-icon">
-              {st === 'locked' ? '🔒'
-                : st === 'acquired' ? '★'
-                : st === 'soon' ? '…'
-                : m > 0 ? `${Math.round(m)}%` : '▶'}
+              {status === 'paused' ? '⏸' : status === 'locked' ? '🔒'
+                : status === 'acquired' ? '★'
+                : status === 'soon' ? '…'
+                : m > 0 ? `${m}%` : '▶'}
             </span>
             {isNext && <span className="bubble">{m > 0 ? 'Continuer' : 'Commencer'}</span>}
             <span className="node-label">{s.short ?? s.name}</span>

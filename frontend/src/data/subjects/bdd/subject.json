@@ -4,5 +4,6 @@
   "name": "Bases de données & SQL",
   "emoji": "🗄️",
   "color": "#ff9600",
-  "description": "Modèle relationnel, clés, normalisation, SQL et jointures."
+  "description": "Modèle relationnel, clés, normalisation, SQL et jointures.",
+  "category": "scolaire"
 }

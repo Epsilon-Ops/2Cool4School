@@ -1,0 +1,208 @@
+{
+  "id": "reseaux-osi",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Le modèle OSI",
+  "intro": "Un réseau est trop complexe pour être écrit d'un seul bloc. Le modèle OSI le découpe en sept couches : chacune rend un service à la couche au-dessus et s'appuie sur celle du dessous. Ouvre une section pour l'explorer, puis entraîne-toi dessus.",
+  "sections": [
+    {
+      "id": "pourquoi",
+      "title": "Pourquoi découper en couches ?",
+      "body": [
+        "Un réseau doit faire voyager des messages entre des machines très différentes. Plutôt qu'un programme géant, on le découpe en [[couche]]s indépendantes. Chaque couche ne fait qu'une chose et ne parle qu'à sa jumelle, la couche de même niveau sur l'autre machine, grâce à un [[protocole]].",
+        "L'intérêt est concret : on peut changer le câble sans réécrire le navigateur, ou passer du Wi-Fi à la fibre sans toucher aux applications."
+      ],
+      "terms": [
+        {
+          "term": "couche",
+          "def": "Niveau de service indépendant. Une couche rend un service à celle du dessus en utilisant celui de la couche du dessous."
+        },
+        {
+          "term": "protocole",
+          "def": "Ensemble de règles normalisées qui décrivent les messages échangés et les algorithmes à exécuter. Il est écrit dans un document de norme."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Dans une entreprise, le service qui rédige une lettre ne se soucie pas du camion qui la transporte. On peut changer de transporteur sans réécrire la lettre."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Tu envoies un message à un ami : tu tapes le texte, tu choisis la langue, le téléphone s'occupe du trajet et les ondes portent le signal. Tu ne penses pas aux ondes en écrivant."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_025",
+        "reseaux_architecture_001",
+        "reseaux_architecture_002"
+      ]
+    },
+    {
+      "id": "sept-couches",
+      "title": "Les sept couches",
+      "body": [
+        "De bas en haut, les sept couches sont : [[physique]] (1), [[liaison]] (2), [[réseau]] (3), [[transport]] (4), session (5), présentation (6) et application (7).",
+        "Les couches 1 à 3 gèrent le transfert entre équipements voisins, y compris les intermédiaires comme les commutateurs et les routeurs. Les couches 4 à 7 concernent surtout les machines terminales, qui exécutent les applications.",
+        "Pour retenir l'ordre de haut en bas : « Aux Pommes Sont Toujours Rouges, Les Pépins » (Application, Présentation, Session, Transport, Réseau, Liaison, Physique)."
+      ],
+      "terms": [
+        {
+          "term": "physique",
+          "def": "Transforme la séquence binaire en signal électrique, optique ou radio, et le transmet sur le support (cuivre, fibre, ondes)."
+        },
+        {
+          "term": "liaison",
+          "def": "Transfert entre deux équipements voisins : délimite les trames et détecte les erreurs."
+        },
+        {
+          "term": "réseau",
+          "def": "Choisit le chemin des paquets à travers les équipements intermédiaires. C'est le routage."
+        },
+        {
+          "term": "transport",
+          "def": "Transfert de bout en bout : ordre, fiabilité et contrôle de flux selon le protocole. TCP assure tout cela, UDP n'assure aucune fiabilité."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Eggman (Sonic)",
+          "text": "Eggman fait passer ses robots de base en base : chaque robot ne connaît que la base voisine et transmet le message au suivant. Il ne sait pas où est le destinataire final, mais il sait où envoyer. C'est le principe des couches 1 à 3."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "Les tuyaux relient des zones voisines, et les mondes s'enchaînent par les niveaux. Le joueur n'a pas besoin de connaître chaque tuyau pour finir le jeu : il utilise les services, comme une application utilise le réseau."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_008",
+        "reseaux_architecture_009",
+        "reseaux_architecture_010",
+        "reseaux_architecture_019"
+      ]
+    },
+    {
+      "id": "encapsulation",
+      "title": "Encapsulation : l'emballage des données",
+      "body": [
+        "Côté émetteur, une donnée descend les couches : chaque couche ajoute son [[en-tête]] devant ce qu'elle reçoit. Côté récepteur, chaque couche lit son en-tête, le retire et remonte le reste. C'est l'[[encapsulation]].",
+        "Formule à retenir : D(n-1) = H(n) + D(n). Les données de la couche n deviennent les données de la couche inférieure, précédées de son en-tête."
+      ],
+      "terms": [
+        {
+          "term": "en-tête",
+          "def": "Informations de contrôle ajoutées par une couche (adresses, numéros, somme de contrôle) pour qu'elle fasse son travail.",
+          "formula": "H(n)"
+        },
+        {
+          "term": "encapsulation",
+          "def": "Ajout successif des en-têtes en descendant les couches à l'émission. Le retrait à la réception s'appelle la désencapsulation.",
+          "formula": "D(n-1) = H(n) + D(n)"
+        },
+        {
+          "term": "PDU",
+          "def": "Nom générique de l'unité de données d'une couche : trame (couche 2), paquet (couche 3), segment (couche 4)."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Une lettre est glissée dans une enveloppe, l'enveloppe dans un colis, le colis dans un camion. Chaque emballage porte une étiquette utile à l'étape suivante."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Tu emballes un cadeau : papier, boîte, carton d'expédition. À la réception, chacun enlève son emballage. Personne n'ouvre le cadeau avant la fin."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_012",
+        "reseaux_architecture_013",
+        "reseaux_architecture_014",
+        "reseaux_architecture_024"
+      ]
+    },
+    {
+      "id": "communication",
+      "title": "Communication logique et types de protocoles",
+      "body": [
+        "La couche transport de A discute avec la couche transport de B. Ce dialogue est une [[communication logique]] : il passe en réalité par toutes les couches inférieures.",
+        "Un protocole peut être de [[bout en bout]] (il relie les deux machines, comme TCP) ou [[point à point]] (il ne relie que deux équipements voisins). Une communication peut aussi être [[connectée]] (une relation est établie d'abord) ou [[non connectée]] (chaque message part seul)."
+      ],
+      "terms": [
+        {
+          "term": "communication logique",
+          "def": "Dialogue entre deux couches de même niveau sur deux machines. Il n'existe qu'à travers les couches inférieures."
+        },
+        {
+          "term": "bout en bout",
+          "def": "Protocole qui relie les deux extrémités, sans tenir compte des équipements intermédiaires."
+        },
+        {
+          "term": "point à point",
+          "def": "Protocole qui ne relie que deux équipements voisins sur une même liaison."
+        },
+        {
+          "term": "connectée",
+          "def": "Une relation est établie avant l'échange puis fermée, comme un appel téléphonique."
+        },
+        {
+          "term": "non connectée",
+          "def": "Chaque message est envoyé sans relation préalable, comme une lettre glissée dans une boîte aux lettres."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Deux services RH de deux entreprises échangent par courrier. Ils suivent la même procédure, même si la lettre passe par plusieurs bureaux de tri."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Un appel téléphonique, c'est connecté : tu décroches d'abord. Une lettre dans la boîte aux lettres, c'est non connecté : tu n'as pas besoin de prévenir le destinataire."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_015",
+        "reseaux_architecture_016",
+        "reseaux_architecture_017",
+        "reseaux_architecture_018"
+      ]
+    },
+    {
+      "id": "osi-tcpip",
+      "title": "Du modèle OSI à la pile TCP/IP",
+      "body": [
+        "Le modèle OSI est une [[référence]] théorique en sept couches. Sur Internet, on utilise la [[pile TCP/IP]], qui regroupe les fonctions en quatre niveaux : accès réseau (couches 1 et 2), internet (couche 3), transport (couche 4) et application (couches 5 à 7).",
+        "Exemples : IP est de niveau internet, TCP de niveau transport, et DNS de niveau application."
+      ],
+      "terms": [
+        {
+          "term": "référence",
+          "def": "Le modèle OSI sert de grille commune pour comparer les architectures, même si les réseaux réels utilisent souvent une autre pile."
+        },
+        {
+          "term": "pile TCP/IP",
+          "def": "Architecture réellement utilisée sur Internet, à quatre niveaux : accès réseau, internet, transport et application."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Le modèle OSI est l'organigramme détaillé d'une entreprise. La pile TCP/IP est l'organigramme simplifié qu'on utilise au quotidien."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "Le manuel complet décrit toutes les mécaniques du jeu, mais en pratique le joueur n'utilise que quatre commandes. TCP/IP, c'est le jeu tel qu'on le joue."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_011",
+        "reseaux_architecture_022",
+        "reseaux_architecture_023"
+      ]
+    }
+  ],
+  "chapter": "Architecture en couches",
+  "chapterOrder": 1,
+  "order": 1
+}

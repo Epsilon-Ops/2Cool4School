@@ -2,6 +2,7 @@ import { shuffle } from './random.js';
 
 export const FORMAT_LABELS = {
   single_choice: 'QCM',
+  multi_choice: 'QCM à réponses multiples',
   true_false: 'Vrai / faux',
   flashcard: 'Flashcard',
   fill_blank: 'Texte à trous',
@@ -15,6 +16,7 @@ export function availableFormats(q) {
     if (f === 'fill_blank') return Boolean(q.cloze);
     if (f === 'ordering') return Array.isArray(q.steps) && q.steps.length > 1;
     if (f === 'matching') return Array.isArray(q.pairs) && q.pairs.length > 1;
+    if (f === 'multi_choice') return Array.isArray(q.answers) && q.answers.length >= 2;
     if (f === 'single_choice' || f === 'true_false') {
       return Array.isArray(q.distractors) && q.distractors.length >= 1;
     }
@@ -31,6 +33,10 @@ export function buildExercise(q, format) {
       const wrong = shuffle(q.distractors).slice(0, 3);
       return { ...base, options: shuffle([q.answer, ...wrong]) };
     }
+    case 'multi_choice': {
+      const wrong = shuffle(q.distractors ?? []).slice(0, 3);
+      return { ...base, answers: q.answers, options: shuffle([...q.answers, ...wrong]) };
+    }
     case 'true_false': {
       const isTrue = Math.random() < 0.5;
       const statement = isTrue ? q.answer : shuffle(q.distractors)[0];
@@ -46,4 +52,19 @@ export function buildExercise(q, format) {
     default:
       return base;
   }
+}
+
+export const EXPLAIN_LEVELS = [
+  ['simple', 'Simple'],
+  ['normal', 'Normale'],
+  ['deep', 'Approfondie'],
+];
+
+/**
+ * Explication selon le niveau demandé. Une question peut fournir
+ * `explanations: { simple, deep }` ; sinon on retombe sur `explanation`.
+ */
+export function explanationFor(q, level = 'normal') {
+  if (level === 'normal') return q.explanation;
+  return q.explanations?.[level] ?? q.explanation;
 }

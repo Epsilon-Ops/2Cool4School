@@ -1,0 +1,318 @@
+### 2Cool4School
+✓ ✕
+
+J'ai une appli qui s'appelle 2Cool4School qui va me servir à apprendre à la fois des matières scolaires ainsi que des notions que je souhaite apprendre hors classe, comme un Duolingo pour apprendre des choses de cours au lieu de langues, et designées vraiment pour apprendre au lieu de retenir l'utilisateur sur l'appli.
+
+- [✕] Classement de notes scolaires
+- [✕] Classement de notes personnelles
+- [✕] Notes rangées sous plusieurs formats (sur 5, sur 10, sur 20, sur 50, sur 100, en notation américaine [A+, S++, B-, F, D+...])
+- [✕] Arbre de compétences
+- [✓] Flashcards
+- [✕] Explications détaillées (ex : équations en détail...)
+- [✕] Cours avec éléments importants et analogies diverses (enfant de 15 ans, Eggman, Super Mario Bros, monde du travail etc...)
+- [✕] Exercices pratiques (juste après certains éléments de cours direct pour savoir si compris)
+- [✕] Exercices techniques (exercices qui combinent plusieurs notions d'un cours pour savoir comment les appliquer en temps réel)
+- [✕] Simulation de situation réelle
+- [✕] Laboratoire
+- [✕] Jeux intéractifs
+- [✓] Rangement par matières scolaires (comme Réseaux ou Complexité)
+- [✕] Rangement par matières additionnelles (comme Allemand ou Cybersécurité)
+- [✕] Evaluations randomisées
+- [✕] Reutilisation d'exercices de cours
+- [✕] Matières rangées et affichées selon un ordre précis (par exemple Réseaux et Complexité vont dans L3 Info Semestre 1 ; Allemand et Japonais vont dans Langues etc...) avec deux rubriques majeures (Matières scolaires / Matières optionelles)
+
+Système de progression avec arbre :
+- [✓] Arbre de compétences dynamique : visualisation de notions à apprendre avec prérequis et dépendances
+- [✓] Progression individuelle pour chaque compétence
+- [✓] Niveaux de maitrise : (Débutant, Novice, Intermédiaire, Avancé, Expert, Maitre)
+- [✓] Pourcentage de maitrise réel, calculé à partir de résultats sur chaque question
+- [✓] Déblocage de compétences après validation de prérequis
+- [✕] Plusieurs chemins d'apprentissage pour atteindre le même objectif
+- [✓] Détection de lacunes
+- [✓] Identification des notions qui bloquent la progression
+- [✓] Identificateur de confiance dans les connaissances
+- [✓] Historique de progression par compétence
+- [✓] Comparaison entre maitrise théorique et maitrise pratique
+- [✕] Plusieurs chemins d'apprentissage pour atteindre le même objectif
+- [✕] Objectif personnalisé par matière
+- [✕] Objectif globaux
+- [✓] Mode apprentissage libre, sans parcours imposé
+- [✓] Mode parcours guidé avec progression structurée
+- [✕] Système de certifications internes
+- [✕] Validation définitive d'une compétence après plusieurs évaluations espacées
+
+Système de cours intelligent :
+- [✕] Adaptation du niveau de difficulté
+- [✕] Plusieurs niveaux d'explication pour une même notion
+- [✕] Explication simple, normale ou approfondie
+- [✕] Explication avec analogies personnalisables
+- [✕] Explication avec exemples concrets
+- [✕] Explication avec contre-exemples
+- [✕] Explication avec représentations visuelles
+- [✕] Explication étape par étape
+- [✕] Explication des erreurs fréquentes
+- [✕] Explication de l'utilité réelle d'une notion
+- [✕] Mise en évidence des connaissances prérequises
+- [✕] Résumé à la fin de chaque chapitre
+- [✕] Résumé ultra-court pour révision rapide
+- [✕] Glossaire automatique des termes importants
+- [✕] Identification des notions essentielles et secondaires
+- [✕] Questions à se poser en début et fin de chapitre
+- [✕] Bouton pour demander une autre explication sur une notion précise, sans tout recommencer
+- [✕] Comparaison de notions entre elles (surtout lorsqu'elles se rapprochent)
+- [✕] Possibilité de masquer progressivement les explications pour tester sa compréhension
+- [✕] Cours découpés en petites unités indépendantes
+- [✕] Mode cours approfondi
+- [✕] Mode cours express
+
+Système d'exercices intelligent :
+- [✕] Exercices à réponse unique
+- [✓] Questions à choix multiples
+- [✓] Questions à réponses multiples
+- [✕] Questions ouvertes
+- [✕] Exercices de rédaction
+- [✕] Exercices de calcul
+- [✕] Exercices de traduction
+- [✕] Exercices de programmation
+- [✕] Exercices de classement chronologique
+- [✓] Exercices d'association de concepts
+- [✕] Exercices de classement par catégories
+- [✓] Exercices de remise en ordre d'étapes
+- [✕] Exercices avec schémas à compléter
+- [✕] Exercices avec cartes géographiques
+- [✕] Exercices avec tableaux à remplir
+- [✕] Exercices de detection d'erreurs
+- [✕] Exercices ou il faut expliquer pourquoi une réponse est fausse
+- [✕] Exercices de correction de raisonement
+- [✕] Exercices ou il faut trouver plusieurs solutions
+- [✕] Exercices avec difficulté progressive
+- [✕] Exercices chronométrés facultatifs
+- [✕] Mode spontané - Exercices sans indication de la matière concernée
+- [✕] Mode aléatoire - Exercices mélangeant plusieurs chapitres
+- [✕] Mode reprise - Exercices à partir d'erreurs précédentes
+- [✕] Mode assimilation - Exercices à partir de lacunes identifiées
+- [✕] Mode libre - Choisir un exercice précis à apprendre parmi une banque dans une matière précise
+- [✕] Exercices de transfert (appliquer une notion dans un contexte inédit)
+- [✕] Exercices inversés (à partir d'une solution, on demande la question initiale + méthode utilisée + étapes manquantes + erreur volontairement introduite)
+- [✕] Facteur aléatoire sur questions (chiffres / données aléatoires dans énoncés plutot que les mêmes pour éviter la mémorisation de réponse + réponse adaptée)
+
+Système de progression et maitrise :
+- [✕] Score de maitrise par chapitre
+- [✕] Score de maitrise par sous-chapitre
+- [✕] Score de maitrise par type d'exercice
+- [✕] Score de maitrise par compétence transversale
+- [✕] Score de mémorisation
+- [✕] Score de compréhension
+- [✕] Score d'application
+- [✕] Score de raisonement
+- [✕] Score d'autonomie
+- [✕] Score de transfert vers des situations inédites
+- [✕] Indicateur de stabilité des connaissances
+- [✕] Indicateur de fraicheur des connaissances
+- [✕] Indicateur de risque d'oubli
+- [✕] Indicateur de confiance dans les résultats
+- [✕] Historique des compétences acquises puis oubliées
+- [✕] Visualisation des progrès sur plusieurs semaines ou mois
+- [✕] Détection des compétences stagnantes
+- [✕] Détection des compétences rapidement acquises
+- [✕] Prévision du temps nécessaire pour atteindre un objectif
+- [✕] Estimation du temps réellement passé à apprendre
+- [✕] Estimation du temps restant avec une maitrise satisfaisante
+- [✕] Possibilité de reinitialiser une compétence
+- [✕] Possibilité de mettre une compétence en pause
+- [✕] Possibilité de marquer une compétence comme acquise
+- [✕] Possibilité de valider une compétence avec un examen final
+- [✕] Réévaluation périodique des compétences précedemment acquises
+- [✕] Système de maitrise indépendante de la vitesse de progression
+
+Passport de conaissance (exemple) : ✓
+
+Compétence                              |   Maitrise
+________________________________________|___________
+Equations du premier degré              |       96 %
+Fonctions affines                       |       83 %
+Fractions                               |       72 %
+Dérivées                                |       15 %
+Logique booléenne                       |       91 %
+
+Système de mémorisation intelligente :
+- [✕] Répétition espacée
+- [✕] Calendrier de révision intelligent
+- [✕] Révision basée sur le risque d'oubli
+- [✕] Révision basée sur la difficulté personnelle
+- [✕] Révision des notions oubliées
+- [✕] Révision des erreurs récurrentes
+- [✓] Flashcards simples
+- [✕] Flashcards depuis cours
+- [✓] Flashcards depuis erreurs
+- [✕] Flashcards avec icones
+- [✕] Flashcards avec formules mathématiques
+- [✕] Flashcards avec code
+- [✕] Flashcards avec audio
+- [✕] Flashcards avec images / schémas
+- [✕] Flashcards à trou
+- [✕] Flashcards inversées
+- [✕] Flashcards avec plusieurs niveaux de réponse
+- [✓] Révision mélangée entre plusieurs matières
+- [✕] Révision ciblée sur un examen
+- [✕] Révision express avant un cours
+- [✓] Révision sans limite de temps
+
+Laboratoires :
+- [✕] Laboratoire de physique
+- [✕] Laboratoire de chimie
+- [✕] Laboratoire de mathématiques
+- [✕] Laboratoire de biologie
+- [✕] Laboratoire de programmation
+- [✕] Laboratoire de réseaux
+- [✕] Laboratoire de cybersecurité
+- [✕] Laboratoire d'électronique
+- [✕] Laboratoire d'économie
+- [✕] Laboratoire de logique
+- [✕] Laboratoire de statistiques
+- [✕] Laboratoire de mécanique
+- [✕] Laboratoire libre (objectifs mais aucune procédure)
+- [✕] Laboratoire sandbox
+
+Exemples d'activités de laboratoires :
+- Construire un circuit électrique virtuel.
+- Manipuler des molécules en 3D.
+- Modifier les paramètres d'une fonction mathématique.
+- Observer les conséquences d'une modification dans un réseau.
+- Construire un programme et observer son exécution.
+- Modifier des paramètres physiques et observer leurs conséquences.
+- Manipuler des variables dans une expérience statistique.
+- Tester des hypothèses et comparer les résultats.
+
+Système de simulation de situation réelles :
+- [-] Gestion d'une entreprise virtuelle
+- [-] Gestion d'un budget
+- [-] Construction d'un réseau informatique
+- [-] Gestion d'un serveur
+- [-] Conception d'un système électronique
+- [-] Organisation d'une experience scientifique
+- [-] Création d'un programme informatique
+- [-] Résolution d'un problème d'ingénierie
+- [-] Gestion d'une chaine logistique
+- [-] Analyse d'un incident informatique
+- [-] Simulation d'une négociation commerciale
+- [-] Simulation d'une enqûete historique
+- [-] Simulation de gestion d'une ville
+- [-] Simulation d'un écosystème
+- [-] Simulation d'un sysètme économique
+- [-] Simulation d'une situation professionelle
+- [-] Missions à goals multiples
+
+Systèmes d'évaluation :
+- [✕] Examens blancs
+- [✕] Examens personnalisés
+- [✕] Examens à partir d'un programme scolaire
+- [✕] Examens avec connaissances non-acquises
+- [✕] Examens cumulatifs
+- [✕] Examens par matière
+- [✕] Examens interdisciplinaires
+- [✕] Examens pratiques
+- [✕] Examens théoriques
+- [✕] Examens oraux
+- [✕] Examens avec justification obligatoire
+- [✕] Examens avec difficulté adaptative
+- [✕] Examens avec questions inédites
+- [✕] Examens avec cours interdit
+- [✕] Examens avec temps facultatif
+- [✕] Correction détaillée
+- [✕] Comparaison entre tentatives
+- [✕] Analyse d'erreurs par catégorie
+- [✕] Identification des lacunes
+- [✕] Plan de remédiation
+- [✕] Examens en conditions réelles (durée définie, nombre de questions défini, barème personnalisé, aucune aide pendant l'épreuve, correction à la fin, rapport de performance détaillé)
+
+Système d'apprentissage actif :
+- [-] Module explication : << Explique moi cette notion >>
+- [-] Module enseignement : << Enseigne moi ce que tu viens d'apprendre >>
+- [-] Module professeur : << Explique cette notion à un enfant de 10 ans >>
+- [-] Module débat : << Défends ta réponse façe à mon raisonement >>
+- [-] Module démonstration : << Démontre que tu sais d'ou viens ce que tu sais >>
+- [-] Module raisonement : << Verbalise les étapes de ta progression >>
+- [-] Module résolution libre
+- [-] Module création d'exemples
+- [-] Module création de contre-exemples
+- [-] Module analogie : << Invente une comparaison pour expliquer ce concept >>
+- [-] Module synthèse : << Résume ce chapitre >>
+- [-] Module connexion : << Lie ces notions entre elles >>
+- [-] Module prédiction : << Prédit le résultat d'une experience avant de la lancer >>
+
+Modes :
+- [-] Mode focus
+- [-] Mode express
+- [-] Mode speedrun
+- [-] Mode libre
+- [-] Mode spontané 
+- [-] Mode assimilation
+- [-] Mode reprise
+- [-] Mode normal
+- [-] Mode difficile
+- [-] Mode examen
+
+Organisation de connaissances :
+- [-] Organisation par matière
+- [-] Organisation par domaine
+- [-] Organisation par sous-domaine
+- [-] Organisation par chapitre
+- [-] Organisation par compétence
+- [-] Organisation par difficulté
+- [-] Organisation par niveau scolaire
+- [-] Organisation par utilité professionelle
+- [-] Organisation par ordre chronologique
+- [-] Organisation par dépendances
+- [-] Recherche globale dans toutes les connaissances
+- [-] Recherche par formule
+- [-] Recherche par définition
+- [-] Recherche par mot clé
+- [-] Tags personnalisables
+- [-] Dossiers personnalisables (couleur, icones, titres)
+- [-] Collections de cours
+- [-] Favoris
+- [-] Historique des cours consultés
+- [-] Historique des exercices
+- [-] Notes personnelles attachées à une compétence
+- [-] Possibilité de créer ses propres cours
+- [-] Possibilité de fusionner plusieurs cours
+- [-] Possibilité de créer des parcours personnalisés
+- [-] Graphe de conaissances
+- [-] Detecteur de fausse maitrise
+
+Motivation et gamification :
+- [-] XP attribué selon la maitrise par exercice
+- [-] Niveaux globaux de connaissances
+- [-] Titres associés aux compétences
+- [-] Badges de réussite
+- [-] Badges de persévérance
+- [-] Badges de polyvalence
+- [-] Badges de maitrise approfondie
+- [-] Succès liés à des compétences précises
+- [-] Succès liés aux projets réalisés
+- [-] Collections de certifications
+- [-] Historique des accomplissements
+- [-] Personnalisation visuelle du profil
+- [-] Défis personnels
+- [-] Objectifs hebdomadaires facultatifs
+- [-] Progression visuelle
+- [-] Déblocage de nouveaux domaines
+- [-] Récompenses pour la régularité, sans pénaliser les pauses
+
+Outils complémentaires
+- [-] Calculatrice scientifique intégrée
+- [-] Calculatrice graphique
+- [-] Editeur de formules mathématiques
+- [-] Editeur de code
+- [-] Terminal virtuel
+- [-] Visualiseur de structures de données
+- [-] Editeur de diagrammes
+- [-] Editeur de circuits
+- [-] Tableau blanc interactif
+- [-] Bloc-notes
+- [-] Gestionnaire de formules
+- [-] Traducteur contextuel
+- [-] Chronologie interactive
+- [-] Carte géographique interactive
+- [-] Tableau periodique interactif
