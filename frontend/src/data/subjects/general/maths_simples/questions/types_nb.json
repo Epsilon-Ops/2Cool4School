@@ -1,0 +1,265 @@
+[
+  {
+    "id": "maths_types_nb_001",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 1,
+    "prompt": "Quel ensemble de nombres est noté par le symbolemathbb{N} ?",
+    "answer": "L'ensemble des entiers naturels (0, 1, 2, 3, ...)",
+    "distractors": [
+      "L'ensemble des entiers relatifs (positifs et négatifs)",
+      "L'ensemble des nombres rationnels",
+      "L'ensemble des nombres réels"
+    ],
+    "explanation": "Le symbole \\mathbb{N} désigne l'ensemble des entiers naturels, qui commence à zéro et contient tous les entiers positifs.",
+    "tags": [
+      "nombres_naturels",
+      "ensembles",
+      "definition"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_002",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 1,
+    "prompt": "Quel est l'opposé de l'entier relatif -7 ?",
+    "answer": "7",
+    "distractors": [
+      "-1/7",
+      "0",
+      "-7"
+    ],
+    "explanation": "L'opposé d'un nombre $a$ est $-a$ tel que leur somme soit égale à zéro. L'opposé de $-7$ est donc $7$.",
+    "tags": [
+      "entiers_relatifs",
+      "oppose"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_003",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 1,
+    "prompt": "Complétez la phrase.",
+    "answer": "Z",
+    "distractors": [],
+    "explanation": "L'ensemble des entiers relatifs, qui regroupe les entiers naturels et leurs opposés négatifs, est noté par le symbole \\mathbb{Z}.",
+    "tags": [
+      "entiers_relatifs",
+      "notation"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "L'ensemble des entiers relatifs est noté {{blank}}."
+  },
+  {
+    "id": "maths_types_nb_004",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un nombre rationnel ?",
+    "answer": "Un nombre qui peut s'écrire sous forme de fraction a/b, où a est un entier relatif et b un entier non nul",
+    "distractors": [
+      "Un nombre dont le développement décimal est infini et non périodique",
+      "Un nombre strictement positif sans partie décimale",
+      "Un nombre dont la partie réelle est nulle"
+    ],
+    "explanation": "Les nombres rationnels (notés \\mathbb{Q}) correspondent aux quotients de deux entiers relatifs.",
+    "tags": [
+      "nombres_rationnels",
+      "fractions"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_005",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : tout nombre entier relatif est également un nombre rationnel.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Tout entier $a$ peut s'écrire sous forme de fraction $a/1$. Par conséquent, l'ensemble des entiers relatifs $\\mathbb{Z}$ est inclus dans l'ensemble des rationnels $\\mathbb{Q}$.",
+    "tags": [
+      "nombres_rationnels",
+      "inclusions"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_006",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 2,
+    "prompt": "Quelle est la nature du développement décimal d'un nombre rationnel ?",
+    "answer": "Il est soit fini, soit infini mais périodique",
+    "distractors": [
+      "Il est toujours infini et strictement non périodique",
+      "Il ne comporte jamais de chiffres après la virgule",
+      "Il est obligatoirement un nombre entier"
+    ],
+    "explanation": "Un nombre rationnel possède une écriture décimale soit finie (ex: 1/4 = 0,25), soit infinie périodique (ex: 1/3 = 0,333...).",
+    "tags": [
+      "nombres_rationnels",
+      "ecriture_decimale"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_007",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 2,
+    "prompt": "Lequel de ces nombres est un nombre irrationnel ?",
+    "answer": "\\sqrt{2}",
+    "distractors": [
+      "3/4",
+      "-5",
+      "0,333"
+    ],
+    "explanation": "\\sqrt{2} ne peut pas s'écrire sous forme de fraction de deux entiers et son écriture décimale est infinie non périodique ; c'est un nombre irrationnel.",
+    "tags": [
+      "nombres_irrationnels",
+      "racine"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_008",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 2,
+    "prompt": "Que représente l'ensemble des nombres réels, noté \\mathbb{R} ?",
+    "answer": "La réunion de tous les nombres rationnels et de tous les nombres irrationnels",
+    "distractors": [
+      "Uniquement l'ensemble des nombres positifs",
+      "L'ensemble des solutions de l'équation x^2 + 1 = 0",
+      "L'ensemble exclusif des fractions décimales finies"
+    ],
+    "explanation": "\\mathbb{R} englobe l'ensemble des nombres rationnels et irrationnels, formant ainsi un axe gradué continu sans interruption.",
+    "tags": [
+      "nombres_reels",
+      "definition"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_009",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 2,
+    "prompt": "Remettez les ensembles de nombres dans l'ordre croissant d'inclusion (du plus petit au plus grand).",
+    "answer": "\\mathbb{N} (Entiers naturels) → \\mathbb{Z} (Entiers relatifs) → \\mathbb{Q} (Nombres rationnels) → \\mathbb{R} (Nombres réels)",
+    "distractors": [],
+    "explanation": "Chaque ensemble est inclus dans le suivant : les naturels sont dans les relatifs, qui sont dans les rationnels, eux-mêmes inclus dans les réels.",
+    "tags": [
+      "ensembles",
+      "inclusion",
+      "ordre"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "\\mathbb{N} (Entiers naturels)",
+      "\\mathbb{Z} (Entiers relatifs)",
+      "\\mathbb{Q} (Nombres rationnels)",
+      "\\mathbb{R} (Nombres réels)"
+    ]
+  },
+  {
+    "id": "maths_types_nb_010",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 2,
+    "prompt": "Quelle est la propriété fondamentale du nombre imaginaire i introduit dans les nombres complexes ?",
+    "answer": "i^2 = -1",
+    "distractors": [
+      "i = \\sqrt{2}",
+      "i^2 = 1",
+      "i est un nombre irrationnel égal à \\pi"
+    ],
+    "explanation": "Le nombre complexe $i$ est défini par sa propriété principale : son carré vaut $-1$, ce qui permet de résoudre des équations sans solution réelle comme $x^2 + 1 = 0$.",
+    "tags": [
+      "nombres_complexes",
+      "imaginaire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_011",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 3,
+    "prompt": "Sous quelle forme s'écrit tout nombre complexe appartenant à l'ensemble \\mathbb{C} ?",
+    "answer": "a + bi (où a et b sont des nombres réels et i^2 = -1)",
+    "distractors": [
+      "a / b (avec b non nul)",
+      "\\sqrt{a + b}",
+      "a \\times \\pi + b"
+    ],
+    "explanation": "Un nombre complexe s'exprime sous la forme algébrique $a + bi$, où $a$ est la partie réelle et $b$ la partie imaginaire.",
+    "tags": [
+      "nombres_complexes",
+      "forme_algebrique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "maths_types_nb_012",
+    "subject": "mathematiques",
+    "skill": "mat.types_nb",
+    "difficulty": 3,
+    "prompt": "Quel est le conjugué du nombre complexe z = a + bi ?",
+    "answer": "\\bar{z} = a - bi",
+    "distractors": [
+      "\\bar{z} = -a + bi",
+      "\\bar{z} = -a - bi",
+      "\\bar{z} = b + ai"
+    ],
+    "explanation": "Le conjugué d'un nombre complexe $z = a + bi$ s'obtient en changeant le signe de sa partie imaginaire, ce qui donne $\\bar{z} = a - bi$.",
+    "tags": [
+      "nombres_complexes",
+      "conjugue"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  }
+]

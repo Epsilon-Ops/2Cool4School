@@ -1,11 +1,144 @@
 {
   "skills": [
     {
-      "id": "geo.chapitre_1",
-      "name": "Chapitre 1 (à définir)",
-      "short": "Chapitre 1",
+      "id": "geo.cartographie_intro",
+      "name": "Initiation à la cartographie",
+      "short": "Cartographie",
       "prereq": [],
-      "description": "Chapitre provisoire : à remplacer par le programme."
+      "description": "Lecture de cartes, orientation, échelles et légende."
+    },
+    {
+      "id": "geo.reperage_mondial",
+      "name": "Repérage terrestre mondial",
+      "short": "Repérage Mondial",
+      "prereq": ["geo.cartographie_intro"],
+      "description": "Méridiens, parallèles, latitude, longitude et fuseaux horaires."
+    },
+    {
+      "id": "geo.relief_paysages",
+      "name": "Formes de relief et paysages",
+      "short": "Reliefs",
+      "prereq": ["geo.reperage_mondial"],
+      "description": "Montagnes, vallées, plaines, plateaux et modelé terrestre."
+    },
+    {
+      "id": "geo.hydrographie",
+      "name": "Grands réseaux hydrographiques",
+      "short": "Hydrographie",
+      "prereq": ["geo.relief_paysages"],
+      "description": "Fleuves, océans, mers, cycles de l'eau et bassins versants."
+    },
+    {
+      "id": "geo.climats_zones",
+      "name": "Zones climatiques de la Terre",
+      "short": "Climats",
+      "prereq": ["geo.hydrographie"],
+      "description": "Climats polaires, tempérés, intertropicaux et facteurs climatiques."
+    },
+    {
+      "id": "geo.biomes_veg",
+      "name": "Biomes et végétations naturelles",
+      "short": "Biomes",
+      "prereq": ["geo.climats_zones"],
+      "description": "Toundra, taïga, forêts, savanes, déserts et végétations associées."
+    },
+    {
+      "id": "geo.population_dynamique",
+      "name": "Dynamique de la population mondiale",
+      "short": "Population",
+      "prereq": ["geo.biomes_veg"],
+      "description": "Démographie, natalité, mortalité, accroissement naturel et transition."
+    },
+    {
+      "id": "geo.migration_flux",
+      "name": "Migrations et flux humains",
+      "short": "Migrations",
+      "prereq": ["geo.population_dynamique"],
+      "description": "Déplacements de populations, exode rural et mobilités internationales."
+    },
+    {
+      "id": "geo.urbanisation",
+      "name": "Phénomène d'urbanisation",
+      "short": "Urbanisation",
+      "prereq": ["geo.migration_flux"],
+      "description": "Villes, mégapoles, métropolisation et étalement urbain."
+    },
+    {
+      "id": "geo.espaces_ruraux",
+      "name": "Espaces ruraux et agricultures",
+      "short": "Espaces Ruraux",
+      "prereq": ["geo.urbanisation"],
+      "description": "Campagnes, agricultures vivrières, productivistes et agro-industrie."
+    },
+    {
+      "id": "geo.energies_ressources",
+      "name": "Ressources énergétiques",
+      "short": "Énergies",
+      "prereq": ["geo.espaces_ruraux"],
+      "description": "Énergies fossiles, renouvelables, transition énergétique et enjeux."
+    },
+    {
+      "id": "geo.developpement_durable",
+      "name": "Développement durable",
+      "short": "Développement Durable",
+      "prereq": ["geo.energies_ressources"],
+      "description": "Équilibre entre enjeux économiques, sociaux et environnementaux."
+    },
+    {
+      "id": "geo.mondialisation",
+      "name": "Mondialisation et échanges",
+      "short": "Mondialisation",
+      "prereq": ["geo.developpement_durable"],
+      "description": "Mondialisation des économies, réseaux de transport et maritimisation."
+    },
+    {
+      "id": "geo.geopolitique_intro",
+      "name": "Introduction à la géopolitique",
+      "short": "Géopolitique",
+      "prereq": ["geo.mondialisation"],
+      "description": "États, frontières, conflits d'intérêts et organisations internationales."
+    },
+    {
+      "id": "geo.risques_maj",
+      "name": "Risques majeurs et catastrophes",
+      "short": "Risques Majeurs",
+      "prereq": ["geo.geopolitique_intro"],
+      "description": "Risques naturels, technologiques et vulnérabilité des sociétés."
+    },
+    {
+      "id": "geo.continents_europe",
+      "name": "Géographie de l'Europe",
+      "short": "Europe",
+      "prereq": ["geo.risques_maj"],
+      "description": "Espaces européens, Union européenne et dynamiques régionales."
+    },
+    {
+      "id": "geo.continents_afrique",
+      "name": "Géographie de l'Afrique",
+      "short": "Afrique",
+      "prereq": ["geo.risques_maj"],
+      "description": "Enjeux de développement, croissance démographique et ressources."
+    },
+    {
+      "id": "geo.continents_asie",
+      "name": "Géographie de l'Asie",
+      "short": "Asie",
+      "prereq": ["geo.risques_maj"],
+      "description": "Géants démographiques, essor économique et contrastes spatiaux."
+    },
+    {
+      "id": "geo.continents_ameriques",
+      "name": "Géographie des Amériques",
+      "short": "Amériques",
+      "prereq": ["geo.risques_maj"],
+      "description": "Du Nord au Sud : contrastes de développement et dynamiques du continent."
+    },
+    {
+      "id": "geo.poles_oc",
+      "name": "Océans et espaces polaires",
+      "short": "Pôles & Océans",
+      "prereq": ["geo.risques_maj"],
+      "description": "Arctique, Antarctique, haute mer et enjeux géopolitiques maritimes."
     }
   ]
 }

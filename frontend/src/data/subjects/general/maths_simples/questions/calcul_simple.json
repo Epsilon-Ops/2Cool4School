@@ -2,7 +2,7 @@
   {
     "id": "mat_calcul_001",
     "subject": "mat",
-    "skill": "mat.chapitre_1",
+    "skill": "mat.types_nb",
     "difficulty": 1,
     "prompt": "Calculer {a} + {b}",
     "template": {
@@ -33,7 +33,7 @@
   {
     "id": "mat_calcul_002",
     "subject": "mat",
-    "skill": "mat.chapitre_1",
+    "skill": "mat.types_nb",
     "difficulty": 1,
     "prompt": "Calculer {a} − {b} + {c}",
     "template": {
@@ -69,7 +69,7 @@
   {
     "id": "mat_calcul_003",
     "subject": "mat",
-    "skill": "mat.chapitre_1",
+    "skill": "mat.types_nb",
     "difficulty": 1,
     "prompt": "Calculer {a} × {b}",
     "template": {

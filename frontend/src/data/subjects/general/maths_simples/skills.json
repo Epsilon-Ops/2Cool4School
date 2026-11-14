@@ -1,11 +1,774 @@
 {
   "skills": [
     {
-      "id": "mat.chapitre_1",
-      "name": "Chapitre 1 (à définir)",
-      "short": "Chapitre 1",
+      "id": "mat.types_nb",
+      "name": "Différents types de nombres",
+      "short": "Types de nombres",
       "prereq": [],
       "description": "Chapitre provisoire : à remplacer par le programme."
-    }
+    },
+    {
+      "id": "mat.clc_classique_1",
+      "name": "Calculs Classiques I",
+      "short": "Calculs Classiques I",
+      "prereq": ["mat.types_nb"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.clc_classique_2",
+      "name": "Calculs Classiques II",
+      "short": "Calculs Classiques II",
+      "prereq": ["mat.clc_classique_1"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.clc_classique_3",
+      "name": "Calculs Classiques III",
+      "short": "Calculs Classiques III",
+      "prereq": ["mat.clc_classique_2"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.fractions",
+      "name": "Introduction aux fractions",
+      "short": "Fractions",
+      "prereq": ["mat.clc_classique_3"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.decimaux",
+      "name": "Introduction aux decimaux",
+      "short": "Decimaux",
+      "prereq": ["mat.fractions"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.puissances",
+      "name": "Puissances",
+      "short": "Puissances",
+      "prereq": ["mat.decimaux"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.racines",
+      "name": "Racines",
+      "short": "Racines",
+      "prereq": ["mat.puissances"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.rap_prop",
+      "name": "Rapports & Proportions",
+      "short": "Rapports et Proportions",
+      "prereq": ["mat.racines"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.pourcentages",
+      "name": "Pourcentages",
+      "short": "Pourcentages",
+      "prereq": ["mat.rap_prop"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.geometrie_1",
+      "name": "Initiation à la géométrie I",
+      "short": "Geométrie I",
+      "prereq": ["mat.pourcentages"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.geometrie_2",
+      "name": "Initiation à la géométrie II",
+      "short": "Geométrie II",
+      "prereq": ["mat.geometrie_1"],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    },
+    {
+      "id": "mat.priorites",
+      "name": "Priorités Opératoires",
+      "short": "Priorités",
+      "prereq": ["mat.geometrie_2"],
+      "description": "Parenthèses, multiplications, divisions, additions et soustractions"
+    },
+    {
+      "id": "mat.calcul_mental",
+      "name": "Calcul Mental",
+      "short": "Calcul Mental",
+      "prereq": ["mat.priorites"],
+      "description": "Techniques de calcul rapide, astuces et estimation"
+    },
+    {
+      "id": "mat.arrondis",
+      "name": "Arrondis",
+      "short": "Arrondis",
+      "prereq": ["mat.calcul_mental"],
+      "description": "Arrondir, tronquer, encadrer une valeur"
+    },
+    {
+      "id": "mat.conversions_nb",
+      "name": "Conversions Numériques",
+      "short": "Conversions",
+      "prereq": ["mat.arrondis"],
+      "description": "Passer d'une écriture à une autre"
+    },
+    {
+      "id": "mat.encadrement",
+      "name": "Encadrement des Nombres",
+      "short": "Encadrement",
+      "prereq": ["mat.conversions_nb"],
+      "description": "Valeurs minimales, maximales et intervalles simples"
+    },
+    {
+      "id": "mat.notation_scientifique",
+      "name": "Notation Scientifique",
+      "short": "Notation Scientifique",
+      "prereq": ["mat.encadrement"],
+      "description": "Écriture des grands et petits nombres"
+    },
+    {
+      "id": "mat.equation_simples",
+      "name": "Introduction aux équations",
+      "short": "Equations",
+      "prereq": ["mat.encadrement"],
+      "description": "Trouver une inconnue dans une égalité simple"
+    },
+    {
+      "id": "mat.formules",
+      "name": "Formules",
+      "short": "Formules",
+      "prereq": ["mat.equation_simples"],
+      "description": "Trouver une inconnue dans une égalité simple"
+    },
+    {
+      "id": "mat.calcul_litteral",
+      "name": "Introduction au calcul littéral",
+      "short": "Calcul Littéral",
+      "prereq": ["mat.formules"],
+      "description": "Expressions simples et substitution"
+    },
+    {
+      "id": "mat.suites_simples",
+      "name": "Introduction aux suites",
+      "short": "Suites",
+      "prereq": ["mat.calcul_litteral"],
+      "description": "Suites additives et multiplicatives"
+    },
+    {
+      "id": "mat.reperage",
+      "name": "Repérage dans l'espace",
+      "short": "Repérage Spatial",
+      "prereq": ["mat.suites_simples"],
+      "description": "Lecture d'un repère, positions et coordonnées spatiales"
+    },
+{
+    "id": "mat.trigonometrie",
+    "name": "Trigonométrie Élémentaire",
+    "short": "Trigonométrie",
+    "prereq": ["mat.geometrie_coordonnees"],
+    "description": "Étudier les relations entre les angles et les longueurs, ainsi que les fonctions trigonométriques fondamentales."
+  },
+  {
+    "id": "mat.topologie_intro",
+    "name": "Initiation à la Topologie",
+    "short": "Topologie",
+    "prereq": ["mat.trigonometrie"],
+    "description": "Découvrir les notions intuitives de voisinage, continuité, proximité, connexité et formes géométriques."
+  },
+  {
+    "id": "mat.math_financieres",
+    "name": "Mathématiques Financières",
+    "short": "Mathématiques Financières",
+    "prereq": ["mat.topologie_intro"],
+    "description": "Étudier les concepts mathématiques liés à la valeur de l'argent, aux capitaux, aux taux et aux évolutions financières."
+  },
+  {
+    "id": "mat.modelisation",
+    "name": "Modélisation Mathématique",
+    "short": "Modélisation",
+    "prereq": ["mat.math_financieres"],
+    "description": "Comprendre comment représenter des situations réelles à l'aide de modèles, de variables, de relations et de structures mathématiques."
+  },
+  {
+    "id": "mat.dimension",
+    "name": "Dimensions et Espaces",
+    "short": "Dimensions",
+    "prereq": ["mat.modelisation"],
+    "description": "Explorer les notions de dimension, les espaces à une, deux et trois dimensions et leur généralisation intuitive."
+  },
+  {
+    "id": "mat.infinis",
+    "name": "Introduction à l'Infini",
+    "short": "Infini",
+    "prereq": ["mat.dimension"],
+    "description": "Découvrir les différentes conceptions de l'infini, les quantités illimitées et les processus sans fin."
+  },
+  {
+    "id": "mat.histoire",
+    "name": "Histoire des Mathématiques",
+    "short": "Histoire",
+    "prereq": ["mat.infinis"],
+    "description": "Découvrir l'évolution des concepts mathématiques, les grandes civilisations mathématiques et les principales découvertes."
+  },
+  {
+    "id": "mat.systemes_numeration",
+    "name": "Systèmes de Numération",
+    "short": "Numération",
+    "prereq": ["mat.histoire"],
+    "description": "Étudier les différents systèmes de représentation des nombres, notamment les systèmes décimaux, binaires, octaux, hexadécimaux et romains."
+  },
+  {
+    "id": "mat.divisibilite",
+    "name": "Divisibilité",
+    "short": "Divisibilité",
+    "prereq": ["mat.systemes_numeration"],
+    "description": "Étudier les propriétés de divisibilité des nombres entiers, les diviseurs, les multiples et les critères de divisibilité."
+  },
+  {
+    "id": "mat.nombres_premiers",
+    "name": "Nombres Premiers",
+    "short": "Nombres Premiers",
+    "prereq": ["mat.divisibilite"],
+    "description": "Découvrir les nombres premiers, leur répartition, leur décomposition et leur rôle dans l'arithmétique."
+  },
+  {
+    "id": "mat.pgcd_ppcm",
+    "name": "PGCD et PPCM",
+    "short": "PGCD et PPCM",
+    "prereq": ["mat.nombres_premiers"],
+    "description": "Étudier le plus grand commun diviseur et le plus petit commun multiple ainsi que leurs propriétés fondamentales."
+  },
+  {
+    "id": "mat.congruences",
+    "name": "Arithmétique Modulaire",
+    "short": "Congruences",
+    "prereq": ["mat.pgcd_ppcm"],
+    "description": "Découvrir les congruences, les classes de restes et les opérations dans les systèmes de calcul modulo n."
+  },
+  {
+    "id": "mat.pavages",
+    "name": "Pavages Mathématiques",
+    "short": "Pavages",
+    "prereq": ["mat.systemes_numeration"],
+    "description": "Étudier le remplissage du plan par des formes géométriques, les pavages réguliers et les pavages périodiques."
+  },
+  {
+    "id": "mat.fractales",
+    "name": "Géométrie Fractale",
+    "short": "Fractales",
+    "prereq": ["mat.pavages"],
+    "description": "Découvrir les objets fractals, l'autosimilarité, les structures récursives et les dimensions fractales."
+  },
+  {
+    "id": "mat.symetries",
+    "name": "Théorie des Symétries",
+    "short": "Symétries",
+    "prereq": ["mat.pavages"],
+    "description": "Étudier les symétries géométriques, les invariances et les transformations conservant certaines propriétés."
+  },
+  {
+    "id": "mat.perspective",
+    "name": "Géométrie de la Perspective",
+    "short": "Perspective",
+    "prereq": ["mat.symetries"],
+    "description": "Découvrir les principes mathématiques de la perspective, les projections et la représentation des objets tridimensionnels."
+  },
+  {
+    "id": "mat.geometrie_projective",
+    "name": "Géométrie Projective",
+    "short": "Géométrie Projective",
+    "prereq": ["mat.perspective"],
+    "description": "Étudier les propriétés géométriques conservées par projection, les points à l'infini et les configurations projectives."
+  },
+  {
+    "id": "mat.geometrie_non_euclidienne",
+    "name": "Géométries Non Euclidiennes",
+    "short": "Géométries Non Euclidiennes",
+    "prereq": ["mat.geometrie_projective"],
+    "description": "Découvrir les géométries hyperbolique et elliptique ainsi que les différentes conceptions de l'espace géométrique."
+  },
+  {
+    "id": "mat.tessellations",
+    "name": "Tessellations et Motifs Géométriques",
+    "short": "Tessellations",
+    "prereq": ["mat.pavages"],
+    "description": "Étudier les motifs géométriques répétitifs, les pavages complexes et leurs organisations spatiales."
+  },
+  {
+    "id": "mat.invariants",
+    "name": "Invariants Mathématiques",
+    "short": "Invariants",
+    "prereq": ["mat.symetries"],
+    "description": "Comprendre les propriétés et les quantités qui restent inchangées sous certaines transformations mathématiques."
+  },
+  {
+    "id": "mat.dimensions_fractales",
+    "name": "Dimensions Fractales",
+    "short": "Dimensions Fractales",
+    "prereq": ["mat.fractales"],
+    "description": "Étudier les dimensions non entières et les différentes façons de mesurer la complexité géométrique."
+  },
+  {
+    "id": "mat.recursivite",
+    "name": "Récursivité Mathématique",
+    "short": "Récursivité",
+    "prereq": ["mat.fractales"],
+    "description": "Découvrir les définitions récursives, les constructions répétitives et les objets définis à partir d'eux-mêmes."
+  },
+  {
+    "id": "mat.nombres_figures",
+    "name": "Nombres Figurés",
+    "short": "Nombres Figurés",
+    "prereq": ["mat.nombres_premiers"],
+    "description": "Étudier les nombres triangulaires, carrés, pentagonaux et les représentations géométriques des nombres."
+  },
+  {
+    "id": "mat.nombres_parfaits",
+    "name": "Nombres Parfaits et Amicaux",
+    "short": "Nombres Spéciaux",
+    "prereq": ["mat.nombres_premiers"],
+    "description": "Découvrir les nombres parfaits, abondants, déficients et les couples de nombres amicaux."
+  },
+  {
+    "id": "mat.constants",
+    "name": "Constantes Mathématiques",
+    "short": "Constantes",
+    "prereq": ["mat.nombres_figures"],
+    "description": "Explorer les constantes fondamentales comme pi, e, le nombre d'or et les constantes issues de constructions mathématiques."
+  },
+  {
+    "id": "mat.proportions_esthetiques",
+    "name": "Proportions et Harmonie Géométrique",
+    "short": "Proportions Géométriques",
+    "prereq": ["mat.constants"],
+    "description": "Étudier les proportions remarquables, le nombre d'or, les rapports géométriques et leurs représentations dans l'art et la nature."
+  },
+  {
+    "id": "mat.math_recreatives",
+    "name": "Mathématiques Récréatives",
+    "short": "Mathématiques Récréatives",
+    "prereq": ["mat.nombres_figures"],
+    "description": "Découvrir les curiosités mathématiques, les paradoxes numériques, les constructions ludiques et les problèmes célèbres."
+  },
+{
+    "id": "mat.coniques",
+    "name": "Sections Coniques",
+    "short": "Coniques",
+    "prereq": ["mat.geometrie_projective"],
+    "description": "Étudier les courbes obtenues par intersection d'un cône avec un plan : cercle, ellipse, parabole et hyperbole."
+  },
+  {
+    "id": "mat.courbes_geometriques",
+    "name": "Courbes Géométriques",
+    "short": "Courbes",
+    "prereq": ["mat.coniques"],
+    "description": "Découvrir les différentes familles de courbes, leurs formes, leurs propriétés et leurs représentations géométriques."
+  },
+  {
+    "id": "mat.lieux_geometriques",
+    "name": "Lieux Géométriques",
+    "short": "Lieux Géométriques",
+    "prereq": ["mat.courbes_geometriques"],
+    "description": "Étudier les ensembles de points satisfaisant une propriété géométrique commune."
+  },
+  {
+    "id": "mat.geometrie_descriptive",
+    "name": "Géométrie Descriptive",
+    "short": "Géométrie Descriptive",
+    "prereq": ["mat.lieux_geometriques"],
+    "description": "Étudier les méthodes de représentation plane des objets tridimensionnels et les projections géométriques."
+  },
+  {
+    "id": "mat.nombres_complexes_intro",
+    "name": "Introduction aux Nombres Complexes",
+    "short": "Nombres Complexes",
+    "prereq": ["mat.constants"],
+    "description": "Découvrir les nombres complexes, leur représentation et leurs principales propriétés élémentaires."
+  },
+  {
+    "id": "mat.quaternions_intro",
+    "name": "Introduction aux Quaternions",
+    "short": "Quaternions",
+    "prereq": ["mat.nombres_complexes_intro"],
+    "description": "Découvrir les nombres quaternions et leur utilisation conceptuelle pour représenter les rotations dans l'espace."
+  },
+  {
+    "id": "mat.vecteurs_intro",
+    "name": "Introduction aux Vecteurs",
+    "short": "Vecteurs",
+    "prereq": ["mat.geometrie_coordonnees"],
+    "description": "Comprendre les vecteurs, leur direction, leur sens, leur norme et leurs représentations géométriques."
+  },
+  {
+    "id": "mat.matrices_intro",
+    "name": "Introduction aux Matrices",
+    "short": "Matrices",
+    "prereq": ["mat.vecteurs_intro"],
+    "description": "Découvrir les matrices comme tableaux rectangulaires de nombres et comme représentations de transformations."
+  },
+  {
+    "id": "mat.transformations",
+    "name": "Transformations Géométriques",
+    "short": "Transformations",
+    "prereq": ["mat.matrices_intro"],
+    "description": "Étudier les transformations du plan et de l'espace, notamment les rotations, translations, symétries et homothéties."
+  },
+  {
+    "id": "mat.codage_numerique",
+    "name": "Codage Numérique",
+    "short": "Codage",
+    "prereq": ["mat.systemes_numeration"],
+    "description": "Comprendre les principes de représentation des nombres, caractères et informations dans les systèmes numériques."
+  },
+  {
+    "id": "mat.representation_donnees",
+    "name": "Représentation des Données",
+    "short": "Données",
+    "prereq": ["mat.codage_numerique"],
+    "description": "Étudier les différentes structures de représentation des données, leurs formats et leurs organisations numériques."
+  },
+  {
+    "id": "mat.logique_binaire",
+    "name": "Logique Binaire",
+    "short": "Logique Binaire",
+    "prereq": ["mat.codage_numerique"],
+    "description": "Découvrir les états binaires, les opérations booléennes élémentaires et les principes des représentations binaires."
+  },
+  {
+    "id": "mat.theorie_information_intro",
+    "name": "Introduction à la Théorie de l'Information",
+    "short": "Information",
+    "prereq": ["mat.representation_donnees"],
+    "description": "Découvrir les notions d'information, d'incertitude, d'entropie informationnelle et de quantité d'information."
+  },
+  {
+    "id": "mat.combinatoire_elementaire",
+    "name": "Combinatoire Élémentaire",
+    "short": "Combinatoire",
+    "prereq": ["mat.ensembles"],
+    "description": "Étudier les principes de dénombrement, les arrangements, les permutations et les combinaisons."
+  },
+  {
+    "id": "mat.nombres_bases",
+    "name": "Propriétés des Bases Numériques",
+    "short": "Bases Numériques",
+    "prereq": ["mat.systemes_numeration"],
+    "description": "Explorer les propriétés mathématiques des systèmes positionnels et les relations entre les différentes bases."
+  },
+  {
+    "id": "mat.spirales",
+    "name": "Spirales Mathématiques",
+    "short": "Spirales",
+    "prereq": ["mat.courbes_geometriques"],
+    "description": "Découvrir les spirales d'Archimède, logarithmiques et autres formes spiralées ainsi que leurs propriétés géométriques."
+  },
+  {
+    "id": "mat.nombres_or",
+    "name": "Nombre d'Or et Proportions Dorées",
+    "short": "Nombre d'Or",
+    "prereq": ["mat.proportions_esthetiques"],
+    "description": "Étudier le nombre d'or, ses propriétés numériques et géométriques ainsi que ses relations avec certaines constructions."
+  },
+  {
+    "id": "mat.geometrie_nature",
+    "name": "Géométrie dans la Nature",
+    "short": "Géométrie Naturelle",
+    "prereq": ["mat.spirales"],
+    "description": "Explorer les structures géométriques naturelles, les symétries biologiques, les ramifications et les organisations spatiales."
+  },
+  {
+    "id": "mat.modeles_croissance",
+    "name": "Modèles de Croissance",
+    "short": "Croissance",
+    "prereq": ["mat.modelisation"],
+    "description": "Découvrir les modèles mathématiques de croissance linéaire, multiplicative et exponentielle dans les phénomènes naturels et humains."
+  },
+  {
+    "id": "mat.optimisation_elementaire",
+    "name": "Optimisation Élémentaire",
+    "short": "Optimisation",
+    "prereq": ["mat.modelisation"],
+    "description": "Comprendre les principes de recherche d'un minimum ou d'un maximum dans des situations mathématiques simples."
+  },
+{
+    "id": "mat.polyedres",
+    "name": "Géométrie des Polyèdres",
+    "short": "Polyèdres",
+    "prereq": ["mat.solides"],
+    "description": "Étudier les polyèdres, leurs faces, leurs arêtes, leurs sommets et leurs principales propriétés géométriques."
+  },
+  {
+    "id": "mat.polyedres_reguliers",
+    "name": "Polyèdres Réguliers",
+    "short": "Polyèdres Réguliers",
+    "prereq": ["mat.polyedres"],
+    "description": "Découvrir les solides de Platon, leurs propriétés et les caractéristiques des polyèdres réguliers."
+  },
+  {
+    "id": "mat.geometrie_sacree",
+    "name": "Géométrie des Motifs",
+    "short": "Motifs Géométriques",
+    "prereq": ["mat.tessellations"],
+    "description": "Explorer les organisations géométriques, les motifs répétitifs et les compositions fondées sur les symétries."
+  },
+  {
+    "id": "mat.geometrie_architecture",
+    "name": "Géométrie Architecturale",
+    "short": "Architecture",
+    "prereq": ["mat.geometrie_descriptive"],
+    "description": "Étudier les principes géométriques des constructions architecturales, les proportions, les structures et les formes."
+  },
+  {
+    "id": "mat.geometrie_perspectives",
+    "name": "Systèmes de Projection",
+    "short": "Projections",
+    "prereq": ["mat.geometrie_descriptive"],
+    "description": "Découvrir les projections orthogonales, obliques, centrales et leurs propriétés de représentation."
+  },
+  {
+    "id": "mat.geometrie_sphérique",
+    "name": "Géométrie Sphérique",
+    "short": "Géométrie Sphérique",
+    "prereq": ["mat.geometrie_non_euclidienne"],
+    "description": "Étudier les propriétés géométriques de la sphère, les grands cercles, les distances sphériques et les triangles sphériques."
+  },
+  {
+    "id": "mat.geometrie_cylindrique",
+    "name": "Géométrie Cylindrique",
+    "short": "Géométrie Cylindrique",
+    "prereq": ["mat.geometrie_sphérique"],
+    "description": "Explorer les propriétés géométriques des surfaces cylindriques et les systèmes de représentation associés."
+  },
+  {
+    "id": "mat.geometrie_polaire",
+    "name": "Coordonnées Polaires",
+    "short": "Coordonnées Polaires",
+    "prereq": ["mat.geometrie_coordonnees"],
+    "description": "Découvrir la représentation des positions dans le plan à partir d'une distance et d'un angle."
+  },
+  {
+    "id": "mat.geometrie_parametrique",
+    "name": "Représentations Paramétriques",
+    "short": "Paramétrisation",
+    "prereq": ["mat.courbes_geometriques"],
+    "description": "Comprendre les représentations paramétriques des courbes et des objets géométriques."
+  },
+  {
+    "id": "mat.math_musicales",
+    "name": "Mathématiques Musicales",
+    "short": "Mathématiques Musicales",
+    "prereq": ["mat.proportions_esthetiques"],
+    "description": "Étudier les rapports numériques, les intervalles, les proportions et les structures mathématiques présentes dans la musique."
+  },
+  {
+    "id": "mat.mesures_anciennes",
+    "name": "Systèmes de Mesure Historiques",
+    "short": "Mesures Historiques",
+    "prereq": ["mat.histoire"],
+    "description": "Découvrir les anciens systèmes de mesure, leurs unités et leur évolution vers les systèmes modernes."
+  },
+  {
+    "id": "mat.systeme_international",
+    "name": "Système International d'Unités",
+    "short": "SI",
+    "prereq": ["mat.unites"],
+    "description": "Étudier les sept unités fondamentales du système international, les unités dérivées et les préfixes."
+  },
+  {
+    "id": "mat.analyse_dimensionnelle",
+    "name": "Analyse Dimensionnelle",
+    "short": "Dimensions Physiques",
+    "prereq": ["mat.systeme_international"],
+    "description": "Comprendre les dimensions physiques des grandeurs et les relations de cohérence dimensionnelle."
+  },
+  {
+    "id": "mat.ordres_grandeur",
+    "name": "Ordres de Grandeur",
+    "short": "Ordres de Grandeur",
+    "prereq": ["mat.notation_scientifique"],
+    "description": "Étudier les échelles numériques, les puissances de dix et la comparaison des grandeurs selon leur magnitude."
+  },
+  {
+    "id": "mat.math_architecture",
+    "name": "Proportions Architecturales",
+    "short": "Proportions Architecturales",
+    "prereq": ["mat.geometrie_architecture"],
+    "description": "Explorer les rapports géométriques, les proportions structurelles et les systèmes de mesure utilisés en architecture."
+  },
+  {
+    "id": "mat.math_origami",
+    "name": "Géométrie de l'Origami",
+    "short": "Origami",
+    "prereq": ["mat.symetries"],
+    "description": "Découvrir les principes géométriques du pliage, les constructions par pliage et les propriétés mathématiques de l'origami."
+  },
+  {
+    "id": "mat.topologie_visuelle",
+    "name": "Formes et Déformations",
+    "short": "Déformations",
+    "prereq": ["mat.topologie_intro"],
+    "description": "Explorer les déformations continues, les propriétés conservées des formes et les transformations topologiques intuitives."
+  },
+  {
+    "id": "mat.math_dimensionnelles",
+    "name": "Géométrie Multidimensionnelle",
+    "short": "Multidimensionnel",
+    "prereq": ["mat.dimension"],
+    "description": "Découvrir les objets et les représentations géométriques dans des espaces comportant plus de trois dimensions."
+  },
+{
+    "id": "mat.nombres_rationnels",
+    "name": "Nombres Rationnels",
+    "short": "Rationnels",
+    "prereq": ["mat.fractions"],
+    "description": "Étudier les nombres pouvant être exprimés comme le quotient de deux nombres entiers et leurs propriétés fondamentales."
+  },
+  {
+    "id": "mat.nombres_irrationnels",
+    "name": "Nombres Irrationnels",
+    "short": "Irrationnels",
+    "prereq": ["mat.racines"],
+    "description": "Découvrir les nombres qui ne peuvent pas être exprimés comme une fraction de deux entiers et leurs représentations décimales."
+  },
+  {
+    "id": "mat.nombres_reels",
+    "name": "Nombres Réels",
+    "short": "Réels",
+    "prereq": ["mat.nombres_irrationnels"],
+    "description": "Comprendre la construction intuitive des nombres réels, leur représentation sur une droite et leurs propriétés fondamentales."
+  },
+  {
+    "id": "mat.intervalles",
+    "name": "Intervalles Numériques",
+    "short": "Intervalles",
+    "prereq": ["mat.nombres_reels"],
+    "description": "Étudier les intervalles de nombres réels, leurs bornes, leur représentation et leurs différentes catégories."
+  },
+  {
+    "id": "mat.valeur_absolue",
+    "name": "Valeur Absolue",
+    "short": "Valeur Absolue",
+    "prereq": ["mat.nombres_reels"],
+    "description": "Découvrir la valeur absolue comme distance entre un nombre et zéro sur la droite numérique."
+  },
+  {
+    "id": "mat.ordre_numerique",
+    "name": "Ordre et Comparaison des Nombres",
+    "short": "Ordre Numérique",
+    "prereq": ["mat.nombres_reels"],
+    "description": "Étudier les relations d'ordre, les inégalités numériques et la comparaison des nombres."
+  },
+  {
+    "id": "mat.identites_remarquables",
+    "name": "Identités Remarquables",
+    "short": "Identités Remarquables",
+    "prereq": ["mat.calcul_litteral"],
+    "description": "Découvrir les principales identités algébriques et les relations fondamentales entre sommes, différences et produits."
+  },
+  {
+    "id": "mat.monome_polynome",
+    "name": "Monômes et Polynômes",
+    "short": "Polynômes",
+    "prereq": ["mat.calcul_litteral"],
+    "description": "Comprendre les expressions polynomiales, leurs termes, leurs degrés et leur structure élémentaire."
+  },
+  {
+    "id": "mat.fonctions_elementaires",
+    "name": "Notion de Fonction",
+    "short": "Fonctions",
+    "prereq": ["mat.formules"],
+    "description": "Découvrir la notion de fonction, les variables, les images, les antécédents et les différentes représentations."
+  },
+  {
+    "id": "mat.proportions_inversees",
+    "name": "Proportionnalité Inverse",
+    "short": "Proportionnalité Inverse",
+    "prereq": ["mat.rap_prop"],
+    "description": "Étudier les relations de proportionnalité inverse et leurs représentations numériques et graphiques."
+  },
+  {
+    "id": "mat.geometrie_euclidienne",
+    "name": "Géométrie Euclidienne",
+    "short": "Géométrie Euclidienne",
+    "prereq": ["mat.geometrie_2"],
+    "description": "Étudier les principes fondamentaux de la géométrie classique, les distances, les angles, les droites et les figures."
+  },
+  {
+    "id": "mat.cercles",
+    "name": "Géométrie du Cercle",
+    "short": "Cercles",
+    "prereq": ["mat.geometrie_euclidienne"],
+    "description": "Explorer les propriétés du cercle, du disque, des cordes, des arcs, des tangentes et des angles associés."
+  },
+  {
+    "id": "mat.triangles",
+    "name": "Géométrie des Triangles",
+    "short": "Triangles",
+    "prereq": ["mat.geometrie_euclidienne"],
+    "description": "Étudier les propriétés des triangles, leurs classifications, leurs éléments remarquables et leurs relations géométriques."
+  },
+  {
+    "id": "mat.quadrilateres",
+    "name": "Géométrie des Quadrilatères",
+    "short": "Quadrilatères",
+    "prereq": ["mat.geometrie_euclidienne"],
+    "description": "Étudier les propriétés des quadrilatères et les caractéristiques des carrés, rectangles, losanges, parallélogrammes et trapèzes."
+  },
+  {
+    "id": "mat.polygones",
+    "name": "Géométrie des Polygones",
+    "short": "Polygones",
+    "prereq": ["mat.geometrie_euclidienne"],
+    "description": "Découvrir les polygones, leurs propriétés, leurs classifications et leurs caractéristiques géométriques."
+  },
+  {
+    "id": "mat.lieux_mesures",
+    "name": "Grandeurs et Dimensions",
+    "short": "Grandeurs",
+    "prereq": ["mat.unites"],
+    "description": "Étudier les différentes catégories de grandeurs, leurs dimensions et leurs relations fondamentales."
+  },
+  {
+    "id": "mat.ecriture_numerique",
+    "name": "Écritures des Nombres",
+    "short": "Écritures Numériques",
+    "prereq": ["mat.systemes_numeration"],
+    "description": "Explorer les différentes formes d'écriture des nombres, leurs représentations fractionnaires, décimales, périodiques et symboliques."
+  },
+  {
+    "id": "mat.moyennes_intro",
+    "name": "Moyennes Élémentaires",
+    "short": "Moyennes",
+    "prereq": ["mat.tableaux"],
+    "description": "Découvrir les notions de moyenne arithmétique, moyenne pondérée et autres formes élémentaires de moyennes."
+  },
+  {
+    "id": "mat.probabilite_intro",
+    "name": "Notion de Hasard et d'Incertain",
+    "short": "Hasard",
+    "prereq": ["mat.moyennes_intro"],
+    "description": "Découvrir intuitivement les phénomènes aléatoires, l'incertitude et les premières notions de hasard."
+  },
+  {
+    "id": "mat.math_modeles",
+    "name": "Modèles Mathématiques du Quotidien",
+    "short": "Modèles Quotidiens",
+    "prereq": ["mat.modelisation"],
+    "description": "Explorer les modèles numériques et géométriques permettant de représenter les situations courantes."
+  },
+  {
+    "id": "mat.math_logistique",
+    "name": "Mathématiques de la Logistique",
+    "short": "Logistique",
+    "prereq": ["mat.math_modeles"],
+    "description": "Étudier les relations mathématiques entre quantités, capacités, dimensions, ressources et organisation matérielle."
+  },
+  {
+    "id": "mat.math_mesures_nature",
+    "name": "Mathématiques des Mesures Naturelles",
+    "short": "Mesures Naturelles",
+    "prereq": ["mat.lieux_mesures"],
+    "description": "Découvrir les grandeurs, proportions et structures numériques observables dans les phénomènes naturels."
+  }
   ]
 }
