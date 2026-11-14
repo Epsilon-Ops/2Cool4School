@@ -1,9 +1,9 @@
 {
-    "id": "english",
-    "code": "LANANG",
-    "name": "Anglais",
-    "emoji": "🇬🇧",
-    "color": "#8000FF",
-    "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
-    "category": "langue"
+  "id": "rel",
+  "code": "REL",
+  "name": "Histoire des religions",
+  "emoji": "🇬🇧",
+  "color": "#8000FF",
+  "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
+  "category": "human"
 }

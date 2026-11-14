@@ -1,9 +1,9 @@
 {
-  "id": "sociology",
-  "code": "SOCIO",
+  "id": "soc",
+  "code": "SOC",
   "name": "Sociologie",
-  "emoji": "👥",
-  "color": "#DB2777",
-  "description": "Société, groupes sociaux, culture, normes, valeurs, inégalités, classes sociales, institutions, déviance et phénomènes sociaux.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

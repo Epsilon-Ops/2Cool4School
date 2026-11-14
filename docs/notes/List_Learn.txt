@@ -7,10 +7,6 @@ const CATEGORIES = [
 - + BDA (Bases de Données Avancées)
 
 ====================================================
-
-  ['optionnelle', 'Matières optionnelles'],
-
-====================================================
   ['langue', 'Langues'],
 - + LANANG (Anglais)
 - + LANALL (Allemand)

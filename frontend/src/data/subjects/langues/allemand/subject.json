@@ -1,9 +1,9 @@
 {
-    "id": "german",
-    "code": "LANALL",
-    "name": "Allemand",
-    "emoji": "🇩🇪",
-    "color": "#e3d029",
-    "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression allemande.",
-    "category": "langue"
+  "id": "german",
+  "code": "LANALL",
+  "name": "Allemand",
+  "emoji": "🇩🇪",
+  "color": "#e3d029",
+  "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression allemande.",
+  "category": "langue"
 }

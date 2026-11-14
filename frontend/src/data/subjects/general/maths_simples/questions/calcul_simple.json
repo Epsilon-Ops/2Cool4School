@@ -1,0 +1,100 @@
+[
+  {
+    "id": "mat_calcul_001",
+    "subject": "mat",
+    "skill": "mat.chapitre_1",
+    "difficulty": 1,
+    "prompt": "Calculer {a} + {b}",
+    "template": {
+      "vars": {
+        "a": {
+          "min": 1,
+          "max": 20
+        },
+        "b": {
+          "min": 1,
+          "max": 20
+        }
+      },
+      "prompt": "Calculer {a} + {b}",
+      "expr": "a + b",
+      "decimals": 0
+    },
+    "explanation": "{a} + {b} = {answer}",
+    "distractors": [],
+    "tags": [
+      "calcul"
+    ],
+    "formats": [
+      "numeric",
+      "single_choice"
+    ]
+  },
+  {
+    "id": "mat_calcul_002",
+    "subject": "mat",
+    "skill": "mat.chapitre_1",
+    "difficulty": 1,
+    "prompt": "Calculer {a} − {b} + {c}",
+    "template": {
+      "vars": {
+        "a": {
+          "min": 1,
+          "max": 20
+        },
+        "b": {
+          "min": 1,
+          "max": 20
+        },
+        "c": {
+          "min": 1,
+          "max": 9
+        }
+      },
+      "prompt": "Calculer {a} − {b} + {c}",
+      "expr": "a - b + c",
+      "decimals": 0,
+      "where": "a >= b"
+    },
+    "explanation": "{a} − {b} + {c} = {answer}",
+    "distractors": [],
+    "tags": [
+      "calcul"
+    ],
+    "formats": [
+      "numeric",
+      "single_choice"
+    ]
+  },
+  {
+    "id": "mat_calcul_003",
+    "subject": "mat",
+    "skill": "mat.chapitre_1",
+    "difficulty": 1,
+    "prompt": "Calculer {a} × {b}",
+    "template": {
+      "vars": {
+        "a": {
+          "min": 2,
+          "max": 12
+        },
+        "b": {
+          "min": 2,
+          "max": 12
+        }
+      },
+      "prompt": "Calculer {a} × {b}",
+      "expr": "a * b",
+      "decimals": 0
+    },
+    "explanation": "{a} × {b} = {answer}",
+    "distractors": [],
+    "tags": [
+      "calcul"
+    ],
+    "formats": [
+      "numeric",
+      "single_choice"
+    ]
+  }
+]

@@ -1,9 +1,9 @@
 {
-  "id": "chemistry",
+  "id": "chi",
   "code": "CHI",
   "name": "Chimie",
-  "emoji": "🧪",
-  "color": "#0D9488",
-  "description": "Atomes, molécules, éléments chimiques, tableau périodique, réactions chimiques, liaisons, acides et bases, solutions et transformations de la matière.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

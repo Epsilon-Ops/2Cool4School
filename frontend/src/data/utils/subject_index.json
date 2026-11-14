@@ -3,7 +3,7 @@
     {
       "id": "lifapc",
       "code": "LIFAPC",
-      "name": "Algorithmique & C++",
+      "name": "Algorithmique, Programmation et Complexité",
       "path": "../subjects/matieres_scolaires/lifapc/subject.json",
       "skillsPath": "../subjects/matieres_scolaires/lifapc/skills.json",
       "questionDirectory": "../subjects/matieres_scolaires/lifapc/questions/"
@@ -19,14 +19,14 @@
     {
       "id": "liflf",
       "code": "LIFLF",
-      "name": "Théorie des Langages Formels",
+      "name": "Théorie des langages formels",
       "path": "../subjects/matieres_scolaires/liflf/subject.json",
       "skillsPath": "../subjects/matieres_scolaires/liflf/skills.json",
       "questionDirectory": "../subjects/matieres_scolaires/liflf/questions/"
     },
     {
       "id": "reseaux",
-      "code": "RES",
+      "code": "LIFRES",
       "name": "Réseaux",
       "path": "../subjects/matieres_scolaires/reseaux/subject.json",
       "skillsPath": "../subjects/matieres_scolaires/reseaux/skills.json",
@@ -34,8 +34,8 @@
     },
     {
       "id": "bdd",
-      "code": "BDD",
-      "name": "Bases de données & SQL",
+      "code": "BDA",
+      "name": "Bases de données avancées",
       "path": "../subjects/matieres_scolaires/bdd/subject.json",
       "skillsPath": "../subjects/matieres_scolaires/bdd/skills.json",
       "questionDirectory": "../subjects/matieres_scolaires/bdd/questions/"
@@ -73,7 +73,7 @@
       "questionDirectory": "../subjects/langues/italien/questions/"
     },
     {
-      "id": "portugese",
+      "id": "portugais",
       "code": "LANPOR",
       "name": "Portugais",
       "path": "../subjects/langues/portugais/subject.json",
@@ -178,7 +178,7 @@
     },
     {
       "id": "latin",
-      "code": "LANLAT",
+      "code": "LALAT",
       "name": "Latin",
       "path": "../subjects/langues/latin/subject.json",
       "skillsPath": "../subjects/langues/latin/skills.json",
@@ -187,7 +187,7 @@
     {
       "id": "mat",
       "code": "MAT",
-      "name": "Mathématiques Simples",
+      "name": "Mathématiques simples",
       "path": "../subjects/general/maths_simples/subject.json",
       "skillsPath": "../subjects/general/maths_simples/skills.json",
       "questionDirectory": "../subjects/general/maths_simples/questions/"
@@ -259,7 +259,7 @@
     {
       "id": "eco",
       "code": "ECO",
-      "name": "Economie",
+      "name": "Économie",
       "path": "../subjects/general/economie/subject.json",
       "skillsPath": "../subjects/general/economie/skills.json",
       "questionDirectory": "../subjects/general/economie/questions/"
@@ -303,6 +303,582 @@
       "path": "../subjects/general/neurosciences/subject.json",
       "skillsPath": "../subjects/general/neurosciences/skills.json",
       "questionDirectory": "../subjects/general/neurosciences/questions/"
+    },
+    {
+      "id": "lifresx",
+      "code": "LIFRESX",
+      "name": "Administration réseaux",
+      "path": "../subjects/info/admin_res/subject.json",
+      "skillsPath": "../subjects/info/admin_res/skills.json",
+      "questionDirectory": "../subjects/info/admin_res/questions/"
+    },
+    {
+      "id": "lifbdd",
+      "code": "LIFBDD",
+      "name": "Bases de données",
+      "path": "../subjects/info/bdd/subject.json",
+      "skillsPath": "../subjects/info/bdd/skills.json",
+      "questionDirectory": "../subjects/info/bdd/questions/"
+    },
+    {
+      "id": "lifsys",
+      "code": "LIFSYS",
+      "name": "Systèmes informatiques",
+      "path": "../subjects/info/systemes_informatiques/subject.json",
+      "skillsPath": "../subjects/info/systemes_informatiques/skills.json",
+      "questionDirectory": "../subjects/info/systemes_informatiques/questions/"
+    },
+    {
+      "id": "lifclo",
+      "code": "LIFCLO",
+      "name": "Cloud computing",
+      "path": "../subjects/info/cloud/subject.json",
+      "skillsPath": "../subjects/info/cloud/skills.json",
+      "questionDirectory": "../subjects/info/cloud/questions/"
+    },
+    {
+      "id": "lifdat",
+      "code": "LIFDAT",
+      "name": "Science des données",
+      "path": "../subjects/info/data_science/subject.json",
+      "skillsPath": "../subjects/info/data_science/skills.json",
+      "questionDirectory": "../subjects/info/data_science/questions/"
+    },
+    {
+      "id": "lifjeu",
+      "code": "LIFJEU",
+      "name": "Développement de jeux vidéo",
+      "path": "../subjects/info/dev_game/subject.json",
+      "skillsPath": "../subjects/info/dev_game/skills.json",
+      "questionDirectory": "../subjects/info/dev_game/questions/"
+    },
+    {
+      "id": "lifmob",
+      "code": "LIFMOB",
+      "name": "Développement mobile",
+      "path": "../subjects/info/dev_mobile/subject.json",
+      "skillsPath": "../subjects/info/dev_mobile/skills.json",
+      "questionDirectory": "../subjects/info/dev_mobile/questions/"
+    },
+    {
+      "id": "lifweb",
+      "code": "LIFWEB",
+      "name": "Développement web",
+      "path": "../subjects/info/dev_web/subject.json",
+      "skillsPath": "../subjects/info/dev_web/skills.json",
+      "questionDirectory": "../subjects/info/dev_web/questions/"
+    },
+    {
+      "id": "lifdev",
+      "code": "LIFDEV",
+      "name": "Génie logiciel",
+      "path": "../subjects/info/genie_logiciel/subject.json",
+      "skillsPath": "../subjects/info/genie_logiciel/skills.json",
+      "questionDirectory": "../subjects/info/genie_logiciel/questions/"
+    },
+    {
+      "id": "lifia",
+      "code": "LIFIA",
+      "name": "Intelligence artificielle",
+      "path": "../subjects/info/ia/subject.json",
+      "skillsPath": "../subjects/info/ia/skills.json",
+      "questionDirectory": "../subjects/info/ia/questions/"
+    },
+    {
+      "id": "lifrob",
+      "code": "LIFROB",
+      "name": "Robotique",
+      "path": "../subjects/info/robotique/subject.json",
+      "skillsPath": "../subjects/info/robotique/skills.json",
+      "questionDirectory": "../subjects/info/robotique/questions/"
+    },
+    {
+      "id": "lifvir",
+      "code": "LIFVIR",
+      "name": "Virtualisation",
+      "path": "../subjects/info/virtualisation/subject.json",
+      "skillsPath": "../subjects/info/virtualisation/skills.json",
+      "questionDirectory": "../subjects/info/virtualisation/questions/"
+    },
+    {
+      "id": "mat2",
+      "code": "MAT2",
+      "name": "Mathématiques avancées",
+      "path": "../subjects/maths/maths_avancees/subject.json",
+      "skillsPath": "../subjects/maths/maths_avancees/skills.json",
+      "questionDirectory": "../subjects/maths/maths_avancees/questions/"
+    },
+    {
+      "id": "matana",
+      "code": "MATANA",
+      "name": "Analyse mathématique",
+      "path": "../subjects/maths/analyse/subject.json",
+      "skillsPath": "../subjects/maths/analyse/skills.json",
+      "questionDirectory": "../subjects/maths/analyse/questions/"
+    },
+    {
+      "id": "matalg",
+      "code": "MATALG",
+      "name": "Algèbre linéaire",
+      "path": "../subjects/maths/algebre/subject.json",
+      "skillsPath": "../subjects/maths/algebre/skills.json",
+      "questionDirectory": "../subjects/maths/algebre/questions/"
+    },
+    {
+      "id": "matpro",
+      "code": "MATPRO",
+      "name": "Probabilités",
+      "path": "../subjects/maths/probabilites/subject.json",
+      "skillsPath": "../subjects/maths/probabilites/skills.json",
+      "questionDirectory": "../subjects/maths/probabilites/questions/"
+    },
+    {
+      "id": "matsta",
+      "code": "MATSTA",
+      "name": "Statistiques",
+      "path": "../subjects/maths/statistiques/subject.json",
+      "skillsPath": "../subjects/maths/statistiques/skills.json",
+      "questionDirectory": "../subjects/maths/statistiques/questions/"
+    },
+    {
+      "id": "matdis",
+      "code": "MATDIS",
+      "name": "Mathématiques discrètes",
+      "path": "../subjects/maths/maths_discretes/subject.json",
+      "skillsPath": "../subjects/maths/maths_discretes/skills.json",
+      "questionDirectory": "../subjects/maths/maths_discretes/questions/"
+    },
+    {
+      "id": "matthe",
+      "code": "MATTHE",
+      "name": "Théorie des graphes",
+      "path": "../subjects/maths/graphes/subject.json",
+      "skillsPath": "../subjects/maths/graphes/skills.json",
+      "questionDirectory": "../subjects/maths/graphes/questions/"
+    },
+    {
+      "id": "matlog",
+      "code": "MATLOG",
+      "name": "Logique mathématique avancée",
+      "path": "../subjects/maths/logique_math/subject.json",
+      "skillsPath": "../subjects/maths/logique_math/skills.json",
+      "questionDirectory": "../subjects/maths/logique_math/questions/"
+    },
+    {
+      "id": "matgam",
+      "code": "MATGAM",
+      "name": "Théorie des jeux",
+      "path": "../subjects/maths/game_theory/subject.json",
+      "skillsPath": "../subjects/maths/game_theory/skills.json",
+      "questionDirectory": "../subjects/maths/game_theory/questions/"
+    },
+    {
+      "id": "phyqua",
+      "code": "PHYQUA",
+      "name": "Physique quantique",
+      "path": "../subjects/maths/physique_quantique/subject.json",
+      "skillsPath": "../subjects/maths/physique_quantique/skills.json",
+      "questionDirectory": "../subjects/maths/physique_quantique/questions/"
+    },
+    {
+      "id": "phyrel",
+      "code": "PHYREL",
+      "name": "Relativité",
+      "path": "../subjects/maths/relativite/subject.json",
+      "skillsPath": "../subjects/maths/relativite/skills.json",
+      "questionDirectory": "../subjects/maths/relativite/questions/"
+    },
+    {
+      "id": "art",
+      "code": "ART",
+      "name": "Arts plastiques",
+      "path": "../subjects/art/arts_plasique/subject.json",
+      "skillsPath": "../subjects/art/arts_plasique/skills.json",
+      "questionDirectory": "../subjects/art/arts_plasique/questions/"
+    },
+    {
+      "id": "des",
+      "code": "DES",
+      "name": "Design",
+      "path": "../subjects/art/design/subject.json",
+      "skillsPath": "../subjects/art/design/skills.json",
+      "questionDirectory": "../subjects/art/design/questions/"
+    },
+    {
+      "id": "despin",
+      "code": "DESPIN",
+      "name": "Dessin & peinture",
+      "path": "../subjects/art/dessin_peinture/subject.json",
+      "skillsPath": "../subjects/art/dessin_peinture/skills.json",
+      "questionDirectory": "../subjects/art/dessin_peinture/questions/"
+    },
+    {
+      "id": "phot",
+      "code": "PHOT",
+      "name": "Photographie & montage",
+      "path": "../subjects/art/photomontage/subject.json",
+      "skillsPath": "../subjects/art/photomontage/skills.json",
+      "questionDirectory": "../subjects/art/photomontage/questions/"
+    },
+    {
+      "id": "mus",
+      "code": "MUS",
+      "name": "Musique",
+      "path": "../subjects/art/musique/subject.json",
+      "skillsPath": "../subjects/art/musique/skills.json",
+      "questionDirectory": "../subjects/art/musique/questions/"
+    },
+    {
+      "id": "cin",
+      "code": "CIN",
+      "name": "Cinéma",
+      "path": "../subjects/art/cinema/subject.json",
+      "skillsPath": "../subjects/art/cinema/skills.json",
+      "questionDirectory": "../subjects/art/cinema/questions/"
+    },
+    {
+      "id": "lit",
+      "code": "LIT",
+      "name": "Littérature",
+      "path": "../subjects/art/litterature/subject.json",
+      "skillsPath": "../subjects/art/litterature/skills.json",
+      "questionDirectory": "../subjects/art/litterature/questions/"
+    },
+    {
+      "id": "ani",
+      "code": "ANI",
+      "name": "Animation 2D/3D",
+      "path": "../subjects/art/animation/subject.json",
+      "skillsPath": "../subjects/art/animation/skills.json",
+      "questionDirectory": "../subjects/art/animation/questions/"
+    },
+    {
+      "id": "fin",
+      "code": "FIN",
+      "name": "Finance",
+      "path": "../subjects/vie/finance/subject.json",
+      "skillsPath": "../subjects/vie/finance/skills.json",
+      "questionDirectory": "../subjects/vie/finance/questions/"
+    },
+    {
+      "id": "com",
+      "code": "COM",
+      "name": "Communication",
+      "path": "../subjects/vie/communication/subject.json",
+      "skillsPath": "../subjects/vie/communication/skills.json",
+      "questionDirectory": "../subjects/vie/communication/questions/"
+    },
+    {
+      "id": "rh",
+      "code": "RH",
+      "name": "Relations humaines",
+      "path": "../subjects/vie/relations_humaines/subject.json",
+      "skillsPath": "../subjects/vie/relations_humaines/skills.json",
+      "questionDirectory": "../subjects/vie/relations_humaines/questions/"
+    },
+    {
+      "id": "rhet",
+      "code": "RHET",
+      "name": "Rhétorique & éloquence",
+      "path": "../subjects/vie/rhetoquence/subject.json",
+      "skillsPath": "../subjects/vie/rhetoquence/skills.json",
+      "questionDirectory": "../subjects/vie/rhetoquence/questions/"
+    },
+    {
+      "id": "neg",
+      "code": "NEG",
+      "name": "Négociation & vente",
+      "path": "../subjects/vie/negociation/subject.json",
+      "skillsPath": "../subjects/vie/negociation/skills.json",
+      "questionDirectory": "../subjects/vie/negociation/questions/"
+    },
+    {
+      "id": "jur",
+      "code": "JUR",
+      "name": "Droit",
+      "path": "../subjects/vie/droit/subject.json",
+      "skillsPath": "../subjects/vie/droit/skills.json",
+      "questionDirectory": "../subjects/vie/droit/questions/"
+    },
+    {
+      "id": "nut",
+      "code": "NUT",
+      "name": "Nutrition",
+      "path": "../subjects/vie/nutrition/subject.json",
+      "skillsPath": "../subjects/vie/nutrition/skills.json",
+      "questionDirectory": "../subjects/vie/nutrition/questions/"
+    },
+    {
+      "id": "spo",
+      "code": "SPO",
+      "name": "Sport & physiologie",
+      "path": "../subjects/vie/sport_physio/subject.json",
+      "skillsPath": "../subjects/vie/sport_physio/skills.json",
+      "questionDirectory": "../subjects/vie/sport_physio/questions/"
+    },
+    {
+      "id": "pol",
+      "code": "POL",
+      "name": "Politique",
+      "path": "../subjects/human/politique/subject.json",
+      "skillsPath": "../subjects/human/politique/skills.json",
+      "questionDirectory": "../subjects/human/politique/questions/"
+    },
+    {
+      "id": "rel",
+      "code": "REL",
+      "name": "Histoire des religions",
+      "path": "../subjects/human/religions/subject.json",
+      "skillsPath": "../subjects/human/religions/skills.json",
+      "questionDirectory": "../subjects/human/religions/questions/"
+    },
+    {
+      "id": "eth",
+      "code": "ETH",
+      "name": "Éthique",
+      "path": "../subjects/human/ethique/subject.json",
+      "skillsPath": "../subjects/human/ethique/skills.json",
+      "questionDirectory": "../subjects/human/ethique/questions/"
+    },
+    {
+      "id": "ped",
+      "code": "PED",
+      "name": "Pédagogie",
+      "path": "../subjects/human/pedagogie/subject.json",
+      "skillsPath": "../subjects/human/pedagogie/skills.json",
+      "questionDirectory": "../subjects/human/pedagogie/questions/"
+    },
+    {
+      "id": "crim",
+      "code": "CRIM",
+      "name": "Criminologie",
+      "path": "../subjects/human/criminologie/subject.json",
+      "skillsPath": "../subjects/human/criminologie/skills.json",
+      "questionDirectory": "../subjects/human/criminologie/questions/"
+    },
+    {
+      "id": "med",
+      "code": "MED",
+      "name": "Média & journalisme",
+      "path": "../subjects/human/media/subject.json",
+      "skillsPath": "../subjects/human/media/skills.json",
+      "questionDirectory": "../subjects/human/media/questions/"
+    },
+    {
+      "id": "biogen",
+      "code": "BIOGEN",
+      "name": "Génétique",
+      "path": "../subjects/human/genetique/subject.json",
+      "skillsPath": "../subjects/human/genetique/skills.json",
+      "questionDirectory": "../subjects/human/genetique/questions/"
+    },
+    {
+      "id": "cui",
+      "code": "CUI",
+      "name": "Cuisine",
+      "path": "../subjects/daily/cuisine/subject.json",
+      "skillsPath": "../subjects/daily/cuisine/skills.json",
+      "questionDirectory": "../subjects/daily/cuisine/questions/"
+    },
+    {
+      "id": "jar",
+      "code": "JAR",
+      "name": "Jardinage",
+      "path": "../subjects/daily/jardinage/subject.json",
+      "skillsPath": "../subjects/daily/jardinage/skills.json",
+      "questionDirectory": "../subjects/daily/jardinage/questions/"
+    },
+    {
+      "id": "bric",
+      "code": "BRIC",
+      "name": "Bricolage",
+      "path": "../subjects/daily/bricolage/subject.json",
+      "skillsPath": "../subjects/daily/bricolage/skills.json",
+      "questionDirectory": "../subjects/daily/bricolage/questions/"
+    },
+    {
+      "id": "sec",
+      "code": "SEC",
+      "name": "Sécurité & prévention",
+      "path": "../subjects/daily/securite/subject.json",
+      "skillsPath": "../subjects/daily/securite/skills.json",
+      "questionDirectory": "../subjects/daily/securite/questions/"
+    },
+    {
+      "id": "pre",
+      "code": "PRE",
+      "name": "Premiers secours",
+      "path": "../subjects/daily/premiers_secours/subject.json",
+      "skillsPath": "../subjects/daily/premiers_secours/skills.json",
+      "questionDirectory": "../subjects/daily/premiers_secours/questions/"
+    },
+    {
+      "id": "con",
+      "code": "CON",
+      "name": "Consommation & vie quotidienne",
+      "path": "../subjects/daily/consommation/subject.json",
+      "skillsPath": "../subjects/daily/consommation/skills.json",
+      "questionDirectory": "../subjects/daily/consommation/questions/"
+    },
+    {
+      "id": "voy",
+      "code": "VOY",
+      "name": "Voyage & tourisme",
+      "path": "../subjects/daily/voyage/subject.json",
+      "skillsPath": "../subjects/daily/voyage/skills.json",
+      "questionDirectory": "../subjects/daily/voyage/questions/"
+    },
+    {
+      "id": "cod",
+      "code": "COD",
+      "name": "Code de la route & permis",
+      "path": "../subjects/daily/code_permis/subject.json",
+      "skillsPath": "../subjects/daily/code_permis/skills.json",
+      "questionDirectory": "../subjects/daily/code_permis/questions/"
+    },
+    {
+      "id": "ecologie",
+      "code": "ECO",
+      "name": "Écologie",
+      "path": "../subjects/daily/ecologie/subject.json",
+      "skillsPath": "../subjects/daily/ecologie/skills.json",
+      "questionDirectory": "../subjects/daily/ecologie/questions/"
+    },
+    {
+      "id": "lifcyb",
+      "code": "LIFCYB",
+      "name": "Cybersécurité",
+      "path": "../subjects/special/cybersecurite/subject.json",
+      "skillsPath": "../subjects/special/cybersecurite/skills.json",
+      "questionDirectory": "../subjects/special/cybersecurite/questions/"
+    },
+    {
+      "id": "lifcis",
+      "code": "LIFCIS",
+      "name": "Cisco",
+      "path": "../subjects/special/cisco/subject.json",
+      "skillsPath": "../subjects/special/cisco/skills.json",
+      "questionDirectory": "../subjects/special/cisco/questions/"
+    },
+    {
+      "id": "lifcry",
+      "code": "LIFCRY",
+      "name": "Cryptographie",
+      "path": "../subjects/special/cryptographie/subject.json",
+      "skillsPath": "../subjects/special/cryptographie/skills.json",
+      "questionDirectory": "../subjects/special/cryptographie/questions/"
+    },
+    {
+      "id": "lifeth",
+      "code": "LIFETH",
+      "name": "Hacking éthique",
+      "path": "../subjects/special/hack_ethique/subject.json",
+      "skillsPath": "../subjects/special/hack_ethique/skills.json",
+      "questionDirectory": "../subjects/special/hack_ethique/questions/"
+    },
+    {
+      "id": "liflin",
+      "code": "LIFLIN",
+      "name": "Programmation de bas niveau",
+      "path": "../subjects/special/prog_low/subject.json",
+      "skillsPath": "../subjects/special/prog_low/skills.json",
+      "questionDirectory": "../subjects/special/prog_low/questions/"
+    },
+    {
+      "id": "lifpar",
+      "code": "LIFPAR",
+      "name": "Programmation parallèle",
+      "path": "../subjects/special/prog_parallel/subject.json",
+      "skillsPath": "../subjects/special/prog_parallel/skills.json",
+      "questionDirectory": "../subjects/special/prog_parallel/questions/"
+    },
+    {
+      "id": "lifapi",
+      "code": "LIFAPI",
+      "name": "Développement d’API",
+      "path": "../subjects/special/api/subject.json",
+      "skillsPath": "../subjects/special/api/skills.json",
+      "questionDirectory": "../subjects/special/api/questions/"
+    },
+    {
+      "id": "lifux",
+      "code": "LIFUX",
+      "name": "UX/UI design",
+      "path": "../subjects/special/ux_ui/subject.json",
+      "skillsPath": "../subjects/special/ux_ui/skills.json",
+      "questionDirectory": "../subjects/special/ux_ui/questions/"
+    },
+    {
+      "id": "unix",
+      "code": "UNIX",
+      "name": "UNIX",
+      "path": "../subjects/special/unix/subject.json",
+      "skillsPath": "../subjects/special/unix/skills.json",
+      "questionDirectory": "../subjects/special/unix/questions/"
+    },
+    {
+      "id": "lifgit",
+      "code": "LIFGIT",
+      "name": "Git & versionnage",
+      "path": "../subjects/special/git/subject.json",
+      "skillsPath": "../subjects/special/git/skills.json",
+      "questionDirectory": "../subjects/special/git/questions/"
+    },
+    {
+      "id": "lifml",
+      "code": "LIFML",
+      "name": "Machine learning",
+      "path": "../subjects/special/machine_learning/subject.json",
+      "skillsPath": "../subjects/special/machine_learning/skills.json",
+      "questionDirectory": "../subjects/special/machine_learning/questions/"
+    },
+    {
+      "id": "lifdl",
+      "code": "LIFDL",
+      "name": "Deep learning",
+      "path": "../subjects/special/deep_learning/subject.json",
+      "skillsPath": "../subjects/special/deep_learning/skills.json",
+      "questionDirectory": "../subjects/special/deep_learning/questions/"
+    },
+    {
+      "id": "lifnlp",
+      "code": "LIFNLP",
+      "name": "Traitement du langage naturel",
+      "path": "../subjects/special/lifnlp/subject.json",
+      "skillsPath": "../subjects/special/lifnlp/skills.json",
+      "questionDirectory": "../subjects/special/lifnlp/questions/"
+    },
+    {
+      "id": "lifimage",
+      "code": "LIFIMAGE",
+      "name": "Traitement d’images et vidéo",
+      "path": "../subjects/special/traitement_images/subject.json",
+      "skillsPath": "../subjects/special/traitement_images/skills.json",
+      "questionDirectory": "../subjects/special/traitement_images/questions/"
+    },
+    {
+      "id": "lifihm",
+      "code": "LIFIHM",
+      "name": "Interaction humain-machine",
+      "path": "../subjects/special/ihm/subject.json",
+      "skillsPath": "../subjects/special/ihm/skills.json",
+      "questionDirectory": "../subjects/special/ihm/questions/"
+    },
+    {
+      "id": "lifemb",
+      "code": "LIFEMB",
+      "name": "Systèmes embarqués",
+      "path": "../subjects/special/systeme_embarque/subject.json",
+      "skillsPath": "../subjects/special/systeme_embarque/skills.json",
+      "questionDirectory": "../subjects/special/systeme_embarque/questions/"
+    },
+    {
+      "id": "lifalg",
+      "code": "LIFALG",
+      "name": "Structures de données & algorithmique avancée",
+      "path": "../subjects/special/data_structure/subject.json",
+      "skillsPath": "../subjects/special/data_structure/skills.json",
+      "questionDirectory": "../subjects/special/data_structure/questions/"
     }
   ]
 }

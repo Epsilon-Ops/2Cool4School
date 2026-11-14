@@ -1,9 +1,9 @@
 {
-  "id": "astronomy",
-  "code": "ASTRO",
+  "id": "ast",
+  "code": "AST",
   "name": "Astronomie",
-  "emoji": "🔭",
-  "color": "#1E1B4B",
-  "description": "Système solaire, planètes, étoiles, galaxies, trous noirs, nébuleuses, cosmologie, exploration spatiale et phénomènes célestes.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

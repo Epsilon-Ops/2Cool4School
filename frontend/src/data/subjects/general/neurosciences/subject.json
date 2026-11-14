@@ -1,9 +1,9 @@
 {
-  "id": "neuroscience",
-  "code": "NEURO",
+  "id": "neu",
+  "code": "NEU",
   "name": "Neurosciences",
-  "emoji": "🧠",
-  "color": "#6366F1",
-  "description": "Structure et fonctionnement du cerveau, neurones, système nerveux, synapses, neurotransmetteurs, plasticité cérébrale, mémoire, cognition et perception.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

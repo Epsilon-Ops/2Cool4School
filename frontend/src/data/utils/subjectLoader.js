@@ -44,11 +44,12 @@ export const subjects = subjectIndex.subjects.map((entry) => {
       return [];
     });
 
+  // Les brouillons (« draft: true ») restent dans les fichiers mais ne sont jamais proposés.
   return {
     ...entry,
     ...metadata,
     skills: skillsData?.skills ?? [],
-    questions
+    questions: questions.filter((q) => q.draft !== true)
   };
 });
 

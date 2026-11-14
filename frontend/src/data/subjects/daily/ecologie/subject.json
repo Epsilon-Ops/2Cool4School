@@ -1,9 +1,9 @@
 {
-    "id": "english",
-    "code": "LANANG",
-    "name": "Anglais",
-    "emoji": "🇬🇧",
-    "color": "#8000FF",
-    "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
-    "category": "langue"
+  "id": "ecologie",
+  "code": "ECO",
+  "name": "Écologie",
+  "emoji": "🇬🇧",
+  "color": "#8000FF",
+  "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
+  "category": "daily"
 }

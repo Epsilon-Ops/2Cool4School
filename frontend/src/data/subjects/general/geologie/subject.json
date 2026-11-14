@@ -1,9 +1,9 @@
 {
-  "id": "geology",
+  "id": "geol",
   "code": "GEOL",
   "name": "Géologie",
-  "emoji": "🪨",
-  "color": "#92400E",
-  "description": "Structure interne de la Terre, roches, minéraux, tectonique des plaques, volcans, séismes, fossiles, érosion et histoire géologique.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

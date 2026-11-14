@@ -1,4 +1,5 @@
 import { useState } from 'react';
+import { parseNumber } from '../engine/template.js';
 
 /** Normalise une réponse libre : minuscules, sans accents, sans espaces. */
 export function normalize(s) {
@@ -40,6 +41,8 @@ export default function Activity({ ex, done, onResult }) {
       return <MultiChoice ex={ex} done={done} onResult={onResult} />;
     case 'flashcard':
       return <Flashcard ex={ex} done={done} onResult={onResult} />;
+    case 'numeric':
+      return <Numeric ex={ex} done={done} onResult={onResult} />;
     case 'fill_blank':
       return <FillBlank ex={ex} done={done} onResult={onResult} />;
     case 'ordering':
@@ -108,6 +111,37 @@ function Flashcard({ ex, done, onResult }) {
           )}
         </>
       )}
+    </>
+  );
+}
+
+/** Calcul : l'élève saisit un nombre. La virgule et le point sont acceptés ; la tolérance dépend des décimales. */
+function Numeric({ ex, done, onResult }) {
+  const [val, setVal] = useState('');
+  const got = parseNumber(val);
+  const ok = got !== null && Math.abs(got - ex.value) < 10 ** -(ex.decimals + 1);
+  const submit = () => {
+    if (!done && got !== null) onResult(ok, ok ? 4 : 1);
+  };
+  return (
+    <>
+      <h2 className="prompt">{ex.prompt}</h2>
+      <p className="cloze">
+        <input
+          className="blank"
+          inputMode="decimal"
+          value={val}
+          disabled={done}
+          placeholder="…"
+          autoFocus
+          aria-label="Votre réponse"
+          onChange={(e) => setVal(e.target.value)}
+          onKeyDown={(e) => e.key === 'Enter' && submit()}
+        />
+      </p>
+      <button className="check" disabled={done || got === null} onClick={submit}>
+        Vérifier
+      </button>
     </>
   );
 }

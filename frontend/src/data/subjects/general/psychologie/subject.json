@@ -1,9 +1,9 @@
 {
-  "id": "psychology",
+  "id": "psy",
   "code": "PSY",
   "name": "Psychologie",
-  "emoji": "🧠",
-  "color": "#0D9488",
-  "description": "Cognition, mémoire, émotions, apprentissage, personnalité, comportement, développement humain, perception, motivation et relations interpersonnelles.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

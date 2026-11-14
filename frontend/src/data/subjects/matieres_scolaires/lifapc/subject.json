@@ -1,7 +1,7 @@
 {
   "id": "lifapc",
   "code": "LIFAPC",
-  "name": "Algorithmique & C++",
+  "name": "Algorithmique, Programmation et Complexité",
   "emoji": "⚙️",
   "color": "#1cb0f6",
   "description": "Complexité, tris, recherche, listes chaînées et templates en C++.",

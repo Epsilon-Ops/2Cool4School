@@ -1,9 +1,9 @@
 {
-    "id": "liflf",
-    "code": "LIFLF",
-    "name": "Théorie des langages formels",
-    "emoji": "💬",
-    "color": "#525252",
-    "description": "Étude des modèles mathématiques, des automates et des règles abstraites permettant de définir et de traduire des langages de programmation.",
-    "category": "scolaire"
+  "id": "liflf",
+  "code": "LIFLF",
+  "name": "Théorie des langages formels",
+  "emoji": "💬",
+  "color": "#525252",
+  "description": "Étude des modèles mathématiques, des automates et des règles abstraites permettant de définir et de traduire des langages de programmation.",
+  "category": "scolaire"
 }

@@ -1,9 +1,9 @@
 {
-    "id": "english",
-    "code": "LANANG",
-    "name": "Anglais",
-    "emoji": "🇬🇧",
-    "color": "#8000FF",
-    "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
-    "category": "langue"
+  "id": "con",
+  "code": "CON",
+  "name": "Consommation & vie quotidienne",
+  "emoji": "🇬🇧",
+  "color": "#8000FF",
+  "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
+  "category": "daily"
 }

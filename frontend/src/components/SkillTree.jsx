@@ -1,4 +1,4 @@
-import { Fragment, useState } from 'react';
+import { useState } from 'react';
 import { dueQuestions } from '../engine/selection.js';
 import { UNLOCK } from '../engine/mastery.js';
 import { DOMAIN_REQUIREMENTS } from '../engine/gamification.js';
@@ -10,11 +10,7 @@ const ZIGZAG = [50, 24, 50, 76]; // positions horizontales (en %) du chemin
 
 const EMPTY = { mastery: 0, qCount: 0, certified: null, gap: false, events: 0 };
 
-/** Libellé de catégorie : « scolaire », « langue » ou, pour le reste, « optionnelle ». */
-const CATEGORY_LABEL = {
-  scolaire: 'Matières scolaires',
-  langue: 'Langues',
-};
+import categories from '../data/utils/categories.json';
 
 export default function SkillTree({
   subjects, bank, stats, progress, config, setConfig, onStart, onReview, onMix,
@@ -48,15 +44,33 @@ export default function SkillTree({
   const playable = flat.filter((s) => isPlayable(s.id));
   const certifiedCount = playable.filter((s) => st(s.id).certified).length;
   const nextId = flat.find((s) => statusOf(s) === 'available')?.id;
+
+  // Marqueur « Commencer / Continuer » : une fois par matière, sur la première compétence disponible
+  // dont la maîtrise est sous 80 %. Dès qu'elle atteint 80 %, le marqueur passe à la suivante.
+  const NEXT_MASTERY = 80;
+  const nextBySub = {};
+  for (const s of flat) {
+    if (nextBySub[s.subjectId]) continue;
+    if (statusOf(s) === 'available' && st(s.id).mastery < NEXT_MASTERY) nextBySub[s.subjectId] = s.id;
+  }
   const dueCount = dueQuestions(bank, progress).length;
   const selected = selectedId ? byIdFlat[selectedId] : null;
   const gapCount = stats.gaps.length;
+
+  const catOf = (sub) => sub.category ?? 'scolaire';
+  const catOfSubject = Object.fromEntries(subjects.map((sub) => [sub.id, catOf(sub)]));
 
   // Matières dépliées : par défaut celle qui contient la compétence ciblée ou la prochaine.
   const [openIds, setOpenIds] = useState(() => {
     const target = focusId ?? nextId;
     const first = subjects.find((sub) => sub.skills.some((s) => s.id === target)) ?? subjects[0];
     return new Set(first ? [first.id] : []);
+  });
+  // Catégories dépliées : « Matières scolaires » par défaut, plus celle qui contient la cible.
+  const [openCats, setOpenCats] = useState(() => {
+    const target = focusId ?? nextId;
+    const first = subjects.find((sub) => sub.skills.some((s) => s.id === target));
+    return new Set(['scolaire', ...(first ? [catOf(first)] : [])]);
   });
   const toggleUnit = (id) =>
     setOpenIds((prev) => {
@@ -65,7 +79,60 @@ export default function SkillTree({
       else next.add(id);
       return next;
     });
+  const toggleCat = (id) =>
+    setOpenCats((prev) => {
+      const next = new Set(prev);
+      if (next.has(id)) next.delete(id);
+      else next.add(id);
+      return next;
+    });
+  const openCat = (id) => setOpenCats((prev) => (prev.has(id) ? prev : new Set(prev).add(id)));
   const openUnit = (id) => setOpenIds((prev) => (prev.has(id) ? prev : new Set(prev).add(id)));
+
+  const renderUnit = (sub) => {
+    const isOpen = openIds.has(sub.id);
+    const subPlayable = sub.skills.filter((s) => isPlayable(s.id));
+    const doneCount = subPlayable.filter((s) => st(s.id).certified).length;
+    const bodyId = `unit-body-${sub.id}`;
+    const locked = domainLocked(sub.id);
+    const required = DOMAIN_REQUIREMENTS[sub.id] ?? 0;
+    const certCount = flat.filter((s) => st(s.id).certified).length;
+    return (
+      <section
+        key={sub.id}
+        id={`unit-${sub.id}`}
+        className={`unit${isOpen ? '' : ' collapsed'}${locked ? ' is-locked' : ''}`}
+        style={{ '--c': sub.color }}
+      >
+        <header className="unit-head" onClick={() => toggleUnit(sub.id)}>
+          <div>
+            <span className="unit-code">{sub.code}</span>
+            <h2>
+              <button type="button" className="unit-toggle" aria-expanded={isOpen} aria-controls={bodyId}>
+                <span>{locked ? '🔒 ' : ''}{sub.emoji} {sub.name}</span>
+                <span className="chev" aria-hidden="true">▾</span>
+              </button>
+            </h2>
+            <p>{sub.description}</p>
+            {locked && (
+              <p className="domain-note">
+                Se débloque après {required} certification{required > 1 ? 's' : ''} ({Math.min(certCount, required)}/{required})
+              </p>
+            )}
+          </div>
+          {subPlayable.length > 0 ? <span className="unit-count">{doneCount}/{subPlayable.length}</span> : null}
+        </header>
+
+        <div id={bodyId} hidden={!isOpen}>
+          {subPlayable.length > 0 ? (
+            <Path sub={sub} st={st} statusOf={statusOf} nextId={nextBySub[sub.id]} selectedId={selectedId} onSelect={setSelectedId} />
+          ) : (
+            <p className="muted soon-note">Bientôt disponible : les exercices de cette matière arrivent.</p>
+          )}
+        </div>
+      </section>
+    );
+  };
 
   return (
     <>
@@ -101,72 +168,38 @@ export default function SkillTree({
         </button>
       </div>
 
-      <nav className="unit-nav" aria-label="Matières">
-        {subjects.map((sub) => (
-          <a key={sub.id} href={`#unit-${sub.id}`} style={{ '--c': sub.color }} onClick={() => openUnit(sub.id)}>
-            {sub.emoji} {sub.code}
+      <nav className="unit-nav" aria-label="Catégories">
+        {categories.map((cat) => (
+          <a key={cat.id} href={`#cat-${cat.id}`} style={{ '--c': cat.color }} onClick={() => openCat(cat.id)}>
+            {cat.emoji} {cat.label}
           </a>
         ))}
       </nav>
 
-      {subjects.map((sub, i) => {
-        const isOpen = openIds.has(sub.id);
-        const subPlayable = sub.skills.filter((s) => isPlayable(s.id));
-        const doneCount = subPlayable.filter((s) => st(s.id).certified).length;
-        const bodyId = `unit-body-${sub.id}`;
-        const catOf = (s) => s.category ?? 'scolaire';
-        const newCat = i === 0 || catOf(sub) !== catOf(subjects[i - 1]);
-        const locked = domainLocked(sub.id);
-        const required = DOMAIN_REQUIREMENTS[sub.id] ?? 0;
-        const certCount = flat.filter((s) => st(s.id).certified).length;
+      {categories.map((cat) => {
+        const list = subjects.filter((sub) => catOf(sub) === cat.id);
+        if (!list.length) return null;
+        const isCatOpen = openCats.has(cat.id);
+        const withContent = list.filter((sub) => sub.skills.some((s) => isPlayable(s.id))).length;
         return (
-          <Fragment key={sub.id}>
-          {newCat && (
-            <h2 className="cat-title">{CATEGORY_LABEL[catOf(sub)] ?? 'Matières optionnelles'}</h2>
-          )}
-          <section
-            key={sub.id}
-            id={`unit-${sub.id}`}
-            className={`unit${isOpen ? '' : ' collapsed'}${locked ? ' is-locked' : ''}`}
-            style={{ '--c': sub.color }}
-          >
-            <header className="unit-head" onClick={() => toggleUnit(sub.id)}>
-              <div>
-                <span className="unit-code">{sub.code}</span>
-                <h2>
-                  <button type="button" className="unit-toggle" aria-expanded={isOpen} aria-controls={bodyId}>
-                    <span>{locked ? '🔒 ' : ''}{sub.emoji} {sub.name}</span>
-                    <span className="chev" aria-hidden="true">▾</span>
-                  </button>
-                </h2>
-                <p>{sub.description}</p>
-                {locked && (
-                  <p className="domain-note">
-                    Se débloque après {required} certification{required > 1 ? 's' : ''} ({Math.min(certCount, required)}/{required})
-                  </p>
-                )}
-              </div>
-              {subPlayable.length > 0 ? (
-                <span className="unit-count">{doneCount}/{subPlayable.length}</span>
-              ) : null}
-            </header>
-
-            <div id={bodyId} hidden={!isOpen}>
-              {subPlayable.length > 0 ? (
-                <Path
-                  sub={sub}
-                  st={st}
-                  statusOf={statusOf}
-                  nextId={nextId}
-                  selectedId={selectedId}
-                  onSelect={setSelectedId}
-                />
-              ) : (
-                <p className="muted soon-note">Bientôt disponible : les exercices de cette matière arrivent.</p>
-              )}
+          <section key={cat.id} id={`cat-${cat.id}`} className={`cat-group${isCatOpen ? '' : ' collapsed'}`} style={{ '--c': cat.color }}>
+            <h2 className="cat-title">
+              <button
+                type="button"
+                className="cat-toggle"
+                aria-expanded={isCatOpen}
+                aria-controls={`cat-body-${cat.id}`}
+                onClick={() => toggleCat(cat.id)}
+              >
+                <span>{cat.emoji} {cat.label}</span>
+                <span className="cat-count">{withContent}/{list.length} avec contenu</span>
+                <span className="chev" aria-hidden="true">▾</span>
+              </button>
+            </h2>
+            <div id={`cat-body-${cat.id}`} className="cat-body" hidden={!isCatOpen}>
+              {list.map((sub) => renderUnit(sub))}
             </div>
           </section>
-          </Fragment>
         );
       })}
 

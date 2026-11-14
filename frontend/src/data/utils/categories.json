@@ -1,0 +1,62 @@
+[
+  {
+    "id": "scolaire",
+    "label": "Matières scolaires",
+    "emoji": "📘",
+    "color": "#1cb0f6"
+  },
+  {
+    "id": "langue",
+    "label": "Langues",
+    "emoji": "🌐",
+    "color": "#8000FF"
+  },
+  {
+    "id": "general",
+    "label": "Enseignement général",
+    "emoji": "🔬",
+    "color": "#58cc02"
+  },
+  {
+    "id": "info",
+    "label": "Enseignement informatique",
+    "emoji": "💻",
+    "color": "#00a5a8"
+  },
+  {
+    "id": "maths",
+    "label": "Enseignement mathématique",
+    "emoji": "➗",
+    "color": "#ff9600"
+  },
+  {
+    "id": "art",
+    "label": "Arts & créativité",
+    "emoji": "🎨",
+    "color": "#ff4b9a"
+  },
+  {
+    "id": "vie",
+    "label": "Vie pratique & développement de soi",
+    "emoji": "🌱",
+    "color": "#ff7a00"
+  },
+  {
+    "id": "human",
+    "label": "Sciences humaines & société",
+    "emoji": "🏛️",
+    "color": "#9b59b6"
+  },
+  {
+    "id": "daily",
+    "label": "Connaissances du quotidien",
+    "emoji": "🏡",
+    "color": "#2ecc71"
+  },
+  {
+    "id": "specialite",
+    "label": "Enseignement de spécialité",
+    "emoji": "🚀",
+    "color": "#e74c3c"
+  }
+]

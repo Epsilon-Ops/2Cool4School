@@ -1,0 +1,17 @@
+[
+  {
+    "id": "draft_lifapc_pointeurs_references",
+    "subject": "lifapc",
+    "skill": "lifapc.pointeurs_references",
+    "difficulty": 1,
+    "prompt": "[À COMPLÉTER] Question du chapitre « Pointeurs et références C++ »",
+    "answer": "[À COMPLÉTER]",
+    "distractors": [],
+    "explanation": "À compléter.",
+    "tags": [],
+    "formats": [
+      "flashcard"
+    ],
+    "draft": true
+  }
+]

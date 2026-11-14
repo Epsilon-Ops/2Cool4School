@@ -1,9 +1,9 @@
 {
-  "id": "anthropology",
-  "code": "ANTHRO",
+  "id": "ant",
+  "code": "ANT",
   "name": "Anthropologie",
-  "emoji": "🌍",
-  "color": "#B45309",
-  "description": "Origines de l'humanité, évolution humaine, cultures, sociétés, coutumes, traditions, parenté, diversité culturelle, anthropologie sociale et biologique.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

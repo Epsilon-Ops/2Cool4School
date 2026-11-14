@@ -18,7 +18,7 @@ export const LEVELS = [
   { min: 95, name: 'Maître' }, // exige aussi la certification
 ];
 
-export const PRACTICE_FORMATS = ['fill_blank', 'ordering'];
+export const PRACTICE_FORMATS = ['fill_blank', 'ordering', 'numeric'];
 export const kindOf = (format) => (PRACTICE_FORMATS.includes(format) ? 'practice' : 'theory');
 
 export const REFERENCE_COUNT = 8; // nombre de questions à réussir pour une maîtrise complète

@@ -1,0 +1,17 @@
+[
+  {
+    "id": "draft_lifapc_preuves",
+    "subject": "lifapc",
+    "skill": "lifapc.preuves",
+    "difficulty": 1,
+    "prompt": "[À COMPLÉTER] Question du chapitre « Correction et preuve des algorithmes »",
+    "answer": "[À COMPLÉTER]",
+    "distractors": [],
+    "explanation": "À compléter.",
+    "tags": [],
+    "formats": [
+      "flashcard"
+    ],
+    "draft": true
+  }
+]

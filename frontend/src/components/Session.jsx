@@ -2,7 +2,7 @@ import { useEffect, useRef, useState } from 'react';
 import Activity from './Activity.jsx';
 import Mascot from './Mascot.jsx';
 import { pickQuestions, dueQuestions } from '../engine/selection.js';
-import { availableFormats, buildExercise, FORMAT_LABELS, explanationFor } from '../engine/formats.js';
+import { availableFormats, buildExercise, FORMAT_LABELS, explainOf } from '../engine/formats.js';
 import { xpForAnswer } from '../engine/mastery.js';
 
 function makeExercise(q) {
@@ -19,7 +19,7 @@ function revealOf(ex, q) {
     case 'ordering': return ex.steps.join(' → ');
     case 'matching': return ex.pairs.map(([l, r]) => `${l} = ${r}`).join(' · ');
     case 'multi_choice': return ex.answers.join(' · ');
-    default: return q.answer;
+    default: return ex.answer ?? q.answer;
   }
 }
 
@@ -168,9 +168,9 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
               <ol className="correction">
                 {log.map((l, i) => (
                   <li key={i} className={l.ok ? 'good' : 'bad'}>
-                    <b>{l.ok ? '✓' : '✗'} {l.q.prompt}</b>
+                    <b>{l.ok ? '✓' : '✗'} {l.ex.prompt}</b>
                     <span>Réponse : {revealOf(l.ex, l.q)}</span>
-                    <p>{explanationFor(l.q, config.explain)}</p>
+                    <p>{explainOf(l.ex, config.explain)}</p>
                   </li>
                 ))}
               </ol>
@@ -211,7 +211,7 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
             <Mascot mood={feedback.ok ? 'happy' : 'sad'} size={68} />
             <div className="txt">
               <strong>{feedback.ok ? 'Bravo !' : 'Pas tout à fait'}</strong>
-              <p>{explanationFor(current, config.explain)}</p>
+              <p>{explainOf(ex, config.explain)}</p>
               {!feedback.ok && <p className="answer"><b>Réponse :</b> {revealOf(ex, current)}</p>}
             </div>
             <button className="continue" onClick={next}>Continuer</button>

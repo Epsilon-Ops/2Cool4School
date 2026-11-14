@@ -2,17 +2,9 @@ import { useState } from 'react';
 import { courses } from '../data/utils/courseLoader.js';
 import { noteKey, notionPct, sectionPct, coursePct, groupPct } from '../engine/courseProgress.js';
 
-const CATEGORIES = [
-  ['scolaire', 'Matières scolaires'],
-  ['optionnelle', 'Matières optionnelles'],
-  ['langue', 'Langues'],
-  ['general', 'Enseignement général'],
-  ['specialite', 'Enseignement de spécialité'],
-  ['approfondissement', "Matières d'approfondissement"],
-  ['complementaire', 'Matières complémentaires'],
-  ['professionnelle', 'Enseignement professionnel'],
-  ['interdisciplinaire', 'Enseignement interdisciplinaire'],
-];
+import categories from '../data/utils/categories.json';
+
+const CATEGORIES = categories.map((c) => [c.id, c.label]);
 
 const TABS = [
   ['analogies', 'Analogies'],

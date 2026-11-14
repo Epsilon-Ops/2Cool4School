@@ -1,9 +1,9 @@
 {
-  "id": "philosophy",
-  "code": "PHILO",
+  "id": "phi",
+  "code": "PHI",
   "name": "Philosophie",
-  "emoji": "🦉",
-  "color": "#7E22CE",
-  "description": "Métaphysique, morale, éthique, logique, épistémologie, philosophie politique, liberté, justice, conscience et grands penseurs.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

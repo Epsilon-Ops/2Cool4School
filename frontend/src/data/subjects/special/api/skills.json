@@ -1,3 +1,11 @@
 {
-  "skills": []
+  "skills": [
+    {
+      "id": "lifapi.chapitre_1",
+      "name": "Chapitre 1 (à définir)",
+      "short": "Chapitre 1",
+      "prereq": [],
+      "description": "Chapitre provisoire : à remplacer par le programme."
+    }
+  ]
 }

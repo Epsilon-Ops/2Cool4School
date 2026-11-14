@@ -1,0 +1,17 @@
+[
+  {
+    "id": "draft_neg_chapitre_1",
+    "subject": "neg",
+    "skill": "neg.chapitre_1",
+    "difficulty": 1,
+    "prompt": "[À COMPLÉTER] Question du chapitre « Chapitre 1 (à définir) »",
+    "answer": "[À COMPLÉTER]",
+    "distractors": [],
+    "explanation": "À compléter.",
+    "tags": [],
+    "formats": [
+      "flashcard"
+    ],
+    "draft": true
+  }
+]

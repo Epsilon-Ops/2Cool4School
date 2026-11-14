@@ -1,9 +1,9 @@
 {
-    "id": "english",
-    "code": "LANANG",
-    "name": "Anglais",
-    "emoji": "🇬🇧",
-    "color": "#8000FF",
-    "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
-    "category": "langue"
+  "id": "unix",
+  "code": "UNIX",
+  "name": "UNIX",
+  "emoji": "🇬🇧",
+  "color": "#8000FF",
+  "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression anglaise.",
+  "category": "specialite"
 }

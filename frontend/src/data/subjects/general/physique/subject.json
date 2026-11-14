@@ -1,9 +1,9 @@
 {
-  "id": "physics",
+  "id": "phy",
   "code": "PHY",
   "name": "Physique",
-  "emoji": "⚛️",
-  "color": "#0400db",
-  "description": "Mécanique, forces, mouvement, énergie, électricité, magnétisme, optique, thermodynamique, ondes et phénomènes physiques.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }

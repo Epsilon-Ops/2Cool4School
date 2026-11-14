@@ -1,9 +1,9 @@
 {
-  "id": "economics",
+  "id": "eco",
   "code": "ECO",
   "name": "Économie",
-  "emoji": "📈",
-  "color": "#0891B2",
-  "description": "Microéconomie, macroéconomie, marchés, offre et demande, monnaie, inflation, chômage, croissance, commerce international et politiques économiques.",
+  "emoji": "🔬",
+  "color": "#58cc02",
+  "description": "Contenu en préparation.",
   "category": "general"
 }
