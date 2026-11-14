@@ -1,0 +1,9 @@
+{
+  "id": "reseaux",
+  "code": "LIFRES",
+  "name": "Réseaux",
+  "emoji": "🌐",
+  "color": "#262626",
+  "description": "Interconnexion des équipements, nombre de liaisons, débits et moyens de transmission.",
+  "category": "scolaire"
+}

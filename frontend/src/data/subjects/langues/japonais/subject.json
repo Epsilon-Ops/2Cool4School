@@ -1,0 +1,9 @@
+{
+  "id": "japanese",
+  "code": "LANJAP",
+  "name": "Japonais",
+  "emoji": "🇯🇵",
+  "color": "#BC002D",
+  "description": "Grammaire, vocabulaire, hiragana, katakana, kanji, prononciation, compréhension et expression japonaise.",
+  "category": "langue"
+}

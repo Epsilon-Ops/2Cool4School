@@ -1,0 +1,9 @@
+{
+  "id": "geography",
+  "code": "GEO",
+  "name": "Géographie",
+  "emoji": "🌍",
+  "color": "#2E8B57",
+  "description": "Continents, pays, capitales, reliefs, climats, océans, population, cartographie et enjeux géographiques mondiaux.",
+  "category": "general"
+}

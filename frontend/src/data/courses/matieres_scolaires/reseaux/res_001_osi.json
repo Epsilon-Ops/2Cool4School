@@ -1,0 +1,517 @@
+{
+  "id": "reseaux-osi",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Architecture en couches et modèle OSI",
+  "intro": "Un réseau est trop complexe pour être conçu d'un seul bloc. Du signal électrique sur le câble jusqu'à l'affichage d'une page web, tout est découpé en couches indépendantes qui se rendent service. Explore chaque étape pas à pas, puis entraîne-toi sur les questions associées.",
+  "sections": [
+    {
+      "id": "transmission-information",
+      "title": "1. Transformer l'information en signal",
+      "body": [
+        "Avant de voyager sur un réseau, toute information doit être traduite en une suite de 0 et de 1. Les [[données discrètes]] (comme un fichier texte avec le code ASCII) ont un début et une fin et se traduisent directement via un [[codage]]. Les [[données continues]] (comme la voix) varient sans interruption et doivent d'abord passer par un [[échantillonnage]] (convertisseur analogique-numérique).",
+        "Une fois la séquence binaire prête, la carte réseau génère un signal adapté au câble ou aux ondes : en [[bande de base]] (tensions électriques +5 V et -5 V sur Ethernet cuivre) ou via un [[modem]] qui module un signal analogique sur différentes fréquences (idéal pour le sans-fil et les longues distances)."
+      ],
+      "terms": [
+        {
+          "term": "données discrètes",
+          "def": "Données finies avec un début et une fin (ex. un fichier), traduites directement en binaire."
+        },
+        {
+          "term": "données continues",
+          "def": "Variation continue d'un phénomène physique (ex. la voix, la température) contenant une infinité de valeurs."
+        },
+        {
+          "term": "codage",
+          "def": "Association d'une séquence binaire à chaque symbole d'un fichier (comme le code ASCII pour l'alphabet)."
+        },
+        {
+          "term": "échantillonnage",
+          "def": "Mesure d'un signal analogique à intervalles de temps réguliers pour le convertir en valeurs numériques entières."
+        },
+        {
+          "term": "bande de base",
+          "def": "Technique de transmission générant directement un signal électrique à niveaux de tension (ex. +5 V pour 1, -5 V pour 0)."
+        },
+        {
+          "term": "modem",
+          "def": "Équipement (ETCD) qui convertit un signal numérique en signal analogique modulé à l'émission, et inversement à la réception."
+        },
+        {
+          "term": "ETTD / ETCD",
+          "def": "L'ETTD est l'équipement terminal (ordinateur) relié par une jonction à l'ETCD (modem ou codeur), qui accède à la ligne de transmission."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "C'est comme dicter un rapport au téléphone : ta voix (signal continu) est convertie en mots écrits (binaire), puis envoyée par courrier ou par mail selon le canal disponible."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Un fichier texte, c'est comme des briques Lego déjà prêtes à compter. Ta voix dans un vocal Discord, c'est une vague fluide : ton micro prend des photos ultra-rapides de la vague pour la transformer en chiffres."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_028",
+        "reseaux_architecture_029",
+        "reseaux_architecture_030",
+        "reseaux_architecture_031",
+        "reseaux_architecture_032",
+        "reseaux_architecture_033",
+        "reseaux_architecture_034",
+        "reseaux_architecture_035"
+      ]
+    },
+    {
+      "id": "supports-et-erreurs",
+      "title": "2. Supports physiques, portée et erreurs",
+      "body": [
+        "Les signaux circulent sur trois grandes familles de supports : le cuivre ([[paire torsadée]] avec prise RJ45 sur courtes distances, ou [[câble coaxial]] plus performant mais plus cher), la [[fibre optique]] (impulsions lumineuses jusqu'à 30 km sans répéteur) et les ondes radio (antennes Wi-Fi/mobiles, ou [[satellite]] pour couvrir les océans malgré une forte latence).",
+        "Quel que soit le support, le signal subit de l'[[atténuation]] (perte de puissance avec la distance, corrigée par un [[répéteur]]) et des [[interférences]] qui peuvent inverser un bit (0 lu comme 1) : c'est une erreur de transmission."
+      ],
+      "terms": [
+        {
+          "term": "paire torsadée",
+          "def": "Câble en cuivre à 4 paires de fils terminé par un connecteur RJ45, utilisé pour Ethernet sur courtes distances."
+        },
+        {
+          "term": "câble coaxial",
+          "def": "Câble à un seul fil de cuivre épais blindé, offrant de meilleurs débits et portée que la paire torsadée, mais plus coûteux."
+        },
+        {
+          "term": "fibre optique",
+          "def": "Support transmettant des ondes lumineuses à très haut débit jusqu'à 30 km sans répéteur."
+        },
+        {
+          "term": "satellite",
+          "def": "Répéteur en orbite offrant une couverture mondiale (navires, zones isolées) et un bon débit, mais avec une très forte latence."
+        },
+        {
+          "term": "atténuation",
+          "def": "Perte progressive de puissance d'un signal au fil de la distance parcourue."
+        },
+        {
+          "term": "répéteur",
+          "def": "Équipement intermédiaire qui régénère un signal affaibli pour prolonger la distance de transmission."
+        },
+        {
+          "term": "interférences",
+          "def": "Perturbations extérieures qui déforment le signal et peuvent faire changer un bit de valeur (erreur de transmission)."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Parler dans un bureau ouvert (paire torsadée) porte à quelques mètres. Pour parler à un collègue à l'autre bout du pays sans perte, il faut une ligne dédiée (fibre) ou un relais (répéteur)."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "La paire torsadée, c'est un petit saut entre deux plateformes ; la fibre optique, c'est un canon qui t'envoie à 30 km sans ralentir ; et le satellite, c'est un nuage Lakitu très haut dans le ciel : il voit toute la carte, mais met du temps à descendre."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_036",
+        "reseaux_architecture_037",
+        "reseaux_architecture_038",
+        "reseaux_architecture_039",
+        "reseaux_architecture_040",
+        "reseaux_architecture_041"
+      ]
+    },
+    {
+      "id": "modes-et-topologies",
+      "title": "3. Modes de transmission et topologies",
+      "body": [
+        "Sur une liaison, le dialogue peut être [[simplex]] (un seul sens, comme la radio), [[half-duplex]] (dans les deux sens mais à tour de rôle) ou [[full-duplex]] (simultanément dans les deux sens). Lorsque plusieurs machines partagent le même support ([[liaison multipoint]]), il faut leur donner des adresses uniques et organiser le [[partage de la parole]] : maître-esclave, politesse (écouter avant d'émettre) ou jeton.",
+        "Les équipements s'organisent selon plusieurs [[topologies]] : en [[bus]] (un câble commun), en [[étoile]] (autour d'un nœud central comme la box ou un commutateur), en [[anneau]] (chaque machine reliée à sa voisine) ou [[maillée]] (plusieurs chemins possibles pour assurer la [[redondance]] au cœur d'Internet)."
+      ],
+      "terms": [
+        {
+          "term": "simplex",
+          "def": "Liaison unidirectionnelle : les signaux ne circulent que dans un seul sens (ex. télévision, radio)."
+        },
+        {
+          "term": "half-duplex",
+          "def": "Liaison bidirectionnelle à l'alternat : on peut émettre ou recevoir, mais pas en même temps."
+        },
+        {
+          "term": "full-duplex",
+          "def": "Liaison bidirectionnelle simultanée : deux cartes réseau émettent et reçoivent en même temps."
+        },
+        {
+          "term": "liaison multipoint",
+          "def": "Liaison où plusieurs cartes réseau partagent le même support physique (ex. Wi-Fi, bus Ethernet)."
+        },
+        {
+          "term": "partage de la parole",
+          "def": "Règle d'accès au support partagé : maître-esclave (un chef distribue), politesse (écouter avant d'émettre) ou jeton (droit tournant)."
+        },
+        {
+          "term": "topologies",
+          "def": "Organisation physique ou logique des liaisons : bus, étoile, anneau ou maillée."
+        },
+        {
+          "term": "bus",
+          "def": "Topologie où tous les équipements sont branchés sur un unique support partagé."
+        },
+        {
+          "term": "étoile",
+          "def": "Topologie où tous les appareils sont reliés à un équipement central (commutateur, répéteur ou box). Si le centre tombe, tout est coupé."
+        },
+        {
+          "term": "anneau",
+          "def": "Topologie en boucle fermée où chaque équipement n'est relié qu'au précédent et au suivant."
+        },
+        {
+          "term": "maillée",
+          "def": "Topologie où chaque nœud est relié à plusieurs autres. En maillage total de n nœuds, il faut de l'ordre de n² liaisons."
+        },
+        {
+          "term": "redondance",
+          "def": "Existence de plusieurs chemins alternatifs dans un réseau maillé pour tolérer les pannes et améliorer les performances."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Le simplex, c'est un live Twitch (un seul parle). Le half-duplex, c'est un talkie-walkie (« à toi ! »). Le full-duplex, c'est un appel vocal normal où tout le monde peut parler en même temps."
+        },
+        {
+          "theme": "Eggman (Sonic)",
+          "text": "En étoile, tous les Badniks obéissent directement à la tour centrale d'Eggman : si tu détruis la tour, toute l'armée s'arrête. En réseau maillé, les bases sont reliées entre elles par plein de tunnels : si un tunnel s'effondre, les robots passent par un autre."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_042",
+        "reseaux_architecture_043",
+        "reseaux_architecture_044",
+        "reseaux_architecture_045",
+        "reseaux_architecture_046",
+        "reseaux_architecture_047",
+        "reseaux_architecture_048",
+        "reseaux_architecture_049"
+      ]
+    },
+    {
+      "id": "pourquoi-couches",
+      "title": "4. Pourquoi découper en couches et normaliser ?",
+      "body": [
+        "Au début de l'informatique, chaque constructeur créait son propre réseau incompatible avec les autres. Pour garantir l'[[interopérabilité]], il a fallu [[normaliser]] les règles d'échange sous forme de [[protocoles]] et concevoir le [[modèle OSI]] comme cadre de référence théorique universel.",
+        "Découper un réseau en [[couches]] indépendantes permet d'isoler chaque fonction : on peut remplacer le Wi-Fi par un câble Ethernet sans toucher à son navigateur, et plusieurs applications peuvent réutiliser les mêmes briques communes (comme le [[DNS]] ou IP)."
+      ],
+      "terms": [
+        {
+          "term": "interopérabilité",
+          "def": "Capacité d'équipements et de logiciels de constructeurs différents à communiquer ensemble grâce aux normes."
+        },
+        {
+          "term": "normaliser",
+          "def": "Spécifier les règles, algorithmes et formats d'un protocole dans un document public accessible à tous."
+        },
+        {
+          "term": "protocoles",
+          "def": "Briques logicielles ou matérielles qui définissent le format des messages et l'algorithme exécuté entre deux entités."
+        },
+        {
+          "term": "modèle OSI",
+          "def": "Cadre de référence théorique en 7 couches décrivant l'architecture de tout réseau (chaque réseau réel en est un sous-ensemble)."
+        },
+        {
+          "term": "couches",
+          "def": "Niveaux de service indépendants qui s'appellent les uns les autres pour faire évoluer le réseau sans tout réécrire."
+        },
+        {
+          "term": "DNS",
+          "def": "Protocole applicatif partagé qui traduit un nom de serveur (ex. www.univ-lyon1.fr) en adresse IP."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Dans une entreprise, le service juridique rédige un contrat sans se soucier du transporteur qui livrera le pli. Si l'entreprise change de livreur, les juristes n'ont pas à changer leur façon d'écrire."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "C'est comme les pièces d'un PC gamer : grâce aux normes (USB, PCIe), tu peux changer ta carte graphique ou passer du Wi-Fi à un câble Ethernet sans devoir réinstaller Chrome ou Discord."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_001",
+        "reseaux_architecture_002",
+        "reseaux_architecture_003",
+        "reseaux_architecture_023",
+        "reseaux_architecture_025",
+        "reseaux_architecture_050"
+      ]
+    },
+    {
+      "id": "sept-couches-osi",
+      "title": "5. Les 7 couches du modèle OSI",
+      "body": [
+        "De bas en haut, le modèle OSI empile 7 couches : [[1. Physique]] (bits sur le support), [[2. Liaison]] (trames et adresses MAC entre deux cartes réseau), [[3. Réseau]] (chemin des paquets via les adresses IP), [[4. Transport]] (fiabilité de bout en bout), [[5. Session]] (synchronisation et points de reprise), [[6. Présentation]] (mise en forme et chiffrement SSL) et [[7. Application]] (dialogue client-serveur, ex. HTTP).",
+        "Les couches 1 à 3 sont dites [[point à point]] : elles s'exécutent aussi bien sur les [[terminaux]] que sur les [[équipements intermédiaires]] (commutateurs, routeurs). Les couches 4 à 7 sont de [[bout en bout]] : elles ne tournent que sur les machines terminales (dans l'OS ou l'application)."
+      ],
+      "terms": [
+        {
+          "term": "1. Physique",
+          "def": "Transmet une séquence binaire brute sous forme de signal sur le support. N'ajoute aucun en-tête."
+        },
+        {
+          "term": "2. Liaison",
+          "def": "Gère l'échange entre deux cartes réseau voisines, découpe les bits en trames et utilise les adresses MAC."
+        },
+        {
+          "term": "3. Réseau",
+          "def": "Détermine le chemin à travers le réseau (routage) à l'aide des adresses IP."
+        },
+        {
+          "term": "4. Transport",
+          "def": "Assure le transfert de bout en bout entre applications (ports) et la fiabilité (avec TCP)."
+        },
+        {
+          "term": "5. Session",
+          "def": "Synchronise les échanges et crée des points de reprise (utile pour reprendre un téléchargement interrompu)."
+        },
+        {
+          "term": "6. Présentation",
+          "def": "Transforme et met en forme les données pour l'application (codage, chiffrement SSL/TLS)."
+        },
+        {
+          "term": "7. Application",
+          "def": "Gère le dialogue direct entre processus client et serveur pour rendre le service attendu (ex. HTTP, SMTP, FTP)."
+        },
+        {
+          "term": "terminaux",
+          "def": "Points d'entrée et de sortie des données (ordinateurs, téléphones, tablettes, imprimantes, capteurs)."
+        },
+        {
+          "term": "équipements intermédiaires",
+          "def": "Matériels qui relaient les données dans le réseau (répéteurs, commutateurs, bornes Wi-Fi, routeurs, pare-feu)."
+        },
+        {
+          "term": "point à point",
+          "def": "Lien direct entre deux équipements voisins, sans intermédiaire logique."
+        },
+        {
+          "term": "bout en bout",
+          "def": "Communication entre les deux extrémités, quels que soient les équipements traversés."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Eggman (Sonic)",
+          "text": "Les couches 1 à 3, ce sont les robots relais postés à chaque carrefour (les routeurs) qui lisent juste la direction du prochain carrefour. Les couches 4 à 7, c'est le plan secret d'Eggman lu uniquement à l'arrivée dans sa base finale."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Phrase mémo de haut en bas (7 → 1) : « Aux Pommes Sont Toujours Rouges, Les Pépins » (Application, Présentation, Session, Transport, Réseau, Liaison, Physique)."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_004",
+        "reseaux_architecture_005",
+        "reseaux_architecture_006",
+        "reseaux_architecture_007",
+        "reseaux_architecture_008",
+        "reseaux_architecture_009",
+        "reseaux_architecture_010",
+        "reseaux_architecture_019",
+        "reseaux_architecture_051",
+        "reseaux_architecture_056"
+      ]
+    },
+    {
+      "id": "encapsulation-et-mecanismes",
+      "title": "6. Encapsulation et mécanismes de contrôle",
+      "body": [
+        "Lors de l'[[encapsulation]], chaque couche ajoute son [[en-tête]] devant les données reçues du dessus : D(n) = H(n+1) + D(n+1). Seule la couche 1 n'ajoute rien, tandis que la couche 2 ajoute aussi un [[trailer]] en fin de trame pour le [[checksum]] (calculé à la volée pendant l'émission). Selon la couche, l'unité s'appelle [[message]], [[paquet]] (couche 3) ou [[trame]] (couche 2).",
+        "Le dialogue entre couches homologues est un [[dialogue horizontal]] virtuel, réalisé concrètement par un [[dialogue vertical]] via des instructions (comme les [[sockets]] et les 4 primitives : Requête, Indication, Réponse, Confirmation). Pour gérer les limites du réseau, les protocoles utilisent le découpage/[[fragmentation]], le [[contrôle de flux]] (ralentir l'émetteur, incompatible tel quel avec l'audio/vidéo en direct) et les acquittements (comme le protocole [[send and wait]])."
+      ],
+      "terms": [
+        {
+          "term": "encapsulation",
+          "def": "Ajout de l'en-tête d'une couche aux données de la couche supérieure à l'émission (et retrait à la réception).",
+          "formula": "Dn = Hn+1 + Dn+1"
+        },
+        {
+          "term": "en-tête",
+          "def": "Informations de contrôle (adresses IP, MAC, ports...) ajoutées devant les données par un protocole."
+        },
+        {
+          "term": "trailer",
+          "def": "Queue ajoutée à la fin de la trame (couche 2) contenant le checksum, car son calcul n'est fini qu'après le passage de toutes les données."
+        },
+        {
+          "term": "checksum",
+          "def": "Somme de contrôle (CRC/FCS) calculée sur les données pour détecter si un bit a été modifié pendant le transfert."
+        },
+        {
+          "term": "trame / paquet / message",
+          "def": "Trame = unité de la couche liaison ; Paquet = unité de la couche réseau (IP) ; Message = unité des couches supérieures."
+        },
+        {
+          "term": "dialogue horizontal / vertical",
+          "def": "Horizontal : échange virtuel d'en-têtes entre couches de même niveau. Vertical : appels réels entre couches voisines sur la même machine."
+        },
+        {
+          "term": "sockets",
+          "def": "Interface logicielle permettant à une application de déposer ses données dans un buffer de la couche transport de l'OS."
+        },
+        {
+          "term": "fragmentation",
+          "def": "Découpage d'un paquet IP trop grand en morceaux plus petits pour respecter la taille maximale d'une trame."
+        },
+        {
+          "term": "contrôle de flux",
+          "def": "Mécanisme permettant au récepteur de ralentir ou stopper l'émetteur pour éviter de saturer sa mémoire."
+        },
+        {
+          "term": "send and wait",
+          "def": "Protocole élémentaire de fiabilité : l'émetteur envoie un paquet avec checksum et attend OK avant d'envoyer le suivant (sinon il retransmet)."
+        },
+        {
+          "term": "message",
+          "def": "Donnée complète que l'application veut transmettre."
+        },
+        {
+          "term": "paquet",
+          "def": "Unité de données de la couche réseau : en-tête IP suivi des données."
+        },
+        {
+          "term": "trame",
+          "def": "Unité de données de la couche liaison : en-tête et fin de trame (adresses MAC, contrôle d'erreur)."
+        },
+        {
+          "term": "dialogue horizontal",
+          "def": "Échange entre couches de même niveau sur deux machines, défini par leur protocole."
+        },
+        {
+          "term": "dialogue vertical",
+          "def": "Passage des données entre couches voisines d'une même machine."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Une facture est glissée dans une enveloppe interne (H3), puis dans une pochette courrier (H2), puis dans un bac postal (H1). À l'arrivée, chaque service retire son enveloppe et vérifie le bordereau final (le trailer/checksum)."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Les 4 primitives (Requête → Indication → Réponse → Confirmation), c'est comme envoyer un Snap : tu cliques sur Envoyer (Requête), ton pote reçoit la notif (Indication), il répond (Réponse) et tu vois « Reçu » (Confirmation)."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_012",
+        "reseaux_architecture_013",
+        "reseaux_architecture_014",
+        "reseaux_architecture_020",
+        "reseaux_architecture_021",
+        "reseaux_architecture_024",
+        "reseaux_architecture_026",
+        "reseaux_architecture_027",
+        "reseaux_architecture_052",
+        "reseaux_architecture_053",
+        "reseaux_architecture_054",
+        "reseaux_architecture_055",
+        "reseaux_architecture_058",
+        "reseaux_architecture_059"
+      ]
+    },
+    {
+      "id": "tcp-ip-et-internet",
+      "title": "7. La pile TCP/IP et le fonctionnement d'Internet",
+      "body": [
+        "En pratique, Internet repose sur l'[[architecture TCP/IP]] en 4 couches : Application (HTTP, DNS, SMTP, FTP, SSH, Telnet, et même [[NFS]] avec XDR/RPC), Transport ([[TCP]] ou [[UDP]] avec leurs [[numéros de port]]), Réseau ([[IP]], routage, [[ICMP]], [[ARP]]) et Transmission (Ethernet 802.3, Wi-Fi 802.11, Bluetooth 802.15).",
+        "Parmi ces protocoles, seul [[TCP]] fonctionne en [[mode connecté]] pour garantir une livraison fiable sans perte ni désordre. Tous les autres fonctionnent en [[mode non connecté]] (« best effort »). Lorsqu'on ouvre un site web, le navigateur interroge d'abord le DNS via UDP (port 53), puis ouvre une connexion TCP (port 80) pour envoyer sa requête HTTP GET."
+      ],
+      "terms": [
+        {
+          "term": "architecture TCP/IP",
+          "def": "Pile protocolaire d'Internet simplifiée en 4 couches : Application, Transport, Réseau et Transmission."
+        },
+        {
+          "term": "TCP",
+          "def": "Protocole de transport en mode connecté qui garantit la fiabilité (ordre, sans perte, sans erreur ni duplication)."
+        },
+        {
+          "term": "UDP",
+          "def": "Protocole de transport en mode non connecté, rapide et sans retransmission (détecte les erreurs par checksum mais ne renvoie pas)."
+        },
+        {
+          "term": "numéros de port",
+          "def": "Identifiants utilisés par TCP et UDP pour aiguiller les données vers la bonne application (ex. 80 pour HTTP, 53 pour DNS)."
+        },
+        {
+          "term": "IP",
+          "def": "Protocole de couche réseau qui achemine les paquets d'un routeur à l'autre en mode non connecté (best effort)."
+        },
+        {
+          "term": "ARP / ICMP",
+          "def": "ARP fait le lien entre adresse IP et adresse MAC ; ICMP permet de tester le réseau (commande ping)."
+        },
+        {
+          "term": "mode connecté / non connecté",
+          "def": "Connecté : demande d'accord préalable avant l'échange (comme un appel téléphonique, ex. TCP). Non connecté : envoi direct sans prévenir (comme un SMS)."
+        },
+        {
+          "term": "SSH / Telnet / SMTP / FTP",
+          "def": "Protocoles applicatifs : SSH (accès à distance sécurisé), Telnet (accès à distance non sécurisé), SMTP (envoi d'e-mails), FTP (transfert de fichiers)."
+        },
+        {
+          "term": "NFS",
+          "def": "Network File System : protocole de partage de fichiers à travers le réseau (couche application)."
+        },
+        {
+          "term": "ICMP",
+          "def": "Protocole de messages de contrôle et de diagnostic associé à IP (ex. ping, messages d'erreur)."
+        },
+        {
+          "term": "ARP",
+          "def": "Résout une adresse IP en adresse MAC sur le réseau local."
+        },
+        {
+          "term": "mode connecté",
+          "def": "Une relation est établie avant l'échange, comme avec TCP."
+        },
+        {
+          "term": "mode non connecté",
+          "def": "Chaque message part seul, sans relation préalable, comme avec UDP ou IP."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Super Mario Bros",
+          "text": "UDP, c'est lancer une carapace verte à pleine vitesse : ça part tout de suite, tant pis si elle rate sa cible (parfait pour la vidéo en direct). TCP, c'est un Lakitu qui vérifie que chaque pièce est bien arrivée avant d'en lancer une autre."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Charger une page web, c'est comme commander une pizza : d'abord tu cherches le numéro du resto dans tes contacts (requête DNS en UDP), ensuite tu appelles et tu attends qu'on décroche pour passer ta commande (connexion TCP puis requête HTTP)."
+        }
+      ],
+      "questionIds": [
+        "reseaux_architecture_011",
+        "reseaux_architecture_015",
+        "reseaux_architecture_016",
+        "reseaux_architecture_017",
+        "reseaux_architecture_018",
+        "reseaux_architecture_022",
+        "reseaux_architecture_057",
+        "reseaux_architecture_060",
+        "reseaux_architecture_061",
+        "reseaux_architecture_062",
+        "reseaux_architecture_063",
+        "reseaux_architecture_064",
+        "reseaux_architecture_065",
+        "reseaux_architecture_066",
+        "reseaux_architecture_067",
+        "reseaux_architecture_068",
+        "reseaux_architecture_069"
+      ]
+    }
+  ],
+  "chapter": "Architecture en couches",
+  "chapterOrder": 1,
+  "order": 1
+}

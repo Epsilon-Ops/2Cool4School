@@ -1,0 +1,9 @@
+{
+  "id": "bda",
+  "code": "BDA",
+  "name": "Bases de données avancées",
+  "emoji": "🗄️",
+  "color": "#fc5603",
+  "description": "Modèle relationnel, clés, normalisation, SQL et jointures.",
+  "category": "scolaire"
+}

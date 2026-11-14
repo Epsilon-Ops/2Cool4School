@@ -1,6 +1,7 @@
 import { Fragment, useState } from 'react';
 import { dueQuestions } from '../engine/selection.js';
 import { UNLOCK } from '../engine/mastery.js';
+import { DOMAIN_REQUIREMENTS } from '../engine/gamification.js';
 import LessonSheet from './LessonSheet.jsx';
 
 const GAP = 112;                 // distance verticale entre deux nœuds (px)
@@ -9,9 +10,15 @@ const ZIGZAG = [50, 24, 50, 76]; // positions horizontales (en %) du chemin
 
 const EMPTY = { mastery: 0, qCount: 0, certified: null, gap: false, events: 0 };
 
+/** Libellé de catégorie : « scolaire », « langue » ou, pour le reste, « optionnelle ». */
+const CATEGORY_LABEL = {
+  scolaire: 'Matières scolaires',
+  langue: 'Langues',
+};
+
 export default function SkillTree({
   subjects, bank, stats, progress, config, setConfig, onStart, onReview, onMix,
-  guided, onToggleGuided, focusId, onSkillAction,
+  guided, onToggleGuided, focusId, onSkillAction, isDomainOpen = () => true,
 }) {
   const [selectedId, setSelectedId] = useState(focusId ?? null);
 
@@ -24,15 +31,19 @@ export default function SkillTree({
     ((s.prereq ?? []).every((p) => !isPlayable(p) || st(p).mastery >= UNLOCK) &&
       (s.prereqAny ?? []).every((group) => group.some((p) => !isPlayable(p) || st(p).mastery >= UNLOCK)));
 
+  // Domaine verrouillé (parcours guidé) : toutes ses compétences restent fermées.
+  const domainLocked = (subjectId) => guided && !isDomainOpen(subjectId);
+
   const statusOf = (s) => {
     if (!isPlayable(s.id)) return 'soon';
     if (st(s.id).certified) return 'acquired';
     if (st(s.id).paused) return 'paused';
+    if (domainLocked(s.subjectId)) return 'locked';
     if (!unlocked(s)) return 'locked';
     return 'available';
   };
 
-  const flat = subjects.flatMap((sub) => sub.skills.map((s) => ({ ...s, color: sub.color, subjectName: sub.name })));
+  const flat = subjects.flatMap((sub) => sub.skills.map((s) => ({ ...s, subjectId: sub.id, color: sub.color, subjectName: sub.name })));
   const byIdFlat = Object.fromEntries(flat.map((s) => [s.id, s]));
   const playable = flat.filter((s) => isPlayable(s.id));
   const certifiedCount = playable.filter((s) => st(s.id).certified).length;
@@ -105,15 +116,18 @@ export default function SkillTree({
         const bodyId = `unit-body-${sub.id}`;
         const catOf = (s) => s.category ?? 'scolaire';
         const newCat = i === 0 || catOf(sub) !== catOf(subjects[i - 1]);
+        const locked = domainLocked(sub.id);
+        const required = DOMAIN_REQUIREMENTS[sub.id] ?? 0;
+        const certCount = flat.filter((s) => st(s.id).certified).length;
         return (
           <Fragment key={sub.id}>
           {newCat && (
-            <h2 className="cat-title">{catOf(sub) === 'scolaire' ? 'Matières scolaires' : 'Matières optionnelles'}</h2>
+            <h2 className="cat-title">{CATEGORY_LABEL[catOf(sub)] ?? 'Matières optionnelles'}</h2>
           )}
           <section
             key={sub.id}
             id={`unit-${sub.id}`}
-            className={`unit${isOpen ? '' : ' collapsed'}`}
+            className={`unit${isOpen ? '' : ' collapsed'}${locked ? ' is-locked' : ''}`}
             style={{ '--c': sub.color }}
           >
             <header className="unit-head" onClick={() => toggleUnit(sub.id)}>
@@ -121,24 +135,35 @@ export default function SkillTree({
                 <span className="unit-code">{sub.code}</span>
                 <h2>
                   <button type="button" className="unit-toggle" aria-expanded={isOpen} aria-controls={bodyId}>
-                    <span>{sub.emoji} {sub.name}</span>
+                    <span>{locked ? '🔒 ' : ''}{sub.emoji} {sub.name}</span>
                     <span className="chev" aria-hidden="true">▾</span>
                   </button>
                 </h2>
                 <p>{sub.description}</p>
+                {locked && (
+                  <p className="domain-note">
+                    Se débloque après {required} certification{required > 1 ? 's' : ''} ({Math.min(certCount, required)}/{required})
+                  </p>
+                )}
               </div>
-              <span className="unit-count">{doneCount}/{subPlayable.length}</span>
+              {subPlayable.length > 0 ? (
+                <span className="unit-count">{doneCount}/{subPlayable.length}</span>
+              ) : null}
             </header>
 
             <div id={bodyId} hidden={!isOpen}>
-              <Path
-                sub={sub}
-                st={st}
-                statusOf={statusOf}
-                nextId={nextId}
-                selectedId={selectedId}
-                onSelect={setSelectedId}
-              />
+              {subPlayable.length > 0 ? (
+                <Path
+                  sub={sub}
+                  st={st}
+                  statusOf={statusOf}
+                  nextId={nextId}
+                  selectedId={selectedId}
+                  onSelect={setSelectedId}
+                />
+              ) : (
+                <p className="muted soon-note">Bientôt disponible : les exercices de cette matière arrivent.</p>
+              )}
             </div>
           </section>
           </Fragment>

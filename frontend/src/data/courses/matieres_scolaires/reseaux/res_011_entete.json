@@ -1,0 +1,12 @@
+{
+  "id": "reseaux-entete",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Protocole/en-tête IP, MTU, fragmentation",
+  "intro": "Un réseau est trop complexe pour être conçu d'un seul bloc. Du signal électrique sur le câble jusqu'à l'affichage d'une page web, tout est découpé en couches indépendantes qui se rendent service. Explore chaque étape pas à pas, puis entraîne-toi sur les questions associées.",
+  "sections": [],
+  "chapter": "Architecture en couches",
+  "chapterOrder": 1,
+  "order": 2
+}

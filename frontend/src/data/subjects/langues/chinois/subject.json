@@ -1,0 +1,9 @@
+{
+  "id": "chinese",
+  "code": "LANCHI",
+  "name": "Chinois",
+  "emoji": "🇨🇳",
+  "color": "#DE2910",
+  "description": "Grammaire, vocabulaire, caractères, prononciation, compréhension et expression chinoise.",
+  "category": "langue"
+}

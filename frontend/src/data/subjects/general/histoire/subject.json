@@ -1,0 +1,10 @@
+
+{
+  "id": "history",
+  "code": "HIST",
+  "name": "Histoire",
+  "emoji": "🏛️",
+  "color": "#A0522D",
+  "description": "Préhistoire, Antiquité, Moyen Âge, époque moderne, époque contemporaine, grandes civilisations, événements historiques et personnages marquants.",
+  "category": "general"
+}

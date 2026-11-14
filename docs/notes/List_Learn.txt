@@ -1,0 +1,171 @@
+const CATEGORIES = [
+  ['scolaire', 'Matières scolaires'],
+- + LIFAPC (Algorithmique, Programmation Et Complexité)
+- + LIFLC (Logique Classique)
+- + LIFLF (Théorie des Langages Formels)
+- + LIFRES (Réseaux)
+- + BDA (Bases de Données Avancées)
+
+====================================================
+
+  ['optionnelle', 'Matières optionnelles'],
+
+====================================================
+  ['langue', 'Langues'],
+- + LANANG (Anglais)
+- + LANALL (Allemand)
+- + LANESP (Espagnol)
+- + LANITA (Italien)
+- + LANPOR (Portugais)
+- + LANCOR (Coréen)
+- + LANCHI (Chinois)
+- + LANJAP (Japonais)
+- + LANLIN (Lingala)
+- + LANARA (Arabe)
+- + LANRUS (Russe)
+- + LANUKR (Ukrainien)
+- + LANKIK (Kikongo)
+- + LANHIN (Hindi)
+- + LANTHA (Thaï)
+- + LANMAN (Mandarin)
+- + LANTUR (Turc)
+- + LALAT (Latin)
+
+====================================================
+  ['general', 'Enseignement général'],
+- + MAT (Mathématiques Simples)
+- + HIS (Histoire)
+- + GEO (Géographie)
+- + PHY (Physique)
+- + CHI (Chimie)
+- + BIO (Biologie)
+- + SVT (Sciences de la vie et de la Terre)
+- + AST (Astronomie)
+- + GEOL (Géologie)
+- + ECO (Economie)
+- + PHI (Philosophie)
+- + SOC (Sociologie)
+- + PSY (Psychologie)
+- + ANT (Anthropologie)
+- + NEU (Neurosciences)
+
+====================================================
+  ['info', 'Enseignement informatique'],
+- LIFWEB (Dévelloppement Web)
+- LIFMOB (Dévelloppement Mobile)
+- LIFIA (Intelligence Artificielle)
+- LIFBDD (Bases de données)
+- LIFSYS (Systèmes informatiques)
+- LIFRESX (Administration réseaux)
+- LIFDEV (Génie logiciel)
+- LIFDAT (Science des données)
+- LIFROB (Robotique)
+- LIFCLO (Cloud Computing)
+- LIFVIR (Virtualisation)
+- LIFJEU (Dévelloppement de jeux vidéo)
+
+====================================================
+  ['maths', 'Enseignement mathématique'],
+- MAT2 (Mathématiques Avancées)
+- MATANA (Analyse Mathématique)
+- MATALG (Algèbre Linéaire)
+- MATPRO (Probabilités)
+- MATSTA (Statistiques)
+- MATDIS (Mathématiques Discrètes)
+- MATTHE (Théorie des Graphes)
+- MATLOG (Logique Mathématique Avancée)
+- MATGAM (Théorie des Jeux)
+- PHYQUA (Physique Quantique)
+- PHYREL (Relativité)
+
+====================================================
+  ['art', 'Arts & Créativité'],
+- ART (Arts Plastiques)
+- DES (Design)
+- DESPIN (Dessin & Peinture)
+- PHOT (Photographie & Montage)
+- MUS (Musique)
+- CIN (Cinéma)
+- LIT (Littérature)
+- ANI (Animation 2D/3D)
+
+====================================================
+  ['vie', 'Vie Pratique & Dévelloppement de Soi'],
+- FIN (Finance)
+- COM (Communication)
+- RH (Relations Humaines)
+- RHET (Rhéthorique & Eloquence)
+- NEG (Négociation & Vente)
+- JUR (Droit)
+- NUT (Nutrition)
+- SPO (Sport & Phsyiologie)
+
+====================================================
+  ['human', 'Sciences humaines & société'],
+- POL (Politique)
+- REL (Histoire des religions)
+- ETH (Ethique)
+- PED (Pédagogie)
+- CRIM (Criminologie)
+- MED (Média & Journalisme)
+- BIOGEN (Génétique)
+
+====================================================
+  ['daily', 'Conaissances du quotidien'],
+- CUI (Cuisine)
+- JAR (Jardinage)
+- BRIC (Bricolage)
+- SEC (Sécurité & Prévention)
+- PRE (Premiers secours)
+- CON (Consommation & Vie Quotidienne)
+- VOY (Voyage et Tourisme)
+- COD (Code de la route & Permis)
+- ECO (Ecologie)
+
+====================================================
+  ['specialite', 'Enseignement de spécialité'],
+- LIFCYB (Cybersécurité)
+- LIFCIS (Cisco)
+- LIFCRY (Cryptographie)
+- LIFETH (Hacking Ethique)
+- LIFLIN (Programmation de bas niveau)
+- LIFPAR (Programmation Parallèle)
+- LIFAPI (Dévelloppement d'API)
+- LIFUX (UX/UI Design)
+- UNIX
+- LIFGIT (Git et Versionnages)
+- LIFML (Machine Learning)
+- LIFDL (Deep Learning)
+- LIFNLP (Traitement du langage naturel)
+- LIFIMAGE (Traitement d'images et vidéo)
+- LIFIHM (Interraction humain machine)
+- LIFEMB (Systèmes embarqués)
+- LIFALG (Structures de données & Algorithmique avancée)
+
+====================================================
+  ['approfondissement', "Matières d'approfondissement"],
+  ====================================================
+  ['complementaire', 'Matières complémentaires'],
+  ====================================================
+  ['professionnelle', 'Enseignement professionnel'],
+  ====================================================
+  ['interdisciplinaire', 'Enseignement interdisciplinaire'],
+  ====================================================
+];
+
+const TABS = [
+  ['analogies', 'Analogies'],
+  ['terms', 'Mots & formules'],
+  ['practice', 'S’exercer'],
+  ['summary', 'Résumé du cours'],
+  ['examples', 'Exemples'],
+  ['visual', 'Schémas'],
+  ['step_by_step', 'Explication étape par étape'],
+  ['simplified', 'Explication simplifiée'],
+  ['detailed', 'Explication détaillée'],
+  ['comparison', 'Comparaisons'],
+  ['mnemonics', 'Moyens mnémotechniques'],
+  ['case_studies', 'Études de cas'],
+  ['teach_back', 'Reformuler avec ses mots'],
+  ['mistakes', 'Erreurs fréquentes'],
+];

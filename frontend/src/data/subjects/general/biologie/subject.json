@@ -1,0 +1,9 @@
+{
+  "id": "biology",
+  "code": "BIO",
+  "name": "Biologie",
+  "emoji": "🧬",
+  "color": "#16A34A",
+  "description": "Cellules, génétique, ADN, évolution, anatomie, physiologie, microbiologie, reproduction, biodiversité et fonctionnement des êtres vivants.",
+  "category": "general"
+}

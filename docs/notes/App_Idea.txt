@@ -292,7 +292,7 @@ Motivation et gamification :
 - [-] Succès liés à des compétences précises
 - [-] Succès liés aux projets réalisés
 - [-] Collections de certifications
-- [-] Historique des accomplissements
+- [-] Historique des accomplissementsc
 - [-] Personnalisation visuelle du profil
 - [-] Défis personnels
 - [-] Objectifs hebdomadaires facultatifs

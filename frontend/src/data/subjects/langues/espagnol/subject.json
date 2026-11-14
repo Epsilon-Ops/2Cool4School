@@ -1,0 +1,9 @@
+{
+    "id": "spanish",
+    "code": "LANESP",
+    "name": "Espagnol",
+    "emoji": "🇪🇸",
+    "color": "#ff4800",
+    "description": "Grammaire, vocabulaire, conjugaison, compréhension et expression espagnole.",
+    "category": "langue"
+}

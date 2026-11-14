@@ -7,7 +7,7 @@ import React from 'react';
  * - sad : secoue la tête
  * Chaque montage du composant rejoue l'animation d'entrée : il suffit de changer `key`.
  */
-export default function Mascot({ mood = 'idle', size = 72, color = '#58cc02' }) {
+export default function Mascot({ mood = 'idle', size = 72, color = '#f85211' }) {
   return (
     <div className={`mascot mood-${mood}`} style={{ width: size, height: size }} aria-hidden="true">
       <svg className="owl" viewBox="0 0 120 120">
@@ -20,7 +20,7 @@ export default function Mascot({ mood = 'idle', size = 72, color = '#58cc02' }) 
         />
         <path d="M22 36L30 8L50 26Z" fill={color} />
         <path d="M98 36L90 8L70 26Z" fill={color} />
-        <ellipse cx="60" cy="84" rx="32" ry="24" fill="#d7ffb8" />
+        <ellipse cx="60" cy="84" rx="32" ry="24" fill="#ffe0db" />
         <g className="eyes-open">
           <circle cx="42" cy="52" r="16" fill="#ffffff" />
           <circle cx="78" cy="52" r="16" fill="#ffffff" />

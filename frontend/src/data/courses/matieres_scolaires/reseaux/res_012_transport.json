@@ -1,0 +1,12 @@
+{
+  "id": "reseaux-transport",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Protocoles de transport (UDP/TCP) et ICMP",
+  "intro": "Un réseau est trop complexe pour être conçu d'un seul bloc. Du signal électrique sur le câble jusqu'à l'affichage d'une page web, tout est découpé en couches indépendantes qui se rendent service. Explore chaque étape pas à pas, puis entraîne-toi sur les questions associées.",
+  "sections": [],
+  "chapter": "Architecture en couches",
+  "chapterOrder": 1,
+  "order": 4
+}

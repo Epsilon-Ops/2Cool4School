@@ -7,6 +7,7 @@
  * référence de 8 questions bien réussies (ou moins si la banque est plus petite).
  */
 import { nextCard } from './srs.js';
+import { addActivity, dayKey, daysBetween, lastActiveBefore } from './activity.js';
 
 export const LEVELS = [
   { min: 0, name: 'Débutant' },
@@ -29,6 +30,8 @@ export const CERT = { mastery: 80, goodDays: 3, practice: 60 };
 export const MAX_LOG = 20;
 export const MAX_HISTORY = 40;
 export const MAX_DAYS = 60;
+export const XP_WRONG = 2;        // une erreur rapporte un peu d'XP : l'effort compte
+export const COMEBACK_DAYS = 7;   // retour après au moins 7 jours sans activité
 
 const DAY = 86400000;
 const today = () => new Date().toDateString();
@@ -42,8 +45,8 @@ export function valueOfAnswer(ok, quality) {
   return 0.7;
 }
 
-/** Score d'une question : moyenne pondérée par la récence, pondérée par la preuve. */
-function scoreOf(events) {
+/** Score d'une question : moyenne pondérée par la récence, pondérée par la preuve (entre 0 et 1, ou null). */
+export function scoreOf(events) {
   if (!events.length) return null;
   let num = 0;
   let den = 0;
@@ -173,17 +176,41 @@ export function buildStats(skills, bank, progress) {
   return { byId, gaps, blockers };
 }
 
-/** Applique le résultat d'une réponse : SRS, journal, historique, certification, XP. */
+/**
+ * XP d'une réponse, selon la maîtrise de cet exercice avant la réponse.
+ * Exercice nouveau : ×1,5 ; exercice déjà maîtrisé : ×0,5. Une erreur rapporte XP_WRONG.
+ */
+export function xpForAnswer(q, ok, events = []) {
+  if (!ok) return XP_WRONG;
+  const base = 10 + (q.difficulty ?? 1) * 5;
+  const mastered = scoreOf(events) ?? 0;
+  const factor = 1.5 - Math.min(1, mastered);
+  return Math.round(base * factor);
+}
+
+/** Applique le résultat d'une réponse : SRS, journal, historique, certification, XP, activité. */
 export function recordAnswer(progress, bank, q, ok, quality, format) {
   const p = structuredClone(progress);
   const now = Date.now();
+  const log = p.qlog[q.id] ?? [];
+  const xpGain = xpForAnswer(q, ok, log);
+  const prevFailed = log.length > 0 && log[log.length - 1].v === 0;
 
   p.cards[q.id] = nextCard(p.cards[q.id], quality, now);
-
-  const log = p.qlog[q.id] ?? [];
   p.qlog[q.id] = [...log, { t: now, v: valueOfAnswer(ok, quality), f: format ?? 'single_choice' }].slice(-MAX_LOG);
 
-  const day = today();
+  // Régularité : un retour après une longue pause est récompensé, jamais le fait de s'absenter.
+  const today = dayKey(now);
+  p.activity = p.activity ?? {};
+  if (!p.activity[today]) {
+    const last = lastActiveBefore(p.activity, today);
+    if (last && daysBetween(last, today) >= COMEBACK_DAYS) {
+      p.stats.comebacks = (p.stats.comebacks ?? 0) + 1;
+    }
+  }
+  p.activity = addActivity(p.activity, now);
+
+  const day = today;
   const rec = { ...(p.skills[q.skill] ?? {}) };
   rec.seen = (rec.seen ?? 0) + 1;
   rec.days = addDay(rec.days, day);
@@ -199,8 +226,12 @@ export function recordAnswer(progress, bank, q, ok, quality, format) {
     rec.certified = now;
   }
 
-  if (ok) p.xp += 10 + q.difficulty * 5;
+  p.xp += xpGain;
   p.stats.answered += 1;
   if (ok) p.stats.correct += 1;
+  // Séries : bonnes réponses d'affilée, et rebonds après une erreur.
+  p.stats.run = ok ? (p.stats.run ?? 0) + 1 : 0;
+  p.stats.runBest = Math.max(p.stats.runBest ?? 0, p.stats.run);
+  if (ok && prevFailed) p.stats.recoveries = (p.stats.recoveries ?? 0) + 1;
   return p;
 }

@@ -1,0 +1,9 @@
+{
+  "id": "latin",
+  "code": "LANLAT",
+  "name": "Latin",
+  "emoji": "🏛️",
+  "color": "#800080",
+  "description": "Grammaire, vocabulaire, déclinaisons, conjugaisons, syntaxe, traduction et compréhension des textes latins.",
+  "category": "langue"
+}

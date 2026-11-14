@@ -3,8 +3,7 @@ import Activity from './Activity.jsx';
 import Mascot from './Mascot.jsx';
 import { pickQuestions, dueQuestions } from '../engine/selection.js';
 import { availableFormats, buildExercise, FORMAT_LABELS, explanationFor } from '../engine/formats.js';
-
-const xpFor = (q) => 10 + q.difficulty * 5;
+import { xpForAnswer } from '../engine/mastery.js';
 
 function makeExercise(q) {
   if (!q) return null;
@@ -69,6 +68,8 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
 
   function submit(ok, quality) {
     if (feedback || !current) return;
+    // XP calculé avant la réponse, comme dans la progression : même montant affiché et enregistré.
+    const gained = xpForAnswer(current, ok, progress.qlog?.[current.id] ?? []);
     onAnswer(current, ok, quality ?? (ok ? 4 : 1), ex.format);
     if (config.exam) {
       // Examen : ni retour ni explication pendant l'épreuve, la correction vient à la fin.
@@ -77,7 +78,7 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
         firstSeen.current.add(current.id);
         setResults((r) => [...r, { ok }]);
       }
-      if (ok) setXp((x) => x + xpFor(current));
+      setXp((x) => x + gained);
       return next();
     }
     setFeedback({ ok });
@@ -86,9 +87,9 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
       firstSeen.current.add(current.id);
       setResults((r) => [...r, { ok }]);
     }
+    setXp((x) => x + gained);
     if (ok) {
       const nextCombo = combo + 1;
-      setXp((x) => x + xpFor(current));
       setCombo(nextCombo);
       setBestCombo((b) => Math.max(b, nextCombo));
     } else {

@@ -1,0 +1,280 @@
+{
+  "id": "reseaux-fiabilite",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.fiabilite",
+  "title": "Fiabilité des protocoles et contrôle d'erreurs",
+  "intro": "Sur un câble ou des ondes radio, des interférences peuvent inverser des bits ou faire disparaître des trames entières. Ce chapitre explique comment délimiter une trame, détecter les altérations et garantir que tout arrive intact, sans doublon et dans le bon ordre.",
+  "sections": [
+    {
+      "id": "delimitation-transparence",
+      "title": "1. Délimitation des trames et transparence",
+      "body": [
+        "Sur une liaison, les bits circulent en continu : il faut donc marquer le début et la fin de chaque trame grâce à une séquence binaire spéciale appelée [[fanion]] (en HDLC, le fanion vaut [[01111110]], soit six bits à 1 consécutifs entourés de zéros).",
+        "Pour éviter qu'un fanion présent par hasard dans les données ne coupe la trame en deux, on assure la [[transparence]] par deux méthodes : l'[[échappement]] (insérer un caractère spécial ESC devant le fanion ou devant un autre ESC, que le récepteur retire ensuite) ou le [[bit de bourrage]] (insérer un 0 après chaque suite de cinq bits à 1 consécutifs pour casser la séquence du fanion)."
+      ],
+      "terms": [
+        {
+          "term": "fanion",
+          "def": "Séquence binaire prédéfinie par le protocole (01111110 en HDLC) qui marque le début et la fin d'une trame."
+        },
+        {
+          "term": "transparence",
+          "def": "Propriété garantissant que n'importe quelle donnée binaire peut être transmise sans être confondue avec un caractère de contrôle."
+        },
+        {
+          "term": "échappement",
+          "def": "Technique consistant à insérer un caractère ESC devant un fanion (ou un ESC) présent dans les données ; le récepteur le supprime."
+        },
+        {
+          "term": "bit de bourrage",
+          "def": "Insertion d'un bit 0 après cinq bits à 1 consécutifs à l'émission (retiré à la réception) pour empêcher l'apparition de six 1 d'affilée."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "C'est comme les guillemets dans un texte : si tu veux écrire un guillemet à l'intérieur d'une citation, tu mets une barre oblique devant (\\«) pour que le lecteur ne croie pas que la citation est finie."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "Le fanion, c'est le drapeau de début et de fin de niveau. Si un bloc décoratif ressemble au drapeau au milieu du niveau, le bit de bourrage place un petit bloc vide (un 0) juste après 5 briques rouges pour que Mario ne s'arrête pas avant la fin."
+        }
+      ],
+      "questionIds": [
+        "reseaux_fiabilite_002",
+        "reseaux_fiabilite_003",
+        "reseaux_fiabilite_004",
+        "reseaux_fiabilite_005",
+        "reseaux_fiabilite_006",
+        "reseaux_fiabilite_007",
+        "reseaux_fiabilite_034",
+        "reseaux_fiabilite_035",
+        "reseaux_fiabilite_036"
+      ]
+    },
+    {
+      "id": "detection-erreurs",
+      "title": "2. Taux d'erreur (BER) et détection d'erreurs",
+      "body": [
+        "Une perturbation physique peut inverser un bit (0 → 1 ou 1 → 0). La qualité d'une liaison se mesure par son [[taux d'erreur binaire (BER)]] $p$ : environ $10^{-4}$ sur une liaison bruitée, $10^{-9}$ sur Ethernet et $10^{-12}$ sur fibre optique. Pour une trame de $n$ bits, la probabilité qu'elle soit correcte vaut $(1-p)^n$ et la probabilité qu'elle soit erronée vaut [[1 - (1 - p)^n]] : plus une trame est grande, plus elle risque de contenir une erreur.",
+        "Pour repérer une altération, la [[détection par répétition]] (envoyer le message en double) est trop coûteuse car elle divise le débit par deux. Le [[bit de parité]] (somme modulo 2 des bits à 1) est rapide mais ne détecte pas les erreurs paires. On utilise donc un [[checksum]] (somme de contrôle robuste sur 2 ou 4 octets, comme le FCS d'Ethernet)."
+      ],
+      "terms": [
+        {
+          "term": "taux d'erreur binaire (BER)",
+          "def": "Probabilité p qu'un bit change de valeur pendant sa transmission (ex. 10^-9 pour Ethernet, 10^-12 pour la fibre)."
+        },
+        {
+          "term": "probabilité de trame erronée",
+          "def": "Probabilité qu'au moins un bit d'une trame de n bits soit altéré, sachant que tous les bits doivent être justes pour qu'elle soit valide.",
+          "formula": "1 - (1 - p)^n"
+        },
+        {
+          "term": "détection par répétition",
+          "def": "Envoi du message en double pour comparaison ; peu efficace car elle divise par deux le débit utile."
+        },
+        {
+          "term": "bit de parité",
+          "def": "Bit de contrôle valant 0 si le nombre de bits à 1 est pair et 1 s'il est impair. Ne détecte pas si un nombre pair de bits est modifié."
+        },
+        {
+          "term": "checksum",
+          "def": "Clé calculée sur les données avant envoi et recalculée à l'arrivée pour vérifier l'intégrité (ex. FCS sur 4 octets en Ethernet)."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Le bit de parité, c'est compter si le nombre de joueurs dans une équipe est pair ou impair : si deux joueurs échangent leur place en cachette, le total reste pair et tu ne vois rien. Un checksum, c'est une empreinte numérique quasi impossible à tromper."
+        },
+        {
+          "theme": "Monde du travail",
+          "text": "Envoyer un colis en double pour vérifier qu'il n'est pas cassé (répétition) coûte deux fois plus cher en transport. Coller un bordereau de contrôle du poids exact (checksum) permet de vérifier le colis sans le doubler."
+        }
+      ],
+      "questionIds": [
+        "reseaux_fiabilite_016",
+        "reseaux_fiabilite_017",
+        "reseaux_fiabilite_018",
+        "reseaux_fiabilite_019",
+        "reseaux_fiabilite_020",
+        "reseaux_fiabilite_021",
+        "reseaux_fiabilite_037",
+        "reseaux_fiabilite_038",
+        "reseaux_fiabilite_039",
+        "reseaux_fiabilite_040",
+        "reseaux_fiabilite_041",
+        "reseaux_fiabilite_042"
+      ]
+    },
+    {
+      "id": "send-and-wait-numerotation",
+      "title": "3. Fiabilité, Send & Wait et numérotation (NS / NR)",
+      "body": [
+        "Un [[transfert fiable]] garantit quatre propriétés : aucune erreur, aucune perte, aucune duplication et le respect de l'ordre. Avec l'algorithme [[Send & Wait]], l'émetteur n'envoie qu'une seule trame à la fois, la conserve en mémoire et lance un [[temporisateur de retransmission]] (quelques RTT) : si aucun acquittement n'arrive à temps, il la retransmet.",
+        "Pour éviter les doublons (si un acquittement se perd) et repérer les pertes, on numérote chaque trame émise avec [[NS]] et chaque acquittement avec [[NR]] (le numéro de la prochaine trame attendue). À la réception : si $NS = NR$, tout est normal ; si [[NS < NR]], c'est un doublon à éliminer (tout en renvoyant l'acquittement) ; si [[NS > NR]], une trame manque et le récepteur renvoie NR pour demander sa retransmission."
+      ],
+      "terms": [
+        {
+          "term": "transfert fiable",
+          "def": "Transfert garantissant que les données arrivent sans erreur, sans perte, sans duplication et dans l'ordre d'émission."
+        },
+        {
+          "term": "Send & Wait",
+          "def": "Protocole où l'émetteur envoie une seule trame, la garde en mémoire et attend son acquittement avant d'envoyer la suivante."
+        },
+        {
+          "term": "temporisateur de retransmission",
+          "def": "Compte à rebours (de l'ordre de quelques RTT) déclenchant le renvoi d'une trame non acquittée."
+        },
+        {
+          "term": "NS et NR",
+          "def": "NS (Send) est le numéro de la trame envoyée ; NR (Receive) est le numéro de la prochaine trame attendue par le récepteur."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Send & Wait, c'est envoyer un message et attendre le « Vu / OK » avant d'écrire le suivant. Si ton pote répond « J'attends toujours le message 3 » (NR = 3) alors que tu lui as déjà envoyé le 4 (NS = 4), tu sais que le 3 a buggé et tu le renvoies."
+        },
+        {
+          "theme": "Eggman (Sonic)",
+          "text": "Eggman envoie ses capsules numérotées (NS = 0, 1, 2...). Si sa base lui répond « J'attends la capsule 3 » alors qu'il reçoit encore la 2 (NS < NR), il sait que c'est un clone en double et le détruit."
+        }
+      ],
+      "questionIds": [
+        "reseaux_fiabilite_001",
+        "reseaux_fiabilite_008",
+        "reseaux_fiabilite_009",
+        "reseaux_fiabilite_010",
+        "reseaux_fiabilite_011",
+        "reseaux_fiabilite_012",
+        "reseaux_fiabilite_013",
+        "reseaux_fiabilite_014",
+        "reseaux_fiabilite_043",
+        "reseaux_fiabilite_044",
+        "reseaux_fiabilite_045",
+        "reseaux_fiabilite_046"
+      ]
+    },
+    {
+      "id": "efficacite-anticipation",
+      "title": "4. Efficacité, anticipation et gestion des fenêtres",
+      "body": [
+        "L'[[efficacité]] d'un protocole sans erreur mesure la part des bits utiles $U$ par rapport au total transmis et au temps d'attente : [[U / (U + G + K + D × RTT)]], où $G$ est l'en-tête, $K$ l'acquittement et $D \\times RTT$ les bits perdus pendant l'attente. Une efficacité de 0,8 signifie que 80 % des bits sont utiles (chute de débit de 20 %).",
+        "Pour éviter d'attendre à chaque trame, on combine plusieurs optimisations : le [[piggybacking]] (glisser NR dans les trames de données de retour), l'[[anticipation]] avec une [[fenêtre d'émission]] de taille $\\approx \\text{débit} \\times RTT / \\text{taille trame}$ pour ne jamais bloquer l'émetteur, la [[gestion sautante]] (acquitter plusieurs trames d'un coup), le [[rejet simple]] (tout retransmettre depuis la trame manquante) et le [[rejet sélectif]] (ne retransmettre que la trame manquante, idéal sur satellite malgré la mémoire requise)."
+      ],
+      "terms": [
+        {
+          "term": "efficacité",
+          "def": "Rapport (entre 0 et 1) entre les bits utiles U et l'ensemble des bits émis plus le temps d'attente converti en bits.",
+          "formula": "U / (U + G + K + D × RTT)"
+        },
+        {
+          "term": "piggybacking",
+          "def": "Technique consistant à inclure l'acquittement NR dans l'en-tête des trames de données envoyées en sens inverse."
+        },
+        {
+          "term": "anticipation",
+          "def": "Envoi consécutif de plusieurs trames sans attendre chaque acquittement, limité par la taille de la fenêtre d'émission."
+        },
+        {
+          "term": "gestion sautante",
+          "def": "Acquittement groupé de plusieurs trames à la fois (ex. toutes les 3 trames) pour économiser des messages de confirmation."
+        },
+        {
+          "term": "rejet simple",
+          "def": "En cas de désordre, le récepteur jette les trames suivantes et demande la retransmission à partir de la trame manquante."
+        },
+        {
+          "term": "rejet sélectif",
+          "def": "Le récepteur mémorise les trames reçues en désordre et ne demande que la trame manquante (utile si le RTT est grand, ex. satellite)."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Au lieu d'envoyer un e-mail, d'attendre l'accusé de réception, puis d'envoyer le suivant (Send & Wait), tu envoies tout le dossier d'un coup (anticipation) et ton collègue te confirme la réception en bas de sa propre réponse (piggybacking)."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "Le rejet simple, c'est mourir au milieu d'un niveau sans checkpoint : tu dois tout refaire depuis l'obstacle raté. Le rejet sélectif, c'est garder toutes les pièces étoiles déjà ramassées et ne rejouer que le saut manqué !"
+        }
+      ],
+      "questionIds": [
+        "reseaux_fiabilite_015",
+        "reseaux_fiabilite_027",
+        "reseaux_fiabilite_028",
+        "reseaux_fiabilite_029",
+        "reseaux_fiabilite_031",
+        "reseaux_fiabilite_032",
+        "reseaux_fiabilite_033",
+        "reseaux_fiabilite_047",
+        "reseaux_fiabilite_048",
+        "reseaux_fiabilite_049",
+        "reseaux_fiabilite_050",
+        "reseaux_fiabilite_051",
+        "reseaux_fiabilite_052",
+        "reseaux_fiabilite_053",
+        "reseaux_fiabilite_054"
+      ]
+    },
+    {
+      "id": "protocole-hdlc",
+      "title": "5. Mise en pratique : le protocole HDLC",
+      "body": [
+        "Le protocole de liaison [[HDLC]] illustre tous ces mécanismes. Il utilise trois familles de trames : les [[trames I]] (information, qui portent les données ainsi que NS et NR pour le piggybacking), les [[trames S]] (supervision, qui portent NR pour acquitter ou gérer les erreurs) et les [[trames U]] (non numérotées, pour ouvrir ou fermer la liaison).",
+        "Dans HDLC, NS et NR sont codés sur [[3 bits]] (valeurs de 0 à 7). La taille maximale de la fenêtre vaut donc [[7]] (et non 8, sinon un « j'attends la trame 0 » serait ambigu si toutes les 8 trames étaient perdues). Les trames S comprennent [[RR]] (prêt), [[RNR]] (contrôle de flux : stop), [[REJ]] (rejet simple) et [[SREJ]] (rejet sélectif), tandis que le temporisateur [[T2]] force l'envoi d'un acquittement si la gestion sautante attend trop longtemps."
+      ],
+      "terms": [
+        {
+          "term": "HDLC",
+          "def": "Protocole de niveau liaison (couche 2) orienté bit, utilisant le fanion 01111110, le bit de bourrage et une fenêtre glissante/sautante."
+        },
+        {
+          "term": "trames I / S / U",
+          "def": "I : données (NS et NR) ; S : supervision et acquittement (NR uniquement) ; U : contrôle de liaison sans numérotation."
+        },
+        {
+          "term": "fenêtre maximale de 7",
+          "def": "Avec des compteurs NS/NR sur 3 bits (0 à 7), la fenêtre est limitée à 7 trames pour éviter toute ambiguïté sur NR = 0."
+        },
+        {
+          "term": "RR / RNR / REJ / SREJ",
+          "def": "RR : prêt ; RNR : arrêt temporaire (contrôle de flux) ; REJ : rejet simple ; SREJ : rejet sélectif."
+        },
+        {
+          "term": "temporisateur T2",
+          "def": "Temporisateur déclenchant l'envoi d'une trame S d'acquittement si aucun acquittement n'a été émis depuis trop longtemps."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "RNR, c'est le bouton Pause quand ton inventaire est plein (contrôle de flux), et RR, c'est appuyer sur Play dès que tu as vidé ton sac."
+        },
+        {
+          "theme": "Eggman (Sonic)",
+          "text": "Avec des badges numérotés de 0 à 7 (3 bits), Eggman ne peut envoyer que 7 robots à la fois (fenêtre = 7). S'il en envoyait 8 et que Sonic les détruisait tous, le message « j'attends le robot 0 » ne permettrait pas de savoir si aucun n'est passé ou si tous sont passés !"
+        }
+      ],
+      "questionIds": [
+        "reseaux_fiabilite_022",
+        "reseaux_fiabilite_023",
+        "reseaux_fiabilite_024",
+        "reseaux_fiabilite_025",
+        "reseaux_fiabilite_026",
+        "reseaux_fiabilite_030",
+        "reseaux_fiabilite_055",
+        "reseaux_fiabilite_056",
+        "reseaux_fiabilite_057",
+        "reseaux_fiabilite_058",
+        "reseaux_fiabilite_059"
+      ]
+    }
+  ],
+  "chapter": "Fiabilité des protocoles",
+  "chapterOrder": 1,
+  "order": 2
+}

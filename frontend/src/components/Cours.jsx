@@ -1,26 +1,56 @@
 import { useState } from 'react';
-import { courses } from '../data/courseLoader.js';
+import { courses } from '../data/utils/courseLoader.js';
+import { noteKey, notionPct, sectionPct, coursePct, groupPct } from '../engine/courseProgress.js';
 
 const CATEGORIES = [
   ['scolaire', 'Matières scolaires'],
   ['optionnelle', 'Matières optionnelles'],
+  ['langue', 'Langues'],
+  ['general', 'Enseignement général'],
+  ['specialite', 'Enseignement de spécialité'],
+  ['approfondissement', "Matières d'approfondissement"],
+  ['complementaire', 'Matières complémentaires'],
+  ['professionnelle', 'Enseignement professionnel'],
+  ['interdisciplinaire', 'Enseignement interdisciplinaire'],
 ];
 
 const TABS = [
   ['analogies', 'Analogies'],
   ['terms', 'Mots & formules'],
   ['practice', 'S’exercer'],
+  ['summary', 'Résumé du cours'],
+  ['examples', 'Exemples'],
+  ['visual', 'Schémas'],
+  ['step_by_step', 'Explication étape par étape'],
+  ['simplified', 'Explication simplifiée'],
+  ['detailed', 'Explication détaillée'],
+  ['comparison', 'Comparaisons'],
+  ['mnemonics', 'Moyens mnémotechniques'],
+  ['case_studies', 'Études de cas'],
+  ['teach_back', 'Reformuler avec ses mots'],
+  ['mistakes', 'Erreurs fréquentes'],
 ];
 
-/** Arbre catégorie → matière → chapitre → cours. Les niveaux vides sont masqués. */
+/** Barre de progression avec pourcentage. */
+function Bar({ pct }) {
+  return (
+    <span className="bar-wrap">
+      <span className="bar"><span style={{ width: `${pct}%` }} /></span>
+      <b className="pct">{pct} %</b>
+    </span>
+  );
+}
+
+/** Arbre catégorie → matière → chapitre → cours. Seuls les cours avec du contenu sont listés. */
 export function buildTree(subjects) {
+  const ready = courses.filter((c) => c.sections?.length > 0);
   return CATEGORIES.map(([cat, label]) => ({
     cat,
     label,
     subjects: subjects
       .filter((s) => (s.category ?? 'scolaire') === cat)
       .map((sub) => {
-        const own = courses.filter((c) => c.subject === sub.id);
+        const own = ready.filter((c) => c.subject === sub.id);
         const byChapter = {};
         for (const c of own) {
           const key = c.chapter ?? 'Sans chapitre';
@@ -29,31 +59,37 @@ export function buildTree(subjects) {
         const chapters = Object.values(byChapter)
           .sort((a, b) => a.order - b.order)
           .map((ch) => ({ ...ch, courses: ch.courses.sort((a, b) => (a.order ?? 99) - (b.order ?? 99)) }));
-        return { ...sub, chapters, count: own.length };
+        return { ...sub, chapters, courses: own };
       })
-      .filter((s) => s.count > 0),
+      .filter((s) => s.courses.length > 0),
   })).filter((c) => c.subjects.length > 0);
 }
 
-/** Texte d'un paragraphe : les notions entre [[ ]] sont mises en évidence et cliquables. */
-function Body({ text, onTerm }) {
-  return text.split(/\[\[(.+?)\]\]/).map((part, i) =>
-    i % 2 === 0 ? (
-      <span key={i}>{part}</span>
-    ) : (
+/** Paragraphe : les notions définies entre [[ ]] sont cliquables ; les autres restent du texte. */
+function Body({ text, terms, onTerm }) {
+  return text.split(/\[\[(.+?)\]\]/).map((part, i) => {
+    if (i % 2 === 0) return <span key={i}>{part}</span>;
+    const defined = terms.some((t) => t.term === part);
+    return defined ? (
       <button key={i} className="key" onClick={() => onTerm(part)}>{part}</button>
-    )
-  );
+    ) : (
+      <span key={i}>{part}</span>
+    );
+  });
 }
 
-function Section({ section, index, open, onToggle, onPractice }) {
+function Section({ course, section, index, open, onToggle, onPractice, progress, onSeen }) {
   const [tab, setTab] = useState('analogies');
   const [focus, setFocus] = useState(null);
   const count = section.questionIds?.length ?? 0;
+  const [n, setN] = useState(Math.min(5, count));
+  const pct = sectionPct(course.id, section, progress);
 
+  const seeTerm = (term) => onSeen(course.id, noteKey(section.id, term));
   const pickTerm = (term) => {
     setFocus(term);
     setTab('terms');
+    seeTerm(term);
   };
 
   return (
@@ -61,6 +97,7 @@ function Section({ section, index, open, onToggle, onPractice }) {
       <button className="lesson-head" aria-expanded={open} onClick={onToggle}>
         <span className="num">{index + 1}</span>
         <span className="lesson-title">{section.title}</span>
+        <Bar pct={pct} />
         <span className="chev" aria-hidden="true">▾</span>
       </button>
 
@@ -68,19 +105,13 @@ function Section({ section, index, open, onToggle, onPractice }) {
         <div className="lesson-body">
           {section.body.map((p, i) => (
             <p key={i}>
-              <Body text={p} onTerm={pickTerm} />
+              <Body text={p} terms={section.terms ?? []} onTerm={pickTerm} />
             </p>
           ))}
 
           <div className="lesson-tabs" role="tablist">
             {TABS.map(([id, label]) => (
-              <button
-                key={id}
-                role="tab"
-                aria-selected={tab === id}
-                className={tab === id ? 'on' : ''}
-                onClick={() => setTab(id)}
-              >
+              <button key={id} role="tab" aria-selected={tab === id} className={tab === id ? 'on' : ''} onClick={() => setTab(id)}>
                 {label}
               </button>
             ))}
@@ -99,25 +130,37 @@ function Section({ section, index, open, onToggle, onPractice }) {
 
           {tab === 'terms' && (
             <dl className="terms">
-              {section.terms.map((t) => (
-                <div key={t.term} className={focus === t.term ? 'focus' : ''}>
-                  <dt>
-                    {t.term}
-                    {t.formula && <code>{t.formula}</code>}
-                  </dt>
-                  <dd>{t.def}</dd>
-                </div>
-              ))}
+              {section.terms.map((t) => {
+                const seen = notionPct(course.id, section.id, t.term, progress) === 100;
+                return (
+                  <div key={t.term} className={focus === t.term ? 'focus' : ''}>
+                    <button className="term-btn" onClick={() => seeTerm(t.term)}>
+                      <dt>
+                        {t.term}
+                        {t.formula && <code>{t.formula}</code>}
+                      </dt>
+                      <span className={`tag ${seen ? 'ok' : ''}`}>{seen ? 'Vue · 100 %' : 'À voir · 0 %'}</span>
+                    </button>
+                    <dd>{t.def}</dd>
+                  </div>
+                );
+              })}
             </dl>
           )}
 
           {tab === 'practice' && (
             <div className="lesson-practice">
-              <p className="muted">
-                {count} question{count > 1 ? 's' : ''} liée{count > 1 ? 's' : ''} à cette section, posée{count > 1 ? 's' : ''} sans indication de matière.
-              </p>
-              <button className="btn btn-primary" disabled={!count} onClick={() => onPractice(section)}>
-                S’exercer sur cette section
+              <p className="muted">{count} question{count > 1 ? 's' : ''} liée{count > 1 ? 's' : ''} à cette section, sans indication de matière.</p>
+              <label className="count-pick">
+                Nombre de questions
+                <select value={n} onChange={(e) => setN(Number(e.target.value))} disabled={!count}>
+                  {Array.from({ length: count }, (_, i) => i + 1).map((k) => (
+                    <option key={k} value={k}>{k} / {count}</option>
+                  ))}
+                </select>
+              </label>
+              <button className="btn btn-primary" disabled={!count} onClick={() => onPractice(section, n)}>
+                S’exercer sur {n} question{n > 1 ? 's' : ''}
               </button>
             </div>
           )}
@@ -127,8 +170,8 @@ function Section({ section, index, open, onToggle, onPractice }) {
   );
 }
 
-/** Un cours ouvert : sections dépliables. */
-function CourseView({ course, onBack, onPractice }) {
+/** Un cours ouvert : progression globale puis sous-sections dépliables. */
+function CourseView({ course, progress, onBack, onPractice, onSeen }) {
   const [openId, setOpenId] = useState(null);
   return (
     <div className="cours">
@@ -138,17 +181,21 @@ function CourseView({ course, onBack, onPractice }) {
           <span className="eyebrow">{course.subjectName} · {course.chapter}</span>
           <h1>{course.title}</h1>
           <p className="muted">{course.intro}</p>
+          <Bar pct={coursePct(course, progress)} />
         </div>
       </section>
       <div className="lesson-list">
         {course.sections.map((s, i) => (
           <Section
             key={s.id}
+            course={course}
             section={s}
             index={i}
             open={openId === s.id}
             onToggle={() => setOpenId(openId === s.id ? null : s.id)}
             onPractice={onPractice}
+            progress={progress}
+            onSeen={onSeen}
           />
         ))}
       </div>
@@ -156,14 +203,16 @@ function CourseView({ course, onBack, onPractice }) {
   );
 }
 
-/** Vue « Cours » : catégories, puis matières, puis chapitres, puis cours. */
-export default function Cours({ subjects, onPractice }) {
+/** Vue « Cours » : catégories, matières, chapitres, cours, avec progression à chaque niveau. */
+export default function Cours({ subjects, progress, onSeen, onPractice }) {
   const [openCourse, setOpenCourse] = useState(null);
   const tree = buildTree(subjects);
 
   if (openCourse) {
     const course = courses.find((c) => c.id === openCourse);
-    if (course) return <CourseView course={course} onBack={() => setOpenCourse(null)} onPractice={onPractice} />;
+    if (course) {
+      return <CourseView course={course} progress={progress} onBack={() => setOpenCourse(null)} onPractice={onPractice} onSeen={onSeen} />;
+    }
   }
 
   if (tree.length === 0) return <p className="muted">Aucun cours disponible pour le moment.</p>;
@@ -177,17 +226,17 @@ export default function Cours({ subjects, onPractice }) {
             <details key={sub.id} className="subject-block" open style={{ '--c': sub.color }}>
               <summary>
                 <span>{sub.emoji} {sub.name}</span>
-                <span className="unit-code">{sub.code}</span>
+                <Bar pct={groupPct(sub.courses, progress)} />
               </summary>
               {sub.chapters.map((ch) => (
                 <div key={ch.title} className="chapter">
-                  <h3>{ch.title}</h3>
+                  <h3>{ch.title} <Bar pct={groupPct(ch.courses, progress)} /></h3>
                   <ul className="course-cards">
                     {ch.courses.map((c) => (
                       <li key={c.id}>
                         <button className="course-card" onClick={() => setOpenCourse(c.id)}>
                           <b>{c.title}</b>
-                          <span className="muted">{c.sections.length} sections</span>
+                          <Bar pct={coursePct(c, progress)} />
                         </button>
                       </li>
                     ))}

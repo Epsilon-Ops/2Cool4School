@@ -1,9 +1,0 @@
-{
-  "id": "reseaux",
-  "code": "RES",
-  "name": "Réseaux",
-  "emoji": "🌐",
-  "color": "#58cc02",
-  "description": "Interconnexion des équipements, nombre de liaisons, débits et moyens de transmission.",
-  "category": "scolaire"
-}

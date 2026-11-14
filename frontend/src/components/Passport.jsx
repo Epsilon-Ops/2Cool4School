@@ -1,10 +1,13 @@
+import { knowledgeOf } from '../engine/gamification.js';
+
 const GLOBAL_GOALS = [3, 5, 10, 20];
 const SUBJECT_GOALS = [50, 70, 80, 90];
 const plural = (n, word) => `${n} ${word}${n > 1 ? 's' : ''}`;
 
 /** Passeport de connaissances : tableau de maîtrise par compétence, lacunes, certifications, objectifs. */
-export default function Passport({ subjects, stats, progress, onOpenSkill, onSetGoal, onMix }) {
+export default function Passport({ subjects, stats, progress, courses = [], bank = [], onOpenSkill, onSetGoal, onMix }) {
   const { byId, gaps, blockers } = stats;
+  const know = knowledgeOf(progress, subjects, bank, courses);
   const st = (id) => byId[id] ?? { qCount: 0, mastery: 0 };
   const nameOf = (id) => subjects.flatMap((s) => s.skills).find((s) => s.id === id)?.name ?? id;
 
@@ -24,7 +27,10 @@ export default function Passport({ subjects, stats, progress, onOpenSkill, onSet
             {certified.length}
             <span> / {playableIds.length} compétences certifiées</span>
           </h1>
-          <p className="muted">Maîtrise moyenne : <b>{globalAvg} %</b></p>
+          <p className="muted">
+            Niveau de connaissances : <b>{know.level.name}</b> · maîtrise moyenne <b>{globalAvg} %</b>
+            {know.next ? ` · encore ${Math.ceil(know.toNext)} points vers ${know.next.name}` : ''}
+          </p>
           <div className="hud-bar">
             <div style={{ width: `${globalAvg}%` }} />
           </div>
@@ -61,7 +67,7 @@ export default function Passport({ subjects, stats, progress, onOpenSkill, onSet
         </section>
       )}
 
-      {subjects.map((sub) => {
+      {subjects.filter((sub) => sub.skills.some((k) => st(k.id).qCount > 0)).map((sub) => {
         const ids = sub.skills.map((k) => k.id).filter((id) => st(id).qCount > 0);
         const avg = avgOf(ids);
         const goal = progress.goals.subjects[sub.id] ?? 80;

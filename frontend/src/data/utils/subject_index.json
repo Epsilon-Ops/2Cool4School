@@ -1,0 +1,308 @@
+{
+  "subjects": [
+    {
+      "id": "lifapc",
+      "code": "LIFAPC",
+      "name": "Algorithmique & C++",
+      "path": "../subjects/matieres_scolaires/lifapc/subject.json",
+      "skillsPath": "../subjects/matieres_scolaires/lifapc/skills.json",
+      "questionDirectory": "../subjects/matieres_scolaires/lifapc/questions/"
+    },
+    {
+      "id": "liflc",
+      "code": "LIFLC",
+      "name": "Logique classique",
+      "path": "../subjects/matieres_scolaires/liflc/subject.json",
+      "skillsPath": "../subjects/matieres_scolaires/liflc/skills.json",
+      "questionDirectory": "../subjects/matieres_scolaires/liflc/questions/"
+    },
+    {
+      "id": "liflf",
+      "code": "LIFLF",
+      "name": "Théorie des Langages Formels",
+      "path": "../subjects/matieres_scolaires/liflf/subject.json",
+      "skillsPath": "../subjects/matieres_scolaires/liflf/skills.json",
+      "questionDirectory": "../subjects/matieres_scolaires/liflf/questions/"
+    },
+    {
+      "id": "reseaux",
+      "code": "RES",
+      "name": "Réseaux",
+      "path": "../subjects/matieres_scolaires/reseaux/subject.json",
+      "skillsPath": "../subjects/matieres_scolaires/reseaux/skills.json",
+      "questionDirectory": "../subjects/matieres_scolaires/reseaux/questions/"
+    },
+    {
+      "id": "bdd",
+      "code": "BDD",
+      "name": "Bases de données & SQL",
+      "path": "../subjects/matieres_scolaires/bdd/subject.json",
+      "skillsPath": "../subjects/matieres_scolaires/bdd/skills.json",
+      "questionDirectory": "../subjects/matieres_scolaires/bdd/questions/"
+    },
+    {
+      "id": "english",
+      "code": "LANANG",
+      "name": "Anglais",
+      "path": "../subjects/langues/anglais/subject.json",
+      "skillsPath": "../subjects/langues/anglais/skills.json",
+      "questionDirectory": "../subjects/langues/anglais/questions/"
+    },
+    {
+      "id": "german",
+      "code": "LANALL",
+      "name": "Allemand",
+      "path": "../subjects/langues/allemand/subject.json",
+      "skillsPath": "../subjects/langues/allemand/skills.json",
+      "questionDirectory": "../subjects/langues/allemand/questions/"
+    },
+    {
+      "id": "spanish",
+      "code": "LANESP",
+      "name": "Espagnol",
+      "path": "../subjects/langues/espagnol/subject.json",
+      "skillsPath": "../subjects/langues/espagnol/skills.json",
+      "questionDirectory": "../subjects/langues/espagnol/questions/"
+    },
+    {
+      "id": "italian",
+      "code": "LANITA",
+      "name": "Italien",
+      "path": "../subjects/langues/italien/subject.json",
+      "skillsPath": "../subjects/langues/italien/skills.json",
+      "questionDirectory": "../subjects/langues/italien/questions/"
+    },
+    {
+      "id": "portugese",
+      "code": "LANPOR",
+      "name": "Portugais",
+      "path": "../subjects/langues/portugais/subject.json",
+      "skillsPath": "../subjects/langues/portugais/skills.json",
+      "questionDirectory": "../subjects/langues/portugais/questions/"
+    },
+    {
+      "id": "korean",
+      "code": "LANCOR",
+      "name": "Coréen",
+      "path": "../subjects/langues/coreen/subject.json",
+      "skillsPath": "../subjects/langues/coreen/skills.json",
+      "questionDirectory": "../subjects/langues/coreen/questions/"
+    },
+    {
+      "id": "chinese",
+      "code": "LANCHI",
+      "name": "Chinois",
+      "path": "../subjects/langues/chinois/subject.json",
+      "skillsPath": "../subjects/langues/chinois/skills.json",
+      "questionDirectory": "../subjects/langues/chinois/questions/"
+    },
+    {
+      "id": "japanese",
+      "code": "LANJAP",
+      "name": "Japonais",
+      "path": "../subjects/langues/japonais/subject.json",
+      "skillsPath": "../subjects/langues/japonais/skills.json",
+      "questionDirectory": "../subjects/langues/japonais/questions/"
+    },
+    {
+      "id": "lingala",
+      "code": "LANLIN",
+      "name": "Lingala",
+      "path": "../subjects/langues/lingala/subject.json",
+      "skillsPath": "../subjects/langues/lingala/skills.json",
+      "questionDirectory": "../subjects/langues/lingala/questions/"
+    },
+    {
+      "id": "arabic",
+      "code": "LANARA",
+      "name": "Arabe",
+      "path": "../subjects/langues/arabe/subject.json",
+      "skillsPath": "../subjects/langues/arabe/skills.json",
+      "questionDirectory": "../subjects/langues/arabe/questions/"
+    },
+    {
+      "id": "russian",
+      "code": "LANRUS",
+      "name": "Russe",
+      "path": "../subjects/langues/russe/subject.json",
+      "skillsPath": "../subjects/langues/russe/skills.json",
+      "questionDirectory": "../subjects/langues/russe/questions/"
+    },
+    {
+      "id": "ukrainian",
+      "code": "LANUKR",
+      "name": "Ukrainien",
+      "path": "../subjects/langues/ukrainien/subject.json",
+      "skillsPath": "../subjects/langues/ukrainien/skills.json",
+      "questionDirectory": "../subjects/langues/ukrainien/questions/"
+    },
+    {
+      "id": "kikongo",
+      "code": "LANKIK",
+      "name": "Kikongo",
+      "path": "../subjects/langues/kikongo/subject.json",
+      "skillsPath": "../subjects/langues/kikongo/skills.json",
+      "questionDirectory": "../subjects/langues/kikongo/questions/"
+    },
+    {
+      "id": "hindi",
+      "code": "LANHIN",
+      "name": "Hindi",
+      "path": "../subjects/langues/hindi/subject.json",
+      "skillsPath": "../subjects/langues/hindi/skills.json",
+      "questionDirectory": "../subjects/langues/hindi/questions/"
+    },
+    {
+      "id": "thai",
+      "code": "LANTHA",
+      "name": "Thaï",
+      "path": "../subjects/langues/thai/subject.json",
+      "skillsPath": "../subjects/langues/thai/skills.json",
+      "questionDirectory": "../subjects/langues/thai/questions/"
+    },
+    {
+      "id": "mandarin",
+      "code": "LANMAN",
+      "name": "Mandarin",
+      "path": "../subjects/langues/mandarin/subject.json",
+      "skillsPath": "../subjects/langues/mandarin/skills.json",
+      "questionDirectory": "../subjects/langues/mandarin/questions/"
+    },
+    {
+      "id": "turkish",
+      "code": "LANTUR",
+      "name": "Turc",
+      "path": "../subjects/langues/turc/subject.json",
+      "skillsPath": "../subjects/langues/turc/skills.json",
+      "questionDirectory": "../subjects/langues/turc/questions/"
+    },
+    {
+      "id": "latin",
+      "code": "LANLAT",
+      "name": "Latin",
+      "path": "../subjects/langues/latin/subject.json",
+      "skillsPath": "../subjects/langues/latin/skills.json",
+      "questionDirectory": "../subjects/langues/latin/questions/"
+    },
+    {
+      "id": "mat",
+      "code": "MAT",
+      "name": "Mathématiques Simples",
+      "path": "../subjects/general/maths_simples/subject.json",
+      "skillsPath": "../subjects/general/maths_simples/skills.json",
+      "questionDirectory": "../subjects/general/maths_simples/questions/"
+    },
+    {
+      "id": "his",
+      "code": "HIS",
+      "name": "Histoire",
+      "path": "../subjects/general/histoire/subject.json",
+      "skillsPath": "../subjects/general/histoire/skills.json",
+      "questionDirectory": "../subjects/general/histoire/questions/"
+    },
+    {
+      "id": "geo",
+      "code": "GEO",
+      "name": "Géographie",
+      "path": "../subjects/general/geographie/subject.json",
+      "skillsPath": "../subjects/general/geographie/skills.json",
+      "questionDirectory": "../subjects/general/geographie/questions/"
+    },
+    {
+      "id": "phy",
+      "code": "PHY",
+      "name": "Physique",
+      "path": "../subjects/general/physique/subject.json",
+      "skillsPath": "../subjects/general/physique/skills.json",
+      "questionDirectory": "../subjects/general/physique/questions/"
+    },
+    {
+      "id": "chi",
+      "code": "CHI",
+      "name": "Chimie",
+      "path": "../subjects/general/chimie/subject.json",
+      "skillsPath": "../subjects/general/chimie/skills.json",
+      "questionDirectory": "../subjects/general/chimie/questions/"
+    },
+    {
+      "id": "bio",
+      "code": "BIO",
+      "name": "Biologie",
+      "path": "../subjects/general/biologie/subject.json",
+      "skillsPath": "../subjects/general/biologie/skills.json",
+      "questionDirectory": "../subjects/general/biologie/questions/"
+    },
+    {
+      "id": "svt",
+      "code": "SVT",
+      "name": "Sciences de la vie et de la Terre",
+      "path": "../subjects/general/svt/subject.json",
+      "skillsPath": "../subjects/general/svt/skills.json",
+      "questionDirectory": "../subjects/general/svt/questions/"
+    },
+    {
+      "id": "ast",
+      "code": "AST",
+      "name": "Astronomie",
+      "path": "../subjects/general/astronomie/subject.json",
+      "skillsPath": "../subjects/general/astronomie/skills.json",
+      "questionDirectory": "../subjects/general/astronomie/questions/"
+    },
+    {
+      "id": "geol",
+      "code": "GEOL",
+      "name": "Géologie",
+      "path": "../subjects/general/geologie/subject.json",
+      "skillsPath": "../subjects/general/geologie/skills.json",
+      "questionDirectory": "../subjects/general/geologie/questions/"
+    },
+    {
+      "id": "eco",
+      "code": "ECO",
+      "name": "Economie",
+      "path": "../subjects/general/economie/subject.json",
+      "skillsPath": "../subjects/general/economie/skills.json",
+      "questionDirectory": "../subjects/general/economie/questions/"
+    },
+    {
+      "id": "phi",
+      "code": "PHI",
+      "name": "Philosophie",
+      "path": "../subjects/general/philosophie/subject.json",
+      "skillsPath": "../subjects/general/philosophie/skills.json",
+      "questionDirectory": "../subjects/general/philosophie/questions/"
+    },
+    {
+      "id": "soc",
+      "code": "SOC",
+      "name": "Sociologie",
+      "path": "../subjects/general/sociologie/subject.json",
+      "skillsPath": "../subjects/general/sociologie/skills.json",
+      "questionDirectory": "../subjects/general/sociologie/questions/"
+    },
+    {
+      "id": "psy",
+      "code": "PSY",
+      "name": "Psychologie",
+      "path": "../subjects/general/psychologie/subject.json",
+      "skillsPath": "../subjects/general/psychologie/skills.json",
+      "questionDirectory": "../subjects/general/psychologie/questions/"
+    },
+    {
+      "id": "ant",
+      "code": "ANT",
+      "name": "Anthropologie",
+      "path": "../subjects/general/anthropologie/subject.json",
+      "skillsPath": "../subjects/general/anthropologie/skills.json",
+      "questionDirectory": "../subjects/general/anthropologie/questions/"
+    },
+    {
+      "id": "neu",
+      "code": "NEU",
+      "name": "Neurosciences",
+      "path": "../subjects/general/neurosciences/subject.json",
+      "skillsPath": "../subjects/general/neurosciences/skills.json",
+      "questionDirectory": "../subjects/general/neurosciences/questions/"
+    }
+  ]
+}

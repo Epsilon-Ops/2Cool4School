@@ -102,8 +102,8 @@ function Flashcard({ ex, done, onResult }) {
           {!done && (
             <div className="rate">
               <button className="hard" onClick={() => onResult(false, 1)}>Raté</button>
-              <button className="mid" onClick={() => onResult(true, 3)}>Moyen</button>
-              <button className="easy" onClick={() => onResult(true, 5)}>Facile</button>
+              <button className="mid" onClick={() => onResult(true, 3)}>Presque</button>
+              <button className="easy" onClick={() => onResult(true, 5)}>Compris</button>
             </div>
           )}
         </>

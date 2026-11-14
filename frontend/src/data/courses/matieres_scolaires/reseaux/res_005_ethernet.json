@@ -1,0 +1,12 @@
+{
+  "id": "reseaux-ethernet",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.transmission",
+  "title": "Ethernet",
+  "intro": "Un réseau est trop complexe pour être conçu d'un seul bloc. Du signal électrique sur le câble jusqu'à l'affichage d'une page web, tout est découpé en couches indépendantes qui se rendent service. Explore chaque étape pas à pas, puis entraîne-toi sur les questions associées.",
+  "sections": [],
+  "chapter": "Réseaux locaux",
+  "chapterOrder": 2,
+  "order": 1
+}

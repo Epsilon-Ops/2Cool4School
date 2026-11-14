@@ -1,0 +1,9 @@
+{
+  "id": "russian",
+  "code": "LANRUS",
+  "name": "Russe",
+  "emoji": "🇷🇺",
+  "color": "#0039A6",
+  "description": "Grammaire, vocabulaire, alphabet cyrillique, conjugaison, prononciation, compréhension et expression russes.",
+  "category": "langue"
+}

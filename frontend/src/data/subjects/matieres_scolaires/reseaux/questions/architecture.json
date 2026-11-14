@@ -1,0 +1,1632 @@
+[
+  {
+    "id": "reseaux_architecture_001",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quel est le rôle du modèle OSI ?",
+    "answer": "Servir de cadre de référence théorique décrivant l'architecture de n'importe quel réseau",
+    "distractors": [
+      "Être un protocole utilisé pour transférer les pages web",
+      "Remplacer TCP/IP comme architecture d'Internet",
+      "Définir uniquement les câbles et connecteurs des réseaux"
+    ],
+    "explanation": "Le modèle OSI est un modèle de référence théorique : chaque réseau réel en est un sous-ensemble, il n'a pas d'existence concrète en tant que tel.",
+    "tags": [
+      "osi",
+      "architecture",
+      "definition"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_002",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Combien de couches compte le modèle OSI ?",
+    "answer": "7",
+    "distractors": [
+      "4",
+      "5",
+      "3"
+    ],
+    "explanation": "Le modèle OSI compte sept couches, de la couche physique à la couche application. L'architecture TCP/IP, elle, n'en compte que quatre.",
+    "tags": [
+      "osi",
+      "couches"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_003",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Complétez la phrase.",
+    "answer": "7",
+    "distractors": [],
+    "explanation": "Le modèle OSI est composé de sept couches, de la couche physique (1) à la couche application (7).",
+    "tags": [
+      "osi",
+      "couches"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "Le modèle OSI compte {{blank}} couches."
+  },
+  {
+    "id": "reseaux_architecture_004",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Associez chaque couche OSI à sa fonction principale.",
+    "answer": "Couche physique (1) : Transmettre une séquence binaire sur le support ; Couche liaison (2) : Gérer l'échange entre deux cartes réseau (adresses MAC) ; Couche réseau (3) : Déterminer le chemin à travers le réseau (adresses IP) ; Couche transport (4) : Assurer la fiabilité de bout en bout",
+    "distractors": [],
+    "explanation": "Chaque couche a une fonction spécifique : la physique transmet les bits, la liaison gère l'échange entre deux cartes réseau, le réseau choisit le chemin et le transport garantit la fiabilité de bout en bout (par exemple avec TCP).",
+    "tags": [
+      "osi",
+      "couches",
+      "fonctions"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Couche physique (1)",
+        "Transmettre une séquence binaire sur le support"
+      ],
+      [
+        "Couche liaison (2)",
+        "Gérer l'échange entre deux cartes réseau (adresses MAC)"
+      ],
+      [
+        "Couche réseau (3)",
+        "Déterminer le chemin à travers le réseau (adresses IP)"
+      ],
+      [
+        "Couche transport (4)",
+        "Assurer la fiabilité de bout en bout"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_005",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Remettez les couches OSI dans l'ordre, de la plus basse à la plus haute.",
+    "answer": "Couche physique → Couche liaison → Couche réseau → Couche transport → Couche session → Couche présentation → Couche application",
+    "distractors": [],
+    "explanation": "Les couches sont numérotées de 1 (physique) à 7 (application). Les couches 1 à 3 sont point à point, les couches 4 à 7 sont de bout en bout.",
+    "tags": [
+      "osi",
+      "couches"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Couche physique",
+      "Couche liaison",
+      "Couche réseau",
+      "Couche transport",
+      "Couche session",
+      "Couche présentation",
+      "Couche application"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_006",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Vrai ou faux : les couches 4 à 7 du modèle OSI ne s'exécutent que sur les équipements terminaux.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Les couches 4 à 7 sont de bout en bout : elles ne s'exécutent que sur les extrémités (ordinateurs, téléphones, tablettes), pas sur les équipements intermédiaires.",
+    "tags": [
+      "osi",
+      "bout_en_bout"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_007",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : les couches 1 à 3 du modèle OSI s'exécutent aussi sur les équipements intermédiaires comme les routeurs.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Les couches 1 à 3 sont point à point : elles s'exécutent sur les terminaux comme sur les équipements intermédiaires (répéteurs, commutateurs, routeurs...).",
+    "tags": [
+      "osi",
+      "point_a_point"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_008",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle couche OSI est chargée de déterminer le chemin à travers le réseau ?",
+    "answer": "La couche réseau (couche 3)",
+    "distractors": [
+      "La couche liaison (couche 2)",
+      "La couche session (couche 5)",
+      "La couche transport (couche 4)"
+    ],
+    "explanation": "La couche réseau utilise des adresses propres à l'architecture (adresses IP sur Internet) pour déterminer par où passent les paquets.",
+    "tags": [
+      "osi",
+      "couche_reseau"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_009",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle couche OSI découpe le flux binaire reçu en trames ?",
+    "answer": "La couche liaison (couche 2)",
+    "distractors": [
+      "La couche physique (couche 1)",
+      "La couche réseau (couche 3)",
+      "La couche application (couche 7)"
+    ],
+    "explanation": "La couche liaison gère l'interface entre deux cartes réseau : elle délimite les trames et utilise les adresses MAC.",
+    "tags": [
+      "osi",
+      "couche_liaison"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_010",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle couche OSI assure la synchronisation des échanges et crée des points de reprise ?",
+    "answer": "La couche session (couche 5)",
+    "distractors": [
+      "La couche transport (couche 4)",
+      "La couche présentation (couche 6)",
+      "La couche réseau (couche 3)"
+    ],
+    "explanation": "La couche session permet de synchroniser les échanges et de créer des points de reprise, par exemple pour reprendre un transfert de fichiers interrompu.",
+    "tags": [
+      "osi",
+      "couche_session"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_011",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel protocole de la pile Internet assure la fiabilité des transferts de bout en bout ?",
+    "answer": "TCP",
+    "distractors": [
+      "IP",
+      "Ethernet",
+      "DNS"
+    ],
+    "explanation": "TCP est le protocole de transport qui garantit l'absence d'erreurs, de pertes et de duplications, ainsi que l'ordre des données. IP, lui, achemine les paquets sans garantie.",
+    "tags": [
+      "tcp",
+      "transport",
+      "fiabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_012",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Dans l'encapsulation, si H3 est l'en-tête de niveau 3 et D3 ses données, quelle est l'écriture de D2 ?",
+    "answer": "D2 = H3 + D3",
+    "distractors": [
+      "D2 = H2 + D3",
+      "D3 = H3 + D2",
+      "D2 = H3 × D3"
+    ],
+    "explanation": "Chaque couche ajoute son en-tête aux données reçues de la couche supérieure : Dn = Hn+1 + Dn+1.",
+    "tags": [
+      "encapsulation",
+      "entetes"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_013",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce que l'encapsulation ?",
+    "answer": "Ajouter l'en-tête d'une couche aux données qu'elle reçoit pour former les données de la couche inférieure",
+    "distractors": [],
+    "explanation": "Chaque couche ajoute son en-tête aux données de la couche supérieure, puis transmet l'ensemble à la couche d'en dessous. À la réception, l'en-tête est lu puis retiré (décapsulation).",
+    "tags": [
+      "encapsulation",
+      "definition"
+    ],
+    "formats": [
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_014",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Remettez dans l'ordre les étapes de l'encapsulation côté émetteur, de l'application vers la carte réseau.",
+    "answer": "Le protocole applicatif (ex. HTTP) crée son en-tête H3 → Le protocole IP ajoute son en-tête H2 avec les adresses IP → Le protocole Ethernet ajoute son en-tête H1 avec les adresses MAC → La carte réseau transforme la séquence binaire en signal",
+    "distractors": [],
+    "explanation": "Chaque couche ajoute son en-tête avant de transmettre à la couche inférieure. Les adresses MAC, placées dans H1, servent à identifier la carte réseau de destination.",
+    "tags": [
+      "encapsulation",
+      "ordre"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Le protocole applicatif (ex. HTTP) crée son en-tête H3",
+      "Le protocole IP ajoute son en-tête H2 avec les adresses IP",
+      "Le protocole Ethernet ajoute son en-tête H1 avec les adresses MAC",
+      "La carte réseau transforme la séquence binaire en signal"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_015",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle est la différence entre un protocole de bout en bout et un protocole point à point ?",
+    "answer": "Le protocole de bout en bout ne s'exécute qu'aux extrémités, alors que le point à point s'exécute aussi sur les équipements intermédiaires",
+    "distractors": [
+      "Le point à point ne fonctionne qu'en mode connecté",
+      "Le bout en bout n'utilise jamais d'en-tête",
+      "Le point à point s'exécute uniquement sur les terminaux"
+    ],
+    "explanation": "HTTP et TCP sont de bout en bout, alors qu'IP est point à point car il s'exécute sur tous les routeurs traversés.",
+    "tags": [
+      "bout_en_bout",
+      "point_a_point"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_016",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : parmi les protocoles étudiés dans le cours, TCP est le seul en mode connecté.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "TCP a besoin d'une phase de connexion pour mettre en œuvre son algorithme de fiabilité. Les autres protocoles étudiés fonctionnent en mode non connecté.",
+    "tags": [
+      "mode_connecte",
+      "tcp"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_017",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce que le mode non connecté ?",
+    "answer": "Envoyer un message sans demander au récepteur à l'avance s'il est prêt à le recevoir",
+    "distractors": [
+      "Demander l'accord du récepteur avant d'envoyer les données",
+      "Attendre un accusé de réception après chaque message",
+      "Réserver un circuit dédié entre les deux équipements"
+    ],
+    "explanation": "En mode non connecté, aucune garantie n'est donnée à l'avance : on fait de son mieux (best effort). C'est le fonctionnement d'un courrier postal ou d'un SMS.",
+    "tags": [
+      "mode_non_connecte"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_018",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : une communication téléphonique est un exemple de mode connecté.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Composer un numéro correspond à une demande de connexion : le destinataire accepte ou refuse avant que la communication ne commence.",
+    "tags": [
+      "mode_connecte",
+      "exemple"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_019",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Lequel de ces équipements est un équipement intermédiaire et non un terminal ?",
+    "answer": "Le routeur",
+    "distractors": [
+      "L'ordinateur portable",
+      "Le téléphone",
+      "La tablette"
+    ],
+    "explanation": "Les terminaux sont les points d'entrée et de sortie de l'information. Les équipements intermédiaires (routeurs, commutateurs, bornes WiFi, pare-feu, répéteurs) assurent l'acheminement.",
+    "tags": [
+      "equipements",
+      "vocabulaire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_020",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle du contrôle de flux ?",
+    "answer": "Permettre au récepteur de ralentir l'émetteur pour éviter les pertes",
+    "distractors": [
+      "Vérifier que les bits n'ont pas changé de valeur",
+      "Remettre les paquets dans l'ordre",
+      "Chiffrer les données transmises"
+    ],
+    "explanation": "Le contrôle de flux adapte le rythme d'émission aux capacités de réception : le récepteur peut demander à l'émetteur de s'arrêter, puis de reprendre.",
+    "tags": [
+      "controle_de_flux"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_021",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : le contrôle de flux peut être utilisé tel quel pour une communication vocale ou vidéo.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Le contrôle de flux limite le débit de l'émetteur pour éviter les pertes, alors qu'une communication multimédia a besoin d'un débit garanti pour être lisible en temps réel.",
+    "tags": [
+      "controle_de_flux",
+      "multimedia"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_022",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel protocole de la pile TCP/IP achemine les paquets sur Internet ?",
+    "answer": "IP",
+    "distractors": [
+      "DNS",
+      "HTTP",
+      "Ethernet"
+    ],
+    "explanation": "IP (couche réseau) détermine le chemin des paquets à partir des adresses IP. DNS trouve l'adresse IP d'un nom, HTTP gère les échanges web, Ethernet transmet les signaux entre deux cartes réseau.",
+    "tags": [
+      "ip",
+      "couche_reseau"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_023",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "À quoi sert le DNS ?",
+    "answer": "Trouver l'adresse IP associée au nom d'un serveur",
+    "distractors": [
+      "Chiffrer les échanges entre le navigateur et le serveur",
+      "Découper les fichiers en paquets",
+      "Mesurer le débit d'une liaison"
+    ],
+    "explanation": "Lorsqu'on tape l'adresse d'un site, le DNS traduit le nom du serveur en adresse IP. Toutes les applications peuvent l'utiliser.",
+    "tags": [
+      "dns"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_024",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle est la bonne correspondance entre trame, paquet et message ?",
+    "answer": "Trame : couche liaison ; paquet : couche réseau (paquet IP) ; message : terme générique des couches supérieures",
+    "distractors": [
+      "Trame, paquet et message désignent la même chose",
+      "Paquet : unité de la couche physique",
+      "Message : unité de la couche liaison"
+    ],
+    "explanation": "La trame est l'unité transmise par la carte réseau, le paquet l'unité de la couche réseau, et le message le terme générique pour les couches supérieures.",
+    "tags": [
+      "vocabulaire",
+      "trame",
+      "paquet"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_025",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Pourquoi découper une architecture réseau en couches ?",
+    "answer": "Pour faire évoluer une couche sans toucher aux autres et réutiliser des fonctions communes",
+    "distractors": [
+      "Pour que toutes les couches utilisent le même protocole",
+      "Pour limiter le nombre de constructeurs",
+      "Pour supprimer le besoin d'en-têtes"
+    ],
+    "explanation": "L'isolation des fonctions rend l'architecture évolutive : on peut remplacer HTTP ou Ethernet sans modifier IP, et une même fonction (comme le DNS) sert à toutes les applications.",
+    "tags": [
+      "architecture_en_couches"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_026",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Vrai ou faux : la couche physique ajoute un en-tête à la séquence binaire qu'elle transmet.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "La couche physique ne fait que transmettre une séquence binaire sur le support : elle n'ajoute pas d'en-tête. En revanche, la couche liaison ajoute un en-tête et un trailer (checksum).",
+    "tags": [
+      "osi",
+      "couche_physique"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_027",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Dans une trame Ethernet, où est placé le checksum de détection d'erreur, et pourquoi ?",
+    "answer": "En fin de trame, car la carte réseau peut commencer à émettre avant d'avoir fini de calculer le checksum",
+    "distractors": [
+      "En début de trame, pour être lu en premier",
+      "Dans l'adresse MAC de destination",
+      "Au milieu des données, pour équilibrer la trame"
+    ],
+    "explanation": "Le checksum est placé dans le trailer, à la fin de la trame, car il ne peut être calculé qu'après avoir vu passer toutes les données.",
+    "tags": [
+      "checksum",
+      "trailer",
+      "ethernet"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_028",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle différence distingue les données discrètes finies des données continues ?",
+    "answer": "Les données discrètes finies ont un début et une fin (ex. un fichier), tandis que les données continues représentent la variation continue d'un phénomène physique (ex. la voix)",
+    "distractors": [
+      "Les données discrètes ne peuvent pas être traduites en binaire, contrairement aux données continues",
+      "Les données continues sont toujours des fichiers texte, tandis que les données discrètes sont des signaux radio",
+      "Les données continues ne nécessitent aucune conversion avant d'être envoyées sur un câble Ethernet"
+    ],
+    "explanation": "Un fichier a un début et une fin et se code directement en binaire (ex. ASCII), alors qu'un signal continu (analogique, comme la voix) contient une infinité de valeurs et doit être échantillonné.",
+    "tags": [
+      "donnees",
+      "analogique",
+      "numerique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_029",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle d'un convertisseur analogique-numérique lors de la transmission de la voix ?",
+    "answer": "Échantillonner le signal analogique à intervalles réguliers pour le transformer en une séquence binaire",
+    "distractors": [
+      "Amplifier la tension électrique du signal sur un câble coaxial",
+      "Chiffrer les paquets IP avant leur envoi sur Internet",
+      "Attribuer une adresse MAC à la carte son de l'ordinateur"
+    ],
+    "explanation": "Un signal analogique contient une infinité de valeurs dans un intervalle borné ; le convertisseur l'échantillonne en valeurs entières à intervalles réguliers pour obtenir une suite de bits.",
+    "tags": [
+      "can",
+      "echantillonnage",
+      "analogique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_030",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : lors de la reconstitution d'un signal analogique à partir d'échantillons numériques, il est possible de gommer certaines erreurs de transmission.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Bien que l'échantillonnage entraîne une légère perte d'information, la reconstruction du signal analogique permet de replacer sur la courbe les points trop éloignés dus à des erreurs de bits.",
+    "tags": [
+      "echantillonnage",
+      "erreurs",
+      "analogique"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_031",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Comment appelle-t-on l'opération consistant à associer une séquence binaire à chaque symbole d'un fichier (comme le code ASCII pour l'alphabet) ?",
+    "answer": "Le codage",
+    "distractors": [
+      "L'échantillonnage",
+      "Le routage",
+      "La fragmentation"
+    ],
+    "explanation": "Le codage transforme l'information d'origine en une séquence binaire (par exemple via le code ASCII pour les caractères).",
+    "tags": [
+      "codage",
+      "ascii",
+      "binaire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_032",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce que la transmission en bande de base ?",
+    "answer": "Une technique consistant à générer directement un signal électrique à niveaux de tension (ex. +5 V et -5 V) correspondant aux bits sur un câble",
+    "distractors": [
+      "Une modulation d'onde radio sur plusieurs fréquences porteuses pour les longues distances",
+      "Une technique réservée exclusivement aux liaisons par satellite",
+      "L'envoi de données sans aucun codage binaire préalable"
+    ],
+    "explanation": "En bande de base (utilisée notamment sur Ethernet cuivre), un codeur associe directement chaque valeur binaire à un niveau de tension électrique (ex. 5 V pour '1', -5 V pour '0').",
+    "tags": [
+      "bande_de_base",
+      "ethernet",
+      "transmission"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_033",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle d'un modem dans une transmission de données ?",
+    "answer": "Transformer un signal numérique en un signal analogique modulé à l'émission, et inversement à la réception",
+    "distractors": [
+      "Calculer le chemin le plus court entre deux routeurs IP",
+      "Stocker les pages web en cache pour accélérer HTTP",
+      "Attribuer des adresses MAC uniques aux cartes réseau"
+    ],
+    "explanation": "Le modem (modulateur-démodulateur) adapte une séquence binaire en un signal analogique modulé (utile notamment pour le sans-fil ou les longues distances).",
+    "tags": [
+      "modem",
+      "modulation",
+      "signal_analogique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_034",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est l'avantage de transmettre un signal analogique modulé sur différentes fréquences ?",
+    "answer": "Permettre à plusieurs signaux de cohabiter dans le même espace et couvrir de plus grandes distances",
+    "distractors": [
+      "Supprimer totalement tout risque d'interférence ou d'atténuation",
+      "Éviter d'avoir besoin d'adresses IP ou MAC",
+      "Garantir un débit infini sans latence"
+    ],
+    "explanation": "La modulation sur différentes fréquences permet de partager le même espace (ex. ondes radio/WiFi) sans collision et de parcourir jusqu'à plusieurs kilomètres.",
+    "tags": [
+      "modulation",
+      "frequences",
+      "sans_fil"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_035",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Dans le schéma d'une ligne de transmission, quelle différence sépare l'ETTD de l'ETCD ?",
+    "answer": "L'ETTD est l'équipement terminal de traitement des données (ex. ordinateur), tandis que l'ETCD est l'équipement de terminaison du circuit de données (modem ou codeur)",
+    "distractors": [
+      "L'ETTD est le câble physique, tandis que l'ETCD est le protocole HTTP",
+      "L'ETTD est un routeur intermédiaire, tandis que l'ETCD est le serveur DNS",
+      "L'ETTD gère uniquement la fibre optique, tandis que l'ETCD gère uniquement le WiFi"
+    ],
+    "explanation": "La liaison de données relie deux ETTD (terminaux) via une jonction vers leurs ETCD respectifs (modems/codeurs), lesquels sont reliés entre eux par la ligne de transmission (circuit de données).",
+    "tags": [
+      "ettd",
+      "etcd",
+      "ligne_de_transmission"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_036",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "De quoi est composé un câble Ethernet à paire torsadée et quel connecteur utilise-t-il ?",
+    "answer": "De 4 paires de fils de cuivre avec un connecteur RJ45",
+    "distractors": [
+      "D'un seul fil de cuivre épais entouré d'un blindage avec un connecteur coaxial",
+      "D'un cœur en verre transmettant des impulsions lumineuses",
+      "De 2 antennes radio fonctionnant en bande AM/FM"
+    ],
+    "explanation": "Le câble à paire torsadée comporte quatre paires de fils de cuivre terminées par une prise RJ45 (utilisant au moins deux paires, voire quatre selon la version d'Ethernet).",
+    "tags": [
+      "paire_torsadee",
+      "rj45",
+      "cuivre"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_037",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Associez chaque support de transmission à ses caractéristiques principales.",
+    "answer": "Paire torsadée : Courtes distances (quelques mètres à quelques centaines de mètres), connecteur RJ45 ; Câble coaxial : Un fil de cuivre épais, meilleurs débits et portée que la paire torsadée, plus coûteux ; Fibre optique : Transmission d'ondes lumineuses jusqu'à 30 km sans répéteur, très haut débit ; Satellite : Grande couverture géographique (ex. océans), débits élevés mais très forte latence",
+    "distractors": [],
+    "explanation": "Chaque support a des compromis portées/débits/coûts : la paire torsadée est courte portée, le coaxial est plus performant mais plus cher, la fibre optique atteint 30 km sans répéteur et le satellite couvre les zones isolées au prix d'une forte latence.",
+    "tags": [
+      "supports",
+      "fibre_optique",
+      "coaxial",
+      "satellite"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Paire torsadée",
+        "Courtes distances (quelques mètres à quelques centaines de mètres), connecteur RJ45"
+      ],
+      [
+        "Câble coaxial",
+        "Un fil de cuivre épais, meilleurs débits et portée que la paire torsadée, plus coûteux"
+      ],
+      [
+        "Fibre optique",
+        "Transmission d'ondes lumineuses jusqu'à 30 km sans répéteur, très haut débit"
+      ],
+      [
+        "Satellite",
+        "Grande couverture géographique (ex. océans), débits élevés mais très forte latence"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_038",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Complétez la phrase.",
+    "answer": "30",
+    "distractors": [],
+    "explanation": "La fibre optique transmet des ondes lumineuses et peut couvrir jusqu'à 30 kilomètres sans nécessiter de répéteur.",
+    "tags": [
+      "fibre_optique",
+      "portee"
+    ],
+    "formats": [
+      "fill_blank",
+      "flashcard"
+    ],
+    "cloze": "La fibre optique peut couvrir jusqu'à {{blank}} kilomètres sans répéteur."
+  },
+  {
+    "id": "reseaux_architecture_039",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est le principal inconvénient des liaisons par satellite par rapport aux liaisons terrestres ?",
+    "answer": "Une très mauvaise latence due aux grandes distances parcourues par le signal",
+    "distractors": [
+      "Un débit extrêmement faible inférieur au kilobit par seconde",
+      "L'impossibilité d'être utilisé en pleine mer ou dans les zones isolées",
+      "La nécessité de tirer un câble en cuivre jusqu'au satellite"
+    ],
+    "explanation": "Les satellites offrent de bons débits et une couverture mondiale, mais la distance aller-retour engendre une très forte latence et le coût de lancement est très élevé.",
+    "tags": [
+      "satellite",
+      "latence"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_040",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce que l'atténuation d'un signal et comment y remédie-t-on sur une longue liaison ?",
+    "answer": "La perte progressive de puissance du signal avec la distance, corrigée en plaçant un répéteur pour le régénérer",
+    "distractors": [
+      "La collision entre deux trames Ethernet, corrigée par un pare-feu",
+      "Le changement de valeur d'un bit dû au chiffrement SSL, corrigé par le DNS",
+      "La réduction volontaire du débit par le récepteur, corrigée par le contrôle de flux"
+    ],
+    "explanation": "Sur tout support, un signal s'atténue (perd de la puissance) avec la distance ; au-delà d'une distance maximale, il faut un répéteur pour régénérer le signal.",
+    "tags": [
+      "attenuation",
+      "repeteur",
+      "signal"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_041",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Dans le cours, comment définit-on une erreur de transmission au niveau physique ?",
+    "answer": "Un bit qui change de valeur pendant sa transmission (par exemple un 0 lu comme un 1) à cause d'une interférence",
+    "distractors": [
+      "Un site web qui met plus de 5 secondes à répondre",
+      "Un câble RJ45 débranché de la carte réseau",
+      "Une adresse IP mal saisie par l'utilisateur"
+    ],
+    "explanation": "Une erreur de transmission survient lorsqu'une perturbation (interférence) modifie le signal et fait interpréter un bit 0 en 1 ou inversement.",
+    "tags": [
+      "erreur",
+      "interference",
+      "binaire"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_042",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Associez chaque mode de transmission bidirectionnel ou unidirectionnel à sa définition.",
+    "answer": "Simplex : Envoi de signaux dans un seul sens uniquement (ex. radio, télévision) ; Half-duplex : Envoi et réception possibles sur la liaison, mais à l'alternat (pas simultanément) ; Full-duplex : Envoi et réception simultanés de signaux par deux cartes réseau",
+    "distractors": [],
+    "explanation": "Simplex = unidirectionnel ; Half-duplex = bidirectionnel à l'alternat ; Full-duplex = bidirectionnel simultané.",
+    "tags": [
+      "simplex",
+      "half_duplex",
+      "full_duplex"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Simplex",
+        "Envoi de signaux dans un seul sens uniquement (ex. radio, télévision)"
+      ],
+      [
+        "Half-duplex",
+        "Envoi et réception possibles sur la liaison, mais à l'alternat (pas simultanément)"
+      ],
+      [
+        "Full-duplex",
+        "Envoi et réception simultanés de signaux par deux cartes réseau"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_043",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelles sont les deux problématiques spécifiques aux liaisons multipoints ?",
+    "answer": "L'adressage unique des cartes réseau pour identifier émetteur et destinataire, et le partage du support pour éviter les collisions",
+    "distractors": [
+      "Le choix entre fibre optique et satellite, et le chiffrement des mots de passe",
+      "La conversion analogique-numérique de la voix, et la résolution des noms DNS",
+      "La fragmentation des paquets IP, et la création de points de reprise de session"
+    ],
+    "explanation": "Sur un support partagé par plusieurs cartes réseau (liaison multipoint), il faut savoir qui parle à qui (adresses MAC) et réguler l'accès au support (partage de la parole).",
+    "tags": [
+      "multipoint",
+      "adressage",
+      "partage_support"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_044",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Associez chaque mode de « partage de la parole » sur une liaison multipoint à son principe.",
+    "answer": "Maître-esclave : Une carte réseau centrale distribue la parole aux autres équipements ; Mode politesse : Chaque équipement écoute le support avant d'émettre pour vérifier qu'il est libre ; Mode jeton : Un jeton virtuel circule entre les cartes et seul son détenteur peut émettre pendant un temps limité",
+    "distractors": [],
+    "explanation": "Les trois mécanismes d'accès au support sont le maître-esclave (centralisé), la politesse (écouter avant de parler) et le jeton (droit de parole tournant).",
+    "tags": [
+      "multipoint",
+      "jeton",
+      "maitre_esclave",
+      "politesse"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Maître-esclave",
+        "Une carte réseau centrale distribue la parole aux autres équipements"
+      ],
+      [
+        "Mode politesse",
+        "Chaque équipement écoute le support avant d'émettre pour vérifier qu'il est libre"
+      ],
+      [
+        "Mode jeton",
+        "Un jeton virtuel circule entre les cartes et seul son détenteur peut émettre pendant un temps limité"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_045",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Associez chaque topologie réseau à sa description.",
+    "answer": "Bus : Tous les équipements sont reliés à un unique support de transmission partagé ; Étoile : Tous les équipements sont reliés à un nœud central (commutateur, répéteur ou box) ; Anneau : Chaque équipement est relié uniquement à son précédent et à son suivant ; Maillée : Chaque équipement est relié à plusieurs autres, offrant plusieurs chemins possibles (redondance)",
+    "distractors": [],
+    "explanation": "Les quatre grandes topologies sont le bus (support unique), l'étoile (nœud central), l'anneau (boucle de proche en proche) et le maillage (chemins multiples).",
+    "tags": [
+      "topologie",
+      "bus",
+      "etoile",
+      "anneau",
+      "maillee"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "Bus",
+        "Tous les équipements sont reliés à un unique support de transmission partagé"
+      ],
+      [
+        "Étoile",
+        "Tous les équipements sont reliés à un nœud central (commutateur, répéteur ou box)"
+      ],
+      [
+        "Anneau",
+        "Chaque équipement est relié uniquement à son précédent et à son suivant"
+      ],
+      [
+        "Maillée",
+        "Chaque équipement est relié à plusieurs autres, offrant plusieurs chemins possibles (redondance)"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_046",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Dans une topologie physique en étoile, quelle différence existe-t-il si le nœud central est un répéteur plutôt qu'un commutateur ?",
+    "answer": "Avec un répéteur, la topologie logique reste celle d'un bus car le support demeure partagé et le partage de la parole reste nécessaire",
+    "distractors": [
+      "Avec un répéteur, le réseau devient automatiquement une topologie maillée totale",
+      "Avec un commutateur, une panne du nœud central n'affecte aucun équipement du réseau local",
+      "Avec un répéteur, les équipements peuvent communiquer sans carte réseau"
+    ],
+    "explanation": "Un répéteur se contente de régénérer le signal vers tous les ports (étoile physique, mais bus logique), alors qu'un commutateur gère le dialogue entre ports. Dans les deux cas, la panne du nœud central coupe tout le réseau local.",
+    "tags": [
+      "topologie",
+      "etoile",
+      "bus",
+      "commutateur",
+      "repeteur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_047",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Pourquoi les cœurs de réseau (comme celui d'Internet) utilisent-ils généralement une topologie maillée ?",
+    "answer": "Pour assurer la redondance des chemins, améliorer les performances et tolérer les pannes",
+    "distractors": [
+      "Parce que c'est la topologie la moins coûteuse en nombre de câbles",
+      "Parce qu'elle ne nécessite aucun équipement intermédiaire comme les routeurs",
+      "Parce qu'elle fonctionne uniquement avec des câbles coaxiaux"
+    ],
+    "explanation": "La topologie maillée offre plusieurs chemins alternatifs (redondance) permettant de contourner une panne, même si elle est coûteuse en liaisons.",
+    "tags": [
+      "topologie_maillee",
+      "redondance",
+      "internet"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_048",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Dans une topologie maillée totale reliant n équipements directement entre eux, quel est l'ordre de grandeur du nombre de liaisons nécessaires ?",
+    "answer": "De l'ordre de n²",
+    "distractors": [
+      "De l'ordre de n",
+      "De l'ordre de log(n)",
+      "Toujours égal à 7"
+    ],
+    "explanation": "Relier chaque équipement directement à tous les autres nécessite n(n-1)/2 liaisons, soit un coût de l'ordre de n² câbles.",
+    "tags": [
+      "topologie_maillee",
+      "complexite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_049",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle topologie est typiquement utilisée dans un réseau local domestique autour de la box de l'opérateur ?",
+    "answer": "La topologie en étoile",
+    "distractors": [
+      "La topologie maillée totale",
+      "La topologie en anneau",
+      "La topologie en bus coaxial"
+    ],
+    "explanation": "Dans un réseau local domestique, tous les appareils se connectent en étoile à la box (qui joue le rôle de commutateur/borne WiFi et de routeur vers Internet).",
+    "tags": [
+      "topologie",
+      "etoile",
+      "lan"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_050",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Pourquoi est-il indispensable de normaliser les protocoles réseau ?",
+    "answer": "Pour garantir l'interopérabilité et la compatibilité entre équipements et logiciels de différents constructeurs",
+    "distractors": [
+      "Pour obliger tous les constructeurs à utiliser exactement le même système d'exploitation",
+      "Pour supprimer le besoin d'adresses IP sur Internet",
+      "Pour chiffrer automatiquement toutes les communications"
+    ],
+    "explanation": "Historiquement, les réseaux propriétaires étaient incompatibles entre constructeurs. La normalisation publie des spécifications communes permettant à tout équipement conforme de communiquer.",
+    "tags": [
+      "normalisation",
+      "protocole",
+      "interoperabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_051",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Où sont respectivement exécutés les protocoles applicatifs, les protocoles réseau/transport (IP, TCP, UDP) et les protocoles de liaison (Ethernet, WiFi) ?",
+    "answer": "Protocoles applicatifs : dans l'application (navigateur, serveur) ; IP/TCP/UDP : dans le système d'exploitation ; Ethernet/WiFi : dans la carte réseau",
+    "distractors": [
+      "Tous les protocoles s'exécutent uniquement dans la carte réseau",
+      "IP et TCP s'exécutent dans le navigateur, tandis que HTTP s'exécute dans la carte réseau",
+      "Ethernet s'exécute dans le système d'exploitation, tandis que HTTP s'exécute sur les routeurs"
+    ],
+    "explanation": "Les applications gèrent les protocoles applicatifs (HTTP, DNS), l'OS implémente la pile transport/réseau (TCP, UDP, IP, ICMP, ARP) et la carte réseau gère les couches basses (Ethernet, WiFi).",
+    "tags": [
+      "implementation",
+      "os",
+      "carte_reseau",
+      "application"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_052",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Dans une architecture en couches, quelle différence existe-t-il entre le « dialogue horizontal » et le « dialogue vertical » ?",
+    "answer": "Le dialogue horizontal est un échange virtuel d'en-têtes entre deux couches de même niveau, tandis que le dialogue vertical correspond aux appels réels entre couches adjacentes via des instructions (ex. sockets)",
+    "distractors": [
+      "Le dialogue horizontal concerne uniquement le WiFi, tandis que le dialogue vertical concerne uniquement la fibre optique",
+      "Le dialogue vertical a lieu entre deux ordinateurs distants, tandis que le dialogue horizontal a lieu dans le câble",
+      "Il n'y a aucune différence : les deux termes désignent l'envoi d'un acquittement TCP"
+    ],
+    "explanation": "Les couches homologues (ex. couche 3 émetteur et couche 3 récepteur) communiquent logiquement via leurs en-têtes (dialogue horizontal virtuel), mais physiquement les données descendent et remontent les couches (dialogue vertical).",
+    "tags": [
+      "architecture_en_couches",
+      "dialogue_horizontal",
+      "dialogue_vertical"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_053",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce qu'un socket dans une architecture réseau ?",
+    "answer": "Une interface logicielle permettant à une application de transférer des données vers la couche transport du système d'exploitation",
+    "distractors": [
+      "Un connecteur physique à 8 broches utilisé pour les câbles Ethernet",
+      "Un algorithme de routage utilisé par les routeurs de cœur de réseau",
+      "Un protocole de chiffrement utilisé par la couche présentation"
+    ],
+    "explanation": "Les sockets servent d'interface (dialogue vertical) entre les protocoles applicatifs (ex. HTTP) et le système d'exploitation en déposant les données dans un buffer.",
+    "tags": [
+      "socket",
+      "interface",
+      "os"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_054",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Pourquoi découpe-t-on un fichier volumineux en plusieurs morceaux (paquets) avant de le transférer sur un réseau ?",
+    "answer": "Parce que la probabilité d'erreur augmente avec la taille des données et que la mémoire (buffers) des équipements et cartes réseau est limitée",
+    "distractors": [
+      "Parce que le protocole DNS interdit les fichiers de plus de 1 kilo-octet",
+      "Pour éviter d'avoir à calculer un checksum",
+      "Parce que la fibre optique ne peut transmettre qu'un bit par seconde"
+    ],
+    "explanation": "Découper en paquets évite de devoir retransmettre tout un gros fichier en cas d'erreur sur un bit et respecte la capacité mémoire limitée des cartes réseau.",
+    "tags": [
+      "fragmentation",
+      "paquets",
+      "fiabilite"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_055",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Comment fonctionne le protocole élémentaire « send and wait » présenté dans le cours pour transférer un fichier sans erreur ?",
+    "answer": "L'émetteur envoie un paquet avec son checksum et attend un acquittement positif (OK) avant d'envoyer le suivant, ou le retransmet s'il reçoit un Not-OK",
+    "distractors": [
+      "L'émetteur envoie tous les paquets d'un coup sans attendre d'accusé de réception ni vérifier les erreurs",
+      "Le récepteur calcule le chemin IP et renvoie le fichier à l'expéditeur",
+      "L'émetteur envoie chaque paquet trois fois de suite par sécurité sans jamais écouter le récepteur"
+    ],
+    "explanation": "Dans le protocole « send and wait », chaque paquet est accompagné d'un checksum ; le récepteur répond OK ou Not-OK, et l'émetteur attend cette réponse pour passer à la suite ou retransmettre.",
+    "tags": [
+      "send_and_wait",
+      "checksum",
+      "acquittement"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_056",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de la couche présentation (couche 6) du modèle OSI ?",
+    "answer": "Transformer ou mettre en forme les données de l'application, par exemple pour le chiffrement (SSL/TLS)",
+    "distractors": [
+      "Déterminer le chemin des paquets à travers les routeurs",
+      "Convertir les bits en signaux électriques sur le câble",
+      "Attribuer des adresses MAC aux cartes réseau"
+    ],
+    "explanation": "La couche présentation adapte la représentation des données pour l'application (codage, compression, chiffrement comme SSL).",
+    "tags": [
+      "osi",
+      "couche_presentation",
+      "ssl"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_057",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Comment les protocoles de transport TCP et UDP identifient-ils l'application (processus client ou serveur) ciblée par un message ?",
+    "answer": "Grâce aux numéros de port",
+    "distractors": [
+      "Grâce aux adresses MAC",
+      "Grâce au checksum CRC",
+      "Grâce à la longueur du câble Ethernet"
+    ],
+    "explanation": "Les numéros de port (par exemple le port 80 pour HTTP ou 53 pour DNS) permettent de différencier les applications exécutées sur une même machine.",
+    "tags": [
+      "ports",
+      "tcp",
+      "udp"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_058",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Qu'est-ce que la fragmentation au niveau de la couche réseau (protocole IP) ?",
+    "answer": "Le découpage d'un paquet IP trop volumineux en plusieurs morceaux pour respecter la taille maximale autorisée par les trames de la couche inférieure",
+    "distractors": [
+      "La perte aléatoire de paquets lorsqu'un routeur est saturé",
+      "La fusion de plusieurs petits messages HTTP en un seul signal analogique",
+      "La suppression de l'en-tête Ethernet par la carte réseau"
+    ],
+    "explanation": "Chaque protocole de liaison impose une taille maximale de trame ; si un paquet IP dépasse cette limite, IP le fragmente en paquets plus petits.",
+    "tags": [
+      "fragmentation",
+      "ip",
+      "taille_maximale"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_059",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Remettez dans l'ordre chronologique les 4 primitives de service d'une entité de protocole lors d'un échange confirmé.",
+    "answer": "Requête → Indication → Réponse → Confirmation",
+    "distractors": [],
+    "explanation": "Selon le schéma des primitives de service du modèle OSI : l'émetteur émet une Requête (1), le récepteur reçoit une Indication (2), renvoie une Réponse (3), et l'émetteur reçoit une Confirmation (4).",
+    "tags": [
+      "osi",
+      "primitives_de_service"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Requête",
+      "Indication",
+      "Réponse",
+      "Confirmation"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_060",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Combien de couches compte l'architecture TCP/IP ?",
+    "answer": "4",
+    "distractors": [
+      "7",
+      "3",
+      "5"
+    ],
+    "explanation": "L'architecture TCP/IP est une version simplifiée en 4 couches (Application, Transport, Réseau/Internet, Transmission/Accès réseau) contre 7 pour le modèle OSI.",
+    "tags": [
+      "tcp_ip",
+      "couches"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_061",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle différence principale oppose TCP et UDP au niveau de la couche transport ?",
+    "answer": "TCP est en mode connecté et garantit la fiabilité (retransmissions, ordre), tandis qu'UDP est en mode non connecté, plus rapide et sans retransmission",
+    "distractors": [
+      "UDP garantit l'ordre des paquets, tandis que TCP ne fait aucune détection d'erreur",
+      "TCP s'exécute sur les routeurs, tandis qu'UDP s'exécute dans la carte réseau",
+      "UDP utilise des adresses MAC, tandis que TCP utilise des noms de domaine"
+    ],
+    "explanation": "TCP assure un transport fiable en mode connecté. UDP ajoute simplement les numéros de port et un checksum de détection d'erreur sans retransmission, ce qui le rend idéal pour les applications rapides ou multimédias.",
+    "tags": [
+      "tcp",
+      "udp",
+      "transport"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_062",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Vrai ou faux : le protocole UDP effectue une détection d'erreur grâce à un checksum, mais ne procède à aucune retransmission en cas d'erreur.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "UDP calcule bien un checksum pour détecter les erreurs, mais comme il n'assure pas la fiabilité, il ne demande pas de retransmission.",
+    "tags": [
+      "udp",
+      "checksum",
+      "fiabilite"
+    ],
+    "formats": [
+      "true_false",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_063",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Associez chaque protocole de l'architecture TCP/IP à son rôle.",
+    "answer": "ARP : Faire le lien entre une adresse IP et l'adresse MAC de la carte réseau correspondante ; ICMP : Tester l'accessibilité et les échanges de messages sur le réseau (ex. commande ping) ; SMTP : Envoyer des courriers électroniques ; FTP : Transférer des fichiers entre un client et un serveur",
+    "distractors": [],
+    "explanation": "ARP résout les adresses IP en adresses MAC, ICMP permet le diagnostic réseau (ping), SMTP gère l'envoi d'e-mails et FTP le transfert de fichiers.",
+    "tags": [
+      "protocoles",
+      "arp",
+      "icmp",
+      "smtp",
+      "ftp"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "ARP",
+        "Faire le lien entre une adresse IP et l'adresse MAC de la carte réseau correspondante"
+      ],
+      [
+        "ICMP",
+        "Tester l'accessibilité et les échanges de messages sur le réseau (ex. commande ping)"
+      ],
+      [
+        "SMTP",
+        "Envoyer des courriers électroniques"
+      ],
+      [
+        "FTP",
+        "Transférer des fichiers entre un client et un serveur"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_064",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle différence de sécurité distingue les protocoles d'accès à distance Telnet et SSH ?",
+    "answer": "SSH est sécurisé (chiffré), contrairement à Telnet",
+    "distractors": [
+      "Telnet est sécurisé, contrairement à SSH",
+      "Telnet fonctionne uniquement sur fibre optique, tandis que SSH fonctionne en WiFi",
+      "SSH est un protocole de couche physique, tandis que Telnet est un protocole de routage"
+    ],
+    "explanation": "Telnet et SSH permettent tous deux des connexions à distance au niveau applicatif, mais SSH apporte la sécurisation des échanges.",
+    "tags": [
+      "ssh",
+      "telnet",
+      "application"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_065",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 3,
+    "prompt": "Quelle application citée dans le cours utilise explicitement les couches session et présentation (via RPC et XDR) au-dessus de TCP/IP ?",
+    "answer": "NFS (Network File System)",
+    "distractors": [
+      "ICMP",
+      "ARP",
+      "Ethernet"
+    ],
+    "explanation": "Bien que TCP/IP n'ait que 4 couches, l'application NFS (accès à des fichiers distants) s'appuie sur XDR (présentation) et RPC (session).",
+    "tags": [
+      "nfs",
+      "xdr",
+      "rpc",
+      "tcp_ip"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_066",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle correspondance associe correctement les normes IEEE aux technologies de la couche transmission ?",
+    "answer": "802.3 : Ethernet ; 802.11 : WiFi ; 802.15 : Bluetooth",
+    "distractors": [
+      "802.3 : WiFi ; 802.11 : Bluetooth ; 802.15 : Ethernet",
+      "802.3 : IP ; 802.11 : TCP ; 802.15 : HTTP",
+      "802.3 : Fibre optique ; 802.11 : Satellite ; 802.15 : Coaxial"
+    ],
+    "explanation": "La couche transmission de TCP/IP regroupe les protocoles des cartes réseau : Ethernet (802.3), WiFi (802.11) et Bluetooth (802.15).",
+    "tags": [
+      "ieee",
+      "ethernet",
+      "wifi",
+      "bluetooth"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_067",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelles couches de la pile TCP/IP un routeur exécute-t-il pour acheminer un paquet ?",
+    "answer": "Uniquement les couches basses jusqu'à la couche réseau (Physique, Liaison et IP/Routage/ICMP/ARP), sans les couches Transport ni Application",
+    "distractors": [
+      "Toutes les couches, y compris HTTP, DNS, TCP et UDP",
+      "Uniquement la couche physique (comme un simple répéteur)",
+      "Uniquement la couche application pour lire le contenu des pages web"
+    ],
+    "explanation": "Comme le montre le schéma d'interconnexion TCP/IP, un routeur est un équipement intermédiaire qui exécute uniquement les protocoles point à point (couches 1, 2 et 3).",
+    "tags": [
+      "routeur",
+      "tcp_ip",
+      "point_a_point"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_068",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Lorsqu'un utilisateur saisit une URL dans son navigateur web, quel protocole de transport est utilisé pour la requête DNS, et lequel est utilisé pour la requête HTTP ?",
+    "answer": "UDP (port 53) pour la requête DNS, puis TCP (port 80) pour la requête HTTP",
+    "distractors": [
+      "TCP pour la requête DNS, puis UDP pour la requête HTTP",
+      "UDP pour les deux requêtes afin d'éviter toute connexion",
+      "ICMP pour la requête DNS, puis ARP pour la requête HTTP"
+    ],
+    "explanation": "Le navigateur interroge d'abord le serveur DNS via UDP (port 53) pour obtenir l'adresse IP, puis ouvre une connexion fiable TCP (port 80) pour envoyer sa requête HTTP GET.",
+    "tags": [
+      "http",
+      "dns",
+      "tcp",
+      "udp",
+      "ports"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_069",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Remettez dans l'ordre les étapes déclenchées lorsqu'un navigateur accède à http://www.univ-lyon1.fr.",
+    "answer": "Le navigateur envoie une requête DNS en UDP (port 53) → Le serveur DNS renvoie l'adresse IP du serveur web → Le navigateur ouvre une connexion TCP (port 80) avec le serveur → Le navigateur envoie la requête HTTP GET et affiche la page reçue",
+    "distractors": [],
+    "explanation": "Il faut d'abord résoudre le nom de domaine en adresse IP via DNS (UDP), puis établir une connexion TCP sur le port 80 avant d'échanger les données HTTP.",
+    "tags": [
+      "http",
+      "dns",
+      "ordre",
+      "requete_web"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Le navigateur envoie une requête DNS en UDP (port 53)",
+      "Le serveur DNS renvoie l'adresse IP du serveur web",
+      "Le navigateur ouvre une connexion TCP (port 80) avec le serveur",
+      "Le navigateur envoie la requête HTTP GET et affiche la page reçue"
+    ]
+  }
+]
