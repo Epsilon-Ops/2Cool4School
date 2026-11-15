@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { courses } from '../data/utils/courseLoader.js';
+import MathText from './MathText.jsx';
 import { noteKey, notionPct, sectionPct, coursePct, groupPct } from '../engine/courseProgress.js';
 
 import categories from '../data/utils/categories.json';
@@ -60,22 +61,22 @@ export function buildTree(subjects) {
 /** Paragraphe : les notions définies entre [[ ]] sont cliquables ; les autres restent du texte. */
 function Body({ text, terms, onTerm }) {
   return text.split(/\[\[(.+?)\]\]/).map((part, i) => {
-    if (i % 2 === 0) return <span key={i}>{part}</span>;
+    if (i % 2 === 0) return <span key={i}><MathText text={part} /></span>;
     const defined = terms.some((t) => t.term === part);
     return defined ? (
-      <button key={i} className="key" onClick={() => onTerm(part)}>{part}</button>
+      <button key={i} className="key" onClick={() => onTerm(part)}><MathText text={part} /></button>
     ) : (
-      <span key={i}>{part}</span>
+      <span key={i}><MathText text={part} /></span>
     );
   });
 }
 
-function Section({ course, section, index, open, onToggle, onPractice, progress, onSeen }) {
+function Section({ course, section, index, open, onToggle, onPractice, progress, onSeen, playable }) {
   const [tab, setTab] = useState('analogies');
   const [focus, setFocus] = useState(null);
   const count = section.questionIds?.length ?? 0;
   const [n, setN] = useState(Math.min(5, count));
-  const pct = sectionPct(course.id, section, progress);
+  const pct = sectionPct(course.id, section, progress, playable);
 
   const seeTerm = (term) => onSeen(course.id, noteKey(section.id, term));
   const pickTerm = (term) => {
@@ -114,7 +115,7 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
               {section.analogies.map((a) => (
                 <li key={a.theme}>
                   <b>{a.theme}</b>
-                  <span>{a.text}</span>
+                  <span><MathText text={a.text} /></span>
                 </li>
               ))}
             </ul>
@@ -128,12 +129,12 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
                   <div key={t.term} className={focus === t.term ? 'focus' : ''}>
                     <button className="term-btn" onClick={() => seeTerm(t.term)}>
                       <dt>
-                        {t.term}
-                        {t.formula && <code>{t.formula}</code>}
+                        <MathText text={t.term} />
+                        {t.formula && <MathText as="code" text={t.formula} />}
                       </dt>
                       <span className={`tag ${seen ? 'ok' : ''}`}>{seen ? 'Vue · 100 %' : 'À voir · 0 %'}</span>
                     </button>
-                    <dd>{t.def}</dd>
+                    <dd><MathText text={t.def} /></dd>
                   </div>
                 );
               })}
@@ -163,7 +164,7 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
 }
 
 /** Un cours ouvert : progression globale puis sous-sections dépliables. */
-function CourseView({ course, progress, onBack, onPractice, onSeen }) {
+function CourseView({ course, progress, onBack, onPractice, onSeen, playable }) {
   const [openId, setOpenId] = useState(null);
   return (
     <div className="cours">
@@ -173,7 +174,7 @@ function CourseView({ course, progress, onBack, onPractice, onSeen }) {
           <span className="eyebrow">{course.subjectName} · {course.chapter}</span>
           <h1>{course.title}</h1>
           <p className="muted">{course.intro}</p>
-          <Bar pct={coursePct(course, progress)} />
+          <Bar pct={coursePct(course, progress, playable)} />
         </div>
       </section>
       <div className="lesson-list">
@@ -187,6 +188,7 @@ function CourseView({ course, progress, onBack, onPractice, onSeen }) {
             onToggle={() => setOpenId(openId === s.id ? null : s.id)}
             onPractice={onPractice}
             progress={progress}
+            playable={playable}
             onSeen={onSeen}
           />
         ))}
@@ -196,14 +198,14 @@ function CourseView({ course, progress, onBack, onPractice, onSeen }) {
 }
 
 /** Vue « Cours » : catégories, matières, chapitres, cours, avec progression à chaque niveau. */
-export default function Cours({ subjects, progress, onSeen, onPractice }) {
+export default function Cours({ subjects, progress, onSeen, onPractice, playable }) {
   const [openCourse, setOpenCourse] = useState(null);
   const tree = buildTree(subjects);
 
   if (openCourse) {
     const course = courses.find((c) => c.id === openCourse);
     if (course) {
-      return <CourseView course={course} progress={progress} onBack={() => setOpenCourse(null)} onPractice={onPractice} onSeen={onSeen} />;
+      return <CourseView course={course} progress={progress} onBack={() => setOpenCourse(null)} onPractice={onPractice} onSeen={onSeen} playable={playable} />;
     }
   }
 
@@ -218,17 +220,17 @@ export default function Cours({ subjects, progress, onSeen, onPractice }) {
             <details key={sub.id} className="subject-block" open style={{ '--c': sub.color }}>
               <summary>
                 <span>{sub.emoji} {sub.name}</span>
-                <Bar pct={groupPct(sub.courses, progress)} />
+                <Bar pct={groupPct(sub.courses, progress, playable)} />
               </summary>
               {sub.chapters.map((ch) => (
                 <div key={ch.title} className="chapter">
-                  <h3>{ch.title} <Bar pct={groupPct(ch.courses, progress)} /></h3>
+                  <h3>{ch.title} <Bar pct={groupPct(ch.courses, progress, playable)} /></h3>
                   <ul className="course-cards">
                     {ch.courses.map((c) => (
                       <li key={c.id}>
                         <button className="course-card" onClick={() => setOpenCourse(c.id)}>
                           <b>{c.title}</b>
-                          <Bar pct={coursePct(c, progress)} />
+                          <Bar pct={coursePct(c, progress, playable)} />
                         </button>
                       </li>
                     ))}

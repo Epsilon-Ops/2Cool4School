@@ -1,4 +1,4 @@
-import React, { useEffect, useMemo, useState } from 'react';
+import React, { useEffect, useMemo, useRef, useState } from 'react';
 
 import { subjects, questionBank } from './data/utils/subjectLoader.js';
 import { courses } from './data/utils/courseLoader.js';
@@ -38,10 +38,24 @@ export default function App() {
     [stats]
   );
   const isDomainOpen = (id) => domainOpen(id, certCount, progress);
+  // Questions jouables (hors brouillons) : seules elles comptent pour valider un cours.
+  const playableIds = useMemo(() => new Set(questionBank.map((q) => q.id)), []);
 
   useEffect(() => {
     saveProgress(progress);
   }, [progress]);
+
+  // Hauteur réelle de la barre du haut : les en-têtes de matière collent juste en dessous.
+  const topbarRef = useRef(null);
+  useEffect(() => {
+    const el = topbarRef.current;
+    if (!el) return undefined;
+    const apply = () => document.documentElement.style.setProperty('--topbar-h', `${el.offsetHeight}px`);
+    apply();
+    const ro = new ResizeObserver(apply);
+    ro.observe(el);
+    return () => ro.disconnect();
+  }, [view.name]);
 
   // Succès, défis et objectifs : évalués après chaque changement. Sans changement, la référence est conservée : pas de boucle.
   useEffect(() => {
@@ -130,7 +144,7 @@ export default function App() {
 
   return (
     <div className="app">
-      <header className="topbar">
+      <header className="topbar" ref={topbarRef}>
         <div className="topbar-in">
           <button className="brand" onClick={goHome} aria-label="Retour à l'accueil">
             <Mascot size={42} color={mascotColor} />
@@ -202,7 +216,9 @@ export default function App() {
           <Trophies subjects={subjects} bank={questionBank} courses={courses} progress={progress} onUpdate={updateProgress} />
         )}
 
-        {view.name === 'cours' && <Cours subjects={subjects} progress={progress} onSeen={markSeen} onPractice={startPractice} />}
+        {view.name === 'cours' && (
+          <Cours subjects={subjects} progress={progress} onSeen={markSeen} onPractice={startPractice} playable={playableIds} />
+        )}
 
         {view.name === 'session' && (
           <Session

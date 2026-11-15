@@ -1,4 +1,4 @@
-import { useState } from 'react';
+import { useLayoutEffect, useState } from 'react';
 import { dueQuestions } from '../engine/selection.js';
 import { UNLOCK } from '../engine/mastery.js';
 import { DOMAIN_REQUIREMENTS } from '../engine/gamification.js';
@@ -44,6 +44,20 @@ export default function SkillTree({
   const playable = flat.filter((s) => isPlayable(s.id));
   const certifiedCount = playable.filter((s) => st(s.id).certified).length;
   const nextId = flat.find((s) => statusOf(s) === 'available')?.id;
+
+  // Hauteur réelle de l'en-tête de chaque matière : la ligne de partie colle juste en dessous.
+  useLayoutEffect(() => {
+    const units = [...document.querySelectorAll('.unit')];
+    const apply = () =>
+      document.querySelectorAll('.unit').forEach((u) => {
+        const head = u.querySelector('.unit-head');
+        if (head) u.style.setProperty('--unit-head-h', `${head.offsetHeight}px`);
+      });
+    apply();
+    const ro = new ResizeObserver(apply);
+    document.querySelectorAll('.unit-head').forEach((h) => ro.observe(h));
+    return () => ro.disconnect();
+  }, [subjects.length]);
 
   // Marqueur « Commencer / Continuer » : une fois par matière, sur la première compétence disponible
   // dont la maîtrise est sous 80 %. Dès qu'elle atteint 80 %, le marqueur passe à la suivante.
@@ -124,10 +138,12 @@ export default function SkillTree({
         </header>
 
         <div id={bodyId} hidden={!isOpen}>
-          {subPlayable.length > 0 ? (
-            <Path sub={sub} st={st} statusOf={statusOf} nextId={nextBySub[sub.id]} selectedId={selectedId} onSelect={setSelectedId} />
-          ) : (
+          {/* Toute matière affiche au moins ses leçons, même provisoires : les leçons sans exercice sont « bientôt disponibles ». */}
+          {subPlayable.length === 0 && (
             <p className="muted soon-note">Bientôt disponible : les exercices de cette matière arrivent.</p>
+          )}
+          {sub.skills.length > 0 && (
+            <Path sub={sub} st={st} statusOf={statusOf} nextId={nextBySub[sub.id]} selectedId={selectedId} onSelect={setSelectedId} />
           )}
         </div>
       </section>
@@ -231,59 +247,94 @@ export default function SkillTree({
 }
 
 /** Chemin en zigzag : les nœuds sont reliés dans l'ordre de la matière. */
+/**
+ * Chemin d'une matière, découpé en parties. Chaque partie est un bloc du flux normal :
+ * sa ligne de titre (« Partie 1 : … ») reste collée en haut pendant qu'on parcourt ce bloc.
+ */
 function Path({ sub, st, statusOf, nextId, selectedId, onSelect }) {
-  const n = sub.skills.length;
-  const height = TOP * 2 + Math.max(0, n - 1) * GAP;
-  const pts = sub.skills.map((_, i) => ({ x: ZIGZAG[i % ZIGZAG.length], y: TOP + i * GAP }));
+  const groups = [];
+  sub.skills.forEach((s, i) => {
+    if (i === 0 || s.part) groups.push({ part: s.part ?? null, items: [] });
+    groups[groups.length - 1].items.push({ s, i });
+  });
+  return (
+    <div className="path-wrap">
+      {groups.map((g, gi) => (
+        <PathBlock
+          key={gi}
+          group={g}
+          st={st}
+          statusOf={statusOf}
+          nextId={nextId}
+          selectedId={selectedId}
+          onSelect={onSelect}
+          color={sub.color}
+        />
+      ))}
+    </div>
+  );
+}
+
+function PathBlock({ group, st, statusOf, nextId, selectedId, onSelect, color }) {
+  const { items } = group;
+  const height = TOP * 2 + Math.max(0, items.length - 1) * GAP;
+  const pts = items.map((_, j) => ({ x: ZIGZAG[j % ZIGZAG.length], y: TOP + j * GAP }));
 
   return (
-    <div className="path" style={{ height }}>
-      <svg className="path-svg" viewBox={`0 0 100 ${height}`} preserveAspectRatio="none" aria-hidden="true">
-        {pts.slice(1).map((p, i) => {
-          const a = pts[i];
-          const d = `M ${a.x} ${a.y} C ${a.x} ${a.y + GAP / 2}, ${p.x} ${p.y - GAP / 2}, ${p.x} ${p.y}`;
-          const done = Boolean(st(sub.skills[i].id).certified);
-          return <path key={i} d={d} className={done ? 'seg done' : 'seg todo'} />;
-        })}
-      </svg>
+    <div className="path-block">
+      {group.part && (
+        <div className="part-head" role="heading" aria-level={3}>
+          <span>{group.part}</span>
+        </div>
+      )}
+      <div className="path" style={{ height }}>
+        <svg className="path-svg" viewBox={`0 0 100 ${height}`} preserveAspectRatio="none" aria-hidden="true">
+          {pts.slice(1).map((p, j) => {
+            const a = pts[j];
+            const d = `M ${a.x} ${a.y} C ${a.x} ${a.y + GAP / 2}, ${p.x} ${p.y - GAP / 2}, ${p.x} ${p.y}`;
+            const done = Boolean(st(items[j].s.id).certified);
+            return <path key={j} d={d} className={done ? 'seg done' : 'seg todo'} />;
+          })}
+        </svg>
 
-      {sub.skills.map((s, i) => {
-        const status = statusOf(s);
-        const info = st(s.id);
-        const m = info.mastery;
-        const { x, y } = pts[i];
-        const isNext = s.id === nextId;
-        const gap = info.gap;
-        const aria =
-          status === 'locked' ? 'verrouillée'
-          : status === 'acquired' ? 'certifiée'
-          : status === 'soon' ? 'bientôt disponible'
-          : `${m} %${gap ? ', lacune' : ''}`;
-        return (
-          <button
-            key={s.id}
-            className={`node ${status}${isNext ? ' next' : ''}${selectedId === s.id ? ' selected' : ''}${gap ? ' gap' : ''}`}
-            style={{ left: `${x}%`, top: y, '--c': sub.color }}
-            onClick={() => onSelect(s.id)}
-            aria-label={`${s.name} (${aria})`}
-          >
-            {status === 'available' && (
-              <svg className="ring" viewBox="0 0 100 100" aria-hidden="true">
-                <circle cx="50" cy="50" r="46" pathLength="100" className="ring-bg" />
-                <circle cx="50" cy="50" r="46" pathLength="100" className="ring-fg" strokeDasharray={`${m} 100`} />
-              </svg>
-            )}
-            <span className="node-icon">
-              {status === 'paused' ? '⏸' : status === 'locked' ? '🔒'
-                : status === 'acquired' ? '★'
-                : status === 'soon' ? '…'
-                : m > 0 ? `${m}%` : '▶'}
-            </span>
-            {isNext && <span className="bubble">{m > 0 ? 'Continuer' : 'Commencer'}</span>}
-            <span className="node-label">{s.short ?? s.name}</span>
-          </button>
-        );
-      })}
+        {items.map(({ s }, j) => {
+          const status = statusOf(s);
+          const info = st(s.id);
+          const m = info.mastery;
+          const { x, y } = pts[j];
+          const isNext = s.id === nextId;
+          const gap = info.gap;
+          const aria =
+            status === 'locked' ? 'verrouillée'
+            : status === 'acquired' ? 'certifiée'
+            : status === 'soon' ? 'bientôt disponible'
+            : `${m} %${gap ? ', lacune' : ''}`;
+          return (
+            <button
+              key={s.id}
+              className={`node ${status}${isNext ? ' next' : ''}${selectedId === s.id ? ' selected' : ''}${gap ? ' gap' : ''}`}
+              style={{ left: `${x}%`, top: y, '--c': color }}
+              onClick={() => onSelect(s.id)}
+              aria-label={`${s.name} (${aria})`}
+            >
+              {status === 'available' && (
+                <svg className="ring" viewBox="0 0 100 100" aria-hidden="true">
+                  <circle cx="50" cy="50" r="46" pathLength="100" className="ring-bg" />
+                  <circle cx="50" cy="50" r="46" pathLength="100" className="ring-fg" strokeDasharray={`${m} 100`} />
+                </svg>
+              )}
+              <span className="node-icon">
+                {status === 'paused' ? '⏸' : status === 'locked' ? '🔒'
+                  : status === 'acquired' ? '★'
+                  : status === 'soon' ? '…'
+                  : m > 0 ? `${m}%` : '▶'}
+              </span>
+              {isNext && <span className="bubble">{m > 0 ? 'Continuer' : 'Commencer'}</span>}
+              <span className="node-label">{s.short ?? s.name}</span>
+            </button>
+          );
+        })}
+      </div>
     </div>
   );
 }

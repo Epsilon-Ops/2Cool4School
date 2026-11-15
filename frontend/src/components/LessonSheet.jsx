@@ -30,6 +30,9 @@ export default function LessonSheet({
   const locked = status === 'locked';
   const empty = qCount === 0;
   const label = locked ? 'Verrouillée' : empty ? 'Bientôt disponible' : events > 0 ? 'Continuer' : 'Commencer';
+  // Le nombre demandé est toujours compris entre 1 et le total de questions de la compétence.
+  const clampCount = (n) => Math.max(1, Math.min(qCount || 1, n));
+  const startWith = (cfg) => onStart(skill, { ...cfg, count: clampCount(cfg.count) });
 
   const diff = theory - practice;
   const insight =
@@ -124,11 +127,31 @@ export default function LessonSheet({
           <div className="cfg">
             <div className="cfg-group">
               <span>Questions</span>
-              {COUNTS.map((n) => (
+              {COUNTS.filter((n) => n < qCount).map((n) => (
                 <button key={n} className={`pill ${config.count === n ? 'on' : ''}`} onClick={() => setConfig({ ...config, count: n })}>
                   {n}
                 </button>
               ))}
+              <button
+                className={`pill ${config.count >= qCount ? 'on' : ''}`}
+                onClick={() => setConfig({ ...config, count: qCount })}
+              >
+                Toutes ({qCount})
+              </button>
+              <label className="count-custom">
+                Autre
+                <input
+                  type="number"
+                  min={1}
+                  max={qCount}
+                  value={Math.min(config.count, qCount)}
+                  aria-label={`Nombre de questions, entre 1 et ${qCount}`}
+                  onChange={(e) => {
+                    const n = parseInt(e.target.value, 10);
+                    if (!Number.isNaN(n)) setConfig({ ...config, count: clampCount(n) });
+                  }}
+                />
+              </label>
             </div>
             <div className="cfg-group">
               <span>Ordre</span>
@@ -157,7 +180,7 @@ export default function LessonSheet({
           </div>
         )}
 
-        <button className="btn btn-primary btn-block" disabled={locked || empty || paused} onClick={() => onStart(skill, config)}>
+        <button className="btn btn-primary btn-block" disabled={locked || empty || paused} onClick={() => startWith(config)}>
           {label}
         </button>
         {!locked && !empty && !certified && (

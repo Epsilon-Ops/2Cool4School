@@ -299,7 +299,7 @@ button { font: inherit; color: inherit; }
 
 /* ---------- Unités et chemin ---------- */
 
-.unit { margin: 26px 0 34px; scroll-margin-top: 84px; }
+.unit { margin: 26px 0 34px; scroll-margin-top: calc(var(--topbar-h, 110px) + 16px); }
 
 .unit-head {
   cursor: pointer;
@@ -1627,3 +1627,56 @@ table.passport tr.is-gap td {
 .cat-group.collapsed .cat-toggle .chev { transform: rotate(-90deg); }
 .cat-body { display: grid; gap: 10px; margin-top: 10px; }
 .cat-body[hidden] { display: none; }
+
+/* =========================================================
+   Parcours : blocs de matière collants, lignes de parties
+   ========================================================= */
+.unit-head { position: sticky; top: calc(var(--topbar-h, 110px) + 8px); z-index: 6; }
+.unit.collapsed .unit-head { margin-bottom: 0; }
+
+.path-block { position: relative; }
+.part-head {
+  position: sticky;
+  top: calc(var(--topbar-h, 110px) + var(--unit-head-h, 96px) + 14px);
+  z-index: 5;
+  margin: 10px 0 0;
+  padding: 12px 18px;
+  text-align: center;
+  font-weight: 900;
+  font-size: .95rem;
+  letter-spacing: .02em;
+  color: var(--ink);
+  background: var(--paper);
+  border: 2px solid var(--line-d);
+  border-radius: var(--radius-md);
+  box-shadow: 0 3px 0 var(--line-d);
+  pointer-events: none;
+}
+
+/* =========================================================
+   Passeport : catégories et matières dépliables
+   ========================================================= */
+.passport-cat { margin-top: 22px; display: grid; gap: 14px; }
+.passport-cat-title { margin: 0; }
+.subject-fold { padding: 0; overflow: hidden; }
+.subject-fold > summary {
+  list-style: none;
+  cursor: pointer;
+  display: flex; align-items: center; gap: 12px;
+  padding: 16px 20px;
+  border-left: 8px solid var(--c, var(--brand));
+}
+.subject-fold > summary::-webkit-details-marker { display: none; }
+.subject-fold > summary h3 { margin: 0; flex: 1; }
+.subject-fold > summary .chev { transition: transform .2s; }
+.subject-fold:not([open]) > summary .chev { transform: rotate(-90deg); }
+.subject-fold > .fold-body { padding: 0 20px 18px; }
+.subject-fold .table-wrap { overflow-x: auto; }
+
+/* Nombre de questions : bouton « Toutes » et saisie libre */
+.count-custom { display: inline-flex; align-items: center; gap: 8px; font-weight: 800; font-size: .95rem; }
+.count-custom input {
+  font: inherit; font-weight: 800; width: 84px;
+  padding: 6px 8px; border-radius: var(--radius-sm);
+  border: 2px solid var(--line-d); background: var(--paper); color: var(--ink);
+}

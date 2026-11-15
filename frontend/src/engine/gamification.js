@@ -125,6 +125,7 @@ export function contextOf(progress, subjects, bank, courses, now = Date.now()) {
     regularWeeks: regularWeeks(progress.activity ?? {}),
     weeklyDone: Object.keys(progress.weeklyMet ?? {}).length,
     challengesDone: (progress.challenges ?? []).filter((c) => c.done).length,
+    questionIds: new Set(bank.map((q) => q.id)),
     subjectsWithQuestions: subjects.filter((sub) => sub.skills.some((s) => byId[s.id]?.qCount > 0)).length,
     unlockedCount: Object.keys(progress.achievements ?? {}).length,
     domainOpen: (id) => domainOpen(id, certCount, progress),
@@ -194,7 +195,7 @@ export function buildCatalog(subjects, courses, bank) {
   for (const course of courses) {
     add(`project:${course.id}`, 'projet', `Projet réalisé : ${course.title}`,
       'Compléter le cours à 80 % (notions vues et exercices réussis)', 80,
-      (c) => coursePct(course, c.progress), 30);
+      (c) => coursePct(course, c.progress, c.questionIds), 30);
   }
 
   // Collections : toutes les compétences jouables d'une matière sont certifiées.

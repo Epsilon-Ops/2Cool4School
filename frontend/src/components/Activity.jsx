@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { parseNumber } from '../engine/template.js';
+import MathText from './MathText.jsx';
 
 /** Normalise une réponse libre : minuscules, sans accents, sans espaces. */
 export function normalize(s) {
@@ -58,11 +59,11 @@ function Choice({ prompt, statement, items, correct, done, onResult }) {
   const [sel, setSel] = useState(undefined);
   return (
     <>
-      <h2 className="prompt">{prompt}</h2>
+      <h2 className="prompt"><MathText text={prompt} /></h2>
       {statement !== undefined && (
         <p className="statement">
           <span>Proposition</span>
-          <strong>{String(statement)}</strong>
+          <strong><MathText text={String(statement)} /></strong>
         </p>
       )}
       <div className={`options ${items.length === 2 ? 'two' : ''}`}>
@@ -78,7 +79,7 @@ function Choice({ prompt, statement, items, correct, done, onResult }) {
               disabled={done}
               onClick={() => setSel(it.value)}
             >
-              {it.label}
+              <MathText text={it.label} />
             </button>
           );
         })}
@@ -94,14 +95,14 @@ function Flashcard({ ex, done, onResult }) {
   const [shown, setShown] = useState(false);
   return (
     <>
-      <h2 className="prompt">{ex.prompt}</h2>
+      <h2 className="prompt"><MathText text={ex.prompt} /></h2>
       {!shown ? (
         <button className="check" onClick={() => setShown(true)}>
           Voir la réponse
         </button>
       ) : (
         <>
-          <div className="flash-answer">{ex.answer}</div>
+          <div className="flash-answer"><MathText text={ex.answer} /></div>
           {!done && (
             <div className="rate">
               <button className="hard" onClick={() => onResult(false, 1)}>Raté</button>
@@ -125,7 +126,7 @@ function Numeric({ ex, done, onResult }) {
   };
   return (
     <>
-      <h2 className="prompt">{ex.prompt}</h2>
+      <h2 className="prompt"><MathText text={ex.prompt} /></h2>
       <p className="cloze">
         <input
           className="blank"
@@ -155,9 +156,9 @@ function FillBlank({ ex, done, onResult }) {
   };
   return (
     <>
-      <h2 className="prompt">{ex.prompt}</h2>
+      <h2 className="prompt"><MathText text={ex.prompt} /></h2>
       <p className="cloze">
-        {a}
+        <MathText text={a} />
         <input
           className="blank"
           value={val}
@@ -167,7 +168,7 @@ function FillBlank({ ex, done, onResult }) {
           onChange={(e) => setVal(e.target.value)}
           onKeyDown={(e) => e.key === 'Enter' && submit()}
         />
-        {b}
+        <MathText text={b} />
       </p>
       <button className="check" disabled={done || !val.trim()} onClick={submit}>
         Vérifier
@@ -182,7 +183,7 @@ function Ordering({ ex, done, onResult }) {
   const ok = chosen.every((s, k) => s === ex.steps[k]);
   return (
     <>
-      <h2 className="prompt">{ex.prompt}</h2>
+      <h2 className="prompt"><MathText text={ex.prompt} /></h2>
       <ol className="ordered">
         {chosen.map((s, k) => {
           let cls = 'chip-step';
@@ -190,7 +191,7 @@ function Ordering({ ex, done, onResult }) {
           return (
             <li key={s}>
               <button className={cls} disabled={done} onClick={() => setChosen(chosen.filter((x) => x !== s))}>
-                <b>{k + 1}</b> {s}
+                <b>{k + 1}</b> <MathText text={s} />
               </button>
             </li>
           );
@@ -202,7 +203,7 @@ function Ordering({ ex, done, onResult }) {
       <div className="options">
         {remaining.map((s) => (
           <button key={s} className="option" disabled={done} onClick={() => setChosen([...chosen, s])}>
-            {s}
+            <MathText text={s} />
           </button>
         ))}
       </div>
@@ -235,7 +236,7 @@ function Matching({ ex, done, onResult }) {
 
   return (
     <>
-      <h2 className="prompt">{ex.prompt}</h2>
+      <h2 className="prompt"><MathText text={ex.prompt} /></h2>
       <p className="hint">Choisis un élément à gauche, puis son association à droite.</p>
       <div className="match">
         <div className="col">
@@ -245,7 +246,7 @@ function Matching({ ex, done, onResult }) {
             if (done) cls += links[l] === expected[l] ? ' correct' : ' wrong';
             return (
               <button key={l} className={cls} disabled={done} onClick={() => setLeftSel(l)}>
-                {l}
+                <MathText text={l} />
                 {links[l] && <small>→ {links[l]}</small>}
               </button>
             );
@@ -259,7 +260,7 @@ function Matching({ ex, done, onResult }) {
               disabled={done}
               onClick={() => pickRight(r)}
             >
-              {r}
+              <MathText text={r} />
             </button>
           ))}
         </div>
@@ -278,7 +279,7 @@ function MultiChoice({ ex, done, onResult }) {
   const toggle = (v) => setSel((s) => (s.includes(v) ? s.filter((x) => x !== v) : [...s, v]));
   return (
     <>
-      <h2 className="prompt">{ex.prompt}</h2>
+      <h2 className="prompt"><MathText text={ex.prompt} /></h2>
       <p className="hint">Plusieurs réponses peuvent être correctes.</p>
       <div className="options">
         {ex.options.map((o) => {
@@ -288,7 +289,7 @@ function MultiChoice({ ex, done, onResult }) {
           if (done && sel.includes(o) && !good.has(o)) cls += ' wrong';
           return (
             <button key={o} className={cls} disabled={done} aria-pressed={sel.includes(o)} onClick={() => toggle(o)}>
-              {o}
+              <MathText text={o} />
             </button>
           );
         })}

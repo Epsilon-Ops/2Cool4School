@@ -1,11 +1,455 @@
 {
   "skills": [
     {
-      "id": "english.chapitre_1",
-      "name": "Chapitre 1 (à définir)",
-      "short": "Chapitre 1",
+      "id": "english.salutations",
+      "name": "Salutations et Contacts",
+      "short": "Salutations",
       "prereq": [],
-      "description": "Chapitre provisoire : à remplacer par le programme."
+      "description": "Apprendre à saluer, prendre congé, utiliser les formules de politesse et engager les premiers échanges en anglais.",
+      "part": "Partie 1 : Premiers pas et fondations"
+    },
+    {
+      "id": "english.presentation",
+      "name": "Se Présenter",
+      "short": "Présentation",
+      "prereq": ["english.salutations"],
+      "description": "Savoir se présenter, donner son nom, son âge, son origine, sa nationalité, sa profession et parler de ses études."
+    },
+    {
+      "id": "english.bases_quotidien",
+      "name": "Les Bases du Quotidien",
+      "short": "Bases du Quotidien",
+      "prereq": ["english.presentation"],
+      "description": "Acquérir le vocabulaire fondamental du quotidien, les nombres, les couleurs, la famille, les pronoms personnels et le verbe Be."
+    },
+    {
+      "id": "english.restaurant",
+      "name": "Au Restaurant et au Café",
+      "short": "Restaurant",
+      "prereq": ["english.bases_quotidien"],
+      "description": "Communiquer dans un restaurant ou un café, demander une table, commander, comprendre un menu et régler l'addition.",
+      "part": "Partie 2 : Premiers échanges et vie sociale"
+    },
+    {
+      "id": "english.amis",
+      "name": "Discuter entre Amis",
+      "short": "Discussions",
+      "prereq": ["english.bases_quotidien"],
+      "description": "Parler de ses loisirs, exprimer ses goûts, proposer des activités et réagir naturellement aux propositions."
+    },
+    {
+      "id": "english.routine",
+      "name": "Le Quotidien et la Routine",
+      "short": "Routine",
+      "prereq": ["english.bases_quotidien"],
+      "description": "Parler de l'heure, des jours, des mois et décrire ses habitudes et sa journée type au présent simple.",
+      "part": "Partie 2 : Premiers échanges et vie sociale"
+    },
+    {
+      "id": "english.transports_communs",
+      "name": "Transports en Commun",
+      "short": "Transports",
+      "prereq": ["english.routine"],
+      "description": "Acheter des titres de transport, comprendre les horaires, les annonces et demander des informations dans une gare ou une station.",
+      "part": "Partie 3 : Déplacements et services essentiels"
+    },
+    {
+      "id": "english.orientation_ville",
+      "name": "Orientation en Ville",
+      "short": "Orientation",
+      "prereq": ["english.transports_communs"],
+      "description": "Demander son chemin, comprendre les indications de direction et identifier les principaux bâtiments et commerces."
+    },
+    {
+      "id": "english.services_quotidien",
+      "name": "Services du Quotidien",
+      "short": "Services",
+      "prereq": ["english.orientation_ville"],
+      "description": "Communiquer à la poste, à la banque et dans les services d'accueil ou les offices de tourisme."
+    },
+    {
+      "id": "english.urgences",
+      "name": "Urgences et Imprévus",
+      "short": "Urgences",
+      "prereq": ["english.services_quotidien"],
+      "description": "Demander de l'aide, signaler un objet perdu et gérer les situations urgentes ou les problèmes de transport.",
+      "part": "Partie 4 : Demander de l'aide et résoudre des problèmes"
+    },
+    {
+      "id": "english.problemes_materiels",
+      "name": "Problèmes Matériels",
+      "short": "Problèmes",
+      "prereq": ["english.urgences"],
+      "description": "Signaler une panne, expliquer un dysfonctionnement et demander un échange ou un remboursement."
+    },
+    {
+      "id": "english.location_vehicules",
+      "name": "Conduite et Location de Véhicules",
+      "short": "Location Véhicules",
+      "prereq": ["english.orientation_ville", "english.problemes_materiels"],
+      "description": "Louer un véhicule, comprendre les panneaux routiers et communiquer dans une station-service.",
+      "part": "Partie 5 : Transports et orientation avancée"
+    },
+    {
+      "id": "english.voyages_longs",
+      "name": "Voyages en Train et en Avion",
+      "short": "Voyages",
+      "prereq": ["english.transports_communs", "english.services_quotidien"],
+      "description": "Gérer les formalités de voyage, les bagages, les places à bord, les correspondances et les retards."
+    },
+    {
+      "id": "english.shopping_vetements",
+      "name": "Vêtements et Essayage",
+      "short": "Vêtements",
+      "prereq": ["english.bases_quotidien"],
+      "description": "Demander des tailles et des couleurs, essayer des vêtements et se renseigner sur les prix et les réductions.",
+      "part": "Partie 6 : Shopping et achats du quotidien"
+    },
+    {
+      "id": "english.supermarche",
+      "name": "Alimentation et Supermarché",
+      "short": "Supermarché",
+      "prereq": ["english.shopping_vetements"],
+      "description": "Se repérer dans les rayons, demander des quantités et des prix et effectuer ses achats à la caisse."
+    },
+    {
+      "id": "english.sante_symptomes",
+      "name": "Le Corps Humain et les Symptômes",
+      "short": "Santé",
+      "prereq": ["english.bases_quotidien"],
+      "description": "Nommer les parties du corps, exprimer une douleur et décrire des symptômes et des problèmes de santé.",
+      "part": "Partie 7 : Santé, corps et bien-être"
+    },
+    {
+      "id": "english.pharmacie_medecin",
+      "name": "À la Pharmacie et chez le Médecin",
+      "short": "Médecin",
+      "prereq": ["english.sante_symptomes"],
+      "description": "Demander conseil à un pharmacien, prendre rendez-vous chez un médecin et comprendre les consignes d'un traitement."
+    },
+    {
+      "id": "english.hotel_arrivee",
+      "name": "Réservation et Arrivée à l'Hôtel",
+      "short": "Hôtel",
+      "prereq": ["english.presentation", "english.restaurant"],
+      "description": "Réserver une chambre, effectuer son arrivée à l'hôtel, demander des services et signaler des problèmes.",
+      "part": "Partie 8 : Logement, hôtel et hébergement"
+    },
+    {
+      "id": "english.logement_location",
+      "name": "Vie en Colocation ou Location",
+      "short": "Logement",
+      "prereq": ["english.hotel_arrivee", "english.problemes_materiels"],
+      "description": "Décrire un logement, discuter des équipements, gérer la colocation, les tâches ménagères et les questions de location."
+    },
+    {
+      "id": "english.douanes_frontieres",
+      "name": "Formalités de Douane",
+      "short": "Douanes",
+      "prereq": ["english.voyages_longs", "english.presentation"],
+      "description": "Répondre aux questions des douaniers, déclarer des biens et comprendre les contrôles de sécurité et de passeport.",
+      "part": "Partie 9 : Voyages, aéroports et frontières"
+    },
+    {
+      "id": "eng.tourisme",
+      "name": "Tourisme et Excursions",
+      "short": "Tourisme",
+      "prereq": ["eng.orientation_ville", "eng.douanes_frontieres"],
+      "description": "Réserver des excursions, acheter des billets et demander des informations touristiques et culturelles.",
+      "part": "Partie 9 : Voyages, aéroports et frontières"
+    },
+    {
+      "id": "eng.emotions",
+      "name": "Exprimer ses Émotions",
+      "short": "Émotions",
+      "prereq": ["eng.amis"],
+      "description": "Exprimer ses émotions, ses réactions et ses sentiments, et manifester de l'empathie envers les autres.",
+      "part": "Partie 10 : Émotions, sentiments et états d'esprit"
+    },
+    {
+      "id": "eng.etats_esprit",
+      "name": "États d'Esprit et Caractère",
+      "short": "Caractère",
+      "prereq": ["eng.emotions"],
+      "description": "Décrire la personnalité, les états d'esprit, les motivations, les peurs et les aspirations personnelles."
+    },
+    {
+      "id": "eng.travail_bureau",
+      "name": "Environnement de Bureau",
+      "short": "Bureau",
+      "prereq": ["eng.presentation", "eng.routine"],
+      "description": "Présenter ses collègues, utiliser le vocabulaire informatique de base et gérer les communications professionnelles.",
+      "part": "Partie 11 : Le monde du travail et le milieu professionnel"
+    },
+    {
+      "id": "eng.reunions_entretiens",
+      "name": "Réunions et Entretiens",
+      "short": "Réunions",
+      "prereq": ["eng.travail_bureau", "eng.opinions"],
+      "description": "Donner son avis en réunion, planifier des rendez-vous professionnels et présenter ses compétences lors d'un entretien."
+    },
+    {
+      "id": "eng.culture_medias",
+      "name": "Cinéma, Livres et Musique",
+      "short": "Culture",
+      "prereq": ["eng.amis", "eng.passe_simple"],
+      "description": "Discuter de films, de séries, de livres, d'œuvres artistiques et de musique.",
+      "part": "Partie 12 : Loisirs avancés, culture et médias"
+    },
+    {
+      "id": "eng.actualites_reseaux",
+      "name": "Actualités et Médias Sociaux",
+      "short": "Actualités",
+      "prereq": ["eng.culture_medias", "eng.opinions"],
+      "description": "Comprendre les titres de presse, partager du contenu sur les réseaux sociaux et discuter de sujets d'actualité."
+    },
+    {
+      "id": "eng.opinions",
+      "name": "Donner son Avis",
+      "short": "Opinions",
+      "prereq": ["eng.amis", "eng.emotions"],
+      "description": "Exprimer et nuancer ses opinions, être d'accord ou en désaccord et justifier ses choix.",
+      "part": "Partie 13 : Exprimer des opinions et débattre"
+    },
+    {
+      "id": "eng.argumentation",
+      "name": "Argumentation et Persuasion",
+      "short": "Argumentation",
+      "prereq": ["eng.opinions"],
+      "description": "Présenter des arguments, comparer les avantages et inconvénients, proposer des solutions et résumer un point de vue."
+    },
+    {
+      "id": "eng.passe_simple",
+      "name": "Raconter des Événements Passés",
+      "short": "Prétérit",
+      "prereq": ["eng.routine"],
+      "description": "Maîtriser le prétérit régulier et irrégulier et raconter des événements et des expériences passés.",
+      "part": "Partie 14 : Le passé et les souvenirs"
+    },
+    {
+      "id": "eng.souvenirs",
+      "name": "Souvenirs et Anecdotes",
+      "short": "Souvenirs",
+      "prereq": ["eng.passe_simple"],
+      "description": "Évoquer son enfance, poser des questions sur le passé et raconter des anecdotes personnelles ou de voyage."
+    },
+    {
+      "id": "eng.futur_intentions",
+      "name": "Projets Immédiats",
+      "short": "Futur",
+      "prereq": ["eng.routine"],
+      "description": "Exprimer des intentions avec Going to, faire des prévisions avec Will et présenter des objectifs à court terme.",
+      "part": "Partie 15 : Projets et futurs"
+    },
+    {
+      "id": "eng.futur_lointain",
+      "name": "Projets à Long Terme",
+      "short": "Projets",
+      "prereq": ["eng.futur_intentions", "eng.argumentation"],
+      "description": "Imaginer son avenir, discuter de projets de carrière ou d'installation et formuler des hypothèses avec le premier conditionnel."
+    },
+    {
+      "id": "eng.small_talk",
+      "name": "Faire la Conversation et Rencontrer de Nouvelles Personnes",
+      "short": "Conversation",
+      "prereq": ["eng.salutations", "eng.amis"],
+      "description": "Engager une conversation, poser des questions personnelles appropriées et entretenir naturellement un échange.",
+      "part": "Partie 16 : Communication et interactions sociales"
+    },
+    {
+      "id": "eng.telephone",
+      "name": "Téléphone et Communications à Distance",
+      "short": "Téléphone",
+      "prereq": ["eng.presentation", "eng.small_talk"],
+      "description": "Passer des appels, se présenter, demander de répéter et comprendre les messages écrits et vocaux.",
+      "part": "Partie 16 : Communication et interactions sociales"
+    },
+    {
+      "id": "eng.situations_quotidiennes",
+      "name": "Faire Face aux Situations du Quotidien",
+      "short": "Situations",
+      "prereq": ["eng.small_talk", "eng.problemes_materiels"],
+      "description": "Demander de l'aide, emprunter et prêter des objets, s'excuser et résoudre des malentendus.",
+      "part": "Partie 17 : Situations pratiques et vie quotidienne"
+    },
+    {
+      "id": "eng.demarches_administratives",
+      "name": "Services, Réclamations et Administration",
+      "short": "Administration",
+      "prereq": ["eng.services_quotidien", "eng.telephone"],
+      "description": "Remplir des formulaires, communiquer avec un service client et comprendre des documents administratifs."
+    },
+    {
+      "id": "eng.evenements",
+      "name": "Invitations, Fêtes et Événements",
+      "short": "Événements",
+      "prereq": ["eng.small_talk", "eng.amis"],
+      "description": "Inviter des personnes, participer à des fêtes, rencontrer des invités et exprimer des félicitations.",
+      "part": "Partie 18 : Vie sociale et situations particulières"
+    },
+    {
+      "id": "eng.relations",
+      "name": "Relations Humaines et Vie Sociale",
+      "short": "Relations",
+      "prereq": ["eng.emotions", "eng.opinions"],
+      "description": "Parler de ses relations, exprimer ses limites personnelles, gérer les désaccords et entretenir des relations sociales."
+    },
+    {
+      "id": "eng.anglais_familier",
+      "name": "Comprendre l'Anglais Naturel et Familier",
+      "short": "Anglais Familier",
+      "prereq": ["eng.small_talk", "eng.telephone"],
+      "description": "Comprendre les contractions, les expressions familières, les tournures orales et les expressions idiomatiques courantes.",
+      "part": "Partie 19 : Compréhension et expression naturelle"
+    },
+    {
+      "id": "eng.reactions_spontanees",
+      "name": "Réagir Spontanément et Maintenir une Conversation",
+      "short": "Réactions",
+      "prereq": ["eng.anglais_familier", "eng.opinions"],
+      "description": "Réagir rapidement, demander des précisions, interrompre poliment et changer de sujet dans une conversation."
+    },
+    {
+      "id": "eng.recherche_emploi",
+      "name": "Recherche d'Emploi et Monde Professionnel",
+      "short": "Emploi",
+      "prereq": ["eng.travail_bureau", "eng.presentation"],
+      "description": "Chercher un emploi, contacter un recruteur, présenter son parcours et comprendre les conditions de travail.",
+      "part": "Partie 20 : Situations professionnelles et pratiques spécialisées"
+    },
+    {
+      "id": "eng.etudes_formation",
+      "name": "Études, Formation et Apprentissage",
+      "short": "Formation",
+      "prereq": ["eng.presentation", "eng.routine"],
+      "description": "Comprendre les consignes pédagogiques, participer aux cours, travailler en groupe et parler de ses résultats scolaires."
+    },
+    {
+      "id": "eng.meteo_environnement",
+      "name": "Météo, Nature et Environnement",
+      "short": "Environnement",
+      "prereq": ["eng.bases_quotidien", "eng.opinions"],
+      "description": "Décrire la météo, les paysages et la nature, et discuter des enjeux écologiques et environnementaux.",
+      "part": "Partie 21 : Situations imprévues et environnement"
+    },
+    {
+      "id": "eng.incidents",
+      "name": "Pannes, Incidents et Situations Inattendues",
+      "short": "Incidents",
+      "prereq": ["eng.problemes_materiels", "eng.situations_quotidiennes"],
+      "description": "Signaler des incidents, décrire des pannes et expliquer une situation inattendue afin de trouver une solution."
+    },
+    {
+      "id": "eng.banque_finances",
+      "name": "Banque, Argent et Finances Personnelles",
+      "short": "Finances",
+      "prereq": ["eng.services_quotidien", "eng.demarches_administratives"],
+      "description": "Ouvrir un compte, comprendre les services bancaires, gérer son budget et résoudre des problèmes de paiement.",
+      "part": "Partie 22 : Vie pratique et autonomie"
+    },
+    {
+      "id": "eng.technologie_numerique",
+      "name": "Technologie, Internet et Applications",
+      "short": "Technologie",
+      "prereq": ["eng.travail_bureau", "eng.incidents"],
+      "description": "Installer et utiliser des applications, résoudre des problèmes techniques et protéger ses données numériques."
+    },
+    {
+      "id": "eng.expression_naturelle",
+      "name": "S'Exprimer avec Plus de Naturel et de Précision",
+      "short": "Expression",
+      "prereq": ["eng.reactions_spontanees", "eng.souvenirs", "eng.futur_lointain"],
+      "description": "Construire des discours détaillés, expliquer des problèmes complexes, reformuler et adapter son expression au contexte.",
+      "part": "Partie 23 : Anglais avancé de la vie quotidienne"
+    },
+    {
+      "id": "eng.installation_etranger",
+      "name": "S'Installer dans un Nouveau Pays",
+      "short": "Installation",
+      "prereq": ["eng.logement_location", "eng.demarches_administratives"],
+      "description": "Se présenter dans un nouveau quartier, effectuer les démarches d'installation et comprendre les habitudes culturelles locales.",
+      "part": "Partie 24 : Vie quotidienne à l'étranger"
+    },
+    {
+      "id": "eng.abonnements_services",
+      "name": "Services et Abonnements du Quotidien",
+      "short": "Abonnements",
+      "prereq": ["eng.technologie_numerique", "eng.demarches_administratives"],
+      "description": "Souscrire à des services, comprendre les conditions contractuelles et gérer la modification ou la résiliation d'abonnements."
+    },
+    {
+      "id": "eng.raconter_histoire",
+      "name": "Raconter une Histoire et Faire un Récit",
+      "short": "Récit",
+      "prereq": ["eng.passe_simple", "eng.expression_naturelle"],
+      "description": "Raconter des événements dans un ordre chronologique, décrire des situations inattendues et construire des récits détaillés avec des réactions et des descriptions.",
+      "part": "Partie 25 : Communication et interactions avancées"
+    },
+    {
+      "id": "eng.humour_blagues",
+      "name": "Humour, Blagues et Expressions Sociales",
+      "short": "Humour",
+      "prereq": ["eng.anglais_familier", "eng.reactions_spontanees"],
+      "description": "Comprendre les plaisanteries, utiliser l'humour dans une conversation et reconnaître le sarcasme, l'ironie et les jeux de mots."
+    },
+    {
+      "id": "eng.negociation",
+      "name": "Négocier et Trouver un Compromis",
+      "short": "Négociation",
+      "prereq": ["eng.opinions", "eng.argumentation"],
+      "description": "Négocier des prix, défendre ses intérêts, formuler des propositions et parvenir à un compromis acceptable."
+    },
+    {
+      "id": "eng.automobile_garage",
+      "name": "Automobile, Garage et Dépannage",
+      "short": "Automobile",
+      "prereq": ["eng.location_vehicules", "eng.problemes_materiels"],
+      "description": "Décrire des problèmes mécaniques, prendre rendez-vous chez un garagiste et comprendre les devis, réparations et garanties.",
+      "part": "Partie 26 : Services spécialisés et situations particulières"
+    },
+    {
+      "id": "eng.animaux_veterinaire",
+      "name": "Animaux et Services Vétérinaires",
+      "short": "Animaux",
+      "prereq": ["eng.sante_symptomes", "eng.pharmacie_medecin"],
+      "description": "Présenter son animal, décrire ses habitudes et ses problèmes de santé et communiquer avec un vétérinaire."
+    },
+    {
+      "id": "eng.livraisons_commandes",
+      "name": "Services de Livraison et Commandes en Ligne",
+      "short": "Livraisons",
+      "prereq": ["eng.shopping_vetements", "eng.demarches_administratives"],
+      "description": "Passer des commandes en ligne, suivre des colis, communiquer avec les livreurs et signaler les erreurs de livraison."
+    },
+    {
+      "id": "eng.sport_activites",
+      "name": "Sport, Activités Physiques et Clubs",
+      "short": "Sport",
+      "prereq": ["eng.amis", "eng.routine"],
+      "description": "S'inscrire dans un club sportif, comprendre les consignes d'exercice et parler de ses performances et activités collectives.",
+      "part": "Partie 27 : Vie sociale, sorties et activités"
+    },
+    {
+      "id": "eng.sorties_nocturnes",
+      "name": "Restaurants, Sorties et Vie Nocturne",
+      "short": "Sorties",
+      "prereq": ["eng.restaurant", "eng.amis"],
+      "description": "Interagir dans les bars et les lieux de sortie, commander des boissons et organiser ses déplacements lors de sorties nocturnes."
+    },
+    {
+      "id": "eng.ceremonies_evenements",
+      "name": "Mariages, Cérémonies et Événements Familiaux",
+      "short": "Cérémonies",
+      "prereq": ["eng.evenements", "eng.relations"],
+      "description": "Parler des traditions et des cérémonies, féliciter les mariés et exprimer ses condoléances lors d'événements familiaux."
+    },
+    {
+      "id": "eng.culture_traditions",
+      "name": "Culture, Traditions et Coutumes",
+      "short": "Traditions",
+      "prereq": ["eng.culture_medias", "eng.tourisme"],
+      "description": "Découvrir les fêtes et traditions anglophones, comprendre les différences culturelles et discuter des habitudes locales.",
+      "part": "Partie 28 : Comprendre le monde anglophone"
     }
   ]
 }

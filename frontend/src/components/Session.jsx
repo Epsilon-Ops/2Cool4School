@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from 'react';
 import Activity from './Activity.jsx';
+import MathText from './MathText.jsx';
 import Mascot from './Mascot.jsx';
 import { pickQuestions, dueQuestions } from '../engine/selection.js';
 import { availableFormats, buildExercise, FORMAT_LABELS, explainOf } from '../engine/formats.js';
@@ -168,9 +169,9 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
               <ol className="correction">
                 {log.map((l, i) => (
                   <li key={i} className={l.ok ? 'good' : 'bad'}>
-                    <b>{l.ok ? '✓' : '✗'} {l.ex.prompt}</b>
-                    <span>Réponse : {revealOf(l.ex, l.q)}</span>
-                    <p>{explainOf(l.ex, config.explain)}</p>
+                    <b>{l.ok ? '✓' : '✗'} <MathText text={l.ex.prompt} /></b>
+                    <span>Réponse : <MathText text={revealOf(l.ex, l.q)} /></span>
+                    <p><MathText text={explainOf(l.ex, config.explain)} /></p>
                   </li>
                 ))}
               </ol>
@@ -211,8 +212,8 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
             <Mascot mood={feedback.ok ? 'happy' : 'sad'} size={68} />
             <div className="txt">
               <strong>{feedback.ok ? 'Bravo !' : 'Pas tout à fait'}</strong>
-              <p>{explainOf(ex, config.explain)}</p>
-              {!feedback.ok && <p className="answer"><b>Réponse :</b> {revealOf(ex, current)}</p>}
+              <p><MathText text={explainOf(ex, config.explain)} /></p>
+              {!feedback.ok && <p className="answer"><b>Réponse :</b> <MathText text={revealOf(ex, current)} /></p>}
             </div>
             <button className="continue" onClick={next}>Continuer</button>
           </div>

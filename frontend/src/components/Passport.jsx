@@ -1,4 +1,5 @@
 import { knowledgeOf } from '../engine/gamification.js';
+import categories from '../data/utils/categories.json';
 
 const GLOBAL_GOALS = [3, 5, 10, 20];
 const SUBJECT_GOALS = [50, 70, 80, 90];
@@ -67,17 +68,27 @@ export default function Passport({ subjects, stats, progress, courses = [], bank
         </section>
       )}
 
-      {subjects.filter((sub) => sub.skills.some((k) => st(k.id).qCount > 0)).map((sub) => {
-        const ids = sub.skills.map((k) => k.id).filter((id) => st(id).qCount > 0);
-        const avg = avgOf(ids);
-        const goal = progress.goals.subjects[sub.id] ?? 80;
-        const pct = Math.min(100, (avg / goal) * 100);
+      {categories.map((cat) => {
+        const list = subjects.filter((sub) => (sub.category ?? 'scolaire') === cat.id && sub.skills.some((k) => st(k.id).qCount > 0));
+        if (!list.length) return null;
         return (
-          <section key={sub.id} className="panel" style={{ '--c': sub.color }}>
-            <div className="panel-head">
-              <h3>{sub.emoji} {sub.name}</h3>
-              <span className="unit-code">{sub.code}</span>
-            </div>
+          <section key={cat.id} className="passport-cat">
+            <h2 className="cat-title passport-cat-title">{cat.emoji} {cat.label}</h2>
+            {list.map((sub) => {
+              const ids = sub.skills.map((k) => k.id).filter((id) => st(id).qCount > 0);
+              const avg = avgOf(ids);
+              const goal = progress.goals.subjects[sub.id] ?? 80;
+              const pct = Math.min(100, (avg / goal) * 100);
+              const hasEvents = ids.some((id) => st(id).events > 0);
+              return (
+                <details key={sub.id} className="panel subject-fold" style={{ '--c': sub.color }} open={hasEvents}>
+                  <summary>
+                    <h3>{sub.emoji} {sub.name}</h3>
+                    <span className="unit-code">{sub.code}</span>
+                    <span className="muted small">moyenne {avg} %</span>
+                    <span className="chev" aria-hidden="true">▾</span>
+                  </summary>
+                  <div className="fold-body">
             <div className="table-wrap">
               <table className="passport">
                 <thead>
@@ -123,6 +134,10 @@ export default function Passport({ subjects, stats, progress, courses = [], bank
               </div>
               <div className="progress-line"><div style={{ width: `${pct}%` }} /></div>
             </div>
+                  </div>
+                </details>
+              );
+            })}
           </section>
         );
       })}

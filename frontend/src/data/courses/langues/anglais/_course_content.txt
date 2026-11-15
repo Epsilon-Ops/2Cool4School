@@ -1,0 +1,499 @@
+[[ANGLAIS]]
+
+Partie 1 : Premiers pas et fondations
+  --> Salutations et Contacts [eng.salutations]
+      >> 1-01. Dire bonjour et au revoir (Hello, Goodbye, See you)
+      >> 2-01. Formules de politesse (Please, Thank you, You're welcome)
+      >> 3-01. Demander comment ça va et y répondre
+  --> Se Présenter [eng.presentation]
+      >> 1-02. Dire son nom et son âge
+      >> 2-02. Indiquer d'où l'on vient et sa nationalité
+      >> 3-02. Parler de sa profession et de ses études
+  --> Les Bases du Quotidien [eng.bases_quotidien]
+      >> 1-03. Nombres de 0 à 20 et compter les objets
+      >> 2-03. Les couleurs et les descriptions simples
+      >> 3-03. La famille et les proches (Mother, Friend, Brother)
+      >> 4-03. Les pronoms personnels (I, You, He, She, We, They) et le verbe "Be"
+
+Partie 2 : Premiers échanges et vie sociale
+  --> Au Restaurant et au Café [eng.restaurant]
+      >> 1-04. Demander une table et saluer le serveur
+      >> 2-04. Demander un verre ou un plat (ex: "Could I have a drink, please?")
+      >> 3-04. Comprendre le menu et poser des questions sur les ingrédients
+      >> 4-04. Demander et régler l'addition (The check, please)
+  --> Discuter entre Amis [eng.amis]
+      >> 1-05. Parler de ses loisirs et passe-temps (Hobbies)
+      >> 2-05. Exprimer ses goûts (I like, I love, I don't like)
+      >> 3-05. Proposer une sortie ou une activité (Let's go...)
+      >> 4-05. Réagir à une proposition (Acceptation ou refus poli)
+  --> Le Quotidien et la Routine [eng.routine]
+      >> 1-06. Dire l'heure et les moments de la journée
+      >> 2-06. Les jours de la semaine et les mois
+      >> 3-06. Parler de sa journée type (Présent simple)
+
+Partie 3 : Déplacements et services essentiels
+  --> Transports en Commun [eng.transports_communs]
+      >> 1-07. Acheter un ticket de bus ou de métro
+      >> 2-07. Comprendre les horaires et les annonces de quai
+      >> 3-07. Demander son chemin dans une gare ou une station
+  --> Orientation en Ville [eng.orientation_ville]
+      >> 1-08. Demander où se trouve un lieu (Where is...)
+      >> 2-08. Comprendre les directions simples (Turn left, turn right, go straight)
+      >> 3-08. Repérer les bâtiments et commerces clés (Bank, pharmacy, hospital)
+  --> Services du Quotidien [eng.services_quotidien]
+      >> 1-09. Envoyer une lettre ou un colis à la poste
+      >> 2-09. Retirer de l'argent et utiliser un distributeur automatique
+      >> 3-09. Demander des informations à l'accueil ou à l'office du tourisme
+
+Partie 4 : Demander de l'aide et résoudre des problèmes
+  --> Urgences et Imprévus [eng.urgences]
+      >> 1-10. Demander de l'aide rapidement (Help me, Call an ambulance)
+      >> 2-10. Signaler la perte d'un objet (Lost and found)
+      >> 3-10. Faire face à un problème de transport ou d'annulation
+  --> Problèmes Matériels [eng.problemes_materiels]
+      >> 1-11. Signaler une panne dans un hôtel ou un logement (The light doesn't work)
+      >> 2-11. Expliquer un souci avec un appareil ou un service
+      >> 3-11. Demander un échange ou un remboursement
+
+Partie 5 : Transports et orientation avancée
+  --> Conduite et Location de Véhicules [eng.location_vehicules]
+      >> 1-12. Louer une voiture (contrat, assurances de base)
+      >> 2-12. Comprendre les panneaux de signalisation routière
+      >> 3-12. Faire le plein d'essence et interagir à la station-service
+  --> Voyages en Train et en Avion [eng.voyages_longs]
+      >> 1-13. Enregistrement des bagages et passage de la sécurité
+      >> 2-13. Demander une place spécifique à bord (Window seat, aisle seat)
+      >> 3-13. Gérer les correspondances et les retards de vol
+
+Partie 6 : Shopping et achats du quotidien
+  --> Vêtements et Essayage [eng.shopping_vetements]
+      >> 1-14. Demander une taille ou une couleur différente (Do you have this in medium?)
+      >> 2-14. Utiliser la cabine d'essayage (Where are the fitting rooms?)
+      >> 3-14. Demander le prix et se renseigner sur les réductions
+  --> Alimentation et Supermarché [eng.supermarche]
+      >> 1-15. Se repérer dans les rayons du supermarché
+      >> 2-15. Demander le poids et le prix au stand de découpe (boucherie, fromage)
+      >> 3-15. Passer à la caisse et payer par carte ou en espèces
+
+Partie 7 : Santé, corps et bien-être
+  --> Le Corps Humain et les Symptômes [eng.sante_symptomes]
+      >> 1-16. Nommer les parties principales du corps
+      >> 2-16. Expliquer ce qui fait mal (I have a headache, a stomachache)
+      >> 3-16. Décrire des symptômes généraux (fever, cough, fatigue)
+  --> À la Pharmacie et chez le Médecin [eng.pharmacie_medecin]
+      >> 1-17. Acheter des médicaments sans ordonnance et demander des conseils
+      >> 2-17. Prendre rendez-vous chez le médecin par téléphone
+      >> 3-17. Comprendre les consignes d'un traitement et les doses
+
+Partie 8 : Logement, hôtel et hébergement
+  --> Réservation et Arrivée à l'Hôtel [eng.hotel_arrivee]
+      >> 1-18. Réserver une chambre (Single room, double room)
+      >> 2-18. Effectuer le check-in et poser des questions sur les services (Wi-Fi, breakfast)
+      >> 3-18. Demander un service de chambre ou signaler un problème de propreté
+  --> Vie en Colocation ou Location [eng.logement_location]
+      >> 1-19. Discuter des équipements d'un logement (Kitchen, bathroom, heating)
+      >> 2-19. Gérer les règles de vie et les tâches ménagères
+      >> 3-19. Signer un état des lieux ou discuter du loyer
+
+Partie 9 : Voyages, aéroports et frontières
+  --> Formalités de Douane [eng.douanes_frontieres]
+      >> 1-20. Répondre aux questions des douaniers (Purpose of your visit)
+      >> 2-20. Déclarer des biens ou des restrictions de bagages
+      >> 3-20. Gérer les contrôles de sécurité et de passeport
+  --> Tourisme et Excursions [eng.tourisme]
+      >> 1-21. Réserver une visite guidée ou une excursion
+      >> 2-21. Acheter des billets d'entrée pour un musée ou un monument
+      >> 3-21. Demander une brochure ou des informations historiques
+
+Partie 10 : Émotions, sentiments et états d'esprit
+  --> Exprimer ses Émotions [eng.emotions]
+      >> 1-22. Parler de sa joie, sa tristesse ou sa colère (I feel happy, sad, angry)
+      >> 2-22. Exprimer la surprise, la peur ou l'enthousiasme
+      >> 3-22. Réconforter quelqu'un ou exprimer de l'empathie (I'm sorry to hear that)
+  --> États d'Esprit et Caractère [eng.etats_esprit]
+      >> 1-23. Décrire la personnalité de quelqu'un (Kind, shy, confident)
+      >> 2-23. Exprimer la fatigue, l'ennui ou la motivation
+      >> 3-23. Parler de ses peurs et de ses aspirations personnelles
+
+Partie 11 : Le monde du travail et le milieu professionnel
+  --> Environnement de Bureau [eng.travail_bureau]
+      >> 1-24. Présenter son équipe et ses collègues
+      >> 2-24. Utiliser le vocabulaire informatique de base (Email, password, screen)
+      >> 3-24. Gérer les appels professionnels et prendre un message
+  --> Réunions et Entretiens [eng.reunions_entretiens]
+      >> 1-25. Donner son avis lors d'une réunion (I think that...)
+      >> 2-25. Fixer une réunion ou planifier un rendez-vous professionnel
+      >> 3-25. Se préparer à un entretien d'embauche (parler de ses compétences)
+
+Partie 12 : Loisirs avancés, culture et médias
+  --> Cinéma, Livres et Musique [eng.culture_medias]
+      >> 1-26. Discuter d'un film ou d'une série vue récemment
+      >> 2-26. Partager ses goûts littéraires et artistiques
+      >> 3-26. Parler de musique et de ses artistes préférés
+  --> Actualités et Médias Sociaux [eng.actualites_reseaux]
+      >> 1-27. Comprendre les grands titres d'un journal
+      >> 2-27. Partager du contenu et commenter sur les réseaux sociaux
+      >> 3-27. Débattre d'un fait divers ou d'un sujet d'actualité simple
+
+Partie 13 : Exprimer des opinions et débattre
+  --> Donner son Avis [eng.opinions]
+      >> 1-28. Nuancer ses propos (In my opinion, I believe, Actually)
+      >> 2-28. Être d'accord ou en désaccord poli (I agree with you, I'm not sure)
+      >> 3-28. Justifier un choix ou une préférence (Because, since, therefore)
+  --> Argumentation et Persuasion [eng.argumentation]
+      >> 1-29. Présenter les avantages et les inconvénients d'une situation
+      >> 2-29. Faire des suggestions constructives
+      >> 3-29. Résumer une discussion ou un point de vue
+
+Partie 14 : Le passé et les souvenirs (Prétérit)
+  --> Raconter des Événements Passés [eng.passe_simple]
+      >> 1-30. Introduction au prétérit des verbes réguliers (ed)
+      >> 2-30. Utiliser les principaux verbes irréguliers (went, saw, had, did)
+      >> 3-30. Raconter ce qu'on a fait le week-end dernier
+  --> Souvenirs et Anecdotes [eng.souvenirs]
+      >> 1-31. Parler de son enfance et de ses souvenirs lointains
+      >> 2-31. Poser des questions sur le passé (What did you do...?)
+      >> 3-31. Raconter une anecdote de voyage
+
+Partie 15 : Projets et futurs (Futur simple et intentions)
+  --> Projets Immédiats [eng.futur_intentions]
+      >> 1-32. Exprimer ses projets avec "going to" (I'm going to travel)
+      >> 2-32. Faire des prévisions simples avec "will" (It will rain tomorrow)
+      >> 3-32. Parler de ses résolutions et objectifs à court terme
+  --> Projets à Long Terme [eng.futur_lointain]
+      >> 1-33. Imaginer sa vie dans dix ans
+      >> 2-33. Discuter de projets de carrière ou d'installation
+      >> 3-33. Faire des hypothèses sur l'avenir (Conditional type 1)
+
+Chapitre 16 — Faire la Conversation et Rencontrer de Nouvelles Personnes [eng.small_talk]
+16-01. Engager une conversation avec un inconnu (How's your day going? What brings you here?)
+
+16-02. Poser des questions pour mieux connaître quelqu'un (What do you do in your free time? How long have you lived here?)
+
+16-03. Entretenir une conversation et éviter les silences (Really? That's interesting! Tell me more!)
+
+Chapitre 17 — Téléphone et Communications à Distance [eng.telephone]
+17-01. Passer un appel téléphonique et se présenter (Hello, this is...)
+
+17-02. Comprendre une personne au téléphone et demander de répéter (Could you speak more slowly?)
+
+17-03. Envoyer et comprendre des messages écrits (Text messages, voice messages, abbreviations)
+
+Partie 8 : Situations pratiques et vie quotidienne
+Chapitre 18 — Faire Face aux Situations du Quotidien [eng.situations_quotidiennes]
+18-01. Demander un service ou un petit coup de main (Could you help me with this?)
+
+18-02. Emprunter, prêter et rendre quelque chose (Can I borrow your charger?)
+
+18-03. S'excuser, expliquer un malentendu et se faire pardonner (I didn't mean to, It was a misunderstanding)
+
+Chapitre 19 — Services, Réclamations et Administration [eng.demarches_administratives]
+19-01. Remplir un formulaire et fournir des informations personnelles (First name, surname, date of birth)
+
+19-02. Faire une réclamation auprès d'un service client (I'd like to make a complaint)
+
+19-03. Comprendre une facture, un contrat ou un document officiel (Due date, signature, terms and conditions)
+
+Partie 9 : Vie sociale et situations particulières
+Chapitre 20 — Invitations, Fêtes et Événements [eng.evenements]
+20-01. Inviter quelqu'un à une fête ou à un événement (Would you like to come to my party?)
+
+20-02. Parler pendant une fête et rencontrer les invités (How do you know the host?)
+
+20-03. Féliciter quelqu'un et souhaiter un événement heureux (Congratulations, Happy birthday, Best wishes)
+
+Chapitre 21 — Relations Humaines et Vie Sociale [eng.relations]
+21-01. Parler de ses relations amicales et amoureuses (We're close friends, We're dating)
+
+21-02. Exprimer ses limites et gérer un désaccord personnel (I need some space, That makes me uncomfortable)
+
+21-03. Faire connaissance avec les voisins et entretenir de bonnes relations (Have you just moved in?)
+
+Partie 10 : Compréhension et expression naturelle
+Chapitre 22 — Comprendre l'Anglais Naturel et Familier [eng.anglais_familier]
+22-01. Découvrir les contractions et les formes orales (Gonna, wanna, gotta, kinda)
+
+22-02. Comprendre les expressions familières du quotidien (No worries, What's up?, Sounds good)
+
+22-03. Utiliser les expressions idiomatiques courantes (It's up to you, Piece of cake, Hang on)
+
+Chapitre 23 — Réagir Spontanément et Maintenir une Conversation [eng.reactions_spontanees]
+23-01. Exprimer son incompréhension et demander des précisions (What do you mean? Could you explain?)
+
+23-02. Réagir rapidement à une information ou une situation (No way! Seriously? You're kidding!)
+
+23-03. Interrompre poliment, reprendre la parole et changer de sujet (Sorry to interrupt, By the way...)
+
+Partie 11 : Situations professionnelles et pratiques spécialisées
+Chapitre 24 — Recherche d'Emploi et Monde Professionnel [eng.recherche_emploi]
+24-01. Chercher une offre d'emploi et contacter un recruteur (Job vacancy, application, CV)
+
+24-02. Répondre à des questions professionnelles et présenter son parcours (Tell me about yourself)
+
+24-03. Comprendre les horaires, les congés et les conditions de travail (Working hours, paid leave, salary)
+
+Chapitre 25 — Études, Formation et Apprentissage [eng.etudes_formation]
+25-01. Comprendre les consignes d'un professeur et poser des questions (Could you explain the exercise?)
+
+25-02. Participer à un cours et travailler en groupe (Work in pairs, take notes, hand in your homework)
+
+25-03. Parler de ses examens, résultats et objectifs d'apprentissage (I passed my exam, I failed, I need to improve)
+
+Partie 12 : Situations imprévues et environnement
+Chapitre 26 — Météo, Nature et Environnement [eng.meteo_environnement]
+26-01. Parler du temps qu'il fait et des prévisions météorologiques (It's cloudy, It's pouring, It's freezing)
+
+26-02. Décrire un paysage et parler de la nature (Mountain, countryside, forest, wildlife)
+
+26-03. Parler d'écologie et de gestes pour protéger l'environnement (Recycling, pollution, save energy)
+
+Chapitre 27 — Pannes, Incidents et Situations Inattendues [eng.incidents]
+27-01. Réagir à une panne d'électricité, d'eau ou d'Internet (There's been a power cut)
+
+27-02. Signaler un incident dans un lieu public (Someone has broken something, There's a problem)
+
+27-03. Expliquer une situation imprévue et trouver une solution (Something went wrong, What should we do?)
+
+Partie 13 : Vie pratique et autonomie
+Chapitre 28 — Banque, Argent et Finances Personnelles [eng.banque_finances]
+28-01. Ouvrir un compte bancaire et comprendre les services proposés (Bank account, debit card, transfer)
+
+28-02. Parler de son budget, de ses dépenses et de ses économies (Expenses, savings, budget)
+
+28-03. Signaler une transaction incorrecte ou une carte bancaire bloquée (My card has been declined)
+
+Chapitre 29 — Technologie, Internet et Applications [eng.technologie_numerique]
+29-01. Installer et utiliser une application ou un logiciel (Download, install, update, settings)
+
+29-02. Résoudre un problème de connexion ou de configuration (I can't connect to the Wi-Fi)
+
+29-03. Protéger ses données et gérer ses comptes en ligne (Privacy, username, verification code)
+
+Partie 14 : Anglais avancé de la vie quotidienne
+Chapitre 30 — S'Exprimer avec Plus de Naturel et de Précision [eng.expression_naturelle]
+30-01. Raconter une situation en donnant des détails et du contexte (At first, suddenly, eventually)
+
+30-02. Expliquer un problème complexe et proposer plusieurs solutions (The main issue is..., One possible solution would be...)
+
+30-03. Parler avec fluidité, reformuler et adapter son langage à son interlocuteur (What I'm trying to say is..., In other words...)
+
+Partie 15 : Vie quotidienne à l'étranger
+Chapitre 31 — S'Installer dans un Nouveau Pays [eng.installation_etranger]
+31-01. Se présenter aux voisins et découvrir son quartier (I just moved in, Is there a supermarket nearby?)
+
+31-02. Effectuer des démarches pour s'installer (Register your address, local documents, proof of residence)
+
+31-03. Découvrir les habitudes locales et s'adapter à une nouvelle culture (How do things work around here?)
+
+Chapitre 32 — Services et Abonnements du Quotidien [eng.abonnements_services]
+32-01. Souscrire à un abonnement téléphonique ou Internet (I'd like to sign up for a mobile plan)
+
+32-02. Comprendre les abonnements et leurs conditions (Monthly fee, cancellation, renewal)
+
+32-03. Résilier, modifier ou suspendre un abonnement (I'd like to cancel my subscription)
+
+Partie 16 : Communication et interactions avancées
+Chapitre 33 — Raconter une Histoire et Faire un Récit [eng.raconter_histoire]
+33-01. Raconter un événement dans l'ordre chronologique (First, then, after that, finally)
+
+33-02. Décrire une situation inattendue ou amusante (You won't believe what happened!)
+
+33-03. Raconter une histoire en ajoutant des détails et des réactions (While I was walking, something happened)
+
+Chapitre 34 — Humour, Blagues et Expressions Sociales [eng.humour_blagues]
+34-01. Comprendre les plaisanteries et les jeux de mots (Just kidding, I'm joking)
+
+34-02. Faire de l'humour dans une conversation (That's hilarious, You're funny)
+
+34-03. Comprendre le sarcasme et l'ironie dans les échanges (Are you serious? Yeah, right!)
+
+Chapitre 35 — Négocier et Trouver un Compromis [eng.negociation]
+35-01. Négocier un prix ou demander un geste commercial (Could you lower the price?)
+
+35-02. Faire une proposition et défendre ses intérêts (What if we agreed on...?)
+
+35-03. Trouver un compromis et conclure un accord (Let's meet halfway)
+
+Partie 17 : Services spécialisés et situations particulières
+Chapitre 36 — Automobile, Garage et Dépannage [eng.automobile_garage]
+36-01. Décrire un problème mécanique à un garagiste (The engine makes a strange noise)
+
+36-02. Prendre rendez-vous pour une réparation ou un entretien (I need to have my car checked)
+
+36-03. Comprendre un devis et récupérer son véhicule (Repair costs, spare parts, warranty)
+
+Chapitre 37 — Animaux et Services Vétérinaires [eng.animaux_veterinaire]
+37-01. Présenter son animal et parler de ses habitudes (My dog is three years old)
+
+37-02. Expliquer un problème de santé chez son animal (My cat hasn't been eating)
+
+37-03. Prendre rendez-vous chez le vétérinaire et comprendre les soins (Vaccination, check-up, treatment)
+
+Chapitre 38 — Services de Livraison et Commandes en Ligne [eng.livraisons_commandes]
+38-01. Passer une commande sur Internet (I'd like to place an order)
+
+38-02. Suivre un colis et communiquer avec un livreur (Your package is on its way)
+
+38-03. Signaler une livraison incorrecte ou un colis endommagé (I received the wrong item)
+
+Partie 18 : Vie sociale, sorties et activités
+Chapitre 39 — Sport, Activités Physiques et Clubs [eng.sport_activites]
+39-01. S'inscrire dans une salle de sport ou un club (I'd like to join the gym)
+
+39-02. Comprendre les exercices et les consignes sportives (Warm up, stretch, do ten repetitions)
+
+39-03. Parler de ses performances et participer à une activité collective (We won the game!)
+
+Chapitre 40 — Restaurants, Sorties et Vie Nocturne [eng.sorties_nocturnes]
+40-01. Entrer dans un bar ou une discothèque et comprendre les règles (Is there an entrance fee?)
+
+40-02. Commander des boissons et discuter dans un environnement bruyant (What are you having?)
+
+40-03. Organiser son retour et gérer une sortie tardive (How are you getting home?)
+
+Chapitre 41 — Mariages, Cérémonies et Événements Familiaux [eng.ceremonies_evenements]
+41-01. Parler des traditions et des cérémonies (Wedding ceremony, reception, tradition)
+
+41-02. Féliciter les mariés et échanger avec les invités (You make a lovely couple!)
+
+41-03. Présenter ses condoléances et assister à des moments difficiles (My deepest condolences)
+
+Partie 19 : Comprendre le monde anglophone
+Chapitre 42 — Culture, Traditions et Coutumes [eng.culture_traditions]
+42-01. Parler des fêtes et traditions des pays anglophones (Christmas, Thanksgiving, Halloween)
+
+42-02. Comprendre les différences culturelles et les règles de savoir-vivre (It's customary to..., In my country...)
+
+42-03. Parler des habitudes alimentaires et des traditions locales (Traditional dishes, local customs)
+
+Chapitre 43 — Expressions Régionales et Variantes de l'Anglais [eng.variantes_anglais]
+43-01. Découvrir les différences entre l'anglais britannique et américain (Flat / Apartment, Lift / Elevator)
+
+43-02. Comprendre les accents et les expressions régionales courantes
+
+43-03. Reconnaître les différences de vocabulaire selon les pays anglophones (Holiday / Vacation, Queue / Line)
+
+Partie 20 : Communication avancée et maîtrise de la langue
+Chapitre 44 — Expliquer, Décrire et Comparer avec Précision [eng.description_comparaison]
+44-01. Décrire précisément un objet, un lieu ou une personne (It looks like..., It's made of..., It's located...)
+
+44-02. Comparer plusieurs possibilités et exprimer des différences (Whereas, compared to, much better than)
+
+44-03. Expliquer une procédure ou donner des instructions détaillées (The first step is..., Once you've done that...)
+
+Chapitre 45 — Gérer des Conversations Complexes [eng.conversations_complexes]
+45-01. Exprimer une hypothèse et imaginer différents scénarios (What would happen if...?)
+
+45-02. Exprimer des regrets, des reproches et des possibilités passées (I wish I had..., I should have...)
+
+45-03. Défendre son point de vue dans une conversation difficile et parvenir à une conclusion (I understand your concerns, but...)
+
+Partie 21 : Grammaire avancée et maîtrise des structures
+Chapitre 46 — Les Temps Avancés et Leurs Nuances [eng.temps_avances]
+46-01. Maîtriser le Present Perfect et le distinguer du Past Simple (I have already seen this movie / I saw it yesterday)
+
+46-02. Utiliser le Present Perfect Continuous et le Past Perfect (I have been working / I had already left)
+
+46-03. Maîtriser les différentes formes du futur (Future Continuous, Future Perfect, Future Perfect Continuous)
+
+Chapitre 47 — Les Structures Complexes et les Subordonnées [eng.structures_complexes]
+47-01. Construire des phrases avec plusieurs propositions (Although, even though, whereas, while)
+
+47-02. Utiliser les propositions relatives (Who, which, that, whose, whom)
+
+47-03. Maîtriser les propositions conditionnelles et temporelles (Unless, as soon as, provided that, whenever)
+
+Chapitre 48 — Le Conditionnel et les Hypothèses Avancées [eng.conditionnel_avance]
+48-01. Maîtriser les trois principaux types de conditionnels (First, Second and Third Conditional)
+
+48-02. Utiliser les conditionnels mixtes (Mixed Conditionals)
+
+48-03. Exprimer des regrets, des hypothèses et des situations irréelles (I wish, If only, I'd rather)
+
+Partie 22 : Vocabulaire riche et expressions idiomatiques
+Chapitre 49 — Les Phrasal Verbs Avancés [eng.phrasal_verbs_avances]
+49-01. Maîtriser les phrasal verbs courants dans les conversations (Bring up, carry on, figure out, put off)
+
+49-02. Utiliser les phrasal verbs dans les contextes professionnels et sociaux (Come across, get along, take over)
+
+49-03. Comprendre les phrasal verbs à plusieurs sens et leurs constructions (Make up, turn down, break down)
+
+Chapitre 50 — Expressions Idiomatiques et Anglais Authentique [eng.idiomes_avances]
+50-01. Utiliser les expressions idiomatiques du quotidien (A blessing in disguise, once in a blue moon)
+
+50-02. Comprendre les métaphores et les expressions imagées (To be on the same page, to hit the nail on the head)
+
+50-03. Employer les expressions naturelles pour enrichir ses conversations (Long story short, at the end of the day, fair enough)
+
+Chapitre 51 — Nuances de Vocabulaire et Précision Linguistique [eng.nuances_vocabulaire]
+51-01. Distinguer les synonymes et leurs subtilités (Big, huge, enormous, massive)
+
+51-02. Choisir le mot juste selon le contexte et le registre de langue (Speak, talk, tell, say)
+
+51-03. Utiliser les collocations et associations naturelles de mots (Make a decision, take responsibility, deeply concerned)
+
+Partie 23 : Fluidité et expression orale
+Chapitre 52 — Parler avec Fluidité et Spontanéité [eng.fluence_orale]
+52-01. Construire des phrases longues sans perdre le fil de ses idées
+
+52-02. Utiliser les mots de liaison et les connecteurs naturels (Nevertheless, furthermore, consequently)
+
+52-03. Réduire les hésitations et apprendre à reformuler spontanément (What I mean is..., Let me put it another way)
+
+Chapitre 53 — Prononciation, Accent et Intonation [eng.prononciation_avancee]
+53-01. Maîtriser l'accentuation des mots et le rythme des phrases (Word stress, sentence stress)
+
+53-02. Travailler les sons difficiles et les enchaînements (Th sounds, connected speech, linking sounds)
+
+53-03. Utiliser l'intonation pour exprimer les émotions, les intentions et les nuances
+
+Chapitre 54 — Comprendre les Anglophones à l'Oral [eng.comprehension_orale_avancee]
+54-01. Comprendre l'anglais parlé rapidement et les réductions phonétiques
+
+54-02. Reconnaître les accents britanniques, américains, australiens et internationaux
+
+54-03. Comprendre les conversations spontanées, les sous-entendus et les références implicites
+
+Partie 24 : Communication professionnelle et académique
+Chapitre 55 — Anglais Professionnel Avancé [eng.anglais_professionnel_avance]
+55-01. Rédiger des emails professionnels élégants et précis (I am writing to enquire about...)
+
+55-02. Participer à des réunions complexes et défendre une proposition
+
+55-03. Présenter un projet, convaincre un interlocuteur et répondre aux objections
+
+Chapitre 56 — Anglais Académique et Argumentation Structurée [eng.anglais_academique]
+56-01. Construire un argumentaire structuré et développer une problématique
+
+56-02. Présenter des données, des statistiques et des résultats (According to the data, the figures indicate...)
+
+56-03. Rédiger une synthèse, un essai argumentatif et une conclusion (Essay, summary, thesis statement)
+
+Chapitre 57 — Négociation, Persuasion et Diplomatie [eng.persuasion_diplomatie]
+57-01. Convaincre un interlocuteur en utilisant des arguments solides
+
+57-02. Exprimer un désaccord avec diplomatie et gérer les objections
+
+57-03. Négocier des conditions, trouver un terrain d'entente et conclure un accord
+
+Partie 25 : Maîtrise avancée et compréhension approfondie
+Chapitre 58 — Sous-entendus, Ironie et Sens Implicite [eng.sens_implicite]
+58-01. Comprendre les sous-entendus et les messages indirects
+
+58-02. Reconnaître l'ironie, le sarcasme et les doubles sens
+
+58-03. Comprendre les références culturelles et les expressions dépendantes du contexte
+
+Chapitre 59 — Registres de Langue et Adaptation du Discours [eng.registres_langue]
+59-01. Différencier l'anglais familier, courant, soutenu et formel
+
+59-02. Adapter son vocabulaire et sa manière de parler à son interlocuteur
+
+59-03. Maîtriser les formulations diplomatiques, nuancées et élégantes (I would appreciate it if..., Would you mind...?)
+
+Chapitre 60 — Maîtrise Globale et Anglais de Haut Niveau [eng.maitrise_globale]
+60-01. Développer une pensée directement en anglais sans traduire mentalement
+
+60-02. Participer à des conversations complexes, improviser et défendre ses idées avec aisance
+
+60-03. Maîtriser les situations réelles de niveau avancé : débats, entretiens, négociations et présentations improvisées
