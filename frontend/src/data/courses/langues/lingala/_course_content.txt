@@ -1,0 +1,744 @@
+[[LINGALA]]
+
+1. Salutations et Contacts [lingala.salutations]
+    1-01. Dire bonjour et au revoir (Mbote, Sango nini, Tikala malamu)
+    2-01. Les formules de politesse (Nabondeli yo, Matondi, Melesi)
+    3-01. Demander comment ça va et y répondre (Ozali malamu ?, Nazali malamu)
+    4-01. Se présenter brièvement lors d'une première rencontre (Nkombo na ngai...)
+    5-01. Utiliser les expressions courantes de conversation (Malamu, Ee, Te, Mbala mosusu, Ya solo)
+    6-01. Exprimer son accord et son désaccord (Nandimi, Nandimi te)
+    7-01. S'excuser et attirer l'attention (Limbisa ngai, Bolimbisi, Pardon)
+    8-01. Souhaiter une bonne journée et une bonne soirée (Mokolo malamu, Butu malamu)
+    9-01. Prendre congé et promettre de se revoir (Tokomonana, Tikala malamu)
+
+2. Se Présenter [lingala.presentation]
+    1-02. Dire son nom et son âge (Nkombo na ngai..., Nazali na mbula...)
+    2-02. Indiquer d'où l'on vient et sa nationalité (Nauti na..., Nazali...)
+    3-02. Parler de sa profession et de ses études (Nazali molakisi, Nayekolaka...)
+    4-02. Présenter ses caractéristiques physiques (Nazali molai, Nazali mokuse)
+    5-02. Parler des langues que l'on connaît (Nayebi koloba Lifalanse, Nayebi Lingelesi)
+    6-02. Parler de ses goûts et préférences personnels (Nalingaka..., Nasepelaka na...)
+    7-02. Parler de ses loisirs et centres d'intérêt (Nalingaka kotánga, Kobeta ndembo)
+    8-02. Décrire sa personnalité et son caractère (Moto ya boboto, Moto ya masɛki, Moto ya kimia)
+    9-02. Parler de ses compétences et capacités (Nayebi kobɛta masano, Nayebi kolamba)
+    10-02. Présenter une autre personne (Oyo ndeko na ngai, Oyo moninga na ngai)
+
+3. Les Bases du Quotidien [lingala.bases_quotidien]
+    1-03. Les nombres de 0 à 100 et compter les objets
+    2-03. Les couleurs et les descriptions simples (Mpembe, Moindo, Motane, Langilangi)
+    3-03. La famille et les proches (Mama, Tata, Ndeko, Moninga, Mwana)
+    4-03. Les pronoms personnels et les préfixes sujets (Ngai, Yo, Ye, Biso, Bino, Bango)
+    5-03. Comprendre les marqueurs de classe nominale en lingala (Mo-, Ba-, Li-, Ma-, E-)
+    6-03. Le singulier et le pluriel des noms (Moto/Bato, Eloko/Biloko)
+    7-03. Exprimer la possession (Na ngai, Na yo, Na ye, Na biso)
+    8-03. Les adjectifs et expressions démonstratives (Oyo, Oyo wana, Yango)
+    9-03. Les objets du quotidien et de la maison (Mesa, Kiti, Ekuke, Telefoni)
+    10-03. Les jours de la semaine, les mois et les saisons
+    11-03. Lire et dire la date en lingala
+    12-03. Dire l'heure et comprendre les moments de la journée
+    13-03. Les prépositions et expressions de lieu (Na kati, Likoló, Na nse, Pembeni)
+    14-03. Les adjectifs courants pour décrire les objets et les personnes (Monene, Moke, Malamu, Mabe)
+    15-03. Les vêtements et les accessoires (Elamba, Sapato, Koti)
+    16-03. Les animaux courants (Mbwa, Pusi, Ndɛkɛ, Mpunda)
+    17-03. Les parties du corps humain (Motó, Lobɔkɔ, Miso, Makolo)
+    18-03. Les aliments et les boissons (Losó, Madesu, Mbisi, Mai, Mampa)
+    19-03. Les lieux de la vie quotidienne (Ndako, Zando, Eteyelo, Lopitalo)
+    20-03. Les moyens de transport (Motuka, Bisi, Tɛlɛ, Masuwa)
+
+4. Construire ses premières phrases [lingala.phrases]
+    1-04. La structure d'une phrase simple en lingala (Sujet + Verbe + Complément)
+    2-04. Construire des phrases affirmatives avec le verbe être (Nazali, Ozali, Azali)
+    3-04. Construire des phrases négatives (Nazali te, Olingi te)
+    4-04. Poser des questions simples (Oza nani ?, Okei wapi ?, Olingi nini ?)
+    5-04. Comprendre les préfixes sujets et leurs variations (Na-, O-, A-, To-, Bo-, Ba-)
+    6-04. Les mots interrogatifs fondamentaux (Nani, Nini, Wapi, Ntango nini, Mpo na nini, Ndenge nini)
+    7-04. Utiliser le verbe avoir et exprimer la possession (Nazali na..., Ozali na...)
+    8-04. Le présent en lingala : comprendre et construire des phrases
+    9-04. La conjugaison des verbes selon les personnes (Nasalaka, Osalaka, Asalaka)
+    10-04. La négation des verbes au présent (Nasali te, Nayebi te)
+    11-04. Poser des questions avec les verbes courants (Osalaka nini ?, Okendaka wapi ?)
+    12-04. Distinguer les verbes être, avoir et les verbes d'action
+    13-04. Comprendre les verbes à infinitif en -a (Koloba, Kosala, Kokende)
+    14-04. Construire des phrases avec les compléments d'objet
+    15-04. Utiliser les pronoms compléments (Ngai, Yo, Ye) dans les constructions verbales
+
+5. Les Actions et Habitudes [lingala.actions]
+    1-05. Les verbes d'action les plus courants (Kokende, Koya, Kolia, Kolala, Kosala)
+    2-05. Les activités de la journée (Kolamuka, Kolongwa na mbeto, Kokende kolala)
+    3-05. Parler de sa routine quotidienne au présent
+    4-05. Exprimer ses habitudes et ses fréquences (Ntango nyonso, Mbala mingi, Tango mosusu, Ata moke te)
+    5-05. Utiliser les verbes courants pour parler de ses activités (Kotánga, Kokoma, Kotala, Koyoka)
+    6-05. Exprimer une action en cours avec le présent progressif (Nazali kosala, Azali kolia)
+    7-05. Différencier les habitudes et les actions en cours
+    8-05. Exprimer ses capacités avec le verbe koyeba (Nayebi kobɛta, Nayebi kolamba)
+    9-05. Donner des instructions et des ordres simples (Yaka !, Kende !, Fanda !)
+    10-05. Demander à quelqu'un de faire quelque chose (Sala yango, Nabondeli yo)
+    11-05. Exprimer les actions réciproques et collectives
+    12-05. Parler des tâches ménagères (Kopangusa, Kosukola, Kolamba)
+
+6. Exprimer ses idées et ses besoins [lingala.expressions]
+    1-06. Exprimer ses goûts et ses préférences (Nalingi, Nasepeli, Naboyi)
+    2-06. Exprimer ses émotions et ses sentiments (Nazali na esengo, Nazali na mawa, Nalembi, Nasilikí)
+    3-06. Exprimer ses envies et ses souhaits (Nalingi..., Nakolinga...)
+    4-06. Exprimer ses besoins simples (Nazali na bosenga ya..., Nasengeli...)
+    5-06. Exprimer ses opinions personnelles (Nakanisi ete..., Namoni ete...)
+    6-06. Exprimer la possibilité et l'incertitude (Mbala mosusu, Ekoki kozala)
+    7-06. Exprimer la possession et l'appartenance (Ezali ya ngai, Ezali ya yo)
+    8-06. Exprimer une préférence entre plusieurs choses (Nalingi oyo koleka wana)
+    9-06. Exprimer la joie, la tristesse, la peur et la colère
+    10-06. Demander de l'aide et proposer son aide (Salisa ngai, Nakosalisa yo)
+    11-06. Exprimer la faim, la soif, la fatigue et la douleur
+    12-06. Exprimer ses regrets et ses excuses
+    13-06. Exprimer l'obligation et l'interdiction (Esengeli..., Okoki te...)
+    14-06. Faire une proposition et inviter quelqu'un (Yaka elongo na ngai)
+
+7. Le Temps et les Repères temporels [lingala.temps]
+    1-07. Les moments de la journée (Ntɔngɔ, Midi, Mpokwa, Butu)
+    2-07. Parler du passé avec les formes verbales appropriées (Nasalaki, Osololaki)
+    3-07. Découvrir les formes du passé récent (Nauti kosala, Nauti koya)
+    4-07. Parler des actions passées avec les verbes courants (Nakendaki, Namonaki, Naliaki)
+    5-07. Raconter des événements passés avec des phrases simples
+    6-07. Parler de projets futurs avec le préfixe du futur (Nakosala, Okokende, Akoya)
+    7-07. Exprimer une intention et une promesse (Nakosala yango, Nakoya)
+    8-07. Employer les marqueurs temporels (Lobi, Lelo, Lobi lobi, Pɔsɔ eleki, Pɔsɔ ekoya)
+    9-07. Parler de la durée d'une action (Mikolo mibale, Sanza moko)
+    10-07. Exprimer la fréquence et la répétition dans le temps
+    11-07. Raconter sa journée d'hier
+    12-07. Parler de ses projets pour demain et la semaine prochaine
+
+8. Les Quantités et les Comparaisons [lingala.quantites]
+    1-08. Les nombres ordinaux et les rangs
+    2-08. Exprimer les quantités (Mingi, Moke, Mwa moke)
+    3-08. Distinguer les noms dénombrables et les notions de quantité
+    4-08. Exprimer une grande ou une petite quantité
+    5-08. Comparer deux éléments (Monene koleka, Moke koleka, Malamu koleka)
+    6-08. Exprimer une supériorité et une infériorité
+    7-08. Exprimer une quantité suffisante ou insuffisante (Ekoki, Eleki mingi)
+    8-08. Demander et indiquer un prix (Ezali mbongo boni ?)
+    9-08. Acheter plusieurs articles et négocier au marché
+    10-08. Exprimer le poids, la taille et les mesures
+    11-08. Comparer plusieurs personnes, objets et situations
+    12-08. Utiliser les expressions de totalité et de répartition (Nyonso, Moko na moko)
+
+9. La Vie Sociale et les Conversations [lingala.vie_sociale]
+    1-09. Parler de sa famille et de ses relations
+    2-09. Présenter ses parents, frères, sœurs et amis
+    3-09. Poser des questions personnelles et y répondre
+    4-09. Parler de son quotidien avec ses amis
+    5-09. Participer à une conversation simple
+    6-09. Raconter une anecdote et une expérience personnelle
+    7-09. Exprimer des compliments et des encouragements
+    8-09. Parler des fêtes, anniversaires et événements familiaux
+    9-09. Inviter quelqu'un chez soi et recevoir des invités
+    10-09. Comprendre les expressions familières du lingala courant
+
+10. Se Déplacer et Voyager [lingala.voyages]
+    1-10. Demander et indiquer son chemin
+    2-10. Se repérer dans une ville et un quartier
+    3-10. Utiliser les expressions de direction (Liboso, Simbá, Kobaluka)
+    4-10. Prendre un taxi, un bus ou un autre transport
+    5-10. Demander le prix d'un trajet
+    6-10. Réserver une chambre et séjourner à l'hôtel
+    7-10. Parler de ses destinations et de ses voyages
+    8-10. Demander des informations à un inconnu
+    9-10. Acheter un billet et comprendre les horaires
+    10-10. Gérer les situations courantes pendant un voyage
+
+11. Manger, Boire et Faire des Achats [lingala.achats]
+    1-11. Les aliments de base et les ingrédients
+    2-11. Les fruits et les légumes
+    3-11. Les plats traditionnels congolais
+    4-11. Commander un repas au restaurant
+    5-11. Exprimer ses préférences alimentaires
+    6-11. Demander de l'eau et d'autres boissons
+    7-11. Faire ses courses au marché
+    8-11. Demander les prix et négocier
+    9-11. Comprendre les quantités et les unités de mesure
+    10-11. Payer et demander la monnaie
+
+12. Approfondir la Grammaire du Lingala [lingala.grammaire]
+    1-12. Comprendre le fonctionnement des classes nominales
+    2-12. Les accords entre les noms, les adjectifs et les autres éléments de la phrase
+    3-12. Les préfixes et suffixes verbaux
+    4-12. La conjugaison des verbes aux différentes personnes
+    5-12. Les différentes formes de négation
+    6-12. La formation des questions et des phrases interrogatives
+    7-12. Les pronoms personnels, possessifs et démonstratifs
+    8-12. Les préfixes verbaux du présent, du passé et du futur
+    9-12. Les verbes auxiliaires et les constructions verbales
+    10-12. Les propositions simples et complexes
+    11-12. Les connecteurs logiques (Kasi, Mpe, Mpo ete, Soki)
+    12-12. Construire des phrases longues et naturelles
+
+13. Comprendre et Parler le Lingala Courant [lingala.communication]
+    1-13. Comprendre les conversations entre locuteurs natifs
+    2-13. Découvrir les expressions idiomatiques du lingala
+    3-13. Comprendre les expressions familières de Kinshasa
+    4-13. Découvrir les différences entre lingala courant, populaire et soutenu
+    5-13. Comprendre les expressions utilisées dans la musique congolaise
+    6-13. Comprendre les conversations rapides et les contractions orales
+    7-13. Répondre spontanément dans une conversation
+    8-13. Raconter une histoire en lingala
+    9-13. Participer à une discussion et défendre son opinion
+    10-13. Tenir une conversation complète en lingala
+
+Partie 2 : Premiers échanges et vie sociale
+--> Au Restaurant et au Café [lingala.restaurant]
+1-04. Demander une table et saluer le serveur
+
+2-04. Commander une boisson ou un plat (Nalingi mai, Nabondeli yo)
+
+3-04. Comprendre le menu et poser des questions sur les ingrédients
+
+4-04. Demander et régler l'addition (Faktire, nabondeli yo)
+
+--> Discuter entre Amis [lingala.amis]
+1-05. Parler de ses loisirs et passe-temps (Masano, miziki, kotánga)
+
+2-05. Exprimer ses goûts et ses préférences dans une conversation
+
+3-05. Proposer une sortie ou une activité (Tokende kotala filme)
+
+4-05. Réagir à une proposition (Acceptation ou refus poli)
+
+--> Le Quotidien et la Routine [lingala.routine]
+1-06. Demander et donner l'heure dans une conversation
+
+2-06. Parler des jours de la semaine et des mois dans son quotidien
+
+3-06. Raconter sa journée type et décrire ses habitudes quotidiennes
+
+Partie 3 : Déplacements et services essentiels
+--> Transports en Commun [lingala.transports_communs]
+1-07. Acheter un ticket de bus ou de transport en commun
+
+2-07. Comprendre les horaires et les annonces de départ et d'arrivée
+
+3-07. Demander son chemin dans une gare, une station ou un arrêt
+
+--> Orientation en Ville [lingala.orientation_ville]
+1-08. Demander où se trouve un lieu (Epayi nini... ?)
+
+2-08. Comprendre les directions simples (Kende semba, Baluka na lobɔkɔ ya mobali)
+
+3-08. Repérer les bâtiments et commerces essentiels (Banque, pharmacie, lopitalo)
+
+--> Services du Quotidien [lingala.services_quotidien]
+1-09. Envoyer une lettre ou un colis à la poste
+
+2-09. Retirer de l'argent et utiliser un distributeur automatique
+
+3-09. Demander des informations à un accueil ou à un office du tourisme
+
+Partie 4 : Demander de l'aide et résoudre des problèmes
+--> Urgences et Imprévus [lingala.urgences]
+1-10. Demander de l'aide rapidement (Salisa ngai !, Benga ambulance !)
+
+2-10. Signaler la perte d'un objet et demander de l'aide pour le retrouver
+
+3-10. Faire face à un problème de transport, un retard ou une annulation
+
+--> Problèmes Matériels [lingala.problemes_materiels]
+1-11. Signaler une panne dans un hôtel ou un logement (Mwinda ezali kosala te)
+
+2-11. Expliquer un problème avec un appareil ou un service
+
+3-11. Demander un échange, une réparation ou un remboursement
+
+Partie 5 : Transports et orientation avancée
+--> Conduite et Location de Véhicules [lingala.location_vehicules]
+1-12. Louer une voiture et comprendre les conditions de location
+
+2-12. Comprendre les panneaux de signalisation routière
+
+3-12. Faire le plein d'essence et interagir dans une station-service
+
+--> Voyages en Train et en Avion [lingala.voyages_longs]
+1-13. Enregistrer ses bagages et passer les contrôles de sécurité
+
+2-13. Demander une place spécifique à bord (Près de la fenêtre, côté couloir)
+
+3-13. Gérer les correspondances, les retards et les changements de vol
+
+Partie 6 : Shopping et achats du quotidien
+--> Vêtements et Essayage [lingala.shopping_vetements]
+1-14. Demander une taille ou une couleur différente
+
+2-14. Utiliser une cabine d'essayage et demander où elle se trouve
+
+3-14. Demander le prix et se renseigner sur les réductions et promotions
+
+--> Alimentation et Supermarché [lingala.supermarche]
+1-15. Se repérer dans les rayons d'un supermarché
+
+2-15. Demander le poids et le prix au stand de découpe (boucherie, fromage)
+
+3-15. Passer à la caisse et payer par carte bancaire ou en espèces
+
+Partie 7 : Santé, corps et bien-être
+--> Le Corps Humain et les Symptômes [lingala.sante_symptomes]
+1-16. Nommer les principales parties du corps humain
+
+2-16. Expliquer ce qui fait mal (Motó ezali kobɛta ngai, Libumu ezali kosala ngai pasi)
+
+3-16. Décrire des symptômes généraux (Fièvre, kosukosu, kolɛmba)
+
+--> À la Pharmacie et chez le Médecin [lingala.pharmacie_medecin]
+1-17. Acheter des médicaments sans ordonnance et demander des conseils au pharmacien
+
+2-17. Prendre rendez-vous chez le médecin par téléphone
+
+3-17. Comprendre les consignes d'un traitement, les horaires et les doses de médicaments
+
+Partie 8 : Logement, hôtel et hébergement
+--> Réservation et Arrivée à l'Hôtel [lingala.hotel_arrivee]
+1-18. Réserver une chambre (Chambre moko, chambre ya bato mibale)
+
+2-18. Effectuer son arrivée à l'hôtel et poser des questions sur les services (Wi-Fi, bilei ya ntɔngɔ)
+
+3-18. Demander un service de chambre ou signaler un problème de propreté
+
+--> Vie en Colocation ou Location [lingala.logement_location]
+1-19. Discuter des équipements d'un logement (Cuisine, salle de bain, chauffage)
+
+2-19. Gérer les règles de vie en colocation et répartir les tâches ménagères
+
+3-19. Comprendre un contrat de location, un état des lieux et discuter du loyer
+
+Partie 9 : Voyages, aéroports et frontières
+--> Formalités de Douane [lingala.douanes_frontieres]
+1-20. Répondre aux questions des douaniers (Pourquoi oyei na mboka oyo ?)
+
+2-20. Déclarer des biens et comprendre les restrictions concernant les bagages
+
+3-20. Gérer les contrôles de sécurité et les vérifications de passeport
+
+--> Tourisme et Excursions [lingala.tourisme]
+1-21. Réserver une visite guidée ou une excursion
+
+2-21. Acheter des billets d'entrée pour un musée ou un monument
+
+3-21. Demander une brochure et des informations historiques sur un lieu touristique
+
+Partie 10 : Émotions, sentiments et états d'esprit
+--> Exprimer ses Émotions [lingala.emotions]
+1-22. Parler de sa joie, de sa tristesse et de sa colère
+
+2-22. Exprimer la surprise, la peur, l'inquiétude et l'enthousiasme
+
+3-22. Réconforter quelqu'un et exprimer de l'empathie (Maï mawa, Nayoki mawa mpo na yo)
+
+--> États d'Esprit et Caractère [lingala.etats_esprit]
+1-23. Décrire la personnalité de quelqu'un (Moto ya boboto, moto ya nsɔni, moto ya kondima)
+
+2-23. Exprimer la fatigue, l'ennui, la motivation et la détermination
+
+3-23. Parler de ses peurs, de ses ambitions et de ses aspirations personnelles
+
+Partie 11 : Le monde du travail et le milieu professionnel
+--> Environnement de Bureau [lingala.travail_bureau]
+1-24. Présenter son équipe, ses collègues et ses responsabilités
+
+2-24. Utiliser le vocabulaire informatique de base (Email, mot de passe, écran, clavier)
+
+3-24. Gérer les appels professionnels, transférer un appel et prendre un message
+
+--> Réunions et Entretiens [lingala.reunions_entretiens]
+1-25. Donner son avis et intervenir lors d'une réunion
+
+2-25. Fixer une réunion et planifier un rendez-vous professionnel
+
+3-25. Se préparer à un entretien d'embauche et présenter ses compétences professionnelles
+
+Partie 12 : Loisirs avancés, culture et médias
+--> Cinéma, Livres et Musique [lingala.culture_medias]
+1-26. Discuter d'un film ou d'une série regardée récemment
+
+2-26. Partager ses goûts littéraires, artistiques et culturels
+
+3-26. Parler de musique, de rumba congolaise et de ses artistes préférés
+
+--> Actualités et Médias Sociaux [lingala.actualites_reseaux]
+1-27. Comprendre les grands titres d'un journal et les informations principales
+
+2-27. Partager du contenu et commenter sur les réseaux sociaux
+
+3-27. Discuter d'un fait divers ou d'un sujet d'actualité simple
+
+Partie 13 : Exprimer des opinions et débattre
+--> Donner son Avis [lingala.opinions]
+1-28. Nuancer ses propos (Na makanisi na ngai, Nakanisi ete, Kasi)
+
+2-28. Être d'accord ou en désaccord de manière polie
+
+3-28. Justifier un choix ou une préférence (Pamba te, Mpo ete, Yango wana)
+
+--> Argumentation et Persuasion [lingala.argumentation]
+1-29. Présenter les avantages et les inconvénients d'une situation
+
+2-29. Faire des suggestions et proposer des solutions constructives
+
+3-29. Résumer une discussion et reformuler le point de vue de quelqu'un
+
+Partie 14 : Le passé et les souvenirs
+--> Raconter des Événements Passés [lingala.passe_simple]
+1-30. Approfondir les formes du passé avec les verbes réguliers
+
+2-30. Utiliser les principaux verbes irréguliers et leurs formes passées
+
+3-30. Raconter ce que l'on a fait pendant le week-end dernier
+
+--> Souvenirs et Anecdotes [lingala.souvenirs]
+1-31. Parler de son enfance et de ses souvenirs lointains
+
+2-31. Poser des questions sur le passé et les expériences vécues
+
+3-31. Raconter une anecdote de voyage ou un événement marquant
+
+Partie 15 : Projets et futurs
+--> Projets Immédiats [lingala.futur_intentions]
+1-32. Exprimer ses projets avec les formes du futur (Nakosala, Nakokende)
+
+2-32. Faire des prévisions simples sur l'avenir (Mbula ekonoka lobi)
+
+3-32. Parler de ses résolutions et de ses objectifs à court terme
+
+--> Projets à Long Terme [lingala.futur_lointain]
+1-33. Imaginer et décrire sa vie dans dix ans
+
+2-33. Discuter de projets de carrière, de mariage ou d'installation dans un autre pays
+
+3-33. Faire des hypothèses sur l'avenir et construire des phrases conditionnelles (Soki..., nako...)
+
+Chapitre 16 — Faire la Conversation et Rencontrer de Nouvelles Personnes [lingala.small_talk]
+16-01. Engager une conversation avec un inconnu et parler de la situation présente
+
+16-02. Poser des questions pour mieux connaître quelqu'un (loisirs, lieu de résidence, parcours personnel)
+
+16-03. Entretenir une conversation, montrer son intérêt et éviter les silences (Ya solo ?, Okomi koloba lisusu !)
+
+Chapitre 17 — Téléphone et Communications à Distance [lingala.telephone]
+17-01. Passer un appel téléphonique et se présenter (Allô, ngai nazali...)
+
+17-02. Comprendre une personne au téléphone et demander de répéter ou de parler plus lentement
+
+17-03. Envoyer et comprendre des messages écrits et vocaux (SMS, WhatsApp, abréviations)
+
+Partie 8 : Situations pratiques et vie quotidienne
+Chapitre 18 — Faire Face aux Situations du Quotidien [lingala.situations_quotidiennes]
+18-01. Demander un service ou un petit coup de main (Okoki kosalisa ngai ?)
+
+18-02. Emprunter, prêter et rendre quelque chose (Nakoki kodefa telefone na yo ?)
+
+18-03. S'excuser, expliquer un malentendu et se faire pardonner
+
+Chapitre 19 — Services, Réclamations et Administration [lingala.demarches_administratives]
+19-01. Remplir un formulaire et fournir des informations personnelles (Nkombo, kombo ya libota, mokolo ya mbotama)
+
+19-02. Faire une réclamation auprès d'un service client et expliquer son insatisfaction
+
+19-03. Comprendre une facture, un contrat ou un document officiel (Date ya kofuta, sinyatire, mibeko ya contrat)
+
+Partie 9 : Vie sociale et situations particulières
+Chapitre 20 — Invitations, Fêtes et Événements [lingala.evenements]
+20-01. Inviter quelqu'un à une fête ou à un événement (Okosepela koya na fɛti na ngai ?)
+
+20-02. Parler pendant une fête et faire connaissance avec les invités
+
+20-03. Féliciter quelqu'un et souhaiter un événement heureux (Mbotama malamu, Felisitasyon, Nzambe apambola yo)
+
+Chapitre 21 — Relations Humaines et Vie Sociale [lingala.relations]
+21-01. Parler de ses relations amicales et amoureuses (Tozali baninga ya motema, Tozali kolingana)
+
+21-02. Exprimer ses limites personnelles et gérer un désaccord dans une relation
+
+21-03. Faire connaissance avec ses voisins et entretenir de bonnes relations de voisinage
+
+Partie 10 : Compréhension et expression naturelle
+Chapitre 22 — Comprendre le Lingala Naturel et Familier [lingala.lingala_familier]
+22-01. Découvrir les contractions, les élisions et les formes orales du lingala
+
+22-02. Comprendre les expressions familières du quotidien et les formules populaires de Kinshasa
+
+22-03. Utiliser les expressions idiomatiques courantes, les proverbes et les expressions imagées
+
+Chapitre 23 — Réagir Spontanément et Maintenir une Conversation [lingala.reactions_spontanees]
+23-01. Exprimer son incompréhension et demander des précisions (Olingi koloba nini ?, Okoki kolimbola lisusu ?)
+
+23-02. Réagir rapidement à une information ou à une situation (Ya solo ?, Kasi te !, Ozo serious ?)
+
+23-03. Interrompre poliment, reprendre la parole et changer de sujet dans une conversation
+
+Partie 11 : Situations professionnelles et pratiques spécialisées
+Chapitre 24 — Recherche d'Emploi et Monde Professionnel [lingala.recherche_emploi]
+24-01. Chercher une offre d'emploi et contacter un recruteur (Mosala ezali, bosengi ya mosala, CV)
+
+24-02. Répondre à des questions professionnelles et présenter son parcours et ses expériences
+
+24-03. Comprendre les horaires de travail, les congés, les salaires et les conditions professionnelles
+
+Chapitre 25 — Études, Formation et Apprentissage [lingala.etudes_formation]
+25-01. Comprendre les consignes d'un professeur et poser des questions (Molakisi, okoki kolimbola lisusu ngalasisi oyo ?)
+
+25-02. Participer à un cours et travailler en groupe (Kosala na mibale, kokoma makambo ya ntina, kopesa mosala ya ndako)
+
+25-03. Parler de ses examens, de ses résultats et de ses objectifs d'apprentissage (Nalongi ekzamɛ, Nakwei na ekzamɛ, Nasengeli kobongisa)
+
+Partie 12 : Situations imprévues et environnement
+Chapitre 26 — Météo, Nature et Environnement [lingala.meteo_environnement]
+26-01. Parler du temps qu'il fait et des prévisions météorologiques (Mbula ezali konoka, Moi ezali kongɛnga, Malili ezali)
+
+26-02. Décrire un paysage et parler de la nature (Ngomba, zamba, ebale, banyama ya zamba)
+
+26-03. Parler d'écologie et des gestes pour protéger l'environnement (Kobongisa bosɔtɔ, kobatela zamba, kokitisa bosɔtɔ ya mopepe)
+
+Chapitre 27 — Pannes, Incidents et Situations Inattendues [lingala.incidents]
+27-01. Réagir à une panne d'électricité, d'eau ou d'Internet (Mwinda ezali te, Mai ezali te, Internet ezali kosala te)
+
+27-02. Signaler un incident dans un lieu public et expliquer ce qui s'est passé
+
+27-03. Expliquer une situation imprévue et chercher une solution avec d'autres personnes
+
+Partie 13 : Vie pratique et autonomie
+Chapitre 28 — Banque, Argent et Finances Personnelles [lingala.banque_finances]
+28-01. Ouvrir un compte bancaire et comprendre les services proposés (Compte bancaire, karte bancaire, transfert)
+
+28-02. Parler de son budget, de ses dépenses, de ses revenus et de ses économies
+
+28-03. Signaler une transaction incorrecte ou une carte bancaire bloquée
+
+Chapitre 29 — Technologie, Internet et Applications [lingala.technologie_numerique]
+29-01. Installer et utiliser une application ou un logiciel (Télécharger, installer, mettre à jour, paramètres)
+
+29-02. Résoudre un problème de connexion ou de configuration (Nakoki kokota na Wi-Fi te)
+
+29-03. Protéger ses données personnelles et gérer ses comptes en ligne (Confidentialité, kombo ya mosaleli, code ya vérification)
+
+Partie 14 : Lingala avancé de la vie quotidienne
+Chapitre 30 — S'Exprimer avec Plus de Naturel et de Précision [lingala.expression_naturelle]
+30-01. Raconter une situation en donnant des détails, en présentant le contexte et en respectant la chronologie des événements
+
+30-02. Expliquer un problème complexe, présenter ses causes et proposer plusieurs solutions
+
+30-03. Parler avec fluidité, reformuler ses idées et adapter son langage à son interlocuteur (camarade, personne âgée, responsable professionnel)
+
+Partie 15 : Vie quotidienne à l'étranger
+Chapitre 31 — S'Installer dans un Nouveau Pays [lingala.installation_etranger]
+31-01. Se présenter aux voisins et découvrir son quartier (Nauti koya kofanda awa, Zando ezali pene ?)
+
+31-02. Effectuer les démarches nécessaires pour s'installer (Enregistrement ya adresi, mikanda ya mboka, kondimisa esika ya kofanda)
+
+31-03. Découvrir les habitudes locales et s'adapter à une nouvelle culture (Makambo esalemaka ndenge nini awa ?)
+
+Chapitre 32 — Services et Abonnements du Quotidien [lingala.abonnements_services]
+32-01. Souscrire à un abonnement téléphonique ou Internet (Nalingi kozwa forfait ya telefone)
+
+32-02. Comprendre les abonnements et leurs conditions (Mbongo ya sanza, kokata abonnement, kozongisa abonnement)
+
+32-03. Résilier, modifier ou suspendre un abonnement (Nalingi kokata forfait na ngai)
+
+Partie 16 : Communication et interactions avancées
+Chapitre 33 — Raconter une Histoire et Faire un Récit [lingala.raconter_histoire]
+33-01. Raconter un événement dans l'ordre chronologique (Ya liboso, sima, sima na yango, na nsuka)
+
+33-02. Décrire une situation inattendue ou amusante (Okondima te makambo oyo esalemaki !)
+
+33-03. Raconter une histoire en ajoutant des détails, des circonstances et des réactions personnelles
+
+Chapitre 34 — Humour, Blagues et Expressions Sociales [lingala.humour_blagues]
+34-01. Comprendre les plaisanteries, les jeux de mots et les expressions humoristiques (Nazali kosakana, Ezali kaka masɛki)
+
+34-02. Faire de l'humour dans une conversation et faire rire son interlocuteur
+
+34-03. Comprendre le sarcasme, l'ironie et les sous-entendus dans les échanges
+
+Chapitre 35 — Négocier et Trouver un Compromis [lingala.negociation]
+35-01. Négocier un prix ou demander une réduction (Okoki kokitisa ntalo ?)
+
+35-02. Faire une proposition et défendre ses intérêts dans une négociation
+
+35-03. Trouver un compromis, accepter des conditions et conclure un accord (Tókokutana na katikati)
+
+Partie 17 : Services spécialisés et situations particulières
+Chapitre 36 — Automobile, Garage et Dépannage [lingala.automobile_garage]
+36-01. Décrire un problème mécanique à un garagiste (Moteur ezali kobimisa makelele ya kokamwa)
+
+36-02. Prendre rendez-vous pour une réparation ou un entretien du véhicule
+
+36-03. Comprendre un devis, les coûts de réparation, les pièces de rechange et récupérer son véhicule
+
+Chapitre 37 — Animaux et Services Vétérinaires [lingala.animaux_veterinaire]
+37-01. Présenter son animal et parler de ses habitudes (Mbwa na ngai ezali na mbula misato)
+
+37-02. Expliquer un problème de santé chez son animal (Pusi na ngai ezali kolia lisusu te)
+
+37-03. Prendre rendez-vous chez le vétérinaire et comprendre les soins (Mangwele, botali ya monganga, lisalisi ya monganga)
+
+Chapitre 38 — Services de Livraison et Commandes en Ligne [lingala.livraisons_commandes]
+38-01. Passer une commande sur Internet (Nalingi kosala komande)
+
+38-02. Suivre un colis et communiquer avec un livreur (Colis na yo ezali koya)
+
+38-03. Signaler une livraison incorrecte ou un colis endommagé (Natindi te eloko oyo, natindi yango na libunga)
+
+Partie 18 : Vie sociale, sorties et activités
+Chapitre 39 — Sport, Activités Physiques et Clubs [lingala.sport_activites]
+39-01. S'inscrire dans une salle de sport ou un club (Nalingi komikɔtisa na salle de sport)
+
+39-02. Comprendre les exercices et les consignes sportives (Kosala molunge, komitandola, kozongela ngalasisi mbala zomi)
+
+39-03. Parler de ses performances et participer à une activité collective (Tolongi lisano !)
+
+Chapitre 40 — Restaurants, Sorties et Vie Nocturne [lingala.sorties_nocturnes]
+40-01. Entrer dans un bar ou une discothèque et comprendre les règles d'accès (Esengeli kofuta mpo na kokota ?)
+
+40-02. Commander des boissons et discuter dans un environnement bruyant
+
+40-03. Organiser son retour, trouver un moyen de transport et gérer une sortie tardive (Okokende ndako na ndenge nini ?)
+
+Chapitre 41 — Mariages, Cérémonies et Événements Familiaux [lingala.ceremonies_evenements]
+41-01. Parler des traditions et des cérémonies (Libala, molulu, bonkoko)
+
+41-02. Féliciter les mariés et échanger avec les invités (Bozali mwasi mpe mobali ya kitoko !)
+
+41-03. Présenter ses condoléances et accompagner quelqu'un dans les moments difficiles (Nayoki mawa mingi mpo na bino)
+
+Partie 19 : Comprendre le monde lingalaphone
+Chapitre 42 — Culture, Traditions et Coutumes [lingala.culture_traditions]
+42-01. Parler des fêtes et traditions des communautés lingalaphones (Fɛti ya mbotama, fɛti ya libala, milulu ya bonkoko)
+
+42-02. Comprendre les différences culturelles et les règles de savoir-vivre (Na bonkoko na biso..., Awa basalaka ndenge nini ?)
+
+42-03. Parler des habitudes alimentaires et des traditions locales (Bilei ya bonkoko, mimeseno ya mboka)
+
+Chapitre 43 — Expressions Régionales et Variantes du Lingala [lingala.variantes_lingala]
+43-01. Découvrir les différences entre le lingala de Kinshasa et celui de Brazzaville
+
+43-02. Comprendre les accents, les prononciations et les expressions régionales courantes
+
+43-03. Reconnaître les différences de vocabulaire selon les régions et les communautés lingalaphones
+
+Partie 20 : Communication avancée et maîtrise de la langue
+Chapitre 44 — Expliquer, Décrire et Comparer avec Précision [lingala.description_comparaison]
+44-01. Décrire précisément un objet, un lieu ou une personne (Ezali ndenge nini ?, Esalemi na nini ?, Eza wapi ?)
+
+44-02. Comparer plusieurs possibilités et exprimer des différences (Koleka, kasi, na bokeseni na...)
+
+44-03. Expliquer une procédure et donner des instructions détaillées (Likambo ya liboso..., Soki osilisi yango...)
+
+Chapitre 45 — Gérer des Conversations Complexes [lingala.conversations_complexes]
+45-01. Exprimer une hypothèse et imaginer différents scénarios (Soki likambo oyo esalemi..., Nini ekosalema ?)
+
+45-02. Exprimer des regrets, des reproches et des possibilités passées (Soki nasalaki bongo te..., Nasengelaki kosala yango)
+
+45-03. Défendre son point de vue dans une conversation difficile, répondre aux objections et parvenir à une conclusion
+
+Partie 21 : Grammaire avancée et maîtrise des structures
+Chapitre 46 — Les Temps Avancés et Leurs Nuances [lingala.temps_avances]
+46-01. Maîtriser les différentes formes du passé et distinguer une action terminée d'une action ayant des conséquences dans le présent
+
+46-02. Exprimer une action commencée dans le passé et toujours en cours, ainsi qu'une action antérieure à une autre action passée
+
+46-03. Maîtriser les différentes constructions du futur : projet en cours, action future achevée, durée et anticipation
+
+Chapitre 47 — Les Structures Complexes et les Subordonnées [lingala.structures_complexes]
+47-01. Construire des phrases avec plusieurs propositions (Atako, kasi, ntango, nzokande)
+
+47-02. Utiliser les propositions relatives pour préciser une personne, un objet ou un lieu (Moto oyo..., Eloko oyo..., Esika oyo...)
+
+47-03. Maîtriser les propositions conditionnelles, temporelles et concessives (Soki, ntango, liboso ete, atako)
+
+Chapitre 48 — Le Conditionnel et les Hypothèses Avancées [lingala.conditionnel_avance]
+48-01. Maîtriser les principales constructions conditionnelles : situations réelles, hypothèses possibles et situations irréelles
+
+48-02. Utiliser les constructions conditionnelles mixtes pour relier des situations passées, présentes et futures
+
+48-03. Exprimer des regrets, des souhaits, des hypothèses et des situations imaginaires (Soki..., elingaki..., nalingaki...)
+
+Partie 22 : Vocabulaire riche et expressions idiomatiques
+Chapitre 49 — Les Verbes à Sens Multiples et les Constructions Verbales [lingala.verbes_avances]
+49-01. Maîtriser les verbes courants ayant plusieurs significations selon le contexte
+
+49-02. Utiliser les constructions verbales dans les contextes professionnels, sociaux et familiaux
+
+49-03. Comprendre les extensions verbales, les préfixes et les suffixes qui modifient le sens des verbes (Kosala, kosalelisa, kosalelana, kosalema)
+
+Chapitre 50 — Expressions Idiomatiques et Lingala Authentique [lingala.idiomes_avances]
+50-01. Utiliser les expressions idiomatiques du quotidien et les formules populaires
+
+50-02. Comprendre les métaphores, les proverbes et les expressions imagées du lingala
+
+50-03. Employer les expressions naturelles pour enrichir ses conversations et éviter les traductions littérales du français
+
+Chapitre 51 — Nuances de Vocabulaire et Précision Linguistique [lingala.nuances_vocabulaire]
+51-01. Distinguer les synonymes et comprendre leurs subtilités de sens
+
+51-02. Choisir le mot juste selon le contexte, la situation et le registre de langue
+
+51-03. Maîtriser les associations naturelles de mots, les expressions figées et les combinaisons verbales courantes
+
+Partie 23 : Fluidité et expression orale
+Chapitre 52 — Parler avec Fluidité et Spontanéité [lingala.fluence_orale]
+52-01. Construire des phrases longues et complexes sans perdre le fil de ses idées
+
+52-02. Utiliser les mots de liaison et les connecteurs naturels (Kasi, lisusu, yango wana, atako bongo, mpo ete)
+
+52-03. Réduire les hésitations et apprendre à reformuler spontanément ses idées
+
+Chapitre 53 — Prononciation, Accent et Intonation [lingala.prononciation_avancee]
+53-01. Maîtriser l'accentuation des mots, le rythme des phrases et la prononciation naturelle
+
+53-02. Travailler les sons spécifiques du lingala, les voyelles ouvertes et fermées, les consonnes et les enchaînements
+
+53-03. Utiliser l'intonation pour exprimer les émotions, les intentions, les questions et les nuances de sens
+
+Chapitre 54 — Comprendre les Locuteurs Lingalaphones à l'Oral [lingala.comprehension_orale_avancee]
+54-01. Comprendre le lingala parlé rapidement et les transformations propres à la langue orale
+
+54-02. Reconnaître les accents de Kinshasa, Brazzaville et les différentes variantes régionales
+
+54-03. Comprendre les conversations spontanées, les sous-entendus, les références implicites et les expressions familières
+
+Partie 24 : Communication professionnelle et académique
+Chapitre 55 — Lingala Professionnel Avancé [lingala.lingala_professionnel_avance]
+55-01. Rédiger des courriers, des messages et des communications professionnelles précises et élégantes
+
+55-02. Participer à des réunions complexes, présenter des arguments et défendre une proposition
+
+55-03. Présenter un projet, convaincre un interlocuteur et répondre aux objections
+
+Chapitre 56 — Lingala Académique et Argumentation Structurée [lingala.lingala_academique]
+56-01. Construire un argumentaire structuré, développer une problématique et organiser ses idées
+
+56-02. Présenter des données, des statistiques et des résultats de manière claire et structurée
+
+56-03. Rédiger une synthèse, un texte argumentatif, un exposé et une conclusion en lingala
+
+Chapitre 57 — Négociation, Persuasion et Diplomatie [lingala.persuasion_diplomatie]
+57-01. Convaincre un interlocuteur en utilisant des arguments solides et adaptés au contexte
+
+57-02. Exprimer un désaccord avec diplomatie, répondre aux objections et éviter les conflits inutiles
+
+57-03. Négocier des conditions, trouver un terrain d'entente et conclure un accord
+
+Partie 25 : Maîtrise avancée et compréhension approfondie
+Chapitre 58 — Sous-entendus, Ironie et Sens Implicite [lingala.sens_implicite]
+58-01. Comprendre les sous-entendus, les messages indirects et les intentions cachées dans une conversation
+
+58-02. Reconnaître l'ironie, le sarcasme, les plaisanteries et les doubles sens
+
+58-03. Comprendre les références culturelles, les proverbes et les expressions dépendantes du contexte
+
+Chapitre 59 — Registres de Langue et Adaptation du Discours [lingala.registres_langue]
+59-01. Différencier le lingala familier, courant, soutenu et formel
+
+59-02. Adapter son vocabulaire, sa prononciation et sa manière de parler à son interlocuteur
+
+59-03. Maîtriser les formulations diplomatiques, respectueuses et élégantes, notamment pour s'adresser aux personnes âgées, aux responsables et aux autorités
+
+Chapitre 60 — Maîtrise Globale et Lingala de Haut Niveau [lingala.maitrise_globale]
+60-01. Développer une pensée directement en lingala sans traduire mentalement depuis le français
+
+60-02. Participer à des conversations complexes, improviser et défendre ses idées avec aisance
+
+60-03. Maîtriser les situations réelles de niveau avancé : débats, entretiens, négociations, discours et présentations improvisées

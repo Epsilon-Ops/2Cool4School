@@ -1,0 +1,600 @@
+
+[
+  {
+    "id": "anglais_salutations_001",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Que signifie l'expression « Good morning » ?",
+    "answer": "Bonjour le matin",
+    "distractors": [
+      "Bonsoir",
+      "Au revoir",
+      "Bonne nuit"
+    ],
+    "explanation": "Good morning signifie « Bonjour » et s'utilise le matin, généralement avant midi.",
+    "tags": ["salutations", "traduction", "matin"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire bonjour le matin en anglais, on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_002",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle expression anglaise signifie « Salut » dans un contexte familier ?",
+    "answer": "Hi",
+    "distractors": [
+      "Goodbye",
+      "Please",
+      "Good evening"
+    ],
+    "explanation": "Hi est une expression familière utilisée pour saluer quelqu'un, comme « Salut » en français.",
+    "tags": ["salutations", "vocabulaire", "familier"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour saluer un ami de manière familière, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_003",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Tu rencontres quelqu'un à 20 heures. Quelle salutation est la plus adaptée pour l'accueillir ?",
+    "answer": "Good evening",
+    "distractors": [
+      "Good morning",
+      "Good afternoon",
+      "Goodbye"
+    ],
+    "explanation": "Good evening signifie « Bonsoir » et s'utilise pour accueillir quelqu'un le soir.",
+    "tags": ["salutations", "soir", "mise-en-situation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Le soir, pour accueillir quelqu'un, on dit {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_004",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle expression signifie « À demain » ?",
+    "answer": "See you tomorrow",
+    "distractors": [
+      "See you later",
+      "See you soon",
+      "Good morning"
+    ],
+    "explanation": "See you tomorrow signifie « À demain ». Le mot tomorrow signifie « demain ».",
+    "tags": ["salutations", "au-revoir", "temps"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « À demain » en anglais, on dit {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_005",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Quelle expression peut être utilisée aussi bien dans un contexte formel que dans un contexte informel pour dire bonjour ?",
+    "answer": "Hello",
+    "distractors": [
+      "What's up?",
+      "Bye",
+      "See you later"
+    ],
+    "explanation": "Hello est une salutation générale qui convient aussi bien aux situations formelles qu'informelles.",
+    "tags": ["salutations", "registre", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "{{blank}} est une salutation générale utilisable dans un contexte formel ou informel."
+  },
+  {
+    "id": "anglais_salutations_006",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Remets dans l'ordre les étapes d'une conversation simple entre deux personnes qui se rencontrent le matin puis se quittent.",
+    "answer": "Good morning → Hello → How are you? → I'm fine, thank you → Goodbye",
+    "steps": [
+      "Good morning",
+      "Hello",
+      "How are you?",
+      "I'm fine, thank you",
+      "Goodbye"
+    ],
+    "explanation": "Une conversation peut commencer par une salutation, continuer avec une question sur l'état de l'autre personne et se terminer par une formule d'au revoir.",
+    "tags": ["salutations", "conversation", "ordre"],
+    "formats": ["ordering", "flashcard"]
+  },
+  {
+    "id": "anglais_salutations_007",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Comment traduit-on « S'il te plaît » en anglais ?",
+    "answer": "Please",
+    "distractors": [
+      "Thanks",
+      "Sorry",
+      "Welcome"
+    ],
+    "explanation": "Please est une formule de politesse utilisée pour accompagner une demande.",
+    "tags": ["politesse", "traduction", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander quelque chose poliment, on utilise le mot {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_008",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle est la traduction de « Thank you » ?",
+    "answer": "Merci",
+    "distractors": [
+      "De rien",
+      "S'il te plaît",
+      "Désolé"
+    ],
+    "explanation": "Thank you signifie « Merci ». C'est une expression essentielle pour remercier quelqu'un.",
+    "tags": ["politesse", "remerciements", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour remercier quelqu'un en anglais, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_009",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quel mot est une version courte et familière de « Thank you » ?",
+    "answer": "Thanks",
+    "distractors": [
+      "Please",
+      "Sorry",
+      "Maybe"
+    ],
+    "explanation": "Thanks signifie également « Merci », mais dans une forme plus courte et familière que Thank you.",
+    "tags": ["politesse", "remerciements", "familier"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "{{blank}} est une version courte et familière de Thank you."
+  },
+  {
+    "id": "anglais_salutations_010",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quel est le sens de « You're welcome » ?",
+    "answer": "De rien",
+    "distractors": [
+      "Bienvenue",
+      "Merci beaucoup",
+      "Au revoir"
+    ],
+    "explanation": "You're welcome est une réponse classique lorsqu'une personne te remercie. Elle signifie « De rien ».",
+    "tags": ["politesse", "remerciements", "réponses"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Lorsqu'une personne te dit Thank you, tu peux répondre {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_011",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Associe chaque expression anglaise à sa signification française.",
+    "answer": "Please → S'il te plaît ; Thank you → Merci ; No problem → Pas de problème ; My pleasure → Avec plaisir",
+    "pairs": [
+      ["Please", "S'il te plaît"],
+      ["Thank you", "Merci"],
+      ["No problem", "Pas de problème"],
+      ["My pleasure", "Avec plaisir"]
+    ],
+    "explanation": "Ces quatre expressions permettent de demander poliment, remercier et répondre à un remerciement.",
+    "tags": ["politesse", "association", "vocabulaire"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_salutations_012",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle question anglaise signifie « Comment vas-tu ? » ou « Comment allez-vous ? » ?",
+    "answer": "How are you?",
+    "distractors": [
+      "What's your name?",
+      "Where are you?",
+      "How old are you?"
+    ],
+    "explanation": "How are you? est la question classique pour demander à quelqu'un comment il va.",
+    "tags": ["conversation", "questions", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander à quelqu'un comment il va, on dit {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_013",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Quelle expression très familière signifie « Quoi de neuf ? » ou « Ça va ? » ?",
+    "answer": "What's up?",
+    "distractors": [
+      "How are you?",
+      "Good evening",
+      "Nice to meet you"
+    ],
+    "explanation": "What's up? est une expression très familière utilisée principalement dans les conversations informelles.",
+    "tags": ["conversation", "familier", "questions"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander familièrement « Quoi de neuf ? », on peut dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_014",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Tu vas très bien et tu veux le faire comprendre. Quelle réponse choisis-tu ?",
+    "answer": "I'm great",
+    "distractors": [
+      "I'm okay",
+      "Not bad",
+      "I'm not very well"
+    ],
+    "explanation": "I'm great signifie « Je vais très bien ». I'm okay signifie simplement « Ça va », tandis que I'm not very well indique que l'on ne va pas très bien.",
+    "tags": ["conversation", "état", "nuances"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire que tu vas très bien, tu peux répondre {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_015",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Tu réponds « I'm fine, thank you » à quelqu'un. Quelle expression peux-tu ajouter pour lui retourner la question ?",
+    "answer": "And you?",
+    "distractors": [
+      "What's up?",
+      "Goodbye",
+      "My pleasure"
+    ],
+    "explanation": "And you? signifie « Et toi ? » ou « Et vous ? ». Cela permet de demander à son interlocuteur comment il va à son tour.",
+    "tags": ["conversation", "questions", "interaction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "I'm fine, thank you. {{blank}}"
+  },
+  {
+    "id": "anglais_salutations_016",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Que signifie « I'm not very well » ?",
+    "answer": "Je ne vais pas très bien",
+    "distractors": [
+      "Je vais très bien",
+      "Je suis très heureux",
+      "Je ne sais pas"
+    ],
+    "explanation": "I'm not very well signifie « Je ne vais pas très bien ». Cette expression permet d'indiquer que l'on ne se sent pas bien.",
+    "tags": ["conversation", "état", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire que tu ne vas pas très bien, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_017",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Associe chaque réponse anglaise à sa traduction française.",
+    "answer": "I'm fine → Je vais bien ; I'm good → Je vais bien ; I'm great → Je vais très bien ; I'm okay → Ça va ; Not bad → Pas mal",
+    "pairs": [
+      ["I'm fine", "Je vais bien"],
+      ["I'm good", "Je vais bien"],
+      ["I'm great", "Je vais très bien"],
+      ["I'm okay", "Ça va"],
+      ["Not bad", "Pas mal"]
+    ],
+    "explanation": "Ces expressions permettent de répondre à How are you? avec différentes nuances. I'm great exprime un état particulièrement positif, tandis que Not bad signifie « Pas mal ».",
+    "tags": ["conversation", "état", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_salutations_018",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Comment dit-on « Je m'appelle Emma » en anglais avec une phrase complète ?",
+    "answer": "My name is Emma",
+    "distractors": [
+      "I live Emma",
+      "What's Emma name?",
+      "I'm from Emma"
+    ],
+    "explanation": "My name is signifie « Je m'appelle ». On ajoute ensuite son prénom.",
+    "tags": ["présentation", "identité", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "{{blank}} Emma est une manière de dire « Je m'appelle Emma »."
+  },
+  {
+    "id": "anglais_salutations_019",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle expression permet de demander le prénom de quelqu'un ?",
+    "answer": "What's your name?",
+    "distractors": [
+      "How are you?",
+      "Where do you live?",
+      "How old are you?"
+    ],
+    "explanation": "What's your name? signifie « Comment t'appelles-tu ? ». C'est une question essentielle lors d'une première rencontre.",
+    "tags": ["présentation", "questions", "identité"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander le nom d'une personne, on dit {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_020",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Tu rencontres quelqu'un pour la première fois. Quelle expression utilises-tu pour dire « Ravi(e) de te rencontrer » ?",
+    "answer": "Nice to meet you",
+    "distractors": [
+      "See you tomorrow",
+      "How's it going?",
+      "You're welcome"
+    ],
+    "explanation": "Nice to meet you est une expression utilisée lors d'une première rencontre pour montrer que l'on est heureux de faire connaissance.",
+    "tags": ["présentation", "première-rencontre", "politesse"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Lors d'une première rencontre, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_021",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Quel est le sens de « Nice to meet you too » ?",
+    "answer": "Ravi(e) de te rencontrer également",
+    "distractors": [
+      "À bientôt",
+      "Comment vas-tu ?",
+      "Je m'appelle aussi"
+    ],
+    "explanation": "Too signifie « aussi ». Nice to meet you too permet donc de retourner poliment le souhait exprimé lors d'une première rencontre.",
+    "tags": ["présentation", "réponse", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour répondre à Nice to meet you, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_022",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Associe chaque expression à sa signification.",
+    "answer": "My name is... → Je m'appelle... ; I'm... → Je suis... ; I'm from... → Je viens de... ; I live in... → J'habite à...",
+    "pairs": [
+      ["My name is...", "Je m'appelle..."],
+      ["I'm...", "Je suis..."],
+      ["I'm from...", "Je viens de..."],
+      ["I live in...", "J'habite à..."]
+    ],
+    "explanation": "Ces quatre expressions permettent de donner des informations personnelles : son nom, son identité, son origine et son lieu de résidence.",
+    "tags": ["présentation", "identité", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_salutations_023",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Que signifie « Okay » dans une conversation ?",
+    "answer": "D'accord",
+    "distractors": [
+      "Peut-être",
+      "Désolé",
+      "Merci"
+    ],
+    "explanation": "Okay signifie « D'accord », « OK » ou « Ça marche ». Il permet de montrer que l'on accepte ou comprend quelque chose.",
+    "tags": ["conversation", "vocabulaire", "accord"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « D'accord » en anglais, tu peux utiliser {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_024",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Un ami te demande : « Can you help me? ». Tu acceptes volontiers. Quelle réponse peux-tu donner ?",
+    "answer": "Sure",
+    "distractors": [
+      "Maybe",
+      "No problem?",
+      "I'm not very well"
+    ],
+    "explanation": "Sure signifie « Bien sûr » ou « Avec plaisir » dans ce contexte. C'est une manière naturelle d'accepter une proposition.",
+    "tags": ["conversation", "acceptation", "mise-en-situation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour accepter volontiers une demande d'aide, tu peux répondre {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_025",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle expression anglaise signifie « Peut-être » ?",
+    "answer": "Maybe",
+    "distractors": [
+      "Exactly",
+      "Sure",
+      "Okay"
+    ],
+    "explanation": "Maybe signifie « Peut-être ». Cette expression permet d'exprimer une possibilité ou une hésitation.",
+    "tags": ["conversation", "vocabulaire", "incertitude"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "{{blank}} signifie « Peut-être » en anglais."
+  },
+  {
+    "id": "anglais_salutations_026",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Quelle expression signifie « Bien sûr » ou « Évidemment » et permet de confirmer quelque chose ?",
+    "answer": "Of course",
+    "distractors": [
+      "Maybe",
+      "I'm okay",
+      "See you soon"
+    ],
+    "explanation": "Of course signifie « Bien sûr » ou « Évidemment ». Elle exprime une confirmation ou une acceptation.",
+    "tags": ["conversation", "confirmation", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour répondre « Évidemment ! », tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_027",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Comment traduit-on le mot « Yes » en français ?",
+    "answer": "Oui",
+    "distractors": [
+      "Non",
+      "Peut-être",
+      "Merci"
+    ],
+    "explanation": "Yes est la réponse affirmative en anglais. Elle signifie « Oui ».",
+    "tags": ["accord", "vocabulaire", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "{{blank}} est le mot anglais qui signifie « Oui »."
+  },
+  {
+    "id": "anglais_salutations_028",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Quelle expression signifie « Je suis d'accord » ?",
+    "answer": "I agree",
+    "distractors": [
+      "I disagree",
+      "I don't think so",
+      "I don't know"
+    ],
+    "explanation": "I agree signifie « Je suis d'accord ». Cette expression permet de montrer que l'on partage l'opinion de quelqu'un.",
+    "tags": ["accord", "opinion", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour exprimer ton accord avec quelqu'un, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_029",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Comment exprimer un accord très fort en anglais, en disant « Je suis entièrement d'accord » ?",
+    "answer": "I completely agree",
+    "distractors": [
+      "I don't agree",
+      "Maybe",
+      "I disagree"
+    ],
+    "explanation": "I completely agree signifie « Je suis entièrement d'accord ». Completely renforce l'idée d'un accord total.",
+    "tags": ["accord", "opinion", "nuances"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour exprimer un accord total, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_030",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Associe chaque expression à son sens.",
+    "answer": "I agree → Je suis d'accord ; I don't agree → Je ne suis pas d'accord ; Exactly! → Exactement ! ; I disagree → Je ne suis pas d'accord",
+    "pairs": [
+      ["I agree", "Je suis d'accord"],
+      ["I don't agree", "Je ne suis pas d'accord"],
+      ["Exactly!", "Exactement !"],
+      ["I disagree", "Je ne suis pas d'accord"]
+    ],
+    "explanation": "I agree et Exactly! expriment l'accord. I don't agree et I disagree expriment le désaccord.",
+    "tags": ["accord", "désaccord", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_salutations_031",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 3,
+    "prompt": "Tu souhaites exprimer un désaccord de manière nuancée, sans être trop direct. Quelle expression peux-tu utiliser ?",
+    "answer": "I don't think so",
+    "distractors": [
+      "I completely agree",
+      "Exactly!",
+      "Of course"
+    ],
+    "explanation": "I don't think so signifie « Je ne pense pas ». Cette expression permet d'exprimer un désaccord de manière plus nuancée.",
+    "tags": ["désaccord", "opinion", "nuances"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour exprimer un désaccord de manière nuancée, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_032",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 1,
+    "prompt": "Tu marches accidentellement sur le pied de quelqu'un. Quelle expression anglaise dois-tu utiliser pour t'excuser ?",
+    "answer": "Sorry",
+    "distractors": [
+      "Please",
+      "Sure",
+      "Goodbye"
+    ],
+    "explanation": "Sorry signifie « Désolé » ou « Pardon ». Cette expression permet de présenter ses excuses après une erreur ou un incident.",
+    "tags": ["excuses", "politesse", "mise-en-situation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Si tu fais une erreur et souhaites t'excuser, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_033",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Tu souhaites demander poliment un renseignement à un inconnu dans la rue. Quelle expression utilises-tu pour attirer son attention ?",
+    "answer": "Excuse me",
+    "distractors": [
+      "I'm sorry",
+      "You're welcome",
+      "See you soon"
+    ],
+    "explanation": "Excuse me signifie « Excusez-moi ». Cette expression permet notamment d'attirer poliment l'attention d'un inconnu ou de commencer une demande.",
+    "tags": ["politesse", "attention", "mise-en-situation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour attirer poliment l'attention d'un inconnu, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_034",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 2,
+    "prompt": "Ton interlocuteur vient de parler, mais tu n'as pas compris ce qu'il a dit. Quelle expression peux-tu utiliser pour lui demander de répéter ?",
+    "answer": "Pardon?",
+    "distractors": [
+      "Thank you",
+      "Nice to meet you",
+      "Good morning"
+    ],
+    "explanation": "Pardon? permet de demander à quelqu'un de répéter lorsqu'on n'a pas compris ou entendu ce qu'il vient de dire.",
+    "tags": ["conversation", "compréhension", "répétition"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Lorsque tu n'as pas compris ce qu'une personne vient de dire, tu peux demander {{blank}}."
+  },
+  {
+    "id": "anglais_salutations_035",
+    "subject": "english",
+    "skill": "english.salutations",
+    "difficulty": 3,
+    "prompt": "Associe chaque situation à l'expression anglaise la plus adaptée.",
+    "answer": "Présenter ses excuses → Sorry ; Attirer l'attention → Excuse me ; Demander de répéter → Pardon? ; Dire « Je suis désolé » → I'm sorry",
+    "pairs": [
+      ["Présenter ses excuses", "Sorry"],
+      ["Attirer l'attention", "Excuse me"],
+      ["Demander de répéter", "Pardon?"],
+      ["Dire « Je suis désolé »", "I'm sorry"]
+    ],
+    "explanation": "Attention à ne pas confondre Sorry et Excuse me : Sorry sert principalement à présenter ses excuses, tandis que Excuse me sert à attirer poliment l'attention. Pardon? permet de demander une répétition.",
+    "tags": ["excuses", "politesse", "association", "nuances"],
+    "formats": ["matching", "flashcard"]
+  }
+]

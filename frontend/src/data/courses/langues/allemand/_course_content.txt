@@ -1,0 +1,24 @@
+[[ALLEMAND]]
+
+1. Salutations et communication de base [allemand.salutations]
+    1-01. Saluer et prendre congé en allemand (Hallo, Guten Morgen, Guten Tag, Auf Wiedersehen, Tschüss)
+    2-01. Maîtriser les formules de politesse et de courtoisie (Bitte, Danke, Vielen Dank, Entschuldigung)
+    3-01. Demander et dire comment on va (Wie geht es dir ?, Wie geht es Ihnen ?, Mir geht es gut)
+    4-01. Se présenter et donner son identité (Ich heiße..., Mein Name ist..., Ich bin...)
+    5-01. Utiliser les expressions courantes de conversation (Ja, Nein, Doch, Vielleicht, Natürlich, Genau)
+    6-01. Exprimer son accord, son désaccord et son opinion (Ich stimme zu, Ich bin anderer Meinung, Ich glaube...)
+    7-01. S'excuser, demander pardon et attirer l'attention (Entschuldigung, Es tut mir leid, Verzeihung, Entschuldigen Sie bitte)
+    8-01. Souhaiter une bonne journée, une bonne soirée et une bonne nuit (Schönen Tag noch, Schönen Abend, Gute Nacht)
+    9-01. Prendre congé et proposer de se revoir (Bis bald, Bis morgen, Bis später, Wir sehen uns)
+
+2. Se présenter [allemand.presentation]
+    1-02. Dire son nom et son âge (Ich heiße..., Mein Name ist..., Ich bin ... Jahre alt)
+    2-02. Indiquer son origine, son lieu de naissance et sa nationalité (Ich komme aus..., Ich bin in ... geboren, Ich bin Franzose / Französin)
+    3-02. Parler de sa profession et de ses études (Ich bin Lehrer / Lehrerin, Ich arbeite als..., Ich studiere..., Ich lerne...)
+    4-02. Décrire son apparence physique (Ich bin groß, Ich bin klein, Ich habe braune Augen, Ich habe lange Haare)
+    5-02. Parler des langues que l'on connaît et que l'on parle (Ich spreche Französisch, Ich spreche Englisch, Ich lerne Deutsch)
+    6-02. Exprimer ses goûts, ses préférences et ses aversions (Ich mag..., Ich liebe..., Ich bevorzuge..., Ich mag ... nicht)
+    7-02. Parler de ses loisirs et de ses centres d'intérêt (Ich lese gern, Ich spiele gern Fußball, Ich höre gern Musik)
+    8-02. Décrire sa personnalité et son caractère (Ich bin freundlich, Ich bin lustig, Ich bin ruhig, Ich bin schüchtern)
+    9-02. Parler de ses compétences, aptitudes et capacités (Ich kann gut kochen, Ich kann schwimmen, Ich kann Klavier spielen)
+    10-02. Présenter une autre personne (Das ist mein Bruder / meine Schwester, Das ist mein Freund / meine Freundin, Er heißt..., Sie heißt...)

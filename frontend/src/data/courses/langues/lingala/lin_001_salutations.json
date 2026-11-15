@@ -1,0 +1,380 @@
+{
+  "id": "lingala-salutations",
+  "subject": "lingala",
+  "subjectName": "Lingala",
+  "skill": "lingala.salutations",
+  "title": "Salutations et Contacts",
+  "intro": "Apprendre une langue commence par savoir entrer en contact avec les autres. En lingala, les salutations permettent de dire bonjour, de demander des nouvelles, de se présenter et de témoigner du respect à son interlocuteur. Découvre les expressions essentielles pour engager une conversation, répondre naturellement et prendre congé dans les situations du quotidien.",
+  "sections": [
+    {
+      "id": "dire-bonjour-au-revoir",
+      "title": "1. Dire bonjour et au revoir",
+      "body": [
+        "En lingala, la salutation la plus courante est [[Mbote]], qui signifie « Bonjour » ou « Salut ». Elle peut être utilisée à différents moments de la journée et avec des personnes que l'on connaît ou que l'on rencontre pour la première fois. Pour demander des nouvelles de manière familière, on peut utiliser [[Sango nini ?]], qui signifie « Quelles nouvelles ? ».",
+        "Pour prendre congé, on utilise notamment [[Tikala malamu]], qui signifie « Porte-toi bien » ou « Reste bien ». Le mot [[Malamu]] signifie « Bien » et revient très souvent dans les conversations quotidiennes."
+      ],
+      "terms": [
+        {
+          "term": "Mbote",
+          "def": "Salutation courante en lingala qui signifie « Bonjour » ou « Salut »."
+        },
+        {
+          "term": "Sango nini ?",
+          "def": "Expression signifiant « Quelles nouvelles ? » ou « Quoi de neuf ? »."
+        },
+        {
+          "term": "Tikala malamu",
+          "def": "Expression utilisée pour prendre congé et souhaiter à quelqu'un de rester en bonne santé ou de bien se porter."
+        },
+        {
+          "term": "Malamu",
+          "def": "Mot signifiant « Bien », « Bon » ou « D'accord » selon le contexte."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Lorsque tu arrives au bureau, tu dis « Bonjour » à tes collègues. En lingala, tu peux simplement dire « Mbote ». Avant de partir, tu peux leur dire « Tikala malamu » pour leur souhaiter de bien se porter."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Mbote, c'est comme dire « Salut ! » à un ami. Sango nini ?, c'est comme lui demander « Alors, quoi de neuf ? ». Et Tikala malamu, c'est comme dire « Prends soin de toi ! »."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_001",
+        "lingala_salutations_002",
+        "lingala_salutations_003",
+        "lingala_salutations_004"
+      ]
+    },
+    {
+      "id": "formules-politesse",
+      "title": "2. Les formules de politesse",
+      "body": [
+        "La politesse est importante dans les échanges quotidiens. En lingala, [[Nabondeli yo]] signifie « Je t'en prie » ou « S'il te plaît », selon le contexte. Cette expression permet de formuler une demande avec respect.",
+        "Pour remercier quelqu'un, on peut utiliser [[Matondi]] ou [[Melesi]], deux expressions qui signifient « Merci ». Le choix de la formule peut varier selon les habitudes linguistiques et les régions. La politesse permet de montrer du respect et de maintenir de bonnes relations avec son interlocuteur."
+      ],
+      "terms": [
+        {
+          "term": "Nabondeli yo",
+          "def": "Expression utilisée pour demander quelque chose poliment, dans le sens de « Je t'en prie » ou « S'il te plaît »."
+        },
+        {
+          "term": "Matondi",
+          "def": "Expression de remerciement signifiant « Merci »."
+        },
+        {
+          "term": "Melesi",
+          "def": "Formule de remerciement également utilisée pour dire « Merci »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Dans un environnement professionnel, tu demandes un document poliment, puis tu remercies ton collègue lorsqu'il te le donne. En lingala, tu peux utiliser « Nabondeli yo » pour accompagner une demande et « Matondi » pour remercier."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "C'est exactement comme dire « S'il te plaît » avant de demander un service et « Merci » quand quelqu'un t'aide. Ces petits mots rendent les conversations plus agréables."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_005",
+        "lingala_salutations_006",
+        "lingala_salutations_007",
+        "lingala_salutations_008"
+      ]
+    },
+    {
+      "id": "demander-comment-ca-va",
+      "title": "3. Demander comment ça va et y répondre",
+      "body": [
+        "Après avoir salué quelqu'un, il est naturel de demander comment il va. En lingala, on utilise [[Ozali malamu ?]], qui signifie « Est-ce que tu vas bien ? » ou simplement « Comment vas-tu ? ».",
+        "Pour répondre positivement, on dit [[Nazali malamu]], c'est-à-dire « Je vais bien ». On peut également répondre simplement « Malamu ». Cette question et sa réponse constituent une base essentielle pour commencer une conversation."
+      ],
+      "terms": [
+        {
+          "term": "Ozali malamu ?",
+          "def": "Question signifiant « Comment vas-tu ? » ou « Est-ce que tu vas bien ? »."
+        },
+        {
+          "term": "Nazali malamu",
+          "def": "Réponse signifiant « Je vais bien »."
+        },
+        {
+          "term": "Ozali",
+          "def": "Forme verbale signifiant « Tu es » ou « Tu te trouves »."
+        },
+        {
+          "term": "Nazali",
+          "def": "Forme verbale signifiant « Je suis » ou « Je me trouve »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Tu rencontres un collègue le matin : « Mbote ! Ozali malamu ? ». Il répond : « Nazali malamu ». C'est l'équivalent d'un échange classique entre collègues : « Bonjour, comment vas-tu ? Très bien, merci ! »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Imagine que tu croises un ami dans la cour : tu lui dis « Mbote ! Ozali malamu ? ». Il te répond « Nazali malamu ! ». Vous venez de faire vos premiers échanges en lingala."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_009",
+        "lingala_salutations_010",
+        "lingala_salutations_011",
+        "lingala_salutations_012"
+      ]
+    },
+    {
+      "id": "se-presenter-premiere-rencontre",
+      "title": "4. Se présenter lors d'une première rencontre",
+      "body": [
+        "Lorsqu'on rencontre une personne pour la première fois, il est important de pouvoir donner son nom. En lingala, l'expression [[Nkombo na ngai...]] signifie « Mon nom est... » ou « Je m'appelle... ».",
+        "Il suffit de compléter cette expression avec son prénom. Par exemple : « Nkombo na ngai Paul » signifie « Je m'appelle Paul ». Cette formule permet de commencer une présentation simple et de créer un premier contact avec son interlocuteur."
+      ],
+      "terms": [
+        {
+          "term": "Nkombo",
+          "def": "Nom ou prénom d'une personne."
+        },
+        {
+          "term": "Na ngai",
+          "def": "Expression possessive signifiant « Mon » ou « À moi »."
+        },
+        {
+          "term": "Nkombo na ngai...",
+          "def": "Expression signifiant « Mon nom est... » ou « Je m'appelle... »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Lors d'une réunion avec de nouveaux collègues, tu commences par donner ton identité. En lingala, tu peux dire « Mbote, nkombo na ngai Paul », soit « Bonjour, je m'appelle Paul »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "C'est comme le premier jour dans une nouvelle classe : tu te lèves et tu dis « Salut, je m'appelle Paul ! ». En lingala, tu dis « Mbote, nkombo na ngai Paul ! »."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_013",
+        "lingala_salutations_014",
+        "lingala_salutations_015",
+        "lingala_salutations_016"
+      ]
+    },
+    {
+      "id": "expressions-courantes-conversation",
+      "title": "5. Utiliser les expressions courantes de conversation",
+      "body": [
+        "Une conversation naturelle ne se compose pas uniquement de longues phrases. Il existe des expressions courtes qui permettent de réagir rapidement. En lingala, [[Malamu]] peut signifier « Bien » ou « D'accord », [[Ee]] signifie « Oui » et [[Te]] signifie « Non ».",
+        "Pour exprimer une possibilité, on peut employer [[Mbala mosusu]], qui signifie « Peut-être » ou « Parfois » selon le contexte. Pour confirmer quelque chose, [[Ya solo]] signifie « C'est vrai », « En effet » ou « Vraiment ». Ces expressions permettent de comprendre et de participer plus facilement aux discussions."
+      ],
+      "terms": [
+        {
+          "term": "Malamu",
+          "def": "Signifie « Bien », « Bon » ou « D'accord » selon la situation."
+        },
+        {
+          "term": "Ee",
+          "def": "Mot utilisé pour répondre positivement : « Oui »."
+        },
+        {
+          "term": "Te",
+          "def": "Mot utilisé pour exprimer une négation : « Non »."
+        },
+        {
+          "term": "Mbala mosusu",
+          "def": "Expression pouvant signifier « Peut-être » ou « Parfois » selon le contexte."
+        },
+        {
+          "term": "Ya solo",
+          "def": "Expression utilisée pour confirmer une information : « C'est vrai » ou « En effet »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Un collègue te demande si tu peux participer à une réunion. Tu peux répondre « Ee » pour oui, « Te » pour non ou « Mbala mosusu » si tu n'es pas encore certain."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Imagine une discussion sur un match : ton ami te demande si ton équipe va gagner. Tu peux dire « Ee ! », « Te ! » ou « Mbala mosusu ! ». Ce sont des réponses rapides qui rendent la discussion vivante."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_017",
+        "lingala_salutations_018",
+        "lingala_salutations_019",
+        "lingala_salutations_020",
+        "lingala_salutations_021"
+      ]
+    },
+    {
+      "id": "exprimer-accord-desaccord",
+      "title": "6. Exprimer son accord et son désaccord",
+      "body": [
+        "Pendant une discussion, il est important de pouvoir exprimer son opinion. En lingala, [[Nandimi]] signifie « Je suis d'accord » ou « J'accepte ». Cette expression permet de montrer que l'on partage l'avis de son interlocuteur ou que l'on accepte une proposition.",
+        "Pour exprimer le contraire, on utilise [[Nandimi te]], qui signifie « Je ne suis pas d'accord » ou « Je n'accepte pas ». Le mot [[Te]] intervient ici pour former une négation. Il est donc essentiel de le reconnaître pour comprendre les réponses négatives."
+      ],
+      "terms": [
+        {
+          "term": "Nandimi",
+          "def": "Expression signifiant « Je suis d'accord », « J'accepte » ou « J'approuve »."
+        },
+        {
+          "term": "Nandimi te",
+          "def": "Expression signifiant « Je ne suis pas d'accord » ou « Je n'accepte pas »."
+        },
+        {
+          "term": "Te",
+          "def": "Marqueur de négation placé généralement après le verbe dans une phrase négative en lingala."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Ton responsable propose une nouvelle organisation. Si tu approuves, tu peux répondre « Nandimi ». Si tu n'es pas d'accord, tu peux dire « Nandimi te »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Ton ami propose de jouer au football après les cours. Si tu acceptes, tu dis « Nandimi ! ». Si tu refuses, tu dis « Nandimi te ! »."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_022",
+        "lingala_salutations_023",
+        "lingala_salutations_024",
+        "lingala_salutations_025"
+      ]
+    },
+    {
+      "id": "excuses-et-attention",
+      "title": "7. S'excuser et attirer l'attention",
+      "body": [
+        "Dans une conversation, il arrive de devoir interrompre quelqu'un, demander un service ou reconnaître une erreur. En lingala, [[Limbisa ngai]] signifie « Pardonne-moi » ou « Excuse-moi ». Cette expression permet de présenter ses excuses à une personne.",
+        "On peut également employer [[Bolimbisi]], qui correspond à une formule d'excuse ou de demande de pardon. Le mot [[Pardon]] est aussi utilisé dans certaines conversations. Ces expressions sont particulièrement utiles pour attirer poliment l'attention ou demander à quelqu'un de répéter une information."
+      ],
+      "terms": [
+        {
+          "term": "Limbisa ngai",
+          "def": "Expression signifiant « Pardonne-moi » ou « Excuse-moi »."
+        },
+        {
+          "term": "Bolimbisi",
+          "def": "Formule de pardon ou d'excuse utilisée pour reconnaître une gêne ou demander l'indulgence."
+        },
+        {
+          "term": "Pardon",
+          "def": "Mot également employé pour s'excuser ou attirer l'attention."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Tu arrives en retard à une réunion et tu dois interrompre brièvement un collègue. Tu peux dire « Limbisa ngai » pour t'excuser avant de prendre la parole."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Tu marches accidentellement sur le pied de ton ami. Au lieu de continuer comme si rien ne s'était passé, tu dis « Limbisa ngai ! », comme lorsque tu dis « Désolé ! » en français."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_026",
+        "lingala_salutations_027",
+        "lingala_salutations_028",
+        "lingala_salutations_029"
+      ]
+    },
+    {
+      "id": "souhaiter-bonne-journee-soiree",
+      "title": "8. Souhaiter une bonne journée et une bonne soirée",
+      "body": [
+        "Les salutations peuvent aussi servir à souhaiter quelque chose d'agréable à une personne. En lingala, [[Mokolo malamu]] signifie « Bonne journée ». Cette expression permet de souhaiter une journée agréable à quelqu'un que l'on quitte ou que l'on rencontre.",
+        "Pour souhaiter une bonne nuit ou une bonne soirée dans le contexte du coucher, on utilise [[Butu malamu]], qui signifie « Bonne nuit ». Ces formules permettent de rendre les échanges plus chaleureux et attentionnés."
+      ],
+      "terms": [
+        {
+          "term": "Mokolo",
+          "def": "Mot signifiant « Jour » ou « Journée »."
+        },
+        {
+          "term": "Mokolo malamu",
+          "def": "Expression signifiant « Bonne journée »."
+        },
+        {
+          "term": "Butu",
+          "def": "Mot signifiant « Nuit »."
+        },
+        {
+          "term": "Butu malamu",
+          "def": "Expression signifiant « Bonne nuit »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "À la fin d'une réunion, tu souhaites une bonne journée à tes collègues. En lingala, tu peux dire « Mokolo malamu ! ». Le soir, avant de dormir, tu peux souhaiter « Butu malamu ! »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Quand tu quittes un ami pendant la journée, tu lui dis « Mokolo malamu ! ». Quand tu lui souhaites une bonne nuit avant de dormir, tu dis « Butu malamu ! »."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_030",
+        "lingala_salutations_031",
+        "lingala_salutations_032",
+        "lingala_salutations_033"
+      ]
+    },
+    {
+      "id": "prendre-conge-revoir",
+      "title": "9. Prendre congé et promettre de se revoir",
+      "body": [
+        "Pour terminer une conversation, il existe plusieurs expressions permettant de prendre congé. [[Tikala malamu]] signifie « Porte-toi bien » et s'adresse à la personne qui reste. Cette expression est particulièrement utile lorsqu'on quitte quelqu'un.",
+        "Pour exprimer l'idée de se revoir, on utilise [[Tokomonana]], qui signifie « Nous nous reverrons ». Cette formule permet de terminer une rencontre de manière positive en montrant que l'on souhaite retrouver son interlocuteur. Elle complète naturellement les salutations apprises dans les sections précédentes."
+      ],
+      "terms": [
+        {
+          "term": "Tikala malamu",
+          "def": "Formule de congé signifiant « Porte-toi bien » ou « Reste bien »."
+        },
+        {
+          "term": "Tokomonana",
+          "def": "Expression signifiant « Nous nous reverrons » ou « À bientôt »."
+        },
+        {
+          "term": "Toko-",
+          "def": "Préfixe verbal indiquant ici une action future à la première personne du pluriel : « Nous allons... »."
+        },
+        {
+          "term": "Monana",
+          "def": "Forme verbale associée à l'idée de se voir ou de se rencontrer."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Après une journée de travail, tu quittes tes collègues en disant « Tikala malamu ! ». Si tu sais que tu les retrouveras bientôt, tu peux ajouter « Tokomonana ! »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "C'est comme dire au revoir à ton meilleur ami après les cours : « Prends soin de toi, on se revoit bientôt ! ». En lingala, tu peux dire « Tikala malamu ! Tokomonana ! »."
+        }
+      ],
+      "questionIds": [
+        "lingala_salutations_034",
+        "lingala_salutations_035",
+        "lingala_salutations_036",
+        "lingala_salutations_037"
+      ]
+    }
+  ],
+  "chapter": "Salutations et Contacts",
+  "chapterOrder": 1,
+  "order": 1
+}

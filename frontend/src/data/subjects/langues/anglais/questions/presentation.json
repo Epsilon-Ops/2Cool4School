@@ -1,0 +1,773 @@
+
+[
+  {
+    "id": "anglais_presentation_001",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Quelle expression anglaise signifie « Je m'appelle Thomas » ?",
+    "answer": "My name is Thomas",
+    "distractors": [
+      "I have Thomas",
+      "I live Thomas",
+      "My age is Thomas"
+    ],
+    "explanation": "My name is signifie « Je m'appelle ». On ajoute ensuite son prénom pour se présenter.",
+    "tags": ["presentation", "nom", "identite"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "{{blank}} Thomas est une manière de dire « Je m'appelle Thomas »."
+  },
+  {
+    "id": "anglais_presentation_002",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Comment demande-t-on le prénom de quelqu'un en english ?",
+    "answer": "What's your name?",
+    "distractors": [
+      "How old are you?",
+      "Where are you from?",
+      "What do you do?"
+    ],
+    "explanation": "What's your name? signifie « Comment t'appelles-tu ? ». C'est une question utilisée lors d'une première rencontre.",
+    "tags": ["presentation", "nom", "questions"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander le prénom d'une personne, on dit {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_003",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Comment dit-on correctement « J'ai 18 ans » en english ?",
+    "answer": "I am 18 years old",
+    "distractors": [
+      "I have 18 years",
+      "I am 18 years",
+      "I have 18 years old"
+    ],
+    "explanation": "En english, on utilise le verbe to be (être) pour exprimer son âge et non le verbe to have (avoir). La structure est I am + âge + years old.",
+    "tags": ["age", "grammaire", "to-be"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « J'ai 18 ans », on utilise la structure {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_004",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Quelle question permet de demander l'âge d'une personne ?",
+    "answer": "How old are you?",
+    "distractors": [
+      "What's your name?",
+      "Where do you live?",
+      "How are you?"
+    ],
+    "explanation": "How old are you? signifie « Quel âge as-tu ? ». Attention à ne pas confondre cette question avec How are you?, qui signifie « Comment vas-tu ? ».",
+    "tags": ["age", "questions", "presentation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander l'âge de quelqu'un, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_005",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Remets dans l'ordre les éléments pour construire une présentation simple avec ton prénom et ton âge.",
+    "answer": "Hello! → My name is Lucas. → I am 16 years old.",
+    "steps": [
+      "Hello!",
+      "My name is Lucas.",
+      "I am 16 years old."
+    ],
+    "explanation": "Une présentation simple commence généralement par une salutation, puis donne le nom et enfin l'âge.",
+    "tags": ["presentation", "nom", "age", "ordre"],
+    "formats": ["ordering", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_006",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie l'expression « I'm from France » ?",
+    "answer": "Je viens de France",
+    "distractors": [
+      "J'habite en Angleterre",
+      "Je suis français",
+      "Je suis né en Espagne"
+    ],
+    "explanation": "I'm from... signifie « Je viens de... ». Cette expression permet d'indiquer son origine ou le pays d'où l'on vient.",
+    "tags": ["origine", "pays", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je viens de France », on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_007",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle expression permet de demander à quelqu'un d'où il vient ?",
+    "answer": "Where are you from?",
+    "distractors": [
+      "What's your nationality?",
+      "Where do you live?",
+      "What language do you speak?"
+    ],
+    "explanation": "Where are you from? signifie « D'où viens-tu ? ». Elle permet de demander l'origine d'une personne. À ne pas confondre avec What's your nationality?, qui demande sa nationalité.",
+    "tags": ["origine", "questions", "pays"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander l'origine d'une personne, tu peux dire {{blank}}."
+  },
+{
+    "id": "anglais_presentation_008",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Comment dit-on « Je suis français » en anglais ?",
+    "answer": "I'm French",
+    "distractors": [
+      "I'm France",
+      "I'm from French",
+      "I have French"
+    ],
+    "explanation": "I'm French signifie « Je suis français ». French désigne la nationalité ou la langue, tandis que France désigne le pays.",
+    "tags": ["nationalite", "origine", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour indiquer que tu es français, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_009",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle question permet de demander la nationalité d'une personne ?",
+    "answer": "What's your nationality?",
+    "distractors": [
+      "Where are you from?",
+      "What is your country?",
+      "What language are you?"
+    ],
+    "explanation": "What's your nationality? signifie « Quelle est ta nationalité ? ». Elle permet de demander si une personne est française, anglaise, espagnole, etc.",
+    "tags": ["nationalite", "questions", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander la nationalité de quelqu'un, on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_010",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Associe chaque expression à sa signification française.",
+    "answer": "I'm from France → Je viens de France ; I'm French → Je suis français ; I was born in Paris → Je suis né à Paris ; Country → Pays ; Nationality → Nationalité",
+    "pairs": [
+      ["I'm from France", "Je viens de France"],
+      ["I'm French", "Je suis français"],
+      ["I was born in Paris", "Je suis né à Paris"],
+      ["Country", "Pays"],
+      ["Nationality", "Nationalité"]
+    ],
+    "explanation": "Il faut distinguer le pays (France), la nationalité (French) et le lieu de naissance (I was born in...). Ces expressions permettent de présenter précisément son origine.",
+    "tags": ["origine", "nationalite", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_011",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie le mot anglais « Job » ?",
+    "answer": "Travail ou emploi",
+    "distractors": [
+      "Loisir",
+      "École",
+      "Nationalité"
+    ],
+    "explanation": "Job signifie « Travail » ou « Emploi ». Il désigne généralement un poste ou une activité professionnelle.",
+    "tags": ["profession", "vocabulaire", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Le mot anglais {{blank}} signifie « Travail » ou « Emploi »."
+  },
+  {
+    "id": "anglais_presentation_012",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle question anglaise permet de demander le métier de quelqu'un dans une conversation ?",
+    "answer": "What do you do?",
+    "distractors": [
+      "What are you doing?",
+      "Where do you work?",
+      "What do you study?"
+    ],
+    "explanation": "What do you do? est une question courante qui signifie « Que fais-tu dans la vie ? ». Elle sert généralement à demander la profession d'une personne.",
+    "tags": ["profession", "questions", "conversation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander le métier d'une personne, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_013",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Comment dit-on « Je suis étudiant » en anglais ?",
+    "answer": "I am a student",
+    "distractors": [
+      "I am a teacher",
+      "I study a student",
+      "I have a student"
+    ],
+    "explanation": "I am a student signifie « Je suis étudiant ». On utilise le verbe to be suivi de l'article a et du nom student.",
+    "tags": ["etudes", "profession", "grammaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je suis étudiant », on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_014",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Quelle phrase est grammaticalement correcte pour dire « Je suis ingénieur » ?",
+    "answer": "I am an engineer",
+    "distractors": [
+      "I am a engineer",
+      "I am engineer",
+      "I have an engineer"
+    ],
+    "explanation": "On utilise an devant engineer car ce mot commence par un son voyelle. On utilise généralement a devant un métier commençant par un son consonne, comme a teacher.",
+    "tags": ["profession", "grammaire", "articles"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je suis ingénieur », on écrit I am {{blank}} engineer."
+  },
+  {
+    "id": "anglais_presentation_015",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Associe chaque expression anglaise à sa traduction française.",
+    "answer": "I am a student → Je suis étudiant ; I am a teacher → Je suis professeur ; I am an engineer → Je suis ingénieur ; I study English → J'étudie l'anglais ; I study at university → J'étudie à l'université",
+    "pairs": [
+      ["I am a student", "Je suis étudiant"],
+      ["I am a teacher", "Je suis professeur"],
+      ["I am an engineer", "Je suis ingénieur"],
+      ["I study English", "J'étudie l'anglais"],
+      ["I study at university", "J'étudie à l'université"]
+    ],
+    "explanation": "I am a... permet de présenter son métier ou son statut. I study... permet d'indiquer ce que l'on étudie et I study at... précise son établissement.",
+    "tags": ["profession", "etudes", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+{
+    "id": "anglais_presentation_016",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie l'adjectif anglais « Tall » lorsqu'on parle de la taille d'une personne ?",
+    "answer": "Grand",
+    "distractors": [
+      "Petit",
+      "Mince",
+      "Fort"
+    ],
+    "explanation": "Tall signifie « Grand » ou « Grande » lorsqu'on parle de la taille physique d'une personne.",
+    "tags": ["description", "physique", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Une personne de grande taille est décrite comme {{blank}} en anglais."
+  },
+  {
+    "id": "anglais_presentation_017",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle phrase signifie « Je suis timide » en anglais ?",
+    "answer": "I am shy",
+    "distractors": [
+      "I have shy",
+      "I am funny",
+      "I do shy"
+    ],
+    "explanation": "I am shy signifie « Je suis timide ». On utilise la structure I am + adjectif pour décrire une caractéristique personnelle.",
+    "tags": ["description", "personnalite", "grammaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je suis timide », tu peux écrire {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_018",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Tu veux décrire tes yeux en anglais et dire « J'ai les yeux bleus ». Quelle phrase dois-tu utiliser ?",
+    "answer": "I have blue eyes",
+    "distractors": [
+      "I am blue eyes",
+      "I have eyes blue",
+      "I am eyes blue"
+    ],
+    "explanation": "I have blue eyes signifie « J'ai les yeux bleus ». On utilise have pour parler d'une caractéristique physique que l'on possède.",
+    "tags": ["description", "physique", "grammaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « J'ai les yeux bleus », on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_019",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Associe chaque adjectif anglais à sa traduction française.",
+    "answer": "Tall → Grand ; Short → Petit ; Young → Jeune ; Strong → Fort ; Thin → Mince",
+    "pairs": [
+      ["Tall", "Grand"],
+      ["Short", "Petit"],
+      ["Young", "Jeune"],
+      ["Strong", "Fort"],
+      ["Thin", "Mince"]
+    ],
+    "explanation": "Ces adjectifs permettent de décrire différentes caractéristiques physiques. Attention : Short désigne une petite taille, tandis que Thin désigne une personne mince.",
+    "tags": ["description", "physique", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_020",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Remets les éléments dans l'ordre pour construire une description physique correcte : « Je suis grand, je suis fort et j'ai les cheveux bruns. »",
+    "answer": "I am tall → I am strong → I have brown hair",
+    "steps": [
+      "I am tall",
+      "I am strong",
+      "I have brown hair"
+    ],
+    "explanation": "On utilise I am + adjectif pour décrire une caractéristique et I have + nom pour parler d'un élément physique que l'on possède.",
+    "tags": ["description", "physique", "grammaire", "ordre"],
+    "formats": ["ordering", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_021",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie le verbe anglais « Speak » ?",
+    "answer": "Parler",
+    "distractors": [
+      "Écouter",
+      "Lire",
+      "Écrire"
+    ],
+    "explanation": "Speak signifie « Parler ». On l'utilise notamment pour indiquer les langues que l'on connaît : I speak English signifie « Je parle anglais ».",
+    "tags": ["langues", "vocabulaire", "verbes"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Le verbe anglais {{blank}} signifie « Parler »."
+  },
+  {
+    "id": "anglais_presentation_022",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle question permet de demander à quelqu'un quelles langues il parle ?",
+    "answer": "What languages do you speak?",
+    "distractors": [
+      "What countries do you visit?",
+      "Where do you speak?",
+      "What is your language name?"
+    ],
+    "explanation": "What languages do you speak? signifie « Quelles langues parles-tu ? ». Cette question permet de connaître les langues maîtrisées par une personne.",
+    "tags": ["langues", "questions", "conversation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander quelles langues une personne parle, on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_023",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie l'expression anglaise « I speak English » ?",
+    "answer": "Je parle anglais",
+    "distractors": [
+      "J'apprends l'anglais",
+      "J'écris en anglais",
+      "Je comprends le français"
+    ],
+    "explanation": "I speak English signifie « Je parle anglais ». La structure I speak + langue permet d'indiquer les langues que l'on connaît.",
+    "tags": ["langues", "vocabulaire", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je parle anglais », on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_024",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Que signifie l'adverbe anglais « Fluently » lorsqu'on parle d'une langue ?",
+    "answer": "Couramment",
+    "distractors": [
+      "Un peu",
+      "Difficilement",
+      "Rarement"
+    ],
+    "explanation": "Fluently signifie « Couramment ». Par exemple, I speak English fluently signifie « Je parle anglais couramment ».",
+    "tags": ["langues", "niveau", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire que l'on parle une langue {{blank}}, on utilise l'adverbe fluently."
+  },
+  {
+    "id": "anglais_presentation_025",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Associe chaque expression anglaise à sa traduction française.",
+    "answer": "A little → Un peu ; Very well → Très bien ; Fluently → Couramment ; Bilingual → Bilingue ; Multilingual → Multilingue",
+    "pairs": [
+      ["A little", "Un peu"],
+      ["Very well", "Très bien"],
+      ["Fluently", "Couramment"],
+      ["Bilingual", "Bilingue"],
+      ["Multilingual", "Multilingue"]
+    ],
+    "explanation": "A little indique un niveau limité. Very well signifie très bien. Fluently indique une maîtrise courante. Bilingual désigne une personne qui parle deux langues et multilingual une personne qui en parle plusieurs.",
+    "tags": ["langues", "vocabulaire", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_026",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie l'expression « I like » en français ?",
+    "answer": "J'aime",
+    "distractors": [
+      "Je déteste",
+      "Je préfère",
+      "J'adore"
+    ],
+    "explanation": "I like signifie « J'aime ». Cette expression permet de parler de ses goûts personnels, par exemple I like music (J'aime la musique).",
+    "tags": ["gouts", "preferences", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "L'expression anglaise {{blank}} signifie « J'aime »."
+  },
+  {
+    "id": "anglais_presentation_027",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle expression anglaise signifie « J'adore » ?",
+    "answer": "I love",
+    "distractors": [
+      "I like",
+      "I hate",
+      "I prefer"
+    ],
+    "explanation": "I love signifie « J'adore ». Cette expression permet d'exprimer un goût plus fort que I like.",
+    "tags": ["gouts", "preferences", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour exprimer que l'on adore quelque chose, on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_028",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle phrase signifie « Je déteste attendre » en anglais ?",
+    "answer": "I hate waiting",
+    "distractors": [
+      "I love waiting",
+      "I like waiting",
+      "I prefer waiting"
+    ],
+    "explanation": "I hate signifie « Je déteste ». Après hate, on peut utiliser un verbe avec la terminaison -ing : waiting signifie « attendre » dans cette construction.",
+    "tags": ["gouts", "grammaire", "verbes-ing"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je déteste attendre », on écrit {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_029",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Comment dit-on « Je préfère » en anglais ?",
+    "answer": "I prefer",
+    "distractors": [
+      "I hate",
+      "I love",
+      "I speak"
+    ],
+    "explanation": "I prefer signifie « Je préfère ». Cette expression permet de comparer ses goûts : I prefer tea to coffee signifie « Je préfère le thé au café ».",
+    "tags": ["gouts", "preferences", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour exprimer une préférence en anglais, on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_030",
+    "subject": "english",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Associe chaque expression anglaise à sa traduction française.",
+    "answer": "I like music → J'aime la musique ; I like reading → J'aime lire ; I love travelling → J'adore voyager ; I hate waiting → Je déteste attendre ; What do you like? → Qu'est-ce que tu aimes ?",
+    "pairs": [
+      ["I like music", "J'aime la musique"],
+      ["I like reading", "J'aime lire"],
+      ["I love travelling", "J'adore voyager"],
+      ["I hate waiting", "Je déteste attendre"],
+      ["What do you like?", "Qu'est-ce que tu aimes ?"]
+    ],
+    "explanation": "Ces expressions permettent de parler de ses goûts. Après like et love, on peut utiliser un nom ou un verbe terminé en -ing. What do you like? permet de demander les préférences d'une personne.",
+    "tags": ["gouts", "preferences", "association", "grammaire"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_031",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie le mot anglais « Hobby » ?",
+    "answer": "Loisir",
+    "distractors": [
+      "Travail",
+      "Étude",
+      "Personnalité"
+    ],
+    "explanation": "Hobby signifie « Loisir » ou « Passe-temps ». Son pluriel est hobbies.",
+    "tags": ["loisirs", "vocabulaire", "traduction"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Le mot anglais {{blank}} signifie « Loisir » ou « Passe-temps »."
+  },
+  {
+    "id": "anglais_presentation_032",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle question permet de demander à quelqu'un quels sont ses loisirs ?",
+    "answer": "What are your hobbies?",
+    "distractors": [
+      "What is your job?",
+      "Where do you live?",
+      "What languages do you speak?"
+    ],
+    "explanation": "What are your hobbies? signifie « Quels sont tes loisirs ? ». Cette question permet de découvrir les activités pratiquées pendant le temps libre.",
+    "tags": ["loisirs", "questions", "conversation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander les loisirs d'une personne, tu peux dire {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_033",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Comment dit-on « Je joue au football » en anglais ?",
+    "answer": "I play football",
+    "distractors": [
+      "I do football",
+      "I make football",
+      "I am football"
+    ],
+    "explanation": "I play football signifie « Je joue au football ». On utilise généralement le verbe play avec les sports qui se jouent, comme football, tennis ou basketball.",
+    "tags": ["loisirs", "sports", "grammaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je joue au football », on écrit {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_034",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Associe chaque expression anglaise à sa traduction française.",
+    "answer": "Free time → Temps libre ; I play video games → Je joue aux jeux vidéo ; I do karate → Je pratique le karaté ; I like reading → J'aime lire ; I enjoy listening to music → J'aime écouter de la musique",
+    "pairs": [
+      ["Free time", "Temps libre"],
+      ["I play video games", "Je joue aux jeux vidéo"],
+      ["I do karate", "Je pratique le karaté"],
+      ["I like reading", "J'aime lire"],
+      ["I enjoy listening to music", "J'aime écouter de la musique"]
+    ],
+    "explanation": "Free time désigne le temps libre. On utilise play pour certains sports et jeux, do pour des activités comme le karaté, et enjoy + verbe en -ing pour exprimer une activité que l'on apprécie.",
+    "tags": ["loisirs", "vocabulaire", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_035",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Remets les éléments dans l'ordre pour former une présentation correcte de tes loisirs : « Pendant mon temps libre, j'aime lire et jouer aux jeux vidéo. »",
+    "answer": "In my free time → I like reading → I play video games",
+    "steps": [
+      "In my free time",
+      "I like reading",
+      "I play video games"
+    ],
+    "explanation": "In my free time permet d'introduire ses activités personnelles. On peut ensuite utiliser I like + verbe en -ing ou I play + activité.",
+    "tags": ["loisirs", "grammaire", "ordre"],
+    "formats": ["ordering", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_036",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie l'adjectif anglais « Friendly » lorsqu'on décrit une personne ?",
+    "answer": "Sympathique",
+    "distractors": [
+      "Timide",
+      "Paresseux",
+      "Sérieux"
+    ],
+    "explanation": "Friendly signifie « Sympathique » ou « Amical ». Cet adjectif permet de décrire une personne agréable avec les autres.",
+    "tags": ["personnalite", "caractere", "vocabulaire"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Une personne sympathique peut être décrite comme {{blank}} en anglais."
+  },
+  {
+    "id": "anglais_presentation_037",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Comment dit-on « Je suis extraverti » en anglais ?",
+    "answer": "I am outgoing",
+    "distractors": [
+      "I am shy",
+      "I am quiet",
+      "I am lazy"
+    ],
+    "explanation": "Outgoing signifie « Extraverti » ou « Sociable ». Une personne outgoing aime généralement interagir avec les autres. À l'inverse, shy signifie « Timide ».",
+    "tags": ["personnalite", "caractere", "adjectifs"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je suis extraverti », on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_038",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Associe chaque adjectif anglais à sa traduction française.",
+    "answer": "Funny → Drôle ; Serious → Sérieux ; Shy → Timide ; Kind → Gentil ; Lazy → Paresseux",
+    "pairs": [
+      ["Funny", "Drôle"],
+      ["Serious", "Sérieux"],
+      ["Shy", "Timide"],
+      ["Kind", "Gentil"],
+      ["Lazy", "Paresseux"]
+    ],
+    "explanation": "Ces adjectifs permettent de décrire la personnalité d'une personne. Funny signifie drôle, serious sérieux, shy timide, kind gentil et lazy paresseux.",
+    "tags": ["personnalite", "adjectifs", "association"],
+    "formats": ["matching", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_039",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle question permet de demander à quelqu'un de décrire sa propre personnalité ?",
+    "answer": "How would you describe yourself?",
+    "distractors": [
+      "What do you do?",
+      "How old are you?",
+      "What are your hobbies?"
+    ],
+    "explanation": "How would you describe yourself? signifie « Comment te décrirais-tu ? ». Elle permet de demander à une personne de présenter son caractère et ses qualités.",
+    "tags": ["personnalite", "questions", "conversation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander à quelqu'un de décrire sa personnalité, on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_040",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Remets les éléments dans l'ordre pour construire une description de personnalité : « Je suis sympathique, travailleur et sérieux. »",
+    "answer": "I am friendly → I am hard-working → I am serious",
+    "steps": [
+      "I am friendly",
+      "I am hard-working",
+      "I am serious"
+    ],
+    "explanation": "Pour décrire sa personnalité, on utilise la structure I am + adjectif. Friendly signifie sympathique, hard-working signifie travailleur et serious signifie sérieux.",
+    "tags": ["personnalite", "grammaire", "ordre"],
+    "formats": ["ordering", "flashcard"]
+  },
+  {
+    "id": "anglais_presentation_041",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 1,
+    "prompt": "Que signifie le verbe modal anglais « Can » ?",
+    "answer": "Pouvoir ou savoir faire",
+    "distractors": [
+      "Vouloir",
+      "Devoir",
+      "Aimer"
+    ],
+    "explanation": "Can permet d'exprimer une capacité, une possibilité ou une autorisation. Par exemple, I can swim signifie « Je sais nager ». Il est suivi d'un verbe sans to.",
+    "tags": ["competences", "grammaire", "verbes-modaux"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Le verbe modal {{blank}} permet d'exprimer une capacité ou une possibilité."
+  },
+  {
+    "id": "anglais_presentation_042",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Comment dit-on « Je sais cuisiner » en anglais ?",
+    "answer": "I can cook",
+    "distractors": [
+      "I can to cook",
+      "I am cook",
+      "I have cook"
+    ],
+    "explanation": "I can cook signifie « Je sais cuisiner ». Après can, le verbe reste à sa forme de base, sans ajouter to. On écrit donc I can cook et non I can to cook.",
+    "tags": ["competences", "grammaire", "can"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je sais cuisiner », on écrit {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_043",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 2,
+    "prompt": "Quelle phrase signifie « Je ne sais pas conduire » en anglais ?",
+    "answer": "I can't drive",
+    "distractors": [
+      "I can drive",
+      "I don't can drive",
+      "I can't to drive"
+    ],
+    "explanation": "Can't est la forme contractée de cannot. I can't drive signifie « Je ne sais pas conduire » ou « Je ne peux pas conduire ». Après can't, le verbe reste à sa forme de base.",
+    "tags": ["competences", "grammaire", "negation"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour dire « Je ne sais pas conduire », on utilise {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_044",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Quelle est la bonne structure pour demander à quelqu'un s'il sait nager ?",
+    "answer": "Can you swim?",
+    "distractors": [
+      "Do you can swim?",
+      "Can swim you?",
+      "Are you can swim?"
+    ],
+    "explanation": "Pour poser une question avec can, on place can avant le sujet : Can + sujet + verbe. La bonne structure est donc Can you swim? qui signifie « Sais-tu nager ? ».",
+    "tags": ["competences", "grammaire", "questions", "can"],
+    "formats": ["single_choice", "true_false", "flashcard", "fill_blank"],
+    "cloze": "Pour demander « Sais-tu nager ? », on écrit {{blank}}."
+  },
+  {
+    "id": "anglais_presentation_045",
+    "subject": "anglais",
+    "skill": "english.presentation",
+    "difficulty": 3,
+    "prompt": "Associe chaque expression anglaise à sa traduction française.",
+    "answer": "I can swim → Je sais nager ; I can cook → Je sais cuisiner ; I can speak English → Je sais parler anglais ; I can't drive → Je ne sais pas conduire ; Yes, I can → Oui, je sais ; No, I can't → Non, je ne sais pas",
+    "pairs": [
+      ["I can swim", "Je sais nager"],
+      ["I can cook", "Je sais cuisiner"],
+      ["I can speak English", "Je sais parler anglais"],
+      ["I can't drive", "Je ne sais pas conduire"],
+      ["Yes, I can", "Oui, je sais"],
+      ["No, I can't", "Non, je ne sais pas"]
+    ],
+    "explanation": "Can exprime une capacité et can't exprime une incapacité. Pour répondre à une question avec can, on utilise Yes, I can ou No, I can't.",
+    "tags": ["competences", "grammaire", "association", "can"],
+    "formats": ["matching", "flashcard"]
+  }
+]

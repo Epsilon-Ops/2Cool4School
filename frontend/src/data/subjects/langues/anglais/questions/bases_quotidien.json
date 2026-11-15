@@ -1,0 +1,1108 @@
+
+[
+  {
+    "id": "anglais_bases_quotidien_001",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Three » en français ?",
+    "options": [
+      "Deux",
+      "Trois",
+      "Quatre",
+      "Cinq"
+    ],
+    "correctAnswer": "Trois",
+    "explanation": "Three signifie trois. C'est le nombre 3 en anglais."
+  },
+  {
+    "id": "anglais_bases_quotidien_002",
+    "type": "multiple_choice",
+    "question": "Comment écrit-on le nombre 8 en anglais ?",
+    "options": [
+      "Eighteen",
+      "Eight",
+      "Eighty",
+      "Seven"
+    ],
+    "correctAnswer": "Eight",
+    "explanation": "Eight signifie huit. Attention à ne pas le confondre avec eighty, qui signifie quatre-vingts."
+  },
+  {
+    "id": "anglais_bases_quotidien_003",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « cinquante » en anglais ?",
+    "options": [
+      "Fifteen",
+      "Fifty",
+      "Forty",
+      "Sixty"
+    ],
+    "correctAnswer": "Fifty",
+    "explanation": "Fifty signifie cinquante (50). Fifteen signifie quinze (15)."
+  },
+  {
+    "id": "anglais_bases_quotidien_004",
+    "type": "multiple_choice",
+    "question": "Comment écrit-on correctement le nombre 42 en anglais ?",
+    "options": [
+      "Fourty-two",
+      "Forty-two",
+      "Fourteen-two",
+      "Forty-twelve"
+    ],
+    "correctAnswer": "Forty-two",
+    "explanation": "42 s'écrit Forty-two. Attention : forty ne prend pas de u, contrairement à four."
+  },
+  {
+    "id": "anglais_bases_quotidien_005",
+    "type": "multiple_choice",
+    "question": "Quelle expression anglaise permet de demander combien d'objets sont présents ?",
+    "options": [
+      "How old?",
+      "How much?",
+      "How many?",
+      "What time?"
+    ],
+    "correctAnswer": "How many?",
+    "explanation": "How many? signifie « Combien de ? ». Cette expression est utilisée pour demander une quantité d'éléments que l'on peut compter."
+  },
+  {
+    "id": "anglais_bases_quotidien_006",
+    "type": "multiple_choice",
+    "question": "Que signifie la couleur « Purple » en français ?",
+    "options": [
+      "Rose",
+      "Violet",
+      "Marron",
+      "Gris"
+    ],
+    "correctAnswer": "Violet",
+    "explanation": "Purple signifie violet ou violette. C'est une couleur courante pour décrire un objet ou un vêtement."
+  },
+  {
+    "id": "anglais_bases_quotidien_007",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on correctement « une voiture rouge » en anglais ?",
+    "options": [
+      "A car red",
+      "Red a car",
+      "A red car",
+      "A car is red"
+    ],
+    "correctAnswer": "A red car",
+    "explanation": "En anglais, l'adjectif de couleur se place généralement avant le nom. On dit donc « A red car » pour « une voiture rouge »."
+  },
+  {
+    "id": "anglais_bases_quotidien_008",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Green » en français ?",
+    "options": [
+      "Bleu",
+      "Vert",
+      "Jaune",
+      "Rouge"
+    ],
+    "correctAnswer": "Vert",
+    "explanation": "Green signifie vert ou verte. C'est l'une des couleurs principales en anglais."
+  },
+  {
+    "id": "anglais_bases_quotidien_009",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « bleu clair » en anglais ?",
+    "options": [
+      "Dark blue",
+      "Light blue",
+      "Blue light",
+      "Blue dark"
+    ],
+    "correctAnswer": "Light blue",
+    "explanation": "Light signifie clair lorsqu'il décrit une couleur. Light blue signifie donc bleu clair."
+  },
+  {
+    "id": "anglais_bases_quotidien_010",
+    "type": "multiple_choice",
+    "question": "Quelle phrase signifie « L'ordinateur noir est à moi » ?",
+    "options": [
+      "The computer black is mine",
+      "The black computer is mine",
+      "The computer is black mine",
+      "Black is the computer mine"
+    ],
+    "correctAnswer": "The black computer is mine",
+    "explanation": "En anglais, l'adjectif se place avant le nom. On dit « the black computer » et non « the computer black »."
+  },
+  {
+    "id": "anglais_bases_quotidien_011",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Mother » ?",
+    "options": [
+      "Père",
+      "Sœur",
+      "Mère",
+      "Grand-mère"
+    ],
+    "correctAnswer": "Mère",
+    "explanation": "Mother signifie mère. Father signifie père, brother signifie frère et sister signifie sœur."
+  },
+  {
+    "id": "anglais_bases_quotidien_012",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « frère » en anglais ?",
+    "options": [
+      "Father",
+      "Brother",
+      "Cousin",
+      "Uncle"
+    ],
+    "correctAnswer": "Brother",
+    "explanation": "Brother signifie frère. Il ne faut pas le confondre avec father, qui signifie père."
+  },
+  {
+    "id": "anglais_bases_quotidien_013",
+    "type": "multiple_choice",
+    "question": "Quel mot anglais désigne les parents, c'est-à-dire le père et la mère ?",
+    "options": [
+      "Friends",
+      "Parents",
+      "Children",
+      "Cousins"
+    ],
+    "correctAnswer": "Parents",
+    "explanation": "Parents signifie les parents (le père et la mère). En anglais, ce mot désigne les deux parents."
+  },
+  {
+    "id": "anglais_bases_quotidien_014",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Grandfather » ?",
+    "options": [
+      "Grand-mère",
+      "Grand-père",
+      "Oncle",
+      "Cousin"
+    ],
+    "correctAnswer": "Grand-père",
+    "explanation": "Grandfather signifie grand-père. Grandmother signifie grand-mère."
+  },
+  {
+    "id": "anglais_bases_quotidien_015",
+    "type": "multiple_choice",
+    "question": "Comment dit-on « ami » ou « amie » en anglais ?",
+    "options": [
+      "Friend",
+      "Family",
+      "Father",
+      "Daughter"
+    ],
+    "correctAnswer": "Friend",
+    "explanation": "Friend signifie ami ou amie. Family signifie famille et daughter signifie fille."
+  },
+  {
+    "id": "anglais_bases_quotidien_016",
+    "type": "multiple_choice",
+    "question": "Que signifie le pronom personnel anglais « They » ?",
+    "options": [
+      "Nous",
+      "Ils ou elles",
+      "Il",
+      "Je"
+    ],
+    "correctAnswer": "Ils ou elles",
+    "explanation": "They signifie ils ou elles. Ce pronom permet de désigner plusieurs personnes ou éléments."
+  },
+  {
+    "id": "anglais_bases_quotidien_017",
+    "type": "multiple_choice",
+    "question": "Quel pronom anglais signifie « elle » ?",
+    "options": [
+      "He",
+      "It",
+      "She",
+      "We"
+    ],
+    "correctAnswer": "She",
+    "explanation": "She signifie elle. He signifie il, tandis que we signifie nous."
+  },
+  {
+    "id": "anglais_bases_quotidien_018",
+    "type": "multiple_choice",
+    "question": "Quelle est la bonne forme du verbe « To be » avec le pronom « I » ?",
+    "options": [
+      "I is",
+      "I are",
+      "I am",
+      "I be"
+    ],
+    "correctAnswer": "I am",
+    "explanation": "Avec le pronom I, le verbe to be se conjugue avec am. On dit donc I am (je suis)."
+  },
+  {
+    "id": "anglais_bases_quotidien_019",
+    "type": "multiple_choice",
+    "question": "Complète correctement la phrase : « She ... happy. »",
+    "options": [
+      "am",
+      "are",
+      "is",
+      "be"
+    ],
+    "correctAnswer": "is",
+    "explanation": "Avec les pronoms he, she et it, on utilise is au présent. La phrase correcte est « She is happy » (Elle est heureuse)."
+  },
+  {
+    "id": "anglais_bases_quotidien_020",
+    "type": "multiple_choice",
+    "question": "Quelle est la forme contractée de « I am » ?",
+    "options": [
+      "I'm",
+      "You're",
+      "He's",
+      "They're"
+    ],
+    "correctAnswer": "I'm",
+    "explanation": "I'm est la contraction de I am. Cette forme est très fréquente dans les conversations en anglais."
+  },
+  {
+    "id": "anglais_bases_quotidien_021",
+    "type": "multiple_choice",
+    "question": "Quel article indéfini utilise-t-on devant le mot « book » ?",
+    "options": [
+      "An",
+      "The",
+      "A",
+      "Some"
+    ],
+    "correctAnswer": "A",
+    "explanation": "On utilise A devant un son consonne. Book commence par le son /b/, donc on dit « A book » (un livre)."
+  },
+  {
+    "id": "anglais_bases_quotidien_022",
+    "type": "multiple_choice",
+    "question": "Complète correctement l'expression : « ... apple » (une pomme).",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "Some"
+    ],
+    "correctAnswer": "An",
+    "explanation": "On utilise An devant un son voyelle. Apple commence par le son /æ/, donc on dit « An apple »."
+  },
+  {
+    "id": "anglais_bases_quotidien_023",
+    "type": "multiple_choice",
+    "question": "Quel article anglais signifie « le », « la » ou « les » lorsqu'on parle d'un élément précis ?",
+    "options": [
+      "A",
+      "An",
+      "The",
+      "Some"
+    ],
+    "correctAnswer": "The",
+    "explanation": "The est l'article défini anglais. Il permet de désigner un élément précis ou déjà identifié."
+  },
+  {
+    "id": "anglais_bases_quotidien_024",
+    "type": "multiple_choice",
+    "question": "Quelle phrase signifie « une pomme » en anglais ?",
+    "options": [
+      "A apple",
+      "An apple",
+      "The apples",
+      "A apples"
+    ],
+    "correctAnswer": "An apple",
+    "explanation": "On utilise an devant un son voyelle. Apple commence par un son voyelle : on dit donc an apple."
+  },
+  {
+    "id": "anglais_bases_quotidien_025",
+    "type": "multiple_choice",
+    "question": "Dans quelle situation utilise-t-on principalement l'article « the » ?",
+    "options": [
+      "Pour parler d'un objet quelconque",
+      "Pour parler d'un élément précis ou déjà connu",
+      "Uniquement devant les noms pluriels",
+      "Uniquement devant les noms commençant par une voyelle"
+    ],
+    "correctAnswer": "Pour parler d'un élément précis ou déjà connu",
+    "explanation": "The permet de désigner quelque chose de précis, que la personne qui parle et son interlocuteur peuvent identifier."
+  },
+  {
+    "id": "anglais_bases_quotidien_026",
+    "type": "multiple_choice",
+    "question": "Comment forme-t-on généralement le pluriel d'un nom en anglais ?",
+    "options": [
+      "En ajoutant -ed",
+      "En ajoutant -ing",
+      "En ajoutant -s",
+      "En ajoutant -er"
+    ],
+    "correctAnswer": "En ajoutant -s",
+    "explanation": "La règle générale consiste à ajouter un s à la fin du nom. Par exemple, book devient books."
+  },
+  {
+    "id": "anglais_bases_quotidien_027",
+    "type": "multiple_choice",
+    "question": "Quel est le pluriel correct du mot « box » ?",
+    "options": [
+      "Boxs",
+      "Boxes",
+      "Boxies",
+      "Boxen"
+    ],
+    "correctAnswer": "Boxes",
+    "explanation": "Les noms terminés par -x prennent généralement -es au pluriel. Box devient donc boxes."
+  },
+  {
+    "id": "anglais_bases_quotidien_028",
+    "type": "multiple_choice",
+    "question": "Quel est le pluriel correct du mot « baby » ?",
+    "options": [
+      "Babys",
+      "Babyes",
+      "Babies",
+      "Babyeses"
+    ],
+    "correctAnswer": "Babies",
+    "explanation": "Lorsqu'un nom se termine par une consonne suivie de y, on remplace généralement le y par ies. Baby devient babies."
+  },
+  {
+    "id": "anglais_bases_quotidien_029",
+    "type": "multiple_choice",
+    "question": "Quel est le pluriel irrégulier du mot « child » ?",
+    "options": [
+      "Childs",
+      "Childes",
+      "Children",
+      "Childrens"
+    ],
+    "correctAnswer": "Children",
+    "explanation": "Child possède un pluriel irrégulier : children. Il ne suit pas la règle habituelle consistant à ajouter -s."
+  },
+  {
+    "id": "anglais_bases_quotidien_030",
+    "type": "multiple_choice",
+    "question": "Quelle phrase est grammaticalement correcte pour dire « cinq ordinateurs » ?",
+    "options": [
+      "Five computer",
+      "Five computers",
+      "Fives computers",
+      "Five computeres"
+    ],
+    "correctAnswer": "Five computers",
+    "explanation": "Après un nombre supérieur à un, le nom dénombrable prend généralement la forme plurielle. Computer devient computers."
+  },
+  {
+    "id": "anglais_bases_quotidien_031",
+    "type": "multiple_choice",
+    "question": "Que signifie l'adjectif possessif anglais « My » ?",
+    "options": [
+      "Ton, ta ou tes",
+      "Mon, ma ou mes",
+      "Son, sa ou ses",
+      "Notre ou nos"
+    ],
+    "correctAnswer": "Mon, ma ou mes",
+    "explanation": "My est un adjectif possessif qui indique que quelque chose appartient à la personne qui parle."
+  },
+  {
+    "id": "anglais_bases_quotidien_032",
+    "type": "multiple_choice",
+    "question": "Quel adjectif possessif utilise-t-on pour dire « ton ordinateur » ?",
+    "options": [
+      "My computer",
+      "His computer",
+      "Your computer",
+      "Their computer"
+    ],
+    "correctAnswer": "Your computer",
+    "explanation": "Your signifie ton, ta, tes ou votre, vos. On l'utilise pour parler de quelque chose qui appartient à la personne à qui l'on s'adresse."
+  },
+  {
+    "id": "anglais_bases_quotidien_033",
+    "type": "multiple_choice",
+    "question": "Quel adjectif possessif utilise-t-on pour parler de l'objet appartenant à un garçon ?",
+    "options": [
+      "Her",
+      "His",
+      "Our",
+      "Its"
+    ],
+    "correctAnswer": "His",
+    "explanation": "His indique que le possesseur est masculin. Par exemple : His book signifie « son livre à lui »."
+  },
+  {
+    "id": "anglais_bases_quotidien_034",
+    "type": "multiple_choice",
+    "question": "Complète la phrase : « Sarah loves ___ dog. »",
+    "options": [
+      "His",
+      "Their",
+      "Her",
+      "Our"
+    ],
+    "correctAnswer": "Her",
+    "explanation": "Her est utilisé lorsque le possesseur est féminin. Sarah est une fille, donc on dit : Sarah loves her dog."
+  },
+  {
+    "id": "anglais_bases_quotidien_035",
+    "type": "multiple_choice",
+    "question": "Que signifie l'adjectif possessif « Their » ?",
+    "options": [
+      "Mon ou ma",
+      "Son ou sa pour un garçon",
+      "Notre ou nos",
+      "Leur ou leurs"
+    ],
+    "correctAnswer": "Leur ou leurs",
+    "explanation": "Their indique qu'un objet appartient à plusieurs personnes. Par exemple : Their house signifie « leur maison »."
+  },
+  {
+    "id": "anglais_bases_quotidien_036",
+    "type": "multiple_choice",
+    "question": "Quel adjectif démonstratif utilise-t-on pour désigner un objet proche au singulier ?",
+    "options": [
+      "Those",
+      "These",
+      "This",
+      "That"
+    ],
+    "correctAnswer": "This",
+    "explanation": "This signifie ce, cet ou cette et désigne un élément proche du locuteur au singulier."
+  },
+  {
+    "id": "anglais_bases_quotidien_037",
+    "type": "multiple_choice",
+    "question": "Quel adjectif démonstratif utilise-t-on pour désigner une voiture éloignée ?",
+    "options": [
+      "This",
+      "That",
+      "These",
+      "My"
+    ],
+    "correctAnswer": "That",
+    "explanation": "That désigne un élément éloigné au singulier. That car signifie « cette voiture-là »."
+  },
+  {
+    "id": "anglais_bases_quotidien_038",
+    "type": "multiple_choice",
+    "question": "Quelle expression anglaise désigne plusieurs objets proches ?",
+    "options": [
+      "This books",
+      "That books",
+      "These books",
+      "Those book"
+    ],
+    "correctAnswer": "These books",
+    "explanation": "These s'utilise pour désigner plusieurs éléments proches. Il faut donc employer le pluriel books."
+  },
+  {
+    "id": "anglais_bases_quotidien_039",
+    "type": "multiple_choice",
+    "question": "Quel adjectif démonstratif utilise-t-on pour désigner plusieurs objets éloignés ?",
+    "options": [
+      "This",
+      "That",
+      "These",
+      "Those"
+    ],
+    "correctAnswer": "Those",
+    "explanation": "Those signifie « ces » et permet de désigner plusieurs éléments éloignés du locuteur."
+  },
+  {
+    "id": "anglais_bases_quotidien_040",
+    "type": "multiple_choice",
+    "question": "Quelle phrase utilise correctement un adjectif démonstratif ?",
+    "options": [
+      "These car is red.",
+      "This cars are red.",
+      "Those cars are red.",
+      "That cars is red."
+    ],
+    "correctAnswer": "Those cars are red.",
+    "explanation": "Those s'utilise avec un nom pluriel pour désigner des éléments éloignés. Cars est au pluriel et doit être accompagné de are."
+  },
+  {
+    "id": "anglais_bases_quotidien_041",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Chair » ?",
+    "options": [
+      "Table",
+      "Chaise",
+      "Porte",
+      "Fenêtre"
+    ],
+    "correctAnswer": "Chaise",
+    "explanation": "Chair signifie « chaise ». C'est un objet que l'on utilise pour s'asseoir."
+  },
+  {
+    "id": "anglais_bases_quotidien_042",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « fenêtre » en anglais ?",
+    "options": [
+      "Door",
+      "Bed",
+      "Window",
+      "Lamp"
+    ],
+    "correctAnswer": "Window",
+    "explanation": "Window signifie « fenêtre ». Door signifie « porte », bed signifie « lit » et lamp signifie « lampe »."
+  },
+  {
+    "id": "anglais_bases_quotidien_043",
+    "type": "multiple_choice",
+    "question": "Quel mot anglais signifie « ordinateur » ?",
+    "options": [
+      "Phone",
+      "Computer",
+      "Keyboard",
+      "Television"
+    ],
+    "correctAnswer": "Computer",
+    "explanation": "Computer signifie « ordinateur ». Keyboard désigne le clavier et phone désigne le téléphone."
+  },
+  {
+    "id": "anglais_bases_quotidien_044",
+    "type": "multiple_choice",
+    "question": "Que signifie l'expression « There is » ?",
+    "options": [
+      "Il y a au singulier",
+      "Il y a au pluriel",
+      "Il n'y a pas",
+      "Voici plusieurs objets"
+    ],
+    "correctAnswer": "Il y a au singulier",
+    "explanation": "There is permet d'indiquer la présence d'un seul élément. Par exemple : There is a computer on the desk."
+  },
+  {
+    "id": "anglais_bases_quotidien_045",
+    "type": "multiple_choice",
+    "question": "Quelle phrase est correcte pour dire « Il y a deux chaises dans la pièce » ?",
+    "options": [
+      "There is two chairs in the room.",
+      "There are two chairs in the room.",
+      "There are two chair in the room.",
+      "There am two chairs in the room."
+    ],
+    "correctAnswer": "There are two chairs in the room.",
+    "explanation": "There are s'utilise pour parler de plusieurs éléments. Le nom chair doit également être au pluriel : chairs."
+  },
+  {
+    "id": "anglais_bases_quotidien_046",
+    "type": "multiple_choice",
+    "question": "Quel jour de la semaine signifie « mercredi » en anglais ?",
+    "options": [
+      "Monday",
+      "Tuesday",
+      "Wednesday",
+      "Thursday"
+    ],
+    "correctAnswer": "Wednesday",
+    "explanation": "Wednesday signifie « mercredi ». Attention à bien mémoriser son orthographe, qui ne correspond pas exactement à sa prononciation."
+  },
+  {
+    "id": "anglais_bases_quotidien_047",
+    "type": "multiple_choice",
+    "question": "Quel jour de la semaine signifie « vendredi » en anglais ?",
+    "options": [
+      "Thursday",
+      "Friday",
+      "Saturday",
+      "Sunday"
+    ],
+    "correctAnswer": "Friday",
+    "explanation": "Friday signifie « vendredi ». Il se situe entre Thursday (jeudi) et Saturday (samedi)."
+  },
+  {
+    "id": "anglais_bases_quotidien_048",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « janvier » en anglais ?",
+    "options": [
+      "June",
+      "January",
+      "July",
+      "February"
+    ],
+    "correctAnswer": "January",
+    "explanation": "January signifie « janvier ». C'est le premier mois de l'année en anglais."
+  },
+  {
+    "id": "anglais_bases_quotidien_049",
+    "type": "multiple_choice",
+    "question": "Quelle saison signifie « été » en anglais ?",
+    "options": [
+      "Winter",
+      "Spring",
+      "Autumn",
+      "Summer"
+    ],
+    "correctAnswer": "Summer",
+    "explanation": "Summer signifie « été ». Winter signifie hiver, spring signifie printemps et autumn signifie automne."
+  },
+  {
+    "id": "anglais_bases_quotidien_050",
+    "type": "multiple_choice",
+    "question": "Quelle affirmation concernant les jours et les mois en anglais est correcte ?",
+    "options": [
+      "Ils commencent toujours par une minuscule.",
+      "Seuls les mois commencent par une majuscule.",
+      "Les jours et les mois commencent toujours par une majuscule.",
+      "Ils ne prennent jamais de majuscule."
+    ],
+    "correctAnswer": "Les jours et les mois commencent toujours par une majuscule.",
+    "explanation": "En anglais, les jours de la semaine et les mois de l'année commencent toujours par une lettre majuscule : Monday, Friday, January, December."
+  },
+  {
+    "id": "anglais_bases_quotidien_051",
+    "type": "multiple_choice",
+    "question": "Quel format de date est généralement utilisé en anglais britannique ?",
+    "options": [
+      "Mois / Jour / Année",
+      "Jour / Mois / Année",
+      "Année / Mois / Jour",
+      "Jour / Année / Mois"
+    ],
+    "correctAnswer": "Jour / Mois / Année",
+    "explanation": "En anglais britannique, on utilise généralement le format jour/mois/année (DD/MM/YYYY)."
+  },
+  {
+    "id": "anglais_bases_quotidien_052",
+    "type": "multiple_choice",
+    "question": "Comment demande-t-on « Quelle est la date aujourd'hui ? » en anglais ?",
+    "options": [
+      "What time is it?",
+      "What's your name?",
+      "What's the date today?",
+      "What day are you?"
+    ],
+    "correctAnswer": "What's the date today?",
+    "explanation": "What's the date today? est la question utilisée pour demander la date du jour."
+  },
+  {
+    "id": "anglais_bases_quotidien_053",
+    "type": "multiple_choice",
+    "question": "Comment écrit-on correctement le nombre ordinal correspondant à « premier » en anglais ?",
+    "options": [
+      "One (1th)",
+      "First (1st)",
+      "Oneth (1nd)",
+      "First (1th)"
+    ],
+    "correctAnswer": "First (1st)",
+    "explanation": "First signifie « premier » ou « première ». Son abréviation ordinale est 1st."
+  },
+  {
+    "id": "anglais_bases_quotidien_054",
+    "type": "multiple_choice",
+    "question": "Comment dit-on « le cinq mars » en anglais britannique ?",
+    "options": [
+      "The five of March",
+      "March five",
+      "The fifth of March",
+      "The fifteen of March"
+    ],
+    "correctAnswer": "The fifth of March",
+    "explanation": "En anglais britannique, on utilise généralement un nombre ordinal pour exprimer la date : The fifth of March signifie « le cinq mars »."
+  },
+  {
+    "id": "anglais_bases_quotidien_055",
+    "type": "multiple_choice",
+    "question": "Comment écrit-on correctement le nombre ordinal correspondant à « vingt-et-unième » ?",
+    "options": [
+      "Twenty-one (21th)",
+      "Twenty-first (21st)",
+      "Twenty-oneth (21st)",
+      "Twenty-first (21th)"
+    ],
+    "correctAnswer": "Twenty-first (21st)",
+    "explanation": "Twenty-first signifie « vingt-et-unième ». Son abréviation est 21st. Le nombre ordinal first est utilisé après twenty."
+  },
+  {
+    "id": "anglais_bases_quotidien_056",
+    "type": "multiple_choice",
+    "question": "Comment demande-t-on « Quelle heure est-il ? » en anglais ?",
+    "options": [
+      "What's the date today?",
+      "What time is it?",
+      "Where are you?",
+      "What day is it?"
+    ],
+    "correctAnswer": "What time is it?",
+    "explanation": "What time is it? est l'expression utilisée pour demander l'heure en anglais."
+  },
+  {
+    "id": "anglais_bases_quotidien_057",
+    "type": "multiple_choice",
+    "question": "Que signifie l'expression « It's three o'clock » ?",
+    "options": [
+      "Il est trois heures.",
+      "Il est trois heures et demie.",
+      "Il est quatre heures.",
+      "Il est trois heures et quart."
+    ],
+    "correctAnswer": "Il est trois heures.",
+    "explanation": "O'clock s'utilise pour indiquer une heure exacte. It's three o'clock signifie qu'il est 3 heures."
+  },
+  {
+    "id": "anglais_bases_quotidien_058",
+    "type": "multiple_choice",
+    "question": "Que signifie l'expression « Half past four » ?",
+    "options": [
+      "4 h 15",
+      "4 h 45",
+      "4 h 30",
+      "5 h 30"
+    ],
+    "correctAnswer": "4 h 30",
+    "explanation": "Half past signifie « et demie ». Half past four correspond donc à 4 h 30."
+  },
+  {
+    "id": "anglais_bases_quotidien_059",
+    "type": "multiple_choice",
+    "question": "Que signifie l'expression « A quarter to six » ?",
+    "options": [
+      "6 h 15",
+      "5 h 45",
+      "5 h 15",
+      "6 h 45"
+    ],
+    "correctAnswer": "5 h 45",
+    "explanation": "A quarter to signifie « moins le quart ». A quarter to six correspond donc à 5 h 45, soit quinze minutes avant six heures."
+  },
+  {
+    "id": "anglais_bases_quotidien_060",
+    "type": "multiple_choice",
+    "question": "Quelle expression anglaise signifie « le matin » ?",
+    "options": [
+      "At night",
+      "In the evening",
+      "In the morning",
+      "In the afternoon"
+    ],
+    "correctAnswer": "In the morning",
+    "explanation": "In the morning signifie « le matin ». On utilise cette expression pour parler des activités réalisées pendant la matinée."
+  },
+  {
+    "id": "anglais_bases_quotidien_061",
+    "type": "multiple_choice",
+    "question": "Quelle préposition anglaise signifie « sous » ?",
+    "options": [
+      "Behind",
+      "Under",
+      "Next to",
+      "Between"
+    ],
+    "correctAnswer": "Under",
+    "explanation": "Under signifie « sous ». Par exemple, The cat is under the table signifie « Le chat est sous la table »."
+  },
+  {
+    "id": "anglais_bases_quotidien_062",
+    "type": "multiple_choice",
+    "question": "Que signifie l'expression « Next to » ?",
+    "options": [
+      "Derrière",
+      "Devant",
+      "À côté de",
+      "Entre"
+    ],
+    "correctAnswer": "À côté de",
+    "explanation": "Next to signifie « à côté de ». Par exemple, The phone is next to the computer signifie « Le téléphone est à côté de l'ordinateur »."
+  },
+  {
+    "id": "anglais_bases_quotidien_063",
+    "type": "multiple_choice",
+    "question": "Quelle préposition anglaise signifie « derrière » ?",
+    "options": [
+      "In front of",
+      "Behind",
+      "Near",
+      "On"
+    ],
+    "correctAnswer": "Behind",
+    "explanation": "Behind signifie « derrière ». Par exemple, The dog is behind the door signifie « Le chien est derrière la porte »."
+  },
+  {
+    "id": "anglais_bases_quotidien_064",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « devant » en anglais lorsqu'on parle de la position d'un objet ?",
+    "options": [
+      "Under",
+      "Between",
+      "In front of",
+      "Next to"
+    ],
+    "correctAnswer": "In front of",
+    "explanation": "In front of signifie « devant ». Par exemple, The car is in front of the house signifie « La voiture est devant la maison »."
+  },
+  {
+    "id": "anglais_bases_quotidien_065",
+    "type": "multiple_choice",
+    "question": "Quelle question utilise-t-on pour demander où se trouve un objet ?",
+    "options": [
+      "What is it?",
+      "Where is it?",
+      "Who is it?",
+      "How old is it?"
+    ],
+    "correctAnswer": "Where is it?",
+    "explanation": "Where is...? signifie « Où se trouve...? ». Cette question permet de demander la position d'une personne ou d'un objet."
+  },
+  {
+    "id": "anglais_bases_quotidien_066",
+    "type": "multiple_choice",
+    "question": "Quel adjectif anglais signifie « petit » ?",
+    "options": [
+      "Big",
+      "Long",
+      "Small",
+      "Fast"
+    ],
+    "correctAnswer": "Small",
+    "explanation": "Small signifie « petit ». Son contraire courant est big, qui signifie « grand » ou « gros »."
+  },
+  {
+    "id": "anglais_bases_quotidien_067",
+    "type": "multiple_choice",
+    "question": "Que signifie l'adjectif anglais « Difficult » ?",
+    "options": [
+      "Facile",
+      "Rapide",
+      "Difficile",
+      "Nouveau"
+    ],
+    "correctAnswer": "Difficile",
+    "explanation": "Difficult signifie « difficile ». Son contraire est easy, qui signifie « facile »."
+  },
+  {
+    "id": "anglais_bases_quotidien_068",
+    "type": "multiple_choice",
+    "question": "Quel adjectif anglais signifie « beau » ou « belle » ?",
+    "options": [
+      "Beautiful",
+      "Bad",
+      "Slow",
+      "Old"
+    ],
+    "correctAnswer": "Beautiful",
+    "explanation": "Beautiful signifie « beau » ou « belle ». Il permet de décrire une personne, un objet ou un lieu."
+  },
+  {
+    "id": "anglais_bases_quotidien_069",
+    "type": "multiple_choice",
+    "question": "Quel est le contraire de l'adjectif anglais « Fast » ?",
+    "options": [
+      "Big",
+      "Slow",
+      "Good",
+      "Long"
+    ],
+    "correctAnswer": "Slow",
+    "explanation": "Fast signifie « rapide », tandis que slow signifie « lent ». Ces deux adjectifs expriment des vitesses opposées."
+  },
+  {
+    "id": "anglais_bases_quotidien_070",
+    "type": "multiple_choice",
+    "question": "Où place-t-on généralement un adjectif en anglais lorsqu'il décrit un nom ?",
+    "options": [
+      "Après le nom",
+      "Avant le nom",
+      "Toujours à la fin de la phrase",
+      "Avant le sujet"
+    ],
+    "correctAnswer": "Avant le nom",
+    "explanation": "En anglais, l'adjectif se place généralement avant le nom. Par exemple, a big house signifie « une grande maison »."
+  },
+  {
+    "id": "anglais_bases_quotidien_071",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Shirt » ?",
+    "options": [
+      "Pantalon",
+      "Chemise",
+      "Chaussures",
+      "Manteau"
+    ],
+    "correctAnswer": "Chemise",
+    "explanation": "Shirt signifie « chemise » ou parfois « haut » selon le contexte."
+  },
+  {
+    "id": "anglais_bases_quotidien_072",
+    "type": "multiple_choice",
+    "question": "Quel mot anglais signifie « pantalon » en anglais britannique ?",
+    "options": [
+      "Socks",
+      "Trousers",
+      "Shoes",
+      "Shorts"
+    ],
+    "correctAnswer": "Trousers",
+    "explanation": "Trousers signifie « pantalon » en anglais britannique. En anglais américain, on utilise généralement pants."
+  },
+  {
+    "id": "anglais_bases_quotidien_073",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « chaussures » en anglais ?",
+    "options": [
+      "Socks",
+      "Shoes",
+      "Shoesies",
+      "Hats"
+    ],
+    "correctAnswer": "Shoes",
+    "explanation": "Shoes signifie « chaussures ». Socks signifie « chaussettes »."
+  },
+  {
+    "id": "anglais_bases_quotidien_074",
+    "type": "multiple_choice",
+    "question": "Quel mot anglais signifie « manteau » ?",
+    "options": [
+      "Jacket",
+      "Coat",
+      "Dress",
+      "Skirt"
+    ],
+    "correctAnswer": "Coat",
+    "explanation": "Coat signifie « manteau ». Jacket signifie plutôt « veste »."
+  },
+  {
+    "id": "anglais_bases_quotidien_075",
+    "type": "multiple_choice",
+    "question": "Que signifie l'expression « I'm wearing » ?",
+    "options": [
+      "Je possède",
+      "Je regarde",
+      "Je porte",
+      "Je préfère"
+    ],
+    "correctAnswer": "Je porte",
+    "explanation": "I'm wearing permet de décrire les vêtements que l'on porte actuellement. Par exemple : I'm wearing a blue T-shirt signifie « Je porte un tee-shirt bleu »."
+  },
+  {
+    "id": "anglais_bases_quotidien_076",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « chien » en anglais ?",
+    "options": [
+      "Cat",
+      "Dog",
+      "Bird",
+      "Horse"
+    ],
+    "correctAnswer": "Dog",
+    "explanation": "Dog signifie « chien ». Cat signifie « chat », bird signifie « oiseau » et horse signifie « cheval »."
+  },
+  {
+    "id": "anglais_bases_quotidien_077",
+    "type": "multiple_choice",
+    "question": "Quel animal signifie « lapin » en anglais ?",
+    "options": [
+      "Rabbit",
+      "Hamster",
+      "Duck",
+      "Sheep"
+    ],
+    "correctAnswer": "Rabbit",
+    "explanation": "Rabbit signifie « lapin ». C'est un animal domestique que l'on peut avoir comme animal de compagnie."
+  },
+  {
+    "id": "anglais_bases_quotidien_078",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Pet » ?",
+    "options": [
+      "Animal sauvage",
+      "Animal de compagnie",
+      "Animal de la ferme",
+      "Animal marin"
+    ],
+    "correctAnswer": "Animal de compagnie",
+    "explanation": "Pet désigne un animal domestique ou un animal de compagnie, comme un chien, un chat ou un hamster."
+  },
+  {
+    "id": "anglais_bases_quotidien_079",
+    "type": "multiple_choice",
+    "question": "Quel animal anglais signifie « mouton » ?",
+    "options": [
+      "Cow",
+      "Pig",
+      "Sheep",
+      "Duck"
+    ],
+    "correctAnswer": "Sheep",
+    "explanation": "Sheep signifie « mouton ». Cow signifie « vache », pig signifie « cochon » et duck signifie « canard »."
+  },
+  {
+    "id": "anglais_bases_quotidien_080",
+    "type": "multiple_choice",
+    "question": "Comment dit-on « Mon animal préféré est le cheval » en anglais ?",
+    "options": [
+      "My favourite animal is the horse.",
+      "My animal favourite is horse.",
+      "My favourite pet are horse.",
+      "My horse favourite is animal."
+    ],
+    "correctAnswer": "My favourite animal is the horse.",
+    "explanation": "La structure My favourite animal is... permet d'indiquer son animal préféré. Horse signifie « cheval »."
+  },
+  {
+    "id": "anglais_bases_quotidien_081",
+    "type": "multiple_choice",
+    "question": "Que signifie le mot anglais « Head » ?",
+    "options": [
+      "Visage",
+      "Tête",
+      "Dos",
+      "Cou"
+    ],
+    "correctAnswer": "Tête",
+    "explanation": "Head signifie « tête ». Face signifie « visage » et back signifie « dos »."
+  },
+  {
+    "id": "anglais_bases_quotidien_082",
+    "type": "multiple_choice",
+    "question": "Comment traduit-on « yeux » en anglais ?",
+    "options": [
+      "Ears",
+      "Nose",
+      "Eyes",
+      "Mouth"
+    ],
+    "correctAnswer": "Eyes",
+    "explanation": "Eyes signifie « yeux ». Au singulier, on utilise eye pour dire « œil »."
+  },
+  {
+    "id": "anglais_bases_quotidien_083",
+    "type": "multiple_choice",
+    "question": "Quel mot anglais signifie « bouche » ?",
+    "options": [
+      "Nose",
+      "Mouth",
+      "Face",
+      "Hair"
+    ],
+    "correctAnswer": "Mouth",
+    "explanation": "Mouth signifie « bouche ». Nose signifie « nez » et face signifie « visage »."
+  },
+  {
+    "id": "anglais_bases_quotidien_084",
+    "type": "multiple_choice",
+    "question": "Quel est le pluriel irrégulier du mot anglais « Foot » ?",
+    "options": [
+      "Foots",
+      "Feets",
+      "Feet",
+      "Footes"
+    ],
+    "correctAnswer": "Feet",
+    "explanation": "Foot signifie « pied » et possède un pluriel irrégulier : feet, qui signifie « pieds »."
+  },
+  {
+    "id": "anglais_bases_quotidien_085",
+    "type": "multiple_choice",
+    "question": "Quel est le pluriel correct du mot anglais « Tooth » ?",
+    "options": [
+      "Tooths",
+      "Teeth",
+      "Toothes",
+      "Toothes"
+    ],
+    "correctAnswer": "Teeth",
+    "explanation": "Tooth signifie « dent ». Son pluriel est irrégulier : teeth signifie « dents »."
+  }
+]

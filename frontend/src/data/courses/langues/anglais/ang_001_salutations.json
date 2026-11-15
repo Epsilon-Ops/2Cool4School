@@ -1,0 +1,402 @@
+{
+  "id": "english-salutations",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.salutations",
+  "title": "Salutations et premiers contacts",
+  "intro": "Apprendre l'anglais commence par savoir communiquer dans les situations les plus simples du quotidien. Que tu rencontres quelqu'un pour la première fois, que tu salues un ami ou que tu demandes un renseignement, les salutations et les expressions de politesse sont indispensables. Découvre les expressions essentielles pour engager une conversation, te présenter, répondre naturellement et interagir avec les autres en anglais.",
+  "sections": [
+    {
+      "id": "dire-bonjour-au-revoir",
+      "title": "1. Dire bonjour et au revoir",
+      "body": [
+        "Pour commencer une conversation en anglais, il faut savoir saluer son interlocuteur. L'expression la plus courante est [[Hello]], qui signifie « Bonjour ». Dans un contexte plus familier, on peut utiliser [[Hi]], qui signifie également « Salut ». Il existe aussi des salutations adaptées au moment de la journée : [[Good morning]] (bonjour le matin), [[Good afternoon]] (bonjour l'après-midi) et [[Good evening]] (bonsoir).",
+        "Pour terminer une conversation, plusieurs expressions sont possibles. [[Goodbye]] signifie « Au revoir » et convient à la plupart des situations. Dans un contexte familier, on utilise [[Bye]] ou [[See you]], qui signifie « À bientôt ». On peut préciser le moment où l'on se reverra avec [[See you later]] (à plus tard), [[See you tomorrow]] (à demain) ou [[See you soon]] (à bientôt)."
+      ],
+      "terms": [
+        {
+          "term": "Hello",
+          "def": "Salutation générale qui signifie « Bonjour ». Convient aux situations formelles et informelles."
+        },
+        {
+          "term": "Hi",
+          "def": "Formule familière pour dire « Salut »."
+        },
+        {
+          "term": "Good morning",
+          "def": "Salutation utilisée le matin, généralement avant midi."
+        },
+        {
+          "term": "Good afternoon",
+          "def": "Salutation utilisée l'après-midi."
+        },
+        {
+          "term": "Good evening",
+          "def": "Salutation utilisée le soir pour accueillir quelqu'un."
+        },
+        {
+          "term": "Goodbye",
+          "def": "Formule classique pour dire « Au revoir »."
+        },
+        {
+          "term": "Bye",
+          "def": "Formule courte et familière pour dire « Salut » ou « Au revoir »."
+        },
+        {
+          "term": "See you",
+          "def": "Expression familière signifiant « À bientôt » ou « On se voit »."
+        },
+        {
+          "term": "See you later",
+          "def": "Expression signifiant « À plus tard »."
+        },
+        {
+          "term": "See you tomorrow",
+          "def": "Expression signifiant « À demain »."
+        },
+        {
+          "term": "See you soon",
+          "def": "Expression signifiant « À bientôt »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Lorsque tu arrives au bureau, tu peux dire « Good morning » à tes collègues. En quittant ton travail, tu peux dire « Goodbye » ou « See you tomorrow » si tu les retrouves le lendemain."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Hello, c'est le « Bonjour » classique. Hi, c'est le « Wesh, salut ! » entre potes. Et See you, c'est le « À la prochaine ! » avant de partir."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_001",
+        "anglais_salutations_002",
+        "anglais_salutations_003",
+        "anglais_salutations_004",
+        "anglais_salutations_005",
+        "anglais_salutations_006"
+      ]
+    },
+    {
+      "id": "formules-politesse",
+      "title": "2. Utiliser les formules de politesse",
+      "body": [
+        "En anglais, comme en français, la politesse est essentielle pour communiquer correctement. Pour demander quelque chose gentiment, on utilise [[Please]], qui signifie « S'il te plaît » ou « S'il vous plaît ». Cette expression peut se placer à la fin ou au début d'une demande.",
+        "Pour remercier quelqu'un, on utilise [[Thank you]] ou sa forme plus courte [[Thanks]]. Pour répondre à un remerciement, on dit [[You're welcome]], qui signifie « De rien ». D'autres réponses sont possibles, comme [[No problem]] (pas de problème) ou [[My pleasure]] (avec plaisir)."
+      ],
+      "terms": [
+        {
+          "term": "Please",
+          "def": "Expression de politesse utilisée pour formuler une demande : « S'il te plaît » ou « S'il vous plaît »."
+        },
+        {
+          "term": "Thank you",
+          "def": "Expression utilisée pour remercier quelqu'un : « Merci »."
+        },
+        {
+          "term": "Thanks",
+          "def": "Forme plus courte et familière de Thank you."
+        },
+        {
+          "term": "You're welcome",
+          "def": "Réponse classique à un remerciement : « De rien »."
+        },
+        {
+          "term": "No problem",
+          "def": "Réponse familière signifiant « Pas de problème »."
+        },
+        {
+          "term": "My pleasure",
+          "def": "Expression polie signifiant « Avec plaisir »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Dans un e-mail professionnel, tu peux écrire « Could you send me the document, please? » puis remercier ton collègue avec « Thank you ». Il pourra répondre « You're welcome »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Please, c'est quand tu demandes gentiment quelque chose. Thank you, c'est quand quelqu'un t'aide. You're welcome, c'est quand cette personne te répond « De rien »."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_007",
+        "anglais_salutations_008",
+        "anglais_salutations_009",
+        "anglais_salutations_010",
+        "anglais_salutations_011"
+      ]
+    },
+    {
+      "id": "demander-comment-ca-va",
+      "title": "3. Demander comment ça va et y répondre",
+      "body": [
+        "Après avoir salué quelqu'un, il est courant de lui demander comment il va. La question la plus connue est [[How are you?]], qui signifie « Comment vas-tu ? » ou « Comment allez-vous ? ». Dans un contexte plus familier, on peut utiliser [[How's it going?]] ou [[What's up?]].",
+        "Pour répondre, plusieurs expressions permettent de décrire son état. [[I'm fine, thank you]] signifie « Je vais bien, merci ». On peut aussi dire [[I'm good]] (je vais bien), [[I'm great]] (je vais très bien), [[I'm okay]] (ça va) ou [[Not bad]] (pas mal). Si l'on ne va pas bien, on peut répondre [[I'm not very well]] (je ne vais pas très bien). Il est courant de retourner la question avec [[And you?]] (et toi ?)."
+      ],
+      "terms": [
+        {
+          "term": "How are you?",
+          "def": "Question classique pour demander à quelqu'un comment il va."
+        },
+        {
+          "term": "How's it going?",
+          "def": "Question informelle signifiant « Comment ça va ? »."
+        },
+        {
+          "term": "What's up?",
+          "def": "Expression très familière signifiant « Quoi de neuf ? » ou « Ça va ? »."
+        },
+        {
+          "term": "I'm fine",
+          "def": "Réponse signifiant « Je vais bien »."
+        },
+        {
+          "term": "I'm good",
+          "def": "Réponse courante et naturelle signifiant « Je vais bien »."
+        },
+        {
+          "term": "I'm great",
+          "def": "Réponse indiquant que l'on va très bien."
+        },
+        {
+          "term": "I'm okay",
+          "def": "Réponse signifiant « Ça va » ou « Je vais bien, sans plus »."
+        },
+        {
+          "term": "Not bad",
+          "def": "Réponse signifiant « Pas mal »."
+        },
+        {
+          "term": "I'm not very well",
+          "def": "Réponse indiquant que l'on ne va pas très bien."
+        },
+        {
+          "term": "And you?",
+          "def": "Expression utilisée pour retourner une question : « Et toi ? » ou « Et vous ? »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Quand tu croises un collègue le matin, tu peux dire « Good morning! How are you? ». Il peut répondre « I'm fine, thank you. And you? »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "C'est comme envoyer un message à un ami : « What's up? ». Il peut répondre « I'm good! And you? ». C'est simplement une manière de prendre des nouvelles."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_012",
+        "anglais_salutations_013",
+        "anglais_salutations_014",
+        "anglais_salutations_015",
+        "anglais_salutations_016",
+        "anglais_salutations_017"
+      ]
+    },
+    {
+      "id": "se-presenter-premiere-rencontre",
+      "title": "4. Se présenter lors d'une première rencontre",
+      "body": [
+        "Lorsque tu rencontres quelqu'un pour la première fois, il est important de savoir te présenter brièvement. Pour donner ton nom, tu peux utiliser [[My name is...]] (Je m'appelle...) ou [[I'm...]] (Je suis...). Pour demander le nom de ton interlocuteur, tu peux dire [[What's your name?]] (Comment t'appelles-tu ?).",
+        "Après avoir fait connaissance, il est courant d'utiliser [[Nice to meet you]], qui signifie « Ravi(e) de te rencontrer ». Ton interlocuteur peut répondre [[Nice to meet you too]] (Ravi(e) de te rencontrer également). Tu peux compléter ta présentation avec [[I'm from...]] (Je viens de...) et [[I live in...]] (J'habite à...)."
+      ],
+      "terms": [
+        {
+          "term": "My name is...",
+          "def": "Expression utilisée pour donner son nom : « Je m'appelle... »."
+        },
+        {
+          "term": "I'm...",
+          "def": "Forme contractée de I am, utilisée notamment pour donner son prénom ou son identité."
+        },
+        {
+          "term": "What's your name?",
+          "def": "Question permettant de demander le nom de quelqu'un."
+        },
+        {
+          "term": "Nice to meet you",
+          "def": "Expression utilisée lors d'une première rencontre : « Ravi(e) de te rencontrer »."
+        },
+        {
+          "term": "Nice to meet you too",
+          "def": "Réponse signifiant « Ravi(e) de te rencontrer également »."
+        },
+        {
+          "term": "I'm from...",
+          "def": "Expression permettant d'indiquer son origine ou sa ville/pays de provenance."
+        },
+        {
+          "term": "I live in...",
+          "def": "Expression permettant d'indiquer son lieu de résidence."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Lors d'un entretien d'embauche, tu peux commencer par « Hello, my name is Alex. I'm from France. Nice to meet you. ». C'est une présentation courte, claire et professionnelle."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Imagine que tu rencontres un nouveau camarade dans ton lycée : « Hi! I'm Lucas. What's your name? ». Il répond « I'm Emma ». Tu peux alors dire « Nice to meet you! »."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_018",
+        "anglais_salutations_019",
+        "anglais_salutations_020",
+        "anglais_salutations_021",
+        "anglais_salutations_022"
+      ]
+    },
+    {
+      "id": "expressions-courantes-conversation",
+      "title": "5. Utiliser les expressions courantes de conversation",
+      "body": [
+        "Dans une conversation quotidienne, certaines expressions permettent de réagir rapidement sans construire de longues phrases. [[Okay]] signifie « D'accord » ou « Ça marche ». [[Sure]] signifie « Bien sûr » ou « Avec plaisir » selon le contexte. [[Maybe]] signifie « Peut-être » et permet d'exprimer une possibilité ou une hésitation.",
+        "Pour confirmer quelque chose avec davantage de certitude, on utilise [[Of course]], qui signifie « Bien sûr » ou « Évidemment ». Ces expressions rendent les échanges plus naturels et évitent de répondre systématiquement par des phrases longues."
+      ],
+      "terms": [
+        {
+          "term": "Okay",
+          "def": "Expression signifiant « D'accord », « OK » ou « Ça marche »."
+        },
+        {
+          "term": "Sure",
+          "def": "Expression signifiant « Bien sûr » ou « Avec plaisir », souvent utilisée pour accepter une proposition."
+        },
+        {
+          "term": "Maybe",
+          "def": "Expression signifiant « Peut-être », utilisée pour exprimer une incertitude."
+        },
+        {
+          "term": "Of course",
+          "def": "Expression signifiant « Bien sûr » ou « Évidemment », utilisée pour confirmer ou accepter quelque chose."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Un collègue te demande : « Can you help me? ». Tu peux répondre « Sure! ». S'il te propose une réunion demain, tu peux dire « Maybe » si tu n'es pas encore certain."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Okay = « Ça marche ! ». Sure = « Carrément ! ». Maybe = « Peut-être... ». Of course = « Bah oui, évidemment ! »."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_023",
+        "anglais_salutations_024",
+        "anglais_salutations_025",
+        "anglais_salutations_026"
+      ]
+    },
+    {
+      "id": "accord-desaccord",
+      "title": "6. Exprimer son accord et son désaccord",
+      "body": [
+        "Lors d'une conversation, il faut savoir exprimer son opinion et réagir à celle des autres. Pour accepter une affirmation, on peut simplement répondre [[Yes]] (Oui) ou utiliser [[I agree]] (Je suis d'accord). Pour renforcer son accord, on peut dire [[I completely agree]] (Je suis entièrement d'accord) ou [[Exactly!]] (Exactement !).",
+        "Pour exprimer un désaccord, on utilise [[No]] (Non) ou [[I don't agree]] (Je ne suis pas d'accord). Une formulation plus nuancée consiste à dire [[I don't think so]] (Je ne pense pas) ou [[I disagree]] (Je ne suis pas d'accord). Dans une conversation polie, il est préférable de justifier son opinion plutôt que de contredire brutalement son interlocuteur."
+      ],
+      "terms": [
+        {
+          "term": "Yes",
+          "def": "Réponse affirmative signifiant « Oui »."
+        },
+        {
+          "term": "No",
+          "def": "Réponse négative signifiant « Non »."
+        },
+        {
+          "term": "I agree",
+          "def": "Expression permettant d'indiquer que l'on partage l'opinion de quelqu'un."
+        },
+        {
+          "term": "I don't agree",
+          "def": "Expression permettant d'indiquer que l'on ne partage pas l'opinion de quelqu'un."
+        },
+        {
+          "term": "I completely agree",
+          "def": "Expression renforçant l'accord : « Je suis entièrement d'accord »."
+        },
+        {
+          "term": "Exactly!",
+          "def": "Expression utilisée pour confirmer fortement une idée : « Exactement ! »."
+        },
+        {
+          "term": "I disagree",
+          "def": "Expression signifiant « Je ne suis pas d'accord »."
+        },
+        {
+          "term": "I don't think so",
+          "def": "Expression signifiant « Je ne pense pas », souvent utilisée pour exprimer un désaccord de manière plus nuancée."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Pendant une réunion, ton responsable propose une nouvelle organisation. Si tu es favorable, tu peux dire « I agree ». Si tu as une autre opinion, tu peux répondre « I don't agree because... »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Ton ami dit que Mario est meilleur que Sonic. Si tu es d'accord : « I agree! ». Si tu préfères Sonic : « I don't agree! Sonic is better! »."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_027",
+        "anglais_salutations_028",
+        "anglais_salutations_029",
+        "anglais_salutations_030",
+        "anglais_salutations_031"
+      ]
+    },
+    {
+      "id": "excuses-attirer-attention",
+      "title": "7. S'excuser et attirer l'attention",
+      "body": [
+        "Dans la vie quotidienne, il est important de savoir s'excuser ou attirer l'attention de quelqu'un. L'expression [[Sorry]] signifie « Désolé » ou « Pardon ». Elle peut être utilisée après une petite erreur, pour exprimer un regret ou pour demander à quelqu'un de répéter.",
+        "L'expression [[Excuse me]] signifie « Excusez-moi » ou « Pardon ». Elle est particulièrement utile pour interrompre poliment quelqu'un, attirer son attention ou demander un renseignement à un inconnu. Enfin, [[Pardon?]] permet de demander à son interlocuteur de répéter lorsqu'on n'a pas compris ce qu'il vient de dire."
+      ],
+      "terms": [
+        {
+          "term": "Sorry",
+          "def": "Expression utilisée pour présenter ses excuses ou exprimer un regret : « Désolé » ou « Pardon »."
+        },
+        {
+          "term": "Excuse me",
+          "def": "Formule polie utilisée pour attirer l'attention, interrompre quelqu'un ou demander le passage."
+        },
+        {
+          "term": "Pardon?",
+          "def": "Expression utilisée pour demander à quelqu'un de répéter ce qu'il vient de dire."
+        },
+        {
+          "term": "I'm sorry",
+          "def": "Formulation complète pour présenter ses excuses : « Je suis désolé »."
+        }
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Tu arrives en retard à une réunion : « Sorry, I'm late ». Si tu souhaites poser une question pendant une présentation, tu peux commencer par « Excuse me ». Si tu n'as pas entendu une information, tu peux dire « Pardon? »."
+        },
+        {
+          "theme": "Un enfant de 15 ans",
+          "text": "Tu marches sur le pied de quelqu'un : « Sorry! ». Tu veux demander l'heure à un inconnu : « Excuse me ». Tu n'as pas compris ce que ton ami vient de dire : « Pardon? »."
+        }
+      ],
+      "questionIds": [
+        "anglais_salutations_032",
+        "anglais_salutations_033",
+        "anglais_salutations_034",
+        "anglais_salutations_035"
+      ]
+    }
+  ],
+  "chapter": "Salutations et premiers contacts",
+  "chapterOrder": 1,
+  "order": 1
+}
