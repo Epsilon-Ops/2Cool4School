@@ -1628,5 +1628,564 @@
       "Le navigateur ouvre une connexion TCP (port 80) avec le serveur",
       "Le navigateur envoie la requête HTTP GET et affiche la page reçue"
     ]
+  },
+  {
+    "id": "reseaux_architecture_070",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle est la taille minimale de l'en-tête d'un paquet IPv4 ?",
+    "answer": "20 octets",
+    "distractors": [
+      "8 octets",
+      "14 octets",
+      "40 octets"
+    ],
+    "explanation": "L'en-tête IPv4 mesure au minimum 20 octets. Sa taille peut augmenter jusqu'à 60 octets lorsque des options sont présentes.",
+    "tags": [
+      "tcp_ip",
+      "ipv4",
+      "entetes",
+      "taille"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_071",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle est la taille minimale de l'en-tête TCP ?",
+    "answer": "20 octets",
+    "distractors": [
+      "8 octets",
+      "14 octets",
+      "32 octets"
+    ],
+    "explanation": "L'en-tête TCP mesure au minimum 20 octets. Il peut atteindre 60 octets lorsque des options TCP sont présentes.",
+    "tags": [
+      "tcp",
+      "transport",
+      "entetes",
+      "taille"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_072",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle est la taille de l'en-tête UDP ?",
+    "answer": "8 octets",
+    "distractors": [
+      "20 octets",
+      "14 octets",
+      "40 octets"
+    ],
+    "explanation": "L'en-tête UDP possède une taille fixe de 8 octets, composée de quatre champs de 2 octets : port source, port destination, longueur et checksum.",
+    "tags": [
+      "udp",
+      "transport",
+      "entetes",
+      "taille"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_073",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Quelle est la taille de l'en-tête d'une trame Ethernet II, sans compter le préambule ni le FCS ?",
+    "answer": "14 octets",
+    "distractors": [
+      "8 octets",
+      "20 octets",
+      "18 octets"
+    ],
+    "explanation": "L'en-tête Ethernet II mesure 14 octets : 6 octets pour l'adresse MAC destination, 6 octets pour l'adresse MAC source et 2 octets pour le champ EtherType. Le FCS de 4 octets est placé à la fin de la trame.",
+    "tags": [
+      "ethernet",
+      "liaison",
+      "entetes",
+      "taille"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_074",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Remettez dans l'ordre les étapes de la désencapsulation lors de la réception de données transportées par TCP sur Ethernet.",
+    "answer": "Réception des bits par la couche physique → Traitement de la trame Ethernet par la couche liaison → Traitement du paquet IP par la couche réseau → Traitement du segment TCP par la couche transport → Transmission des données à l'application",
+    "distractors": [],
+    "explanation": "À la réception, chaque couche traite les informations qui lui sont destinées, retire son propre en-tête et transmet les données à la couche supérieure. Ce processus est appelé désencapsulation.",
+    "tags": [
+      "desencapsulation",
+      "osi",
+      "tcp_ip",
+      "ordre"
+    ],
+    "formats": [
+      "ordering",
+      "flashcard"
+    ],
+    "steps": [
+      "Réception des bits par la couche physique",
+      "Traitement de la trame Ethernet par la couche liaison",
+      "Traitement du paquet IP par la couche réseau",
+      "Traitement du segment TCP par la couche transport",
+      "Transmission des données à l'application"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_075",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Parmi les propositions suivantes, laquelle est une requête HTTP GET valide ?",
+    "answer": "GET /index.html HTTP/1.1\\r\\nHost: www.exemple.fr\\r\\n\\r\\n",
+    "distractors": [
+      "HTTP/1.1 GET www.exemple.fr /index.html",
+      "GET HTTP://Host/index.html 200 OK",
+      "POST HTTP/1.1 /index.html Host"
+    ],
+    "explanation": "Une requête HTTP/1.1 commence par une ligne contenant la méthode, le chemin de la ressource et la version HTTP. Elle est suivie d'en-têtes, notamment Host, puis d'une ligne vide.",
+    "tags": [
+      "http",
+      "requete",
+      "get",
+      "application"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_076",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Dans une requête HTTP GET /index.html HTTP/1.1 suivie de Host: www.exemple.fr, que représente chaque élément ?",
+    "answer": "GET : méthode ; /index.html : chemin de la ressource ; HTTP/1.1 : version du protocole ; Host : nom du serveur ciblé",
+    "distractors": [],
+    "explanation": "La première ligne est appelée ligne de requête. Elle contient la méthode HTTP, la cible de la requête et la version du protocole. L'en-tête Host indique le serveur ciblé.",
+    "tags": [
+      "http",
+      "requete",
+      "entetes",
+      "vocabulaire"
+    ],
+    "formats": [
+      "matching",
+      "flashcard"
+    ],
+    "pairs": [
+      [
+        "GET",
+        "Méthode HTTP utilisée pour demander une ressource"
+      ],
+      [
+        "/index.html",
+        "Chemin de la ressource demandée"
+      ],
+      [
+        "HTTP/1.1",
+        "Version du protocole HTTP"
+      ],
+      [
+        "Host",
+        "En-tête indiquant le nom du serveur ciblé"
+      ]
+    ]
+  },
+  {
+    "id": "reseaux_architecture_077",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle différence existe-t-il entre une requête HTTP et une réponse HTTP ?",
+    "answer": "La requête est envoyée par le client au serveur pour demander une ressource ; la réponse est envoyée par le serveur au client et contient notamment un code de statut",
+    "distractors": [
+      "La requête est envoyée par le serveur et la réponse par le client",
+      "La requête contient toujours un code 200 et la réponse toujours un code 404",
+      "La requête utilise UDP tandis que la réponse utilise TCP"
+    ],
+    "explanation": "Une requête HTTP contient une méthode, une cible et une version du protocole. La réponse contient une version HTTP, un code de statut (par exemple 200 ou 404) et éventuellement des en-têtes et un corps.",
+    "tags": [
+      "http",
+      "requete",
+      "reponse",
+      "code_statut"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_078",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "IP est :",
+    "answer": "non connecté, dans le système d'exploitation",
+    "distractors": [
+      "de bout en bout",
+      "fiable"
+    ],
+    "explanation": "IP est un protocole non connecté, implémenté dans le système d'exploitation.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "non connecté",
+      "dans le système d'exploitation"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_079",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Un navigateur Web envoie une requête DNS sur Internet grâce à une carte réseau Ethernet. Quels sont les protocoles présents dans la trame envoyée contenant cette requête ?",
+    "answer": "DNS, UDP, IP, Ethernet",
+    "distractors": [
+      "HTTP",
+      "ICMP",
+      "TCP",
+      "ARP"
+    ],
+    "explanation": "La requête DNS est encapsulée dans UDP, puis IP, puis Ethernet. HTTP, TCP, ICMP et ARP ne sont pas présents dans cette trame.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "DNS",
+      "UDP",
+      "IP",
+      "Ethernet"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_080",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "HTTP est :",
+    "answer": "de bout en bout, un protocole applicatif",
+    "distractors": [
+      "point-à-point",
+      "en mode connecté"
+    ],
+    "explanation": "HTTP est un protocole applicatif qui relie le client et le serveur de bout en bout.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "de bout en bout",
+      "un protocole applicatif"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_081",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "TCP est :",
+    "answer": "en mode connecté, dans le système d'exploitation",
+    "distractors": [
+      "un protocole applicatif",
+      "point-à-point"
+    ],
+    "explanation": "TCP est un protocole de transport en mode connecté, implémenté dans le système d'exploitation.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "en mode connecté",
+      "dans le système d'exploitation"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_082",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "IP est :",
+    "answer": "en mode connecté, point-à-point, dans le système d'exploitation",
+    "distractors": [
+      "fiable"
+    ],
+    "explanation": "Corrigé des annexes (1B, question 5). À vérifier : la question 1 du même chapitre donne IP comme non connecté.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "en mode connecté",
+      "point-à-point",
+      "dans le système d'exploitation"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_083",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "A propos du mécanisme d'encapsulation dans une architecture en couches, du point de vue de la couche N :",
+    "answer": "Les informations provenant de la couche N+1 sont les en-têtes et les données de la couche N+1, Les données de la couche N sont les en-têtes et les données de la couche N+1, Les informations provenant de la couche N-1 sont les en-têtes et les données de la couche N",
+    "distractors": [
+      "Les informations provenant de la couche N-1 sont les en-têtes et les données de la couche N+1",
+      "Les données de la couche N+1 sont les en-têtes et les données de la couche N"
+    ],
+    "explanation": "Lors de l'encapsulation, chaque couche ajoute son en-tête aux données reçues de la couche supérieure.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Les informations provenant de la couche N+1 sont les en-têtes et les données de la couche N+1",
+      "Les données de la couche N sont les en-têtes et les données de la couche N+1",
+      "Les informations provenant de la couche N-1 sont les en-têtes et les données de la couche N"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_084",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quelle(s) couche(s) du modèle OSI sont de bout en bout ?",
+    "answer": "Couche 4, Couche 5, Couche 6, Couche 7",
+    "distractors": [
+      "Couche 3",
+      "Couche 8"
+    ],
+    "explanation": "Les couches 4 à 7 sont de bout en bout. La couche 3 est assurée par chaque routeur, et il n'existe pas de couche 8.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Couche 4",
+      "Couche 5",
+      "Couche 6",
+      "Couche 7"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_085",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Sont des topologies de réseaux vues en cours :",
+    "answer": "Bus, Etoile, Maillée",
+    "distractors": [
+      "Cercle",
+      "Commutateur"
+    ],
+    "explanation": "Bus, étoile et maillée sont des topologies vues en cours. Le commutateur est un équipement, pas une topologie.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Bus",
+      "Etoile",
+      "Maillée"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_086",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "La couche transport du modèle OSI :",
+    "answer": "est de bout en bout",
+    "distractors": [
+      "est de niveau 3",
+      "achemine les paquets"
+    ],
+    "explanation": "La couche transport (niveau 4) est de bout en bout ; l'acheminement des paquets relève de la couche réseau (niveau 3).",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "est de bout en bout"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_087",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "Quel est le rôle de la couche Réseau du modèle OSI ?",
+    "answer": "Acheminer les paquets pour qu'ils arrivent à destination, Fragmenter ou segmenter les paquets si besoin",
+    "distractors": [
+      "Détecter les pertes de paquets",
+      "Etablir une connexion vers le destinataire",
+      "Délimiter le début et la fin des trames"
+    ],
+    "explanation": "La couche réseau achemine les paquets et peut les fragmenter. La détection des pertes, l'établissement de connexion et la délimitation des trames relèvent d'autres couches.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Acheminer les paquets pour qu'ils arrivent à destination",
+      "Fragmenter ou segmenter les paquets si besoin"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_088",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Sont des couches du modèle OSI :",
+    "answer": "Liaison, Réseau, Session, Présentation, Application",
+    "distractors": [
+      "Mac",
+      "TCP"
+    ],
+    "explanation": "Liaison, réseau, session, présentation et application sont des couches OSI. MAC est une sous-couche et TCP un protocole.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Liaison",
+      "Réseau",
+      "Session",
+      "Présentation",
+      "Application"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_089",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 1,
+    "prompt": "Sont des couches du modèle OSI :",
+    "answer": "Physique, Réseau, Transport, Présentation",
+    "distractors": [
+      "Bus",
+      "UDP",
+      "Proxy"
+    ],
+    "explanation": "Physique, réseau, transport et présentation sont des couches OSI. Bus est une topologie, UDP un protocole et proxy un type de serveur intermédiaire.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Physique",
+      "Réseau",
+      "Transport",
+      "Présentation"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_090",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "A propos du mécanisme d'encapsulation du modèle OSI, cocher la ou les bonnes réponses s'il y en a : (où Di désigne les données de la couche i et Hi l'entête (le header) de la couche i) :",
+    "answer": "D2 = H3 + H4 + D4, D3 = H4 + D4",
+    "distractors": [
+      "D4 = H3 + D3",
+      "D3 = H3 + D3"
+    ],
+    "explanation": "En encapsulation, les données d'une couche deviennent les données de la couche inférieure, précédées de son en-tête : D2 = H3 + H4 + D4 et D3 = H4 + D4.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "D2 = H3 + H4 + D4",
+      "D3 = H4 + D4"
+    ]
+  },
+  {
+    "id": "reseaux_architecture_091",
+    "subject": "reseaux",
+    "skill": "reseaux.architecture",
+    "difficulty": 2,
+    "prompt": "A propos du mécanisme d'encapsulation du modèle OSI, cocher la ou les bonnes réponses s'il y en a : (où Di désigne les données de la couche i et Hi l'entête (le header) de la couche i) :",
+    "answer": "D3 = H4 + D4, D2 = H3 + H4 + D4",
+    "distractors": [
+      "D4 = H3 + D3",
+      "D4 = H4 + D4"
+    ],
+    "explanation": "En encapsulation, les en-têtes s'empilent autour des données : D3 = H4 + D4 et D2 = H3 + H4 + D4.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "D3 = H4 + D4",
+      "D2 = H3 + H4 + D4"
+    ]
   }
 ]

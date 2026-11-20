@@ -61,7 +61,17 @@
         "reseaux_architecture_032",
         "reseaux_architecture_033",
         "reseaux_architecture_034",
-        "reseaux_architecture_035"
+        "reseaux_architecture_035",
+        "reseaux_transmission_025",
+        "reseaux_transmission_026",
+        "reseaux_transmission_027",
+        "reseaux_transmission_028",
+        "reseaux_transmission_029",
+        "reseaux_transmission_030",
+        "reseaux_transmission_031",
+        "reseaux_transmission_032",
+        "reseaux_transmission_033",
+        "reseaux_transmission_034"
       ]
     },
     {
@@ -319,7 +329,19 @@
         "reseaux_architecture_010",
         "reseaux_architecture_019",
         "reseaux_architecture_051",
-        "reseaux_architecture_056"
+        "reseaux_architecture_056",
+        "reseaux_architecture_078",
+        "reseaux_architecture_079",
+        "reseaux_architecture_080",
+        "reseaux_architecture_081",
+        "reseaux_architecture_082",
+        "reseaux_architecture_083",
+        "reseaux_architecture_084",
+        "reseaux_architecture_085",
+        "reseaux_architecture_086",
+        "reseaux_architecture_087",
+        "reseaux_architecture_088",
+        "reseaux_architecture_089"
       ]
     },
     {
@@ -416,7 +438,9 @@
         "reseaux_architecture_054",
         "reseaux_architecture_055",
         "reseaux_architecture_058",
-        "reseaux_architecture_059"
+        "reseaux_architecture_059",
+        "reseaux_architecture_090",
+        "reseaux_architecture_091"
       ]
     },
     {
@@ -507,7 +531,15 @@
         "reseaux_architecture_066",
         "reseaux_architecture_067",
         "reseaux_architecture_068",
-        "reseaux_architecture_069"
+        "reseaux_architecture_069",
+        "reseaux_architecture_070",
+        "reseaux_architecture_071",
+        "reseaux_architecture_072",
+        "reseaux_architecture_073",
+        "reseaux_architecture_074",
+        "reseaux_architecture_075",
+        "reseaux_architecture_076",
+        "reseaux_architecture_077"
       ]
     }
   ],

@@ -1308,5 +1308,263 @@
       "single_choice",
       "flashcard"
     ]
+  },
+  {
+    "id": "reseaux_fiabilite_060",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "A propos du contrôle d'intégrité, cocher toutes les affirmations justes :",
+    "answer": "La probabilité pour qu'une trame soit erronée est 1-(1-Teb)^n, Plus une trame est grande, plus elle risque de subir une erreur",
+    "distractors": [
+      "La technique du bit de bourage permet de détecter des erreurs",
+      "La somme de contrôle est calculée uniquement sur l'émetteur"
+    ],
+    "explanation": "Une trame de n bits est correcte avec la probabilité (1-Teb)^n : plus elle est longue, plus elle risque d'être erronée. Le bourage sert à la délimitation.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "La probabilité pour qu'une trame soit erronée est 1-(1-Teb)^n",
+      "Plus une trame est grande, plus elle risque de subir une erreur"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_061",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "A propos de l'efficacité d'un protocole, cocher toutes les affirmations justes :",
+    "answer": "Elle dépend du débit et de la latence, Plus la taille de l'en-tête est petite, plus elle est grande, Plus le RTT est grand, plus elle est petite",
+    "distractors": [
+      "Plus le taux d'erreur binaire est grand, plus elle est grande"
+    ],
+    "explanation": "L'efficacité dépend du débit et de la latence (RTT) ; un petit en-tête l'améliore, un RTT élevé la dégrade et un taux d'erreur élevé la fait baisser.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Elle dépend du débit et de la latence",
+      "Plus la taille de l'en-tête est petite, plus elle est grande",
+      "Plus le RTT est grand, plus elle est petite"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_062",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Cocher les mécanismes non nécessaires à la mise en oeuvre de la fiabilité mais qui permettent de gagner en efficacité :",
+    "answer": "Fenêtre de réception pour stocker les messages arrivés dans le désordre, Piggybacking",
+    "distractors": [
+      "Acquittement",
+      "Point à point"
+    ],
+    "explanation": "La fenêtre de réception et le piggybacking améliorent l'efficacité sans être indispensables à la fiabilité. L'acquittement, lui, est nécessaire.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Fenêtre de réception pour stocker les messages arrivés dans le désordre",
+      "Piggybacking"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_063",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Cocher les mécanismes qui sont nécessaires à la mise en oeuvre de la fiabilité :",
+    "answer": "Temporisateur de retransmission, Fenêtre d'émission",
+    "distractors": [
+      "Fenêtre de réception pour stocker les messages arrivés dans le désordre",
+      "Piggybacking"
+    ],
+    "explanation": "La fiabilité repose sur un temporisateur de retransmission et une fenêtre d'émission ; la fenêtre de réception et le piggybacking sont des optimisations.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Temporisateur de retransmission",
+      "Fenêtre d'émission"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_064",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "La fenêtre de réception stocke les messages erronés.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "La fenêtre de réception stocke les messages arrivés dans le désordre, pas les messages erronés, qui sont rejetés.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_065",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "La fenêtre d'émission stocke les messages envoyés non acquittés.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "L'émetteur conserve les trames envoyées tant qu'elles ne sont pas acquittées, pour pouvoir les retransmettre.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_066",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel(s) type(s) de trame HDLC contient N(R) dans son en-tête :",
+    "answer": "Trame I, Trame S",
+    "distractors": [
+      "Trame U",
+      "Trame G"
+    ],
+    "explanation": "Les trames I et S contiennent N(R), le numéro d'acquittement ; les trames U n'en ont pas.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Trame I",
+      "Trame S"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_067",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 2,
+    "prompt": "Quel(s) type(s) de trame HDLC contient une somme de contrôle de 4 octets :",
+    "answer": "Trame I, Trame S",
+    "distractors": [
+      "Trame U",
+      "Trame G"
+    ],
+    "explanation": "Selon le corrigé des annexes (1C, question 8). À vérifier avec le cours.",
+    "tags": [
+      "annexe",
+      "qcm"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Trame I",
+      "Trame S"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_068",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "HDLC fait du piggybacking.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "HDLC envoie ses acquittements dans les trames de données : c'est le piggybacking.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_069",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "HDLC a une gestion sautante de sa fenêtre d'émission.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Selon le corrigé des annexes (1C, question 10). À vérifier avec le cours.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_070",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "HDLC a une gestion glissante de sa fenêtre d'émission.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Selon le corrigé des annexes (1C, question 11). À vérifier avec le cours.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_fiabilite_071",
+    "subject": "reseaux",
+    "skill": "reseaux.fiabilite",
+    "difficulty": 1,
+    "prompt": "Les compteurs HDLC sont codés sur 3 ou 7 bits.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Les numéros N(S) et N(R) de HDLC sont codés sur 3 bits (modulo 8) ou 7 bits (modulo 128).",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
   }
 ]

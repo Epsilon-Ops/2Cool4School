@@ -1,0 +1,184 @@
+1A - Notions de base
+    1. Il faut échantillonner la voix avant de la transmettre :
+    VRAI
+
+    2. Les paquets peuvent subir des erreurs dans Internet :
+    VRAI
+
+    3. Les réseaux Bluetooth ont une très bonne latence :
+    VRAI
+
+    4. On peut s’affranchir de la fiabilité pour transmettre de la voix :
+    VRAI
+
+    5. La latence dépend principalement du débit :
+    FAUX
+
+    6. Il est préférable de réserver un circuit pour transmettre de la voix :
+    VRAI
+
+    7. Sur Internet, un circuit est réservé entre l’émetteur et le récepteur :
+    FAUX
+
+    8. Les paquets peuvent être ralentis dans Internet :
+    VRAI
+
+    9. Le débit dépend de la distance entre l’émetteur et le récepteur :
+    FAUX
+
+    10. On peut s’affranchir de la fiabilité pour transmettre un fichier :
+    FAUX
+
+1B - Architecture en Couches
+    1. IP est :
+        [x] a. de bout en bout
+        [+] b. non connecté
+        [x] c. fiable
+        [+] d. dans le système d’exploitation
+
+    2. Un navigateur Web envoie une requête DNS sur Internet grâce à une carte réseau Ethernet. Quels sont les protocoles présents dans la trame envoyée contenant cette requête ?
+        [+] a. DNS
+        [+] b. UDP
+        [+] c. IP
+        [+] d. Ethernet
+        [x] e. HTTP
+        [x] f. ICMP
+        [x] g. TCP
+        [x] h. ARP
+
+    3. HTTP est :
+        [x] a. point-à-point
+        [+] b. de bout en bout
+        [x] c. en mode connecté
+        [+] d. un protocole applicatif
+
+    4. TCP est :
+        [x] a. un protocole applicatif
+        [+] b. en mode connecté
+        [x] c. point-à-point
+        [+] d. dans le système d’exploitation
+
+    5. IP est :
+        [x] a. fiable
+        [+] b. en mode connecté
+        [+] c. point-à-point
+        [+] d. dans le système d’exploitation
+
+    6. A propos du mécanisme d’encapsulation dans une architecture en couches, du point de vue de la couche N :
+        [+] a. Les informations provenant de la couche N+1 sont les en-têtes et les données de la couche N+1
+        [+] b. Les données de la couche N sont les en-têtes et les données de la couche N+1
+        [+] c. Les informations provenant de la couche N-1 sont les en-têtes et les données de la couche N
+        [x] d. Les informations provenant de la couche N-1 sont les en-têtes et les données de la couche N+1
+        [x] e. Les données de la couche N+1 sont les en-têtes et les données de la couche N
+
+    7. Quelle(s) couche(s) du modèle OSI sont de bout en bout ? :
+        [x] a. 3
+        [+] b. 4
+        [+] c. 5
+        [+] d. 6
+        [+] e. 7
+        [x] f. 8
+
+    8. Sont des topologies de réseaux vues en cours :
+        [+] a. Bus
+        [+] b. Etoile
+        [x] c. Cercle
+        [+] d. Maillée
+        [x] d. Commutateur
+
+    9. La couche transport du modèle OSI :
+        [x] a. est de niveau 3
+        [+] b. est de bout en bout
+        [x] c. achemine les paquets
+
+    10. Quel est le rôle de la couche Réseau du modèle OSI ? :
+        [+] a. Acheminer les paquets pour qu'ils arrivent à destination
+        [x] b. Détecter les pertes de paquets
+        [+] c. Fragmenter ou segmenter les paquets si besoin
+        [x] d. Etablir une connexion vers le destinataire
+        [x] e. Délimiter le début et la fin des trames
+
+    11. Sont des couches du modèle OSI :
+        [x] a. Mac
+        [+] b. Liaison
+        [+] c. Réseau
+        [x] d. TCP
+        [+] e. Session
+        [+] f. Présentation
+        [+] g. Application
+
+    12. Sont des couches du modèle OSI :
+        [+] a. Physique
+        [x] b. Bus
+        [+] c. Réseau
+        [+] d. Transport
+        [x] e. UDP
+        [+] f. Présentation
+        [x] g. Proxy
+
+    13. A propos du mécanisme d'encapsulation du modèle OSI, cocher la ou les bonnes réponses s'il y en a : (où Di désigne les données de la couche i et Hi l'entête (le header) de la couche i) :
+        [+] a. D2 = H3 + H4 + D4
+        [x] b. D4 = H3 + D3
+        [+] c. D3 = H4 + D4 
+        [x] d. D3 = H3 + D3
+
+    14. A propos du mécanisme d'encapsulation du modèle OSI, cocher la ou les bonnes réponses s'il y en a : (où Di désigne les données de la couche i et Hi l'entête (le header) de la couche i) :
+        [+] a. D3 = H4 + D4
+        [x] b. D4 = H3 + D3
+        [x] c. D4 = H4 + D4 
+        [+] d. D2 = H3 + H4 + D4
+
+1C - Fiabilité des Protocoles
+    1. A propos du contrôle d'intégrité, cocher toutes les affirmations justes :
+        [+] a. La probabilité pour qu’une trame soit erronée est 1-(1-Teb)^n
+        [x] b. La technique du bit de bourage permet de détecter des erreurs
+        [x] c. La somme de contrôle est calculée uniquement sur l’émetteur
+        [+] d. Plus une trame est grande, plus elle risque de subir une erreur
+
+    2. A propos de l’efficacité d’un protocole, cocher toutes les affirmations justes :
+        [+] a. Elle dépend du débit et de la latence
+        [x] b. Plus le taux d’erreur binaire est grand, plus elle est grande
+        [+] c. Plus la taille de l’en-tête est petite, plus elle est grande
+        [+] d. Plus le RTT est grand, plus elle est petite
+
+    3. Cocher les mécanismes non nécessaires à la mise en oeuvre de la fiabilité mais qui permettent de gagner en efficacité :
+        [+] a. Fenêtre de réception pour stocker les messages arrivés dans le désordre
+        [+] b. Piggybacking
+        [x] c. Acquittement
+        [x] d. Point à point
+
+    4. Cocher les mécanismes qui sont nécessaires à la mise en œuvre de la fiabilité :
+        [x] a. Fenêtre de réception pour stocker les messages arrivés dans le désordre
+        [x] b. Piggybacking
+        [+] c. Temporisateur de retransmission
+        [+] d. Fenêtre d’émission
+
+    5. La fenêtre de réception stocke les messages erronés :
+        FAUX
+
+    6. La fenêtre d’émission stocke les messages envoyés non acquittés :
+        VRAI
+
+    7. Quel(s) type(s) de trame HDLC contient Nr dans son en-tête :
+        [+] a. I
+        [+] b. S
+        [x] c. U
+        [x] d. G
+
+    8. Quel(s) type(s) de trame HDLC contient une somme de contrôle de 4 octets :
+        [+] a. I
+        [+] b. S
+        [x] c. U
+        [x] d. G
+
+    9. HDLC fait du piggybacking :
+        VRAI
+
+    10. HDLC a une gestion sautante de sa fenêtre d’émission :
+        VRAI
+
+    11. HDLC a une gestion glissante de sa fenêtre d’émission :
+        FAUX
+
+    12. Les compteurs HDLC sont codés sur 3 ou 7 bits :
+        VRAI

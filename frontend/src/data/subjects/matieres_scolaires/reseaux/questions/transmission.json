@@ -1,4 +1,3 @@
-
 [
   {
     "id": "reseaux_transmission_001",
@@ -13,8 +12,16 @@
       "Le câble téléphonique en cuivre"
     ],
     "explanation": "La fibre optique transporte les données grâce à des impulsions lumineuses.",
-    "tags": ["transmission", "supports", "fibre_optique"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "transmission",
+      "supports",
+      "fibre_optique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "reseaux_transmission_002",
@@ -29,8 +36,15 @@
       "Elle est toujours moins chère à installer"
     ],
     "explanation": "La fibre optique permet généralement de transporter beaucoup de données sur de longues distances avec peu d'atténuation.",
-    "tags": ["transmission", "comparaison", "fibre_optique"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "comparaison",
+      "fibre_optique"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_003",
@@ -45,8 +59,16 @@
       "La taille physique du câble"
     ],
     "explanation": "Le débit mesure une quantité de données transférées pendant une durée, souvent en bits par seconde.",
-    "tags": ["transmission", "debit", "definition"],
-    "formats": ["single_choice", "flashcard", "true_false"]
+    "tags": [
+      "transmission",
+      "debit",
+      "definition"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false"
+    ]
   },
   {
     "id": "reseaux_transmission_004",
@@ -61,8 +83,16 @@
       "Le hertz uniquement"
     ],
     "explanation": "Le débit réseau s'exprime en bits par seconde, avec des multiples comme kbit/s, Mbit/s ou Gbit/s.",
-    "tags": ["transmission", "debit", "unites"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "transmission",
+      "debit",
+      "unites"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "L'unité courante du débit réseau est le {{blank}}."
   },
   {
@@ -78,8 +108,16 @@
       "16 bits"
     ],
     "explanation": "Un octet est composé de 8 bits. Cette conversion est indispensable pour calculer des temps de transfert.",
-    "tags": ["transmission", "conversion", "bits_octets"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "transmission",
+      "conversion",
+      "bits_octets"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Un octet contient {{blank}} bits."
   },
   {
@@ -95,8 +133,15 @@
       "1,25 Mo"
     ],
     "explanation": "100 Mbit/s ÷ 8 = 12,5 Mo/s, en utilisant 8 bits par octet et en négligeant les pertes et surcharges.",
-    "tags": ["transmission", "debit", "conversion"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "debit",
+      "conversion"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_008",
@@ -111,8 +156,16 @@
       "80 secondes"
     ],
     "explanation": "100 Mo = 800 Mb. Temps = quantité de données / débit = 800 Mb / 100 Mbit/s = 8 s.",
-    "tags": ["transmission", "temps_transfert", "calcul"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "transmission",
+      "temps_transfert",
+      "calcul"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Transmettre 100 Mo sur une liaison de 100 Mbit/s prend théoriquement {{blank}}."
   },
   {
@@ -128,8 +181,16 @@
       "Environ 1,39 Go/s"
     ],
     "explanation": "4 heures = 14 400 s. 2 × 10^12 octets / 14 400 s ≈ 138 888 889 octets/s, soit environ 139 Mo/s.",
-    "tags": ["transmission", "transport_physique", "debit_equivalent", "calcul"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "transport_physique",
+      "debit_equivalent",
+      "calcul"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_010",
@@ -144,8 +205,15 @@
       "Parce que les octets deviennent des kilomètres"
     ],
     "explanation": "On compare les moyens en calculant une quantité de données transportée par unité de temps.",
-    "tags": ["transmission", "transport_physique", "debit_equivalent"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "transport_physique",
+      "debit_equivalent"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_012",
@@ -160,8 +228,15 @@
       "Lorsque la distance n'a aucune importance"
     ],
     "explanation": "Le transport physique peut avoir un débit équivalent élevé pour de très grandes quantités de données, mais il faut tenir compte du temps de trajet et de préparation.",
-    "tags": ["transmission", "comparaison", "livreur"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "comparaison",
+      "livreur"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_013",
@@ -176,8 +251,16 @@
       "Temps = distance / taille du fichier"
     ],
     "explanation": "Les unités doivent être cohérentes : bits divisés par bits par seconde donnent des secondes.",
-    "tags": ["transmission", "temps_transfert", "formule"],
-    "formats": ["single_choice", "flashcard", "fill_blank"],
+    "tags": [
+      "transmission",
+      "temps_transfert",
+      "formule"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "fill_blank"
+    ],
     "cloze": "Le temps de transfert se calcule par : taille en bits / {{blank}}."
   },
   {
@@ -193,8 +276,16 @@
       "Impossible à comparer même après conversion"
     ],
     "explanation": "100 Mbit/s = 12,5 Mo/s. Le livreur : 1 000 000 Mo / 18 000 s ≈ 55,6 Mo/s. Le livreur a donc le débit moyen le plus élevé.",
-    "tags": ["transmission", "comparaison", "transport_physique", "calcul"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "comparaison",
+      "transport_physique",
+      "calcul"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_021",
@@ -209,8 +300,15 @@
       "1 000 km"
     ],
     "explanation": "100 Go = 800 Gbit = 800 000 Mbit. Temps réseau = 800 000 / 100 = 8 000 s, soit environ 2,22 h. Distance seuil = 50 km/h × 2,22 h ≈ 111 km.",
-    "tags": ["transmission", "distance_seuil", "calcul"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "distance_seuil",
+      "calcul"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_022",
@@ -225,8 +323,15 @@
       "Distance seuil = vitesse / temps de transfert"
     ],
     "explanation": "On calcule d'abord le temps de transfert réseau, puis on multiplie ce temps par la vitesse du transporteur, avec des unités cohérentes.",
-    "tags": ["transmission", "distance_seuil", "formule"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "distance_seuil",
+      "formule"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
   },
   {
     "id": "reseaux_transmission_024",
@@ -241,7 +346,204 @@
       "Le nom du fichier uniquement"
     ],
     "explanation": "Le débit utile peut être inférieur au débit annoncé à cause des en-têtes, des retransmissions, de la congestion ou des limites des équipements.",
-    "tags": ["transmission", "temps_transfert", "debit_reel"],
-    "formats": ["single_choice", "flashcard"]
+    "tags": [
+      "transmission",
+      "temps_transfert",
+      "debit_reel"
+    ],
+    "formats": [
+      "single_choice",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_025",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Il faut échantillonner la voix avant de la transmettre.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "La voix est un signal continu : elle doit être échantillonnée puis convertie en binaire avant d'être transmise sous forme numérique.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_026",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Les paquets peuvent subir des erreurs dans Internet.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Sur Internet, les paquets peuvent être altérés par le bruit ou perdus, d'où le besoin de mécanismes de fiabilité.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_027",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Les réseaux Bluetooth ont une très bonne latence.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Sur de courtes distances, Bluetooth offre une latence faible.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_028",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "On peut s'affranchir de la fiabilité pour transmettre de la voix.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Une trame de voix perdue donne un bref défaut sonore, toléré, alors qu'une retransmission ajouterait un délai gênant.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_029",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "La latence dépend principalement du débit.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "La latence est un délai : elle dépend surtout de la distance, des équipements traversés et des files d'attente, pas principalement du débit.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_030",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Il est préférable de réserver un circuit pour transmettre de la voix.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "Un circuit réservé garantit un débit et un délai réguliers, ce qui convient au temps réel.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_031",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Sur Internet, un circuit est réservé entre l'émetteur et le récepteur.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Internet fonctionne en commutation de paquets : aucun circuit n'est réservé, chaque paquet est acheminé indépendamment.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_032",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Les paquets peuvent être ralentis dans Internet.",
+    "answer": "Vrai",
+    "distractors": [
+      "Faux"
+    ],
+    "explanation": "La congestion dans les routeurs peut ralentir les paquets.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_033",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "Le débit dépend de la distance entre l'émetteur et le récepteur.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Le débit dépend de la technologie et de la bande passante ; la distance agit surtout sur la latence et l'atténuation.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
+  },
+  {
+    "id": "reseaux_transmission_034",
+    "subject": "reseaux",
+    "skill": "reseaux.transmission",
+    "difficulty": 1,
+    "prompt": "On peut s'affranchir de la fiabilité pour transmettre un fichier.",
+    "answer": "Faux",
+    "distractors": [
+      "Vrai"
+    ],
+    "explanation": "Un fichier doit arriver intact : une perte ou une erreur le rendrait inutilisable, la fiabilité est donc indispensable.",
+    "tags": [
+      "annexe",
+      "vrai_faux"
+    ],
+    "formats": [
+      "true_false"
+    ]
   }
 ]
