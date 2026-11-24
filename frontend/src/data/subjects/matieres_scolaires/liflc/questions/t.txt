@@ -1,0 +1,25 @@
+
+
+{
+  "id": "math_expression_004",
+  "subject": "liflc",
+  "skill": "liflc.stability",
+  "difficulty": 2,
+  "prompt": "Développer et réduire l'expression suivante : {a}(x + {b}) + {c}x.",
+  "expression": "{a}*(x+{b})+{c}*x",
+  "variables": {
+    "a": { "range": [2, 8], "integer": true },
+    "b": { "range": [1, 9], "integer": true },
+    "c": { "range": [2, 8], "integer": true }
+  },
+  "expected": "{a+c}*x+{a*b}",
+  "steps": [
+    "{a}x+{a*b}+{c}x",
+    "{a+c}x+{a*b}"
+  ],
+  "answerMode": "expression",
+  "requireSteps": true,
+  "placeholder": "Écris ton résultat...",
+  "explanation": "On distribue le coefficient devant la parenthèse, puis on regroupe les termes en x.",
+  "formats": ["math_expression"]
+}

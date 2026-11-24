@@ -5,6 +5,8 @@ import {
   CHALLENGE_TEMPLATES, WEEKLY_TARGETS, GROUPS, challengeStatus,
 } from '../engine/gamification.js';
 import { weekAnswers, dailySeries, weeklySeries, regularWeeks } from '../engine/activity.js';
+import { DEFAULT_PROGRESS } from '../engine/progress.js';
+import { levelInfo } from '../engine/levels.js';
 
 const BADGE_GROUPS = ['reussite', 'perseverance', 'polyvalence', 'maitrise', 'regularite', 'objectif', 'defi', 'domaine'];
 const LEVEL_TIP = 'XP : un exercice nouveau rapporte davantage qu’un exercice déjà maîtrisé. Une erreur rapporte 2 XP.';
@@ -24,6 +26,15 @@ export default function Trophies({ subjects, bank, courses, progress, onUpdate }
   const profile = progress.profile ?? {};
 
   const setProfile = (patch) => onUpdate((p) => ({ ...p, profile: { ...p.profile, ...patch } }));
+  const lvl = levelInfo(progress.xp ?? 0);
+
+  /** Remise à zéro complète : connaissances, récompenses, XP, niveau, historique, profil et réglages. */
+  const resetTotal = () => {
+    if (!window.confirm('Reset total : toutes tes connaissances, récompenses, XP et ton niveau seront effacés. Continuer ?')) return;
+    const typed = window.prompt('Pour confirmer, tape RESET (en majuscules).');
+    if (typed !== 'RESET') return;
+    onUpdate(() => structuredClone(DEFAULT_PROGRESS));
+  };
 
   return (
     <div className="trophies">
@@ -36,12 +47,19 @@ export default function Trophies({ subjects, bank, courses, progress, onUpdate }
             <span> · {profile.title ? titles.find((t) => t.id === profile.title)?.title ?? '' : 'sans titre'}</span>
           </h1>
           <p className="muted">
-            Niveau de connaissances : <b>{know.level.name}</b> · maîtrise moyenne <b>{know.avg} %</b>
+            Niveau {lvl.level} : <b>{lvl.pct} %</b> du niveau · {lvl.toNext} XP avant le niveau {lvl.level + 1}
+            <br />Niveau de connaissances : <b>{know.level.name}</b> · maîtrise moyenne <b>{know.avg} %</b>
             {know.next ? ` · encore ${Math.ceil(know.toNext)} points vers ${know.next.name}` : ' · niveau maximal'}
           </p>
           <div className="hud-bar"><div style={{ width: `${know.pct}%` }} /></div>
           <p className="muted small">{unlockedCount} / {items.length} succès obtenus · {titles.length} titre{titles.length > 1 ? 's' : ''} débloqué{titles.length > 1 ? 's' : ''}</p>
         </div>
+      </section>
+
+      <section className="panel danger-zone">
+        <h3>Réinitialisation</h3>
+        <p className="muted small">Efface toutes tes connaissances, récompenses, XP, niveau, historique et réglages. Action irréversible.</p>
+        <button className="btn danger" onClick={resetTotal}>Reset total</button>
       </section>
 
       <section className="panel">

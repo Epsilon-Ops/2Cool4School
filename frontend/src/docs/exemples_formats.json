@@ -1,0 +1,1699 @@
+[
+  {
+    "id": "ex_single_choice",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Que signifie « Good morning » ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "single_choice"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Bonjour",
+    "distractors": [
+      "Bonsoir",
+      "Au revoir",
+      "Merci"
+    ],
+    "why": {
+      "Bonsoir": "« Bonsoir » est la formule du soir, pas du matin.",
+      "Au revoir": "« Au revoir » sert à quitter quelqu'un.",
+      "Merci": "« Merci » exprime la gratitude."
+    }
+  },
+  {
+    "id": "ex_true_false",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Un triangle possède trois côtés.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "true_false"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Un triangle a trois côtés",
+    "distractors": [
+      "Un triangle a quatre côtés"
+    ]
+  },
+  {
+    "id": "ex_flashcard",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Définis la bande passante.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "flashcard"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Quantité maximale de données transmissible par seconde."
+  },
+  {
+    "id": "ex_fill_blank",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète la phrase.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "fill_blank"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Rome",
+    "cloze": "La capitale de l'Italie est {{blank}}.",
+    "answers": [
+      "Rome"
+    ]
+  },
+  {
+    "id": "ex_ordering",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Remets les étapes dans l'ordre.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "ordering"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "steps": [
+      "Émettre",
+      "Transmettre",
+      "Recevoir",
+      "Décoder"
+    ]
+  },
+  {
+    "id": "ex_matching",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Associe chaque protocole à son rôle.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "matching"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "pairs": [
+      [
+        "TCP",
+        "Transport fiable"
+      ],
+      [
+        "IP",
+        "Adressage et routage"
+      ]
+    ]
+  },
+  {
+    "id": "ex_numeric",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Combien font 7 × 8 ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "numeric"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "56"
+  },
+  {
+    "id": "ex_multi_choice",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Lesquels sont des protocoles de la couche transport ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "multi_choice"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answers": [
+      "TCP",
+      "UDP"
+    ],
+    "distractors": [
+      "IP",
+      "Ethernet"
+    ]
+  },
+  {
+    "id": "ex_short_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Quelle est la capitale de la France ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "short_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Paris",
+    "accepts": [
+      "paris"
+    ],
+    "placeholder": "Nom de la ville"
+  },
+  {
+    "id": "ex_long_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Explique le rôle de la couche transport.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "long_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "La couche transport assure la communication de bout en bout entre processus : découpage, contrôle de flux et fiabilité (TCP) ou non (UDP).",
+    "criteria": [
+      "Parle de bout en bout",
+      "Cite le contrôle de flux",
+      "Distingue TCP et UDP"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "bout en bout",
+          "entre processus",
+          "processus"
+        ],
+        [
+          "controle de flux",
+          "controle du flux",
+          "flux"
+        ]
+      ],
+      "labels": [
+        "Communication de bout en bout",
+        "Contrôle de flux"
+      ],
+      "optional": [
+        [
+          "fiabilite",
+          "fiable"
+        ],
+        [
+          "tcp"
+        ],
+        [
+          "udp"
+        ]
+      ],
+      "forbidden": [
+        "couche reseau"
+      ],
+      "minWords": 8
+    }
+  },
+  {
+    "id": "ex_math_expression",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Développer et réduire l'expression suivante : {a}(x + {b}) + {c}x.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "math_expression"
+    ],
+    "explanation": "On distribue le coefficient devant la parenthèse, puis on regroupe les termes en x.",
+    "answer": "2x+3",
+    "accepts": [
+      "3+2x"
+    ],
+    "placeholder": "ex. 2x+3",
+    "variables": {
+      "a": {
+        "range": [
+          2,
+          8
+        ],
+        "integer": true
+      },
+      "b": {
+        "range": [
+          1,
+          9
+        ],
+        "integer": true
+      },
+      "c": {
+        "range": [
+          2,
+          8
+        ],
+        "integer": true
+      }
+    },
+    "expected": "{a+c}*x+{a*b}",
+    "steps": [
+      "{a}x+{a*b}+{c}x",
+      "{a+c}x+{a*b}"
+    ],
+    "answerMode": "expression",
+    "requireSteps": true
+  },
+  {
+    "id": "ex_code_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Écris une fonction somme(a, b) qui renvoie a + b.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "code_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "def somme(a, b):\n    return a + b",
+    "lang": "python",
+    "mustDefine": "somme",
+    "criteria": [
+      "Le résultat est a + b"
+    ]
+  },
+  {
+    "id": "ex_proof",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Démontre que la somme de deux nombres pairs est paire.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "proof"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Soient a = 2p et b = 2q. Alors a + b = 2(p + q), donc a + b est pair.",
+    "criteria": [
+      "Pose les hypothèses",
+      "Utilise la définition de pair",
+      "Conclut"
+    ]
+  },
+  {
+    "id": "ex_guided_proof",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète la preuve.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "guided_proof"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "cloze": "Soit n pair : n = {{blank}}.\nDonc n + 2 = {{blank}} + 2 = 2(k + 1).",
+    "answers": [
+      "2k",
+      "2k"
+    ]
+  },
+  {
+    "id": "ex_proof_completion",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Remplis les arguments manquants.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "proof_completion"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "cloze": "Si a divise b et b divise c, alors {{blank}} divise c par {{blank}}.",
+    "answers": [
+      "a",
+      "transitivité"
+    ]
+  },
+  {
+    "id": "ex_proof_reordering",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Organise les étapes de la preuve.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "proof_reordering"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "steps": [
+      "Hypothèse : n est pair",
+      "Donc n = 2k",
+      "Donc n² = 4k²",
+      "Donc n² est pair"
+    ]
+  },
+  {
+    "id": "ex_proof_error_detection",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Trouve l'étape incorrecte.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "proof_error_detection"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "steps": [
+      "n est impair : n = 2k + 1",
+      "n² = 4k² + 4k + 1",
+      "n² = 2(2k² + 2k) + 1",
+      "Donc n² est pair"
+    ],
+    "error": 3,
+    "why": {
+      "3": "À l'étape 4, la conclusion « n² est pair » ne découle pas de l'écriture précédente : 2(2k²+2k)+1 est impair."
+    }
+  },
+  {
+    "id": "ex_justify_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Le nombre 17 est-il premier ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "justify_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Oui",
+    "justification": "Ses seuls diviseurs sont 1 et 17.",
+    "answerLabel": "Réponse",
+    "justifyLabel": "Justification",
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "diviseurs",
+          "divisible",
+          "divise"
+        ],
+        [
+          "1 et 17",
+          "1 ou 17",
+          "uniquement 1",
+          "seulement 1"
+        ]
+      ],
+      "labels": [
+        "Parle des diviseurs",
+        "Cite 1 et 17"
+      ],
+      "minWords": 4
+    }
+  },
+  {
+    "id": "ex_numeric_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne la longueur de l'hypoténuse d'un triangle de côtés 5 et 12 (cm), à 0,1 près.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "numeric_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "13",
+    "unit": "cm",
+    "tolerance": {
+      "abs": 0.1
+    }
+  },
+  {
+    "id": "ex_equation_solver",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Résous x² + x − 6 = 0.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "equation_solver"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "S = {2 ; -3}",
+    "equation": "x^2 + x - 6 = 0",
+    "hint": "Factorise en (x-2)(x+3)."
+  },
+  {
+    "id": "ex_logic_circuit",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne la sortie du circuit.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "logic_circuit"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "expression": "A & (!B | C)"
+  },
+  {
+    "id": "ex_induction_proof",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Démontre par récurrence que 1 + 2 + … + n = n(n+1)/2.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "induction_proof"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "sections": [
+      {
+        "label": "Initialisation",
+        "answer": "Pour n = 1 : 1 = 1·2/2, vrai.",
+        "criteria": [
+          "Vérifie le premier rang"
+        ]
+      },
+      {
+        "label": "Hérédité",
+        "answer": "Si la propriété est vraie au rang n, alors en ajoutant n+1 on obtient (n+1)(n+2)/2.",
+        "evaluation": {
+          "type": "semantic",
+          "required": [
+            [
+              "hypothese",
+              "supposons",
+              "si la propriete"
+            ],
+            [
+              "n+1",
+              "n + 1"
+            ]
+          ],
+          "labels": [
+            "Pose l'hypothèse",
+            "Ajoute n+1"
+          ]
+        }
+      }
+    ]
+  },
+  {
+    "id": "ex_expression_simplification",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Simplifie 2(x + 3) − 2x.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "expression_simplification"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "6",
+    "hint": "Développe puis réduis.",
+    "expression": "2(x+3)-2*x"
+  },
+  {
+    "id": "ex_matrix_operation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète la matrice produit.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "matrix_operation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": [
+      [
+        1,
+        2
+      ],
+      [
+        3,
+        4
+      ]
+    ],
+    "table": [
+      [
+        "?",
+        "?"
+      ],
+      [
+        "?",
+        "?"
+      ]
+    ]
+  },
+  {
+    "id": "ex_confusion_matrix",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète la matrice de confusion.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "confusion_matrix"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": [
+      [
+        "",
+        "Prédit +",
+        "Prédit −"
+      ],
+      [
+        "Réel +",
+        "8",
+        "2"
+      ],
+      [
+        "Réel −",
+        "1",
+        "9"
+      ]
+    ],
+    "table": [
+      [
+        "",
+        "Prédit +",
+        "Prédit −"
+      ],
+      [
+        "Réel +",
+        "?",
+        "?"
+      ],
+      [
+        "Réel −",
+        "?",
+        "?"
+      ]
+    ]
+  },
+  {
+    "id": "ex_probability_tree",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Calcule les probabilités de l'arbre.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "probability_tree"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "paths": [
+      {
+        "label": "P(A)",
+        "answer": "30 %"
+      },
+      {
+        "label": "P(B | A)",
+        "answer": "1/2"
+      }
+    ]
+  },
+  {
+    "id": "ex_sequence_completion",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Trouve les termes de la suite uₙ = 2ⁿ.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "sequence_completion"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "u₃",
+        "answer": "8"
+      },
+      {
+        "label": "u₄",
+        "answer": "16"
+      }
+    ]
+  },
+  {
+    "id": "ex_multi_step_calculation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Calcule (3 + 9) × 3.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "multi_step_calculation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "Étape 1 : 3 + 9",
+        "answer": "12"
+      },
+      {
+        "label": "Résultat",
+        "answer": "36"
+      }
+    ]
+  },
+  {
+    "id": "ex_function_analysis",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Étudie f(x) = ln(x).",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "function_analysis"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "Domaine",
+        "answer": "]0;+∞[",
+        "kind": "interval"
+      },
+      {
+        "label": "Dérivée",
+        "answer": "1/x",
+        "kind": "expression"
+      }
+    ]
+  },
+  {
+    "id": "ex_coordinate_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne les coordonnées du symétrique de (2 ; −3) par rapport à l'origine.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "coordinate_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "(-2 ; 3)"
+  },
+  {
+    "id": "ex_interval_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne l'ensemble des solutions de x ≤ 2 ou x ≥ 5.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "interval_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "]-∞;2] ∪ [5;+∞["
+  },
+  {
+    "id": "ex_vector_operation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Calcule u + v avec u(1 ; 2) et v(2 ; −3).",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "vector_operation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "(3 ; -1)"
+  },
+  {
+    "id": "ex_counterexample",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Trouve un contre-exemple à : « si x² > 4 alors x > 2 ».",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "counterexample"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "2 est premier et pair.",
+    "hypothesis": "x^2 > 4",
+    "conclusion": "x > 2",
+    "variable": "x"
+  },
+  {
+    "id": "ex_case_analysis",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne la dérivée de f(x) = |x| · x selon le signe de x.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "case_analysis"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "x > 0",
+        "answer": "2x"
+      },
+      {
+        "label": "x < 0",
+        "answer": "-2x"
+      }
+    ],
+    "kind_hint": "text"
+  },
+  {
+    "id": "ex_estimate_answer",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Estime 2,7 × 10⁸ × 3 (ordre de grandeur).",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "estimate_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "800000000"
+  },
+  {
+    "id": "ex_recursive_trace",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Calcule f(2) et f(3) avec f(n) = f(n−1) + n et f(1) = 1.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "recursive_trace"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "f(2)",
+        "answer": "3"
+      },
+      {
+        "label": "f(3)",
+        "answer": "6"
+      }
+    ],
+    "code": "def f(n):\n    if n == 1: return 1\n    return f(n-1) + n"
+  },
+  {
+    "id": "ex_code_completion",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète la fonction carré.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "code_completion"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "cloze": "def carre(x):\n    return {{blank}}",
+    "answers": [
+      [
+        "x * x",
+        "x**2"
+      ]
+    ],
+    "code": "def carre(x):\n    return {{blank}}"
+  },
+  {
+    "id": "ex_debugging",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Corrige la fonction moyenne.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "debugging"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "def moyenne(a, b):\n    return (a + b) / 2",
+    "code": "def moyenne(a, b):\n    return a + b / 2"
+  },
+  {
+    "id": "ex_code_output",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Quel est l'affichage de ce programme ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "code_output"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "0\n1\n2",
+    "code": "for i in range(3):\n    print(i)"
+  },
+  {
+    "id": "ex_execution_trace",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète la trace de la boucle.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "execution_trace"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": [
+      [
+        "i",
+        "s"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "1"
+      ],
+      [
+        "2",
+        "3"
+      ]
+    ],
+    "table": [
+      [
+        "i",
+        "s"
+      ],
+      [
+        "0",
+        "0"
+      ],
+      [
+        "1",
+        "?"
+      ],
+      [
+        "2",
+        "?"
+      ]
+    ],
+    "code": "s = 0\nfor i in range(3):\n    s = s + i"
+  },
+  {
+    "id": "ex_refactoring",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Simplifie ce code sans changer son comportement.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "refactoring"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "x = x + 2",
+    "code": "x = x + 1\nx = x + 1"
+  },
+  {
+    "id": "ex_complexity_analysis",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne la complexité au pire cas de la recherche linéaire.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "complexity_analysis"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "Pire cas",
+        "answer": "O(n)",
+        "accepts": [
+          "O(n)"
+        ]
+      },
+      {
+        "label": "Meilleur cas",
+        "answer": "Θ(1)",
+        "accepts": [
+          "O(1)"
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_translation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Traduis : « Bonjour le matin ».",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "translation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Good morning",
+    "accepts": [
+      "good morning!"
+    ],
+    "source": "Bonjour le matin"
+  },
+  {
+    "id": "ex_speaking",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Dis cette phrase à voix haute.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "speaking"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Good morning",
+    "lang": "en-US"
+  },
+  {
+    "id": "ex_pronunciation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Prononce ce mot.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "pronunciation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Thank you",
+    "lang": "en-US"
+  },
+  {
+    "id": "ex_listening",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Écoute et réponds : que signifie la phrase entendue ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "listening"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Bonjour",
+    "audio": "Good morning, how are you?",
+    "lang": "en-US",
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "bonjour",
+          "salut"
+        ]
+      ],
+      "labels": [
+        "Salutation traduite"
+      ]
+    }
+  },
+  {
+    "id": "ex_reading_comprehension",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Où part Marie ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "reading_comprehension"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Lyon",
+    "passage": "Marie part à Lyon demain matin en train.",
+    "distractors": [
+      "Paris",
+      "Marseille"
+    ],
+    "why": {
+      "Paris": "Marie ne part pas à Paris.",
+      "Marseille": "Il n'est jamais question de Marseille."
+    }
+  },
+  {
+    "id": "ex_conjugation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Conjugue « être » au présent.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "conjugation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "parts": [
+      {
+        "label": "je",
+        "answer": "suis"
+      },
+      {
+        "label": "nous",
+        "answer": "sommes"
+      }
+    ]
+  },
+  {
+    "id": "ex_dialogue_completion",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète le dialogue.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "dialogue_completion"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "cloze": "A : Bonjour, comment vas-tu ?\nB : {{blank}}, merci.",
+    "answers": [
+      "Très bien"
+    ]
+  },
+  {
+    "id": "ex_dictation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Écris ce que tu entends.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "dictation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Je suis content.",
+    "audio": "Je suis content.",
+    "lang": "fr-FR"
+  },
+  {
+    "id": "ex_vocabulary_matching",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Associe les mots.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "vocabulary_matching"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "pairs": [
+      [
+        "Hello",
+        "Bonjour"
+      ],
+      [
+        "Goodbye",
+        "Au revoir"
+      ]
+    ]
+  },
+  {
+    "id": "ex_contextual_vocabulary",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Quel mot convient au sens de la phrase ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "contextual_vocabulary"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "immobile",
+    "context": "Le lac était si calme qu'il paraissait immobile.",
+    "distractors": [
+      "agité",
+      "profond"
+    ],
+    "why": {
+      "agité": "Une eau agitée n'est pas immobile.",
+      "profond": "« Profond » ne décrit pas l'immobilité."
+    }
+  },
+  {
+    "id": "ex_word_order",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Remets les mots dans l'ordre.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "word_order"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "steps": [
+      "Je",
+      "mange",
+      "une",
+      "pomme"
+    ]
+  },
+  {
+    "id": "ex_conversation_roleplay",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Réponds au serveur.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "conversation_roleplay"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "turns": [
+      {
+        "speaker": "Serveur",
+        "say": "Hello, can I help you?",
+        "choices": [
+          "Yes, I'd like a coffee.",
+          "Goodbye."
+        ],
+        "correct": 0,
+        "notes": [
+          "",
+          "Au revoir, mais la question demandait une commande."
+        ]
+      },
+      {
+        "speaker": "Serveur",
+        "say": "Would you like sugar?",
+        "choices": [
+          "No, thank you.",
+          "Blue."
+        ],
+        "correct": 0,
+        "notes": [
+          "",
+          "« Blue » n'est pas une réponse à la question."
+        ]
+      }
+    ]
+  },
+  {
+    "id": "ex_source_analysis",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Analyse ce document.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "source_analysis"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "sections": [
+      {
+        "label": "Auteur",
+        "answer": "Un soldat de 1914.",
+        "evaluation": {
+          "type": "semantic",
+          "required": [
+            [
+              "soldat",
+              "combattant",
+              "militaire"
+            ]
+          ],
+          "labels": [
+            "Identifie l'auteur"
+          ]
+        }
+      },
+      {
+        "label": "Fiabilité",
+        "answer": "Témoignage direct, mais subjectif.",
+        "evaluation": {
+          "type": "semantic",
+          "required": [
+            [
+              "subjectif",
+              "personnel",
+              "partial"
+            ],
+            [
+              "direct",
+              "temoin"
+            ]
+          ],
+          "labels": [
+            "Subjectivité",
+            "Caractère direct"
+          ]
+        }
+      }
+    ],
+    "source": "Extrait d'une lettre de 1914 ..."
+  },
+  {
+    "id": "ex_historical_comparison",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Compare la Révolution française et la Révolution américaine.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "historical_comparison"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "sections": [
+      {
+        "label": "Points communs",
+        "answer": "Idées des Lumières, rupture politique."
+      },
+      {
+        "label": "Différences",
+        "answer": "Contexte social et violence en France."
+      }
+    ]
+  },
+  {
+    "id": "ex_scientific_calculation",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Calcule l'énergie potentielle (m = 2 kg, g = 9,8 m/s², h = 1 m).",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "scientific_calculation"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "19,6",
+    "unit": "J",
+    "formula": "E = m × g × h",
+    "sigfigs": 3,
+    "requireUnit": true
+  },
+  {
+    "id": "ex_data_analysis",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Interprète le tableau.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "data_analysis"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "sections": [
+      {
+        "label": "Interprétation",
+        "answer": "Le groupe A a une moyenne supérieure au groupe B."
+      }
+    ],
+    "data": [
+      [
+        "Groupe",
+        "Moyenne"
+      ],
+      [
+        "A",
+        "12"
+      ],
+      [
+        "B",
+        "9"
+      ]
+    ]
+  },
+  {
+    "id": "ex_graph_builder",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Construis le graphe du triangle ABC.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "graph_builder"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "A-B, B-C, C-A",
+    "vertices": [
+      "A",
+      "B",
+      "C"
+    ]
+  },
+  {
+    "id": "ex_geometry_canvas",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne les coordonnées des sommets du triangle.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "geometry_canvas"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "vertices": {
+      "A": [
+        0,
+        0
+      ],
+      "B": [
+        4,
+        0
+      ],
+      "C": [
+        0,
+        3
+      ]
+    }
+  },
+  {
+    "id": "ex_block_programming",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Construis le programme avec les blocs.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "block_programming"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "blocks": [
+      "Initialiser x = 0",
+      "Répéter 3 fois",
+      "Ajouter 1 à x",
+      "Afficher x"
+    ]
+  },
+  {
+    "id": "ex_odd_one_out",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Quel élément est l'intrus ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "odd_one_out"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Carotte",
+    "distractors": [
+      "Pomme",
+      "Poire",
+      "Banane"
+    ],
+    "why": {
+      "Pomme": "La pomme est un fruit, la carotte est un légume.",
+      "Poire": "La poire est un fruit.",
+      "Banane": "La banane est un fruit."
+    }
+  },
+  {
+    "id": "ex_table_completion",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Complète le tableau des prix.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "table_completion"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": [
+      [
+        "Produit",
+        "Prix"
+      ],
+      [
+        "Pain",
+        "1,20"
+      ]
+    ],
+    "table": [
+      [
+        "Produit",
+        "Prix"
+      ],
+      [
+        "Pain",
+        "?"
+      ]
+    ]
+  },
+  {
+    "id": "ex_logic_write",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Écris une expression qui donne cette table.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "logic_circuit"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "mode": "write",
+    "target": "A & !B"
+  },
+  {
+    "id": "ex_numeric_sigfigs",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne la masse volumique à 3 chiffres significatifs.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "numeric_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "2,70",
+    "unit": "g/cm3",
+    "sigfigs": 3,
+    "requireUnit": false
+  },
+  {
+    "id": "ex_counterexample_free",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Donne un exemple de nombre premier pair.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "counterexample"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "2",
+    "criteria": [
+      "Donne un nombre",
+      "Justifie qu'il est premier"
+    ]
+  },
+  {
+    "id": "ex_long_no_eval",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Explique pourquoi le ciel est bleu.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "long_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "La lumière du soleil est diffusée par les molécules de l'air ; la lumière bleue, de courte longueur d'onde, est davantage diffusée que le rouge, d'où la couleur bleue du ciel."
+  },
+  {
+    "id": "ex_justify_no_eval",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Le produit de deux nombres impairs est-il pair ?",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "justify_answer"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "Non",
+    "justification": "Chaque nombre impair s'écrit 2k+1, le produit vaut 4kk'+2k+2k'+1, qui est impair."
+  },
+  {
+    "id": "ex_math_plain",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Écris une expression de f(x) = 2x + 3.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "math_expression"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "answer": "2x+3",
+    "accepts": [
+      "3+2x"
+    ]
+  },
+  {
+    "id": "ex_math_calc_legacy",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Calcule (x+y)² pour x et y entiers.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "math_expression"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "calculation": {
+      "expression": "(x+y)^2",
+      "steps": [
+        {
+          "label": "Développe",
+          "answer": "x^2+2*x*y+y^2"
+        }
+      ]
+    },
+    "range": [
+      1,
+      5
+    ],
+    "names": [
+      "x",
+      "y"
+    ],
+    "integerResult": true
+  },
+  {
+    "id": "ex_debug_full",
+    "subject": "exemples",
+    "skill": "exemples.formats",
+    "difficulty": 1,
+    "prompt": "Corrige la fonction de somme.",
+    "tags": [
+      "exemple"
+    ],
+    "formats": [
+      "debugging"
+    ],
+    "explanation": "Explication de l'exemple.",
+    "code": "def somme(liste):\n    s = 0\n    for x in liste\n        s += x\n    return s",
+    "answer": "def somme(liste):\n    s = 0\n    for x in liste:\n        s += x\n    return s"
+  }
+]

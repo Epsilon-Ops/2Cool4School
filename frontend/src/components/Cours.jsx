@@ -1,7 +1,11 @@
 import { useState } from 'react';
 import { courses } from '../data/utils/courseLoader.js';
 import MathText from './MathText.jsx';
-import { noteKey, notionPct, sectionPct, coursePct, groupPct } from '../engine/courseProgress.js';
+import { noteKey, notionRead, sectionPct, coursePct, groupPct } from '../engine/courseProgress.js';
+import Lens from './Lenses.jsx';
+
+/** Onglets de contenu rédigés par section (les trois premiers sont des outils, pas du contenu). */
+const LENS_TABS = new Set(['summary', 'examples', 'visual', 'step_by_step', 'simplified', 'detailed', 'comparison', 'mnemonics', 'case_studies', 'teach_back', 'mistakes']);
 
 import categories from '../data/utils/categories.json';
 
@@ -124,7 +128,7 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
           {tab === 'terms' && (
             <dl className="terms">
               {section.terms.map((t) => {
-                const seen = notionPct(course.id, section.id, t.term, progress) === 100;
+                const seen = notionRead(course.id, section.id, t.term, progress);
                 return (
                   <div key={t.term} className={focus === t.term ? 'focus' : ''}>
                     <button className="term-btn" onClick={() => seeTerm(t.term)}>
@@ -132,7 +136,7 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
                         <MathText text={t.term} />
                         {t.formula && <MathText as="code" text={t.formula} />}
                       </dt>
-                      <span className={`tag ${seen ? 'ok' : ''}`}>{seen ? 'Vue · 100 %' : 'À voir · 0 %'}</span>
+                      <span className={`tag ${seen ? 'ok' : ''}`}>{seen ? 'Lue' : 'À lire'}</span>
                     </button>
                     <dd><MathText text={t.def} /></dd>
                   </div>
@@ -140,6 +144,8 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
               })}
             </dl>
           )}
+
+          {LENS_TABS.has(tab) && <Lens id={tab} section={section} />}
 
           {tab === 'practice' && (
             <div className="lesson-practice">

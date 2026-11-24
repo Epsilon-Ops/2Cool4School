@@ -43,6 +43,19 @@ export function addActivity(activity = {}, ts = Date.now()) {
   return next;
 }
 
+/**
+ * Journal par matière : { 'AAAA-MM-JJ': { [subjectId]: { n: réponses, ok: réussies } } }.
+ * Ajoute une réponse à la matière et au jour de `ts`. Renvoie un nouvel objet.
+ */
+export function addJournal(journal = {}, ts = Date.now(), subjectId, ok) {
+  if (!subjectId) return journal;
+  const key = dayKey(ts);
+  const day = { ...(journal[key] ?? {}) };
+  const cur = day[subjectId] ?? { n: 0, ok: 0 };
+  day[subjectId] = { n: cur.n + 1, ok: cur.ok + (ok ? 1 : 0) };
+  return { ...journal, [key]: day };
+}
+
 /** Dernier jour actif strictement avant `key` (ou null). */
 export function lastActiveBefore(activity = {}, key) {
   const before = Object.keys(activity).filter((k) => k < key).sort();

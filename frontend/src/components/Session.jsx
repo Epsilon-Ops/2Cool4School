@@ -13,15 +13,9 @@ function makeExercise(q) {
   return buildExercise(q, format);
 }
 
-/** Texte de la bonne réponse, selon le format affiché. */
+/** Texte de la bonne réponse, tel que préparé par le format (ex.reveal). */
 function revealOf(ex, q) {
-  switch (ex.format) {
-    case 'true_false': return ex.isTrue ? 'Vrai' : 'Faux';
-    case 'ordering': return ex.steps.join(' → ');
-    case 'matching': return ex.pairs.map(([l, r]) => `${l} = ${r}`).join(' · ');
-    case 'multi_choice': return ex.answers.join(' · ');
-    default: return ex.answer ?? q.answer;
-  }
+  return ex.reveal ?? ex.answer ?? q.answer ?? '';
 }
 
 const EMPTY_MESSAGE = {
@@ -67,11 +61,11 @@ export default function Session({ skill, bank, config, progress, stats, onAnswer
 
   const current = queue[idx];
 
-  function submit(ok, quality) {
+  function submit(ok, quality, verified = true) {
     if (feedback || !current) return;
     // XP calculé avant la réponse, comme dans la progression : même montant affiché et enregistré.
-    const gained = xpForAnswer(current, ok, progress.qlog?.[current.id] ?? []);
-    onAnswer(current, ok, quality ?? (ok ? 4 : 1), ex.format);
+    const gained = xpForAnswer(current, ok, progress.qlog?.[current.id] ?? [], verified);
+    onAnswer(current, ok, quality ?? (ok ? 4 : 1), ex.format, verified);
     if (config.exam) {
       // Examen : ni retour ni explication pendant l'épreuve, la correction vient à la fin.
       setLog((l) => [...l, { q: current, ex, ok }]);

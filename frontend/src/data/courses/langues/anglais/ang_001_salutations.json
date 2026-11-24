@@ -76,7 +76,106 @@
         "anglais_salutations_004",
         "anglais_salutations_005",
         "anglais_salutations_006"
-      ]
+      ],
+      "lenses": {
+        "summary": [
+          "Pour saluer en anglais, on dit [[Hello]] ou [[Hi]] ; pour quitter quelqu’un, [[Goodbye]], [[Bye]] ou [[See you]].",
+          "Le moment de la journée change la formule : [[Good morning]], [[Good afternoon]], [[Good evening]]."
+        ],
+        "examples": [
+          {
+            "title": "Arriver dans une réunion",
+            "text": "Tu arrives le matin et tu salues tes collègues.",
+            "solution": "« Good morning, everyone! »"
+          },
+          {
+            "title": "Quitter un ami",
+            "text": "Tu retrouveras ton ami demain.",
+            "solution": "« See you tomorrow! »"
+          }
+        ],
+        "visual": {
+          "caption": "Quel moment, quelle formule",
+          "text": "Matin ──► Good morning\nAprès-midi ──► Good afternoon\nSoir ──► Good evening"
+        },
+        "step_by_step": [
+          {
+            "title": "Choisir le moment",
+            "text": "Regarde l’heure : avant midi, on dit [[Good morning]]."
+          },
+          {
+            "title": "Choisir le registre",
+            "text": "Entre amis, [[Hi]] ; dans un contexte formel, [[Hello]]."
+          },
+          {
+            "title": "Dire au revoir",
+            "text": "Termine par [[Goodbye]], ou [[See you later]] si tu te reverras bientôt."
+          }
+        ],
+        "simplified": "Pour saluer, dis « Hello » (ou « Hi » entre amis). Pour partir, dis « Goodbye » ou « Bye ».",
+        "detailed": [
+          "Les formules de salutation se répartissent selon le moment, le lien avec l’interlocuteur et la situation.",
+          "Les formes familières ([[Hi]], [[Bye]]) sont naturelles entre amis, mais peuvent sembler trop directes à l’écrit formel."
+        ],
+        "comparison": {
+          "headers": [
+            "Situation",
+            "Salutation",
+            "Au revoir"
+          ],
+          "rows": [
+            [
+              "Formelle",
+              "Hello",
+              "Goodbye"
+            ],
+            [
+              "Familière",
+              "Hi",
+              "Bye"
+            ],
+            [
+              "Le matin",
+              "Good morning",
+              "See you tomorrow"
+            ]
+          ]
+        },
+        "mnemonics": [
+          {
+            "trick": "« Hi » = « Hey » ",
+            "text": "Hi est court comme un signe de la main : formule rapide entre amis."
+          },
+          {
+            "trick": "Good + moment",
+            "text": "Good morning, Good afternoon, Good evening : le moment suit « Good »."
+          }
+        ],
+        "case_studies": [
+          {
+            "title": "Le premier rendez-vous",
+            "situation": "Tu rencontres un client à 15 h dans son bureau.",
+            "question": "Quelle salutation choisis-tu ?",
+            "solution": "« Good afternoon ». Le moment de la journée et le contexte formel justifient cette formule."
+          }
+        ],
+        "teach_back": {
+          "prompt": "Explique avec tes mots quand dire « Hi » plutôt que « Hello ».",
+          "model": "« Hi » est une formule familière, pour un ami ou une personne proche. « Hello » convient à la fois aux situations formelles et informelles."
+        },
+        "mistakes": [
+          {
+            "wrong": "Good morning à 18 h",
+            "right": "Good evening",
+            "why": "« Good morning » ne se dit que le matin."
+          },
+          {
+            "wrong": "See you tomorrow pour un adieu définitif",
+            "right": "Goodbye",
+            "why": "« See you » annonce qu’on se reverra."
+          }
+        ]
+      }
     },
     {
       "id": "formules-politesse",

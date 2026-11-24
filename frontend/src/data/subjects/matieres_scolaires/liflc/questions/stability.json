@@ -1,0 +1,123 @@
+[
+
+
+{
+  "id": "liflc_stability_013",
+  "subject": "liflc",
+  "skill": "liflc.stability",
+  "difficulty": 2,
+  "prompt": "Soit E = ℤ l'ensemble des entiers relatifs, muni de la multiplication usuelle. Vérifier si E est stable pour cette opération et justifier votre réponse.",
+  "answer": "Oui, car le produit de deux entiers relatifs est toujours un entier relatif. Pour tous a, b ∈ ℤ, ab ∈ ℤ.",
+  "accepts": [
+    "Oui, le produit de deux entiers est toujours un entier.",
+    "Oui, car pour tous a et b dans Z, ab appartient à Z.",
+    "Oui, Z est stable par multiplication."
+  ],
+  "evaluation": {
+    "type": "semantic",
+    "required": [
+      [
+        "a et b sont des entiers",
+        "deux entiers",
+        "deux entiers relatifs",
+        "a et b appartiennent a z",
+        "a appartient a Z",
+        "b appartient a Z",
+        "a et b dans Z"
+      ],
+      [
+        "ab est un entier",
+        "ab est entier",
+        "ab appartient a Z",
+        "ab dans Z",
+        "le produit est un entier",
+        "produit de deux entiers",
+        "produit de deux entiers relatifs",
+        "multiplication de deux entiers"
+      ]
+    ],
+    "optional": [
+      [
+        "oui",
+        "stable",
+        "stabilite",
+        "donc e est stable",
+        "z est stable"
+      ],
+      [
+        "pour tous a et b",
+        "quel que soit a et b",
+        "quels que soient a et b",
+        "a b appartient a z"
+      ]
+    ],
+    "forbidden": [
+      "n'est pas stable",
+      "pas stable",
+      "ne sont pas stables",
+      "n'appartient pas",
+      "ab n'appartient pas a z"
+    ]
+  },
+  "placeholder": "Rédige ta justification...",
+  "explanation": "Pour démontrer la stabilité, on prend deux éléments quelconques a et b de E. Comme a et b sont des entiers relatifs, leur produit ab est également un entier relatif. Ainsi, ab ∈ E, donc E est stable pour la multiplication.",
+  "tags": [
+    "stabilité",
+    "entiers relatifs",
+    "multiplication",
+    "démonstration"
+  ],
+  "formats": [
+    "short_answer",
+    "long_answer"
+  ]
+},
+
+{
+  "id": "liflc_stability_014",
+  "subject": "liflc",
+  "skill": "liflc.stability",
+  "difficulty": 3,
+  "prompt": "Démontrer rigoureusement que l'ensemble des entiers relatifs est stable pour la multiplication.",
+  "answer": "Soient a et b deux entiers relatifs quelconques. Comme le produit de deux entiers relatifs est un entier relatif, ab appartient à Z. Ainsi, Z est stable pour la multiplication.",
+  "evaluation": {
+    "type":"semantic",
+    "required": [
+        [
+        "a et b sont des entiers",
+        "deux entiers",
+        "a appartient a z"
+        ],
+        [
+        "ab est un entier",
+        "ab appartient a z",
+        "produit de a et b"
+        ]
+    ],
+    "optional": [
+        [
+        "donc c'est stable",
+        "donc l'ensemble est stable",
+        "la multiplication est stable"
+        ]
+    ],
+    "atLeast": {
+        "count": 1,
+        "groups": [
+        ["produit"],
+        ["multiplication"],
+        ["appartient a z"],
+        ["entier"]
+        ]
+    }
+    },
+  "criteria": [
+    "Choisir deux entiers relatifs quelconques.",
+    "Montrer que leur produit est un entier relatif.",
+    "Conclure que Z est stable par multiplication."
+  ],
+  "placeholder": "Rédige ta démonstration...",
+  "formats": ["code_answer"]
+}
+
+]

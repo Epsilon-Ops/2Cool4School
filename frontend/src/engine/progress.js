@@ -17,11 +17,36 @@ export const DEFAULT_PROGRESS = {
   weekly: { target: null }, // objectif hebdomadaire facultatif (nombre de réponses par semaine)
   weeklyMet: {},      // { [lundi AAAA-MM-JJ]: true } semaines où l'objectif a été atteint
   profile: { color: '#f85211', title: null, name: '' }, // personnalisation du profil
+  journal: {},  // { 'AAAA-MM-JJ': { [subjectId]: { n, ok } } } : réponses par matière et par jour
+  integrity: 2, // version des règles de réussite (voir migrateIntegrity)
 };
+
+/** Formats dont la réussite est une auto-évaluation : leurs anciennes réponses sont plafonnées. */
+export const SELF_FORMATS = [
+  'flashcard', 'code_answer', 'proof', 'induction_proof', 'source_analysis',
+  'historical_comparison', 'data_analysis', 'refactoring', 'debugging', 'speaking', 'pronunciation',
+];
+
+/**
+ * Migration vers les règles de réussite v2 :
+ * - les notions consultées ne comptent plus : on repart de zéro pour les pourcentages de cours ;
+ * - les réponses auto-évaluées passées sont plafonnées et marquées (ne valident plus un cours).
+ */
+export function migrateIntegrity(saved) {
+  if ((saved.integrity ?? 1) >= 2) return saved;
+  const qlog = {};
+  for (const [id, events] of Object.entries(saved.qlog ?? {})) {
+    qlog[id] = (events ?? []).map((e) => {
+      if (!SELF_FORMATS.includes(e.f) || e.s) return e;
+      return { ...e, v: Math.min(e.v, 0.6), s: 1 };
+    });
+  }
+  return { ...saved, qlog, course: {}, integrity: 2 };
+}
 
 export function loadProgress() {
   try {
-    const saved = JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}');
+    const saved = migrateIntegrity(JSON.parse(localStorage.getItem(STORAGE_KEY) || '{}'));
     const d = structuredClone(DEFAULT_PROGRESS);
     return {
       ...d,
@@ -39,6 +64,7 @@ export function loadProgress() {
       weekly: { ...d.weekly, ...(saved.weekly ?? {}) },
       weeklyMet: saved.weeklyMet ?? {},
       profile: { ...d.profile, ...(saved.profile ?? {}) },
+      journal: saved.journal ?? {},
     };
   } catch {
     return structuredClone(DEFAULT_PROGRESS);

@@ -7,7 +7,8 @@
  * référence de 8 questions bien réussies (ou moins si la banque est plus petite).
  */
 import { nextCard } from './srs.js';
-import { addActivity, dayKey, daysBetween, lastActiveBefore } from './activity.js';
+import { PRACTICE_FORMATS } from './formats.js';
+import { addActivity, addJournal, dayKey, daysBetween, lastActiveBefore } from './activity.js';
 
 export const LEVELS = [
   { min: 0, name: 'Débutant' },
@@ -58,7 +59,7 @@ export const LEVELS = [
   { min: 3000, name: 'Légende Cosmique' }, // exige aussi la certification
 ];
 
-export const PRACTICE_FORMATS = ['fill_blank', 'ordering', 'numeric'];
+export { PRACTICE_FORMATS };
 export const kindOf = (format) => (PRACTICE_FORMATS.includes(format) ? 'practice' : 'theory');
 
 export const REFERENCE_COUNT = 8; // nombre de questions à réussir pour une maîtrise complète
@@ -77,9 +78,16 @@ const DAY = 86400000;
 const today = () => new Date().toDateString();
 const addDay = (arr = [], day) => (arr.includes(day) ? arr : [...arr, day].slice(-MAX_DAYS));
 
-/** Valeur d'une réponse, entre 0 et 1. */
-export function valueOfAnswer(ok, quality) {
+/**
+ * Valeur d'une réponse, entre 0 et 1.
+ * Une réponse vérifiée par le système vaut selon sa qualité. Une auto-évaluation (l'élève se note lui-même)
+ * est plafonnée : « Compris » vaut 0,6 et « Presque » 0,3. Elle ne peut donc pas faire monter la maîtrise
+ * aussi vite qu'une réponse vérifiée, ni valider un cours.
+ */
+export const SELF_VALUE = { compris: 0.6, presque: 0.3 };
+export function valueOfAnswer(ok, quality, verified = true) {
   if (!ok) return 0;
+  if (!verified) return quality >= 5 ? SELF_VALUE.compris : SELF_VALUE.presque;
   if (quality >= 5) return 1;
   if (quality >= 4) return 0.9;
   return 0.7;
@@ -220,24 +228,30 @@ export function buildStats(skills, bank, progress) {
  * XP d'une réponse, selon la maîtrise de cet exercice avant la réponse.
  * Exercice nouveau : ×1,5 ; exercice déjà maîtrisé : ×0,5. Une erreur rapporte XP_WRONG.
  */
-export function xpForAnswer(q, ok, events = []) {
+export function xpForAnswer(q, ok, events = [], verified = true) {
   if (!ok) return XP_WRONG;
   const base = 10 + (q.difficulty ?? 1) * 5;
   const mastered = scoreOf(events) ?? 0;
   const factor = 1.5 - Math.min(1, mastered);
-  return Math.round(base * factor);
+  // Une auto-évaluation « réussie » rapporte beaucoup moins : on ne gagne pas des XP en se notant bien.
+  return Math.round(base * factor * (verified ? 1 : 0.4));
 }
 
 /** Applique le résultat d'une réponse : SRS, journal, historique, certification, XP, activité. */
-export function recordAnswer(progress, bank, q, ok, quality, format) {
+export function recordAnswer(progress, bank, q, ok, quality, format, verified = true) {
   const p = structuredClone(progress);
   const now = Date.now();
   const log = p.qlog[q.id] ?? [];
-  const xpGain = xpForAnswer(q, ok, log);
+  const xpGain = xpForAnswer(q, ok, log, verified);
   const prevFailed = log.length > 0 && log[log.length - 1].v === 0;
 
   p.cards[q.id] = nextCard(p.cards[q.id], quality, now);
-  p.qlog[q.id] = [...log, { t: now, v: valueOfAnswer(ok, quality), f: format ?? 'single_choice' }].slice(-MAX_LOG);
+  const event = { t: now, v: valueOfAnswer(ok, quality, verified), f: format ?? 'single_choice' };
+  if (!verified) event.s = 1; // marque une auto-évaluation
+  p.qlog[q.id] = [...log, event].slice(-MAX_LOG);
+
+  // Journal par matière et par jour : alimente le tableau d'apprentissage (vue Streaks).
+  p.journal = addJournal(p.journal ?? {}, now, q.subjectId, ok);
 
   // Régularité : un retour après une longue pause est récompensé, jamais le fait de s'absenter.
   const today = dayKey(now);
@@ -254,7 +268,8 @@ export function recordAnswer(progress, bank, q, ok, quality, format) {
   const rec = { ...(p.skills[q.skill] ?? {}) };
   rec.seen = (rec.seen ?? 0) + 1;
   rec.days = addDay(rec.days, day);
-  if (ok) rec.goodDays = addDay(rec.goodDays, day);
+  // Un jour « réussi » exige une réponse vérifiée : l'auto-évaluation ne compte pas pour la certification.
+  if (ok && verified) rec.goodDays = addDay(rec.goodDays, day);
   p.skills[q.skill] = rec;
 
   const skillQuestions = bank.filter((x) => x.skill === q.skill);

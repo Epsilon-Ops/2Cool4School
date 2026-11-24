@@ -1,0 +1,263 @@
+        [[LIFLC]]
+
+--- Contenu à connaitre :
+    >> TD1
+        + Stabilité et clôture d'un ensemble
+        + Fermeture d'une relation
+        + Ensembles inductifs
+        + Raisonnement par introduction
+        + Définition inductive de structures
+        + Fonctions définies récursivement
+        + Relations de réécriture et confluence
+
+    >> TD2
+        + Formules propositionnelles
+        + Interprétations et sémantique
+        + Équivalences et logiques remarquables
+        + Modélisation logique
+        + Déduction naturelle
+        + Forme normale conjonctive (FNC)
+        + Équisatisfiabilité et transformations de Tseitin
+        + Résolution propositionnelle
+
+    >> TD3
+        + Syntaxe des formules du premier ordre
+        + Termes, formules atomiques et formules bien formées
+        + Variables libres et variables liées
+        + Portée des quantificateurs
+        + Substitutions et filtrage de termes
+        + Modélisation de propriétés avec les quantificateurs ∀ et ∃
+        + Utilisation du symbole d'égalité en logique du premier ordre
+        + Correction et complétude d'une fonction dans une interprétation
+        + Modélisation des opérations sur les entiers et les listes
+        + Déduction naturelle en logique du premier ordre
+        + Règles d'introduction et d'élimination des quantificateurs
+        + Règles d'introduction et d'élimination de l'égalité
+        + Évaluation des termes et des formules dans une interprétation
+        + Valuations et interprétations
+        + Satisfaction d'une formule dans une interprétation
+        + Relations d'ordre et propriétés des relations
+        + Unification de termes
+        + Substitutions et unificateur le plus général (mgu)
+        + Algorithme d'unification et test d'occurrence
+        + Mise sous forme clausale en logique du premier ordre
+        + Résolution et factorisation en logique du premier ordre
+        + Résolution avec variables et substitutions
+        + Définition de fonctions par ensembles de clauses
+
+
+--- Exercices à savoir faire :
+    >> TD1
+        ¤ Vérifier si un ensemble est stable pour une opération donnée
+        ¤ Déterminer la clôture d'un ensemble pour une opération
+        ¤ Calculer la fermeture réflexive transitive d'une relation à partir de son graphe
+        ¤ Démontrer une égalité ou une divisibilité par récurrence sur N
+        ¤ Comprendre et exploiter une définition inductive
+        ¤ Enumérer les premers éléments d'un ensemble défini inductivement
+        ¤ Démontrer une égalité entre deux ensembles (X ⊆ Y et Y ⊆ X)
+        ¤ Définir inductivement un ensemble de mots (palindromes, langages etc...)
+        ¤ Démontrer par induction structurelle qu'une fonction récursive possède une propriété
+        ¤ Démontrer qu'une fonction récursive correctement une caractéristique d'une structure (longueur d'une liste par exemple)
+        ¤ Comprendre les notions de confluence, confluence locale et bonne fondation
+        ¤ Savoir utiliser l'induction bien fondée pour démontrer une propriété de confluence
+
+    >> TD2
+        ¤ Reconnaître si une expression est une formule propositionnelle bien formée
+        ¤ Déterminer l'ordre d'application des connecteurs
+        ¤ Construire une table de vérité
+        ¤ Déterminer si une formule est satisfiable / valide / insatisfiable
+        ¤ Déterminer si deux formules sont équivalentes
+        ¤ Utiliser les équivalences remarquables pour simplifier une formule
+        ¤ Démontrer qu'une formule est valide en montrant que sa négation est insatisfiable
+        ¤ Comprendre et appliquer le lemme de substitution
+        ¤ Traduire des phrases en français en formules propositionnelles
+        ¤ Identifier les hypothèses et la conclusion d'un problème
+        ¤ Utiliser les tables de vérité ou un raisonnement par cas
+        ¤ Montrer qu'un ensemble d'hypothèses implique une conclusion
+        ¤ Comprendre qu'une conclusion est démontrée si aucune interprétation ne rend toutes les hypothèses vraies et la conclusion fausse
+        ¤ Lire et comprendre un séquent Γ ⊢ A
+        ¤ Connaître les règles d'introduction et d'élimination des connecteurs
+        ¤ Construire un arbre de preuve
+        ¤ Utiliser le modus ponens
+        ¤ Introduire une implication en faisant une hypothèse temporaire
+        ¤ Démontrer une négation par l'absurde
+        ¤ Utiliser l'élimination de la disjonction en raisonnant par cas
+        ¤ Démontrer les équivalences logiques dans les deux sens
+        ¤ Dériver des règles comme le tiers exclu et la loi de Peirce dans le cadre de la logique classique
+        ¤ Reprendre une modélisation et construire sa preuve en déduction naturelle
+        ¤ Transformer une formule en FNC
+        ¤ Éliminer les implications et les équivalences
+        ¤ Appliquer les lois de De Morgan
+        ¤ Distribuer les disjonctions sur les conjonctions
+        ¤ Compter le nombre de clauses générées lors d'une mise en FNC
+        ¤ Comprendre la différence entre équivalence et équisatisfiabilité
+        ¤ Construire une formule équisatisfiable de taille linéaire
+        ¤ Appliquer la règle de résolution
+        ¤ Appliquer la factorisation
+        ¤ Démontrer une formule par résolution en cherchant la clause vide
+
+    >> TD3
+        ¤ Distinguer un terme d'une formule du premier ordre
+        ¤ Vérifier qu'une expression respecte la syntaxe du langage
+        ¤ Identifier les symboles de constantes, de fonctions et de relations
+        ¤ Déterminer l'arité des fonctions et des relations
+        ¤ Identifier les variables libres et liées d'une formule
+        ¤ Déterminer la portée d'un quantificateur
+        ¤ Comprendre l'effet des quantificateurs ∀ et ∃
+        ¤ Effectuer une substitution dans un terme ou une formule
+        ¤ Faire attention aux variables liées lors d'une substitution pour éviter la capture de variables
+        ¤ Effectuer un filtrage entre un motif et un terme
+        ¤ Déterminer si un terme correspond à un motif
+        ¤ Donner la substitution associée à un filtrage
+        ¤ Vérifier qu'une substitution respecte toutes les occurrences d'une même variable
+        ¤ Traduire des propriétés exprimées en français en formules du premier ordre
+        ¤ Modéliser des propriétés avec plusieurs quantificateurs imbriqués
+        ¤ Exprimer l'existence et l'unicité d'un élément
+        ¤ Exprimer des propriétés de prédécesseurs, successeurs, prédateurs et proies
+        ¤ Utiliser le symbole d'égalité pour exprimer l'unicité
+        ¤ Modéliser des propriétés mathématiques sur les entiers (ordre, divisibilité, primalité)
+        ¤ Exprimer la correction d'une fonction dans une interprétation
+        ¤ Exprimer la complétude d'une fonction dans une interprétation
+        ¤ Démontrer la correction et la complétude d'une fonction
+        ¤ Comprendre la différence entre correction et complétude
+        ¤ Construire une preuve en déduction naturelle avec les quantificateurs
+        ¤ Appliquer l'introduction et l'élimination du quantificateur universel
+        ¤ Appliquer l'introduction et l'élimination du quantificateur existentiel
+        ¤ Respecter les conditions sur les variables fraîches dans les règles de déduction naturelle
+        ¤ Utiliser les règles d'introduction et d'élimination de l'égalité
+        ¤ Démontrer une propriété mathématique en logique du premier ordre
+        ¤ Évaluer un terme avec une valuation et une interprétation données
+        ¤ Calculer l'interprétation d'une constante, d'une fonction et d'un terme composé
+        ¤ Comprendre le rôle d'une valuation pour les variables libres
+        ¤ Déterminer si une formule est satisfaite dans une interprétation
+        ¤ Vérifier si une relation satisfait des propriétés (réflexivité, symétrie, transitivité, etc.)
+        ¤ Évaluer des formules quantifiées sur différents domaines
+        ¤ Appliquer l'algorithme d'unification sur deux termes
+        ¤ Décomposer une équation entre termes en plusieurs équations
+        ¤ Construire progressivement une substitution d'unification
+        ¤ Déterminer si deux termes sont unifiables
+        ¤ Trouver un unificateur le plus général (mgu)
+        ¤ Détecter une impossibilité d'unification à cause de symboles différents
+        ¤ Détecter un échec d'unification à cause du test d'occurrence (occurs check)
+        ¤ Mettre une formule du premier ordre sous forme clausale
+        ¤ Éliminer les implications et les équivalences
+        ¤ Mettre les négations devant les formules atomiques
+        ¤ Transformer les quantificateurs lors de l'application des lois de De Morgan
+        ¤ Éliminer les quantificateurs existentiels par skolemisation
+        ¤ Standardiser les variables liées pour éviter les conflits de noms
+        ¤ Transformer une formule en ensemble de clauses
+        ¤ Appliquer la résolution du premier ordre avec un mgu
+        ¤ Appliquer la factorisation en logique du premier ordre
+        ¤ Démontrer une formule par réfutation en cherchant la clause vide
+        ¤ Construire des clauses définissant récursivement une fonction
+        ¤ Définir l'addition et la multiplication à l'aide de clauses
+        ¤ Définir la concaténation et le miroir de listes à l'aide de clauses
+        ¤ Comprendre comment calculer une valeur de fonction par résolution
+
+
+--- Exercices types à voir :
+    >> TD1
+        * Stabilité et calcul de clôtures
+        * Fermeture réflexive transitive d'une relation
+        * Démonstration d'une formule par récurrence
+        * Démonstration d'une divisibilité par récurrence
+        * Construction et caractérisation d'un ensemble inductif
+        * Définition inductive des palindromes
+        * Démonstration d'égalité entre deux ensembles de mots
+        * Preuve de correction d'une fonction récursive par induction structurelle
+        * Démonstration du lien entre confluence locale et confluence
+    
+    >> TD2 
+        * Reconnaissance, satisfiabilité et validité des formules
+        * Substitution dans une formule
+        * Lien entre validité et insatisfiabilité
+        * Utilisation des équivalences remarquables
+        * Modélisation et démonstration sémantiques
+        * Construction de preuves en déduction naturelle
+        * Dérivation de règles classiques
+        * Démonstrations en déduction naturelle à partir d'énoncés
+        * Transformation en FNC
+        * Calcul du nombre de clauses d'une FNC
+        * Équisatisfiabilité et transformation de taille linéaire
+        * Preuves par résolution et factorisation
+        * Typique : Savoir démontrer l'équivalence : ⊢A⇒((A⇒B)⇒B)
+        * Typique : Savoir démontrer l'équivalence : ⊢¬A⇔(A⇒⊥)
+        * Typique : Savoir démontrer l'équivalence : ⊢(A⇒(B⇒C))⇔((A∧B)⇒C)
+        * Exemple de formule into FNC simplifié : (A⇒B)⇒C
+        * Exemple de formule into FNC simplifié : (A∧B)∨(C∧D)
+        * Exemple de formule into FNC simplifié : (A∧B)⇒(A∧¬B)
+
+    >> TD3
+        * Reconnaissance des termes et des formules du premier ordre
+        * Détermination des variables libres et liées
+        * Filtrage de termes et calcul des substitutions
+        * Modélisation de propriétés avec plusieurs quantificateurs
+        * Expression de l'existence et de l'unicité
+        * Modélisation de propriétés sur les prédateurs et les proies
+        * Modélisation de propriétés arithmétiques (divisibilité, primalité, etc.)
+        * Démonstration de la correction et de la complétude d'une fonction
+        * Déduction naturelle avec les quantificateurs
+        * Déduction naturelle avec l'égalité
+        * Évaluation de termes dans une interprétation
+        * Évaluation de formules avec une valuation donnée
+        * Vérification de propriétés de relations sur différents ensembles
+        * Vérification de formules dans les interprétations (N, Z, P(N))
+        * Unification de deux termes avec l'algorithme d'unification
+        * Recherche d'un unificateur le plus général
+        * Détection des échecs d'unification
+        * Mise sous forme clausale d'une formule du premier ordre
+        * Résolution et factorisation avec substitutions
+        * Démonstrations par résolution en logique du premier ordre
+        * Construction de clauses pour définir l'addition et la multiplication
+        * Construction de clauses pour définir la concaténation et le miroir des listes
+
+--- Points importants à retenir :
+    >> TD1
+        - Somme des n premiers entiers
+        - Pour caractériser un ensemble inductif, il faut montrer que ses éléments respectent les règles de construction et que toutes les constructions possibles sont incluses. Pour démontrer X=Y, il faut obligatoirement démontrer les deux inclusions.
+        - Une fonction définie récursivement se démontre généralement correcte par induction structurelle.
+        - Le lemme de Newman permet de passer de la confluence locale à la confluence globale sous une hypothèse de bonne fondation.
+
+    >> TD2
+        - Priorité Haute : Traduction du français vers la logique propositionnelle.
+        - Priorité Haute : Tables de vérité, satisfiabilité et validité.
+        - Priorité Haute : Équivalences remarquables.
+        - Priorité Haute : Règles de déduction naturelle et construction d'arbres de preuve.
+        - Priorité Haute : Transformation en FNC.
+        - Priorité Haute : Résolution jusqu'à la clause vide
+        - Priorité Intermédiaire : Substitution dans les formules.
+        - Priorité Intermédiaire : Loi de Peirce et tiers exclu.
+        - Priorité Intermédiaire : Équisatisfiabilité et transformation de Tseitin.
+        - Priorité Intermédiaire : Calcul du nombre de clauses.
+
+    >> TD3
+        - Priorité Haute : Distinguer les termes et les formules, et savoir identifier les variables libres et liées.
+        - Priorité Haute : Maîtriser les quantificateurs universels (∀) et existentiels (∃), notamment leur ordre et leur portée.
+        - Priorité Haute : Traduction du français vers la logique du premier ordre.
+        - Priorité Haute : Savoir exprimer l'existence et l'unicité d'un élément à l'aide des quantificateurs et de l'égalité.
+        - Priorité Haute : Savoir effectuer un filtrage et trouver la substitution correspondante.
+        - Priorité Haute : Comprendre et appliquer les règles de déduction naturelle du premier ordre, en particulier celles concernant les quantificateurs.
+        - Priorité Haute : Savoir évaluer un terme et une formule dans une interprétation avec une valuation donnée.
+        - Priorité Haute : Comprendre la différence entre une interprétation et une valuation.
+        - Priorité Haute : Savoir vérifier si une formule est satisfaite dans une interprétation.
+        - Priorité Haute : Savoir appliquer l'algorithme d'unification et calculer un mgu.
+        - Priorité Haute : Savoir appliquer la résolution du premier ordre avec les substitutions.
+        - Priorité Haute : Savoir transformer une formule du premier ordre en forme clausale.
+        - Priorité Intermédiaire : Démontrer la correction et la complétude d'une fonction.
+        - Priorité Intermédiaire : Utiliser les règles de déduction naturelle portant sur l'égalité.
+        - Priorité Intermédiaire : Vérifier des propriétés de relations sur différents domaines.
+        - Priorité Intermédiaire : Comprendre la factorisation en logique du premier ordre.
+        - Priorité Intermédiaire : Savoir définir des fonctions récursives à l'aide d'ensembles de clauses.
+        - Attention : Lors d'une substitution, il faut éviter de remplacer accidentellement une variable liée.
+        - Attention : Pour l'introduction de ∀ en déduction naturelle, la variable utilisée doit être arbitraire et ne pas être libre dans les hypothèses.
+        - Attention : Pour l'élimination de ∃, la variable fraîche doit respecter les conditions de fraîcheur imposées par la règle.
+        - Attention : Pour l'élimination de ∀, on peut remplacer la variable quantifiée par un terme quelconque.
+        - Attention : Pour l'introduction de ∃, il suffit de donner un témoin et de démontrer la formule correspondante.
+        - Attention : L'égalité est réflexive et permet de remplacer un terme par un autre égal.
+        - Attention : En unification, une variable ne peut pas être remplacée par un terme qui la contient elle-même (test d'occurrence).
+        - Attention : Deux fonctions de noms ou d'arités différentes ne peuvent pas être unifiées.
+        - Attention : Un mgu est un unificateur le plus général : les autres unificateurs peuvent être obtenus en spécialisant ses variables.
+        - Attention : En résolution du premier ordre, il faut unifier les littéraux opposés avant de pouvoir appliquer la règle.
+        - Attention : La skolemisation conserve la satisfiabilité, mais pas nécessairement l'équivalence logique.
+        - Attention : Il faut standardiser les variables des clauses avant de les résoudre pour éviter les conflits de noms.
+        - Attention : La résolution cherche à obtenir la clause vide pour démontrer l'insatisfiabilité de l'ensemble de clauses.

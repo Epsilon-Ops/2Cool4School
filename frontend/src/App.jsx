@@ -6,7 +6,9 @@ import { loadProgress, saveProgress, touchStreak } from './engine/progress.js';
 import { buildStats, recordAnswer } from './engine/mastery.js';
 import { resetSkill, togglePause, markAcquired } from './engine/skillActions.js';
 import { applyGamification, domainOpen, flatSkills } from './engine/gamification.js';
-import { regularWeeks } from './engine/activity.js';
+import { regularWeeks, dayKey } from './engine/activity.js';
+import { levelInfo } from './engine/levels.js';
+import Streaks from './components/Streaks.jsx';
 
 import SkillTree from './components/SkillTree.jsx';
 import Session from './components/Session.jsx';
@@ -22,6 +24,19 @@ const MIX_LABELS = {
   assimilation: 'Mes lacunes',
   spontaneous: 'Mode spontané',
 };
+
+/** Jours consécutifs d'activité se terminant aujourd'hui (ou hier, sans encore de réponse aujourd'hui). */
+function currentDayStreak(activity = {}) {
+  const has = (d) => (activity[dayKey(d.getTime())] ?? 0) > 0;
+  const d = new Date();
+  if (!has(d)) d.setDate(d.getDate() - 1);
+  let n = 0;
+  while (has(d)) {
+    n++;
+    d.setDate(d.getDate() - 1);
+  }
+  return n;
+}
 
 const allSkills = flatSkills(subjects).map((s) => ({ ...s, color: subjects.find((x) => x.id === s.subjectId)?.color }));
 
@@ -73,13 +88,13 @@ export default function App() {
     return () => clearTimeout(t);
   }, [toasts]);
 
-  const level = Math.floor(progress.xp / 100) + 1;
-  const xpIntoLevel = progress.xp % 100;
+  const lvl = levelInfo(progress.xp);
+  const streakDays = currentDayStreak(progress.activity);
   const regular = regularWeeks(progress.activity);
   const mascotColor = progress.profile?.color ?? '#f85211';
 
-  const handleAnswer = (q, ok, quality, format) => {
-    const next = recordAnswer(progress, questionBank, q, ok, quality, format);
+  const handleAnswer = (q, ok, quality, format, verified = true) => {
+    const next = recordAnswer(progress, questionBank, q, ok, quality, format, verified);
     if (!progress.skills[q.skill]?.certified && next.skills[q.skill]?.certified) {
       const skill = allSkills.find((s) => s.id === q.skill);
       setToasts((ts) => [...ts, { id: Math.random(), text: `Compétence certifiée : ${skill?.name ?? 'nouvelle compétence'}` }]);
@@ -122,7 +137,7 @@ export default function App() {
   const goHome = () => setView({ name: 'tree' });
   const openSkill = (id) => setView({ name: 'tree', focus: id });
 
-  const showTabs = ['tree', 'passport', 'succes', 'cours'].includes(view.name);
+  const showTabs = ['tree', 'passport', 'succes', 'cours', 'streaks'].includes(view.name);
 
   const markSeen = (courseId, key) =>
     updateProgress((p) => ({
@@ -157,15 +172,16 @@ export default function App() {
               <span key={progress.xp} className="pop">{progress.xp}</span>
               <span className="unit-label">XP</span>
             </span>
-            <span className="chip streak" title="Semaines régulières (au moins 2 jours d'activité). Les pauses ne font rien perdre.">
+            <button className="chip streak" onClick={() => setView({ name: 'streaks' })} title="Série de jours et semaines régulières : voir la rubrique Streaks">
               <span className="ico" aria-hidden="true">🔥</span>
-              <span key={regular} className="pop">{regular}</span>
-              <span className="unit-label">sem.</span>
-            </span>
-            <span className="chip lvl" title={`${xpIntoLevel}/100 XP vers le niveau suivant`}>
+              <span key={streakDays} className="pop">{streakDays}</span>
+              <span className="unit-label">j · {regular} sem.</span>
+            </button>
+            <span className="chip lvl" title={`Niveau logarithmique : encore ${lvl.toNext} XP avant le niveau ${lvl.level + 1} (${lvl.pct} % du niveau actuel)`}>
               <span className="ico" aria-hidden="true">🏆</span>
-              <span>Niv. {level}</span>
-              <span className="lvl-bar" aria-hidden="true"><i style={{ width: `${xpIntoLevel}%` }} /></span>
+              <span>Niv. {lvl.level} · {lvl.pct} %</span>
+              <span className="lvl-bar" aria-hidden="true"><i style={{ width: `${lvl.pct}%` }} /></span>
+              <small className="to-next">{lvl.toNext} XP</small>
             </span>
           </div>
         </div>
@@ -175,6 +191,7 @@ export default function App() {
             {tab('passport', 'Passeport')}
             {tab('succes', 'Succès')}
             {tab('cours', 'Cours')}
+            {tab('streaks', 'Streaks')}
           </nav>
         )}
       </header>
@@ -214,6 +231,10 @@ export default function App() {
 
         {view.name === 'succes' && (
           <Trophies subjects={subjects} bank={questionBank} courses={courses} progress={progress} onUpdate={updateProgress} />
+        )}
+
+        {view.name === 'streaks' && (
+          <Streaks subjects={subjects} bank={questionBank} progress={progress} stats={stats} />
         )}
 
         {view.name === 'cours' && (

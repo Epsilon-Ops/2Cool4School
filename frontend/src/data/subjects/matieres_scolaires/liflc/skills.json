@@ -33,6 +33,15 @@
         "liflc.implication"
       ],
       "description": "Quantificateurs ∀ et ∃, négation et sens des formules."
+    },
+    {
+      "id": "liflc.stability",
+      "name": "Stabilité",
+      "short": "Stabilité",
+      "prereq": [
+        "liflc.predicats"
+      ],
+      "description": "???"
     }
   ]
 }

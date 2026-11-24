@@ -1,53 +1,49 @@
 /**
- * Progression des cours, calculée à partir de deux sources :
- *  - les notions consultées (progress.course[courseId][sectionId::terme] = true), à 0 % ou 100 % ;
- *  - la réussite aux questions liées à la sous-section (dernier résultat v, entre 0 et 1, par question).
- * Une sous-section vaut la moyenne de ces deux parts (une seule part si l'autre n'existe pas).
+ * Pourcentage d'un cours : part des questions du cours réellement acquises.
+ *
+ * Une question est acquise si ses réponses VÉRIFIÉES (correction automatique) suffisent à
+ * sa maîtrise (score ≥ 80 %, soit au moins deux réussites récentes). Les auto-évaluations ne comptent pas,
+ * et consulter une notion ne fait pas progresser le pourcentage : seule la pratique vérifiée le fait.
  */
+import { scoreOf } from './mastery.js';
+
+export const ACQUIRED = 0.8;   // score minimal pour qu'une question soit acquise
 export const noteKey = (sectionId, term) => `${sectionId}::${term}`;
 
-export function notionPct(courseId, sectionId, term, progress) {
-  return progress.course?.[courseId]?.[noteKey(sectionId, term)] ? 100 : 0;
+/** Notion consultée (« lue »). Affichée, mais sans effet sur le pourcentage. */
+export function notionRead(courseId, sectionId, term, progress) {
+  return Boolean(progress.course?.[courseId]?.[noteKey(sectionId, term)]);
 }
 
-/**
- * Une question compte comme réussie dès que sa dernière tentative est juste.
- * (Une bonne réponse en qualité 4 vaut 0,9 pour la maîtrise, mais elle doit suffire à valider le cours.)
- */
-const isDone = (v) => (v > 0 ? 1 : 0);
-
-/**
- * Part de réussite des questions d'une sous-section. Seules les questions jouables comptent
- * (`playable`, facultatif) : une question de brouillon ou absente ne peut jamais bloquer la validation.
- */
-function questionScore(ids, progress, playable) {
-  const list = playable ? (ids ?? []).filter((id) => playable.has(id)) : (ids ?? []);
-  if (!list.length) return null;
-  const sum = list.reduce((s, id) => {
-    const ev = progress.qlog?.[id];
-    return s + (ev?.length ? isDone(ev[ev.length - 1].v) : 0);
-  }, 0);
-  return sum / list.length;
+/** Une question est-elle acquise ? Seules les réponses vérifiées comptent. */
+export function isAcquired(qid, progress) {
+  const verified = (progress.qlog?.[qid] ?? []).filter((e) => !e.s);
+  const s = scoreOf(verified);
+  return s !== null && s >= ACQUIRED;
 }
 
-const avg = (xs) => (xs.length ? xs.reduce((a, b) => a + b, 0) / xs.length : 0);
-
-export function sectionPct(courseId, section, progress, playable) {
-  const parts = [];
-  if (section.terms?.length) {
-    const seen = section.terms.filter((t) => notionPct(courseId, section.id, t.term, progress) === 100).length;
-    parts.push(seen / section.terms.length);
-  }
-  const q = questionScore(section.questionIds, progress, playable);
-  if (q !== null) parts.push(q);
-  return Math.round(100 * avg(parts));
+/** Questions jouables (hors brouillons) d'une liste d'identifiants. */
+function playableIds(ids, playable) {
+  const unique = [...new Set(ids ?? [])];
+  return playable ? unique.filter((id) => playable.has(id)) : unique;
 }
+
+/** { done, total } pour une liste de questions. */
+export function countAcquired(ids, progress, playable) {
+  const list = playableIds(ids, playable);
+  return { done: list.filter((id) => isAcquired(id, progress)).length, total: list.length };
+}
+
+const pctOf = ({ done, total }) => (total ? Math.round((100 * done) / total) : 0);
+
+export const sectionPct = (courseId, section, progress, playable) =>
+  pctOf(countAcquired(section.questionIds, progress, playable));
 
 export function coursePct(course, progress, playable) {
-  return Math.round(avg(course.sections.map((s) => sectionPct(course.id, s, progress, playable))));
+  return pctOf(countAcquired(course.sections.flatMap((s) => s.questionIds ?? []), progress, playable));
 }
 
-/** Pourcentage moyen d'un ensemble de cours (chapitre, matière). */
+/** Pourcentage d'un ensemble de cours (chapitre, matière) : questions acquises sur questions totales. */
 export function groupPct(courses, progress, playable) {
-  return Math.round(avg(courses.map((c) => coursePct(c, progress, playable))));
+  return pctOf(countAcquired(courses.flatMap((c) => c.sections.flatMap((s) => s.questionIds ?? [])), progress, playable));
 }
