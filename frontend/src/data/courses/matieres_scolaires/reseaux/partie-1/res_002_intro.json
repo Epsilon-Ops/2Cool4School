@@ -1,0 +1,29 @@
+{
+  "id": "reseaux-intro-2",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Histoire, normalisation et réglementation des réseaux",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_004_histoire-telecom",
+      "title": "I. Historique des télécommunications"
+    },
+    {
+      "id": "res_005_histoire-internet",
+      "title": "II. Historique d'Internet"
+    }, 
+    {
+      "id": "res_006_normalisation",
+      "title": "III. Normalisation des réseaux"
+    },
+    {
+      "id": "res_007_reglementation",
+      "title": "IV. Réglementation des télécommunications"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 2
+}

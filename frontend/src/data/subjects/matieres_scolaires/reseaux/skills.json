@@ -1,6 +1,13 @@
 {
   "skills": [
     {
+      "id": "reseaux.intro",
+      "name": "Introduction aux réseaux",
+      "short": "Introduction",
+      "prereq": [],
+      "description": "Télécommunications, normalisations, règlementations et repères historiques"
+    },
+    {
       "id": "reseaux.architecture",
       "name": "Architecture en couches",
       "short": "Architecture",

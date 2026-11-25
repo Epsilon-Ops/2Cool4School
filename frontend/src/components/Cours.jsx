@@ -100,7 +100,7 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
 
       {open && (
         <div className="lesson-body">
-          {section.body.map((p, i) => (
+          {(section.body ?? []).map((p, i) => (
             <p key={i}>
               <Body text={p} terms={section.terms ?? []} onTerm={pickTerm} />
             </p>
@@ -116,10 +116,10 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
 
           {tab === 'analogies' && (
             <ul className="analogies">
-              {section.analogies.map((a) => (
-                <li key={a.theme}>
+              {(section.analogies ?? []).map((a, i) => (
+                <li key={a.theme ?? i}>
                   <b>{a.theme}</b>
-                  <span><MathText text={a.text} /></span>
+                  <span><MathText text={a.text ?? ''} /></span>
                 </li>
               ))}
             </ul>
@@ -127,7 +127,7 @@ function Section({ course, section, index, open, onToggle, onPractice, progress,
 
           {tab === 'terms' && (
             <dl className="terms">
-              {section.terms.map((t) => {
+              {(section.terms ?? []).map((t) => {
                 const seen = notionRead(course.id, section.id, t.term, progress);
                 return (
                   <div key={t.term} className={focus === t.term ? 'focus' : ''}>

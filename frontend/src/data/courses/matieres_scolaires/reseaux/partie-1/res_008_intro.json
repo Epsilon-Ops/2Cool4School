@@ -1,0 +1,29 @@
+{
+  "id": "reseaux-intro-8",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Étude de cas : architecture d'un réseau universitaire",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_029_lan",
+      "title": "I. Réseau local d'un bâtiment universitaire (LAN)"
+    },
+    {
+      "id": "res_030_man",
+      "title": "II. Réseau métropolitain universitaire (MAN)"
+    }, 
+    {
+      "id": "res_031_wan",
+      "title": "III. Réseau national universitaire (WAN)"
+    },
+    {
+      "id": "res_032_connex-internet",
+      "title": "Connexion à Internet"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 8
+}

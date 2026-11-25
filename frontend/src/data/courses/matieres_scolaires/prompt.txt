@@ -1,0 +1,109 @@
+PROMPT — Générateur de questions d'examen universitaire
+
+Je vais te fournir un texte correspondant à un cours universitaire. Ton rôle est d'agir comme un professeur universitaire expérimenté qui prépare ses étudiants à un examen.
+
+À partir du texte fourni, construis une très grande banque de questions susceptibles d'être posées lors d'une évaluation universitaire.
+
+1. Questions de connaissances et de définitions
+Questions directes sur les notions du cours.
+Définitions des termes importants.
+Questions sur les caractéristiques, propriétés, rôles et fonctions.
+Questions demandant de citer, identifier ou énumérer des éléments.
+2. Questions de compréhension
+Expliquer les concepts avec ses propres mots.
+Expliquer pourquoi un phénomène se produit.
+Décrire le fonctionnement d'un mécanisme.
+Expliquer les relations entre différentes notions du cours.
+3. Questions de comparaison
+Comparer deux concepts.
+Identifier leurs ressemblances et leurs différences.
+Expliquer leurs avantages, inconvénients et domaines d'utilisation.
+Présenter les différences sous forme de tableau lorsque cela est pertinent.
+4. Questions de justification et de réflexion
+Questions commençant par « Pourquoi ? », « Comment ? », « Justifier », « Expliquer » ou « Démontrer ».
+Questions nécessitant un raisonnement approfondi.
+Questions qui obligent à mobiliser plusieurs notions du cours.
+Questions où il faut défendre une réponse avec des arguments précis.
+5. Questions pièges
+
+Imagine les questions qu'un professeur pourrait poser pour vérifier que l'étudiant maîtrise réellement son cours.
+
+Formulations trompeuses.
+Affirmations à analyser.
+Situations où plusieurs notions peuvent être confondues.
+Questions auxquelles une réponse intuitive mais incorrecte pourrait être donnée.
+Cas particuliers et exceptions.
+6. Exercices de mise en situation
+
+Crée des scénarios concrets inspirés du cours. Pour chaque scénario, pose plusieurs questions permettant :
+
+D'identifier le phénomène.
+De reconnaître la notion concernée.
+D'expliquer ce qui se passe.
+De déterminer les conséquences.
+De proposer une solution lorsque cela est pertinent.
+7. Exercices de calcul
+
+Cette partie est particulièrement importante.
+
+Repère toutes les notions du cours qui pourraient donner lieu à des exercices numériques.
+
+Propose des exercices de difficulté progressive :
+
+Calculs simples.
+Conversions d'unités.
+Calculs avec plusieurs étapes.
+Problèmes nécessitant plusieurs formules.
+Exercices combinant plusieurs chapitres ou notions.
+Problèmes longs de niveau universitaire.
+
+Pour chaque exercice :
+
+Fournis un énoncé complet.
+Donne toutes les données numériques nécessaires.
+Pose plusieurs questions numérotées.
+Intègre des situations réalistes.
+Ajoute des calculs intermédiaires lorsque cela est pertinent.
+
+Ne te limite pas aux calculs explicitement présents dans le texte : imagine également les applications numériques naturelles des notions étudiées.
+
+N'invente cependant pas de formules scientifiques ou de règles qui seraient incorrectes.
+
+8. Questions longues de synthèse
+
+Propose des questions ouvertes qui nécessitent de développer une réponse structurée, de relier plusieurs parties du cours et de démontrer une compréhension globale.
+
+9. Examen blanc
+
+Construis un véritable sujet d'examen universitaire comprenant :
+
+Un titre.
+Une durée conseillée.
+Un barème sur 20.
+Plusieurs exercices indépendants.
+Des questions théoriques.
+Des questions de raisonnement.
+Des exercices de calcul.
+Une étude de cas finale.
+
+Ne donne pas les réponses immédiatement : je souhaite pouvoir m'entraîner dans les conditions d'un véritable examen.
+
+CONSIGNES IMPORTANTES
+Génère une banque très complète d'au moins 100 à 150 questions lorsque la richesse du cours le permet.
+Numérote toutes les questions de manière continue.
+Organise les questions par parties et par thèmes.
+Indique le niveau de difficulté : facile, intermédiaire, difficile ou niveau examen universitaire.
+Varie les formulations pour éviter les répétitions.
+Adopte le niveau d'exigence d'un professeur d'université.
+Ne te contente pas de reformuler les phrases du cours : transforme les connaissances en véritables questions d'évaluation.
+Couvre toutes les notions importantes du texte, y compris les petits détails.
+Ajoute des exercices de calcul même si le cours est principalement théorique, à condition qu'ils soient pertinents.
+Ne donne ni les réponses ni les corrigés dans cette première génération.
+Privilégie la quantité, la variété et la pertinence des questions.
+Utilise une présentation claire, aérée et organisée avec des titres et des sous-titres.
+
+OBJECTIF FINAL : Je veux disposer d'une banque de questions suffisamment complète pour anticiper les questions qu'un professeur pourrait me poser à l'examen et être capable de répondre même si les questions sont formulées différemment de mon cours.
+
+TEXTE DU COURS À ANALYSER :
+
+[COLLER ICI MON COURS]

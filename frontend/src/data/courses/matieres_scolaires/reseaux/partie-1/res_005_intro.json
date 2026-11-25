@@ -1,0 +1,33 @@
+{
+  "id": "reseaux-intro-5",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Performances et calculs dans les réseaux",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_016_debit",
+      "title": "I. Le débit"
+    },
+    {
+      "id": "res_017_latence",
+      "title": "II. La latence"
+    }, 
+    {
+      "id": "res_018_rtt",
+      "title": "III. Le RTT (Round Trip Time)"
+    },
+    {
+      "id": "res_019_temps-transmis",
+      "title": "Les temps de transmission"
+    },
+    {
+      "id": "res_020_formules",
+      "title": "Formules essentielles"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 5
+}

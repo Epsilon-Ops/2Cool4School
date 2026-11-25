@@ -1,0 +1,133 @@
+Skills (Réseaux) :
+    reseaux.notions - Module 1A [Notions de Base]
+    reseaux.architecture - Module 1B [Architectures en Couches]
+    reseaux.fiabilite - Module 1C [Fiabilité des Protocoles]
+    reseaux.wireshark - Module 1D [Outils : Wireshark]
+    reseaux.filius - Module 1D [Outils : Filius]
+    reseaux.ethernet - Module 2A [Ethernet]
+    reseaux.commutrepet - ...
+
+    >> Module 1A [Notions de Base]
+        --> Thème 1 : Fondamentaux des réseaux et des télécommunications
+            + res_001_intro-telecom [Introduction aux télécommunications]
+            + res_002_contraintes [Les contraintes de transmission]
+            + res_003_fondamentaux [Notions fondamentales de communication]
+
+        --> Thème 2 : Histoire, normalisation et réglementation des réseaux
+            + res_004_histoire-telecom [Historique des télécommunications]
+            + res_005_histoire-internet [Historique d'Internet]
+            + res_006_normalisation [Normalisation des réseaux]
+            + res_007_reglementation [Réglementation des télécommunications]
+
+        --> Thème 3 : Définitions, architecture et fonctions des réseaux
+            + res_008_vocabulaire [Vocabulaire fondamental]
+            + res_009_types [Les différents types de réseaux selon leur accès]
+            + res_010_organisation [Les réseaux selon leur organisation]
+            + res_011_fonctions [Les fonctions principales d'un réseau]
+            + res_012_facturation [Les modèles de facturation]
+
+        --> Thème 4 : Classification et types de réseaux
+            + res_013_classif_support [Classification selon le support et le mode de transmission]
+            + res_014_classif_taille [Classification selon la taille géographique]
+            + res_015_classif_perf [Classification selon les performances]
+
+        --> Thème 5 : Performances et calculs dans les réseaux
+            + res_016_debit [Le débit]
+            + res_017_latence [La latence]
+            + res_018_rtt [Le RTT (Round Trip Time)]
+            + res_019_temps-transmis [Les temps de transmission]
+            + res_020_formules [Formules essentielles]
+
+        --> Thème 6 : Architectures et fonctionnement des réseaux
+            + res_021_cli-serv [Réseaux informatiques : architecture client-serveur]
+            + res_022_commut-paquets [Commutation de paquets]
+            + res_023_routage-ip [Routage et adressage IP]
+            + res_024_commut-circuits [Réseaux téléphoniques : commutation de circuits]
+            + res_025_sans-fil [Réseaux sans fil]
+
+        --> Thème 7 : Écosystème industriel et enjeux des télécommunications
+            + res_026_acteurs [Les acteurs du marché]
+            + res_027_evolution [Évolution d'Internet et des usages]
+            + res_028_enjeux [Enjeux énergétiques et environnementaux]
+
+        --> Thème 8 : Étude de cas : architecture d'un réseau universitaire
+            + res_029_lan [Réseau local d'un bâtiment universitaire (LAN)]
+            + res_030_man [Réseau métropolitain universitaire (MAN)]
+            + res_031_wan [Réseau national universitaire (WAN)]
+            + res_032_connex-internet [Connexion à Internet]
+
+    >> Module 1B [Architectures en Couches]
+        --> Thème 1 : Transmission de l'information et techniques de communication
+            + res_033_types [Les différents types d'information]
+            + res_034_conversion [Conversion et codage de l'information]
+            + res_035_techniques [Les techniques de transmission]
+            + res_036_liaison [Le fonctionnement d'une liaison]
+
+        --> Thème 2 : Les supports et les signaux de transmission
+            + res_037_cuivre [Les supports filaires en cuivre]
+            + res_038_optiques [Les supports optiques]
+            + res_039_sans-fil [Les supports sans fil]
+            + res_040_signaux [Les signaux transmis et leurs perturbations]
+
+        --> Thème 3 : Les caractéristiques et les modes de transmission
+            + res_041_composants [Les composants d'un réseau]
+            + res_042_modes [Les modes de communication selon le sens de transmission]
+            + res_043_types [Les types de liaisons selon le nombre d'équipements]
+            + res_044_support [Le partage du support de transmission]
+
+        --> Thème 4 : Les topologies des réseaux
+            + res_045_topologie_bus [La topologie en bus]
+            + res_046_topologie_etoile [La topologie en étoie]
+            + res_047_topologie_anneau [La topologie en anneau]
+            + res_048_topologie_maillee [La topologie maillée]
+            + res_049_topologie [Les topologies dans les réseaux réels]
+
+        --> Thème 5 : Les architectures protocolaires et les principes des réseaux en couches
+            + res_050_definition [Définition d'une architecture réseau]
+            + res_051_protocoles [Les différentes familles de protocoles]
+            + res_052_protocoles [La notion de protocole]
+            + res_053_architecture [Le principe de l'architecture en couches]
+            + res_054_3_fonctions [Les trois grandes fonctions d'une architecture simplifiée]
+
+        --> Thème 6 : L'encapsulation et le fonctionnement des échanges entre couches
+            + res_055_encapsulation [Le principe de l'encapsulation]
+            + res_056_en-tetes [Les en-têtes et les informations transmises]
+            + res_057_emission [Le fonctionnement à l'émission]
+            + res_058_reception [Le fonctionnement à la réception]
+            + res_059_dialogue [Les deux types de dialogue entre les couches]
+            + res_060_interfaces [Les interfaces et les primitives de service]
+
+        --> Thème 7 : La fiabilité des transmissions et le contrôle des erreurs
+            + res_061_objectifs [Les objectifs d'un transfert fiable]
+            + res_062_detection [La détection des erreurs]
+            + res_063_acquittement [Les mécanismes d'acquittement]
+            + res_064_stop-and-wait [Le protocole Stop-and-Wait (Send and Wait)]
+            + res_065_complementaires [Les mécanismes complémentaires de fiabilité]
+
+        --> Thème 8 : Les portées des protocoles et les modes de fonctionnement
+            + res_066_bout-en-bout [Protocoles de bout en bout]
+            + res_067_point-a-point [Protocoles point-à-point]
+            + res_068_mode_connecte [Le mode connecté]
+            + res_069_mode_non_connecte [Le mode non connecté]
+
+        --> Thème 9 : Le modèle de référence OSI
+            + res_070_osi [Présentation générale du modèle OSI]
+            + res_071_7_couches [Les 7 couches OSI]
+            + res_072_encapsulation [L'encapsulation dans le modèle OSI]
+
+        --> Thème 10 : L'architecture TCP/IP et les protocoles d'Internet
+            + res_073_tcp-ip [Présentation de TCP/IP]
+            + res_074_application [La couche application]
+            + res_075_transport [La couche transport]
+            + res_076_internet [La couche Internet (réseau)]
+            + res_077_transmission [La couche transmission (accès réseau)]
+            + res_078_protocoloes [L'implémentation des protocoles]
+            + res_079_interconnexion [L'interconnexion dans TCP/IP]
+
+        --> Thème 11 : Étude pratique : le fonctionnement d'une requête HTTP
+            + res_080_url [Saisie d'une URL dans le navigateur]
+            + res_081_dns [Première étape : la résolution DNS]
+            + res_082_tcp [Deuxième étape : la connexion TCP]
+            + res_083_http [Troisième étape : la requête HTTP]
+            + res_084_reseau [Quatrième étape : la transmission sur le réseau]
+            + res_085_reception [Cinquième étape : la réception et la réponse]

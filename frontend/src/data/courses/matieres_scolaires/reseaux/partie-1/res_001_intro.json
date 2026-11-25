@@ -1,0 +1,97 @@
+{
+  "id": "reseaux-intro-1",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Fondamentaux des réseaux et des télécommunications",
+  "intro": "Nous allons commencer par une introduction générale aux réseaux. Nous découvrirons ce qu'est un réseau informatique et ce que sont les télécommunications. Nous aborderons également les aspects liés à la normalisation et à la réglementation, ainsi que quelques repères historiques sur l'évolution et le fonctionnement des réseaux. Enfin, nous présenterons le vocabulaire fondamental associé aux réseaux informatiques et à leurs principales fonctions.",
+  "sections": [
+    {
+      "id": "res_001_intro-telecom",
+      "title": "I. Introduction aux télécommunications",
+      "body": [
+        "Les télécommunications regroupent tout ce qui permet de transférer de l'information à distance via différents supports physiques ou non guidés (fils de cuivre, ondes radio, fibres optiques, etc.).",
+        "On distingue principalement les flux multimédias (images, son, vidéo) et les données informatiques (« data » au sens large : fichiers texte, symboles, pages web, e-mails).",
+        "Les données informatiques exigent souvent un transfert fiable : les informations reçues à destination doivent être strictement identiques à celles envoyées. Cette fiabilité repose sur quatre propriétés essentielles : l'arrivée sans erreur, sans perte, dans le bon ordre (lorsque l'information est découpée en plusieurs messages) et sans duplication (par exemple lors de retransmissions effectuées à tort après une erreur ou une perte).",
+        "À l'inverse, certaines applications multimédias sont tolérantes aux pertes et aux erreurs ponctuelles, mais ont une forte contrainte temporelle : les données doivent arriver à la bonne vitesse afin d'être lues ou entendues de manière fluide par l'humain. Des mécanismes comme le streaming (avec mise en mémoire tampon / bufferisation préalable) permettent de restituer le flux au bon rythme malgré les variations du réseau.",
+        "Sur le plan historique, la communication humaine directe (bouche et oreilles jouant un rôle analogue à une carte réseau) et la télégraphie (notamment au début du XXe siècle avec des signaux) ont précédé l'essor des grands réseaux mondiaux : le réseau téléphonique (milieu du XXe siècle, conçu d'abord pour le transfert de la voix entre appelant et appelé), puis Internet (apparu dans les années 1980, conçu d'abord pour le transfert fiable de données).",
+        "Aujourd'hui, ces deux univers convergent et cohabitent au sein des réseaux des opérateurs : on téléphone et on regarde la télévision sur Internet, tandis que les smartphones servent massivement à échanger des données. L'équipement terminal de l'utilisateur (ordinateur, téléphone ou smartphone) permet d'accéder à ces services."
+      ],
+      "terms": [
+        "Télécommunications",
+        "Multimédia",
+        "Data",
+        "Transfert fiable",
+        "Streaming",
+        "Bufferisation",
+        "Réseau téléphonique",
+        "Internet",
+        "Équipement terminal"
+      ],
+      "questionIds": [
+        "reseaux_q001_intro",
+        "reseaux_q002_intro",
+        "reseaux_q003_intro",
+        "reseaux_q004_intro",
+        "reseaux_q005_intro",
+        "reseaux_q006_intro",
+        "reseaux_q007_intro",
+        "reseaux_q008_intro",
+        "reseaux_q009_intro",
+        "reseaux_q010_intro",
+        "reseaux_q011_intro",
+        "reseaux_q012_intro",
+        "reseaux_q013_intro",
+        "reseaux_q014_intro",
+        "reseaux_q015_intro",
+        "reseaux_q016_intro",
+        "reseaux_q017_intro",
+        "reseaux_q018_intro",
+        "reseaux_q019_intro",
+        "reseaux_q020_intro"
+      ]
+    },
+    {
+      "id": "res_002_contraintes",
+      "title": "II. Les contraintes de transmission",
+      "body": [
+        "Les contraintes de transmission varient selon la nature de l'application et des informations échangées sur le réseau : fiabilité stricte d'un côté, respect des délais et de la régularité du débit pour le temps réel et le multimédia de l'autre.",
+        "La mise en œuvre de la fiabilité passe par des mécanismes de contrôle (détection d'erreurs, détection de pertes, numérotation des morceaux pour la remise en ordre et l'élimination des doublons, retransmissions si nécessaire). Ces retransmissions expliquent qu'un bloc puisse parfois arriver en double si un acquittement ou un paquet a été mal interprété.",
+        "Pour les flux audio et vidéo, les ralentissements ou variations de délai (gigue/latence) dégradent l'expérience utilisateur ; la mise en mémoire tampon (buffer) absorbe ces irrégularités pour assurer une restitution continue.",
+        "Quel que soit le type d'application, franchir des liaisons impose de convertir l'information en séquence binaire puis en signal physique adapté au support, grâce à l'électronique (comme les cartes réseau) et aux protocoles."
+      ],
+      "terms": [
+        "Fiabilité",
+        "Retransmission",
+        "Duplication",
+        "Latence",
+        "Buffer"
+      ],
+      "questionIds": []
+    },
+    {
+      "id": "res_003_fondamentaux",
+      "title": "III. Notions fondamentales de communication",
+      "body": [
+        "Pour circuler sur différentes liaisons d'un point à un autre, l'information doit être convertie en une séquence binaire, puis transformée en un signal physique par l'électronique matérielle (par exemple une carte réseau).",
+        "Un protocole est un ensemble de règles, généralement normalisées dans un document de référence, permettant à deux entités communicantes de coopérer pour réaliser une fonction donnée : transporter un signal sur une liaison, assurer la fiabilité ou fournir un service applicatif.",
+        "Sur Internet, le protocole TCP met en œuvre la fiabilité grâce à des algorithmes gérant la détection d'erreurs, la détection de pertes, les retransmissions et la remise en ordre des segments d'un fichier.",
+        "Concrètement, un protocole combine des algorithmes et l'échange d'informations de contrôle placées dans des en-têtes (« entêtes ») : par exemple, un champ de contrôle d'erreur (checksum) ou des numéros de séquence permettant de compter les morceaux, détecter les pertes et reconstituer le message dans l'ordre."
+      ],
+      "terms": [
+        "Séquence binaire",
+        "Signal",
+        "Carte réseau",
+        "Protocole",
+        "Normalisation",
+        "TCP",
+        "En-tête (entête)",
+        "Checksum"
+      ],
+      "questionIds": []
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 1
+}

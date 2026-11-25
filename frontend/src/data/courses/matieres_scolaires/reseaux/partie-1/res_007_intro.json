@@ -1,0 +1,25 @@
+{
+  "id": "reseaux-intro-7",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Écosystème industriel et enjeux des télécommunications",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_026_acteurs",
+      "title": "I. Les acteurs du marché"
+    },
+    {
+      "id": "res_027_evolution",
+      "title": "II. Évolution d'Internet et des usages"
+    }, 
+    {
+      "id": "res_028_enjeux",
+      "title": "III. Enjeux énergétiques et environnementaux"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 7
+}

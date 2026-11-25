@@ -1,0 +1,1555 @@
+[
+  {
+    "id": "reseaux_q001_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'une télécommunication ?",
+    "answer": "Toute transmission, émission ou réception de signes, de signaux, d'écrits, d'images, de sons ou de renseignements de toute nature, par fil, radioélectricité, optique ou autres systèmes électromagnétiques",
+    "distractors": [
+      "Uniquement l'échange de messages vocaux via un réseau téléphonique filaire",
+      "Le processus de stockage local de données sur un disque dur externe",
+      "Un protocole logiciel permettant d'afficher des pages web sur un navigateur"
+    ],
+    "explanation": "Selon la définition officielle de l'Union internationale des télécommunications (UIT), une télécommunication désigne toute communication à distance d'informations (voix, données, images, etc.) sur un support physique ou sans fil.",
+    "tags": [
+      "telecommunication",
+      "introduction",
+      "definition"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "transmission",
+          "émission",
+          "réception"
+        ],
+        [
+          "signaux",
+          "signe",
+          "signal",
+          "image",
+          "images",
+          "écrit",
+          "écrits",
+          "ecrits",
+          "ecrit"
+        ]
+      ],
+      "labels": [
+        "Transmission, émission ou réception de signes"
+      ],
+      "optional": [
+        [
+          "son",
+          "sons"
+        ],
+        [
+          "fil"
+        ],
+        [
+          "radioélectricité",
+          "radio-electricité",
+          "radio-électricité",
+          "radio electricité",
+          "radio électricité"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 8
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  {
+    "id": "reseaux_q002_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Quel est l'objectif principal des télécommunications ?",
+    "answer": "Permettre l'échange et le transfert d'informations à distance de manière fiable, rapide et intelligible entre un émetteur et un ou plusieurs récepteurs",
+    "distractors": [
+      "Remplacer intégralement le stockage physique des données sur les serveurs locaux",
+      "Garantir uniquement le chiffrement militaire des communications gouvernementales",
+      "Augmenter la puissance de calcul des processeurs d'un ordinateur"
+    ],
+    "explanation": "L'objectif fondamental des télécommunications est de abolir les contraintes géographiques en acheminant une information (voix, texte, vidéo, données) d'un point A à un point B sans altération majeure du message.",
+    "tags": [
+      "telecommunication",
+      "introduction",
+      "objectif"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "échange",
+          "échanger",
+          "echange",
+          "echanger",
+          "transfert",
+          "transférer",
+          "transferer",
+          "transmission",
+          "transmettre",
+          "communication",
+          "communiquer"
+        ],
+        [
+          "information",
+          "informations",
+          "donnée",
+          "données",
+          "donnee",
+          "donnees",
+          "message",
+          "messages"
+        ],
+        [
+          "distance",
+          "éloigné",
+          "éloignés",
+          "eloigne",
+          "eloignes",
+          "loin"
+        ]
+      ],
+      "labels": [
+        "Échange ou transfert d'informations à distance"
+      ],
+      "optional": [
+        [
+          "fiable",
+          "fiabilité",
+          "fiabilite"
+        ],
+        [
+          "rapide",
+          "rapidité",
+          "rapidite"
+        ],
+        [
+          "émetteur",
+          "emetteur",
+          "récepteur",
+          "recepteur"
+        ]
+      ],
+      "forbidden": [
+        "Interdire",
+        "interdire"
+      ],
+      "minWords": 6
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  {
+    "id": "reseaux_q003_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Quels sont les différents supports physiques utilisés dans les télécommunications ?",
+    "distractors": [
+      "Les câbles USB et les disques durs externes",
+      "Les satellites géostationnaires et les câbles sous-marins",
+      "Les protocoles HTTP, TCP/IP et les adresses MAC"
+    ],
+    "explanation": "On classe les supports de transmission en deux grandes catégories : les supports guidés (câbles en cuivre comme la paire torsadée et le coaxial, ou la fibre optique) et les supports non guidés qui utilisent l'air ou le vide (ondes radio, micro-ondes, infrarouge).",
+    "tags": [
+      "telecommunication",
+      "supports",
+      "transmission",
+      "physique"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "filaire",
+          "filaires",
+          "cuivre",
+          "coaxial",
+          "torsadée",
+          "torsadee",
+          "câble",
+          "cable",
+          "câbles",
+          "cables"
+        ],
+        [
+          "fibre",
+          "optique",
+          "optiques"
+        ],
+        [
+          "sans fil",
+          "radio",
+          "onde",
+          "ondes",
+          "hertzien",
+          "hertziens",
+          "radioélectrique",
+          "radioélectriques",
+          "radioelectrique",
+          "radioelectriques"
+        ]
+      ],
+      "labels": [
+        "Supports filaires (cuivre/coaxial/paire torsadée), fibre optique et sans fil (ondes radio)"
+      ],
+      "optional": [
+        [
+          "guidé",
+          "guidés",
+          "guide",
+          "guides"
+        ],
+        [
+          "infrarouge",
+          "satellite"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 6
+    },
+    "formats": [
+      "multi_choice"
+    ],
+    "answers": [
+      "Les supports filaires métalliques (câble coaxial, paire torsadée)",
+      "Les supports optiques (fibre optique)",
+      "Les supports sans fil (ondes radioélectriques, infrarouge, faisceaux hertziens)"
+    ]
+  },
+  {
+    "id": "reseaux_q004_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Quelle est la différence entre un support guidé et un support non guidé ?",
+    "answer": "Un support guidé canalise le signal le long d'un chemin matériel physique (câble cuivre, fibre optique), tandis qu'un support non guidé diffuse le signal librement dans l'espace ou l'atmosphère via des ondes électromagnétiques sans lien physique",
+    "distractors": [
+      "Un support guidé nécessite toujours l'intervention d'un opérateur humain, alors qu'un support non guidé est entièrement automatisé",
+      "Un support guidé sert uniquement à transporter de l'électricité et un support non guidé transporte uniquement des données informatiques",
+      "Un support guidé est réservé aux réseaux longue distance internationaux et un support non guidé aux connexions internes d'un ordinateur"
+    ],
+    "explanation": "La différence réside dans le confinement du signal : les supports guidés (filaires) enferment et dirigent l'énergie le long d'un conducteur (cuivre) ou d'un guide d'onde (fibre), alors que les supports non guidés (sans fil) rayonnent les ondes dans l'air, l'eau ou le vide.",
+    "tags": [
+      "telecommunication",
+      "supports",
+      "guide",
+      "non-guide"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "câble",
+          "cable",
+          "câbles",
+          "cables",
+          "fil",
+          "filaire",
+          "matériel",
+          "materiel",
+          "physique",
+          "fibre",
+          "cuivre",
+          "canalise",
+          "dirige"
+        ],
+        [
+          "sans fil",
+          "onde",
+          "ondes",
+          "air",
+          "espace",
+          "atmosphère",
+          "atmosphere",
+          "vide",
+          "radio",
+          "libre",
+          "librement",
+          "diffuse"
+        ]
+      ],
+      "labels": [
+        "Support guidé : chemin physique/câble ; Support non guidé : propagation libre par ondes sans fil"
+      ],
+      "optional": [
+        [
+          "électromagnétique",
+          "électromagnétiques",
+          "electromagnetique",
+          "electromagnetiques",
+          "hertzien",
+          "hertziens"
+        ],
+        [
+          "signal",
+          "signaux"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 8
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  {
+    "id": "reseaux_q005_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Donner trois exemples de supports de transmission.",
+    "answers": [
+      "Le câble à paire torsadée",
+      "La fibre optique",
+      "Les ondes radioélectriques"
+    ],
+    "distractors": [
+      "Le protocole Ethernet",
+      "Le commutateur réseau",
+      "La modulation de fréquence"
+    ],
+    "explanation": "La paire torsadée, la fibre optique et les ondes radio sont les milieux physiques qui transportent réellement le signal. Ethernet est un protocole (norme de communication), le switch est un équipement d'interconnexion et la modulation FM est une technique de codage du signal.",
+    "tags": [
+      "telecommunication",
+      "supports",
+      "transmission",
+      "exemples"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "paire torsadée",
+          "paire torsadee",
+          "coaxial",
+          "cuivre",
+          "câble",
+          "cable"
+        ],
+        [
+          "fibre",
+          "optique"
+        ],
+        [
+          "onde",
+          "ondes",
+          "radio",
+          "hertzien",
+          "hertziens",
+          "infrarouge",
+          "wifi",
+          "wi-fi"
+        ]
+      ],
+      "labels": [
+        "Trois supports valides (ex : paire torsadée, fibre optique, ondes radio)"
+      ],
+      "optional": [
+        [
+          "satellite",
+          "faisceau"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 5
+    },
+    "formats": [
+      "multi_choice",
+      "short_answer",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_q006_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un support de transmission filaire ?",
+    "answer": "Un milieu physique matériel, tel qu'un câble métallique (paire torsadée, coaxial) ou une fibre optique, qui guide et confine un signal électrique ou lumineux d'un point à un autre",
+    "distractors": [
+      "Un canal de propagation atmosphérique utilisant des antennes directionnelles pour focaliser des faisceaux hertziens entre deux relais",
+      "Un protocole de couche liaison permettant de structurer et d'encapsuler les trames avant leur injection sur le réseau local",
+      "Un équipement actif d'interconnexion, comme un répéteur ou un commutateur, chargé de régénérer l'amplitude du signal sur longue distance"
+    ],
+    "explanation": "Un support filaire (ou support guidé) est une liaison matérielle physique (fils de cuivre ou brins de verre/plastique) qui enferme le signal pour l'acheminer directement de l'émetteur au récepteur, limitant ainsi sa dispersion dans l'environnement.",
+    "tags": [
+      "telecommunication",
+      "supports",
+      "filaire",
+      "definition"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "câble",
+          "cable",
+          "câbles",
+          "cables",
+          "fil",
+          "fils",
+          "matériel",
+          "materiel",
+          "physique",
+          "fibre",
+          "cuivre"
+        ],
+        [
+          "signal",
+          "signaux",
+          "information",
+          "informations",
+          "donnée",
+          "données",
+          "donnee",
+          "donnees",
+          "électrique",
+          "electrique",
+          "lumineux"
+        ],
+        [
+          "guide",
+          "guider",
+          "canalise",
+          "canaliser",
+          "transporte",
+          "transporter",
+          "achemine",
+          "acheminer",
+          "transmet",
+          "transmettre"
+        ]
+      ],
+      "labels": [
+        "Milieu physique matériel (câble/fibre) guidant le signal entre deux points"
+      ],
+      "optional": [
+        [
+          "paire torsadée",
+          "paire torsadee",
+          "coaxial"
+        ],
+        [
+          "confine",
+          "confiner"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 6
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  {
+    "id": "reseaux_q007_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Qu'est-ce qu'un support de transmission sans fil ?",
+    "answer": "Un milieu non guidé (air, atmosphère ou vide) dans lequel l'information se propage librement sous forme d'ondes électromagnétiques ou lumineuses (radio, faisceaux hertziens, infrarouge) sans liaison matérielle continue",
+    "distractors": [
+      "Un guide d'onde diélectrique souple permettant de transporter des impulsions lumineuses à très haut débit sans perte thermique",
+      "Un protocole de contrôle d'accès au média (comme le CSMA/CA) chargé d'éviter les collisions entre plusieurs stations mobiles",
+      "Un dispositif émetteur-récepteur (comme un point d'accès Wi-Fi ou une antenne relais) convertissant les trames numériques en signaux analogiques"
+    ],
+    "explanation": "Un support sans fil (ou non guidé) utilise l'espace libre comme milieu de propagation. Le signal n'est pas enfermé dans un câble mais rayonné par une antenne sous forme d'ondes (radio, micro-ondes, infrarouge) captées à distance par un récepteur.",
+    "tags": [
+      "telecommunication",
+      "supports",
+      "sans-fil",
+      "definition"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "onde",
+          "ondes",
+          "électromagnétique",
+          "électromagnétiques",
+          "electromagnetique",
+          "electromagnetiques",
+          "radio",
+          "hertzien",
+          "hertziens",
+          "infrarouge"
+        ],
+        [
+          "air",
+          "atmosphère",
+          "atmosphere",
+          "vide",
+          "espace",
+          "sans câble",
+          "sans cable",
+          "sans fil",
+          "non guidé",
+          "non guide",
+          "non-guidé",
+          "non-guide",
+          "matériel",
+          "materiel"
+        ],
+        [
+          "propage",
+          "propagation",
+          "transmet",
+          "transmission",
+          "diffuse",
+          "diffusion",
+          "circule",
+          "rayonnement",
+          "rayonne"
+        ]
+      ],
+      "labels": [
+        "Propagation d'ondes (électromagnétiques/radio) dans l'air ou le vide sans câble physique"
+      ],
+      "optional": [
+        [
+          "antenne",
+          "antennes"
+        ],
+        [
+          "signal",
+          "signaux",
+          "information",
+          "informations",
+          "données",
+          "donnees"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 6
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  {
+    "id": "reseaux_q008_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Quelle est la différence entre une fibre optique et un câble en cuivre ?",
+    "answer": "La fibre optique transmet l'information sous forme d'impulsions lumineuses dans un cœur en verre ou en plastique (très haut débit, longue distance, insensible aux interférences électromagnétiques), tandis que le câble en cuivre utilise des signaux électriques dans un conducteur métallique (portée plus limitée et sensible aux perturbations)",
+    "distractors": [
+      "La fibre optique est réservée aux réseaux longue distance sans fil par satellite, alors que le câble en cuivre assure uniquement l'alimentation électrique des équipements",
+      "La fibre optique transmet uniquement des signaux analogiques continus, tandis que le câble en cuivre ne transporte que des trames numériques compressées",
+      "La fibre optique nécessite une mise à la terre à chaque extrémité pour éviter la diaphonie, alors que le câble en cuivre est totalement immunisé contre le bruit électromagnétique"
+    ],
+    "explanation": "La distinction fondamentale réside dans la nature physique du signal et du matériau : le cuivre conduit un courant électrique (sujet à l'atténuation et aux interférences électromagnétiques), tandis que la fibre guide de la lumière par réflexion totale interne (offrant une bande passante massive et une immunité électromagnétique).",
+    "tags": [
+      "telecommunication",
+      "supports",
+      "fibre-optique",
+      "cuivre"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "lumière",
+          "lumiere",
+          "lumineux",
+          "lumineuse",
+          "lumineuses",
+          "optique",
+          "photon",
+          "photons",
+          "verre",
+          "silice"
+        ],
+        [
+          "électrique",
+          "electrique",
+          "électriques",
+          "electriques",
+          "électricité",
+          "electricite",
+          "courant",
+          "électron",
+          "electrons",
+          "métallique",
+          "metallique"
+        ]
+      ],
+      "labels": [
+        "Fibre optique : signal lumineux (verre/plastique) ; Câble en cuivre : signal électrique (métal)"
+      ],
+      "optional": [
+        [
+          "débit",
+          "debit",
+          "rapide",
+          "bande passante"
+        ],
+        [
+          "distance",
+          "portée",
+          "portee",
+          "atténuation",
+          "attenuation"
+        ],
+        [
+          "interférence",
+          "interférences",
+          "interference",
+          "interferences",
+          "électromagnétique",
+          "electromagnetique",
+          "perturbation",
+          "perturbations",
+          "bruit"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 8
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  {
+    "id": "reseaux_q009_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Quels sont les deux grands types de flux transportés par les réseaux de télécommunications ?",
+    "answers": [
+      "Les flux de données (trafic informatique, fichiers, web, messagerie)",
+      "Les flux multimédias temps réel (voix sur IP, audio et vidéo en continu)"
+    ],
+    "distractors": [
+      "Les flux d'alimentation électrique continue (PoE haute tension)",
+      "Les flux de synchronisation matérielle des horloges atomiques locales",
+      "Les flux de refroidissement thermique des baies de brassage"
+    ],
+    "explanation": "Les réseaux modernes convergent pour transporter principalement deux grandes familles de trafic : les données informatiques classiques (souvent tolérantes à un léger délai mais exigeant zéro perte) et les flux multimédias ou vocaux (très sensibles à la latence et à la gigue).",
+    "tags": [
+      "telecommunication",
+      "flux",
+      "donnees",
+      "multimedia",
+      "voix"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "donnée",
+          "données",
+          "donnee",
+          "donnees",
+          "data",
+          "informatique",
+          "fichier",
+          "fichiers",
+          "texte"
+        ],
+        [
+          "voix",
+          "audio",
+          "son",
+          "vidéo",
+          "video",
+          "multimédia",
+          "multimedia",
+          "image",
+          "images",
+          "temps réel",
+          "temps reel"
+        ]
+      ],
+      "labels": [
+        "Flux de données (data/informatique) et flux multimédias/temps réel (voix, vidéo)"
+      ],
+      "optional": [
+        [
+          "voip",
+          "streaming",
+          "latence"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 4
+    },
+    "formats": [
+      "multi_choice",
+      "short_answer",
+      "flashcard"
+    ]
+  },
+  {
+    "id": "reseaux_q010_intro",
+    "subject": "reseaux",
+    "skill": "reseaux.intro",
+    "difficulty": 1,
+    "prompt": "Que signifie le terme « multimédia » ?",
+    "answer": "La combinaison et l'intégration simultanée de plusieurs formes de contenus ou supports d'information (texte, son, image fixe, vidéo, animation) sur un même support numérique ou réseau",
+    "distractors": [
+      "L'utilisation simultanée de plusieurs supports physiques de transmission (fibre optique, cuivre et ondes radio) pour acheminer un même paquet",
+      "Un protocole de couche transport spécialisé uniquement dans la compression sans perte de fichiers texte volumineux",
+      "La capacité d'un commutateur réseau à diffuser une même trame vers l'ensemble des ports connectés en mode broadcast"
+    ],
+    "explanation": "Le mot « multimédia » désigne l'association de plusieurs médias (texte, audio, image, vidéo) au sein d'un même document, d'une application ou d'un flux de communication numérique.",
+    "tags": [
+      "telecommunication",
+      "multimedia",
+      "definition",
+      "introduction"
+    ],
+    "evaluation": {
+      "type": "semantic",
+      "required": [
+        [
+          "plusieurs",
+          "combinaison",
+          "association",
+          "ensemble",
+          "intégration",
+          "integration",
+          "mélange",
+          "melange",
+          "différents",
+          "differents"
+        ],
+        [
+          "texte",
+          "son",
+          "audio",
+          "image",
+          "images",
+          "vidéo",
+          "video",
+          "média",
+          "médias",
+          "media",
+          "medias",
+          "contenu",
+          "contenus"
+        ]
+      ],
+      "labels": [
+        "Combinaison de plusieurs types de médias (texte, son, image, vidéo)"
+      ],
+      "optional": [
+        [
+          "animation",
+          "interactif",
+          "numérique",
+          "numerique"
+        ],
+        [
+          "simultanée",
+          "simultanee",
+          "même support",
+          "meme support"
+        ]
+      ],
+      "forbidden": [],
+      "minWords": 5
+    },
+    "formats": [
+      "single_choice",
+      "flashcard",
+      "true_false",
+      "short_answer"
+    ]
+  },
+  [
+    {
+      "id": "reseaux_q011_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Donner quatre exemples de données informatiques.",
+      "answers": [
+        "Un fichier texte ou document bureautique",
+        "Une base de données relationnelle",
+        "Un courrier électronique (e-mail)",
+        "Le code source d'une page web (HTML/CSS)"
+      ],
+      "distractors": [
+        "Un flux audio téléphonique en temps réel",
+        "Une diffusion vidéo en direct (streaming live)",
+        "Un signal analogique de radiodiffusion FM"
+      ],
+      "explanation": "Les données informatiques (data) regroupent les informations numériques discrètes générées ou traitées par des logiciels (fichiers, e-mails, requêtes web, enregistrements de bases de données), par opposition aux flux audio/vidéo continus.",
+      "tags": [
+        "telecommunication",
+        "donnees",
+        "data",
+        "exemples"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "fichier",
+            "fichiers",
+            "document",
+            "documents",
+            "texte"
+          ],
+          [
+            "base de données",
+            "base de donnees",
+            "bases de données",
+            "bases de donnees",
+            "tableur",
+            "tableau"
+          ],
+          [
+            "mail",
+            "mails",
+            "e-mail",
+            "e-mails",
+            "email",
+            "emails",
+            "courriel",
+            "courriels",
+            "message",
+            "messages"
+          ],
+          [
+            "page web",
+            "pages web",
+            "code",
+            "programme",
+            "logiciel",
+            "requête",
+            "requete"
+          ]
+        ],
+        "labels": [
+          "Quatre exemples valides (ex : fichier texte, base de données, e-mail, page web)"
+        ],
+        "optional": [
+          [
+            "binaire",
+            "numérique",
+            "numerique"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 6
+      },
+      "formats": [
+        "multi_choice",
+        "short_answer",
+        "flashcard"
+      ]
+    },
+    {
+      "id": "reseaux_q012_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Que signifie le terme « data » dans le domaine des télécommunications ?",
+      "answer": "L'ensemble des informations numériques (fichiers, textes, requêtes web, messages) transmises sous forme de paquets binaires sur un réseau, par distinction historique avec les communications vocales traditionnelles",
+      "distractors": [
+        "Uniquement la bande passante physique maximale supportée par un câble en cuivre de catégorie 6",
+        "Un protocole de chiffrement matériel intégré dans les cartes mères des serveurs d'entreprise",
+        "Les signaux électriques analogiques générés directement par le microphone d'un combiné téléphonique"
+      ],
+      "explanation": "Dans les télécoms (notamment mobile et opérateur), le terme « data » désigne le trafic de données numériques (navigation Internet, e-mails, transfert de fichiers) par opposition à la « voix » (appels téléphoniques classiques) et aux SMS.",
+      "tags": [
+        "telecommunication",
+        "data",
+        "definition",
+        "introduction"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "donnée",
+            "données",
+            "donnee",
+            "donnees",
+            "information",
+            "informations",
+            "fichier",
+            "fichiers",
+            "trafic"
+          ],
+          [
+            "numérique",
+            "numériques",
+            "numerique",
+            "numeriques",
+            "binaire",
+            "binaires",
+            "informatique",
+            "informatiques",
+            "paquet",
+            "paquets"
+          ]
+        ],
+        "labels": [
+          "Informations ou données numériques transmises sur le réseau (par opposition à la voix)"
+        ],
+        "optional": [
+          [
+            "voix",
+            "appel",
+            "appels"
+          ],
+          [
+            "internet",
+            "réseau",
+            "reseau"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 5
+      },
+      "formats": [
+        "single_choice",
+        "flashcard",
+        "true_false",
+        "short_answer"
+      ]
+    },
+    {
+      "id": "reseaux_q013_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Quelle est la différence entre une donnée informatique et un flux multimédia ?",
+      "answer": "Une donnée informatique (fichier, e-mail, page web) est transmise par blocs discrets qui exigent une intégrité totale sans perte mais tolèrent un léger délai, tandis qu'un flux multimédia (voix, vidéo en direct) est un flot continu très sensible à la latence et à la gigue mais tolérant quelques pertes minimes",
+      "distractors": [
+        "Une donnée informatique circule exclusivement sur la fibre optique, alors qu'un flux multimédia ne peut transiter que par des câbles coaxiaux",
+        "Une donnée informatique est toujours chiffrée par défaut au niveau physique, tandis qu'un flux multimédia est obligatoirement transmis en clair",
+        "Une donnée informatique ne nécessite aucune adresse IP de destination, alors qu'un flux multimédia utilise uniquement des adresses MAC"
+      ],
+      "explanation": "La différence tient aux contraintes de qualité de service (QoS) : pour un fichier, perdre un octet corrompt le document (on préfère attendre une retransmission), alors que pour un appel vidéo, un retard de 2 secondes rend la conversation impossible (on préfère ignorer un paquet perdu).",
+      "tags": [
+        "telecommunication",
+        "donnees",
+        "multimedia",
+        "qos"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "donnée",
+            "données",
+            "donnee",
+            "donnees",
+            "fichier",
+            "fichiers",
+            "texte",
+            "discret",
+            "bloc"
+          ],
+          [
+            "flux",
+            "continu",
+            "temps réel",
+            "temps reel",
+            "audio",
+            "voix",
+            "vidéo",
+            "video",
+            "multimédia",
+            "multimedia"
+          ],
+          [
+            "latence",
+            "délai",
+            "delai",
+            "temps",
+            "perte",
+            "pertes",
+            "intégrité",
+            "integrite",
+            "rapidité",
+            "rapidite",
+            "gigue"
+          ]
+        ],
+        "labels": [
+          "Donnée : transfert discret exigeant zéro perte ; Flux multimédia : flot continu sensible au délai/latence"
+        ],
+        "optional": [
+          [
+            "retransmission",
+            "tcp",
+            "udp"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 8
+      },
+      "formats": [
+        "single_choice",
+        "flashcard",
+        "true_false",
+        "short_answer"
+      ]
+    },
+    {
+      "id": "reseaux_q014_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Donner trois exemples d'applications multimédias.",
+      "answers": [
+        "La visioconférence (ex : Zoom, Microsoft Teams)",
+        "Le streaming vidéo ou musical en ligne (ex : YouTube, Spotify)",
+        "La téléphonie sur IP (VoIP)"
+      ],
+      "distractors": [
+        "Le transfert de fichiers en ligne de commande (FTP/SFTP)",
+        "La synchronisation de dépôts de code source (Git)",
+        "La résolution de noms de domaine (DNS)"
+      ],
+      "explanation": "Les applications multimédias combinent et diffusent des flux audio, vidéo ou interactifs en continu. À l'inverse, FTP, Git ou DNS ne manipulent que des données informatiques ou des requêtes protocolaires.",
+      "tags": [
+        "telecommunication",
+        "multimedia",
+        "applications",
+        "exemples"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "visioconférence",
+            "visioconference",
+            "visio",
+            "appel vidéo",
+            "appel video",
+            "teams",
+            "zoom"
+          ],
+          [
+            "streaming",
+            "vidéo",
+            "video",
+            "youtube",
+            "netflix",
+            "musique",
+            "audio",
+            "spotify",
+            "iptv",
+            "télévision",
+            "television"
+          ],
+          [
+            "voip",
+            "téléphonie",
+            "telephonie",
+            "appel",
+            "jeu",
+            "jeux"
+          ]
+        ],
+        "labels": [
+          "Trois applications multimédias (ex : visioconférence, streaming vidéo/audio, téléphonie VoIP)"
+        ],
+        "optional": [
+          [
+            "temps réel",
+            "temps reel",
+            "direct"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 5
+      },
+      "formats": [
+        "multi_choice",
+        "short_answer",
+        "flashcard"
+      ]
+    },
+    {
+      "id": "reseaux_q015_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Donner trois exemples d'applications utilisant des données informatiques.",
+      "answers": [
+        "La messagerie électronique (clients mail / Webmail)",
+        "La navigation sur des sites web (HTTP/HTTPS)",
+        "Le transfert de fichiers ou stockage cloud (FTP, Drive)"
+      ],
+      "distractors": [
+        "La diffusion radio analogique en modulation d'amplitude (AM)",
+        "La télévision numérique terrestre hertzienne (TNT)",
+        "La téléphonie mobile circuit traditionnelle (GSM voix)"
+      ],
+      "explanation": "Les clients de messagerie, les navigateurs web et les outils de transfert de fichiers reposent sur l'échange de paquets de données informatiques (textes, pages HTML, fichiers binaires).",
+      "tags": [
+        "telecommunication",
+        "donnees",
+        "applications",
+        "exemples"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "mail",
+            "e-mail",
+            "email",
+            "courriel",
+            "messagerie"
+          ],
+          [
+            "web",
+            "navigateur",
+            "navigation",
+            "site",
+            "http",
+            "https"
+          ],
+          [
+            "fichier",
+            "fichiers",
+            "transfert",
+            "ftp",
+            "cloud",
+            "base de données",
+            "base de donnees"
+          ]
+        ],
+        "labels": [
+          "Trois applications de données (ex : messagerie électronique, navigation web, transfert de fichiers)"
+        ],
+        "optional": [
+          [
+            "banque",
+            "transaction",
+            "erp"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 5
+      },
+      "formats": [
+        "multi_choice",
+        "short_answer",
+        "flashcard"
+      ]
+    },
+    {
+      "id": "reseaux_q016_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Pourquoi les télécommunications sont-elles indispensables dans notre société actuelle ?",
+      "answer": "Elles assurent l'interconnexion mondiale instantanée des personnes, des entreprises et des objets, soutenant l'économie numérique, l'accès à l'information, le télétravail, les services publics (santé, finance, transports) et les communications d'urgence",
+      "distractors": [
+        "Parce qu'elles permettent de supprimer totalement le besoin d'énergie électrique dans les centres de données et les foyers",
+        "Parce qu'elles remplacent l'ensemble des systèmes d'exploitation locaux des ordinateurs par un unique noyau centralisé",
+        "Parce qu'elles garantissent physiquement l'impossibilité absolue de toute panne matérielle ou cyberattaque sur Internet"
+      ],
+      "explanation": "Les télécommunications forment l'infrastructure nerveuse de la société moderne : sans réseaux, les transactions bancaires, la logistique, l'accès aux soins connectés, l'éducation à distance et la coordination des secours seraient paralysés.",
+      "tags": [
+        "telecommunication",
+        "societe",
+        "enjeux",
+        "introduction"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "communication",
+            "communiquer",
+            "échange",
+            "échanger",
+            "echange",
+            "echanger",
+            "relier",
+            "interconnexion",
+            "connecter",
+            "lien"
+          ],
+          [
+            "distance",
+            "monde",
+            "mondial",
+            "instantané",
+            "instantanee",
+            "rapide",
+            "partout",
+            "temps réel",
+            "temps reel"
+          ],
+          [
+            "information",
+            "informations",
+            "travail",
+            "télétravail",
+            "teletravail",
+            "économie",
+            "economie",
+            "entreprise",
+            "entreprises",
+            "service",
+            "services",
+            "urgence",
+            "santé",
+            "sante"
+          ]
+        ],
+        "labels": [
+          "Communication instantanée à distance indispensable à l'économie, aux services et aux échanges"
+        ],
+        "optional": [
+          [
+            "internet",
+            "numérique",
+            "numerique"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 8
+      },
+      "formats": [
+        "single_choice",
+        "flashcard",
+        "true_false",
+        "short_answer"
+      ]
+    },
+    {
+      "id": "reseaux_q017_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Quel est le rôle d'un équipement terminal ?",
+      "answer": "Constituer le point d'extrémité du réseau permettant à l'utilisateur ou à une application d'émettre, de recevoir et de traiter les informations en les convertissant entre un format compréhensible et des signaux transmissibles sur le réseau",
+      "distractors": [
+        "Assurer uniquement le routage dynamique des paquets IP entre différents systèmes autonomes sur Internet",
+        "Amplifier et régénérer uniquement le signal optique à mi-parcours d'un câble sous-marin transatlantique",
+        "Attribuer automatiquement les fréquences radioélectriques réglementaires aux opérateurs nationaux"
+      ],
+      "explanation": "Un équipement terminal (ou hôte / ETTD) se situe en bordure du réseau : c'est la source initiale ou la destination finale des données (ordinateur, smartphone, téléphone IP), contrairement aux équipements intermédiaires (routeurs, switchs) qui ne font qu'acheminer le trafic.",
+      "tags": [
+        "telecommunication",
+        "equipement",
+        "terminal",
+        "role"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "émettre",
+            "emettre",
+            "envoyer",
+            "recevoir",
+            "échanger",
+            "echanger",
+            "accéder",
+            "acceder"
+          ],
+          [
+            "information",
+            "informations",
+            "donnée",
+            "données",
+            "donnee",
+            "donnees",
+            "message",
+            "messages",
+            "signal",
+            "signaux"
+          ],
+          [
+            "utilisateur",
+            "extrémité",
+            "extremite",
+            "bout",
+            "final",
+            "finale",
+            "source",
+            "destination",
+            "interface"
+          ]
+        ],
+        "labels": [
+          "Point d'extrémité permettant à l'utilisateur d'émettre et de recevoir des données sur le réseau"
+        ],
+        "optional": [
+          [
+            "convertir",
+            "conversion",
+            "traiter"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 6
+      },
+      "formats": [
+        "single_choice",
+        "flashcard",
+        "true_false",
+        "short_answer"
+      ]
+    },
+    {
+      "id": "reseaux_q018_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Citer trois exemples d'équipements terminaux.",
+      "answers": [
+        "Un ordinateur (PC fixe ou portable)",
+        "Un smartphone ou une tablette",
+        "Un téléphone IP ou une imprimante réseau"
+      ],
+      "distractors": [
+        "Un commutateur réseau (Switch)",
+        "Un routeur cœur de réseau",
+        "Un répéteur ou amplificateur de signal"
+      ],
+      "explanation": "Les ordinateurs, smartphones et téléphones IP sont des équipements terminaux car ils génèrent ou consomment directement les données pour l'utilisateur. Les switchs, routeurs et répéteurs sont des équipements d'interconnexion (nœuds intermédiaires).",
+      "tags": [
+        "telecommunication",
+        "equipement",
+        "terminal",
+        "exemples"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "ordinateur",
+            "pc",
+            "serveur",
+            "poste"
+          ],
+          [
+            "smartphone",
+            "téléphone",
+            "telephone",
+            "mobile",
+            "portable",
+            "tablette"
+          ],
+          [
+            "imprimante",
+            "téléviseur",
+            "televiseur",
+            "tv",
+            "caméra",
+            "camera",
+            "console",
+            "objet connecté",
+            "objet connecte",
+            "iot"
+          ]
+        ],
+        "labels": [
+          "Trois équipements terminaux (ex : ordinateur, smartphone, téléphone IP/imprimante réseau)"
+        ],
+        "optional": [
+          [
+            "hôte",
+            "hote",
+            "client"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 4
+      },
+      "formats": [
+        "multi_choice",
+        "short_answer",
+        "flashcard"
+      ]
+    },
+    {
+      "id": "reseaux_q019_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Quelle est la fonction d'une carte réseau ?",
+      "answer": "Servir d'interface matérielle entre l'équipement terminal et le support de transmission en convertissant les données numériques internes en signaux adaptés au média (électriques, lumineux ou radio) et inversement",
+      "distractors": [
+        "Exécuter le système d'exploitation et les logiciels bureautiques à la place du processeur central (CPU)",
+        "Stocker de manière permanente l'ensemble des fichiers et bases de données de l'utilisateur même hors tension",
+        "Déterminer le chemin géographique optimal à travers tous les routeurs mondiaux d'Internet jusqu'au serveur distant"
+      ],
+      "explanation": "La carte réseau (NIC - Network Interface Card) assure la connexion physique (filaire ou sans fil) d'un terminal au réseau. Elle gère l'encapsulation de bas niveau (adresse MAC) et la traduction entre les bits de l'ordinateur et les signaux physiques du support.",
+      "tags": [
+        "telecommunication",
+        "materiel",
+        "carte-reseau",
+        "nic"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "interface",
+            "relier",
+            "connecter",
+            "connexion",
+            "lien"
+          ],
+          [
+            "support",
+            "réseau",
+            "reseau",
+            "câble",
+            "cable",
+            "wifi",
+            "wi-fi",
+            "média",
+            "media"
+          ],
+          [
+            "convertir",
+            "conversion",
+            "traduire",
+            "transformer",
+            "émettre",
+            "emettre",
+            "recevoir",
+            "signal",
+            "signaux",
+            "données",
+            "donnees"
+          ]
+        ],
+        "labels": [
+          "Interface entre le terminal et le réseau convertissant les données en signaux transmissibles"
+        ],
+        "optional": [
+          [
+            "mac",
+            "adresse mac",
+            "nic",
+            "physique"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 6
+      },
+      "formats": [
+        "single_choice",
+        "flashcard",
+        "true_false",
+        "short_answer"
+      ]
+    },
+    {
+      "id": "reseaux_q020_intro",
+      "subject": "reseaux",
+      "skill": "reseaux.intro",
+      "difficulty": 1,
+      "prompt": "Quel est le rôle d'un réseau de télécommunications ?",
+      "answer": "Interconnecter plusieurs équipements terminaux via un ensemble de supports de transmission et de nœuds de commutation/routage afin d'acheminer et de partager des informations et des ressources entre eux",
+      "distractors": [
+        "Générer et créer automatiquement le contenu des applications multimédias et des bases de données d'entreprise",
+        "Remplacer la mémoire vive (RAM) des ordinateurs connectés pour accélérer l'exécution locale des calculs graphiques",
+        "Convertir l'énergie solaire captée par les antennes relais en courant électrique domestique pour les abonnés"
+      ],
+      "explanation": "Un réseau de télécommunications est une infrastructure composée de liens et d'équipements intermédiaires dont la mission est de transporter, commuter et router les flux d'informations de manière fiable entre n'importe quels terminaux connectés.",
+      "tags": [
+        "telecommunication",
+        "reseau",
+        "role",
+        "infrastructure"
+      ],
+      "evaluation": {
+        "type": "semantic",
+        "required": [
+          [
+            "interconnecter",
+            "relier",
+            "connecter",
+            "mettre en relation",
+            "laison"
+          ],
+          [
+            "équipement",
+            "équipements",
+            "equipement",
+            "equipements",
+            "terminal",
+            "terminaux",
+            "ordinateur",
+            "ordinateurs",
+            "utilisateur",
+            "utilisateurs",
+            "point",
+            "points"
+          ],
+          [
+            "acheminer",
+            "transmettre",
+            "échanger",
+            "echanger",
+            "partager",
+            "transporter",
+            "information",
+            "informations",
+            "donnée",
+            "données",
+            "donnee",
+            "donnees",
+            "ressource",
+            "ressources"
+          ]
+        ],
+        "labels": [
+          "Interconnecter des équipements pour acheminer et partager des informations ou ressources"
+        ],
+        "optional": [
+          [
+            "routage",
+            "commutation",
+            "support",
+            "supports"
+          ]
+        ],
+        "forbidden": [],
+        "minWords": 6
+      },
+      "formats": [
+        "single_choice",
+        "flashcard",
+        "true_false",
+        "short_answer"
+      ]
+    }
+  ]
+]

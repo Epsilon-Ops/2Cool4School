@@ -1,0 +1,33 @@
+{
+  "id": "reseaux-intro-3",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Définitions, architecture et fonctions des réseaux",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_008_vocabulaire",
+      "title": "I. Vocabulaire fondamental"
+    },
+    {
+      "id": "res_009_types",
+      "title": "II. Les différents types de réseaux selon leur accès"
+    }, 
+    {
+      "id": "res_010_organisation",
+      "title": "III. Les réseaux selon leur organisation"
+    },
+    {
+      "id": "res_011_fonctions",
+      "title": "Les fonctions principales d'un réseau"
+    },
+    {
+      "id": "res_012_facturation",
+      "title": "Les modèles de facturation"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 3
+}

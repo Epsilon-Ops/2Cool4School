@@ -1,0 +1,33 @@
+{
+  "id": "reseaux-intro-6",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Architectures et fonctionnement des réseaux",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_021_cli-serv",
+      "title": "I. Réseaux informatiques : architecture client-serveur"
+    },
+    {
+      "id": "res_022_commut-paquets",
+      "title": "II. Commutation de paquets"
+    }, 
+    {
+      "id": "res_023_routage-ip",
+      "title": "III. Routage et adressage IP"
+    },
+    {
+      "id": "res_024_commut-circuits",
+      "title": "Réseaux téléphoniques : commutation de circuits"
+    },
+    {
+      "id": "res_025_sans-fil",
+      "title": "Réseaux sans fil"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 6
+}

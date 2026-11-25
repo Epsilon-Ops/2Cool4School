@@ -1,0 +1,25 @@
+{
+  "id": "reseaux-intro-4",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.intro",
+  "title": "Classification et types de réseaux",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "res_013_classif_support",
+      "title": "I. Classification selon le support et le mode de transmission"
+    },
+    {
+      "id": "res_014_classif_taille",
+      "title": "II. Classification selon la taille géographique"
+    }, 
+    {
+      "id": "res_015_classif_perf",
+      "title": "III. Classification selon les performances"
+    }
+  ],
+  "chapter": "Notions de base",
+  "chapterOrder": 1,
+  "order": 4
+}

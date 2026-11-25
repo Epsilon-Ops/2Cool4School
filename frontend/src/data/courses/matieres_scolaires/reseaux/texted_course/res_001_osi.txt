@@ -1,0 +1,79 @@
+reseaux.notions - Module 1A [Notions de Base]
+
+Ce qu'il faut savoir :
+    - Connaître l’histoire d’internet et comprendre les enjeux de la normalisation
+    - Connaître les différents types de réseaux, leurs particularités et les techniques de trasmission de l’information
+    - Comprendre les concepts de débit et de latence. Savoir les calculer. Avoir en tête les ordres de grandeurs actuels.
+
+Ce qu'il faut pouvoir faire :
+    - Savoir dessiner un échange d’informations intégrant temps de propagation, latence, débit, RTT
+    - Savoir calculer le temps de transmission total d’un échange
+
+Le cours :
+    Introduction aux Réseaux
+    Nous allons commencer par une petite introduction qui consiste à faire un petit aperçu de "Qu'est ce que c'est que les réseaux ?" "Qu'est ce que c'est que les télécommunications ?". Également voir les aspects, normalisation, réglementation et puis bien sûr, un petit peu de données historiques sur le fonctionnement des réseaux. Et enfin l'introduction d'un certain nombre de vocabulaires liés aux réseaux et à leurs fonctions de base.
+
+    Brefs historiques et normalisation
+    Les télécommunications
+    Les télécommunications c'est tout ce qui permet de transférer de l'information via différents supports (fils de cuivres, ondes radio, fibres optiques, ...).
+
+    On peut transmettre, des images, du son, de la vidéo (qui est donc à la fois de l'image et du son). Le terme multimédia recouvre tout ceci. Et puis sinon, par opposition, on va plutôt transférer des fichiers de type texte ou qui contiennent un certain nombre de symboles. Et là, on sera plutôt sur de l'information de type data au sens large, qui nécessite une contrainte particulière qui est de les transférer de manière fiable.
+
+    Qu'est ce que c'est que le transfert fiable d'informations entre deux entités qui communiquent ? Eh bien, cela signifie que toutes les données qui arrivent à destination sont exactement les données avant envoi, c'est à dire avant la transmission des informations sur différents types de liaisons. Donc la fiabilité, c'est une contrainte très forte pour toutes les applications qui nécessitent à ce que les données reçues ne contiennent aucune erreur et aucune perte. Quand on parle de fiabilité, cela implique quatre choses :
+
+    l'arrivée des données sans erreur,
+    sans perte,
+    dans l'ordre (quand l'information est découpée en plusieurs messages),
+    sans duplication (l'information n'arrive pas en double par exemple en cas de retransmission).
+    Pourquoi un morceau du fichier pourrait arriver en double ? Tout simplement parce que dès lors qu'on va essayer de mettre en œuvre la fiabilité, on va devoir faire des retransmissions en cas d'erreur ou perte, et ces retransmissions vont parfois se faire à tort.
+
+    ---
+
+    Quand on parle de télécommunications, on transmet sur un réseau à l'aide de différentes liaisons des informations qui nécessitent pour certaines un transfert fiable. Pour d'autres, comme certaines données multimédia, la contrainte forte n'est pas la fiabilité, car ces applications là sont tolérantes aux pertes et aux erreurs. En revanche, elles ont une contrainte qui est de faire en sorte que les données, les images, le son, les vidéos arrivent à la bonne vitesse pour être lues ou entendues par l'humain. Si les données sont ralenties dans le réseau ou prennent trop de temps à arriver, la lecture ne pourra pas se faire dans de bonnes conditions.
+
+    C'est pour cela qu'on fait appel sur Internet à différentes techniques, comme par exemple le streaming qui permet de bufferiser en avance, les données relatives à la vidéo, à l'image ou au son pour les restituer à la bonne vitesse. Et donc on voit bien que les contraintes ne sont pas les mêmes selon le type d'application que l'on utilise et qui va avoir besoin du réseau.
+
+    Une autre chose importante, c'est que, quelle que soit l'application, quand on va traverser un certain nombre de liaisons, il va falloir transformer l'information en une séquence binaire, qui elle même va être transformée en un signal. Et pour ça, on a besoin d'un ensemble de protocoles et donc d'algorithmes, d'électronique qui vont être mis dans les cartes réseau, par exemple pour fabriquer le signal et donc transformer la séquence binaire en un signal qui va circuler sur chaque liaison traversée pour aller d'un point à un autre.
+
+    ---
+
+    La mise en œuvre de ces algorithmes qui vont permettre soit de transmettre un signal sur une liaison, soit de mettre en œuvre la fiabilité, soit de rendre le service dû à une application se fait à l'aide d'un protocole. Un protocole, c'est un ensemble de règles, qui vont être généralement normalisées, c'est à dire inscrites dans un document. Ils vont permettre aux deux entités qui coopèrent dans la transmission de l'information, de réaliser ce pourquoi le protocole est mis en œuvre. Par exemple, si on parle de la fiabilité sur Internet, c'est TCP qui va la mettre en œuvre. Et donc le protocole TCP va mettre en œuvre la fiabilité en exécutant des algorithmes qui vont prendre en compte la détection des erreurs, les retransmissions si nécessaire, la détection des pertes et le fait de pouvoir remettre dans le bon ordre les différents morceaux qui correspondent à la transmission d'un fichier par exemple.
+
+    Donc quand on parle de protocole dans les réseaux, c'est à la fois un algorithme, mais aussi la transmission de ce qu'on appelle les entêtes. Les entêtes, ce sont des informations qui vont permettre de réaliser l'algorithme. Typiquement, si on parle de la fiabilité, il s'agit d'utiliser un checksum pour faire la détection d'erreur. Nous reviendrons sur ce qu'est un checksum plus tard. Et puis également intuitivement, on a bien compris qu'il allait falloir numéroter les différents morceaux du fichier pour pouvoir les comptabiliser, les remettre dans l'ordre et détecter les pertes. Toute cette informatation additionnelle s'appelle l'entête.
+
+    Les télécoms existe depuis que l'on transmet de l'information entre deux personnes. Quand deux humains se parlent, ils font des télécoms à l'aide de leur bouche et oreilles qui sont l'équivalent d'une carte réseau. Un autre exemple est la télégraphie qui était au début du XXe siècle mise en œuvre pour réaliser la transmission d'information à l'aide de signaux lumineux.
+
+    Ensuite, le réseau téléphonique est apparu plutôt au milieu du XXe siècle. C'est le premier grand réseau mondial, le réseau téléphonique, qui permet toujours aujourd'hui de communiquer pour transférer du son entre deux personnes, l'appelant et l'appelé.
+
+    Le grand réseau mondial suivant c'est Internet qui est apparu dans les années 1980 et qui a été conçu pour transférer de la data, c'est à dire des pages web, des mails, des informations qui doivent être transmises plutôt de manière fiable.
+
+    ---
+
+    Historiquement, deux grands réseaux mondiaux, le réseau téléphonique d'un côté, le réseau Internet de l'autre, ont des contraintes différentes. Et petit à petit, ces deux grands réseaux cohabitent de plus en plus et aujourd'hui, on utilise Internet pour transférer de la data, bien sûr, mais aussi pour téléphoner ou pour regarder la télévision. Et à l'inverse, on utilise également les appareils téléphoniques, les smartphones aujourd'hui, pour transférer de la donnée, c'est à dire des mails, des pages web ou d'autres types de fichiers. Eux circulent sur un réseau de données, sur Internet. Donc on a bien plusieurs étapes qui petit à petit ont constitué un historique pour en arriver à la situation d'aujourd'hui où finalement le réseau téléphonique cohabite avec le réseau Internet dans les cœurs de réseau des opérateurs, bien qu'il y ait des contraintes différentes. Du point de vue utilisateur, l'équipement terminal qu'on utilise, que ce soit pour téléphoner ou pour transmettre des données sur Internet, cela peut être soit l'ordinateur, soit le téléphone. Dans les deux cas, pour un accès, soit au réseau téléphonique, soit au réseau Internet.
+
+    Bref Historique d'internet
+    Internet est donc né dans les années 1980. C'est le premier réseau qui a mis en œuvre l'architecture d'Internet, c'est à dire l'architecture TCP/IP. Ce premier réseau était d'abord un réseau qui permettait de transmettre du courrier électronique puis des pages web et s'est ensuite rapidement étendu et répandu au grand public pour devenir ce qu'il est aujourd'hui.
+
+    Dates clés
+    1959-1968, Programme ARPA : le ministrère américain de la défense a conçu un réseau capable de supporter les conséquences d'un conflit nucléaire
+    1969, ARPANET (l'ancêtre d'Internet) : les universités américaines s'équipent de gros ordinateurs et se connectent au résseau ARPANET
+    1970-1982, Ouverture sur le monde : premières connexions avec la Norvège et Londres
+    1983, Naissance d'Internet : protocole TCP/IP -> tous les réseaux s'interconnectent, les militaires quittent le navire.
+
+    ---
+
+    Normalisation
+    Le développement d'Internet a été permis grâce à la mise en place de nombreuses normes. Une norme est un ensemble de règles destinées à satisfaire un besoin de manière similaire. Une norme permet la réduction des coûts d'études, la rationalisation de la fabrication, la garantie d'un marché plus vaste et surtout la garantie d'inter-fonctionnement, d'indépendance vis-à-vis d'un fournisseur et la pérénnité des investissements. Une norme est généralement l'aboutissement d'une concertation entre industriels, administrations et utilisateurs.
+
+    Quand on parle de normalisation dans les réseaux, c'est finalement le fait de définir dans un document écrit le fonctionnement des différents protocoles qui vont permettre au réseau de fonctionner et donc de décrire, pour chaque protocole, les entêtes et l'algorithme qu'il doit mettre en œuvre pour réaliser la fonction qu'il doit réaliser. Quel est l'intérêt de la normalisation ? C'est de faire en sorte que toutes les règles soit partagées par l'ensemble des acteurs, c'est à dire à la fois les utilisateurs des réseaux, mais surtout les fabricants de matériels réseaux ou de logiciels qui vont donc devoir rester conforme à la norme pour que n'importe quel équipement, n'importe quel logiciel puisse fonctionner avec un autre équipement ou un autre logiciel qui a été fabriqué soit par un constructeur différent, soit par un éditeur de logiciels différent. Si on considère par exemple un navigateur Web, quel que soit l'éditeur du navigateur Web, quel que soit le concepteur, ce qui va garantir que ce navigateur Web permet de fonctionner sur Internet et donc de récupérer des pages Web sur n'importe quel serveur Web, c'est le fait qu'il respecte la norme du protocole HTTP.
+
+    La norme du protocole HTTP, c'est ce qui est décrit dans ce qu'on appelle une RFC (Request for Comment) qu'on peut trouver facilement sur Internet, par exemple RFC 9112 HTTP/1.1 et qui décrit comment le protocole HTTP doit faire pour demander une page web et comment le serveur Web doit faire pour répondre à cette demande de page Web.
+
+    On peut prendre un autre exemple : les protocoles dans les téléphones mobiles, par exemple la 4G ou la 5G qui sont également normalisés. Ainsi, n'importe quel fabricant de téléphone va devoir se conformer à la norme 4G ou 5G, c'est à dire la mettre en œuvre dans le téléphone qu'il fabrique et dans le logiciel installé sur le téléphone. L'acheteur d'un téléphone sait si son téléphone est compatible ou pas avec la norme 4G ou 5G.
+
+    Il y a plusieurs organismes de normalisation qui regroupent à la fois des acteurs industriels, des chercheurs et aussi des organisations internationales. La plus connue peut-être est l'IEEE (Institute of Electrical and Electronics Engineers). Cet organisme s'occupent entre autres de la normalisation des réseaux locaux (via le groupe 802). Par exemple, le sous-groupe 802.11 s'occupe des normes liées au WiFi.
+
+    Quand on parle des télécoms, il faut aussi avoir en tête que la réglementation est très importante. La réglementation provient de la loi des différents états et donc au sein de chaque pays, chaque nation, la réglementation va imposer des contraintes aux opérateurs des réseaux. Les opérateurs vont déployer les équipements réseaux, les installer, les configurer et les gérer une fois qu'ils sont déployés. Et donc la réglementation va imposer certaines contraintes aux opérateurs, comme par exemple le fait de devoir avoir une couverture de l'ensemble du territoire qui soit la plus équitable possible et donc garantir que tout le monde ait un accès au réseau, quel que soit l'endroit où il habite. La réglementation peut aussi avoir des incidences sur la tarification, c'est à dire de surveiller l'évolution des tarifs de l'ensemble des fournisseurs d'accès au réseau, de l'ensemble des offres. L'opérateur va également facturer les accès.
+
+    En France c'est l'Arcep (Autorité de régulation des communications électroniques et des postes) qui s'occupe de cela. L'Arcep permet aussi de disposer d'un certain nombre d'études qui sont accessibles à toutes et tous. En particulier donc, concernant la couverture des différents types de réseaux, mais aussi des prix qui sont pratiqués par l'ensemble des acteurs et donc ça permet de choisir par exemple un fournisseur d'accès ou un opérateur de téléphonie mobile en toute connaissance de cause.
+

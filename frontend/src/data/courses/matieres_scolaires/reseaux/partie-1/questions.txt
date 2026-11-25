@@ -1,0 +1,732 @@
+PARTIE 1
+    I - ???
+        1. [+] Qu'est-ce qu'une télécommunication ?
+        2. [+] Quel est l'objectif principal des télécommunications ?
+        3. [+] Quels sont les différents supports physiques utilisés dans les télécommunications ?
+        4. [+] Quelle est la différence entre un support guidé et un support non guidé ?
+        5. [+] Donner trois exemples de supports de transmission.
+        6. [+] Qu'est-ce qu'un support de transmission filaire ?
+        7. [+] Qu'est-ce qu'un support de transmission sans fil ?
+        8. [+] Quelle est la différence entre une fibre optique et un câble en cuivre ?
+        9. [+] Quels sont les deux grands types de flux transportés par les réseaux de télécommunications ?
+        10. [+] Que signifie le terme « multimédia » ?
+        11. Donner quatre exemples de données informatiques.
+        12. Que signifie le terme « data » dans le domaine des télécommunications ?
+        13. Quelle est la différence entre une donnée informatique et un flux multimédia ?
+        14. Donner trois exemples d'applications multimédias.
+        15. Donner trois exemples d'applications utilisant des données informatiques.
+        16. Pourquoi les télécommunications sont-elles indispensables dans notre société actuelle ?
+        17. Quel est le rôle d'un équipement terminal ?
+        18. Citer trois exemples d'équipements terminaux.
+        19. Quelle est la fonction d'une carte réseau ?
+        20. Quel est le rôle d'un réseau de télécommunications ?
+
+PARTIE 2 — Fiabilité des données informatiques
+Niveau intermédiaire
+        21. Pourquoi les données informatiques nécessitent-elles généralement un transfert fiable ?
+        22. Que signifie un transfert de données fiable ?
+        23. Quelles sont les quatre propriétés essentielles de la fiabilité d'un transfert ?
+
+Expliquer la propriété d'arrivée sans erreur.
+
+Expliquer la propriété d'arrivée sans perte.
+
+Expliquer la propriété d'arrivée dans le bon ordre.
+
+Expliquer la propriété d'arrivée sans duplication.
+
+Pourquoi est-il important que les informations reçues soient strictement identiques aux informations envoyées ?
+
+Quelle différence existe-t-il entre une erreur et une perte de données ?
+
+Quelle différence existe-t-il entre une perte de données et une duplication ?
+
+Pourquoi le respect de l'ordre des messages est-il important ?
+
+Dans quelle situation un message peut-il arriver dans le désordre ?
+
+Pourquoi un réseau peut-il recevoir deux fois le même message ?
+
+Quel est le rapport entre une retransmission et la duplication des données ?
+
+Pourquoi une retransmission peut-elle être effectuée à tort ?
+
+Est-il possible de recevoir toutes les données sans erreur, mais dans le mauvais ordre ? Justifier.
+
+Est-il possible de recevoir les données dans le bon ordre, mais avec une perte ? Justifier.
+
+Est-il possible de recevoir les données sans perte, mais avec des duplications ? Justifier.
+
+Pourquoi les quatre propriétés de fiabilité sont-elles complémentaires ?
+
+Une transmission sans erreur est-elle nécessairement fiable ? Expliquer.
+
+PARTIE 3 — Applications multimédias et contraintes temporelles
+Niveau intermédiaire
+Pourquoi certaines applications multimédias peuvent-elles tolérer des pertes de données ?
+
+Pourquoi une application multimédia possède-t-elle une forte contrainte temporelle ?
+
+Que signifie recevoir les données à la bonne vitesse ?
+
+Pourquoi une vidéo peut-elle devenir saccadée ?
+
+Pourquoi un appel téléphonique sur Internet peut-il présenter des coupures ?
+
+Quelle est la différence entre la fiabilité et la rapidité d'une transmission ?
+
+Pourquoi une transmission parfaitement fiable n'est-elle pas toujours adaptée au multimédia ?
+
+Pourquoi une donnée reçue trop tard peut-elle devenir inutile ?
+
+Quelle est l'importance de la continuité dans une communication audio ?
+
+Pourquoi les applications multimédias privilégient-elles parfois la fluidité plutôt que la retransmission de toutes les données ?
+
+Une vidéo peut-elle continuer à être regardée malgré la perte de quelques données ? Justifier.
+
+Pourquoi la perte d'un petit morceau d'une vidéo n'a-t-elle pas toujours les mêmes conséquences que la perte d'un fichier texte ?
+
+Quelle différence existe-t-il entre les exigences d'un téléchargement de fichier et celles d'un appel vidéo ?
+
+Pourquoi les contraintes temporelles sont-elles particulièrement importantes dans les communications en temps réel ?
+
+Une application multimédia peut-elle fonctionner correctement avec un réseau qui subit des variations de débit ? Expliquer.
+
+PARTIE 4 — Streaming et bufferisation
+Niveau intermédiaire
+Qu'est-ce que le streaming ?
+
+Qu'est-ce que la bufferisation ?
+
+Quel est le rôle d'un buffer dans la lecture d'une vidéo ?
+
+Pourquoi faut-il parfois attendre quelques secondes avant de commencer à regarder une vidéo ?
+
+Comment la bufferisation permet-elle de compenser les variations du réseau ?
+
+Pourquoi une vidéo peut-elle se mettre en pause alors que la connexion Internet est toujours active ?
+
+Quelle différence existe-t-il entre le débit du réseau et le rythme de lecture d'une vidéo ?
+
+Pourquoi le streaming nécessite-t-il une gestion du temps ?
+
+Quel est l'intérêt de stocker temporairement des données avant leur lecture ?
+
+Que se passe-t-il si le buffer se vide avant que de nouvelles données arrivent ?
+
+Que se passe-t-il si les données arrivent plus rapidement que leur consommation ?
+
+Pourquoi un buffer trop petit peut-il provoquer des interruptions ?
+
+Pourquoi un buffer plus grand peut-il améliorer la fluidité ?
+
+Un buffer très grand est-il toujours avantageux ? Justifier.
+
+Quelle relation existe-t-il entre le débit entrant, le débit consommé et la taille du buffer ?
+
+PARTIE 5 — Histoire des télécommunications
+Niveau intermédiaire
+Quels moyens de communication ont précédé les grands réseaux mondiaux ?
+
+Pourquoi la communication humaine directe peut-elle être considérée comme une forme de transmission d'information ?
+
+Quel rôle jouent la bouche et les oreilles dans la communication humaine ?
+
+Pourquoi peut-on comparer la bouche et les oreilles à une carte réseau ?
+
+Qu'est-ce que la télégraphie ?
+
+Quel était le principe de la télégraphie ?
+
+Quelle forme d'information était utilisée dans la télégraphie ?
+
+Quel réseau mondial a précédé Internet ?
+
+À quelle période le réseau téléphonique s'est-il développé ?
+
+Quel était l'objectif initial du réseau téléphonique ?
+
+Quel était l'objectif initial d'Internet ?
+
+À quelle période Internet est-il apparu selon ton cours ?
+
+Pourquoi le réseau téléphonique a-t-il été initialement conçu pour la voix ?
+
+Pourquoi Internet a-t-il été initialement conçu pour le transfert fiable de données ?
+
+Quelle est la différence historique entre le réseau téléphonique et Internet ?
+
+Comment les réseaux ont-ils évolué depuis leur apparition ?
+
+Pourquoi les deux univers des télécommunications et de l'informatique ont-ils fini par converger ?
+
+Quel rôle les opérateurs jouent-ils dans cette convergence ?
+
+PARTIE 6 — Questions de comparaison
+Niveau intermédiaire à difficile
+Comparer les données informatiques et les flux multimédias.
+
+Comparer les exigences de fiabilité d'un fichier texte et d'une vidéo en streaming.
+
+Comparer une transmission avec perte et une transmission sans perte.
+
+Comparer un réseau téléphonique traditionnel et Internet selon leurs objectifs initiaux.
+
+Comparer un support filaire et un support sans fil.
+
+Comparer un câble en cuivre et une fibre optique.
+
+Comparer le streaming et le téléchargement classique.
+
+Comparer la communication humaine directe et la communication par réseau.
+
+Comparer la notion de fiabilité et la notion de fluidité.
+
+Comparer les contraintes temporelles et les contraintes d'intégrité des données.
+
+PARTIE 7 — Questions pièges de professeur
+Niveau difficile
+Ces questions sont particulièrement intéressantes parce qu'elles testent ta capacité à raisonner.
+
+Une transmission est-elle fiable si toutes les données arrivent, mais que certaines sont dupliquées ?
+
+Si un message arrive sans erreur, mais après plusieurs minutes de retard, peut-on considérer que la communication est réussie ?
+
+Une vidéo qui arrive parfaitement, mais trop lentement pour être regardée normalement, constitue-t-elle une transmission satisfaisante ?
+
+Internet a-t-il été conçu initialement pour transporter principalement la voix ?
+
+Le réseau téléphonique a-t-il été initialement conçu pour transporter des fichiers informatiques ?
+
+Toutes les applications multimédias tolèrent-elles systématiquement les pertes ?
+
+Toutes les données informatiques doivent-elles obligatoirement être transmises en temps réel ?
+
+Une transmission sans perte garantit-elle automatiquement l'absence d'erreur ?
+
+Une transmission sans erreur garantit-elle automatiquement l'absence de duplication ?
+
+Si deux messages arrivent dans le bon ordre, cela signifie-t-il qu'ils sont nécessairement tous présents ?
+
+Le streaming signifie-t-il que toutes les données sont reçues avant de commencer la lecture ?
+
+Le buffer permet-il de supprimer définitivement les problèmes de réseau ?
+
+Un smartphone est-il uniquement un appareil permettant de téléphoner ?
+
+Internet et le réseau téléphonique sont-ils aujourd'hui deux réseaux totalement indépendants ?
+
+Est-il possible de regarder la télévision et de téléphoner en utilisant Internet ?
+
+Pourquoi une retransmission peut-elle améliorer la fiabilité tout en créant un risque de duplication ?
+
+Une application peut-elle privilégier la rapidité au détriment de la fiabilité ? Donner un exemple.
+
+Une transmission peut-elle être fiable sans être fluide ?
+
+Une transmission peut-elle être fluide sans être parfaitement fiable ?
+
+PARTIE 8 — Exercices de mise en situation
+Niveau difficile
+Pour chaque situation, indique le problème rencontré et la propriété concernée.
+
+Exercice 1
+
+Un ordinateur envoie un fichier contenant 1 000 caractères. À destination, le fichier contient 998 caractères.
+
+Quelle propriété de fiabilité n'est pas respectée ?
+
+Quel problème s'est produit ?
+
+Le transfert peut-il être considéré comme fiable ?
+
+Exercice 2
+
+Un utilisateur envoie trois messages A, B et C. Le destinataire reçoit C, A et B.
+
+Quelle propriété n'est pas respectée ?
+
+Les trois messages ont-ils été perdus ?
+
+Pourquoi cet ordre de réception peut-il poser problème ?
+
+Exercice 3
+
+Un serveur envoie un message une seule fois. Le destinataire le reçoit deux fois.
+
+Quelle propriété n'est pas respectée ?
+
+Quelle pourrait être la cause de ce phénomène ?
+
+Pourquoi les retransmissions peuvent-elles entraîner ce problème ?
+
+Exercice 4
+
+Un étudiant télécharge un document PDF. Le téléchargement se termine, mais certains caractères du document sont incorrects.
+
+Quel problème de transmission est présent ?
+
+Quelle propriété de fiabilité est concernée ?
+
+Pourquoi ce problème est-il particulièrement gênant pour un document universitaire ?
+
+Exercice 5
+
+Une personne regarde une vidéo en streaming. La vidéo se bloque toutes les 10 secondes pendant quelques secondes.
+
+Quelle contrainte n'est pas respectée ?
+
+Quel mécanisme peut limiter ce problème ?
+
+Quel est le rôle de la mémoire tampon dans cette situation ?
+
+Exercice 6
+
+Un appel vidéo présente une image légèrement dégradée, mais le son et l'image restent continus.
+
+Pourquoi peut-on considérer que la communication reste acceptable ?
+
+Quelle propriété est ici privilégiée ?
+
+Pourquoi une retransmission systématique de toutes les données pourrait-elle être problématique ?
+
+Exercice 7
+
+Un utilisateur télécharge un fichier de 500 Mo. Le téléchargement prend plus de temps que prévu, mais le fichier obtenu est strictement identique à l'original.
+
+La transmission est-elle fiable ?
+
+La transmission est-elle nécessairement rapide ?
+
+Quelle différence faut-il faire entre fiabilité et performance temporelle ?
+
+PARTIE 9 — Exercices de calcul
+Niveau examen universitaire
+Ici, je te propose des calculs construits à partir des notions de ton cours. Certaines données numériques sont ajoutées pour te permettre de t'entraîner.
+
+Exercice 8 — Calcul du débit de transmission
+Un ordinateur transmet un fichier de 80 Mo à travers un réseau dont le débit est de 20 Mbit/s.
+
+On considère que 1 Mo = 8 Mbits.
+
+Convertir la taille du fichier en Mbits.
+
+Calculer le temps théorique nécessaire pour transmettre le fichier.
+
+Si le débit passe à 40 Mbit/s, calculer le nouveau temps de transmission.
+
+Comparer les deux résultats.
+
+Quel est l'effet d'une multiplication du débit par deux sur le temps de transmission ?
+
+Exercice 9 — Calcul du temps de téléchargement
+Un utilisateur télécharge un fichier de 150 Mo avec un débit constant de 25 Mbit/s.
+
+Convertir 150 Mo en Mbits.
+
+Calculer le temps de téléchargement en secondes.
+
+Convertir le résultat en minutes et secondes.
+
+Si le débit chute à 10 Mbit/s, quel sera le nouveau temps ?
+
+Calculer la différence de temps entre les deux situations.
+
+Exercice 10 — Bufferisation d'une vidéo
+Une vidéo est lue avec un débit de consommation de 5 Mbit/s.
+
+Le réseau fournit les données à un débit de 8 Mbit/s pendant 20 secondes.
+
+Quelle quantité de données est reçue pendant ces 20 secondes ?
+
+Quelle quantité de données est consommée pendant ces 20 secondes ?
+
+Quelle quantité de données reste dans le buffer après 20 secondes, en supposant un buffer initial vide ?
+
+Exprimer cette quantité en Mo.
+
+Exercice 11 — Buffer et variation du débit
+Une vidéo nécessite un débit constant de 4 Mbit/s.
+
+Le réseau fonctionne de la manière suivante :
+
+Pendant 10 secondes : 6 Mbit/s.
+
+Pendant 10 secondes : 2 Mbit/s.
+
+Pendant 10 secondes : 5 Mbit/s.
+
+Le buffer contient initialement 10 Mbits.
+
+Calculer la quantité reçue pendant chaque période.
+
+Calculer la quantité consommée pendant chaque période.
+
+Calculer l'évolution du buffer à chaque période.
+
+Le buffer se vide-t-il ?
+
+Quelle quantité reste-t-il à la fin des 30 secondes ?
+
+Exercice 12 — Calcul d'une perte de données
+Un ordinateur envoie 2 000 paquets de données. À destination, 1 960 paquets sont reçus.
+
+Calculer le nombre de paquets perdus.
+
+Calculer le taux de perte en pourcentage.
+
+Calculer le pourcentage de paquets reçus.
+
+Si l'application tolère au maximum 1 % de perte, la transmission respecte-t-elle cette contrainte ?
+
+Exercice 13 — Retransmission et duplication
+Un ordinateur transmet 100 messages. À cause d'une erreur de communication, 8 messages sont retransmis. Parmi ces retransmissions, 3 messages arrivent finalement en double.
+
+Combien de messages initiaux ont été envoyés ?
+
+Combien de retransmissions ont été effectuées ?
+
+Combien de messages dupliqués sont reçus ?
+
+Combien de messages distincts sont finalement reçus si tous les messages initiaux sont arrivés au moins une fois ?
+
+Quelle propriété de fiabilité est concernée ?
+
+Exercice 14 — Comparaison de deux réseaux
+Deux réseaux transmettent un fichier de 120 Mo.
+
+Réseau A : débit de 30 Mbit/s.
+
+Réseau B : débit de 60 Mbit/s.
+
+Calculer la taille du fichier en Mbits.
+
+Calculer le temps de transmission sur le réseau A.
+
+Calculer le temps de transmission sur le réseau B.
+
+Calculer le gain de temps obtenu avec le réseau B.
+
+Le réseau B est-il nécessairement plus fiable que le réseau A ? Justifier.
+
+Exercice 15 — Exercice de synthèse avec plusieurs calculs
+Une vidéo de 600 Mo est diffusée en streaming.
+
+Le débit nécessaire à sa lecture est de 8 Mbit/s. Le réseau fournit un débit constant de 12 Mbit/s.
+
+Convertir la taille totale de la vidéo en Mbits.
+
+Calculer la durée totale de lecture de la vidéo.
+
+Calculer le temps nécessaire pour recevoir la totalité de la vidéo si on utilise le débit de 12 Mbit/s.
+
+Combien de temps faut-il pour recevoir les données correspondant aux 60 premières secondes de vidéo ?
+
+Quelle quantité de données est consommée pendant ces 60 secondes ?
+
+Quelle quantité de données est reçue pendant ces 60 secondes ?
+
+Quelle quantité de données est accumulée dans le buffer ?
+
+Expliquer pourquoi la vidéo peut continuer à être lue même si le réseau connaît ensuite une interruption temporaire.
+
+PARTIE 10 — Questions longues de réflexion et de synthèse
+Niveau avancé
+180. Expliquer pourquoi les exigences de transmission des données informatiques sont différentes de celles des applications multimédias.
+
+181. Démontrer pourquoi la fiabilité d'une transmission repose sur quatre propriétés complémentaires.
+
+182. Expliquer comment une retransmission peut résoudre un problème de perte tout en créant un problème de duplication.
+
+183. Décrire le fonctionnement général du streaming et expliquer comment la bufferisation contribue à la fluidité de lecture.
+
+184. Expliquer l'évolution historique des télécommunications, depuis la communication humaine directe jusqu'à Internet.
+
+185. Montrer comment les réseaux téléphoniques et Internet, initialement conçus pour des usages différents, ont progressivement convergé.
+
+186. Expliquer pourquoi un réseau moderne doit pouvoir transporter simultanément des données informatiques et des flux multimédias.
+
+187. Décrire le rôle des équipements terminaux dans l'accès aux services de télécommunications.
+
+188. Expliquer pourquoi la vitesse de transmission ne suffit pas à garantir la qualité d'une communication.
+
+189. Présenter une situation dans laquelle la fiabilité est prioritaire, puis une autre dans laquelle la contrainte temporelle est prioritaire.
+
+190. Expliquer pourquoi la notion de qualité de service est importante dans les réseaux de télécommunications.
+
+PARTIE 11 — Mini-examen blanc
+Voici un examen que tu pourrais rencontrer en contrôle. Essaie de le faire sans regarder ton cours.
+
+Examen blanc — Télécommunications
+Difficulté universitaire
+Durée conseillée : 1 h 30
+
+20
+Questions
+20
+Points
+Exercice A — Connaissances (5 points)
+
+Définir les télécommunications et citer trois supports de transmission. (1 pt)
+
+Distinguer les données informatiques des flux multimédias. (1 pt)
+
+Citer et expliquer les quatre propriétés de fiabilité. (2 pts)
+
+Quel était l'objectif initial d'Internet ? (1 pt)
+
+Exercice B — Raisonnement (5 points)
+
+Pourquoi un fichier PDF nécessite-t-il une transmission fiable ? (1 pt)
+
+Pourquoi une vidéo en streaming peut-elle tolérer certaines pertes ? (1 pt)
+
+Expliquer la différence entre fiabilité et contrainte temporelle. (1 pt)
+
+Pourquoi la bufferisation améliore-t-elle la fluidité ? (2 pts)
+
+Exercice C — Calculs (6 points)
+
+Un fichier de 240 Mo est transmis avec un débit de 40 Mbit/s. Calculer le temps de transmission. (2 pts)
+
+Sur 5 000 paquets envoyés, 4 850 arrivent. Calculer le taux de perte. (2 pts)
+
+Une vidéo consomme 6 Mbit/s alors que le réseau fournit 10 Mbit/s pendant 15 secondes. Calculer la quantité de données accumulées dans le buffer, initialement vide. (2 pts)
+
+Exercice D — Étude de cas (4 points)
+
+12. Un utilisateur regarde une vidéo en streaming. Le débit du réseau varie fortement. La vidéo se bloque régulièrement, mais les données reçues ne présentent pas d'erreurs.
+
+Identifier le problème principal. (1 pt)
+
+Expliquer pourquoi l'absence d'erreur ne garantit pas une bonne qualité de lecture. (1 pt)
+
+Proposer un mécanisme permettant d'améliorer la situation. (1 pt)
+
+Expliquer son fonctionnement. (1 pt)
+
+PARTIE 12 — Les erreurs à ne surtout pas commettre
+Voici quelques confusions qu'un professeur pourrait volontairement exploiter :
+
+Confusion
+
+Ce qu'il faut retenir
+
+Fiabilité = rapidité
+
+Faux
+
+Sans erreur = sans perte
+
+Pas nécessairement
+
+Sans perte = sans duplication
+
+Pas nécessairement
+
+Internet conçu initialement pour la voix
+
+Faux
+
+Téléphone conçu initialement pour les fichiers
+
+Faux
+
+Streaming = téléchargement complet avant lecture
+
+Faux
+
+Buffer = suppression des problèmes réseau
+
+Faux
+
+Multimédia = aucune exigence de fiabilité
+
+Faux
+
+Un débit élevé garantit une transmission fiable
+
+Faux
+
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+==========================================
+
+
+Partie 1 : Questions de connaissances et de définitions
+
+1. [Facile] Citez les deux grandes catégories de contraintes de transmission mentionnées dans le cours selon la nature de l'application.
+2. [Facile] Définissez le terme « gigue » (jitter) dans le contexte de la transmission de données multimédias.
+3. [Facile] Définissez le terme « latence » appliqué aux flux réseau.
+4. [Facile] Qu'est-ce qu'une mémoire tampon (buffer) et quel est son rôle principal dans un flux audio ou vidéo ?
+5. [Facile] Énumérez les cinq mécanismes de contrôle permettant d'assurer la fiabilité d'une transmission.
+6. [Facile] Sous quelle forme logique l'information doit-elle être convertie avant d'être transformée en signal physique ?
+7. [Facile] Quel composant matériel est explicitement cité comme participant à la conversion des données sur une liaison ?
+8. [Intermédiaire] Quel est le double rôle de la numérotation des morceaux de données (paquets/segments) lors d'un transfert fiable ?
+9. [Intermédiaire] Qu'est-ce qu'un acquittement (ACK) dans un mécanisme de contrôle de fiabilité ?
+10. [Intermédiaire] Quels sont les deux éléments (l'un matériel, l'autre logique) indispensables pour franchir une liaison physique ?
+11. [Intermédiaire] Quel phénomène réseau est directement responsable de la dégradation de l'expérience utilisateur lors de la lecture d'un flux multimédia ?
+12. [Difficile] Définissez avec précision la notion de « restitution continue » dans le cadre d'une application temps réel.
+
+Partie 2 : Questions de compréhension
+
+13. [Facile] Expliquez avec vos propres mots pourquoi toutes les applications réseau n'ont pas les mêmes exigences de transmission.
+14. [Intermédiaire] Décrivez le cheminement de transformation que subit une information applicative avant de circuler concrètement sur un support de transmission.
+15. [Intermédiaire] Expliquez le mécanisme par lequel un récepteur parvient à détecter qu'un morceau d'information est arrivé en double.
+16. [Intermédiaire] Décrivez le fonctionnement d'une mémoire tampon face à un réseau dont le débit fluctue fortement.
+17. [Intermédiaire] Expliquez pourquoi la numérotation des blocs est indissociable des mécanismes de retransmission.
+18. [Difficile] Expliquez en détail comment une mauvaise interprétation d'un acquittement ou d'un paquet conduit à la réception d'un bloc en double.
+19. [Difficile] Quelle relation existe-t-il entre l'électronique des cartes réseau, les protocoles et les caractéristiques physiques du support de transmission ?
+20. [Difficile] Expliquez pourquoi l'absorption des irrégularités par un buffer permet de masquer les défauts du réseau à l'utilisateur final.
+
+Partie 3 : Questions de comparaison
+
+21. [Facile] Comparez les contraintes réseau d'un transfert de fichier classique et celles d'un appel en visioconférence.
+22. [Intermédiaire] Construisez un tableau comparatif opposant les transmissions à « fiabilité stricte » et les transmissions « temps réel / multimédia » selon les critères suivants : priorité principale, tolérance aux pertes, tolérance aux délais, mécanismes clés utilisés.
+23. [Intermédiaire] Comparez les notions de latence et de gigue : en quoi ces deux phénomènes sont-ils liés mais distincts ?
+24. [Intermédiaire] Comparez la détection d'erreurs et la détection de pertes : sur quoi porte chacun de ces contrôles ?
+25. [Difficile] Comparez l'impact de la retransmission sur une application de messagerie texte versus sur un flux audio en direct.
+26. [Difficile] Comparez le rôle de la carte réseau (matériel) et celui des protocoles (logiciel/règles) dans le franchissement d'une liaison physique.
+
+Partie 4 : Questions de justification et de réflexion
+
+27. [Intermédiaire] Pourquoi la simple détection des erreurs ne suffit-elle pas à garantir une transmission strictement fiable ?
+28. [Intermédiaire] Justifiez pourquoi une application multimédia privilégie la régularité du débit plutôt que l'exhaustivité absolue des données reçues.
+29. [Intermédiaire] Comment la mise en mémoire tampon parvient-elle à neutraliser la gigue, et quelle est la contrepartie inévitable de ce mécanisme sur la latence globale ?
+30. [Difficile] Démontrez pourquoi l'élimination des doublons est une conséquence nécessaire de l'introduction de mécanismes de retransmission dans un réseau imparfait.
+31. [Difficile] Expliquez pourquoi la conversion en signal physique doit impérativement être « adaptée au support ». Donnez des exemples concrets de supports et de signaux associés.
+32. [Difficile] Pourquoi affirme-t-on que le passage par une séquence binaire constitue un invariant architectural, quelle que soit la nature de l'application ?
+33. [Examen universitaire] Justifiez l'incompatibilité fondamentale entre une garantie de fiabilité stricte par retransmission illimitée et les exigences du temps réel strict.
+
+Partie 5 : Questions pièges (Analyse critique et cas limites)
+
+34. [Intermédiaire] Affirmation à analyser : « Un récepteur reçoit un paquet portant le numéro de séquence 4 deux fois de suite. Cela prouve avec certitude que le premier paquet n°4 a été corrompu durant le transport. » Cette affirmation est-elle exacte ? Justifiez.
+35. [Intermédiaire] Affirmation à analyser : « Augmenter indéfiniment la taille de la mémoire tampon (buffer) permet de résoudre tous les problèmes de réseau pour une application de visioconférence interactive en direct. » Critiquez cette proposition.
+36. [Intermédiaire] Question piège : Si un réseau dispose d'un débit moyen très élevé et d'un taux de perte nul, une application vidéo peut-elle tout de même subir une dégradation de l'expérience utilisateur ? Pourquoi ?
+37. [Difficile] Affirmation à analyser : « Les mécanismes de fiabilité (numérotation, acquittement, retransmission) sont spécifiques aux applications de transfert de données, tandis que la conversion en séquence binaire puis en signal physique est réservée aux flux multimédias. » Corrigez cette erreur conceptuelle.
+38. [Difficile] Cas particulier : Un paquet de données arrive parfaitement intact et dans les temps au récepteur, mais son acquittement est perdu sur le chemin du retour. Décrivez précisément ce qui va se passer du point de vue de l'émetteur et du récepteur.
+39. [Difficile] Nuance conceptuelle : Peut-on avoir de la latence sans gigue ? Peut-on avoir de la gigue sans latence ? Justifiez vos deux réponses.
+40. [Examen universitaire] Analyse de scénario : Un étudiant affirme que la détection de pertes et la détection d'erreurs sont deux synonymes désignant le contrôle d'intégrité d'un paquet. Expliquez l'erreur de raisonnement et montrez comment un paquet peut être perdu sans jamais être détecté comme erroné par un contrôle d'intégrité.
+
+Partie 6 : Exercices de mise en situation
+
+
+Scénario A : Le téléchargement interrompu d'une archive critique
+
+Une entreprise transfère un fichier comptable chiffré de 500 Mo vers un serveur distant via un réseau Wi-Fi instable subissant des micro-coupures et des interférences électromagnétiques.
+41. [Facile] Quelle catégorie de contrainte de transmission s'applique prioritairement ici ?
+42. [Intermédiaire] Citez les quatre mécanismes précis du cours qui vont entrer en jeu pour garantir que le fichier final soit exploitable.
+43. [Intermédiaire] À la suite d'une micro-coupure, le serveur reçoit les blocs dans l'ordre suivant : 1, 2, 4, 3, 4, 5. Quel mécanisme permet de corriger cette anomalie et quel sera le résultat remis à l'application ?
+44. [Difficile] Expliquez la cause probable de la double présence du bloc 4 dans la séquence reçue par le serveur.
+
+Scénario B : La retransmission sportive en direct
+
+Un utilisateur regarde un match de football en streaming HD sur son ordinateur. Soudain, l'image se fige pendant deux secondes, puis reprend normalement sans qu'aucune action du match n'ait été sautée, mais avec un léger décalage par rapport au direct réel.
+45. [Facile] Quel phénomène réseau est à l'origine du gel temporaire de l'image ?
+46. [Intermédiaire] Quel mécanisme logiciel a permis de reprendre la lecture sans sauter d'images ?
+47. [Difficile] Expliquez pourquoi l'utilisateur observe désormais un décalage temporel supplémentaire par rapport au direct après cet incident.
+
+Scénario C : Migration d'infrastructure physique
+
+Une université remplace ses anciens câbles en cuivre (paire torsadée) par de la fibre optique tout en conservant les mêmes applications métiers (web, mail, téléphonie IP).
+48. [Intermédiaire] Quels éléments matériels et physiques doivent être modifiés pour franchir ces nouvelles liaisons ?
+49. [Intermédiaire] La représentation binaire des données applicatives est-elle modifiée par ce changement de support ? Justifiez à l'aide du cours.
+50. [Difficile] En quoi la nature du signal physique généré change-t-elle entre l'ancienne et la nouvelle infrastructure ?
+
+Partie 7 : Exercices de calcul (Progressifs)
+
+
+Exercice 1 : Calculs simples et conversions d'unités (Latence et Buffer)
+
+Un flux audio numérique nécessite un débit constant de 128 kbit/s pour une restitution fluide. Le lecteur multimédia configure une mémoire tampon (buffer) capable de stocker 64 Ko (kilo-octets) de données avant de démarrer la lecture (on prendra 1 octet = 8 bits et 1 Ko = 1 000 octets).
+51. [Facile] Convertissez la capacité de la mémoire tampon en bits.
+52. [Facile] Convertissez le débit du flux audio en octets par seconde (o/s).
+53. [Intermédiaire] Calculez le temps (en secondes) nécessaire pour remplir entièrement cette mémoire tampon si le réseau fonctionne à plein régime à 128 kbit/s.
+54. [Intermédiaire] Quelle durée maximale de coupure réseau totale ce buffer permet-il d'absorber sans interruption du son ?
+
+Exercice 2 : Analyse de la gigue (Jitter)
+
+Lors d'une communication vocale (VoIP), l'émetteur envoie un paquet audio toutes les 20 ms exactement. Voici les instants d'arrivée mesurés au niveau du récepteur pour 6 paquets consécutifs (en millisecondes) :
+Paquet 1 : \(t_1 = 50\text{ ms}\) | Paquet 2 : \(t_2 = 70\text{ ms}\) | Paquet 3 : \(t_3 = 95\text{ ms}\) | Paquet 4 : \(t_4 = 110\text{ ms}\) | Paquet 5 : \(t_5 = 142\text{ ms}\) | Paquet 6 : \(t_6 = 150\text{ ms}\).
+55. [Facile] Calculez l'intervalle de temps inter-arrivée \(\Delta t_i = t_i - t_{i-1}\) entre chaque paire de paquets consécutifs.
+56. [Intermédiaire] En sachant que l'intervalle théorique nominal est de \(20\text{ ms}\), calculez la variation de délai (gigue instantanée) pour chaque intervalle.
+57. [Intermédiaire] Quelle est la gigue maximale observée sur cet échantillon ?
+58. [Difficile] Si le récepteur ne dispose d'aucune mémoire tampon et lit chaque paquet dès son arrivée, décrivez précisément ce qui se passe entre le Paquet 4 et le Paquet 5.
+59. [Difficile] Quelle taille minimale de mémoire tampon (exprimée en millisecondes de audio) faut-il configurer au récepteur pour absorber intégralement le retard du Paquet 5 sans coupure sonore ?
+
+Exercice 3 : Fiabilité, retransmissions et efficacité du débit
+
+Un émetteur doit transmettre un fichier de 10 Mo (1 Mo = \(10^{6}\) octets) découpé en paquets de données de 1 000 octets de charge utile. Chaque paquet possède un en-tête de contrôle (contenant le numéro de séquence et le code de détection d'erreurs) de 40 octets. Pour chaque paquet reçu, le récepteur renvoie un acquittement (ACK) de 40 octets.
+60. [Facile] Combien de paquets sont nécessaires pour transmettre l'intégralité des 10 Mo de données utiles ?
+61. [Intermédiaire] Calculez le volume total d'octets réellement émis sur le réseau (données utiles + en-têtes + acquittements) dans le cas idéal où aucune perte ni erreur ne survient.
+62. [Intermédiaire] Déduisez-en le taux d'efficacité utile (rapport entre les données utiles et le volume total échangé, en pourcentage).
+63. [Difficile] On suppose maintenant que le réseau est perturbé : 5 % des paquets de données sont perdus ou corrompus et doivent être retransmis une fois, et 2 % des acquittements (ACK) sont perdus, ce qui provoque également la retransmission du paquet de données correspondant (et l'envoi d'un nouvel ACK par le récepteur). Calculez le nombre total de paquets de données retransmis.
+64. [Examen universitaire] Calculez le nouveau volume total d'octets échangés sur le réseau dans ce scénario perturbé, ainsi que le pourcentage de surcoût engendré par les mécanismes de fiabilité par rapport au scénario idéal.
+
+Exercice 4 : Conversion binaire et débit physique sur une liaison
+
+Une carte réseau Ethernet fonctionne à un débit binaire brut de 100 Mbit/s (\(100 \times 10^6\) bits/s). Un flux vidéo haute définition génère 25 images par seconde. Chaque image a une résolution de \(1920 \times 1080\) pixels, et chaque pixel est codé sur 24 bits avant compression. Un algorithme de compression réduit le volume des données d'un facteur 40.
+65. [Facile] Calculez le nombre total de pixels dans une seule image.
+66. [Intermédiaire] Calculez le volume binaire (en bits, puis en Mbits) d'une image non compressée, puis le débit binaire brut du flux vidéo avant compression.
+67. [Intermédiaire] Calculez le débit binaire réel du flux vidéo après compression, à envoyer à la carte réseau.
+68. [Difficile] Calculez le temps de transmission nécessaire à la carte réseau pour convertir en signal physique et émettre l'équivalent de 1 seconde de vidéo compressée sur le câble.
+69. [Difficile] Si le protocole réseau ajoute 10 % d'informations de contrôle (numérotation, détection d'erreurs) aux données compressées, quelle fraction (en %) de la capacité maximale de la liaison à 100 Mbit/s est occupée par ce flux ?
+
+Exercice 5 : Problème complet de synthèse (Dimensionnement d'un lien multimédia)
+
+Une salle de conférence utilise une liaison réseau dédiée d'un débit utile disponible de 4 Mbit/s pour diffuser une conférence vidéo en direct vers un auditorium distant. Le délai de propagation physique du signal sur la fibre optique entre les deux sites est fixe et égal à 15 ms. Le flux vidéo + audio compressé a un débit moyen de 3,2 Mbit/s, mais subit des pointes de débit ponctuelles à 4,8 Mbit/s pendant 0,5 seconde toutes les 4 secondes.
+70. [Intermédiaire] Calculez le volume de données (en bits et en Ko) généré pendant une pointe de 0,5 seconde.
+71. [Difficile] Calculez le volume maximal de données que la liaison de 4 Mbit/s peut évacuer pendant cette même durée de 0,5 seconde.
+72. [Difficile] Déduisez-en l'excédent de données (en bits) qui s'accumule dans la mémoire tampon d'émission/réception lors d'une pointe.
+73. [Difficile] Pendant les 3,5 secondes suivantes, le débit du flux redescend à 2,97 Mbit/s afin de maintenir la moyenne de 3,2 Mbit/s. Vérifiez par le calcul si la liaison de 4 Mbit/s a le temps de vider intégralement la mémoire tampon avant l'arrivée de la pointe suivante.
+74. [Examen universitaire] En additionnant le délai de propagation physique (15 ms) et le délai induit par le remplissage minimal du buffer nécessaire pour absorber une pointe, calculez la latence totale minimale subie par les spectateurs de l'auditorium.
+
+Partie 8 : Questions longues de synthèse (Dissertations et exposés structurés)
+
+75. [Examen universitaire] Sujet 1 : « Du bit au signal, du paquet à l'expérience utilisateur : comment l'architecture des réseaux concilie-t-elle des contraintes applicatives contradictoires sur des supports physiques imparfaits ? » Rédigez une synthèse structurée en mobilisant l'ensemble des notions du cours.
+76. [Examen universitaire] Sujet 2 : « La fiabilité et le temps réel : deux philosophies opposées du contrôle de transmission. » Analysez en profondeur les mécanismes, les coûts et les compromis propres à chacune de ces deux approches.
+77. [Examen universitaire] Sujet 3 : « Le rôle central de la gestion du temps et de l'ordre dans les communications numériques. » Montrez comment les protocoles et les équipements (numérotation, temporisateurs de retransmission, mémoires tampons) maîtrisent le facteur temporel à différents niveaux.
+
+Partie 9 : Sujet d'Examen Blanc
+
+UNIVERSITÉ — DÉPARTEMENT D'INFORMATIQUE ET RÉSEAUX
+Épreuve de Fondamentaux des Réseaux et Transmissions
+Durée conseillée : 1 heure 30
+Barème total : 20 points
+Documents non autorisés. Calculatrice simple autorisée.
+
+Exercice 1 : Questions de cours et analyse critique (6 points)
+
+78. (1,5 pt) Définissez précisément les termes suivants : gigue, mémoire tampon (buffer) et acquittement.
+79. (2 pts) Expliquez les mécanismes qui garantissent la fiabilité stricte d'une transmission de données et montrez en quoi ces mécanismes peuvent paradoxalement générer des paquets en double chez le destinataire.
+80. (1,5 pt) Pourquoi le franchissement d'une liaison physique impose-t-il une double conversion de l'information ? Précisez les deux étapes de cette conversion et les acteurs (matériel/logiciel) qui la réalisent.
+81. (1 pt) Vrai ou Faux (justifiez impérativement votre réponse) : « Une mémoire tampon permet de supprimer définitivement la latence sur un réseau encombré. »
+
+Exercice 2 : Raisonnement et comparaison (4 points)
+
+82. (2,5 pts) Comparez de manière structurée les contraintes réseau et les mécanismes d'adaptation d'une application de transfert de base de données et d'une application de diffusion audio en continu (streaming musical).
+83. (1,5 pt) Un ingénieur réseau propose d'activer les retransmissions automatiques illimitées sur un flux de téléphonie sur IP (voix en direct) afin d'améliorer la qualité sonore lors des pertes de paquets. Expliquez pourquoi cette décision technique est contre-productive.
+
+Exercice 3 : Problème quantitatif — Transfert fiable vs Flux multimédia (5 points)
+
+On considère une liaison numérique offrant un débit binaire utile de 2 Mbit/s (\(2 \times 10^6\) bits/s).
+84. (1 pt) On souhaite transférer un fichier de 5 Mo (\(5 \times 10^6\) octets) sur cette liaison. Calculez le temps théorique minimal de transmission en secondes (en négligeant les en-têtes).
+85. (1,5 pt) En réalité, le protocole de fiabilité découpe le fichier en blocs de 1 000 octets utiles et ajoute 50 octets de contrôle (numérotation, détection d'erreurs) par bloc. De plus, 10 % des blocs subissent une erreur de transmission et doivent être retransmis une fois. Calculez le volume total de données (en octets) effectivement transmis sur la liaison.
+86. (1 pt) Calculez le temps réel total nécessaire pour achever ce transfert fiable.
+87. (1,5 pt) On utilise maintenant cette même liaison de 2 Mbit/s pour transmettre un flux vidéo continu d'un débit moyen de 1,6 Mbit/s. Par suite d'une congestion ponctuelle, le débit disponible sur le réseau chute à 800 kbit/s pendant 3 secondes, avant de revenir à 2 Mbit/s. Quelle taille minimale de mémoire tampon (en kilo-octets, avec \(1\text{ Ko} = 1000\text{ octets}\)) le lecteur vidéo doit-il avoir accumulée avant la congestion pour éviter toute coupure d'image ?
+
+Exercice 4 : Étude de cas finale — Architecture d'un système de télémédecine (5 points)
+
+Un hôpital déploie un système de télé-échographie en direct entre un centre rural et un spécialiste situé en ville. Le système transmet simultanément :
+• Flux 1 : Le flux vidéo haute définition de la sonde échographique en temps réel.
+• Flux 2 : La voix du médecin et du patient (communication bidirectionnelle).
+• Flux 3 : Le dossier médical complet du patient (analyses biologiques et compte-rendu PDF) envoyé en parallèle.
+88. (1,5 pt) Classez chacun des trois flux selon les catégories de contraintes de transmission définies dans le cours, en justifiant chaque choix.
+89. (1,5 pt) Lors de l'examen, le réseau subit des micro-ralentissements irréguliers. Quel impact cela aura-t-il sur le Flux 1 et le Flux 2 ? Quel mécanisme doit être implémenté pour préserver l'expérience utilisateur, et quelle limite ce mécanisme rencontre-t-il dans le cadre précis d'un dialogue interactif (Flux 2) ?
+90. (1 pt) Pour le Flux 3, certains paquets arrivent dans le désordre et un paquet est reçu deux fois. Expliquez comment le terminal du spécialiste traite cette situation pour garantir l'intégrité du dossier médical.
+91. (1 pt) Le lien entre le centre rural et la ville combine un câble réseau local en cuivre dans l'hôpital, suivi d'une liaison radio longue distance. Expliquez ce qui reste identique et ce qui change dans la représentation de l'information lors du passage du câble cuivre à la liaison radio.
