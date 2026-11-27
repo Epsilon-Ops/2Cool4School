@@ -1,0 +1,50 @@
+
+{
+  "id": "english-presentation",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.presentation",
+  "title": "Se présenter et parler de soi",
+  "intro": "Apprenez à vous présenter en anglais et à parler de vous dans les situations de la vie quotidienne. Découvrez le vocabulaire et les expressions indispensables pour donner votre identité, indiquer votre origine et votre nationalité, parler de votre profession, de vos études, de vos goûts, de vos loisirs et de votre personnalité. Vous apprendrez également à décrire votre apparence physique, présenter vos compétences et parler des langues que vous connaissez.",
+  "sections": [
+    {
+      "id": "eng_009_identite",
+      "title": "I. Dire son nom et son âge"
+    },
+    {
+      "id": "eng_010_origine-nationalite",
+      "title": "II. Indiquer son origine et sa nationalité"
+    },
+    {
+      "id": "eng_011_profession-etudes",
+      "title": "III. Parler de sa profession et de ses études"
+    },
+    {
+      "id": "eng_012_description-physique",
+      "title": "IV. Décrire ses caractéristiques physiques"
+    },
+    {
+      "id": "eng_013_langues",
+      "title": "V. Parler des langues que l'on connaît"
+    },
+    {
+      "id": "eng_014_gouts-preferences",
+      "title": "VI. Présenter ses goûts et ses préférences"
+    },
+    {
+      "id": "eng_015_loisirs",
+      "title": "VII. Parler de ses loisirs et centres d'intérêt"
+    },
+    {
+      "id": "eng_016_personnalite",
+      "title": "VIII. Décrire sa personnalité et son caractère"
+    },
+    {
+      "id": "eng_017_competences",
+      "title": "IX. Parler de ses compétences et capacités"
+    }
+  ],
+  "chapter": "Les fondamentaux de l'anglais",
+  "chapterOrder": 1,
+  "order": 2
+}

@@ -1,0 +1,42 @@
+
+{
+  "id": "reseaux-archi-10",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "L'architecture TCP/IP et les protocoles d'Internet",
+  "intro": "Comprendre l'architecture TCP/IP, qui constitue le fondement des communications sur Internet et dans la majorité des réseaux informatiques modernes. Ce cours présente l'organisation générale de TCP/IP, le rôle des quatre couches de son architecture, les principaux protocoles associés à chaque couche, leur implémentation ainsi que les mécanismes permettant l'interconnexion des réseaux.",
+  "sections": [
+    {
+      "id": "res_073_tcp-ip",
+      "title": "I. Présentation de TCP/IP"
+    },
+    {
+      "id": "res_074_application",
+      "title": "II. La couche application"
+    },
+    {
+      "id": "res_075_transport",
+      "title": "III. La couche transport"
+    },
+    {
+      "id": "res_076_internet",
+      "title": "IV. La couche Internet (réseau)"
+    },
+    {
+      "id": "res_077_transmission",
+      "title": "V. La couche transmission (accès réseau)"
+    },
+    {
+      "id": "res_078_protocoloes",
+      "title": "VI. L'implémentation des protocoles"
+    },
+    {
+      "id": "res_079_interconnexion",
+      "title": "VII. L'interconnexion dans TCP/IP"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 10
+}

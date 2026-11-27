@@ -1,0 +1,34 @@
+
+{
+  "id": "reseaux-archi-4",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Les topologies des réseaux",
+  "intro": "Comprendre comment les équipements d'un réseau informatique sont organisés et interconnectés. Ce cours présente les principales topologies physiques et logiques, leurs caractéristiques, leurs avantages et leurs inconvénients, ainsi que leur utilisation dans les réseaux réels.",
+  "sections": [
+    {
+      "id": "res_045_topologie_bus",
+      "title": "I. La topologie en bus"
+    },
+    {
+      "id": "res_046_topologie_etoile",
+      "title": "II. La topologie en étoile"
+    },
+    {
+      "id": "res_047_topologie_anneau",
+      "title": "III. La topologie en anneau"
+    },
+    {
+      "id": "res_048_topologie_maillee",
+      "title": "IV. La topologie maillée"
+    },
+    {
+      "id": "res_049_topologie",
+      "title": "V. Les topologies dans les réseaux réels"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 4
+}

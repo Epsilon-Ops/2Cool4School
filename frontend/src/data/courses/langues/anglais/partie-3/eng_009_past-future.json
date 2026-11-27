@@ -1,0 +1,46 @@
+
+{
+  "id": "english-past-future",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.past-future",
+  "title": "Le temps et les premières notions du passé et du futur",
+  "intro": "Apprenez à situer vos actions dans le temps et à parler du passé comme de l'avenir en anglais. Découvrez comment exprimer les différents moments de la journée, utiliser Was et Were pour décrire des situations passées et construire vos premières phrases au prétérit avec les verbes réguliers et irréguliers les plus courants. Vous apprendrez également à raconter des événements passés simplement, à parler de vos projets avec Going to, à exprimer le futur avec Will et à utiliser les principaux marqueurs temporels.",
+  "sections": [
+    {
+      "id": "eng_063_moments-journee",
+      "title": "I. Les moments de la journée"
+    },
+    {
+      "id": "eng_064_was-were",
+      "title": "II. Parler du passé avec Was et Were"
+    },
+    {
+      "id": "eng_065_preterit-regulier",
+      "title": "III. Découvrir le prétérit des verbes réguliers"
+    },
+    {
+      "id": "eng_066_preterit-irregulier",
+      "title": "IV. Découvrir les verbes irréguliers courants"
+    },
+    {
+      "id": "eng_067_evenements-passes",
+      "title": "V. Raconter des événements passés simplement"
+    },
+    {
+      "id": "eng_068_going-to",
+      "title": "VI. Exprimer ses projets avec Going to"
+    },
+    {
+      "id": "eng_069_will",
+      "title": "VII. Exprimer le futur avec Will"
+    },
+    {
+      "id": "eng_070_marqueurs-temporels",
+      "title": "VIII. Utiliser les marqueurs temporels"
+    }
+  ],
+  "chapter": "Notions complémentaires",
+  "chapterOrder": 3,
+  "order": 1
+}

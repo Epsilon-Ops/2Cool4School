@@ -1,0 +1,25 @@
+{
+  "id": "reseaux-archi-9",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Le modèle de référence OSI",
+  "intro": "Comprendre le modèle OSI (Open Systems Interconnection), une architecture de référence permettant de décrire et de comprendre les communications entre équipements réseau. Ce cours présente l'organisation générale du modèle OSI, le rôle et les fonctions de ses sept couches ainsi que le mécanisme d'encapsulation des données lors de leur transmission à travers les différentes couches.",
+  "sections": [
+    {
+      "id": "res_070_osi",
+      "title": "I. Présentation générale du modèle OSI"
+    },
+    {
+      "id": "res_071_7_couches",
+      "title": "II. Les 7 couches OSI"
+    },
+    {
+      "id": "res_072_encapsulation",
+      "title": "III. L'encapsulation dans le modèle OSI"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 9
+}

@@ -1,0 +1,30 @@
+
+{
+  "id": "reseaux-archi-1",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Transmission de l'information et techniques de communication",
+  "intro": "Comprendre comment les informations sont représentées, converties, codées et transmises entre les équipements d'un réseau informatique. Ce cours présente les différents types d'information, les techniques de transmission, le fonctionnement d'une liaison ainsi que les notions essentielles de débit, de latence et de temps de transmission.",
+  "sections": [
+    {
+      "id": "res_033_types",
+      "title": "I. Les différents types d'information"
+    },
+    {
+      "id": "res_034_conversion",
+      "title": "II. Conversion et codage de l'information"
+    },
+    {
+      "id": "res_035_techniques",
+      "title": "III. Les techniques de transmission"
+    },
+    {
+      "id": "res_036_liaison",
+      "title": "IV. Le fonctionnement d'une liaison"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 1
+}

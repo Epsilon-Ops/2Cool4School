@@ -131,3 +131,401 @@ Skills (Réseaux) :
             + res_083_http [Troisième étape : la requête HTTP]
             + res_084_reseau [Quatrième étape : la transmission sur le réseau]
             + res_085_reception [Cinquième étape : la réception et la réponse]
+
+    >> Module 1C [Fiabilité des Protocoles]
+        --> Thème 1 : Délimitation des données et transparence des transmissions
+            + res_086_protocole-fiabilite [Protocole et fiabilité]
+            + res_087_fanion [Notion de fanion]
+            + res_088_echappement [Notion de transparence : l'échappement]
+            + res_089_bit-bourrage [Technique du bit de bourrage]
+
+        --> Thème 2 : Contrôle d'intégrité et détection des erreurs
+            + res_090_erreurs [La notion d'erreur et le taux d'erreur binaire (BER)]
+            + res_091_probabilite-erreur [La probabilité d'erreur d'une trame]
+            + res_092_detection-erreurs [Les mécanismes de détection d'erreurs]
+            + res_093_checksum [La somme de contrôle (Checksum)]
+            + res_094_parite [Le bit de parité]
+
+        --> Thème 3 : Fiabilité des transmissions : le protocole Send & Wait
+            + res_095_send-wait [Le principe du protocole Send & Wait]
+            + res_096_acquittement [Les accusés de réception (ACK)]
+            + res_097_temporisation [La temporisation et la retransmission]
+            + res_098_duplication [La détection et la gestion des messages dupliqués]
+            + res_099_numerotation [La numérotation des messages : NS et NR]
+            + res_100_acquittement-numerote [La numérotation des accusés de réception]
+
+        --> Thème 4 : Optimisation de l'efficacité des protocoles
+            + res_101_piggybacking [Le mécanisme de Piggybacking]
+            + res_102_efficacite [L'efficacité d'un protocole]
+            + res_103_debit-utile [Le débit nominal et le débit utile]
+            + res_104_efficacite-erreurs [L'impact des erreurs sur l'efficacité]
+            + res_105_compromis-trames [Le compromis entre taille des trames et taux d'erreur]
+
+        --> Thème 5 : Protocoles à anticipation et gestion des fenêtres
+            + res_106_anticipation [Le principe des protocoles à anticipation]
+            + res_107_fenetre-emission [La fenêtre d'émission]
+            + res_108_taille-fenetre [Le dimensionnement optimal de la fenêtre d'émission]
+            + res_109_fenetre-glissante-sautante [La gestion glissante et sautante de la fenêtre]
+            + res_110_rejet-simple [Le mécanisme de rejet simple]
+            + res_111_rejet-selectif [Le mécanisme de rejet sélectif]
+            + res_112_fenetre-reception [La fenêtre de réception]
+
+        --> Thème 6 : Contrôle de flux et signalisation
+            + res_113_controle-flux [Le principe du contrôle de flux]
+            + res_114_signalisation [La signalisation dans les réseaux]
+
+        --> Thème 7 : Le protocole HDLC
+            + res_115_presentation-hdlc [Présentation générale du protocole HDLC]
+            + res_116_fonctionnement-hdlc [Le fonctionnement général de HDLC]
+            + res_117_types-trames [Les trois types de trames HDLC : I, S et U]
+            + res_118_format-trame [Le format et la structure d'une trame HDLC]
+            + res_119_champ-commande [Le champ de commande et la numérotation NS/NR]
+            + res_120_trames-supervision [Les trames de supervision : RR, RNR, REJ et SREJ]
+            + res_121_connexion-hdlc [L'ouverture et la fermeture d'une liaison HDLC]
+            + res_122_temporisateurs-hdlc [Les temporisateurs HDLC : T1 et T2]
+
+        --> Thème 8 : Étude pratique : échanges et gestion des erreurs avec HDLC
+            + res_123_regles-reprise [Les règles de reprise et la gestion des fenêtres]
+            + res_124_echange-donnees [Exemple d'échange de données en HDLC]
+            + res_125_gestion-erreurs [La gestion des erreurs et le rejet simple]
+            + res_126_controle-flux-hdlc [Exemple de contrôle de flux avec HDLC]
+            + res_127_fenetre-sautante-hdlc [La gestion sautante de la fenêtre dans HDLC]
+
+>> Module 1D [Outils]
+
+    --> Thème 1 : Introduction aux outils de travail et d'analyse réseau
+        + res_128_presentation-outils [Présentation des outils : Terminal, Wireshark et Filius]
+
+    --> Thème 2 : Utilisation du terminal
+        + res_129_presentation-terminal [Présentation générale du terminal]
+        + res_130_terminaux-systemes [Les terminaux sous Linux, macOS et Windows]
+        + res_131_sgf-unix [Le système de gestion de fichiers Unix]
+        + res_132_droits-acces [Les droits d'accès aux fichiers et répertoires]
+        + res_133_repertoires [Les répertoires et les chemins particuliers]
+        + res_134_noms-fichiers [Les noms et extensions de fichiers]
+        + res_135_chemins [Les chemins relatifs et absolus]
+        + res_136_commandes-fichiers [Les principales commandes de manipulation des fichiers et répertoires]
+        + res_137_man [L'utilisation de la commande man et de l'aide en ligne]
+        + res_138_exercice-terminal [Exemple pratique : manipulation d'une arborescence et compression de fichiers]
+
+    --> Thème 3 : Analyse de trames avec Wireshark
+        + res_139_presentation-wireshark [Présentation générale de Wireshark]
+        + res_140_capture-trames [La capture et l'ouverture de traces réseau]
+        + res_141_interface-wireshark [Présentation de l'interface graphique de Wireshark]
+        + res_142_decodage-trames [L'inspection et le décodage d'une trame]
+        + res_143_encapsulation-wireshark [L'analyse de l'encapsulation des protocoles]
+        + res_144_analyse-hexadecimal [La lecture du contenu des trames en hexadécimal et ASCII]
+        + res_145_filtres-wireshark [Le filtrage des trames]
+        + res_146_filtres-avances [Les filtres combinés et les opérateurs logiques]
+        + res_147_flux-tcp [La fonctionnalité Suivre un flux TCP]
+
+    --> Thème 4 : Simulation de réseaux avec Filius
+        + res_148_presentation-filius [Présentation générale de Filius]
+        + res_149_installation-filius [Installation et configuration initiale de Filius]
+        + res_150_ouvrir-topologie [Ouverture d'une topologie réseau existante]
+        + res_151_simulation-reseau [Lancement et fonctionnement d'une simulation réseau]
+        + res_152_interaction-machines [L'utilisation des machines et des applications dans Filius]
+        + res_153_inspection-echanges [L'inspection des échanges de données entre les machines]
+        + res_154_terminal-filius [L'utilisation du terminal intégré à Filius]
+        + res_155_installation-programmes [L'installation et la désinstallation de programmes]
+        + res_156_configuration-machines [La configuration des machines et des équipements réseau]
+        + res_157_passerelle [La configuration de la passerelle par défaut]
+        + res_158_creation-topologie [La création et la génération d'une topologie réseau]
+
+>> Module 2A [Les Réseaux Locaux Ethernet]
+    --> Thème 1 : Généralités et caractéristiques des réseaux locaux
+        + res_159_reseau-local [Définition d'un réseau local (LAN)]
+        + res_160_caracteristiques-lan [Caractéristiques d'un réseau local]
+        + res_161_liaison-point-multipoint [Liaisons point-à-point et multipoint]
+        + res_162_adressage-unicast-multicast-broadcast [Adressage unicast, multicast et broadcast]
+        + res_163_partage-support [Partage du support de transmission et règles de prise de parole]
+        + res_164_methodes-acces [Méthodes d'accès : maître/esclave, politesse et jeton]
+
+    --> Thème 2 : Normalisation des réseaux locaux
+        + res_165_normes-ieee-802 [Normalisation IEEE 802 des réseaux locaux]
+        + res_166_sous-couches-802 [Les sous-couches du modèle IEEE 802]
+        + res_167_couche-mac [Rôle de la sous-couche MAC (Medium Access Control)]
+
+    --> Thème 3 : Fonctionnement des cartes réseau
+        + res_168_carte-reseau [Rôle et fonctionnement d'une carte réseau]
+        + res_169_reception-trame [Réception et délimitation des trames]
+        + res_170_filtrage-mac [Filtrage des trames selon l'adresse MAC]
+        + res_171_traitement-trame [Vérification du checksum et transmission à la couche supérieure]
+        + res_172_protocoles-ip-arp [Traitement des paquets IP et ARP par le système d'exploitation]
+
+    --> Thème 4 : Les équipements intermédiaires
+        + res_173_equipements-intermediaires [Rôle des équipements intermédiaires]
+        + res_174_repetiteur-hub [Répéteur et concentrateur (Hub)]
+        + res_175_commutateur-switch [Commutateur (Switch)]
+        + res_176_pont-bridge [Pont (Bridge) et interconnexion Ethernet-Wifi]
+        + res_177_routeur [Rôle du routeur dans l'interconnexion des réseaux]
+        + res_178_topologie-physique-logique [Différence entre topologie physique et logique]
+
+    --> Thème 5 : Les supports de transmission et les câbles
+        + res_179_paires-torsadees [Câbles à paires torsadées et connecteur RJ-45]
+        + res_180_cablage-tx-rx [Transmission et réception : TX+/TX- et RX+/RX-]
+        + res_181_categories-blindage [Catégories de câbles et protections UTP, FTP et STP]
+        + res_182_cable-coaxial [Câble coaxial]
+        + res_183_fibre-optique [Fibre optique : monomode et multimode]
+        + res_184_comparaison-supports [Comparaison des supports : débit, distance, coût et résistance aux perturbations]
+
+    --> Thème 6 : Topologies et méthodes d'accès
+        + res_185_topologie-bus [Topologie en bus]
+        + res_186_topologie-anneau [Topologie en anneau]
+        + res_187_topologie-etoile [Topologie en étoile]
+        + res_188_topologie-physique-logique-ethernet [Topologie physique en étoile et logique en bus]
+        + res_189_methodes-acces-reseau [Méthodes d'accès au support de transmission]
+
+    --> Thème 7 : La couche MAC et l'adressage
+        + res_190_adresse-mac [Définition et rôle de l'adresse MAC]
+        + res_191_adressage-plat [Adressage MAC à plat]
+        + res_192_format-adresse-mac [Format des adresses MAC : 16 bits et 48 bits]
+        + res_193_ecriture-hexadecimale [Écriture hexadécimale des adresses MAC]
+        + res_194_structure-adresse-mac [Structure d'une adresse MAC : constructeur et numéro de série]
+        + res_195_bit-ig [Bit I/G et distinction entre unicast et multicast]
+        + res_196_adresse-broadcast [Adresse MAC de diffusion : FF:FF:FF:FF:FF:FF]
+
+    --> Thème 8 : Contrôle d'erreur et protocole CSMA/CD
+        + res_197_controle-erreur-mac [Contrôle d'erreur au niveau MAC]
+        + res_198_crc-fcs [Somme de contrôle CRC/FCS sur 4 octets]
+        + res_199_csma-cd [Principe du protocole CSMA/CD]
+        + res_200_ecoute-support [Écoute du support avant émission (Carrier Sense)]
+        + res_201_detection-collision [Détection des collisions (Collision Detection)]
+        + res_202_reprise-collision [Arrêt de l'émission et reprise après collision]
+        + res_203_delai-aleatoire [Attente d'un délai aléatoire avant retransmission]
+        + res_204_half-duplex [Fonctionnement en half-duplex avec un répéteur]
+        + res_205_limites-csma-cd [Limites et performances du protocole CSMA/CD]
+        + res_206_taille-minimale-trame [Taille minimale de trame et diamètre du réseau Ethernet]
+
+    --> Thème 9 : Format de la trame Ethernet
+        + res_207_format-trame-ethernet [Structure générale d'une trame Ethernet]
+        + res_208_preambule-sfd [Préambule et délimiteur de début de trame (SFD)]
+        + res_209_entete-ethernet [En-tête Ethernet : adresses MAC source et destination]
+        + res_210_champ-type [Champ Type : identification des paquets IP et ARP]
+        + res_211_donnees-bourrage [Données utiles et bourrage (Padding)]
+        + res_212_fcs-trame [Champ FCS et contrôle d'intégrité de la trame]
+        + res_213_taille-trame-ethernet [Taille minimale et maximale d'une trame Ethernet]
+        + res_214_mtu-ethernet [MTU Ethernet de 1500 octets]
+        + res_215_fragmentation-ip [Fragmentation des paquets IP]
+        + res_216_bourrage-arp-tcp [Exemples de bourrage : paquet ARP et acquittement TCP]
+
+        >> Module 2B [Le commutateur Ethernet]
+
+--> Thème 1 : Présentation et fonctionnement du commutateur Ethernet
++ res_159_commutateur-ethernet [Le commutateur Ethernet]
++ res_160_commutateur-repeteur [Différences entre un commutateur et un répéteur]
++ res_161_principe-commutation [Principe de la commutation]
++ res_162_table-acheminement [Table d’acheminement (FDB)]
++ res_163_apprentissage-mac [Apprentissage et mise à jour des adresses MAC]
++ res_164_transmission-trames [Acheminement et transmission des trames]
++ res_165_modes-commutation [Les modes de commutation : Cut through, Fragment free et Store & forward]
+
+--> Thème 2 : Gestion du trafic et des performances
++ res_166_domaine-collision [Domaines de collision et fonctionnement Full-duplex / Half-duplex]
++ res_167_congestion-reseau [Congestion dans un réseau Ethernet]
++ res_168_uplink-trunking [Uplink et Trunking]
+
+--> Thème 3 : Critères de choix d’un commutateur
++ res_169_criteres-choix-switch [Critères de choix d’un commutateur Ethernet]
+
+>> Module 2C [Les Réseaux Locaux Virtuels (VLAN)]
+
+--> Thème 1 : Introduction et principes des VLAN
++ res_170_vlan [Les réseaux locaux virtuels (VLAN)]
++ res_171_pourquoi-vlan [Pourquoi utiliser des VLAN ?]
++ res_172_principes-vlan [Principes de fonctionnement des VLAN]
++ res_173_domaines-diffusion [VLAN et séparation des domaines de diffusion]
++ res_174_communication-inter-vlan [Communications entre VLAN et rôle du routeur]
+
+--> Thème 2 : Les différents types de VLAN
++ res_175_vlan-niveau-1 [VLAN de niveau 1 : appartenance par port]
++ res_176_vlan-niveau-2 [VLAN de niveau 2 : appartenance par adresse MAC]
++ res_177_vlan-niveau-3 [VLAN de niveau 3 : appartenance par adresse IP]
+
+--> Thème 3 : Transport et identification des VLAN
++ res_178-transport-vlan [Transport du numéro de VLAN entre commutateurs]
++ res_179_vlan-trunk-8021q [Trames VLAN et norme IEEE 802.1Q]
+
+\>\> Module 3A \[Architecture TCP/IP\]
+
+--\> Thème 1 : Introduction au modèle TCP/IP
+- res\_180\_architecture-tcp-ip \[Architecture TCP/IP\]
+- res\_181\_protocoles-reseaux \[Notion de protocole et fonctionnement des échanges\]
+- res\_182\_modele-osi-tcp-ip \[Modèle OSI et correspondance avec l’architecture TCP/IP\]
+- res\_183\_couches-tcp-ip \[Les différentes couches de l’architecture TCP/IP\]
+- res\_184\_modele-client-serveur \[Fonctionnement du modèle Client/Serveur\]
+
+--\> Thème 2 : Les protocoles applicatifs
+- res\_185\_http \[Protocole HTTP et fonctionnement du Web\]
+- res\_186\_ftp \[Protocole FTP et transfert de fichiers\]
+- res\_187\_telnet-ssh \[Protocoles Telnet, Rlogin et SSH\]
+- res\_188\_smtp-pop-imap \[Protocoles de messagerie : SMTP, POP et IMAP\]
+- res\_189\_dns \[Protocole DNS et résolution des noms de domaine\]
+- res\_190\_snmp \[Protocole SNMP et administration des réseaux\]
+- res\_191\_sockets \[Sockets et communication entre applications\]
+
+--\> Thème 3 : Les protocoles de transport TCP et UDP
+- res\_192\_tcp \[Protocole TCP et fiabilité des transmissions\]
+- res\_193\_connexion-tcp \[Mode connecté et établissement d’une connexion TCP\]
+- res\_194\_controle-flux-congestion \[Contrôle de flux et contrôle de congestion\]
+- res\_195\_udp \[Protocole UDP et transmissions sans connexion\]
+- res\_196\_tcp-vs-udp \[Comparaison entre TCP et UDP\]
+- res\_197\_numeros-ports \[Numéros de ports et identification des applications\]
+
+--\> Thème 4 : Le protocole IP et l’acheminement des paquets
+- res\_198\_ip \[Protocole IP et acheminement des paquets\]
+- res\_199\_routage \[Routage et fonctionnement des routeurs\]
+- res\_200\_adresses-ip \[Adresses IPv4 et IPv6\]
+- res\_201\_fragmentation-mtu \[Fragmentation IP et MTU\]
+- res\_202\_best-effort \[Mode non connecté et principe du Best Effort\]
+- res\_203\_robustesse-ip \[Robustesse du protocole IP et adaptation aux pannes\]
+
+--\> Thème 5 : Les protocoles de contrôle et de configuration
+- res\_204\_icmp \[Protocole ICMP et tests de connectivité\]
+- res\_205\_arp \[Protocole ARP et résolution des adresses MAC\]
+- res\_206\_rarp \[Protocole RARP et attribution des adresses IP\]
+- res\_207\_dhcp \[Protocole DHCP et configuration automatique du réseau\]
+
+--\> Thème 6 : Les protocoles des cartes réseaux et Ethernet
+- res\_208\_protocoles-cartes-reseaux \[Protocoles des cartes réseaux\]
+- res\_209\_ethernet-wifi \[Ethernet et Wi-Fi\]
+- res\_210\_hub-switch \[Répéteurs, hubs et commutateurs\]
+- res\_211\_adresses-mac \[Adresses MAC et acheminement des trames\]
+- res\_212\_trame-ethernet \[Structure et format d’une trame Ethernet\]
+- res\_213\_fcs-bourrage \[Détection d’erreurs, FCS et bourrage Ethernet\]
+
+--\> Thème 7 : Communication et encapsulation
+- res\_214\_transfert-fichier \[Exemple de transfert de fichier avec FTP\]
+- res\_215\_communication-reseaux \[Communication entre machines sur différents réseaux\]
+- res\_216\_protocoles-bout-en-bout \[Protocoles de bout en bout et protocoles point à point\]
+- res\_217\_encapsulation \[Principe de l’encapsulation des données\]
+- res\_218\_desencapsulation \[Désencapsulation et transmission des données entre couches\]
+- res\_219\_identification-protocoles \[Identification des protocoles : EtherType, Proto et ports\]
+
+--\> Thème 8 : Fonctionnement global d’Internet
+- res\_220\_fonctionnement-internet \[Fonctionnement global de l’architecture TCP/IP\]
+- res\_221\_connexions-tcp \[Connexions TCP et acheminement des données\]
+- res\_222\_multiplexage-ports \[Multiplexage et démultiplexage grâce aux numéros de ports\]
+- res\_223\_adresses-transport \[Adresses de transport et adresses de socket\]
+- res\_224\_identification-connexion \[Identification unique des connexions TCP\]
+
+--> Thème 9 : Adressage IP et sous-réseaux
+res_230_adressage-ip \[Fonctionnement et format des adresses IPv4 et IPv6\]
+res_231_classes-ipv4 \[Classes d’adresses IPv4 et plages d’adressage\]
+res_232_adresses-particulieres \[Adresses IPv4 particulières : réseau, broadcast et localhost\]
+res_233_adresses-privees \[Adresses IP privées et plages réservées (RFC 1918)\]
+res_234_nat \[NAT : traduction des adresses IP privées et publiques\]
+res_235_sous-reseaux \[Découpage en sous-réseaux et notion de netmask\]
+res_236_masque-cidr \[Masques de sous-réseau et notation CIDR\]
+res_237_calculs-sous-reseaux \[Calcul des adresses réseau, broadcast et plages de machines\]
+res_238_adressage-sans-classe \[Adressage sans classe CIDR et allocation des adresses IP\]
+res_239_agregation-routes \[Agrégation de sous-réseaux et tables de routage\]
+res_240_configuration-ip \[Configuration d’une interface réseau IPv4 et passerelle par défaut\]
+res_241_adressage-ipv6 \[Format, compression et structure des adresses IPv6\]
+res_242_types-adresses-ipv6 \[Adresses IPv6 particulières : unicast, multicast, anycast et loopback\]
+res_243_topologie-physique-logique \[Différence entre topologie physique et topologie logique d’un réseau\]
+res_244_adresses-mac-ip \[Différence entre adresse MAC et adresse IP et leur rôle dans les communications\]
+res_245_conversion-ip \[Conversions entre nombres binaires, décimaux et hexadécimaux pour l’adressage IP\]
+res_246_identification-reseau \[Détermination de l’adresse réseau à partir d’une adresse IP et d’un masque\]
+res_247_calcul-nombre-machines \[Calcul du nombre de sous-réseaux et du nombre de machines disponibles selon le masque CIDR\]
+res_248_decoupage-reseau \[Méthode de découpage d’un réseau en plusieurs sous-réseaux\]
+res_249_longest-prefix-match \[Principe du plus long préfixe correspondant dans les tables de routage\]
+res_250_configuration-ipv6 \[Attribution et configuration des adresses IPv6 et des identifiants d’interface\]
+
+--> Thème 3C : Routage dans IP
+
+res_251_routage-ip [Fonctionnement du protocole IP et acheminement des paquets]
+
+res_252_tables-routage [Tables de routage : destinations, masques, passerelles, interfaces et coûts]
+
+res_253_routage-statique-dynamique [Routage statique et routage dynamique : principes et différences]
+
+res_254_construction-tables-routage [Construction des tables de routage et détermination du prochain saut]
+
+res_255_route-defaut [Route par défaut et acheminement vers les réseaux distants]
+
+res_256_configuration-routage-linux [Configuration des tables de routage sous Linux avec ip route]
+
+res_257_configuration-routage-windows [Consultation des tables de routage sous Windows avec netstat -r]
+
+res_258_routage-cisco [Tables de routage et configuration des routeurs Cisco]
+
+res_259_configuration-interfaces-routeur [Configuration et activation des interfaces réseau sur un routeur]
+
+res_260_routage-ipv6 [Table de routage IPv6 et adresses link-local]
+
+--> Thème 3D : Protocole IP, MTU et fragmentation
+
+res_261_caracteristiques-ip [Caractéristiques du protocole IP : datagrammes, mode non connecté et best effort]
+
+res_262-fonctionnement-entete-ipv4 [Structure et fonctionnement de l'en-tête IPv4]
+
+res_263_champs-entete-ipv4 [Champs de l'en-tête IPv4 : version, IHL, TOS, longueur, TTL, protocole et checksum]
+
+res_264_protocoles-encapsules-ip [Protocoles encapsulés dans IP : TCP, UDP et ICMP]
+
+res_265_mtu-fragmentation [MTU : unité de transmission maximale et principe de fragmentation IP]
+
+res_266_fragmentation-ipv4 [Fragmentation IPv4 : identification, flags MF/DF et fragment offset]
+
+res_267_exemple-fragmentation-ipv4 [Exemple pratique de fragmentation et calcul des offsets]
+
+res_268_reassemblage-fragments-ip [Réassemblage des fragments IP à destination et fragmentation multiple]
+
+res_269_fonctionnement-ipv6 [IPv6 : origine, objectifs, caractéristiques et coexistence avec IPv4]
+
+res_270_entete-ipv6 [Structure et champs de l'en-tête IPv6]
+
+res_271_differences-ipv4-ipv6 [Différences entre les en-têtes IPv4 et IPv6 et simplification du traitement]
+res_272_mtu-fragmentation-ipv6 [Gestion de la MTU et fragmentation dans IPv6]
+res_273_flow-label-ipv6 [Classe de trafic et Flow Label : identification et traitement des flux IPv6]
+res_274-extensions-entete-ipv6 [En-têtes d'extension IPv6 et chaînage des options]
+res_275_capture-wireshark-ipv6 [Analyse d'un paquet IPv6 encapsulant une requête HTTP avec Wireshark]
+
+
+Thème 3E : Protocoles de transport (TCP, UDP) et protocoles de contrôle (ICMP, ARP, DHCP)
+res_276_protocoles-transport-et-controle [Présentation des protocoles de transport TCP et UDP et des protocoles de contrôle ICMP, ARP et DHCP : rôles et fonctionnement dans l'architecture TCP/IP]
+
+res_277_fonctionnement-udp [Protocole UDP : caractéristiques, fonctionnement en mode non connecté, rapidité, souplesse et absence de garantie de livraison]
+
+res_278_entete-udp [Structure et champs de l'en-tête UDP : port source, port destination, longueur du segment et checksum ; taille de l'en-tête de 8 octets]
+
+res_279_applications-udp [Applications utilisant UDP : DNS, streaming vidéo et audio, visioconférence, voix sur IP (VoIP) et NFS ; justification du choix d'UDP selon les besoins applicatifs]
+
+res_280_fonctionnement-tcp [Protocole TCP : caractéristiques, fonctionnement en mode connecté, transport fiable d'un flux d'octets, contrôle de flux et contrôle de congestion]
+
+res_281_fiabilite-tcp [Fiabilité de TCP : détection des erreurs par checksum, acquittements (ACK), retransmissions, temporisations (timeout), numéros de séquence et gestion des pertes, duplications et désordres]
+
+res_282_connexion-tcp [Connexion TCP : identification par le quadruplet adresse IP source, port source, adresse IP destination et port destination ; rôle des sockets et des buffers d'émission et de réception]
+
+res_283_ouverture-connexion-tcp [Ouverture d'une connexion TCP : mécanisme du Three-Way Handshake en trois étapes SYN, SYN/ACK et ACK ; numéros de séquence initiaux (ISN)]
+
+res_284_fermeture-connexion-tcp [Fermeture d'une connexion TCP : échanges FIN et ACK, acquittement des données restantes et terminaison de la connexion]
+
+res_285_applications-tcp [Applications utilisant TCP : HTTP/HTTPS, SSH, Telnet, courrier électronique (SMTP, POP, IMAP), FTP et LDAP ; besoins de fiabilité des applications]
+
+res_286_entete-tcp [Structure et champs de l'en-tête TCP : ports source et destination, numéros de séquence et d'acquittement (SEQ et ACK), longueur d'en-tête, flags SYN, ACK, FIN, RST, URG et PSH, fenêtre de réception, checksum et pointeur urgent]
+
+res_287_acquittements-tcp [Principe des acquittements TCP : numérotation des octets transmis, numéros de séquence SEQ et d'acquittement ACK, Initial Sequence Number (ISN) et mécanisme de piggybacking]
+
+res_288_controle-flux-tcp [Contrôle de flux TCP : utilisation de la fenêtre de réception (WIN), gestion de la capacité des buffers, adaptation du débit d'émission et mécanisme de fenêtre nulle (WIN=0)]
+
+res_289_controle-congestion-tcp [Contrôle de congestion TCP : détection des pertes, adaptation dynamique du débit, Slow Start, croissance exponentielle puis linéaire, seuil de congestion et réduction du débit après une perte]
+
+res_290_fonctionnement-icmp [Protocole ICMP : rôle dans le contrôle et le diagnostic du réseau IP, encapsulation dans IP, structure des messages et types de requêtes et réponses]
+
+res_291_ping-icmp [Commande ping et protocole ICMP : requête Echo (type 8), réponse Echo (type 0), mesure du temps aller-retour (RTT) et diagnostic de la connectivité réseau]
+
+res_292_traceroute-icmp [Commande traceroute : découverte des routeurs intermédiaires par augmentation progressive du TTL, messages ICMP Time Exceeded (type 11) et mesure des temps de réponse]
+
+res_293_fonctionnement-arp [Protocole ARP : résolution des adresses IP en adresses MAC sur un réseau local Ethernet, rôle du broadcast et fonctionnement des requêtes et réponses ARP]
+
+res_294_cache-arp [Cache ARP : mémorisation temporaire des correspondances entre adresses IP et adresses MAC, consultation et mise à jour de la table ARP pour limiter les requêtes]
+
+res_295_entete-arp [Structure et format des paquets ARP : types d'adresses physiques et logiques, longueurs des adresses, code opération, adresses MAC et IP source et destination ; encapsulation dans Ethernet]
+
+res_296_fonctionnement-dhcp [Protocole DHCP : attribution dynamique de la configuration réseau aux équipements, adresse IP, masque de sous-réseau, passerelle par défaut et serveur DNS ; rôle du serveur DHCP]
+
+res_297_configuration-reseau-linux [Configuration réseau sous Unix/Linux : fichiers /etc/hosts, /etc/resolv.conf, /etc/protocols, /etc/services et /etc/inetd.conf ; résolution locale des noms, serveurs DNS, protocoles, ports et services réseau]
+
+res_298_commandes-reseau-linux [Commandes Unix/Linux de diagnostic et d'administration réseau : ping, traceroute, arp, host, netstat et ip ; vérification de la connectivité, consultation des tables ARP et de routage, statistiques réseau et configuration des interfaces]

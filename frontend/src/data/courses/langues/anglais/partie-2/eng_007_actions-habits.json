@@ -1,0 +1,46 @@
+
+{
+  "id": "english-actions-habits",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.actions-habits",
+  "title": "Les actions et les habitudes",
+  "intro": "Apprenez à parler de vos actions, de vos activités quotidiennes et de vos habitudes en anglais. Découvrez les verbes d'action les plus courants pour décrire votre journée, présenter votre routine et exprimer la fréquence de vos activités. Vous apprendrez également à parler des actions en cours grâce au présent continu, à distinguer le présent simple du présent continu et à exprimer vos capacités avec Can et Can't.",
+  "sections": [
+    {
+      "id": "eng_048_verbes-action",
+      "title": "I. Les verbes d'action les plus courants"
+    },
+    {
+      "id": "eng_049_activites-journee",
+      "title": "II. Parler des activités de la journée"
+    },
+    {
+      "id": "eng_050_routine-quotidienne",
+      "title": "III. Décrire sa routine quotidienne"
+    },
+    {
+      "id": "eng_051_frequence",
+      "title": "IV. Exprimer ses habitudes et leur fréquence"
+    },
+    {
+      "id": "eng_052_activites-courantes",
+      "title": "V. Parler de ses activités quotidiennes"
+    },
+    {
+      "id": "eng_053_present-continu",
+      "title": "VI. Exprimer une action en cours avec le présent continu"
+    },
+    {
+      "id": "eng_054_present-simple-continu",
+      "title": "VII. Différencier le présent simple et le présent continu"
+    },
+    {
+      "id": "eng_055_can-cant",
+      "title": "VIII. Exprimer ses capacités avec Can et Can't"
+    }
+  ],
+  "chapter": "Construire ses premières phrases",
+  "chapterOrder": 2,
+  "order": 3
+}

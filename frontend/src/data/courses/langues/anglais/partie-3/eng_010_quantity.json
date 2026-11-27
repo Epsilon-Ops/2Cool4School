@@ -1,0 +1,42 @@
+
+{
+  "id": "english-quantities-comparisons",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.quantities-comparisons",
+  "title": "Les quantités et les comparaisons",
+  "intro": "Apprenez à exprimer les quantités et à effectuer des comparaisons en anglais dans les situations de la vie quotidienne. Découvrez les nombres ordinaux, les expressions de quantité comme Some, Any, A lot of, Much et Many, et apprenez à distinguer les noms dénombrables des noms indénombrables. Vous apprendrez également à comparer deux éléments, à utiliser les superlatifs et à exprimer une quantité suffisante ou insuffisante grâce aux expressions les plus courantes.",
+  "sections": [
+    {
+      "id": "eng_071_nombres-ordinaux",
+      "title": "I. Les nombres ordinaux"
+    },
+    {
+      "id": "eng_072_quantites-some-any",
+      "title": "II. Exprimer les quantités avec Some, Any et A lot of"
+    },
+    {
+      "id": "eng_073_denombrement",
+      "title": "III. Distinguer les noms dénombrables et indénombrables"
+    },
+    {
+      "id": "eng_074_much-many",
+      "title": "IV. Utiliser Much, Many et A few"
+    },
+    {
+      "id": "eng_075_comparatifs",
+      "title": "V. Comparer deux éléments"
+    },
+    {
+      "id": "eng_076_superlatifs",
+      "title": "VI. Utiliser les superlatifs"
+    },
+    {
+      "id": "eng_077_quantites-suffisantes",
+      "title": "VII. Exprimer une quantité suffisante ou insuffisante"
+    }
+  ],
+  "chapter": "Notions complémentaires",
+  "chapterOrder": 3,
+  "order": 2
+}

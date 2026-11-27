@@ -1,0 +1,34 @@
+
+{
+  "id": "english-present-simple",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.present-simple",
+  "title": "Le présent simple",
+  "intro": "Apprenez à utiliser le présent simple en anglais pour parler de vos habitudes, de vos routines, de vos goûts et des faits généraux. Découvrez comment construire des phrases affirmatives, maîtriser les règles particulières de la troisième personne du singulier et former des phrases négatives avec Don't et Doesn't. Vous apprendrez également à poser des questions avec Do et Does et à distinguer les rôles des auxiliaires Do, Be et Have pour construire des phrases correctes.",
+  "sections": [
+    {
+      "id": "eng_043_present-simple",
+      "title": "I. Comprendre et construire des phrases au présent simple"
+    },
+    {
+      "id": "eng_044_troisieme-personne",
+      "title": "II. Maîtriser la troisième personne du singulier"
+    },
+    {
+      "id": "eng_045_dont-doesnt",
+      "title": "III. Construire des phrases négatives avec Don't et Doesn't"
+    },
+    {
+      "id": "eng_046_questions-do-does",
+      "title": "IV. Poser des questions avec Do et Does"
+    },
+    {
+      "id": "eng_047_auxiliaires",
+      "title": "V. Distinguer les auxiliaires Do, Be et Have"
+    }
+  ],
+  "chapter": "Construire ses premières phrases",
+  "chapterOrder": 2,
+  "order": 2
+}

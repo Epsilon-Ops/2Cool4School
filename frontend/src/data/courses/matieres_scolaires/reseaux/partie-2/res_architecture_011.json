@@ -1,0 +1,38 @@
+
+{
+  "id": "reseaux-archi-11",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Étude pratique : le fonctionnement d'une requête HTTP",
+  "intro": "Comprendre concrètement le déroulement d'une communication entre un navigateur web et un serveur lors de l'accès à une page Internet. Cette étude pratique suit les différentes étapes d'une requête HTTP, depuis la saisie d'une URL jusqu'à la réception de la réponse du serveur. Elle présente notamment la résolution DNS, l'établissement d'une connexion TCP, la construction et l'envoi de la requête HTTP ainsi que la transmission et la réception des données à travers les différentes couches de l'architecture réseau.",
+  "sections": [
+    {
+      "id": "res_080_url",
+      "title": "I. Saisie d'une URL dans le navigateur"
+    },
+    {
+      "id": "res_081_dns",
+      "title": "II. Première étape : la résolution DNS"
+    },
+    {
+      "id": "res_082_tcp",
+      "title": "III. Deuxième étape : la connexion TCP"
+    },
+    {
+      "id": "res_083_http",
+      "title": "IV. Troisième étape : la requête HTTP"
+    },
+    {
+      "id": "res_084_reseau",
+      "title": "V. Quatrième étape : la transmission sur le réseau"
+    },
+    {
+      "id": "res_085_reception",
+      "title": "VI. Cinquième étape : la réception et la réponse"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 11
+}

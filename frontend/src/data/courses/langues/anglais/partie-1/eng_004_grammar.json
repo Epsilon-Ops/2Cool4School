@@ -1,0 +1,42 @@
+
+{
+  "id": "english-grammar-basics",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.grammar-basics",
+  "title": "Les premières bases grammaticales",
+  "intro": "Découvrez les premières règles de grammaire indispensables pour construire des phrases simples et correctes en anglais. Apprenez à utiliser les pronoms personnels, le verbe Be, les articles, les noms au singulier et au pluriel, ainsi que les adjectifs possessifs et démonstratifs. Vous découvrirez également les prépositions de lieu les plus courantes pour situer des personnes et des objets dans l'espace.",
+  "sections": [
+    {
+      "id": "eng_029_pronoms-personnels",
+      "title": "I. Les pronoms personnels"
+    },
+    {
+      "id": "eng_030_verbe-be",
+      "title": "II. Découvrir et utiliser le verbe Be"
+    },
+    {
+      "id": "eng_031_articles",
+      "title": "III. Les articles définis et indéfinis"
+    },
+    {
+      "id": "eng_032_singulier-pluriel",
+      "title": "IV. Le singulier et le pluriel des noms"
+    },
+    {
+      "id": "eng_033_possessifs",
+      "title": "V. Les adjectifs possessifs"
+    },
+    {
+      "id": "eng_034_demonstratifs",
+      "title": "VI. Les adjectifs démonstratifs"
+    },
+    {
+      "id": "eng_035_prepositions-lieu",
+      "title": "VII. Les prépositions de lieu simples"
+    }
+  ],
+  "chapter": "Les fondamentaux de l'anglais",
+  "chapterOrder": 1,
+  "order": 4
+}

@@ -1,0 +1,29 @@
+{
+  "id": "reseaux-archi-8",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Les portées des protocoles et les modes de fonctionnement",
+  "intro": "Comprendre les différentes portées d'intervention des protocoles réseau et les modes de fonctionnement utilisés pour établir et gérer les communications entre équipements. Ce cours présente les protocoles de bout en bout, les protocoles point-à-point, ainsi que les caractéristiques, les avantages et les limites du mode connecté et du mode non connecté.",
+  "sections": [
+    {
+      "id": "res_066_bout-en-bout",
+      "title": "I. Les protocoles de bout en bout"
+    },
+    {
+      "id": "res_067_point-a-point",
+      "title": "II. Les protocoles point-à-point"
+    },
+    {
+      "id": "res_068_mode_connecte",
+      "title": "III. Le mode connecté"
+    },
+    {
+      "id": "res_069_mode_non_connecte",
+      "title": "IV. Le mode non connecté"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 8
+}

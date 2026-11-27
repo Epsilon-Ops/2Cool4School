@@ -1,0 +1,29 @@
+{
+  "id": "reseaux-archi-3",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Les caractéristiques et les modes de transmission",
+  "intro": "Comprendre les caractéristiques des communications dans un réseau informatique et les différentes façons dont les équipements échangent des informations. Ce cours présente les composants d'un réseau, les modes de communication selon le sens de transmission, les types de liaisons selon le nombre d'équipements ainsi que les techniques de partage du support de transmission.",
+  "sections": [
+    {
+      "id": "res_041_composants",
+      "title": "I. Les composants d'un réseau"
+    },
+    {
+      "id": "res_042_modes",
+      "title": "II. Les modes de communication selon le sens de transmission"
+    },
+    {
+      "id": "res_043_types",
+      "title": "III. Les types de liaisons selon le nombre d'équipements"
+    },
+    {
+      "id": "res_044_support",
+      "title": "IV. Le partage du support de transmission"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 3
+}

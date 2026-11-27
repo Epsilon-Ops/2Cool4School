@@ -1,0 +1,42 @@
+
+{
+  "id": "english-expressing-ideas-needs",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.expressing-ideas-needs",
+  "title": "Exprimer ses idées et ses besoins",
+  "intro": "Apprenez à exprimer vos idées, vos émotions et vos besoins en anglais dans les situations de la vie quotidienne. Découvrez les expressions essentielles pour parler de vos sentiments, formuler vos envies et vos souhaits, expliquer ce dont vous avez besoin et donner votre opinion personnelle. Vous apprendrez également à exprimer la possibilité, l'incertitude, la possession et vos préférences entre plusieurs choix afin de communiquer plus naturellement.",
+  "sections": [
+    {
+      "id": "eng_056_emotions-simples",
+      "title": "I. Exprimer ses émotions et ses sentiments"
+    },
+    {
+      "id": "eng_057_envies-souhaits",
+      "title": "II. Exprimer ses envies et ses souhaits"
+    },
+    {
+      "id": "eng_058_besoins",
+      "title": "III. Exprimer ses besoins"
+    },
+    {
+      "id": "eng_059_opinions-simples",
+      "title": "IV. Exprimer ses opinions personnelles"
+    },
+    {
+      "id": "eng_060_possibilite",
+      "title": "V. Exprimer la possibilité et l'incertitude"
+    },
+    {
+      "id": "eng_061_pronoms-possessifs",
+      "title": "VI. Exprimer la possession avec les pronoms possessifs"
+    },
+    {
+      "id": "eng_062_preferences-comparatives",
+      "title": "VII. Exprimer une préférence entre plusieurs possibilités"
+    }
+  ],
+  "chapter": "Construire ses premières phrases",
+  "chapterOrder": 2,
+  "order": 4
+}

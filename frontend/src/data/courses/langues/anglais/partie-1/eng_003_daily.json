@@ -1,0 +1,58 @@
+
+{
+  "id": "english-daily",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.daily-vocabulary",
+  "title": "Le vocabulaire essentiel du quotidien",
+  "intro": "Découvrez le vocabulaire anglais indispensable pour comprendre et communiquer dans les situations de la vie quotidienne. Apprenez à compter, nommer les couleurs, parler de votre famille, identifier les objets courants, exprimer les dates et les heures, et reconnaître les mots liés aux vêtements, aux animaux et au corps humain. Vous enrichirez également votre vocabulaire grâce aux adjectifs les plus courants pour décrire les personnes et les objets.",
+  "sections": [
+    {
+      "id": "eng_018_nombres",
+      "title": "I. Les nombres de 0 à 100 et le comptage"
+    },
+    {
+      "id": "eng_019_couleurs",
+      "title": "II. Les couleurs et les descriptions simples"
+    },
+    {
+      "id": "eng_020_famille",
+      "title": "III. La famille et les proches"
+    },
+    {
+      "id": "eng_021_objets-quotidien",
+      "title": "IV. Les objets du quotidien et de la maison"
+    },
+    {
+      "id": "eng_022_jours-mois-saisons",
+      "title": "V. Les jours, les mois et les saisons"
+    },
+    {
+      "id": "eng_023_date",
+      "title": "VI. Lire et exprimer la date en anglais"
+    },
+    {
+      "id": "eng_024_heure",
+      "title": "VII. Dire l'heure et les moments de la journée"
+    },
+    {
+      "id": "eng_025_vetements",
+      "title": "VIII. Les vêtements et les accessoires"
+    },
+    {
+      "id": "eng_026_animaux",
+      "title": "IX. Les animaux courants"
+    },
+    {
+      "id": "eng_027_corps-humain",
+      "title": "X. Les principales parties du corps humain"
+    },
+    {
+      "id": "eng_028_adjectifs",
+      "title": "XI. Les adjectifs courants pour décrire les personnes et les objets"
+    }
+  ],
+  "chapter": "Les fondamentaux de l'anglais",
+  "chapterOrder": 1,
+  "order": 3
+}

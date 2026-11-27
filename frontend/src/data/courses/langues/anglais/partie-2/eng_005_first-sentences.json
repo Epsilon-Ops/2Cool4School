@@ -1,0 +1,42 @@
+
+{
+  "id": "english-first-sentences",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.first-sentences",
+  "title": "La construction des phrases simples",
+  "intro": "Apprenez à construire vos premières phrases en anglais et à communiquer de manière simple et correcte. Découvrez comment organiser les mots dans une phrase, utiliser le verbe Be à la forme affirmative, négative et interrogative, et maîtriser les contractions les plus courantes. Vous apprendrez également à poser des questions grâce aux mots interrogatifs fondamentaux et à exprimer la possession avec Have et Have got.",
+  "sections": [
+    {
+      "id": "eng_036_structure-phrase",
+      "title": "I. La structure d'une phrase simple en anglais"
+    },
+    {
+      "id": "eng_037_be-affirmatif",
+      "title": "II. Construire des phrases affirmatives avec Be"
+    },
+    {
+      "id": "eng_038_be-negatif",
+      "title": "III. Construire des phrases négatives avec Be"
+    },
+    {
+      "id": "eng_039_be-questions",
+      "title": "IV. Poser des questions avec Be"
+    },
+    {
+      "id": "eng_040_contractions",
+      "title": "V. Les contractions courantes en anglais"
+    },
+    {
+      "id": "eng_041_mots-interrogatifs",
+      "title": "VI. Les mots interrogatifs fondamentaux"
+    },
+    {
+      "id": "eng_042_have",
+      "title": "VII. Exprimer la possession avec Have et Have got"
+    }
+  ],
+  "chapter": "Construire ses premières phrases",
+  "chapterOrder": 2,
+  "order": 1
+}

@@ -1,0 +1,45 @@
+{
+  "id": "english-fondamentaux-1",
+  "subject": "english",
+  "subjectName": "Anglais",
+  "skill": "english.fondamentaux",
+  "title": "Les fondamentaux de la communication et les premières rencontres",
+  "intro": "???",
+  "sections": [
+    {
+      "id": "eng_001_salutations",
+      "title": "I. Salutations et formules de politesse"
+    },
+    {
+      "id": "eng_002_bonjour-revoir",
+      "title": "II. Dire bonjour, au revoir et prendre congé"
+    }, 
+    {
+      "id": "eng_003_politesse",
+      "title": "III. Utiliser les expressions de politesse"
+    },
+    {
+      "id": "eng_004_comment-ca-va",
+      "title": "IV. Demander comment ça va et y répondre"
+    },
+    {
+      "id": "eng_005_premiere-rencontre",
+      "title": "V. Se présenter lors d'une première rencontre"
+    },
+    {
+      "id": "eng_006_expressions-courantes",
+      "title": "VI. Utiliser les expressions courantes de conversation"
+    },
+    {
+      "id": "eng_007_accord-desaccord",
+      "title": "VII. Exprimer son accord et son désaccord"
+    },
+    {
+      "id": "eng_008_excuses",
+      "title": "VIII. S'excuser et attirer l'attention"
+    }
+  ],
+  "chapter": "Les fondamentaux de l'anglais",
+  "chapterOrder": 1,
+  "order": 1
+}

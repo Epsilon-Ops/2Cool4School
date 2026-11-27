@@ -1,5 +1,5 @@
 PARTIE 1
-    I - ???
+    I - Introduction aux réseaux
         1. [+] Qu'est-ce qu'une télécommunication ?
         2. [+] Quel est l'objectif principal des télécommunications ?
         3. [+] Quels sont les différents supports physiques utilisés dans les télécommunications ?
@@ -10,16 +10,16 @@ PARTIE 1
         8. [+] Quelle est la différence entre une fibre optique et un câble en cuivre ?
         9. [+] Quels sont les deux grands types de flux transportés par les réseaux de télécommunications ?
         10. [+] Que signifie le terme « multimédia » ?
-        11. Donner quatre exemples de données informatiques.
-        12. Que signifie le terme « data » dans le domaine des télécommunications ?
-        13. Quelle est la différence entre une donnée informatique et un flux multimédia ?
-        14. Donner trois exemples d'applications multimédias.
-        15. Donner trois exemples d'applications utilisant des données informatiques.
-        16. Pourquoi les télécommunications sont-elles indispensables dans notre société actuelle ?
-        17. Quel est le rôle d'un équipement terminal ?
-        18. Citer trois exemples d'équipements terminaux.
-        19. Quelle est la fonction d'une carte réseau ?
-        20. Quel est le rôle d'un réseau de télécommunications ?
+        11. [+] Donner quatre exemples de données informatiques.
+        12. [+] Que signifie le terme « data » dans le domaine des télécommunications ?
+        13. [+] Quelle est la différence entre une donnée informatique et un flux multimédia ?
+        14. [+] Donner trois exemples d'applications multimédias.
+        15. [+] Donner trois exemples d'applications utilisant des données informatiques.
+        16. [+] Pourquoi les télécommunications sont-elles indispensables dans notre société actuelle ?
+        17. [+] Quel est le rôle d'un équipement terminal ?
+        18. [+] Citer trois exemples d'équipements terminaux.
+        19. [+] Quelle est la fonction d'une carte réseau ?
+        20. [+] Quel est le rôle d'un réseau de télécommunications ?
 
 PARTIE 2 — Fiabilité des données informatiques
 Niveau intermédiaire

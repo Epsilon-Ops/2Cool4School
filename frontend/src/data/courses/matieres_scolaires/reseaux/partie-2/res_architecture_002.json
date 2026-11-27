@@ -1,0 +1,30 @@
+
+{
+  "id": "reseaux-archi-2",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Les supports et les signaux de transmission",
+  "intro": "Comprendre les différents supports physiques et sans fil utilisés pour transmettre des informations dans un réseau informatique. Ce cours présente les caractéristiques des câbles en cuivre, des supports optiques et des technologies sans fil, ainsi que les différents types de signaux transmis et les perturbations pouvant affecter leur qualité et leur fiabilité.",
+  "sections": [
+    {
+      "id": "res_037_cuivre",
+      "title": "I. Les supports filaires en cuivre"
+    },
+    {
+      "id": "res_038_optiques",
+      "title": "II. Les supports optiques"
+    },
+    {
+      "id": "res_039_sans-fil",
+      "title": "III. Les supports sans fil"
+    },
+    {
+      "id": "res_040_signaux",
+      "title": "IV. Les signaux transmis et leurs perturbations"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 2
+}

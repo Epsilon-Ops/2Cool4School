@@ -10,23 +10,50 @@
       "id": "res_001_intro-telecom",
       "title": "I. Introduction aux télécommunications",
       "body": [
-        "Les télécommunications regroupent tout ce qui permet de transférer de l'information à distance via différents supports physiques ou non guidés (fils de cuivre, ondes radio, fibres optiques, etc.).",
-        "On distingue principalement les flux multimédias (images, son, vidéo) et les données informatiques (« data » au sens large : fichiers texte, symboles, pages web, e-mails).",
-        "Les données informatiques exigent souvent un transfert fiable : les informations reçues à destination doivent être strictement identiques à celles envoyées. Cette fiabilité repose sur quatre propriétés essentielles : l'arrivée sans erreur, sans perte, dans le bon ordre (lorsque l'information est découpée en plusieurs messages) et sans duplication (par exemple lors de retransmissions effectuées à tort après une erreur ou une perte).",
-        "À l'inverse, certaines applications multimédias sont tolérantes aux pertes et aux erreurs ponctuelles, mais ont une forte contrainte temporelle : les données doivent arriver à la bonne vitesse afin d'être lues ou entendues de manière fluide par l'humain. Des mécanismes comme le streaming (avec mise en mémoire tampon / bufferisation préalable) permettent de restituer le flux au bon rythme malgré les variations du réseau.",
-        "Sur le plan historique, la communication humaine directe (bouche et oreilles jouant un rôle analogue à une carte réseau) et la télégraphie (notamment au début du XXe siècle avec des signaux) ont précédé l'essor des grands réseaux mondiaux : le réseau téléphonique (milieu du XXe siècle, conçu d'abord pour le transfert de la voix entre appelant et appelé), puis Internet (apparu dans les années 1980, conçu d'abord pour le transfert fiable de données).",
-        "Aujourd'hui, ces deux univers convergent et cohabitent au sein des réseaux des opérateurs : on téléphone et on regarde la télévision sur Internet, tandis que les smartphones servent massivement à échanger des données. L'équipement terminal de l'utilisateur (ordinateur, téléphone ou smartphone) permet d'accéder à ces services."
+        "Les [[télécommunications]] regroupent tout ce qui permet de transférer de l'information à distance via différents supports physiques ou non guidés (fils de cuivre, ondes radio, fibres optiques, etc.).",
+        "On distingue principalement les flux [[multimédia]]s (images, son, vidéo) et les données informatiques (« [[data]] » au sens large : fichiers texte, symboles, pages web, e-mails).",
+        "Les données informatiques exigent souvent un [[transfert fiable]] : les informations reçues à destination doivent être strictement identiques à celles envoyées. Cette fiabilité repose sur quatre propriétés essentielles : l'arrivée sans erreur, sans perte, dans le bon ordre (lorsque l'information est découpée en plusieurs messages) et sans duplication (par exemple lors de retransmissions effectuées à tort après une erreur ou une perte).",
+        "À l'inverse, certaines applications multimédias sont tolérantes aux pertes et aux erreurs ponctuelles, mais ont une forte contrainte temporelle : les données doivent arriver à la bonne vitesse afin d'être lues ou entendues de manière fluide par l'humain. Des mécanismes comme le [[streaming]] (avec mise en mémoire tampon / [[bufferisation]] préalable) permettent de restituer le flux au bon rythme malgré les variations du réseau.",
+        "Sur le plan historique, la communication humaine directe (bouche et oreilles jouant un rôle analogue à une carte réseau) et la télégraphie (notamment au début du XXe siècle avec des signaux) ont précédé l'essor des grands réseaux mondiaux : le [[réseau téléphonique]] (milieu du XXe siècle, conçu d'abord pour le transfert de la voix entre appelant et appelé), puis [[Internet]] (apparu dans les années 1980, conçu d'abord pour le transfert fiable de données).",
+        "Aujourd'hui, ces deux univers convergent et cohabitent au sein des réseaux des opérateurs : on téléphone et on regarde la télévision sur Internet, tandis que les smartphones servent massivement à échanger des données. L'[[équipement terminal]] de l'utilisateur (ordinateur, téléphone ou smartphone) permet d'accéder à ces services."
       ],
       "terms": [
-        "Télécommunications",
-        "Multimédia",
-        "Data",
-        "Transfert fiable",
-        "Streaming",
-        "Bufferisation",
-        "Réseau téléphonique",
-        "Internet",
-        "Équipement terminal"
+        {
+          "term": "télécommunications",
+          "def": "Ensemble des techniques et des moyens permettant de transmettre des informations à distance à l'aide de supports physiques (câbles, fibres optiques) ou sans fil (ondes radio)."
+        },
+        {
+          "term": "multimédia",
+          "def": "Ensemble des contenus qui associent différents types de médias, notamment le texte, les images, le son et la vidéo."
+        },
+        {
+          "term": "data",
+          "def": "Terme anglais désignant les données informatiques, c'est-à-dire les informations numériques pouvant être stockées, traitées et transmises par un système informatique (fichiers, textes, pages web, e-mails, etc.)."
+        },
+        {
+          "term": "transfert fiable",
+          "def": "Transmission de données garantissant que les informations reçues sont identiques à celles envoyées : sans erreur, sans perte, sans duplication et dans le bon ordre."
+        },
+        {
+          "term": "streaming",
+          "def": "Technique permettant de lire ou d'écouter un contenu multimédia pendant qu'il est reçu par le réseau, sans devoir attendre le téléchargement complet du fichier."
+        },
+        {
+          "term": "bufferisation",
+          "def": "Mise en mémoire temporaire des données reçues avant leur lecture afin de compenser les variations de débit du réseau et d'assurer une restitution fluide du contenu."
+        },
+        {
+          "term": "réseau téléphonique",
+          "def": "Ensemble des équipements et des liaisons permettant d'établir des communications à distance entre des utilisateurs, principalement pour transmettre la voix."
+        },
+        {
+          "term": "Internet",
+          "def": "Réseau mondial de réseaux informatiques interconnectés qui communiquent grâce à des protocoles communs, notamment la suite TCP/IP, et permettent l'échange de données et l'accès à de nombreux services."
+        },
+        {
+          "term": "équipement terminal",
+          "def": "Appareil situé à l'extrémité d'un réseau, utilisé par un utilisateur pour envoyer ou recevoir des informations et accéder aux services du réseau (ordinateur, smartphone, tablette, etc.)."
+        }
       ],
       "questionIds": [
         "reseaux_q001_intro",
@@ -49,49 +76,530 @@
         "reseaux_q018_intro",
         "reseaux_q019_intro",
         "reseaux_q020_intro"
-      ]
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Les télécommunications fonctionnent comme la logistique d'une entreprise : envoyer un contrat juridique par courrier recommandé exige un transfert fiable (aucune page manquante, ni modifiée, ni en double, et dans le bon ordre), alors qu'une visioconférence d'équipe s'apparente au streaming multimédia, où l'essentiel est d'entendre ses collègues en continu au bon rythme même si l'image saute d'un pixel. Aujourd'hui, le standard téléphonique et l'intranet passent tous deux par le même poste de travail."
+        },
+        {
+          "theme": "Eggman & Eggmanland",
+          "text": "Pour piloter son empire depuis ses terminaux, le Dr Eggman utilise ses réseaux de télécommunications afin de transmettre deux types de signaux : les plans de construction de ses robots (data), qui exigent un transfert fiable au bit près sans aucune pièce manquante ni doublon, et les retransmissions vidéo géantes d'Eggmanland (multimédia), qui doivent diffuser sa propagande en continu grâce à une mémoire tampon même si quelques images grésillent."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "Les tuyaux du Royaume Champignon sont les supports de télécommunication qui relient les différents niveaux jusqu'aux terminaux des joueurs : quand Mario collecte les pièces d'un niveau pour débloquer la fin, il faut un transfert fiable (aucune pièce oubliée, dupliquée ou comptée dans le désordre), tandis que la musique emblématique du jeu agit comme un flux en streaming qui doit tourner sans coupure au bon tempo, même si un bloc décoratif clignote brièvement."
+        },
+        {
+          "theme": "Cuisine et restaurant",
+          "text": "Dans un grand restaurant, les télécommunications relient la salle et la cuisine : une commande écrite (data) réclame un transfert fiable pour que chaque plat arrive exactement comme demandé, sans oubli ni doublon, alors que le tapis roulant d'un bar à sushis fonctionne comme le streaming avec bufferisation en gardant toujours quelques assiettes d'avance pour que les clients mangent à un rythme régulier."
+        },
+        {
+          "theme": "Comme si j'avais 15 ans",
+          "text": "Imagine ton smartphone comme ton équipement terminal connecté au réseau de ton opérateur : quand tu télécharges un jeu ou envoies un devoir, il faut un transfert fiable pour qu'aucun fichier ne soit corrompu ou manquant. À l'inverse, quand tu regardes une vidéo ou écoutes de la musique en streaming, ton téléphone utilise la bufferisation pour charger quelques secondes d'avance afin que ça ne coupe pas, même si ta connexion ralentit un peu."
+        }
+
+      ],
+      "lenses": {
+        "summary": [
+          "Les télécommunications permettent de transmettre à distance des flux multimédias ou des données informatiques via des supports filaires ou sans fil.",
+          "Les données informatiques nécessitent un transfert fiable (sans erreur, perte, duplication ni désordre), tandis que le multimédia privilégie la régularité temporelle grâce au streaming et à la bufferisation.",
+          "Historiquement distincts, le réseau téléphonique (voix) et Internet (données) convergent aujourd'hui sur les réseaux des opérateurs accessibles via des équipements terminaux."
+        ],
+        "examples": [
+          {
+            "title": "Téléchargement d'une archive logicielle",
+            "text": "Un utilisateur télécharge un fichier ZIP de 200 Mo sur un serveur distant afin de l'installer sur son ordinateur.",
+            "solution": "Le réseau doit garantir un transfert fiable : chaque octet doit arriver intact, sans perte, sans doublon et remis dans le bon ordre, sous peine de corrompre l'archive."
+          },
+          {
+            "title": "Visionnage d'une vidéo en streaming",
+            "text": "Un utilisateur regarde une vidéo en direct ou à la demande via son smartphone pendant que sa connexion subit de légères variations de débit.",
+            "solution": "La bufferisation stocke temporairement quelques secondes de vidéo en mémoire pour absorber les variations de débit et maintenir une lecture fluide, même si quelques paquets isolés sont perdus ou retardés."
+          }
+        ],
+        "visual": {
+          "caption": "Convergence des flux multimédias et des données sur les réseaux d'opérateurs entre équipements terminaux.",
+          "svg": "<svg viewBox=\"0 0 600 180\" role=\"img\" aria-label=\"Schéma de convergence télécoms et data\"><rect x=\"20\" y=\"50\" width=\"130\" height=\"80\" rx=\"8\" fill=\"#e8f0fe\" stroke=\"#1a73e8\" stroke-width=\"2\"/><text x=\"85\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#174ea6\">Équipement</text><text x=\"85\" y=\"105\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#174ea6\">terminal</text><line x1=\"150\" y1=\"90\" x2=\"220\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><rect x=\"220\" y=\"35\" width=\"160\" height=\"110\" rx=\"10\" fill=\"#fef7e0\" stroke=\"#f9ab00\" stroke-width=\"2\"/><text x=\"300\" y=\"68\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#b06000\">Réseau opérateur</text><text x=\"300\" y=\"92\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3c4043\">Voix + Multimédia</text><text x=\"300\" y=\"112\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3c4043\">+ Data (Internet)</text><line x1=\"380\" y1=\"90\" x2=\"450\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><rect x=\"450\" y=\"50\" width=\"130\" height=\"80\" rx=\"8\" fill=\"#e6f4ea\" stroke=\"#1e8e3e\" stroke-width=\"2\"/><text x=\"515\" y=\"85\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#137333\">Services &amp;</text><text x=\"515\" y=\"105\" text-anchor=\"middle\" font-size=\"13\" font-weight=\"bold\" fill=\"#137333\">Terminaux distants</text></svg>"
+        },
+        "step_by_step": [
+          {
+            "title": "1. Identifier la nature du flux",
+            "text": "Distinguer s'il s'agit de données informatiques (fichiers, e-mails, pages web) ou d'un flux multimédia (audio, vidéo)."
+          },
+          {
+            "title": "2. Déterminer la contrainte prioritaire",
+            "text": "Vérifier si le service exige avant tout la fiabilité (intégrité exacte des bits) ou la régularité temporelle (faible latence et fluidité)."
+          },
+          {
+            "title": "3. Choisir le support et le mécanisme adapté",
+            "text": "Transmettre via des supports guidés ou non guidés en appliquant, si nécessaire, des contrôles d'erreur/retransmission ou une bufferisation pour le streaming."
+          },
+          {
+            "title": "4. Exploiter l'équipement terminal",
+            "text": "Utiliser un ordinateur, un smartphone ou un téléphone connecté au réseau de l'opérateur pour envoyer ou restituer l'information."
+          }
+        ],
+        "simplified": "Les télécommunications permettent d'envoyer des informations à distance, par câble ou par ondes. Certaines informations comme les fichiers doivent arriver exactes et complètes, tandis que la vidéo ou la voix doivent surtout arriver au bon rythme grâce au streaming et à la mémoire tampon. Aujourd'hui, le téléphone et Internet se rejoignent sur les mêmes réseaux et nos appareils.",
+        "detailed": [
+          "Les télécommunications couvrent l'ensemble des moyens physiques (cuivre, fibre optique) et non guidés (ondes radio) permettant de transporter de l'information à distance.",
+          "Le transfert fiable repose sur quatre garanties : absence d'erreur sur les données, absence de perte de paquets, remise dans l'ordre d'origine lors d'un découpage en messages, et élimination des doublons causés par d'éventuelles retransmissions.",
+          "Pour les flux multimédias, la tolérance aux pertes ponctuelles s'accompagne d'une exigence de synchronisation : la bufferisation accumule temporairement des données en mémoire avant la lecture pour lisser les variations de débit du réseau.",
+          "L'évolution historique passe de la communication directe et de la télégraphie au réseau téléphonique (centré sur la voix au milieu du XXe siècle) puis à Internet (centré sur l'échange fiable de données à partir des années 1980), aboutissant à la convergence actuelle des services sur les réseaux d'opérateurs."
+        ],
+        "comparison": {
+          "headers": [
+            "Critère",
+            "Données informatiques (Data)",
+            "Flux multimédias (Audio / Vidéo)"
+          ],
+          "rows": [
+            [
+              "Exigence principale",
+              "Transfert fiable (exactitude totale)",
+              "Contrainte temporelle (fluidité et rythme)"
+            ],
+            [
+              "Tolérance aux pertes / erreurs",
+              "Très faible (peut corrompre un fichier)",
+              "Souvent tolérante aux pertes ponctuelles"
+            ],
+            [
+              "Mécanisme typique",
+              "Contrôle d'intégrité, acquittement, réordonnancement",
+              "Streaming et bufferisation (mémoire tampon)"
+            ],
+            [
+              "Origine historique majeure",
+              "Réseaux de données / Internet (années 1980)",
+              "Réseau téléphonique / diffusion (XXe siècle)"
+            ]
+          ]
+        },
+        "mnemonics": [
+          {
+            "trick": "E-P-O-D pour le transfert fiable",
+            "text": "Pensez à « E-P-O-D » : sans Erreur, sans Perte, dans le bon Ordre, sans Doublon."
+          },
+          {
+            "trick": "Buffer = amortisseur de route",
+            "text": "Comparez la bufferisation à un réservoir tampon qui lisse les cahots de la route avant que l'eau n'arrive au robinet à débit régulier."
+          }
+        ],
+        "case_studies": [
+          {
+            "title": "Appel vidéo en mobilité",
+            "situation": "Un salarié passe un appel vidéo en train via un smartphone sur le réseau d'un opérateur et traverse une zone où le débit chute brièvement.",
+            "question": "Quel phénomène aide à maintenir la fluidité, et quelle est la différence de priorité entre l'image/voix et l'envoi d'un document joint dans la conversation ?",
+            "solution": "La bufferisation aide à lisser les micro-variations de débit, tandis que la voix et la vidéo privilégient la régularité temporelle. En revanche, l'envoi du document joint exige un transfert fiable (sans perte ni erreur) pour que le fichier soit exploitable."
+          }
+        ],
+        "teach_back": {
+          "prompt": "Expliquez avec vos propres mots pourquoi un transfert de fichier informatique et un flux vidéo en streaming n'ont pas les mêmes priorités sur un réseau, et comment le réseau téléphonique et Internet se rejoignent aujourd'hui.",
+          "model": "Un fichier informatique doit arriver intact, complet, sans doublon et dans le bon ordre (transfert fiable), alors qu'une vidéo en streaming doit surtout être lue à un rythme régulier grâce à la bufferisation, quitte à tolérer de légères pertes ponctuelles. Aujourd'hui, le réseau téléphonique et Internet convergent sur les réseaux des opérateurs, permettant d'utiliser la voix, la vidéo et la data via des équipements terminaux comme les smartphones ou les ordinateurs."
+        },
+        "mistakes": [
+          {
+            "wrong": "Penser que le transfert fiable sert uniquement à aller plus vite.",
+            "right": "Le transfert fiable garantit que les données reçues sont identiques à celles envoyées (sans erreur, perte, duplication et dans le bon ordre).",
+            "why": "La vitesse de transfert ou la fluidité temporelle relève d'autres contraintes, notamment pour le multimédia, alors que la fiabilité porte sur l'intégrité et l'exactitude des données."
+          },
+          {
+            "wrong": "Croire que la bufferisation télécharge tout le fichier avant de commencer la lecture.",
+            "right": "La bufferisation met temporairement en mémoire une partie des données reçues pour compenser les variations de débit pendant le streaming.",
+            "why": "Le principe du streaming est justement de restituer le contenu pendant la réception sans attendre la fin complète du transfert."
+          }
+        ]
+      }
     },
     {
       "id": "res_002_contraintes",
       "title": "II. Les contraintes de transmission",
       "body": [
-        "Les contraintes de transmission varient selon la nature de l'application et des informations échangées sur le réseau : fiabilité stricte d'un côté, respect des délais et de la régularité du débit pour le temps réel et le multimédia de l'autre.",
-        "La mise en œuvre de la fiabilité passe par des mécanismes de contrôle (détection d'erreurs, détection de pertes, numérotation des morceaux pour la remise en ordre et l'élimination des doublons, retransmissions si nécessaire). Ces retransmissions expliquent qu'un bloc puisse parfois arriver en double si un acquittement ou un paquet a été mal interprété.",
-        "Pour les flux audio et vidéo, les ralentissements ou variations de délai (gigue/latence) dégradent l'expérience utilisateur ; la mise en mémoire tampon (buffer) absorbe ces irrégularités pour assurer une restitution continue.",
+        "Les contraintes de transmission varient selon la nature de l'application et des informations échangées sur le réseau : [[fiabilité]] stricte d'un côté, respect des délais et de la régularité du débit pour le temps réel et le multimédia de l'autre.",
+        "La mise en œuvre de la [[fiabilité]] passe par des mécanismes de contrôle (détection d'erreurs, détection de pertes, numérotation des morceaux pour la remise en ordre et l'élimination des doublons, [[retransmission]]s si nécessaire). Ces [[retransmission]]s expliquent qu'un bloc puisse parfois arriver en double ([[duplication]]) si un acquittement ou un paquet a été mal interprété.",
+        "Pour les flux audio et vidéo, les ralentissements ou variations de délai (gigue/[[latence]]) dégradent l'expérience utilisateur ; la mise en mémoire tampon ([[buffer]]) absorbe ces irrégularités pour assurer une restitution continue.",
         "Quel que soit le type d'application, franchir des liaisons impose de convertir l'information en séquence binaire puis en signal physique adapté au support, grâce à l'électronique (comme les cartes réseau) et aux protocoles."
       ],
       "terms": [
-        "Fiabilité",
-        "Retransmission",
-        "Duplication",
-        "Latence",
-        "Buffer"
+        {
+          "term": "fiabilité",
+          "def": "Propriété d'une transmission garantissant l'intégrité complète des données reçues (sans erreur, sans perte, sans duplication et dans l'ordre d'envoi) grâce à des mécanismes de contrôle et de correction."
+        },
+        {
+          "term": "retransmission",
+          "def": "Mécanisme réseau consistant à renvoyer un bloc de données lorsqu'il a été perdu, corrompu ou qu'aucun accusé de réception n'a été reçu dans le délai imparti."
+        },
+        {
+          "term": "duplication",
+          "def": "Réception en plusieurs exemplaires d'un même bloc de données, généralement provoquée par une retransmission déclenchée alors que le message initial avait bien atteint sa destination."
+        },
+        {
+          "term": "latence",
+          "def": "Temps nécessaire à un paquet de données pour voyager de sa source à sa destination à travers le réseau, influençant directement la réactivité des communications en temps réel."
+        },
+        {
+          "term": "buffer",
+          "def": "Zone de mémoire tampon utilisée pour stocker temporairement des données entrantes afin d'absorber les variations de débit ou de latence et d'assurer une lecture fluide."
+        }
       ],
-      "questionIds": []
+      "questionIds": [
+        "reseaux_q021_contraintes",
+        "reseaux_q022_contraintes",
+        "reseaux_q023_contraintes",
+        "reseaux_q024_contraintes",
+        "reseaux_q025_contraintes",
+        "reseaux_q026_contraintes",
+        "reseaux_q027_contraintes",
+        "reseaux_q028_contraintes",
+        "reseaux_q029_contraintes",
+        "reseaux_q030_contraintes",
+        "reseaux_q031_contraintes",
+        "reseaux_q032_contraintes",
+        "reseaux_q033_contraintes",
+        "reseaux_q034_contraintes",
+        "reseaux_q035_contraintes",
+        "reseaux_q036_contraintes",
+        "reseaux_q037_contraintes",
+        "reseaux_q038_contraintes",
+        "reseaux_q039_contraintes",
+        "reseaux_q040_contraintes"
+      ],
+      "analogies": [
+        {
+          "theme": "Monde du travail",
+          "text": "Gérer les contraintes d'un réseau, c'est comme piloter un service d'expédition : pour un dossier comptable, on numérote chaque feuillet et on demande un accusé de réception quitte à renvoyer une copie (retransmission et risque de duplication) pour garantir une fiabilité totale. À l'inverse, pour un appel client en direct, une latence trop élevée rend la conversation pénible, d'où l'intérêt d'un buffer qui lisse les micro-coupures, tandis que le secrétariat traduit chaque message en courrier postal ou électronique selon le canal."
+        },
+        {
+          "theme": "Eggman & Eggmanland",
+          "text": "Pour synchroniser ses Badniks sans faille, le Dr Eggman impose une fiabilité absolue sur ses ordres de bataille : chaque instruction est numérotée et déclenche une retransmission au moindre doute, quitte à générer une duplication d'ordre que le robot filtrera. Pour piloter son Eggmobile en direct, il redoute par-dessus tout la latence et utilise un buffer vidéo pour éviter que son écran ne fige, tandis que ses antennes convertissent ses commandes en impulsions binaires."
+        },
+        {
+          "theme": "Super Mario Bros",
+          "text": "Lorsque Mario traverse un château, valider les interrupteurs secrets demande une fiabilité parfaite : si une action n'est pas confirmée, il faut tenter une retransmission au risque de déclencher une duplication du mécanisme. En revanche, lors d'une course contre la montre, la moindre latence fait rater un saut ; le jeu s'appuie alors sur un buffer pour précharger le décor à l'avance et traduit chaque pression sur la manette en signaux électriques."
+        },
+        {
+          "theme": "Cuisine et restaurant",
+          "text": "En cuisine, assurer la fiabilité d'un banquet consiste à numéroter les bons de commande et à relancer un plat non confirmé (retransmission), quitte à se retrouver avec deux assiettes identiques en passe (duplication). Pendant le coup de feu, une trop forte latence entre la salle et les fourneaux agace les clients : le passe-plat sert alors de buffer pour garder quelques entrées prêtes d'avance et maintenir une cadence régulière."
+        },
+        {
+          "theme": "Comme si j'avais 15 ans",
+          "text": "Sur ton téléphone, envoyer un fichier demande une fiabilité totale : si un morceau se perd, l'appli fait une retransmission, ce qui peut parfois créer une duplication que ton appareil supprime tout seul. En revanche, quand tu joues en ligne ou regardes une série, c'est la latence (le lag) qui pose problème : ton appli remplit donc un petit buffer de quelques secondes d'avance pour que la vidéo ne coupe pas, pendant que ta carte Wi-Fi transforme tout ça en ondes radio."
+        }
+      ],
+      "lenses": {
+        "summary": [
+          "Les contraintes réseau opposent deux exigences : la fiabilité stricte pour les données et la régularité temporelle (faible latence) pour le temps réel et le multimédia.",
+          "La fiabilité s'appuie sur la détection d'erreurs ou de pertes, la numérotation des blocs et les retransmissions, ce qui peut entraîner une duplication à filtrer à l'arrivée.",
+          "Le multimédia compense les variations de délai via un buffer, tandis que toute transmission exige une conversion en bits puis en signal physique par l'électronique et les protocoles."
+        ],
+        "examples": [
+          {
+            "title": "Perte d'un accusé de réception lors d'un virement bancaire",
+            "text": "Un terminal envoie un ordre de paiement numéroté au serveur, qui le traite mais dont l'accusé de réception se perd sur le réseau.",
+            "solution": "Faute de confirmation, l'émetteur déclenche une retransmission. Le serveur reçoit le bloc en double (duplication), mais grâce à son numéro de séquence, il détecte le doublon et l'ignore pour ne pas débiter deux fois le compte."
+          },
+          {
+            "title": "Écoute d'une webradio dans les transports",
+            "text": "Un auditeur écoute une émission audio en direct alors que le réseau mobile subit des pics de latence et de gigue.",
+            "solution": "Le lecteur utilise un buffer pour stocker quelques secondes d'audio d'avance, absorbant les irrégularités d'arrivée afin que le son reste continu sans coupure audible."
+          }
+        ],
+        "visual": {
+          "caption": "Chaîne de transmission : gestion des contraintes (fiabilité ou buffer) et conversion en signal physique.",
+          "svg": "<svg viewBox=\"0 0 600 180\" xmlns=\"http://w3.org\" role=\"img\" aria-label=\"Schéma des contraintes de transmission et conversion physique\"><rect x=\"15\" y=\"25\" width=\"165\" height=\"55\" rx=\"8\" fill=\"#e8f0fe\" stroke=\"#1a73e8\" stroke-width=\"2\"/><text x=\"97\" y=\"48\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#174ea6\">Données (Fiabilité)</text><text x=\"97\" y=\"66\" text-anchor=\"middle\" font-size=\"10\" fill=\"#3c4043\">Numéros + Retransmission</text><rect x=\"15\" y=\"100\" width=\"165\" height=\"55\" rx=\"8\" fill=\"#fce8e6\" stroke=\"#d93025\" stroke-width=\"2\"/><text x=\"97\" y=\"123\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#a50e0e\">Temps réel (Latence)</text><text x=\"97\" y=\"141\" text-anchor=\"middle\" font-size=\"10\" fill=\"#3c4043\">Buffer (mémoire tampon)</text><line x1=\"180\" y1=\"52\" x2=\"230\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><line x1=\"180\" y1=\"127\" x2=\"230\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><rect x=\"230\" y=\"50\" width=\"150\" height=\"80\" rx=\"8\" fill=\"#fef7e0\" stroke=\"#f9ab00\" stroke-width=\"2\"/><text x=\"305\" y=\"83\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b06000\">Carte réseau</text><text x=\"305\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3c4043\">Bits → Signal physique</text><line x1=\"380\" y1=\"90\" x2=\"430\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><rect x=\"430\" y=\"50\" width=\"155\" height=\"80\" rx=\"8\" fill=\"#e6f4ea\" stroke=\"#1e8e3e\" stroke-width=\"2\"/><text x=\"507\" y=\"83\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#137333\">Support physique</text><text x=\"507\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3c4043\">Cuivre, Fibre ou Ondes</text></svg>"
+        },
+        "step_by_step": [
+          {
+            "title": "1. Appliquer les contrôles selon l'application",
+            "text": "Activer la numérotation et les acquittements pour garantir la fiabilité des données, ou dimensionner un buffer pour lisser la latence d'un flux multimédia."
+          },
+          {
+            "title": "2. Gérer les anomalies en cours de transfert",
+            "text": "Déclencher une retransmission si un paquet est perdu ou corrompu, et éliminer toute duplication à la réception grâce aux numéros de séquence."
+          },
+          {
+            "title": "3. Convertir l'information en séquence binaire",
+            "text": "Encapsuler et traduire les données applicatives en une suite de bits (0 et 1) selon les règles fixées par les protocoles."
+          },
+          {
+            "title": "4. Émettre le signal physique sur le support",
+            "text": "Utiliser l'électronique de la carte réseau pour transformer la séquence binaire en signal électrique, lumineux ou radio adapté au média."
+          }
+        ],
+        "simplified": "Sur un réseau, les fichiers ont besoin d'arriver sans aucune erreur : on numérote les morceaux et on renvoie ceux qui manquent, quitte à recevoir un doublon qu'on supprime. Pour l'audio et la vidéo, c'est le retard (la latence) qui gêne : on utilise une mémoire tampon (buffer) pour garder de l'avance. Dans tous les cas, la carte réseau transforme les informations en 0 et en 1, puis en signal physique sur le câble ou dans les airs.",
+        "detailed": [
+          "Les contraintes imposées au réseau dépendent directement de l'usage : les transferts de données exigent une fiabilité absolue, alors que les applications temps réel et multimédias requièrent avant tout une faible latence et une gigue maîtrisée.",
+          "Pour assurer la fiabilité, les protocoles découpent les données en blocs numérotés, détectent les erreurs ou les pertes et déclenchent des retransmissions. Lorsqu'un acquittement est retardé ou perdu, la retransmission provoque une duplication que le récepteur écarte grâce à la numérotation.",
+          "Dans les flux audio et vidéo, les variations de délai de propagation dégradent la perception humaine ; le buffer retient temporairement les paquets reçus pour les restituer à cadence constante.",
+          "Au niveau matériel et protocolaire, toute communication nécessite enfin une double traduction : codage de l'information en suite binaire (bits), puis modulation en signal physique (électrique, optique ou radioélectrique) assurée par la carte réseau."
+        ],
+        "comparison": {
+          "headers": [
+            "Aspect",
+            "Contrainte de fiabilité",
+            "Contrainte temporelle (Temps réel)"
+          ],
+          "rows": [
+            [
+              "Objectif prioritaire",
+              "Intégrité totale des données reçues",
+              "Délai court (faible latence) et débit régulier"
+            ],
+            [
+              "Mécanisme principal",
+              "Détection d'erreurs, numérotation et retransmission",
+              "Mise en mémoire tampon (buffer)"
+            ],
+            [
+              "Effet secondaire / Limite",
+              "Risque de duplication et délai supplémentaire",
+              "Légère latence initiale due au remplissage du buffer"
+            ],
+            [
+              "Exemples d'usages",
+              "Transfert de fichiers, e-mails, transactions",
+              "Appel audio/vidéo, streaming, jeu en ligne"
+            ]
+          ]
+        },
+        "mnemonics": [
+          {
+            "trick": "Retransmission = risque de Duplication",
+            "text": "Retenez que « Répéter crée des Doubles » : chaque retransmission par précaution peut générer une duplication que les numéros de blocs permettent de trier."
+          },
+          {
+            "trick": "Bits → Carte → Signal",
+            "text": "Pour mémoriser le passage au matériel, suivez l'ordre « B-C-S » : l'information devient Binaire, passe par la Carte réseau et sort en Signal physique."
+          }
+        ],
+        "case_studies": [
+          {
+            "title": "Téléchargement interrompu puis repris vs appel VoIP",
+            "situation": "Un utilisateur télécharge une mise à jour système en même temps qu'il passe un appel vocal sur Internet, alors qu'une micro-coupure survient sur la ligne.",
+            "question": "Comment chaque flux réagit-il à cette perturbation réseau ?",
+            "solution": "La mise à jour système détecte les paquets manquants et lance une retransmission (en filtrant toute éventuelle duplication) pour garantir la fiabilité du fichier. L'appel vocal puise dans son buffer pour masquer la micro-coupure et limiter l'impact de la latence."
+          }
+        ],
+        "teach_back": {
+          "prompt": "Expliquez comment un réseau garantit la fiabilité d'un transfert, pourquoi cela peut créer des doublons, et quel rôle joue la carte réseau à la fin de la chaîne.",
+          "model": "Pour garantir la fiabilité, le réseau numérote les blocs de données, détecte les erreurs ou les pertes et effectue une retransmission si un bloc n'est pas confirmé. Si le message d'origine était en fait bien arrivé, ce renvoi crée une duplication que le destinataire supprime grâce aux numéros. Enfin, la carte réseau convertit les données binaires en signal physique adapté au support."
+        },
+        "mistakes": [
+          {
+            "wrong": "Penser qu'une duplication de données signifie forcément une panne grave ou une attaque sur le réseau.",
+            "right": "La duplication est un effet normal des mécanismes de fiabilité lorsqu'une retransmission est déclenchée après la perte ou le retard d'un accusé de réception.",
+            "why": "L'émetteur renvoie le bloc par précaution faute de confirmation ; le récepteur détecte et élimine simplement ce doublon grâce à la numérotation des morceaux."
+          },
+          {
+            "wrong": "Croire que le buffer supprime la latence du réseau ou accélère la transmission.",
+            "right": "Le buffer ne réduit pas la latence : il absorbe les variations de délai (gigue) en conservant des données d'avance pour assurer une lecture continue.",
+            "why": "La mise en mémoire tampon ajoute même un léger délai initial avant le début de la restitution afin de garantir un débit régulier à l'utilisateur."
+          }
+        ]
+      }
     },
     {
       "id": "res_003_fondamentaux",
-      "title": "III. Notions fondamentales de communication",
-      "body": [
-        "Pour circuler sur différentes liaisons d'un point à un autre, l'information doit être convertie en une séquence binaire, puis transformée en un signal physique par l'électronique matérielle (par exemple une carte réseau).",
-        "Un protocole est un ensemble de règles, généralement normalisées dans un document de référence, permettant à deux entités communicantes de coopérer pour réaliser une fonction donnée : transporter un signal sur une liaison, assurer la fiabilité ou fournir un service applicatif.",
-        "Sur Internet, le protocole TCP met en œuvre la fiabilité grâce à des algorithmes gérant la détection d'erreurs, la détection de pertes, les retransmissions et la remise en ordre des segments d'un fichier.",
-        "Concrètement, un protocole combine des algorithmes et l'échange d'informations de contrôle placées dans des en-têtes (« entêtes ») : par exemple, un champ de contrôle d'erreur (checksum) ou des numéros de séquence permettant de compter les morceaux, détecter les pertes et reconstituer le message dans l'ordre."
+    "title": "III. Notions fondamentales de communication",
+    "body": [
+      "Pour circuler sur différentes liaisons d'un point à un autre, l'information doit être convertie en une [[séquence binaire]], puis transformée en un [[signal]] physique par l'électronique matérielle (par exemple une [[carte réseau]]).",
+      "Un [[protocole]] est un ensemble de règles, généralement issues d'une [[normalisation]] dans un document de référence, permettant à deux entités communicantes de coopérer pour réaliser une fonction donnée : transporter un [[signal]] sur une liaison, assurer la fiabilité ou fournir un service applicatif.",
+      "Sur Internet, le protocole [[TCP]] met en œuvre la fiabilité grâce à des algorithmes gérant la détection d'erreurs, la détection de pertes, les retransmissions et la remise en ordre des segments d'un fichier.",
+      "Concrètement, un [[protocole]] combine des algorithmes et l'échange d'informations de contrôle placées dans des [[en-tête (entête)]]s : par exemple, un champ de contrôle d'erreur ([[checksum]]) ou des numéros de séquence permettant de compter les morceaux, détecter les pertes et reconstituer le message dans l'ordre."
+    ],
+    "terms": [
+      {
+        "term": "séquence binaire",
+        "def": "Suite ordonnée de bits (0 et 1) représentant de manière numérique une information afin qu'elle puisse être traitée et transmise par un système informatique."
+      },
+      {
+        "term": "signal",
+        "def": "Grandeur physique (électrique, lumineuse ou onde radioélectrique) qui varie dans le temps pour transporter une séquence binaire sur un support de transmission."
+      },
+      {
+        "term": "carte réseau",
+        "def": "Composant matériel (interface réseau) assurant la liaison entre un équipement informatique et le support de communication en convertissant les séquences binaires en signaux physiques et inversement."
+      },
+      {
+        "term": "protocole",
+        "def": "Ensemble de règles et de conventions normalisées définissant le format des messages et les procédures d'échange permettant à deux entités de communiquer."
+      },
+      {
+        "term": "normalisation",
+        "def": "Processus d'élaboration de règles et de spécifications techniques communes par des organismes reconnus afin de garantir l'interopérabilité entre équipements et logiciels de différents fabricants."
+      },
+      {
+        "term": "TCP",
+        "def": "Transmission Control Protocol : protocole fondamental d'Internet assurant un transfert fiable et ordonné des données entre applications grâce aux accusés de réception, aux retransmissions et au contrôle d'erreurs."
+      },
+      {
+        "term": "en-tête (entête)",
+        "def": "Bloc d'informations de contrôle placé au début d'un message ou d'un paquet réseau, contenant les métadonnées nécessaires à son acheminement et à sa vérification (adresses, numéros de séquence, checksum, etc.)."
+      },
+      {
+        "term": "checksum",
+        "def": "Somme de contrôle calculée à partir des données d'un message et insérée dans l'en-tête afin de permettre au récepteur de vérifier si des erreurs de transmission ont altéré le contenu."
+      }
+    ],
+    "questionIds": [
+      "reseaux_q041_fondamentaux",
+      "reseaux_q042_fondamentaux",
+      "reseaux_q043_fondamentaux",
+      "reseaux_q044_fondamentaux",
+      "reseaux_q045_fondamentaux",
+      "reseaux_q046_fondamentaux",
+      "reseaux_q047_fondamentaux",
+      "reseaux_q048_fondamentaux",
+      "reseaux_q049_fondamentaux",
+      "reseaux_q050_fondamentaux",
+      "reseaux_q051_fondamentaux",
+      "reseaux_q052_fondamentaux",
+      "reseaux_q053_fondamentaux",
+      "reseaux_q054_fondamentaux",
+      "reseaux_q055_fondamentaux",
+      "reseaux_q056_fondamentaux",
+      "reseaux_q057_fondamentaux",
+      "reseaux_q058_fondamentaux",
+      "reseaux_q059_fondamentaux",
+      "reseaux_q060_fondamentaux"
+    ],
+    "analogies": [
+      {
+        "theme": "Monde du travail",
+        "text": "Une communication réseau fonctionne comme l'envoi d'un dossier administratif : le secrétariat traduit d'abord le texte en code interne (séquence binaire) avant de le confier au coursier (la carte réseau) qui le transporte physiquement (signal). Pour que tout le monde se comprenne, l'entreprise suit un protocole issu d'une normalisation stricte, comme le service TCP qui numérote chaque chemise et ajoute une fiche de suivi (en-tête) avec un inventaire chiffré (checksum) pour vérifier qu'aucun document n'a été abîmé."
+      },
+      {
+        "theme": "Eggman & Eggmanland",
+        "text": "Pour transmettre ses plans secrets à ses bases, le Dr Eggman convertit ses schémas en séquence binaire que ses antennes (carte réseau) projettent sous forme de signal laser. Afin que ses robots de modèles différents coopèrent sans bug, il impose une normalisation via un protocole maison inspiré de TCP : chaque capsule de données porte un en-tête blindé avec un numéro d'ordre et un checksum pour détecter si Sonic a saboté le message en route."
+      },
+      {
+        "theme": "Super Mario Bros",
+        "text": "Quand Mario envoie un message d'un château à l'autre, l'information est traduite en blocs de 0 et de 1 (séquence binaire) puis propulsée sous forme de boule de feu ou d'onde (signal) par un bloc tuyau (carte réseau). Le règlement officiel du Royaume Champignon (normalisation) définit le protocole TCP : chaque message est enfermé dans une enveloppe avec un en-tête indiquant son numéro de niveau et un checksum magique qui vérifie qu'aucun Goomba n'a altéré le contenu."
+      },
+      {
+        "theme": "Cuisine et restaurant",
+        "text": "En restauration, la commande du client est codée en abréviations (séquence binaire) puis transmise vocalement ou par bipper (signal) via le terminal de salle (carte réseau). Le règlement de brigade (normalisation) fixe un protocole précis, comparable à TCP : chaque bon de commande possède un en-tête indiquant le numéro de table, l'ordre des plats et un total d'articles (checksum) pour vérifier en cuisine que rien n'a été modifié ou oublié."
+      },
+      {
+        "theme": "Comme si j'avais 15 ans",
+        "text": "Quand tu envoies un fichier sur Discord, ton PC le traduit en 0 et en 1 (séquence binaire) et ta carte réseau transforme ça en signal Wi-Fi. Pour que tous les appareils parlent la même langue, des règles communes (normalisation) définissent chaque protocole. Le protocole TCP découpe ton fichier et colle sur chaque morceau une étiquette (en-tête) avec son numéro et un code de vérification (checksum) pour s'assurer que le fichier arrive intact et dans le bon ordre."
+      }
+    ],
+    "lenses": {
+      "summary": [
+        "Pour circuler sur un réseau, toute information est convertie en séquence binaire (bits) puis transformée en signal physique par une carte réseau.",
+        "Un protocole est un ensemble de règles normalisées permettant à deux machines de coopérer ; sur Internet, TCP assure la fiabilité des transferts.",
+        "Un protocole associe des algorithmes et des en-têtes contenant des métadonnées de contrôle, telles que les numéros de séquence et le checksum."
       ],
-      "terms": [
-        "Séquence binaire",
-        "Signal",
-        "Carte réseau",
-        "Protocole",
-        "Normalisation",
-        "TCP",
-        "En-tête (entête)",
-        "Checksum"
+      "examples": [
+        {
+          "title": "Vérification d'intégrité par checksum lors d'un transfert TCP",
+          "text": "Un segment TCP traverse une liaison perturbée et un bit passe de 0 à 1 en cours de route avant d'atteindre le serveur.",
+          "solution": "À l'arrivée, le protocole TCP recalcule le checksum sur les données reçues et le compare à celui inscrit dans l'en-tête : comme les valeurs diffèrent, le segment corrompu est rejeté et une retransmission est demandée."
+        },
+        {
+          "title": "Dialogue entre un ordinateur portable et une borne Wi-Fi",
+          "text": "Un étudiant connecte son ordinateur portable à la borne Wi-Fi de son université alors que les deux appareils sont de marques différentes.",
+          "solution": "Grâce à la normalisation (normes IEEE 802.11), leurs cartes réseau respectent le même protocole de communication : elles savent convertir les séquences binaires en signaux radioélectriques compatibles et interpréter leurs en-têtes mutuels."
+        }
       ],
-      "questionIds": []
+        "simplified": "Pour voyager sur un réseau, les données sont transformées en 0 et en 1, puis en signal physique par la carte réseau. Les appareils se comprennent grâce à des règles communes appelées protocoles, comme TCP sur Internet. Pour vérifier que rien ne se perd ou ne s'abîme, TCP ajoute au début de chaque morceau une étiquette (un en-tête) avec un numéro d'ordre et un code de vérification (checksum).",
+        "detailed": [
+          "Le transport physique de l'information impose une double conversion : l'abstraction logique en séquence binaire (bits) suivie de la traduction matérielle en signal physique (électrique, lumineux ou radioélectrique) opérée par la carte réseau.",
+          "La communication entre équipements hétérogènes repose sur des protocoles issus d'un travail de normalisation, définissant précisément les formats d'échange et les comportements attendus à chaque niveau.",
+          "Sur Internet, le protocole TCP implémente le service de transfert fiable grâce à des algorithmes gérant la détection d'altérations, le repérage des pertes, les retransmissions et le réassemblage ordonné des segments.",
+          "Le fonctionnement concret d'un protocole s'appuie sur l'ajout d'en-têtes (« entêtes ») aux messages : ces métadonnées embarquent notamment les numéros de séquence et le checksum permettant de contrôler l'intégrité et l'ordre des données."
+        ],
+        "step_by_step": [
+          {
+            "title": "1. Appliquer un protocole normalisé",
+            "text": "Utiliser des règles standardisées (comme TCP) pour découper l'information et coordonner les algorithmes entre l'émetteur et le récepteur."
+          },
+          {
+            "title": "2. Ajouter les informations de contrôle dans l'en-tête",
+            "text": "Placer devant chaque morceau de données un en-tête contenant son numéro de séquence et un checksum calculé pour détecter les erreurs."
+          },
+          {
+            "title": "3. Représenter le tout en séquence binaire",
+            "text": "Coder l'en-tête et les données sous forme d'une suite continue de bits (0 et 1)."
+          },
+          {
+            "title": "4. Convertir en signal via la carte réseau",
+            "text": "Confier la séquence binaire à la carte réseau afin qu'elle génère le signal physique correspondant au support de transmission."
+          }
+        ],
+        "visual": {
+          "caption": "De l'information aux signaux : encapsulation avec en-tête protocolaire (TCP) et conversion physique par la carte réseau.",
+          "svg": "<svg viewBox=\"0 0 600 180\" xmlns=\"w3.org\" role=\"img\" aria-label=\"Schéma d'en-tête TCP, séquence binaire et signal physique\"><rect x=\"15\" y=\"45\" width=\"175\" height=\"90\" rx=\"8\" fill=\"#e8f0fe\" stroke=\"#1a73e8\" stroke-width=\"2\"/><text x=\"102\" y=\"72\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#174ea6\">Segment TCP</text><rect x=\"27\" y=\"85\" width=\"65\" height=\"36\" rx=\"4\" fill=\"#d2e3fc\" stroke=\"#1a73e8\" stroke-width=\"1.5\"/><text x=\"59\" y=\"101\" text-anchor=\"middle\" font-size=\"9\" font-weight=\"bold\" fill=\"#174ea6\">En-tête</text><text x=\"59\" y=\"113\" text-anchor=\"middle\" font-size=\"8\" fill=\"#3c4043\">N° + Checksum</text><rect x=\"97\" y=\"85\" width=\"80\" height=\"36\" rx=\"4\" fill=\"#ffffff\" stroke=\"#1a73e8\" stroke-width=\"1.5\"/><text x=\"137\" y=\"106\" text-anchor=\"middle\" font-size=\"10\" fill=\"#3c4043\">Données</text><line x1=\"190\" y1=\"90\" x2=\"225\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><rect x=\"225\" y=\"50\" width=\"145\" height=\"80\" rx=\"8\" fill=\"#fef7e0\" stroke=\"#f9ab00\" stroke-width=\"2\"/><text x=\"297\" y=\"83\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#b06000\">Séquence binaire</text><text x=\"297\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" font-family=\"monospace\" fill=\"#3c4043\">01101001 1011...</text><line x1=\"370\" y1=\"90\" x2=\"405\" y2=\"90\" stroke=\"#5f6368\" stroke-width=\"2\"/><rect x=\"405\" y=\"50\" width=\"180\" height=\"80\" rx=\"8\" fill=\"#e6f4ea\" stroke=\"#1e8e3e\" stroke-width=\"2\"/><text x=\"495\" y=\"83\" text-anchor=\"middle\" font-size=\"12\" font-weight=\"bold\" fill=\"#137333\">Carte réseau → Signal</text><text x=\"495\" y=\"103\" text-anchor=\"middle\" font-size=\"11\" fill=\"#3c4043\">Électrique / Optique / Radio</text></svg>"
+        },
+        "comparison": {
+          "headers": [
+            "Élément",
+            "Rôle dans la communication",
+            "Niveau / Nature"
+          ],
+          "rows": [
+            [
+              "Séquence binaire",
+              "Représenter l'information sous forme de bits (0 et 1)",
+              "Logique / Numérique"
+            ],
+            [
+              "Carte réseau & Signal",
+              "Convertir les bits en grandeur physique sur le support",
+              "Matériel / Physique"
+            ],
+            [
+              "Protocole & Normalisation",
+              "Fixer des règles communes et interopérables d'échange",
+              "Logique / Normatif"
+            ],
+            [
+              "En-tête (Checksum, N°)",
+              "Transporter les métadonnées de contrôle et de fiabilité",
+              "Structure de message (ex. TCP)"
+            ]
+          ]
+        },
+        "mnemonics": [
+          {
+            "trick": "L'en-tête comme une enveloppe",
+            "text": "Imaginez l'en-tête comme l'enveloppe d'une lettre : les données sont la feuille à l'intérieur, tandis que le numéro d'ordre et le checksum sont les mentions de suivi inscrites sur l'enveloppe."
+          },
+          {
+            "trick": "Checksum = « Check la somme »",
+            "text": "Décomposez « checksum » en « check (vérifier) + sum (somme) » : le récepteur refait le calcul pour vérifier que le compte de bits est bon et sans erreur."
+          }
+        ],
+        "mistakes": [
+          {
+            "wrong": "Confondre la séquence binaire et le signal physique.",
+            "right": "La séquence binaire est une suite logique de bits (0 et 1), alors que le signal est sa traduction physique (onde radio, impulsion électrique ou lumineuse) générée par la carte réseau.",
+            "why": "Un câble ou l'air ne transporte pas directement des chiffres abstraits : il faut un composant matériel pour moduler une grandeur physique."
+          },
+          {
+            "wrong": "Croire que le checksum permet de réparer automatiquement les données corrompues ou de retrouver un paquet perdu.",
+            "right": "Le checksum sert uniquement à détecter qu'une erreur a altéré un message reçu afin de le rejeter ; c'est la retransmission (avec numéros de séquence) qui permet de récupérer la donnée.",
+            "why": "Une somme de contrôle indique seulement si le contenu est intact ou modifié, sans contenir assez d'informations pour reconstruire les bits abîmés."
+          }
+        ],
+        "case_studies": [
+          {
+            "title": "Réception de segments TCP désordonnés et altérés",
+            "situation": "Un client télécharge un fichier via TCP en trois segments numérotés 1, 2 et 3. Le segment 3 arrive avant le 2, et le segment 2 présente un checksum invalide.",
+            "question": "Comment le protocole TCP exploite-t-il les informations des en-têtes pour reconstruire le fichier intact ?",
+            "solution": "TCP vérifie d'abord les checksums : il rejette le segment 2 corrompu et demande sa retransmission. Grâce aux numéros de séquence inscrits dans les en-têtes, il met le segment 3 en attente jusqu'à recevoir un segment 2 valide, puis réassemble 1, 2 et 3 dans le bon ordre."
+          }
+        ],
+        "teach_back": {
+          "prompt": "Expliquez le cheminement d'une information depuis sa forme binaire jusqu'au support physique, puis décrivez comment TCP utilise les en-têtes pour assurer un transfert fiable.",
+          "model": "L'information est d'abord codée en séquence binaire (0 et 1), puis la carte réseau la convertit en signal physique sur le support. Pour assurer la fiabilité selon des règles normalisées, le protocole TCP ajoute à chaque segment un en-tête contenant un numéro de séquence et un checksum, ce qui permet de détecter les erreurs, redemander les morceaux perdus ou corrompus et tout remettre dans l'ordre."
+        }
+      }
     }
   ],
-  "chapter": "Notions de base",
+  "chapter": "Introduction aux réseaux",
   "chapterOrder": 1,
   "order": 1
 }

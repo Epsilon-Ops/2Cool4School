@@ -1,0 +1,34 @@
+
+{
+  "id": "reseaux-archi-7",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "La fiabilité des transmissions et le contrôle des erreurs",
+  "intro": "Comprendre comment les réseaux informatiques assurent la fiabilité des transmissions de données malgré les erreurs, les pertes ou les perturbations pouvant survenir lors des échanges. Ce cours présente les objectifs d'un transfert fiable, les techniques de détection des erreurs, les mécanismes d'acquittement, le fonctionnement du protocole Stop-and-Wait ainsi que les mécanismes complémentaires permettant de garantir l'intégrité et la bonne réception des informations.",
+  "sections": [
+    {
+      "id": "res_061_objectifs",
+      "title": "I. Les objectifs d'un transfert fiable"
+    },
+    {
+      "id": "res_062_detection",
+      "title": "II. La détection des erreurs"
+    },
+    {
+      "id": "res_063_acquittement",
+      "title": "III. Les mécanismes d'acquittement"
+    },
+    {
+      "id": "res_064_stop-and-wait",
+      "title": "IV. Le protocole Stop-and-Wait (Send and Wait)"
+    },
+    {
+      "id": "res_065_complementaires",
+      "title": "V. Les mécanismes complémentaires de fiabilité"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 7
+}

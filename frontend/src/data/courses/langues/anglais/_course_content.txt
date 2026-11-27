@@ -1,5 +1,538 @@
 [[ANGLAIS]]
 
+Skills (Anglais) :
+    eng.salutations - Module 1A []
+
+======================
+
+    >> Module 1A [Les fondamentaux de l'anglais]
+        --> Thème 1 : Les fondamentaux de la communication et les premières rencontres
+            + eng_001_salutations [Salutations et formules de politesse]
+            + eng_002_bonjour-revoir [Dire bonjour, au revoir et prendre congé]
+            + eng_003_politesse [Utiliser les expressions de politesse]
+            + eng_004_comment-ca-va [Demander comment ça va et y répondre]
+            + eng_005_premiere-rencontre [Se présenter lors d'une première rencontre]
+            + eng_006_expressions-courantes [Utiliser les expressions courantes de conversation]
+            + eng_007_accord-desaccord [Exprimer son accord et son désaccord]
+            + eng_008_excuses [S'excuser et attirer l'attention]
+
+        --> Thème 2 : Se présenter et parler de soi
+        + eng_009_identite [Dire son nom et son âge]
+        + eng_010_origine-nationalite [Indiquer son origine et sa nationalité]
+        + eng_011_profession-etudes [Parler de sa profession et de ses études]
+        + eng_012_description-physique [Décrire ses caractéristiques physiques]
+        + eng_013_langues [Parler des langues que l'on connaît]
+        + eng_014_gouts-preferences [Présenter ses goûts et ses préférences]
+        + eng_015_loisirs [Parler de ses loisirs et centres d'intérêt]
+        + eng_016_personnalite [Décrire sa personnalité et son caractère]
+        + eng_017_competences [Parler de ses compétences et capacités]
+
+        --> Thème 3 : Le vocabulaire essentiel du quotidien
+        + eng_018_nombres [Les nombres de 0 à 100 et le comptage]
+        + eng_019_couleurs [Les couleurs et les descriptions simples]
+        + eng_020_famille [La famille et les proches]
+        + eng_021_objets-quotidien [Les objets du quotidien et de la maison]
+        + eng_022_jours-mois-saisons [Les jours, les mois et les saisons]
+        + eng_023_date [Lire et exprimer la date en anglais]
+        + eng_024_heure [Dire l'heure et les moments de la journée]
+        + eng_025_vetements [Les vêtements et les accessoires]
+        + eng_026_animaux [Les animaux courants]
+        + eng_027_corps-humain [Les principales parties du corps humain]
+        + eng_028_adjectifs [Les adjectifs courants pour décrire les personnes et les objets]
+
+        --> Thème 4 : Les premières bases grammaticales
+        + eng_029_pronoms-personnels [Les pronoms personnels]
+        + eng_030_verbe-be [Découvrir et utiliser le verbe Be]
+        + eng_031_articles [Les articles définis et indéfinis]
+        + eng_032_singulier-pluriel [Le singulier et le pluriel des noms]
+        + eng_033_possessifs [Les adjectifs possessifs]
+        + eng_034_demonstratifs [Les adjectifs démonstratifs]
+        + eng_035_prepositions-lieu [Les prépositions de lieu simples]
+
+    Module 1B — Construire ses premières phrases
+        >> Module 1B []
+        --> Thème 5 : La construction des phrases simples
+        + eng_036_structure-phrase [La structure d'une phrase simple en anglais]
+        + eng_037_be-affirmatif [Construire des phrases affirmatives avec Be]
+        + eng_038_be-negatif [Construire des phrases négatives avec Be]
+        + eng_039_be-questions [Poser des questions avec Be]
+        + eng_040_contractions [Les contractions courantes en anglais]
+        + eng_041_mots-interrogatifs [Les mots interrogatifs fondamentaux]
+        + eng_042_have [Exprimer la possession avec Have et Have got]
+
+        --> Thème 6 : Le présent simple
+        + eng_043_present-simple [Comprendre et construire des phrases au présent simple]
+        + eng_044_troisieme-personne [Maîtriser la troisième personne du singulier]
+        + eng_045_dont-doesnt [Construire des phrases négatives avec Don't et Doesn't]
+        + eng_046_questions-do-does [Poser des questions avec Do et Does]
+        + eng_047_auxiliaires [Distinguer les auxiliaires Do, Be et Have]
+
+        --> Thème 7 : Les actions et les habitudes
+        + eng_048_verbes-action [Les verbes d'action les plus courants]
+        + eng_049_activites-journee [Parler des activités de la journée]
+        + eng_050_routine-quotidienne [Décrire sa routine quotidienne]
+        + eng_051_frequence [Exprimer ses habitudes et leur fréquence]
+        + eng_052_activites-courantes [Parler de ses activités quotidiennes]
+        + eng_053_present-continu [Exprimer une action en cours avec le présent continu]
+        + eng_054_present-simple-continu [Différencier le présent simple et le présent continu]
+        + eng_055_can-cant [Exprimer ses capacités avec Can et Can't]
+
+        --> Thème 8 : Exprimer ses idées et ses besoins
+        + eng_056_emotions-simples [Exprimer ses émotions et ses sentiments]
+        + eng_057_envies-souhaits [Exprimer ses envies et ses souhaits]
+        + eng_058_besoins [Exprimer ses besoins]
+        + eng_059_opinions-simples [Exprimer ses opinions personnelles]
+        + eng_060_possibilite [Exprimer la possibilité et l'incertitude]
+        + eng_061_pronoms-possessifs [Exprimer la possession avec les pronoms possessifs]
+        + eng_062_preferences-comparatives [Exprimer une préférence entre plusieurs possibilités]
+
+        --> Thème 9 : Le temps et les premières notions du passé et du futur
+        + eng_063_moments-journee [Les moments de la journée]
+        + eng_064_was-were [Parler du passé avec Was et Were]
+        + eng_065_preterit-regulier [Découvrir le prétérit des verbes réguliers]
+        + eng_066_preterit-irregulier [Découvrir les verbes irréguliers courants]
+        + eng_067_evenements-passes [Raconter des événements passés simplement]
+        + eng_068_going-to [Exprimer ses projets avec Going to]
+        + eng_069_will [Exprimer le futur avec Will]
+        + eng_070_marqueurs-temporels [Utiliser les marqueurs temporels]
+
+        --> Thème 10 : Les quantités et les comparaisons
+        + eng_071_nombres-ordinaux [Les nombres ordinaux]
+        + eng_072_quantites-some-any [Exprimer les quantités avec Some, Any et A lot of]
+        + eng_073_denombrement [Distinguer les noms dénombrables et indénombrables]
+        + eng_074_much-many [Utiliser Much, Many et A few]
+        + eng_075_comparatifs [Comparer deux éléments]
+        + eng_076_superlatifs [Utiliser les superlatifs]
+        + eng_077_quantites-suffisantes [Exprimer une quantité suffisante ou insuffisante]
+
+    Module 2A — Premiers échanges et vie sociale
+        >> Module 2A []
+        --> Thème 11 : Au restaurant et au café
+        + eng_078_restaurant-table [Demander une table et saluer le serveur]
+        + eng_079_commander-repas [Commander un plat ou une boisson]
+        + eng_080_menu-ingredients [Comprendre un menu et poser des questions sur les ingrédients]
+        + eng_081_addition [Demander et régler l'addition]
+
+        --> Thème 12 : Discuter entre amis
+        + eng_082_discussion-loisirs [Parler de ses loisirs et passe-temps]
+        + eng_083_gouts-amis [Exprimer ses goûts dans une conversation]
+        + eng_084_proposer-sortie [Proposer une sortie ou une activité]
+        + eng_085_reagir-proposition [Accepter ou refuser poliment une proposition]
+
+        --> Thème 13 : Le quotidien et la routine
+        + eng_086_heure-quotidienne [Parler de l'heure et des moments de la journée]
+        + eng_087_calendrier [Parler des jours de la semaine et des mois]
+        + eng_088_journee-type [Décrire sa journée type au présent simple]
+
+        Module 2B — Conversations et interactions sociales
+        >> Module 2B []
+        --> Thème 14 : Faire connaissance et engager une conversation
+        + eng_089_small-talk [Engager une conversation avec un inconnu]
+        + eng_090_questions-personnelles [Poser des questions pour mieux connaître quelqu'un]
+        + eng_091_entretenir-conversation [Entretenir une conversation et éviter les silences]
+
+        --> Thème 15 : Téléphone et communications à distance
+        + eng_092_appel-telephone [Passer un appel téléphonique et se présenter]
+        + eng_093_comprehension-telephone [Comprendre son interlocuteur et demander de répéter]
+        + eng_094_messages-ecrits [Envoyer et comprendre des messages écrits et vocaux]
+
+        --> Thème 16 : Situations pratiques du quotidien
+        + eng_095_demander-service [Demander un service ou un coup de main]
+        + eng_096_emprunter-preter [Emprunter, prêter et rendre quelque chose]
+        + eng_097_malentendus [S'excuser et expliquer un malentendu]
+
+        --> Thème 17 : Invitations, fêtes et événements
+        + eng_098_inviter-evenement [Inviter quelqu'un à une fête ou un événement]
+        + eng_099_discuter-fete [Discuter et rencontrer des invités pendant une fête]
+        + eng_100_felicitations [Féliciter quelqu'un et présenter ses meilleurs vœux]
+
+        --> Thème 18 : Relations humaines et vie sociale
+        + eng_101_relations-amicales [Parler de ses relations amicales et amoureuses]
+        + eng_102_limites-personnelles [Exprimer ses limites et gérer un désaccord personnel]
+        + eng_103_voisinage [Faire connaissance avec ses voisins et entretenir de bonnes relations]
+
+        Module 3A — Déplacements et services essentiels
+        >> Module 3A []
+        --> Thème 19 : Les transports en commun
+        + eng_104_ticket-transport [Acheter un ticket de bus ou de métro]
+        + eng_105_horaires-transports [Comprendre les horaires et les annonces de quai]
+        + eng_106_orientation-gare [Demander son chemin dans une gare ou une station]
+
+        --> Thème 20 : S'orienter en ville
+        + eng_107_demander-chemin [Demander où se trouve un lieu]
+        + eng_108_directions [Comprendre et donner des directions simples]
+        + eng_109_batiments-ville [Identifier les bâtiments et commerces essentiels]
+
+        --> Thème 21 : Les services du quotidien
+        + eng_110_services-postaux [Envoyer une lettre ou un colis à la poste]
+        + eng_111_distributeur-argent [Retirer de l'argent et utiliser un distributeur automatique]
+        + eng_112_accueil-tourisme [Demander des informations à l'accueil ou à l'office du tourisme]
+
+        Module 3B — Voyages et déplacements avancés
+        >> Module 3B []
+        --> Thème 22 : Conduite et location de véhicules
+        + eng_113_location-voiture [Louer une voiture et comprendre les assurances de base]
+        + eng_114_signalisation [Comprendre les panneaux de signalisation routière]
+        + eng_115_station-service [Faire le plein et interagir dans une station-service]
+
+        --> Thème 23 : Voyages en train et en avion
+        + eng_116_enregistrement-bagages [Enregistrer ses bagages et passer la sécurité]
+        + eng_117_places-avion-train [Demander une place spécifique à bord]
+        + eng_118_correspondances-retards [Gérer les correspondances et les retards de transport]
+
+        --> Thème 24 : Formalités de douane et frontières
+        + eng_119_questions-douane [Répondre aux questions des douaniers]
+        + eng_120_declaration-biens [Déclarer des biens et comprendre les restrictions de bagages]
+        + eng_121_controles-frontiere [Comprendre les contrôles de sécurité et de passeport]
+
+        --> Thème 25 : Tourisme et excursions
+        + eng_122_visite-guidee [Réserver une visite guidée ou une excursion]
+        + eng_123_billets-tourisme [Acheter des billets pour un musée ou un monument]
+        + eng_124_informations-historiques [Demander une brochure ou des informations historiques]
+
+        Module 4A — Shopping et achats du quotidien
+        >> Module 4A []
+        --> Thème 26 : Acheter des vêtements et essayer des articles
+        + eng_125_tailles-couleurs [Demander une taille ou une couleur différente]
+        + eng_126_cabine-essayage [Utiliser une cabine d'essayage]
+        + eng_127_prix-reductions [Demander un prix et se renseigner sur les réductions]
+
+        --> Thème 27 : Faire ses courses au supermarché
+        + eng_128_rayons-supermarche [Se repérer dans les rayons du supermarché]
+        + eng_129_poids-prix-alimentaire [Demander le poids et le prix des aliments]
+        + eng_130_caisse-paiement [Passer à la caisse et payer par carte ou en espèces]
+
+        --> Thème 28 : Banque, argent et finances personnelles
+        + eng_131_compte-bancaire [Ouvrir un compte bancaire et comprendre les services proposés]
+        + eng_132_budget-depenses [Parler de son budget, de ses dépenses et de ses économies]
+        + eng_133_problemes-carte [Signaler une transaction incorrecte ou une carte bancaire bloquée]
+
+        Module 4B — Logement, hébergement et installation
+        >> Module 4B []
+        --> Thème 29 : Réservation et arrivée à l'hôtel
+        + eng_134_reservation-chambre [Réserver une chambre d'hôtel]
+        + eng_135_check-in [Effectuer le check-in et demander des informations sur les services]
+        + eng_136_services-hotel [Demander un service de chambre ou signaler un problème de propreté]
+
+        --> Thème 30 : Logement, colocation et location
+        + eng_137_equipements-logement [Parler des équipements d'un logement]
+        + eng_138_regles-colocation [Gérer les règles de vie et les tâches ménagères]
+        + eng_139_loyer-etat-lieux [Comprendre un état des lieux et discuter du loyer]
+
+        --> Thème 31 : S'installer dans un nouveau pays
+        + eng_140_decouvrir-quartier [Se présenter aux voisins et découvrir son quartier]
+        + eng_141_demarches-installation [Effectuer les démarches nécessaires pour s'installer]
+        + eng_142_habitudes-locales [Découvrir les habitudes locales et s'adapter à une nouvelle culture]
+
+        --> Thème 32 : Services et abonnements du quotidien
+        + eng_143_abonnement-telephone [Souscrire à un abonnement téléphonique ou Internet]
+        + eng_144_conditions-abonnement [Comprendre les abonnements et leurs conditions]
+        + eng_145_resiliation-abonnement [Résilier, modifier ou suspendre un abonnement]
+
+        Module 5A — Santé, sécurité et résolution de problèmes
+        >> Module 5A []
+        --> Thème 33 : Le corps humain et les symptômes
+        + eng_146_parties-corps [Nommer les principales parties du corps]
+        + eng_147_douleurs [Expliquer ce qui fait mal]
+        + eng_148_symptomes [Décrire des symptômes généraux]
+
+        --> Thème 34 : À la pharmacie et chez le médecin
+        + eng_149_pharmacie [Acheter des médicaments sans ordonnance et demander conseil]
+        + eng_150_rendez-vous-medecin [Prendre rendez-vous chez le médecin par téléphone]
+        + eng_151_traitement-doses [Comprendre les consignes d'un traitement et les doses]
+
+        --> Thème 35 : Urgences et imprévus
+        + eng_152_demander-aide-urgence [Demander de l'aide rapidement]
+        + eng_153_objet-perdu [Signaler la perte d'un objet]
+        + eng_154_probleme-transport [Faire face à un problème de transport ou à une annulation]
+
+        --> Thème 36 : Problèmes matériels et réclamations
+        + eng_155_panne-logement [Signaler une panne dans un hôtel ou un logement]
+        + eng_156_probleme-appareil [Expliquer un problème avec un appareil ou un service]
+        + eng_157_echange-remboursement [Demander un échange ou un remboursement]
+
+        --> Thème 37 : Pannes et incidents inattendus
+        + eng_158_panne-energie [Réagir à une panne d'électricité, d'eau ou d'Internet]
+        + eng_159_incident-public [Signaler un incident dans un lieu public]
+        + eng_160_situation-imprevue [Expliquer une situation imprévue et trouver une solution]
+
+        Module 5B — Services spécialisés et vie pratique
+        >> Module 5B []
+        --> Thème 38 : Services, réclamations et administration
+        + eng_161_formulaires [Remplir un formulaire et fournir des informations personnelles]
+        + eng_162_reclamation-client [Faire une réclamation auprès d'un service client]
+        + eng_163_documents-officiels [Comprendre une facture, un contrat ou un document officiel]
+
+        --> Thème 39 : Technologie, Internet et applications
+        + eng_164_applications-logiciels [Installer et utiliser une application ou un logiciel]
+        + eng_165_probleme-connexion [Résoudre un problème de connexion ou de configuration]
+        + eng_166_securite-donnees [Protéger ses données et gérer ses comptes en ligne]
+
+        --> Thème 40 : Services de livraison et commandes en ligne
+        + eng_167_commande-internet [Passer une commande sur Internet]
+        + eng_168_suivi-colis [Suivre un colis et communiquer avec un livreur]
+        + eng_169_livraison-probleme [Signaler une livraison incorrecte ou un colis endommagé]
+
+        --> Thème 41 : Automobile, garage et dépannage
+        + eng_170_probleme-mecanique [Décrire un problème mécanique à un garagiste]
+        + eng_171_rendez-vous-garage [Prendre rendez-vous pour une réparation ou un entretien]
+        + eng_172_devis-reparation [Comprendre un devis et récupérer son véhicule]
+
+        --> Thème 42 : Animaux et services vétérinaires
+        + eng_173_presentation-animal [Présenter son animal et parler de ses habitudes]
+        + eng_174_sante-animal [Expliquer un problème de santé chez son animal]
+        + eng_175_rendez-vous-veterinaire [Prendre rendez-vous chez le vétérinaire et comprendre les soins]
+
+        Module 6A — Émotions, caractère et vie sociale
+        >> Module 6A []
+        --> Thème 43 : Exprimer ses émotions
+        + eng_176_joie-tristesse-colere [Exprimer sa joie, sa tristesse et sa colère]
+        + eng_177_surprise-peur-enthousiasme [Exprimer la surprise, la peur et l'enthousiasme]
+        + eng_178_empathie-reconfort [Réconforter quelqu'un et exprimer de l'empathie]
+
+        --> Thème 44 : États d'esprit et caractère
+        + eng_179_personnalite-autrui [Décrire la personnalité de quelqu'un]
+        + eng_180_etats-psychologiques [Exprimer la fatigue, l'ennui et la motivation]
+        + eng_181_peurs-aspirations [Parler de ses peurs et de ses aspirations personnelles]
+
+        --> Thème 45 : Sport et activités physiques
+        + eng_182_inscription-sport [S'inscrire dans une salle de sport ou un club]
+        + eng_183_consignes-sportives [Comprendre les exercices et les consignes sportives]
+        + eng_184_performances-sport [Parler de ses performances et participer à une activité collective]
+
+        --> Thème 46 : Restaurants, sorties et vie nocturne
+        + eng_185_bar-discotheque [Entrer dans un bar ou une discothèque et comprendre les règles]
+        + eng_186_commander-sortie [Commander des boissons et discuter dans un environnement bruyant]
+        + eng_187_retour-sortie [Organiser son retour et gérer une sortie tardive]
+
+        --> Thème 47 : Mariages, cérémonies et événements familiaux
+        + eng_188_traditions-ceremonies [Parler des traditions et des cérémonies]
+        + eng_189_feliciter-maries [Féliciter les mariés et échanger avec les invités]
+        + eng_190_condoleances [Présenter ses condoléances et accompagner les moments difficiles]
+
+        Module 6B — Culture et compréhension du monde anglophone
+        >> Module 6B []
+        --> Thème 48 : Cinéma, livres et musique
+        + eng_191_films-series [Discuter d'un film ou d'une série récemment regardée]
+        + eng_192_livres-art [Partager ses goûts littéraires et artistiques]
+        + eng_193_musique-artistes [Parler de musique et de ses artistes préférés]
+
+        --> Thème 49 : Actualités et médias sociaux
+        + eng_194_titres-journaux [Comprendre les grands titres d'un journal]
+        + eng_195_reseaux-sociaux [Partager du contenu et commenter sur les réseaux sociaux]
+        + eng_196_actualite-debat [Discuter d'un fait divers ou d'un sujet d'actualité simple]
+
+        --> Thème 50 : Météo, nature et environnement
+        + eng_197_meteo-previsions [Parler du temps et des prévisions météorologiques]
+        + eng_198_paysages-nature [Décrire un paysage et parler de la nature]
+        + eng_199_ecologie [Parler d'écologie et des gestes pour protéger l'environnement]
+
+        --> Thème 51 : Culture, traditions et coutumes
+        + eng_200_fetes-anglophones [Découvrir les fêtes et traditions des pays anglophones]
+        + eng_201_differences-culturelles [Comprendre les différences culturelles et les règles de savoir-vivre]
+        + eng_202_habitudes-alimentaires [Parler des habitudes alimentaires et des traditions locales]
+
+        --> Thème 52 : Variantes et expressions régionales de l'anglais
+        + eng_203_britannique-americain [Découvrir les différences entre anglais britannique et américain]
+        + eng_204_accents-regionaux [Comprendre les accents et expressions régionales]
+        + eng_205_vocabulaire-international [Reconnaître les différences de vocabulaire selon les pays anglophones]
+
+        Module 7A — Exprimer ses opinions et développer ses idées
+        >> Module 7A []
+        --> Thème 53 : Donner son avis et exprimer ses opinions
+        + eng_206_nuancer-opinion [Nuancer ses propos et exprimer son opinion]
+        + eng_207_accord-desaccord-poli [Exprimer un accord ou un désaccord avec diplomatie]
+        + eng_208_justifier-choix [Justifier un choix ou une préférence]
+
+        --> Thème 54 : Argumentation et persuasion
+        + eng_209_avantages-inconvenients [Présenter les avantages et les inconvénients]
+        + eng_210_suggestions [Faire des suggestions constructives]
+        + eng_211_resume-discussion [Résumer une discussion ou un point de vue]
+
+        --> Thème 55 : Négocier et trouver un compromis
+        + eng_212_negocier-prix [Négocier un prix ou demander un geste commercial]
+        + eng_213_defendre-interets [Faire une proposition et défendre ses intérêts]
+        + eng_214_trouver-compromis [Trouver un compromis et conclure un accord]
+
+        --> Thème 56 : Gérer les conversations complexes
+        + eng_215_hypotheses [Exprimer une hypothèse et imaginer différents scénarios]
+        + eng_216_regrets-reproches [Exprimer des regrets, des reproches et des possibilités passées]
+        + eng_217_conversation-difficile [Défendre son point de vue dans une conversation difficile]
+
+        Module 7B — Le passé, les souvenirs et les récits
+        >> Module 7B []
+        --> Thème 57 : Raconter des événements passés
+        + eng_218_preterit-regulier-avance [Maîtriser le prétérit des verbes réguliers]
+        + eng_219_verbes-irreguliers [Utiliser les principaux verbes irréguliers]
+        + eng_220_weekend-passe [Raconter ce que l'on a fait le week-end dernier]
+
+        --> Thème 58 : Souvenirs et anecdotes
+        + eng_221_enfance-souvenirs [Parler de son enfance et de ses souvenirs]
+        + eng_222_questions-passe [Poser des questions sur le passé]
+        + eng_223_anecdotes-voyage [Raconter une anecdote de voyage]
+
+        --> Thème 59 : Raconter une histoire et faire un récit
+        + eng_224_chronologie-recit [Raconter un événement dans l'ordre chronologique]
+        + eng_225_situation-inattendue [Décrire une situation inattendue ou amusante]
+        + eng_226_recit-detaille [Raconter une histoire en ajoutant des détails et des réactions]
+
+        Module 8A — Les projets, les intentions et l'avenir
+        >> Module 8A []
+        --> Thème 60 : Exprimer ses projets immédiats
+        + eng_227_projets-going-to [Exprimer ses projets avec Going to]
+        + eng_228_previsions-will [Faire des prévisions simples avec Will]
+        + eng_229_objectifs-court-terme [Parler de ses résolutions et objectifs à court terme]
+
+        --> Thème 61 : Parler de ses projets à long terme
+        + eng_230_vie-dix-ans [Imaginer sa vie dans dix ans]
+        + eng_231_carriere-installation [Discuter de projets de carrière ou d'installation]
+        + eng_232_hypotheses-avenir [Faire des hypothèses sur l'avenir avec le premier conditionnel]
+
+        Module 8B — Anglais naturel et spontané
+        >> Module 8B []
+        --> Thème 62 : Comprendre l'anglais familier et oral
+        + eng_233_contractions-orales [Découvrir les contractions et les formes orales]
+        + eng_234_expressions-familieres [Comprendre les expressions familières du quotidien]
+        + eng_235_expressions-idiomatiques [Utiliser les expressions idiomatiques courantes]
+
+        --> Thème 63 : Réagir spontanément dans une conversation
+        + eng_236_incomprehension-precision [Exprimer son incompréhension et demander des précisions]
+        + eng_237_reactions-rapides [Réagir rapidement à une information ou une situation]
+        + eng_238_interrompre-changer-sujet [Interrompre poliment, reprendre la parole et changer de sujet]
+
+        --> Thème 64 : Humour, blagues et expressions sociales
+        + eng_239_comprendre-blagues [Comprendre les plaisanteries et les jeux de mots]
+        + eng_240_humour-conversation [Faire de l'humour dans une conversation]
+        + eng_241_sarcasme-ironie [Comprendre le sarcasme et l'ironie dans les échanges]
+
+        Module 9A — Anglais professionnel et académique
+        >> Module 9A []
+        --> Thème 65 : L'environnement de bureau
+        + eng_242_equipe-collegues [Présenter son équipe et ses collègues]
+        + eng_243_vocabulaire-informatique [Utiliser le vocabulaire informatique de base]
+        + eng_244_appels-professionnels [Gérer les appels professionnels et prendre un message]
+
+        --> Thème 66 : Réunions et entretiens professionnels
+        + eng_245_avis-reunion [Donner son avis lors d'une réunion]
+        + eng_246_planifier-reunion [Fixer une réunion et planifier un rendez-vous professionnel]
+        + eng_247_entretien-embauche [Se préparer à un entretien d'embauche et présenter ses compétences]
+
+        --> Thème 67 : Recherche d'emploi et carrière professionnelle
+        + eng_248_recherche-emploi [Chercher une offre d'emploi et contacter un recruteur]
+        + eng_249_parcours-professionnel [Présenter son parcours et répondre aux questions professionnelles]
+        + eng_250_conditions-travail [Comprendre les horaires, les congés et les conditions de travail]
+
+        --> Thème 68 : Études, formation et apprentissage
+        + eng_251_consignes-professeur [Comprendre les consignes d'un professeur et poser des questions]
+        + eng_252_participation-cours [Participer à un cours et travailler en groupe]
+        + eng_253_examens-resultats [Parler de ses examens, résultats et objectifs d'apprentissage]
+
+        --> Thème 69 : Anglais professionnel avancé
+        + eng_254_emails-professionnels [Rédiger des emails professionnels élégants et précis]
+        + eng_255_reunions-complexes [Participer à des réunions complexes et défendre une proposition]
+        + eng_256_presentation-projet [Présenter un projet, convaincre un interlocuteur et répondre aux objections]
+
+        --> Thème 70 : Anglais académique et argumentation structurée
+        + eng_257_argumentaire-academique [Construire un argumentaire structuré et développer une problématique]
+        + eng_258_donnees-statistiques [Présenter des données, des statistiques et des résultats]
+        + eng_259_redaction-academique [Rédiger une synthèse, un essai argumentatif et une conclusion]
+
+        --> Thème 71 : Négociation, persuasion et diplomatie professionnelle
+        + eng_260_convaincre-interlocuteur [Convaincre un interlocuteur avec des arguments solides]
+        + eng_261_desaccord-diplomatique [Exprimer un désaccord avec diplomatie et gérer les objections]
+        + eng_262_negociation-professionnelle [Négocier des conditions et conclure un accord]
+
+        Module 9B — Développer son expression et sa précision
+        >> Module 9B []
+        --> Thème 72 : S'exprimer avec plus de naturel et de précision
+        + eng_263_recit-detaille-contexte [Raconter une situation avec des détails et du contexte]
+        + eng_264_probleme-complexe [Expliquer un problème complexe et proposer plusieurs solutions]
+        + eng_265_reformulation-adaptation [Parler avec fluidité, reformuler et adapter son langage]
+
+        --> Thème 73 : Décrire, comparer et expliquer avec précision
+        + eng_266_description-precise [Décrire précisément un objet, un lieu ou une personne]
+        + eng_267_comparaisons-avancees [Comparer plusieurs possibilités et exprimer leurs différences]
+        + eng_268_instructions-detaillees [Expliquer une procédure ou donner des instructions détaillées]
+
+        --> Thème 74 : Comprendre les sous-entendus et le sens implicite
+        + eng_269_messages-indirects [Comprendre les sous-entendus et les messages indirects]
+        + eng_270_double-sens [Reconnaître l'ironie, le sarcasme et les doubles sens]
+        + eng_271_references-culturelles [Comprendre les références culturelles et les expressions contextuelles]
+
+        --> Thème 75 : Registres de langue et adaptation du discours
+        + eng_272_registres-anglais [Différencier l'anglais familier, courant, soutenu et formel]
+        + eng_273_adapter-discours [Adapter son vocabulaire et sa manière de parler à son interlocuteur]
+        + eng_274_formulations-diplomatiques [Maîtriser les formulations diplomatiques et élégantes]
+
+        Module 10A — Grammaire avancée et structures complexes
+        >> Module 10A []
+        --> Thème 76 : Les temps avancés et leurs nuances
+        + eng_275_present-perfect [Maîtriser le Present Perfect et le distinguer du Past Simple]
+        + eng_276_present-perfect-continuous [Utiliser le Present Perfect Continuous et le Past Perfect]
+        + eng_277_futurs-avances [Maîtriser les formes avancées du futur]
+
+        --> Thème 77 : Les structures complexes et les propositions subordonnées
+        + eng_278_propositions-complexes [Construire des phrases avec plusieurs propositions]
+        + eng_279_propositions-relatives [Utiliser les propositions relatives]
+        + eng_280_propositions-conditionnelles [Maîtriser les propositions conditionnelles et temporelles]
+
+        --> Thème 78 : Le conditionnel et les hypothèses avancées
+        + eng_281_conditionnels-principaux [Maîtriser les trois principaux types de conditionnels]
+        + eng_282_mixed-conditionals [Utiliser les conditionnels mixtes]
+        + eng_283_regrets-hypotheses [Exprimer des regrets et des situations irréelles avec I wish et If only]
+
+        Module 10B — Vocabulaire avancé et richesse linguistique
+        >> Module 10B []
+        --> Thème 79 : Les phrasal verbs avancés
+        + eng_284_phrasal-verbs-conversation [Maîtriser les phrasal verbs courants dans les conversations]
+        + eng_285_phrasal-verbs-professionnels [Utiliser les phrasal verbs dans les contextes professionnels et sociaux]
+        + eng_286_phrasal-verbs-polysémiques [Comprendre les phrasal verbs à plusieurs sens et leurs constructions]
+
+        --> Thème 80 : Expressions idiomatiques et anglais authentique
+        + eng_287_idiomes-quotidiens [Utiliser les expressions idiomatiques du quotidien]
+        + eng_288_metaphores-expressions [Comprendre les métaphores et les expressions imagées]
+        + eng_289_expressions-naturelles [Employer des expressions naturelles pour enrichir ses conversations]
+
+        --> Thème 81 : Nuances de vocabulaire et précision linguistique
+        + eng_290_synonymes-nuances [Distinguer les synonymes et leurs subtilités]
+        + eng_291_registre-vocabulaire [Choisir le mot juste selon le contexte et le registre de langue]
+        + eng_292_collocations [Utiliser les collocations et les associations naturelles de mots]
+
+        Module 11A — Fluidité et maîtrise de l'expression orale
+        >> Module 11A []
+        --> Thème 82 : Parler avec fluidité et spontanéité
+        + eng_293_phrases-longues [Construire des phrases longues sans perdre le fil de ses idées]
+        + eng_294_connecteurs-logiques [Utiliser les mots de liaison et les connecteurs naturels]
+        + eng_295_hesitations-reformulation [Réduire les hésitations et reformuler spontanément]
+
+        --> Thème 83 : Prononciation, accent et intonation
+        + eng_296_accentuation-rythme [Maîtriser l'accentuation des mots et le rythme des phrases]
+        + eng_297_sons-difficiles [Travailler les sons difficiles et les enchaînements phonétiques]
+        + eng_298_intonation-expressive [Utiliser l'intonation pour exprimer les émotions et les nuances]
+
+        --> Thème 84 : Comprendre les anglophones à l'oral
+        + eng_299_anglais-rapide [Comprendre l'anglais parlé rapidement et les réductions phonétiques]
+        + eng_300_accents-internationaux [Reconnaître les accents britanniques, américains, australiens et internationaux]
+        + eng_301_conversations-spontanees [Comprendre les conversations spontanées et leurs sous-entendus]
+
+        Module 11B — Maîtrise globale de la langue anglaise
+        >> Module 11B []
+        --> Thème 85 : Développer une pensée directement en anglais
+        + eng_302_penser-en-anglais [Développer une pensée directement en anglais sans traduire mentalement]
+        + eng_303_expression-complexe [Participer à des conversations complexes et défendre ses idées avec aisance]
+        + eng_304_improvisation-orale [Improviser et s'exprimer spontanément dans différentes situations]
+
+        --> Thème 86 : Maîtriser les situations réelles de communication
+        + eng_305_debats-avances [Participer à des débats et défendre des arguments]
+        + eng_306_entretiens-avances [Maîtriser les entretiens et les échanges professionnels complexes]
+        + eng_307_negociations-avancees [Gérer des négociations et parvenir à des accords]
+        + eng_308_presentations-improvisees [Réaliser des présentations improvisées avec fluidité]
+
+
+======================
+
+
+
 1. Salutations et Contacts [english.salutations]
     1-01. Dire bonjour et au revoir (Hello, Goodbye, See you)
     2-01. Formules de politesse (Please, Thank you, You're welcome)

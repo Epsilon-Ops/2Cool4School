@@ -1,0 +1,38 @@
+
+{
+  "id": "reseaux-archi-6",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "L'encapsulation et le fonctionnement des échanges entre couches",
+  "intro": "Comprendre comment les données sont progressivement encapsulées lors de leur transmission à travers les différentes couches d'une architecture réseau. Ce cours présente le principe de l'encapsulation, le rôle des en-têtes, le fonctionnement des communications à l'émission et à la réception, les types de dialogue entre les couches ainsi que les interfaces et les primitives de service.",
+  "sections": [
+    {
+      "id": "res_055_encapsulation",
+      "title": "I. Le principe de l'encapsulation"
+    },
+    {
+      "id": "res_056_en-tetes",
+      "title": "II. Les en-têtes et les informations transmises"
+    },
+    {
+      "id": "res_057_emission",
+      "title": "III. Le fonctionnement à l'émission"
+    },
+    {
+      "id": "res_058_reception",
+      "title": "IV. Le fonctionnement à la réception"
+    },
+    {
+      "id": "res_059_dialogue",
+      "title": "V. Les deux types de dialogue entre les couches"
+    },
+    {
+      "id": "res_060_interfaces",
+      "title": "VI. Les interfaces et les primitives de service"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 6
+}

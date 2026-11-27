@@ -1,0 +1,34 @@
+
+{
+  "id": "reseaux-archi-5",
+  "subject": "reseaux",
+  "subjectName": "Réseaux",
+  "skill": "reseaux.architecture",
+  "title": "Les architectures protocolaires et les principes des réseaux en couches",
+  "intro": "Comprendre comment les communications réseau sont organisées grâce aux architectures protocolaires et au principe de découpage en couches. Ce cours présente la définition d'une architecture réseau, les différentes familles de protocoles, la notion de protocole, le fonctionnement d'une architecture en couches ainsi que les trois grandes fonctions d'une architecture réseau simplifiée.",
+  "sections": [
+    {
+      "id": "res_050_definition",
+      "title": "I. Définition d'une architecture réseau"
+    },
+    {
+      "id": "res_051_protocoles",
+      "title": "II. Les différentes familles de protocoles"
+    },
+    {
+      "id": "res_052_protocoles",
+      "title": "III. La notion de protocole"
+    },
+    {
+      "id": "res_053_architecture",
+      "title": "IV. Le principe de l'architecture en couches"
+    },
+    {
+      "id": "res_054_3_fonctions",
+      "title": "V. Les trois grandes fonctions d'une architecture simplifiée"
+    }
+  ],
+  "chapter": "Architectures en Couches",
+  "chapterOrder": 2,
+  "order": 5
+}
